@@ -62,7 +62,7 @@ TodoWrite([
 #### Integration & Validation Protocol
 **Contextual Validation**: Workflow-aware focus on just-executed commands and patterns
 **Learning Enhancement**: Interview insights inform system improvement priorities
-**Pattern Documentation**: Update existing context/ files only - NO new file creation
+**Pattern Documentation**: Follow intelligent context generation rules with organized subdirectories
 **System Evolution**: Learning patterns influence future workflow optimization and command enhancement
 
 ### Learning Quality Assurance & Documentation Framework
@@ -74,11 +74,12 @@ TodoWrite([
 **Cross-Reference Integrity**: Systematic validation via `/matrix-maintenance` integration
 
 #### Intelligent Documentation Organization
-**File Update Strategy**:
-- Update `context/universal-problem-solving-patterns.md` → Add new patterns and approaches  
-- Update `context/workflow-notifications.md` → Document workflow insights
-- NO new file creation - ONLY update existing files
-- `context/discoveries/workflow-[session].md` → Process learning and decision documentation
+**INTELLIGENT FILE STRATEGY**:
+- **Primary**: Update `context/patterns/universal-problem-solving-patterns.md` → Add validated patterns
+- **Secondary**: Update `context/workflows/workflow-notifications.md` → Document insights
+- **New Files**: ALLOWED when passing quality gates (max 2-3 per session, user value, unique content)
+- **Target**: `context/discoveries/` for genuine insights, `context/patterns/` for validated patterns
+- **Prohibited**: Auto-timestamped files, meta-documentation, system self-analysis
 
 #### System Integrity Validation Framework
 **Activation Protocol**: When interview threshold (≥4 points) exceeded
@@ -150,12 +151,13 @@ TodoWrite([
 **System Enhancement Impact**: Learning patterns and integrity findings influence future workflow optimization
 **Documentation Quality**: Evidence-based pattern documentation with structured organization and cross-validation
 
-### Context Documentation Locations
-**Primary Output Directories**:
-- `context/experience/` → User interview responses and behavioral insights
-- `context/patterns/` → Documented patterns, approaches, and best practices
-- `context/discoveries/` → Process learning, decisions, and workflow insights
-- **Anti-Fragmentation**: Consolidated documentation with maximum density and cross-reference integrity
+### Semantic Context Organization
+**Semantic Consolidation Targets**:
+- `context/learn/` → Domain-specific learning consolidation (git, system, workflow, etc.)
+- `context/patterns/` → Validated patterns with reusability guidelines
+- `context/dev/` → Development insights and complexity analysis
+- `context/ops/` → Operations workflow and monitoring insights
+- **Consolidation Strategy**: Update existing semantic files with timestamp tracking only
 
 ## ⚡ EXECUTION LAYER
 
@@ -175,63 +177,86 @@ Grep("TODO|FIXME|PATTERN|DECISION", {glob: "context/**/*.md", output_mode: "cont
 Grep("successful|failure|alternative|tradeoff", {glob: "context/**/*.md", output_mode: "content"})
 
 // PHASE 2: RESULTS LEARNING (post-execution assessment)
-// Dynamic user interview generation (Spanish)
-Write("context/experience/interview-[timestamp].md", `# Entrevista de Aprendizaje Post-Ejecución
+// SEMANTIC CONSOLIDATION: Update domain-specific learning files
+// Determine target file based on workflow domain
+Read("context/learn/") // Explore existing learning files
+Grep("workflow-type|domain", {output_mode: "content"}) // Identify appropriate target
 
-## Preguntas Dinámicas
+// CONSOLIDATION LOGIC: Update existing semantic files instead of creating timestamped ones
+// Target files: learn/[domain]-[theme]-insights.md
+Edit("context/learn/[domain]-insights.md", `
+## Session: [YYYY-MM-DD]
+
+### User Interview Insights
 1. ¿Qué aspectos de esta sesión fueron más útiles para ti?
+   [User response]
+
 2. ¿Hubo algún momento donde el sistema no se comportó como esperabas?
+   [User response]
+
 3. ¿Qué información adicional habrías necesitado durante el proceso?
+   [User response]
+
 4. ¿Los resultados coinciden con lo que buscabas inicialmente?
+   [User response]
+
 5. ¿Qué mejorarías del workflow que acabamos de ejecutar?
+   [User response]
 
-## Responses
-[User responses to be captured]
-
-## Learning Insights
+### Learning Insights
 [Insights derived from user responses]
+
+**Last Updated**: [current-timestamp]
 `)
 
-// PATTERN DOCUMENTATION  
-Write("context/patterns/learning-pattern-[timestamp].md", `# Learning Pattern Documentation
+// PATTERN CONSOLIDATION: Update universal patterns file
+Edit("context/patterns/universal-problem-solving-patterns.md", `
+## [Pattern-Name] Pattern
+**Discovered**: [YYYY-MM-DD]
+**Domain**: [workflow-domain]
 
-## Discovered Patterns
+### Pattern Description
 [Pattern identification from execution]
 
-## Decision Points
+### Decision Points
 [Key decisions made during execution]
 
-## Alternative Approaches
+### Alternative Approaches
 [Considered but not selected approaches]
 
-## Success Factors
+### Success Factors
 [What made this approach work]
 
-## Areas for Improvement  
-[Identified optimization opportunities]
+### Reusability Guidelines
+[How this pattern applies to other contexts]
+
+**Last Updated**: [current-timestamp]
 `)
 
 // SYSTEM INTEGRITY VALIDATION
 Task("Matrix Maintenance", "Execute /matrix-maintenance to validate system integrity and cross-reference coherence")
 
-// CONTEXT ORGANIZATION
-Bash("find context/ -name '*.md' | wc -l") // Count context files
-Bash("find context/ -name '*.md' -exec wc -l {} + | tail -1 | awk '{print $1}'") // Total lines
+// CONTEXT ORGANIZATION METRICS
+Bash("find context/ -name '*.md' | wc -l && echo 'Total files:' && find context/ -name '*.md' -exec wc -l {} + | tail -1") // Combined metrics
 
-// DISCOVERY DOCUMENTATION
-Write("context/discoveries/learning-session-[timestamp].md", `# Learning Session Discovery
+// DISCOVERY CONSOLIDATION: Update appropriate discovery file based on session type
+Edit("context/discoveries/[session-type]-discoveries.md", `
+## Discovery Session: [YYYY-MM-DD]
+**Learning Value Score**: [calculated_score]/10
+**Session Type**: [workflow-type]
 
-## Session Analysis
-- Learning Value Score: [calculated_score]/10
+### Session Analysis
 - Patterns Identified: [pattern_count]
-- User Insights: [insight_count]
+- User Insights: [insight_count]  
 - System Improvements: [improvement_count]
 
-## Key Discoveries
+### Key Discoveries
 [Major insights from this learning session]
 
-## Action Items
+### Implementation Actions
 [Specific improvements to implement]
+
+**Last Updated**: [current-timestamp]
 `)
 ```
 

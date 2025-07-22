@@ -41,8 +41,8 @@ WebSearch("query")        // If web research is documented
 **MANDATORY for all workflow completions**:
 
 ```javascript
-// Session completion tracking (no Claude attribution)
-Bash("git add . && git commit -m \"[command]: [description] | [metrics] | session-[N]\"")
+// Session completion tracking
+Bash("git add . && git commit -m \"[command]: [description] | [metrics] ✓session-[N]\"")
 ```
 
 ## 📊 PREVENTION MEASURES
@@ -89,7 +89,7 @@ Bash("git add . && git commit -m \"[command]: [description] | [metrics] | sessio
 [Actual tool invocations matching documentation]
 
 ### Session Completion Protocol  
-Bash("git add . && git commit -m \"[command]: [description] | [metrics] | session-[N]\"")
+Bash("git add . && git commit -m \"[command]: [description] | [metrics] ✓session-[N]\"")
 ```
 
 ### Anti-Pattern Detection

@@ -64,6 +64,7 @@ TodoWrite([
 **Proactive Activation System**:
 - **Pre-Problem-Solving**: Mandatory matrix validation during `/problem-solving` Phase 0
 - **Post-Migration**: Auto-triggered after command architecture changes
+- **Post-Cleanup**: Auto-triggered after tool/directory removal with cleanup-validation mode
 - **Scheduled Maintenance**: Periodic validation during `/docs-workflow` maintenance cycles
 - **Change Detection**: Real-time monitoring of file system modifications with dependency impact assessment
 
@@ -102,6 +103,12 @@ TodoWrite([
 
 #### Report Mode (`/matrix-maintenance report`)
 **Intelligence Dashboard**: Comprehensive analytics with predictive insights and optimization recommendations
+
+#### Cleanup-Validation Mode (`/matrix-maintenance cleanup-validation`)
+**Post-Cleanup Integrity**: Specialized validation after tool/directory removal with dependency repair
+- **Pattern Application**: `context/patterns/dependency-validation-post-cleanup.md`
+- **Success Metrics**: System health improvement (e.g., 96.4% → 98.8%)
+- **Scope**: Component count synchronization, broken reference elimination
 
 #### Full Mode (`/matrix-maintenance full`)
 **Complete Autonomous Cycle**: Scan → Update → Validate → Optimize → Monitor → Learn sequence
@@ -190,11 +197,11 @@ TodoWrite([
 **System Enhancement**: Matrix intelligence continuously improving coordination and reliability
 
 ### Matrix Output Locations
-**Primary Matrix Storage**:
-- `context/matrix/dependency-matrix-[timestamp].md` → Complete cross-reference matrix
-- `context/matrix/integrity-report-[session].md` → Validation results and health metrics
-- `context/matrix/prevention-analysis-[scan].md` → FMEA results and mitigation strategies
-- **Anti-Fragmentation**: Consolidated matrix documentation with maximum density and cross-validation
+**Semantic Matrix Consolidation**:
+- `context/sys/health-monitoring.md` → Consolidated system health with timestamp tracking
+- `context/ops/risk-assessment.md` → FMEA analysis and prevention strategies
+- `context/sys/architecture-integrity.md` → Cross-reference validation results
+- **Consolidation Strategy**: Update existing files with "Last Updated" timestamp only
 
 ## ⚡ EXECUTION LAYER
 
@@ -227,19 +234,27 @@ Grep("Integration:", {glob: "**/*.md", output_mode: "content", -n: true})       
 Grep("BROKEN|MISSING|ERROR|FIXME", {glob: "**/*.md", output_mode: "files_with_matches"}) // Error indicators
 Grep("\\[.*\\]\\(.*\\)", {glob: "**/*.md", output_mode: "content"}) // Extract all links for validation
 
-// 5. MATRIX GENERATION
-Write("context/system/dependency-matrix-[timestamp].md", `# Cross-Reference Dependency Matrix
+// 5. MATRIX CONSOLIDATION: Update existing health monitoring file
+Edit("context/sys/health-monitoring.md", `
+## Health Check: [YYYY-MM-DD]
 
-## System Components Analysis
+### System Components Analysis
 - Total Components: [component_count]
-- Commands: [command_count]
+- Commands: [command_count]  
 - Documentation Files: [doc_count]
 - Cross-References: [reference_count]
 
-## Dependency Mapping
+### Current Integrity Score: [score]%
+- Structural Integrity: [structural]%
+- Cross-References: [references]%
+- Command Coverage: [coverage]%
+- Dependency Matrix: [dependencies]%
+
+### Dependency Mapping
 [Comprehensive dependency relationships]
 
-## Integration Points
+**Last Updated**: [current-timestamp]
+`)
 [Command integration analysis]
 
 ## Reference Integrity  
@@ -249,12 +264,24 @@ Write("context/system/dependency-matrix-[timestamp].md", `# Cross-Reference Depe
 
 ## FMEA Risk Assessment
 [Failure mode analysis and prevention strategies]
+
+## Post-Cleanup Validation Results (if cleanup-validation mode)
+- Broken Tool References: [broken_tool_refs]
+- Component Count Accuracy: [count_accuracy]%
+- Health Improvement: [old_health]% → [new_health]%
 `)
 
 // 6. INTEGRITY VALIDATION
 Bash("find . -name '*.md' | wc -l")                       // Count markdown files
 Bash("find . -name '*.md' -exec grep -l 'EXECUTION LAYER' {} + | wc -l") // Count implemented commands
 Bash("echo 'scale=1; ([implemented_commands] * 100) / [total_commands]' | bc") // Calculate coverage %
+
+// 6A. CLEANUP VALIDATION (when cleanup-validation mode active)
+Grep("tools/|.claude/tools/", {glob: "**/*.md", output_mode: "files_with_matches"}) // Detect broken tool references
+Bash("ls -la tools/ 2>/dev/null || echo 'VERIFIED: tools directory removed'")        // Verify tool directory removal
+Bash("ls -la .claude/tools/ 2>/dev/null || echo 'VERIFIED: .claude/tools removed'") // Verify .claude/tools removal
+Bash("find . -name '*.md' -path './context/*' | wc -l")   // Updated context file count
+Bash("find . -name '*.md' -path './docs/*' | wc -l")      // Updated docs file count
 
 // 7. FMEA ANALYSIS (Failure Mode and Effects Analysis)
 Write("context/system/fmea-analysis-[timestamp].md", `# FMEA Analysis Results

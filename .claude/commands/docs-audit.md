@@ -190,10 +190,14 @@ Write("context/discoveries/documentation-audit-[timestamp].md", `# Documentation
 [Prioritized action items based on findings]
 `)
 
-// 6. HEALTH METRICS CALCULATIONS
-Bash("echo 'scale=1; ([functional_links] * 100) / [total_references]' | bc")     // Link integrity %
-Bash("echo 'scale=1; ([compliant_files] * 100) / [total_files]' | bc")         // Compliance %
-Bash("echo 'scale=1; (100 - [duplication_percentage])' | bc")                  // Content density %
+// Optimized health metrics calculations (3 → 1 authorization)  
+Bash("echo 'scale=1;
+link_integrity_pct = ([functional_links] * 100) / [total_references];
+compliance_pct = ([compliant_files] * 100) / [total_files];
+content_density_pct = (100 - [duplication_percentage]);
+print \"Link Integrity: \", link_integrity_pct, \"%\";
+print \"Size Compliance: \", compliance_pct, \"%\";
+print \"Content Density: \", content_density_pct, \"%\"' | bc")
 
 // 7. DECISION LOGIC FOR NEXT STEPS
 // Auto-trigger workflow based on health score

@@ -142,11 +142,18 @@ Grep("## Purpose|## Usage|## Implementation", {glob: "**/*.md", output_mode: "co
 Grep("MANDATORY|CRITICAL|Execute:", {glob: "**/*.md", output_mode: "count"})                   // Common phrase count
 Bash("find . -name '*.md' | wc -l")                                                            // Total file count
 
-// Health score component calculations
-Bash("echo 'scale=1; ([existing_references] * 25) / [total_references]' | bc")                // Link health (25pts)
-Bash("echo 'scale=1; ([compliant_files] * 25) / [total_files]' | bc")                         // Size compliance (25pts)
-Bash("echo 'scale=1; (100 - [duplication_percentage]) * 0.25' | bc")                          // Content density (25pts)
-Bash("echo 'scale=1; ([navigation_efficiency] * 2.5)' | bc")                                   // Navigation efficiency (25pts)
+// Optimized health score calculations (4 → 1 authorization)
+Bash("echo 'scale=1; 
+link_health = ([existing_references] * 25) / [total_references];
+size_compliance = ([compliant_files] * 25) / [total_files]; 
+content_density = (100 - [duplication_percentage]) * 0.25;
+navigation_efficiency = ([navigation_efficiency] * 2.5);
+total_score = link_health + size_compliance + content_density + navigation_efficiency;
+print \"Link Health (25pts): \", link_health;
+print \"Size Compliance (25pts): \", size_compliance;
+print \"Content Density (25pts): \", content_density;
+print \"Navigation Efficiency (25pts): \", navigation_efficiency;
+print \"TOTAL HEALTH SCORE: \", total_score, \"/100\"' | bc")
 
 // 4. NAVIGATION EFFICIENCY VERIFICATION
 // Cognitive accessibility and efficiency validation

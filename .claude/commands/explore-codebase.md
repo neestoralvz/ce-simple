@@ -45,7 +45,7 @@ TodoWrite([
 1. **🏗️ VALIDATE**: LS paths → Verify docs/, context/, .claude/ structure
 2. **🔍 ANALYZE**: Glob/Grep → Inventory documentation, detect outdated references
 3. **⚡ CORRECT**: Auto-fix violations → Move files, edit references, create directories
-4. **📊 OUTPUT**: Update existing context files only - NO new file creation allowed
+4. **📊 OUTPUT**: Apply intelligent context generation rules - quality gates determine file creation vs updates
 
 ### Dynamic Analysis Protocol
 **PHASE 1 - CODEBASE ASSESSMENT**: Analyze project size and complexity to determine optimal operation count

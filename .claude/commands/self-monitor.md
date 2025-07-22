@@ -24,6 +24,27 @@ TodoWrite([
 ### Prevention-First Architecture
 **PROACTIVE MONITORING**: Continuous validation during command execution to prevent issues before occurrence
 
+### Philosophical Compatibility Validation
+**COMPLEXITY REINTRODUCTION PREVENTION**: Automates the philosophical questioning instinct that prevented archive complexity reintroduction
+
+**DETECTION ENGINE**: 
+- **Expansion Keywords**: meta-, orchestration, framework, system, architecture, advanced, comprehensive
+- **Complexity Indicators**: >5 agent deployments, >200 lines, mathematical thresholds (≥0.9000, ≤0.7000)
+- **Verbose Patterns**: decision trees, multiple phases, feature creep indicators
+- **Philosophy Drift**: Deviation from "pragmatic effectiveness, autocontained commands, anti-bias processing"
+
+**AUTO-TRIGGER GATES**: Phase 0 philosophical compatibility check before implementation
+- **QUESTION 1**: "¿Esta propuesta mantiene la simplicidad del sistema ce-simple?"
+- **QUESTION 2**: "¿Los beneficios justifican la complejidad añadida?"
+- **QUESTION 3**: "¿Hay una alternativa más simple que logre el mismo objetivo?"
+- **THRESHOLD**: Any "No" response triggers simplification requirement
+
+**PREVENTION PROTOCOLS**:
+1. **EARLY WARNING**: Detect complexity expansion before implementation
+2. **ALTERNATIVE ANALYSIS**: Mandatory simple alternative evaluation
+3. **JUSTIFICATION REQUIREMENT**: Mathematical proof of necessity for complexity >baseline
+4. **COMPATIBILITY GATE**: Philosophy alignment verification before proceeding
+
 ### Phase-Based Autocritique Framework
 1. **EXPLORATION**: Codebase pattern validation, web research quality assurance
 2. **ANALYSIS**: Think-layers progression verification, logical consistency validation
@@ -124,13 +145,41 @@ Bash("echo 'scale=1; ([compliant_files] * 100) / [total_files]' | bc")
 Write("context/discoveries/self-monitor-analysis-$(date +%Y%m%d).md", `# Standards Compliance Analysis
 [Compliance results and correction recommendations]`)
 
-// 7. PROGRESS TRACKING INTEGRATION
+// 7. PHILOSOPHICAL COMPATIBILITY VALIDATION
+// Complexity expansion detection (archive prevention protocol)
+Grep("meta-|orchestration|framework|system|architecture|advanced|comprehensive", {glob: "**/*.md", output_mode: "files_with_matches", -i: true})
+Grep("≥0\\.[0-9]+|≤0\\.[0-9]+|mathematical.*threshold", {glob: "**/*.md", output_mode: "content", -n: true})
+Bash("find . -name '*.md' -exec awk 'END{if(NR>200) print FILENAME \" (\" NR \" lines - complexity warning)\"}' {} +")
+
+// Philosophy drift detection (ce-simple principles verification)  
+Grep("pragmatic effectiveness|autocontained commands|anti-bias processing", {glob: "**/*.md", output_mode: "count"})
+Grep("simplicity-first|LLM optimized|streamlined", {glob: "**/*.md", output_mode: "count"})
+
+// Auto-trigger compatibility gates (Phase 0 integration)
+Write("context/system/philosophical-gate-[timestamp].md", `# Philosophical Compatibility Assessment
+
+## Compatibility Questions (Auto-Trigger)
+1. ¿Esta propuesta mantiene la simplicidad del sistema ce-simple?
+2. ¿Los beneficios justifican la complejidad añadida?  
+3. ¿Hay una alternativa más simple que logre el mismo objetivo?
+
+## Detection Results
+- Complexity Keywords: [keyword_count] detected
+- Line Count Warnings: [oversize_files] files >200 lines
+- Philosophy References: [philosophy_score]/[expected_references]
+- Compatibility Status: [COMPATIBLE/WARNING/INCOMPATIBLE]
+
+## Prevention Actions
+[Recommended actions for complexity prevention]`)
+
+// 8. PROGRESS TRACKING INTEGRATION
 TodoWrite([
-  {"content": "🔍 SCANNING: Compliance validation completed → [score]% threshold", "status": "completed", "priority": "high", "id": "monitor-scan-1"}
+  {"content": "🔍 SCANNING: Compliance validation completed → [score]% threshold", "status": "completed", "priority": "high", "id": "monitor-scan-1"},
+  {"content": "🧠 PHILOSOPHY: Compatibility gate passed → [status] verified", "status": "completed", "priority": "high", "id": "monitor-philosophy-1"}
 ])
 
-// 8. SESSION COMPLETION
-Bash("git add . && git commit -m \"self-monitor: compliance [score]% | corrections: [applied] | session-[N]\"")
+// 9. SESSION COMPLETION
+Bash("git add . && git commit -m \"self-monitor: compliance [score]% | philosophy: [status] | corrections: [applied] | session-[N]\"")
 ```
 
 ### Session Completion Protocol

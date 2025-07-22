@@ -31,6 +31,30 @@ TodoWrite([
 5. **STRUCTURE REFINEMENT**: Implement progressive disclosure and navigation optimization
 6. **INTEGRATION VALIDATION**: Ensure compatibility with Claude Code workflows
 
+### MANDATORY CLAUDE.md Maintenance Rules Integration
+**CRITICAL**: Apply all integrated system standards during CLAUDE.md optimization
+
+#### File Creation Restrictions Compliance:
+- **Intelligent Context Generation**: Max 2-3 context files per session, organized subdirectories (discoveries/, patterns/, research/, workflows/)
+- **Prohibited Content**: NO meta-documentation, NO auto-timestamped files, NO system self-analysis
+- **Quality Gates**: User value requirement, unique content only, substantial actionable content
+
+#### Mandatory Exploration Protocol Enforcement:
+- **Pre-Reference Validation**: Use LS(), Glob(), Grep() to verify all referenced files exist before updating CLAUDE.md
+- **Cross-Reference Integrity**: Validate ALL links and paths in CLAUDE.md using exploration tools
+- **Evidence-Based References**: Only reference confirmed existing files and directories
+
+#### Architectural Principles Integration:
+- **Pragmatic Effectiveness**: Practical results over theoretical perfection in CLAUDE.md content
+- **Autocontained Commands**: Ensure complete functionality within command network references
+- **LLM Optimized**: Documentation designed for Claude Code consumption
+- **Anti-Bias Processing**: Evidence-based discovery without assumptions in all references
+
+#### Aggressive Parallelization Requirements:
+- **Default Parallel Mode**: Execute all CLAUDE.md analysis operations in parallel where possible
+- **Batch Operations**: Multiple tool calls in single messages for maximum efficiency during optimization
+- **Performance Target**: 5-15x improvement over sequential approaches in validation processes
+
 ### CLAUDE.md Optimization Framework
 **Standards Compliance**: File hierarchy + content sections + import system + token efficiency validation
 
@@ -97,10 +121,44 @@ TodoWrite([
 ## ⚡ EXECUTION LAYER
 
 ### Mandatory Tool Executions
-**CRITICAL**: Actual implementation of CLAUDE.md and standards compliance optimization
+**CRITICAL**: CLAUDE.md maintenance MUST follow mandatory exploration protocol
 
 ```javascript
-// COMPREHENSIVE DOCUMENTATION OPTIMIZATION SYSTEM
+// 1. CLAUDE.md EXISTENCE AND CONTENT VALIDATION (real execution)
+LS("/Users/nalve/ce-simple") // Verify CLAUDE.md exists in root
+Read("/Users/nalve/ce-simple/CLAUDE.md") // Read current content for analysis
+
+// 2. REFERENCED FILES VALIDATION (real execution) 
+// NEVER claim referenced files exist without FIRST exploring their existence
+Glob("docs/system/*.md") // Verify architectural-principles.md exists
+Glob("docs/quality/*.md") // Verify anti-bias-rules.md exists  
+Glob("docs/workflow/*.md") // Verify primary-discovery-flow.md exists
+Glob("docs/implementation/*.md") // Verify aggressive-parallelization-protocol.md exists
+Glob("docs/documentation/*.md") // Verify writing-standards.md exists
+LS("/Users/nalve/ce-simple/.claude/commands") // Verify commands directory structure
+
+// 3. CROSS-REFERENCE INTEGRITY VALIDATION (real execution)
+Grep("docs/.*\\.md", {glob: "CLAUDE.md", output_mode: "content"}) // Find all docs references
+Grep("\\.claude/commands", {glob: "CLAUDE.md", output_mode: "content"}) // Find command references  
+Grep("context/.*", {glob: "CLAUDE.md", output_mode: "content"}) // Find context references
+
+// 4. STANDARDS COMPLIANCE VALIDATION (real execution)
+Grep("Last Updated", {glob: "CLAUDE.md", output_mode: "content"}) // Verify date maintenance
+Grep("CRITICAL", {glob: "CLAUDE.md", output_mode: "content"}) // Check critical instructions
+
+// 5. CONTEXT STRUCTURE VALIDATION (real execution)
+LS("/Users/nalve/ce-simple/context") // Verify organized subdirectories exist
+LS("/Users/nalve/ce-simple/context/discoveries") // Verify discoveries/ exists
+LS("/Users/nalve/ce-simple/context/patterns") // Verify patterns/ exists  
+LS("/Users/nalve/ce-simple/context/research") // Verify research/ exists
+LS("/Users/nalve/ce-simple/context/workflows") // Verify workflows/ exists
+
+// 6. INTEGRATED RULES COMPLIANCE CHECK (real execution)
+Grep("intelligent.*context.*generation|quality.*gates|exploration.*protocol", {glob: "docs/quality/anti-bias-rules.md", output_mode: "content"}) // Verify integrated rules exist
+
+// 7. GIT TRACKING (real execution - workflow completion)
+Bash("git add CLAUDE.md && git commit -m \"docs-optimize: CLAUDE.md maintenance | standards: validated | references: verified ✓session-[N]\"")
+```
 // Execute CLAUDE.md and system-wide standards compliance
 
 // 1. CLAUDE.MD ANALYSIS AND OPTIMIZATION
