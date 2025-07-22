@@ -62,7 +62,7 @@ TodoWrite([
 #### Integration & Validation Protocol
 **Contextual Validation**: Workflow-aware focus on just-executed commands and patterns
 **Learning Enhancement**: Interview insights inform system improvement priorities
-**Pattern Documentation**: Update existing context/ files only - NO new file creation
+**Pattern Documentation**: Follow intelligent context generation rules with organized subdirectories
 **System Evolution**: Learning patterns influence future workflow optimization and command enhancement
 
 ### Learning Quality Assurance & Documentation Framework
