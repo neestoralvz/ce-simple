@@ -197,11 +197,11 @@ TodoWrite([
 **System Enhancement**: Matrix intelligence continuously improving coordination and reliability
 
 ### Matrix Output Locations
-**Primary Matrix Storage**:
-- `context/matrix/dependency-matrix-[timestamp].md` → Complete cross-reference matrix
-- `context/matrix/integrity-report-[session].md` → Validation results and health metrics
-- `context/matrix/prevention-analysis-[scan].md` → FMEA results and mitigation strategies
-- **Anti-Fragmentation**: Consolidated matrix documentation with maximum density and cross-validation
+**Semantic Matrix Consolidation**:
+- `context/sys/health-monitoring.md` → Consolidated system health with timestamp tracking
+- `context/ops/risk-assessment.md` → FMEA analysis and prevention strategies
+- `context/sys/architecture-integrity.md` → Cross-reference validation results
+- **Consolidation Strategy**: Update existing files with "Last Updated" timestamp only
 
 ## ⚡ EXECUTION LAYER
 
@@ -234,19 +234,27 @@ Grep("Integration:", {glob: "**/*.md", output_mode: "content", -n: true})       
 Grep("BROKEN|MISSING|ERROR|FIXME", {glob: "**/*.md", output_mode: "files_with_matches"}) // Error indicators
 Grep("\\[.*\\]\\(.*\\)", {glob: "**/*.md", output_mode: "content"}) // Extract all links for validation
 
-// 5. MATRIX GENERATION
-Write("context/system/dependency-matrix-[timestamp].md", `# Cross-Reference Dependency Matrix
+// 5. MATRIX CONSOLIDATION: Update existing health monitoring file
+Edit("context/sys/health-monitoring.md", `
+## Health Check: [YYYY-MM-DD]
 
-## System Components Analysis
+### System Components Analysis
 - Total Components: [component_count]
-- Commands: [command_count]
+- Commands: [command_count]  
 - Documentation Files: [doc_count]
 - Cross-References: [reference_count]
 
-## Dependency Mapping
+### Current Integrity Score: [score]%
+- Structural Integrity: [structural]%
+- Cross-References: [references]%
+- Command Coverage: [coverage]%
+- Dependency Matrix: [dependencies]%
+
+### Dependency Mapping
 [Comprehensive dependency relationships]
 
-## Integration Points
+**Last Updated**: [current-timestamp]
+`)
 [Command integration analysis]
 
 ## Reference Integrity  
