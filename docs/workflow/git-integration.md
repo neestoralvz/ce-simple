@@ -7,60 +7,22 @@ Define standardized Git integration patterns for workflow commands to enable aut
 
 ### Success Completion Template
 ```bash
-git add . && git commit -m "[command]: [action] completed
-
-📊 RESULTS:
-- Files processed: [N]
-- Execution time: [X] minutes
-- Quality score: [X]%
-- Status: [Success/Partial/Issues]
-
-🎯 METRICS:
-- [Primary metric]: [X]%
-- [Secondary metric]: [X]%
-- [Tertiary metric]: [X]%
-
-🔧 ACTIONS:
-- [Action 1]: [Result]
-- [Action 2]: [Result]
-- [Action 3]: [Result]
-
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "[command]: [action] | files: [N] | time: [X]min | quality: [X]% ✓session-[N]"
 ```
 
 ### Health Check Template
 ```bash
-git add . && git commit -m "[command]: [type] health check completed
-
-📊 HEALTH CHECK: [Date] system maintenance validation
-✅ Status: [Healthy/Attention-Needed/Critical]
-📈 Quality: [X]% (trend: [direction])
-🔧 Actions: [none-required/maintenance-scheduled/immediate-attention]
-
-🤖 Generated with Claude Code - Health Check
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "[command]: health check | status: [Healthy/Attention/Critical] | quality: [X]% | trend: [direction] ✓session-[N]"
 ```
 
 ### Discovery Workflow Template
 ```bash
-git add . && git commit -m "[command]: [intent] | [complexity]([X]) | [X]min | [outcome]
-
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "[command]: [intent] | complexity: [X]/10 | time: [X]min | outcome: [result] ✓session-[N]"
 ```
 
 ### Partial Success Template
 ```bash
-git add . && git commit -m "[command]: Partial [action] completion
-
-📝 EXECUTION STATUS: [X]/[Y] operations completed successfully
-⚡ Completed: [list of successful operations]
-⚠️ Issues: [list of issues encountered]
-🔧 Recovery: [recommended recovery actions]
-
-🤖 Generated with Claude Code - Partial Execution
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "[command]: partial completion | completed: [X]/[Y] | pending: [issues] | next: [actions] ⚠️session-[N]"
 ```
 
 ## 🔧 Core Integration Patterns
@@ -72,10 +34,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 
 ### Standard Commit Message Structure
 ```bash
-git add . && git commit -m "[command]: [operation] | [key-metric] | [X]min | [outcome]
-
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "[command]: [operation] | [key-metric] | time: [X]min | [outcome] ✓session-[N]"
 ```
 
 ## 📊 Metric Integration Functions
