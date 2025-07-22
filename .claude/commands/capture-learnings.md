@@ -228,6 +228,9 @@ Edit("context/patterns/universal-problem-solving-patterns.md", `
 // SYSTEM INTEGRITY VALIDATION
 Task("Matrix Maintenance", "Execute /matrix-maintenance to validate system integrity and cross-reference coherence")
 
+// ENHANCED WORKFLOW NOTIFICATIONS
+trigger_notification "capture-learnings" "context-optimize" "post-learning-consolidation"
+
 // CONTEXT OPTIMIZATION & MAINTENANCE
 Task("Context Optimization", "Execute /context-optimize consolidate to maintain semantic structure and eliminate redundancy after learning capture")
 

@@ -45,9 +45,16 @@ Commands follow integrated standards → `docs/core/writing-standards.md`, `docs
 ```
 ⟳ /start → [complexity ≥6: /worktree-start] → dynamic questions → /explore-codebase + /explore-web → /think-layers → execution plan → /capture-learnings → /context-optimize → [session end: /worktree-close]
 ├─ /matrix-maintenance → Cross-reference validation → /context-optimize (periodic)
-├─ /context-optimize → Automated context maintenance (post-command)
+├─ /context-optimize → Automated context + docs maintenance (post-command)
+├─ /command-create → Systematic command development → /matrix-maintenance → /context-optimize
 ├─ /worktree-cleanup → Automated work tree maintenance (weekly)
 ```
+
+**Enhanced Workflow Features**:
+- **Real-time notifications**: Slash command execution tracking with TodoWrite integration
+- **Auto-trigger transparency**: Clear visibility of command chain execution
+- **Comprehensive maintenance**: Context + docs optimization with single source of truth
+- **Meticulous integration**: All commands follow systematic integration protocols
 
 **Complete workflow details**: Integrated in command implementations
 
