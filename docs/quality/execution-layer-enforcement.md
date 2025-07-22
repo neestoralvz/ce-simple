@@ -41,7 +41,7 @@ WebSearch("query")        // If web research is documented
 **MANDATORY for all workflow completions**:
 
 ```javascript
-// Session completion tracking (no Claude attribution)
+// Session completion tracking
 Bash("git add . && git commit -m \"[command]: [description] | [metrics] ✓session-[N]\"")
 ```
 

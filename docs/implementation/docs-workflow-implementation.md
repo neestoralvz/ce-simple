@@ -101,7 +101,7 @@
 
 **Success Commit Structure**:
 ```bash
-git add . && git commit -m "docs-workflow: [mode] | health: [before]%→[after]% | time: [X]min | issues: [Y] resolved | iterations: [N]/3 ✓session-[N]"
+git add . && git commit -m "docs-workflow: [mode] | health: [before]%→[after]% | issues: [Y] resolved | iterations: [N]/3 ✓session-[N]"
 ```
 
 **Error Recovery Commit** (if partial success):
