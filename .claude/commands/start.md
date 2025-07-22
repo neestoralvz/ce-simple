@@ -122,11 +122,12 @@ TodoWrite([
 **Auto-Scaling**: Dynamic agent count based on request scope, breadth, and interdependency requirements
 
 ### Output Standards
-**Output**:
-- `context/discoveries/[session-id].md` → Findings
-- `context/patterns/[pattern].md` → New patterns
-- `context/research/[topic].md` → Web findings
-- Anti-bias, cross-referenced, ≤200 lines, maximum density
+**INTELLIGENT CONTEXT GENERATION**:
+- **Quality Gates**: Max 2-3 context files per session | User value requirement | Unique content only
+- **Allowed**: Genuine discoveries, research findings, learning patterns, actionable recommendations
+- **Structure**: Use appropriate context/ subdirectories (discoveries/, patterns/, research/, workflows/)
+- **Restrictions**: NO meta-documentation, NO auto-timestamped files, NO system self-analysis
+- **Standard**: Anti-bias, cross-referenced, ≤200 lines, maximum density
 
 ## ⚡ Triggers
 

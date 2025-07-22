@@ -74,11 +74,12 @@ TodoWrite([
 **Cross-Reference Integrity**: Systematic validation via `/matrix-maintenance` integration
 
 #### Intelligent Documentation Organization
-**File Update Strategy**:
-- Update `context/universal-problem-solving-patterns.md` → Add new patterns and approaches  
-- Update `context/workflow-notifications.md` → Document workflow insights
-- NO new file creation - ONLY update existing files
-- `context/discoveries/workflow-[session].md` → Process learning and decision documentation
+**INTELLIGENT FILE STRATEGY**:
+- **Primary**: Update `context/patterns/universal-problem-solving-patterns.md` → Add validated patterns
+- **Secondary**: Update `context/workflows/workflow-notifications.md` → Document insights
+- **New Files**: ALLOWED when passing quality gates (max 2-3 per session, user value, unique content)
+- **Target**: `context/discoveries/` for genuine insights, `context/patterns/` for validated patterns
+- **Prohibited**: Auto-timestamped files, meta-documentation, system self-analysis
 
 #### System Integrity Validation Framework
 **Activation Protocol**: When interview threshold (≥4 points) exceeded
