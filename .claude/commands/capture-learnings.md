@@ -235,7 +235,8 @@ context/experience/
 ### Success Patterns
 **Process Learning**: Novel patterns documented, decisions traced, alternatives recorded
 **Results Learning**: User insights captured, experience-reality gaps identified, improvement opportunities documented
-**System Enhancement**: Learning patterns influence future workflow optimization
+**System Validation**: Command integrity verified, gaps discovered and prioritized, resolution recommendations generated
+**System Enhancement**: Learning patterns + integrity findings influence future workflow optimization
 
 ## 🔗 See Also
 
@@ -253,4 +254,4 @@ context/experience/
 
 ---
 
-**CRITICAL**: This command operates in dual-phase mode and requires integration with existing workflow orchestration. Process learning must not interfere with execution efficiency while results learning should maximize user insight value through intelligent interview activation.
+**CRITICAL**: This command operates in dual-phase mode with integrated system integrity validation following maximum rationality principles. Process learning must not interfere with execution efficiency while results learning should maximize user insight value through intelligent interview activation and systematic gap discovery.
