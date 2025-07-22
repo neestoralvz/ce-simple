@@ -144,8 +144,8 @@ WebSearch("[topic] implementation failures lessons learned")
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with research metrics tracking (no Claude attribution)
-Bash("git add . && git commit -m \"explore-web: [research-topic] | searches: [N] | sources: [N] | session-[N]\"")
+// Git automation with research metrics tracking
+Bash("git add . && git commit -m \"explore-web: [research-topic] | searches: [N] | sources: [N] ✓session-[N]\"")
 ```
 
 ### Research Output Generation
