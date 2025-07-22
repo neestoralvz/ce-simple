@@ -281,6 +281,9 @@ Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verifie
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
+// Context optimization before session completion
+Task("Context Optimization", "Execute /context-optimize full for comprehensive context maintenance")
+
 // Git automation with usage tracking
 Bash("git add . && git commit -m \"start: [description] | metrics: [data] ✓session-[N]\"")
 ```

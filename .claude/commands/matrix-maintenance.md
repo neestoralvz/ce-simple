@@ -283,10 +283,14 @@ Bash("ls -la .claude/tools/ 2>/dev/null || echo 'VERIFIED: .claude/tools removed
 Bash("find . -name '*.md' -path './context/*' | wc -l")   // Updated context file count
 Bash("find . -name '*.md' -path './docs/*' | wc -l")      // Updated docs file count
 
-// 7. FMEA ANALYSIS (Failure Mode and Effects Analysis)
-Write("context/system/fmea-analysis-[timestamp].md", `# FMEA Analysis Results
+// 7. CONTEXT OPTIMIZATION POST-VALIDATION
+Task("Context Optimization", "Execute /context-optimize clean to maintain semantic structure after system validation")
 
-## Potential Failure Modes
+// 8. FMEA ANALYSIS (Failure Mode and Effects Analysis)
+Edit("context/ops/risk-assessment.md", `
+## FMEA Analysis Results: [YYYY-MM-DD]
+
+### Potential Failure Modes
 1. **Documentation Theater**: Commands without execution layers
 2. **Broken References**: Links to non-existent resources  
 3. **Integration Gaps**: Missing workflow connections

@@ -177,21 +177,40 @@ Grep("TODO|FIXME|PATTERN|DECISION", {glob: "context/**/*.md", output_mode: "cont
 Grep("successful|failure|alternative|tradeoff", {glob: "context/**/*.md", output_mode: "content"})
 
 // PHASE 2: RESULTS LEARNING (post-execution assessment)
-// CONSOLIDATION STRATEGY: UPDATE EXISTING FILES ONLY
+// CONSOLIDATION STRATEGY: UPDATE EXISTING STRUCTURE ONLY
 // Validate existing context structure
-LS("context/") // Verify context directory structure  
-Glob("context/**/*.md") // Find existing learning and pattern files
+LS("context/") // Verify context directory structure exists
+LS("context/learn/") // Verify learn directory exists  
+LS("context/patterns/") // Verify patterns directory exists
 
-// UPDATE EXISTING PATTERNS FILE (NO NEW FILE CREATION)
+// UPDATE EXISTING LEARNING INSIGHTS FILE (NO NEW FILE CREATION)
+Edit("context/learn/system-integrity-insights.md", `
+## Session: [workflow-type] ([YYYY-MM-DD])
+
+### User Interview Insights
+[Dynamic interview results from Spanish questions]
+
+### Discovered Patterns
+[Patterns identified during session]
+
+### Applied Solutions  
+[Solutions implemented and validated]
+
+### Success Metrics
+[Quantifiable results and improvements]
+
+---
+`)
+
+// UPDATE EXISTING PATTERNS FILE (NO NEW FILE CREATION) 
 Edit("context/patterns/universal-problem-solving-patterns.md", `
-// APPEND new pattern section to existing content
-## [Pattern-Name] Pattern (Session: [YYYY-MM-DD])
+## [Pattern-Name] Pattern ([YYYY-MM-DD])
 **Domain**: [workflow-domain]
 
 ### Pattern Description
 [Pattern identification from execution]
 
-### Decision Points  
+### Decision Points
 [Key decisions made during execution]
 
 ### Alternative Approaches
@@ -209,8 +228,11 @@ Edit("context/patterns/universal-problem-solving-patterns.md", `
 // SYSTEM INTEGRITY VALIDATION
 Task("Matrix Maintenance", "Execute /matrix-maintenance to validate system integrity and cross-reference coherence")
 
-// CONTEXT ORGANIZATION METRICS  
-Bash("find context/ -name '*.md' | wc -l") // File count only - no creation
+// CONTEXT OPTIMIZATION & MAINTENANCE
+Task("Context Optimization", "Execute /context-optimize consolidate to maintain semantic structure and eliminate redundancy after learning capture")
+
+// CONTEXT ORGANIZATION METRICS
+Bash("find context/ -name '*.md' | wc -l") // File count tracking only
 ```
 
 ### Learning Value Calculation

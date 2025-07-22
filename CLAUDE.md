@@ -42,8 +42,9 @@ Commands follow integrated standards → `docs/documentation/writing-standards.m
 
 ### Primary Discovery Flow
 ```
-⟳ /start → [complexity ≥6: /worktree-start] → dynamic questions → /explore-codebase + /explore-web → /think-layers → execution plan → /capture-learnings → [session end: /worktree-close]
-├─ /matrix-maintenance → Cross-reference validation (periodic)
+⟳ /start → [complexity ≥6: /worktree-start] → dynamic questions → /explore-codebase + /explore-web → /think-layers → execution plan → /capture-learnings → /context-optimize → [session end: /worktree-close]
+├─ /matrix-maintenance → Cross-reference validation → /context-optimize (periodic)
+├─ /context-optimize → Automated context maintenance (post-command)
 ├─ /worktree-cleanup → Automated work tree maintenance (weekly)
 ```
 
