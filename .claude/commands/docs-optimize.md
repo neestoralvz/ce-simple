@@ -8,6 +8,21 @@ Execute: `/docs-optimize [target]`
 
 ## 🔧 Implementation
 
+### Behavioral Reinforcement Protocol
+**MANDATORY at optimization initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "📄 CLAUDE_MD: Analyze CLAUDE.md against official Anthropic standards", "status": "pending", "priority": "high", "id": "optimize-claude-1"},
+  {"content": "📅 DATES: Verify and update 'Last Updated: YYYY-MM-DD' temporal accuracy", "status": "pending", "priority": "high", "id": "optimize-dates-1"},
+  {"content": "📏 COMPLIANCE: Execute system-wide standards compliance validation", "status": "pending", "priority": "high", "id": "optimize-compliance-1"},
+  {"content": "⚡ TOKENS: Optimize token efficiency with content density enhancement", "status": "pending", "priority": "medium", "id": "optimize-tokens-1"},
+  {"content": "🔗 INTEGRATION: Validate Claude Code workflow integration compatibility", "status": "pending", "priority": "medium", "id": "optimize-integration-1"}
+])
+```
+
+**Standards-Driven Todos**: Add specific compliance todos based on violations discovered during standards analysis
+
 ### Optimization Protocol
 1. **CLAUDE.MD ANALYSIS**: Evaluate against official Anthropic standards and token efficiency
 2. **DATE MAINTENANCE**: Verify and update "Last Updated: YYYY-MM-DD" for temporal context accuracy
@@ -63,7 +78,7 @@ Execute: `/docs-optimize [target]`
 ## 🔗 See Also
 
 ### Implementation Details
-- `../../standards/docs-optimize-compliance.md` - Complete standards compliance and token efficiency protocols
+- `../docs/quality/docs-optimize-compliance.md` - Complete standards compliance and token efficiency protocols
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated documentation optimization workflow
@@ -73,8 +88,8 @@ Execute: `/docs-optimize [target]`
 
 ### Integration References
 - `context/research/anthropic-claude-md-standards.md` - Official optimization criteria
-- `../../standards/writing-standards.md` - System compliance requirements
-- `../../standards/simplicity-principles.md` - Optimization implementation guidelines
+- `../docs/documentation/writing-standards.md` - System compliance requirements
+- `../docs/documentation/simplicity-principles.md` - Optimization implementation guidelines
 - `context/discoveries/documentation-workflow-discoveries.md` - Optimization methodology
 
 ---

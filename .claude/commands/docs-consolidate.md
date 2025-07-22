@@ -8,11 +8,26 @@ Execute: `/docs-consolidate [scope]`
 
 ## 🔧 Implementation
 
+### Behavioral Reinforcement Protocol
+**MANDATORY at consolidation initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "🔍 ASSESSMENT: Identify content duplication patterns and overlap percentages", "status": "pending", "priority": "high", "id": "consolidate-assess-1"},
+  {"content": "🏛️ AUTHORITY: Establish authoritative sources for duplicated content resolution", "status": "pending", "priority": "high", "id": "consolidate-authority-1"},
+  {"content": "🔗 REFERENCES: Repair broken cross-references and validate link integrity", "status": "pending", "priority": "high", "id": "consolidate-references-1"},
+  {"content": "📊 DISCLOSURE: Execute progressive disclosure for oversized content", "status": "pending", "priority": "medium", "id": "consolidate-disclosure-1"},
+  {"content": "✅ INTEGRITY: Verify system architectural integrity post-consolidation", "status": "pending", "priority": "medium", "id": "consolidate-integrity-1"}
+])
+```
+
+**Dynamic Todo Addition**: Add priority todos for critical consolidation issues discovered during analysis
+
 ### Consolidation Protocol
 **Sequential Execution**: Execute in dependency order to prevent reference breaks during consolidation
 **Duplication Resolution**: Identify and merge overlapping content with authoritative source establishment
 **Reference Repair**: Fix broken cross-references, create missing targets, ensure bidirectional linking
-**Progressive Disclosure**: Extract verbose content from commands to ../../standards/context layers
+**Progressive Disclosure**: Extract verbose content from commands to docs/context layers
 
 ### Consolidation Strategy Framework
 **High Priority** (>40% overlap): Merge files with substantial duplication, establish single sources
@@ -50,9 +65,9 @@ Execute: `/docs-consolidate [scope]`
 ## 🔗 See Also
 
 ### Implementation References
-- `../../standards/docs-consolidate-implementation.md` - Complete consolidation framework details
-- `../../standards/simplicity-principles.md` - Progressive disclosure implementation standards
-- `../../standards/writing-standards.md` - Content unification and organization standards
+- `../docs/implementation/docs-consolidate-implementation.md` - Complete consolidation framework details
+- `../docs/documentation/simplicity-principles.md` - Progressive disclosure implementation standards
+- `../docs/documentation/writing-standards.md` - Content unification and organization standards
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated optimization workflow integration

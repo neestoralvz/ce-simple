@@ -8,6 +8,21 @@ Execute: `/docs-generate [scope]`
 
 ## 🔧 Implementation
 
+### Behavioral Reinforcement Protocol
+**MANDATORY at generation initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "📋 ANALYSIS: Analyze todo plans and validate documentation requirements", "status": "pending", "priority": "high", "id": "generate-analysis-1"},
+  {"content": "🚀 WAVE1: Execute parallel agent deployment for document creation", "status": "pending", "priority": "high", "id": "generate-wave1-1"},
+  {"content": "🔗 WAVE2: Build comprehensive cross-reference integration network", "status": "pending", "priority": "high", "id": "generate-wave2-1"},
+  {"content": "✅ WAVE3: Execute quality validation with comprehensive audit", "status": "pending", "priority": "medium", "id": "generate-wave3-1"},
+  {"content": "🔄 RECOVERY: Monitor and execute error recovery with targeted corrections", "status": "pending", "priority": "medium", "id": "generate-recovery-1"}
+])
+```
+
+**Wave-Progressive Todos**: Add stage-specific todos as each wave completes with quality gate validation
+
 ### Execution Framework
 **3-Wave Strategy**: Parallel creation → Cross-reference integration → Quality validation
 
@@ -41,7 +56,7 @@ Execute: `/docs-generate [scope]`
 ## 🔗 See Also
 
 ### Implementation Details
-- `../../standards/docs-generate-implementation.md` - Complete 3-wave execution framework and integration protocols
+- `../docs/implementation/docs-generate-implementation.md` - Complete 3-wave execution framework and integration protocols
 
 ### Related Commands
 - Execute `/docs-workflow` for complete documentation optimization pipeline

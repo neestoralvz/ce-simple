@@ -1,42 +1,115 @@
 # Think Layers - Progressive Analysis Framework
 
 ## 🎯 Purpose
-Execute progressive cognitive analysis through structured thinking layers: Think → Think-Hard → Think-Harder → Ultra-Think for comprehensive problem solving.
+Execute progressive cognitive analysis: Think → Think-Hard → Think-Harder → Ultra-Think for comprehensive problem solving.
 
 ## 🚀 Usage
 Execute: `/think-layers [analysis-target] [starting-layer]`
 
 ## 🔧 Implementation
 
+### Behavioral Reinforcement Protocol
+**MANDATORY at analysis initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "🧠 DEPTH: Determine analysis depth via /agent-orchestration complexity matrix (L1-L4)", "status": "pending", "priority": "high", "id": "think-depth-1"},
+  {"content": "🔄 ESCALATION: Execute progressive layer escalation with cognitive load management", "status": "pending", "priority": "high", "id": "think-escalate-1"},
+  {"content": "🔀 ORCHESTRATION: Coordinate thinking layers via /agent-orchestration for optimal cognitive distribution", "status": "pending", "priority": "high", "id": "think-orchestration-1"},
+  {"content": "🎯 CONSOLIDATION: Synthesize progressive analysis into implementable action plan", "status": "pending", "priority": "medium", "id": "think-consolidate-1"},
+  {"content": "🤖 DELEGATION: Deploy intelligent task division and workflow coordination", "status": "pending", "priority": "medium", "id": "think-delegate-1"},
+  {"content": "📚 LEARNING: Auto-trigger /capture-learnings if complexity threshold ≥4 points", "status": "pending", "priority": "low", "id": "think-learning-1"}
+])
+```
+
+**Progressive Todo Updates**: Update todos in real-time as thinking layers escalate and insights emerge
+
 ### Progressive Analysis Protocol
-**Auto-Depth Selection**: System determines required thinking depth based on complexity scoring
-**Cognitive Escalation**: Systematic analysis depth increase with load management
-**Integration Cascade**: Build insights across all thinking levels with validation
-**Plan Consolidation**: Convert analysis into implementable steps with agent delegation
+
+#### Agent Orchestration Integration
+**Auto-Triggered**: Deploy `/agent-orchestration` for cognitive load management and layer coordination
+**Parameters**: Analysis complexity, thinking depth requirements, cognitive load limits
+**Output**: Optimal thinking strategy with escalation protocols
+
+#### Intelligent Depth Management
+**Auto-Depth Selection**: System determines required thinking depth via complexity matrix (1-10 scale)
+**Cognitive Load Distribution**: Dynamic balancing across thinking layers via `/agent-orchestration`
+**Progressive Escalation**: Systematic depth increase with automated monitoring
+**Layer Integration**: Build insights across thinking levels with validation protocols
+**Plan Consolidation**: Convert progressive analysis to implementable steps with intelligent delegation
 
 ### Four-Layer Framework
-**Layer 1**: Think (25% load, 2-5min) - Surface patterns and basic understanding
-**Layer 2**: Think-Hard (50% load, 5-15min) - Component analysis and relationships  
-**Layer 3**: Think-Harder (75% load, 15-30min) - Systems integration and strategies
-**Layer 4**: Ultra-Think (95% load, 30-60min) - Meta-analysis and innovation
+**L1**: Think (25% load, 2-5min) - Surface patterns, basic understanding
+**L2**: Think-Hard (50% load, 5-15min) - Component analysis, relationships  
+**L3**: Think-Harder (75% load, 15-30min) - Systems integration, strategies
+**L4**: Ultra-Think (95% load, 30-60min) - Meta-analysis, innovation
 
-### Auto-Activation System
-**Complexity Matrix**:
-- Score 1-3: Simple → Layer 1-2
-- Score 4-6: Moderate → Layer 2-3  
-- Score 7-8: High → Layer 1-4
-- Score 9-10: Maximum → Full 4-layer analysis
+### Auto-Activation & Escalation System
 
-**Dynamic Escalation**: Auto-escalate when contradictions, complexity emergence, or solution inadequacy detected
+#### Complexity-Based Layer Selection (via `/agent-orchestration`)
+**Intelligence Framework**:
+```
+🧠 DEPTH-ANALYSIS: Complexity [N]/10 → Layer requirement determined
+🔄 ESCALATION: Layer-[N] → Assessment → Escalation decision
+⚖️ LOAD-BALANCE: Cognitive load [X]% → Layer coordination optimized
+📊 PROGRESS: Layer [N] completion → Quality assessment → Next layer trigger
+✅ CONSOLIDATION: All layers complete → Synthesis → Action plan generation
+```
 
-### Plan Consolidation Framework
-**AUTO-TRIGGER**: After synthesis completion → Intelligent task division
-**Context Consolidation**: Aggregate discoveries from parallel analysis agents when triggered by `/start`
-**Documentation Detection**: Automatic classification of documentation tasks (README, API docs, guides, .md files)
-**Agent Delegation**: Deploy independent docs-agent for `/docs-workflow` with structured todo plans
-**Parallel Execution**: Documentation workflow + main implementation workflow coordination
+**Complexity Matrix & Layer Allocation**:
+- **Simple** (1-3): L1-L2 sequential → Basic understanding with component analysis
+- **Moderate** (4-6): L2-L3 focus → Relationship mapping with strategy development
+- **Complex** (7-8): L1-L4 full spectrum → Complete progressive analysis
+- **Maximum** (9-10): Full 4-layer → Comprehensive meta-analysis with innovation
 
-*Context consolidation protocols and implementation details in `../../standards/think-layers-implementation.md`*
+**Dynamic Escalation Triggers**: Auto-escalate when contradictions detected, complexity increases, or solution inadequacy identified
+
+### Intelligent Plan Consolidation Framework
+
+#### Result Synthesis & Task Division (via `/agent-orchestration`)
+**Auto-Consolidation Protocol**:
+1. **🧠 SYNTHESIS**: Aggregate insights across all thinking layers with quality validation
+2. **📊 ANALYSIS**: Identify implementation tasks, documentation needs, and execution priorities
+3. **🤖 DIVISION**: Intelligent task categorization and workflow assignment
+4. **🔄 COORDINATION**: Parallel workflow orchestration with progress monitoring
+
+#### Multi-Stream Execution Coordination
+**Documentation Stream**: Auto-classify docs tasks (README, API docs, guides, .md files)
+- Auto-deploy docs-agent for `/docs-workflow` execution with generated todo plans
+- Parallel documentation workflow with main implementation coordination
+
+**Implementation Stream**: Core functionality development with structured task division
+- Coordinate with `/start` for comprehensive agent deployment
+- Integrate with `/matrix-maintenance` for cross-reference validation
+- Execute via `/agent-orchestration` for optimal resource distribution
+
+**Quality Assurance Stream**: Validation and testing coordination
+- Cross-reference integrity via `/matrix-maintenance`
+- Learning capture via `/capture-learnings` for pattern documentation
+- Performance monitoring and optimization feedback loops
+
+### Thinking Layer Orchestration Framework
+
+#### Layer Coordination Protocol (via `/agent-orchestration`)
+**L1 - Think** (25% cognitive load, 2-5min): Surface pattern analysis with basic understanding
+- **Pattern Recognition**: Initial hypothesis generation and basic connections
+- **Context Assembly**: Gather relevant information and establish scope boundaries
+- **Quick Assessment**: Rapid evaluation of complexity and escalation requirements
+
+**L2 - Think-Hard** (50% cognitive load, 5-15min): Component analysis with relationship mapping
+- **Deep Analysis**: Detailed component examination and interdependency mapping
+- **System Understanding**: Comprehensive grasp of relationships and integration points
+- **Strategy Formation**: Initial strategic approaches and solution pathways
+
+**L3 - Think-Harder** (75% cognitive load, 15-30min): Systems integration with strategy development
+- **Complex Integration**: Multi-system analysis with comprehensive understanding
+- **Strategic Planning**: Detailed solution architectures and implementation strategies
+- **Risk Assessment**: Potential challenges and mitigation approaches
+
+**L4 - Ultra-Think** (95% cognitive load, 30-60min): Meta-analysis with innovation
+- **Meta-Analysis**: High-level pattern synthesis and innovation opportunities
+- **Comprehensive Planning**: Complete solution architecture with execution roadmap
+- **Future-Proofing**: Long-term sustainability and evolution considerations
 
 ## ⚡ Triggers
 
@@ -81,60 +154,71 @@ Execute: `/think-layers [analysis-target] [starting-layer]`
 4. **Pattern Documentation** → Capture analysis insights and decision patterns automatically
 5. **System Learning** → Integrate discoveries into context architecture for future analysis enhancement
 
-### Problem-Solving Mode Enhancement
+### Problem-Solving Mode Integration
 
-**SPECIALIZED CAPABILITIES**: When called from `/problem-solving` workflow, each thinking layer applies problem-resolution focused analysis
+#### Enhanced Analysis Capabilities for Problem Resolution
+**Specialized Integration**: When called from `/problem-solving` workflow, each thinking layer applies problem-resolution focused analysis
 
-**🧠 THINK: Problem Understanding & Root Cause Analysis**
-```
-🔍 SYMPTOM ANALYSIS: Break down error manifestation and behavior patterns
-🎯 ROOT CAUSE HYPOTHESIS: Initial theories based on symptoms and context
-⚡ QUICK MITIGATION: Immediate actions to prevent further impact
-📊 IMPACT ASSESSMENT: System stability and user experience evaluation
-```
+**🧠 L1-THINK: Problem Understanding & Root Cause Analysis**
+- **Symptom Analysis**: Break down error manifestation and behavior patterns
+- **Root Cause Hypothesis**: Initial theories based on symptoms and discovered context
+- **Quick Mitigation**: Immediate actions to prevent further impact
+- **Impact Assessment**: System stability and user experience evaluation
 
-**💪 THINK-HARD: Deep Investigation & Solution Architecture**
-```
-🕵️ FORENSIC ANALYSIS: Detailed investigation using internal context and external research
-🔧 SOLUTION STRATEGIES: Multiple approach evaluation with trade-off analysis
-📐 ARCHITECTURE REVIEW: System design implications and improvement opportunities
-🧪 HYPOTHESIS TESTING: Validation approach for root cause theories
-```
+**💪 L2-THINK-HARD: Deep Investigation & Solution Architecture**
+- **Forensic Analysis**: Detailed investigation using internal context and external research
+- **Solution Strategies**: Multiple approach evaluation with trade-off analysis
+- **Architecture Review**: System design implications and improvement opportunities
+- **Hypothesis Testing**: Validation approach for root cause theories
 
-**🚀 THINK-HARDER: Complex Solution Design & Implementation Strategy**
-```
-🏗️ SOLUTION ARCHITECTURE: Comprehensive fix design with dependency analysis
-⚠️ RISK ASSESSMENT: Potential side effects and rollback strategy planning
-🔄 INTEGRATION PLANNING: How solution fits within existing system architecture
-📋 IMPLEMENTATION ROADMAP: Detailed step-by-step execution planning
-```
+**🚀 L3-THINK-HARDER: Complex Solution Design & Implementation Strategy**
+- **Solution Architecture**: Comprehensive fix design with dependency analysis
+- **Risk Assessment**: Potential side effects and rollback strategy planning
+- **Integration Planning**: How solution fits within existing system architecture
+- **Implementation Roadmap**: Detailed step-by-step execution planning
 
-**⭐ ULTRA-THINK: Comprehensive Resolution & Future Prevention**
-```
-🎯 EXECUTION PLAN: Complete solution implementation with validation criteria
-🛡️ PREVENTION STRATEGY: System enhancements to prevent recurrence
-📈 MONITORING APPROACH: Success metrics and ongoing health assessment
-🔄 SYSTEM EVOLUTION: Learning integration and architecture improvements
-```
+**⭐ L4-ULTRA-THINK: Comprehensive Resolution & Future Prevention**
+- **Execution Plan**: Complete solution implementation with validation criteria
+- **Prevention Strategy**: System enhancements to prevent recurrence
+- **Monitoring Approach**: Success metrics and ongoing health assessment
+- **System Evolution**: Learning integration and architecture improvements
 
-**Problem-Solving Integration**:
-- **Context Inheritance**: Receives diagnosis, codebase analysis, and web research from previous phases
-- **Enhanced Analysis**: Applies problem-resolution lens to all thinking layers
-- **Solution Focus**: Prioritizes actionable solutions over theoretical analysis
-- **Risk Awareness**: Considers system stability and rollback requirements throughout analysis
+#### Problem-Solving Integration Success Patterns
+**Context Inheritance**: Receives diagnosis, codebase analysis, and web research from previous phases
+**Enhanced Analysis**: Applies problem-resolution lens to all thinking layers
+**Solution Focus**: Prioritizes actionable solutions over theoretical analysis
+**Risk Awareness**: Considers system stability and rollback requirements throughout analysis
 
-## 🔗 See Also
+## 🔗 Module Integration
 
-### Implementation References
-- `../../standards/think-layers-implementation.md` - Complete analysis framework details
-- `context/discoveries/` - Analysis output documentation location
-- `../../standards/simplicity-principles.md` - Progressive analysis principles
+### Command Module Dependencies
+**Core Integration**:
+- `/agent-orchestration` → Cognitive load management and progressive layer coordination
+- `/matrix-maintenance` → Cross-reference validation during analysis consolidation
 
-### Related Commands
-- Execute `/start` to initiate workflows triggering progressive analysis
-- Execute `/explore-codebase` and `/explore-web` to generate analysis input
-- Execute `/docs-workflow` via automatic delegation for documentation tasks
-- Execute `/capture-learnings` for post-execution pattern detection
+**Execution Chain**:
+- `/start` → Initiates workflows triggering progressive analysis
+- `/explore-codebase` & `/explore-web` → Generate analysis input and context foundation
+- `/docs-workflow` → Automatic delegation for documentation tasks via intelligent task division
+- `/capture-learnings` → Post-execution pattern detection and analysis insight documentation
+- `/problem-solving` → Enhanced integration for problem-resolution focused analysis
+
+### Success Patterns & Performance Metrics
+**Analysis Success**: Clear understanding achieved via optimal layer selection → Plan consolidation triggered
+**Orchestration Success**: Cognitive load optimally distributed → Layer coordination efficiency >90%
+**Synthesis Success**: Implementation roadmap generated → Intelligent task division executed
+**Integration Success**: Multi-agent workflows coordinated → Combined execution readiness achieved
+
+### Integration Success Indicators
+**Cognitive Efficiency**: Optimal thinking depth with minimal cognitive waste
+**Quality Synthesis**: Progressive insights build coherently across layers
+**Intelligent Delegation**: Automatic task division and parallel workflow coordination
+**Learning Integration**: Analysis patterns captured and documented for system enhancement
+
+### Context Output Locations
+- `context/discoveries/` → Analysis output and pattern synthesis documentation
+- `context/patterns/` → Decision frameworks and analytical approach patterns
+- `context/research/` → Cross-domain insights and innovation opportunities
 
 ---
 

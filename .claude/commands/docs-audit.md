@@ -8,6 +8,21 @@ Execute: `/docs-audit [scope]`
 
 ## 🔧 Implementation
 
+### Behavioral Reinforcement Protocol
+**MANDATORY at audit initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "📋 MAPPING: Execute comprehensive structure and file inventory", "status": "pending", "priority": "high", "id": "audit-mapping-1"},
+  {"content": "🔍 DUPLICATION: Identify content overlap and redundancy patterns", "status": "pending", "priority": "high", "id": "audit-duplication-1"},
+  {"content": "🔗 REFERENCES: Validate cross-reference health and link integrity", "status": "pending", "priority": "high", "id": "audit-references-1"},
+  {"content": "📊 HEALTH: Calculate system health score and compliance metrics", "status": "pending", "priority": "medium", "id": "audit-health-1"},
+  {"content": "📝 REPORT: Generate comprehensive audit report with recommendations", "status": "pending", "priority": "medium", "id": "audit-report-1"}
+])
+```
+
+**Issue-Driven Analysis**: Add priority todos based on critical issues discovered during audit
+
 ### Documentation Audit Protocol
 1. **STRUCTURE MAPPING**: Complete directory and file inventory with line counts
 2. **DUPLICATION DETECTION**: Content overlap identification and impact assessment
@@ -71,7 +86,7 @@ Health Score: [X]/100 (Navigation: [Y], Density: [Z], Coherence: [W])
 ## 🔗 See Also
 
 ### Implementation Details
-- `../../standards/docs-audit-metrics.md` - Complete metrics calculation and validation protocols
+- `../docs/quality/docs-audit-metrics.md` - Complete metrics calculation and validation protocols
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated documentation optimization
@@ -82,8 +97,8 @@ Health Score: [X]/100 (Navigation: [Y], Density: [Z], Coherence: [W])
 ### Integration References
 - `context/discoveries/documentation-workflow-discoveries.md` - Audit methodology basis
 - `context/research/anthropic-claude-md-standards.md` - Compliance validation criteria
-- `../../standards/simplicity-principles.md` - Structural assessment framework
-- `../../standards/writing-standards.md` - Content quality evaluation standards
+- `../docs/documentation/simplicity-principles.md` - Structural assessment framework
+- `../docs/documentation/writing-standards.md` - Content quality evaluation standards
 
 ---
 

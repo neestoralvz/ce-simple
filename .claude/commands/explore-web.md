@@ -1,24 +1,51 @@
 # Explore Web - External Pattern Research
 
 ## 🎯 Purpose
-Conduct systematic web research for patterns, solutions, best practices, and implementation examples using parallel search operations for comprehensive coverage.
+Conduct systematic web research for patterns, solutions, and best practices using parallel search operations.
 
 ## 🚀 Usage
 Execute: `/explore-web [search-topic] [research-depth]`
 
 ## 🔧 Implementation
 
-### Research Protocol
-**MANDATORY**: Deploy multiple WebSearch tasks for comprehensive coverage
-**Parallel Research**: Execute 4 simultaneous searches for maximum efficiency
-**Pattern Extraction**: Systematic identification of successful implementation patterns
-**Anti-Bias Validation**: Cross-reference findings across multiple independent sources
+### Behavioral Reinforcement Protocol
+**MANDATORY at research initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "🌐 SCOPE: Determine research depth and topic complexity", "status": "pending", "priority": "high", "id": "web-scope-1"},
+  {"content": "⚡ PARALLEL: Deploy optimal search count (4-16 operations)", "status": "pending", "priority": "high", "id": "web-parallel-1"},
+  {"content": "🔍 VALIDATION: Cross-reference findings across sources", "status": "pending", "priority": "medium", "id": "web-validate-1"},
+  {"content": "🎯 SYNTHESIS: Consolidate research into actionable intelligence", "status": "pending", "priority": "medium", "id": "web-synthesize-1"},
+  {"content": "📝 CONTEXT: Generate research documentation with anti-bias protocols", "status": "pending", "priority": "medium", "id": "web-context-1"}
+])
+```
+
+**Intelligence-Driven Research**: Add dynamic todos based on topic complexity and discovery quality during research
+
+### Dynamic Parallelization Protocol
+**PHASE 1**: Analyze topic complexity and research depth
+**PHASE 2**: Determine optimal search count (4-16 operations)
+**PHASE 3**: Deploy optimized parallel searches in single message
+
+### Research Protocol Framework
+**Analyze Before Execute**: Optimize parallelization via complexity assessment
+**Dynamic Scaling**: 4 searches (simple) → 16 searches (complex)
+**Pattern Extraction**: Systematic identification of successful patterns
+**Anti-Bias**: Cross-reference across multiple independent sources
+
+### Parallelization Intelligence
+**Simple** (4 searches): Implementation patterns, use cases, tools/frameworks, best practices
+**Moderate** (8 searches): Add performance, security, integration, troubleshooting
+**Complex** (16 searches): Add enterprise patterns, advanced architectures, scaling, expert insights
 
 ### Parallel Search Orchestration
-**Search 1**: Implementation patterns and best practices analysis
-**Search 2**: Real-world case studies and practical applications
-**Search 3**: Technology stack analysis and tool comparisons
-**Search 4**: Common problems and proven solutions mapping
+**MAX PARALLELIZATION**: 16 simultaneous WebSearch operations
+
+**Core (4)**: Implementation patterns, case studies, tech stacks, problem solutions
+**Context (4)**: Adjacent tech, performance, security, migration
+**Tools (4)**: Framework comparisons, CI/CD, monitoring, community
+**Advanced (4)**: Trends, expert insights, enterprise scale, success metrics
 
 ### Research Quality Framework
 **Source Diversity**: Multiple independent sources for validation
@@ -33,9 +60,9 @@ Execute: `/explore-web [search-topic] [research-depth]`
 **File Organization**: Structured output to `context/research/` directory
 
 ### Efficiency Optimization
-**70-80% Speed Reduction**: Through parallel search deployment
+**90% Speed Improvement**: 16 searches in 90 seconds vs 16+ minutes sequential
 **Comprehensive Coverage**: Multi-angle analysis with cross-validation
-**Smart Query Adaptation**: Dynamic refinement based on initial results
+**Smart Adaptation**: Dynamic query refinement
 **Quality Assurance**: Authority verification and consensus validation
 
 ## ⚡ Triggers
@@ -59,9 +86,9 @@ Execute: `/explore-web [search-topic] [research-depth]`
 ## 🔗 See Also
 
 ### Implementation References
-- `../../standards/explore-web-implementation.md` - Complete research framework details
+- `../docs/implementation/explore-web-implementation.md` - Complete research framework details
 - `context/research/` - Research output documentation location
-- `../../standards/anti-bias-rules.md` - Research neutrality standards
+- `../docs/quality/anti-bias-rules.md` - Research neutrality standards
 
 ### Related Commands
 - Execute `/start` to initiate discovery workflows triggering research

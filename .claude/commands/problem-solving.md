@@ -9,131 +9,45 @@ Universal methodology for systematic problem resolution through structured diagn
 
 ## 🔧 Implementation
 
-### 5-Phase Universal Methodology
+### Enhanced Behavioral Reinforcement Protocol
+**MANDATORY at problem-solving initialization**:
 
-#### Phase 1: Problem Identification & Diagnosis
-**Structured Error Analysis**:
-```
-🔍 SYMPTOM IDENTIFICATION: Document exact error messages, unexpected behaviors
-📊 PROBLEM CLASSIFICATION: Code/System/Architecture/Configuration/Performance
-🎯 IMPACT ASSESSMENT: Affected components, user experience, system stability
-⚡ CONTEXT CAPTURE: Environment, timing, reproducibility, related changes
-```
-
-**Diagnostic Framework**:
-- **Error Type**: Exception, Logic, Performance, Integration, Configuration
-- **Severity**: Critical, High, Medium, Low impact classification
-- **Scope**: Local, Module, System-wide, External dependency
-- **Reproducibility**: Always, Intermittent, Specific conditions, One-time
-
-#### Phase 2: Internal Context Discovery
-**Leverage Existing `/explore-codebase`**:
-```
-⚡ EXECUTE: /explore-codebase with problem-focused search parameters
-📁 FILE DISCOVERY: Relevant source files, configuration, dependencies
-🔗 DEPENDENCY MAPPING: Related components, imports, function calls
-📋 PATTERN ANALYSIS: Similar code structures, error handling approaches
+```javascript
+TodoWrite([
+  {"content": "🔍 PHASE 0: Execute pre-solution structural assessment and mapping", "status": "pending", "priority": "high", "id": "solve-phase0-1"},
+  {"content": "🗺️ STRUCTURAL: Generate cross-reference matrix and dependency analysis via /matrix-maintenance", "status": "pending", "priority": "high", "id": "solve-structural-1"},
+  {"content": "📊 COMPLEXITY: Assess problem complexity and failure patterns", "status": "pending", "priority": "high", "id": "solve-complexity-1"},
+  {"content": "🔗 INTEGRATION: Deploy explore-codebase + explore-web with validation protocols", "status": "pending", "priority": "high", "id": "solve-integration-1"},
+  {"content": "🧠 ANALYSIS: Apply think-layers for multi-phase resolution planning", "status": "pending", "priority": "medium", "id": "solve-analysis-1"},
+  {"content": "🛡️ PREVENTION: Generate risk assessment and mitigation strategies", "status": "pending", "priority": "medium", "id": "solve-prevention-1"},
+  {"content": "✅ SOLUTION: Create executable solution plan with failure prevention", "status": "pending", "priority": "medium", "id": "solve-solution-1"}
+])
 ```
 
-**Context Enhancement**:
-- Error location analysis and surrounding code examination
-- Related function/class/module identification
-- Configuration and environment file analysis
-- Recent changes and commit history relevant to problem area
+**Problem-Adaptive Todos**: Add specific todos based on problem type and complexity discovered during diagnosis
 
-#### Phase 3: External Knowledge Research
-**Leverage Existing `/explore-web` with Enhanced Search Strategy**:
-```
-⚡ EXECUTE: /explore-web with targeted problem/technology searches
-🌐 ERROR PATTERNS: Search specific error messages and symptoms
-📚 TECHNOLOGY RESEARCH: Framework/language-specific troubleshooting
-🔧 SOLUTION PATTERNS: Best practices, common fixes, implementation approaches
-⭐ COMMUNITY INSIGHTS: Stack Overflow, documentation, expert discussions
-```
+### Enhanced Resolution Protocol
+**Sequential Execution**: 6-phase methodology with mandatory structural assessment
+**Integration**: Leverages cross-reference matrix and enhanced command integration
+**Auto-Trigger**: Activated on error detection with failure prevention protocols
+**Progressive Analysis**: Escalating depth with structural validation at each phase
 
-**Targeted Search Enhancement**:
-- Specific error message research with technology context
-- Framework/library-specific problem resolution patterns
-- Performance optimization and debugging techniques
-- Security implications and best practice validation
+### Enhanced Execution Framework
+**Phase 0**: Pre-solution structural assessment and dependency mapping
+**Phase 1**: Cross-reference matrix generation and failure pattern analysis
+**Phase 2**: Enhanced internal context discovery using /explore-codebase with validation
+**Phase 3**: Comprehensive external research using /explore-web with cross-validation
+**Phase 4**: Multi-layer analysis using /think-layers with structural intelligence
+**Phase 5**: Risk assessment and prevention planning with mitigation strategies
+**Phase 6**: Executable solution planning with comprehensive failure prevention
 
-#### Phase 4: Enhanced Multi-Layer Analysis
-**Leverage Existing `/think-layers` with Problem-Solving Capabilities**:
-
-**🧠 THINK: Problem Understanding & Initial Solutions**
-- Root cause analysis based on symptoms and research
-- Initial solution approach identification
-- Quick wins and immediate mitigation strategies
-
-**💪 THINK-HARD: Deep Pattern Analysis & Solution Architecture** 
-- Comprehensive root cause investigation
-- Multiple solution strategy evaluation
-- Trade-off analysis and approach comparison
-
-**🚀 THINK-HARDER: Complex Integration & Implementation Strategy**
-- Detailed implementation planning with dependency consideration
-- Risk assessment and rollback strategy design
-- Testing approach and validation framework
-
-**⭐ ULTRA-THINK: Comprehensive Solution Plan & Execution Roadmap**
-- Complete step-by-step execution plan
-- Resource requirements and timeline estimation
-- Success criteria definition and monitoring approach
-
-#### Phase 5: Solution Planning & Execution Preparation
-**Executable Plan Generation**:
-```
-📋 SOLUTION PLAN: Step-by-step implementation roadmap
-🔧 RESOURCE MAPPING: Required tools, files, external dependencies
-✅ VALIDATION CRITERIA: Success metrics and testing approach
-⚠️ RISK MITIGATION: Rollback procedures and contingency planning
-```
-
-### Automatic Integration Framework
-
-#### Error Detection Triggers
-**Auto-Activation Conditions**:
-- Command execution failures with error messages
-- System health degradation detected
-- User reports of unexpected behavior
-- Performance threshold violations
-- Integration failures between components
-
-#### Integration Points with Existing Commands
-**Seamless Command Integration**:
-- Any command can invoke `/problem-solving` when errors encountered
-- Existing commands enhanced with error detection and auto-trigger logic
-- Context preservation from originating command to problem-solving workflow
-- Solution application coordinated with original command objectives
-
-### Enhanced Search Capabilities
-
-#### Problem-Specific Web Research
-**Targeted Search Strategy** (extending `/explore-web`):
-```
-🔍 ERROR-SPECIFIC: "[exact error message]" + technology stack
-📚 SOLUTION-FOCUSED: "how to fix [problem type]" + framework version
-🛠️ IMPLEMENTATION: "[technology] best practices [problem domain]" 
-⚡ COMMUNITY: "[error] site:stackoverflow.com OR site:github.com"
-```
-
-#### Smart Query Generation
-- Automatic search query optimization based on problem context
-- Technology stack detection and inclusion in searches
-- Error message extraction and search query formation
-- Solution pattern discovery through intelligent search refinement
-
-### Notification Integration
-
-#### Problem-Solving Progress Tracking
-```
-🔍 DIAGNOSIS: Problem identified → [type] classified, [severity] level
-📁 DISCOVERY: Context analysis → [N] relevant files found
-🌐 RESEARCH: External knowledge → [N] solution patterns discovered  
-🧠 ANALYSIS: Think-layers active → Level [N] ([problem-solving mode])
-📋 SOLUTION: Plan generated → [N] implementation steps ready
-✅ READY: Execution plan complete → Solution deployment prepared
-```
+### Structural Assessment Requirements
+**MANDATORY Phase 0**: Before any solution implementation:
+- Execute structural mapping of problem domain
+- Generate dependency cross-reference matrix via `/matrix-maintenance validate`
+- Validate exploration completeness using established protocols
+- Assess risk factors and potential failure modes
+- Document structural constraints and requirements
 
 ## ⚡ Triggers
 
@@ -154,16 +68,26 @@ Universal methodology for systematic problem resolution through structured diagn
 
 ## 🔗 See Also
 
-### Leveraged Commands
-- Execute `/explore-codebase` for internal context and file discovery
-- Execute `/explore-web` for external research and solution patterns  
-- Execute `/think-layers` with enhanced problem-solving analysis capabilities
-- Execute `/capture-learnings` for solution pattern documentation
+### Enhanced Implementation References
+- `../docs/implementation/problem-solving-implementation.md` - Complete 6-phase methodology with Phase 0 protocols
+- `../docs/methodology/cross-reference-matrix-framework.md` - FMEA implementation for software systems
+- `../docs/methodology/structural-failure-prevention.md` - Prevention strategies and assessment protocols
+- `../docs/workflow/workflow-notifications.md` - Problem-solving progress tracking standards
+- `../docs/workflow/git-integration.md` - Solution deployment and error recovery protocols
+- `../docs/maintenance/matrix-maintenance-implementation.md` - Auto-trigger matrix validation for structural assessment
 
-### Integration References
-- All existing commands enhanced with automatic problem-solving integration
-- Error detection protocols established across command ecosystem
-- Solution application coordinated with original command objectives
+### Enhanced Command Flow
+1. **problem-solving** → STRUCTURAL-ASSESSMENT (Phase 0)
+2. **CROSS-REF-MATRIX** → /explore-codebase + /explore-web (validated)
+3. **VALIDATION-PROTOCOLS** → /think-layers (enhanced)
+4. **PREVENTION-PLANNING** → Solution implementation
+
+### Related Commands
+- Execute `/matrix-maintenance` for cross-reference matrix validation and structural assessment
+- Execute `/explore-codebase` with enhanced validation protocols for comprehensive internal discovery
+- Execute `/explore-web` with cross-validation requirements for external research patterns
+- Execute `/think-layers` with structural intelligence and prevention planning capabilities
+- Execute `/capture-learnings` for enhanced solution pattern documentation with failure prevention insights
 
 ---
 

@@ -8,6 +8,21 @@ Execute: `/docs-validate [scope]`
 
 ## 🔧 Implementation
 
+### Behavioral Reinforcement Protocol
+**MANDATORY at validation initialization**:
+
+```javascript
+TodoWrite([
+  {"content": "🔗 REFERENCES: Execute comprehensive cross-reference network integrity testing", "status": "pending", "priority": "high", "id": "validate-references-1"},
+  {"content": "📊 HEALTH: Calculate system health score with comprehensive metrics analysis", "status": "pending", "priority": "high", "id": "validate-health-1"},
+  {"content": "🧭 NAVIGATION: Verify cognitive efficiency and accessibility requirements", "status": "pending", "priority": "high", "id": "validate-navigation-1"},
+  {"content": "📏 COMPLIANCE: Execute standards compliance verification and size validation", "status": "pending", "priority": "medium", "id": "validate-compliance-1"},
+  {"content": "🔍 REGRESSION: Detect system degradation and generate comprehensive report", "status": "pending", "priority": "medium", "id": "validate-regression-1"}
+])
+```
+
+**Health-Driven Todos**: Add targeted validation todos for critical issues requiring immediate remediation
+
 ### Validation Protocol
 **Reference Integrity**: Test all cross-references and internal links for functionality
 **Health Assessment**: Calculate comprehensive system health metrics and compliance standards
@@ -50,9 +65,9 @@ Execute: `/docs-validate [scope]`
 ## 🔗 See Also
 
 ### Implementation References
-- `../../standards/docs-validate-implementation.md` - Complete validation framework details
-- `../../standards/writing-standards.md` - Compliance validation criteria
-- `../../standards/simplicity-principles.md` - Quality assurance framework
+- `../docs/quality/docs-validate-implementation.md` - Complete validation framework details
+- `../docs/documentation/writing-standards.md` - Compliance validation criteria
+- `../docs/documentation/simplicity-principles.md` - Quality assurance framework
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated optimization workflow
