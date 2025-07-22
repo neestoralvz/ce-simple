@@ -94,5 +94,22 @@
 - **Feature Management**: Progressive disclosure for new capabilities
 - **Backward Compatibility**: Maintain simple interfaces while adding power
 
+## Research Resources
+
+### Claude MD Standards  
+**Source**: Anthropic official documentation standards
+**Application**: Command documentation formatting and structure
+**Integration**: Writing standards compliance across all commands
+
+### Git WorkTrees + AI Agents Integration
+**Pattern**: Isolated development environments for complex workflows  
+**Benefits**: Risk mitigation, parallel development, clean state management
+**Usage**: `/worktree-start` and `/worktree-close` command implementation
+
+### Semantic Categorization Framework
+**Framework**: 3-tier categorization system for knowledge organization
+**Structure**: Primary categories → Domain specialization → Content types
+**Integration**: Context file organization and naming conventions
+
 ---
 *Development complexity analysis active - Next complexity audit: Weekly with command updates*
