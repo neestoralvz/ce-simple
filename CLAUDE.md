@@ -8,6 +8,8 @@
 
 **Core Philosophy**: Pragmatic effectiveness, autocontained commands, LLM optimized, anti-bias processing → `docs/system/architectural-principles.md`
 
+**Meticulous Protocol**: Exhaustive verification when "meticulosamente" specified → `docs/quality/meticulous-verification-protocol.md`
+
 **File Management Rules**: All file creation restrictions and maintenance rules → `docs/quality/anti-bias-rules.md`
 
 ## 🚀 COMMAND DIRECTORY
