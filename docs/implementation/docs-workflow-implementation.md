@@ -101,24 +101,12 @@
 
 **Success Commit Structure**:
 ```bash
-git add . && git commit -m "docs-workflow: [mode] | health [before]%→[after]% | [X]min | [Y] issues resolved
-
-🔄 QUALITY MANAGEMENT:
-- Recursive iterations: [N]/3
-- Final quality score: [X]%
-- Threshold status: [Achieved/Exceeded]
-- System stability: [Status]
-
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "docs-workflow: [mode] | health: [before]%→[after]% | time: [X]min | issues: [Y] resolved | iterations: [N]/3 ✓session-[N]"
 ```
 
 **Error Recovery Commit** (if partial success):
 ```bash
-git add . && git commit -m "docs-workflow: [mode] partial | [X] issues pending | next: [actions]
-
-🤖 Generated with Claude Code - Partial
-Co-Authored-By: Claude <noreply@anthropic.com>"
+git add . && git commit -m "docs-workflow: [mode] partial | pending: [X] issues | next: [actions] ⚠️session-[N]"
 ```
 
 ### Comprehensive Reporting Framework

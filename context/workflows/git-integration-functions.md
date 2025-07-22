@@ -156,7 +156,7 @@ function assess_merge_readiness() {
 ```bash
 function calculate_workflow_trends() {
     local days="${1:-30}"
-    local workflow_executions=$(git log --grep="Generated with Claude Code" --since="${days} days ago" --format="%ai" | wc -l)
+    local workflow_executions=$(git log --grep="session-" --since="${days} days ago" --format="%ai" | wc -l)
     local avg_frequency=$(echo "scale=2; ${workflow_executions} / ${days} * 7" | bc 2>/dev/null || echo "N/A")
     
     echo "Trend: ${workflow_executions} executions in ${days} days (${avg_frequency} per week)"
