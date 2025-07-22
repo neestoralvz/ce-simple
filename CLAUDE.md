@@ -33,6 +33,7 @@
 
 ### System Maintenance
 - **`/matrix-maintenance`** - Cross-reference matrix validation and system integrity monitoring
+- **`/context-optimize`** - Intelligent context maintenance with consolidation and density optimization
 
 ### System Standards
 Commands follow integrated standards → `docs/documentation/writing-standards.md`, `docs/workflow/workflow-notifications.md`, `docs/quality/anti-bias-rules.md`, `docs/command/command-template.md`

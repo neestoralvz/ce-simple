@@ -76,10 +76,10 @@ TodoWrite([
 #### Intelligent Documentation Organization
 **INTELLIGENT FILE STRATEGY**:
 - **Primary**: Update `context/patterns/universal-problem-solving-patterns.md` → Add validated patterns
-- **Secondary**: Update `context/workflows/workflow-notifications.md` → Document insights
-- **New Files**: ALLOWED when passing quality gates (max 2-3 per session, user value, unique content)
-- **Target**: `context/discoveries/` for genuine insights, `context/patterns/` for validated patterns
-- **Prohibited**: Auto-timestamped files, meta-documentation, system self-analysis
+- **Secondary**: Update `context/workflows/workflow-notifications.md` → Document insights  
+- **STRICT POLICY**: NO new file creation - UPDATE existing files only
+- **Target**: Existing files in `context/patterns/` for validated patterns
+- **Prohibited**: Auto-timestamped files, meta-documentation, system self-analysis, ANY new file creation
 
 #### System Integrity Validation Framework
 **Activation Protocol**: When interview threshold (≥4 points) exceeded
@@ -177,48 +177,21 @@ Grep("TODO|FIXME|PATTERN|DECISION", {glob: "context/**/*.md", output_mode: "cont
 Grep("successful|failure|alternative|tradeoff", {glob: "context/**/*.md", output_mode: "content"})
 
 // PHASE 2: RESULTS LEARNING (post-execution assessment)
-// SEMANTIC CONSOLIDATION: Update domain-specific learning files
-// Determine target file based on workflow domain
-Read("context/learn/") // Explore existing learning files
-Grep("workflow-type|domain", {output_mode: "content"}) // Identify appropriate target
+// CONSOLIDATION STRATEGY: UPDATE EXISTING FILES ONLY
+// Validate existing context structure
+LS("context/") // Verify context directory structure  
+Glob("context/**/*.md") // Find existing learning and pattern files
 
-// CONSOLIDATION LOGIC: Update existing semantic files instead of creating timestamped ones
-// Target files: learn/[domain]-[theme]-insights.md
-Edit("context/learn/[domain]-insights.md", `
-## Session: [YYYY-MM-DD]
-
-### User Interview Insights
-1. ¿Qué aspectos de esta sesión fueron más útiles para ti?
-   [User response]
-
-2. ¿Hubo algún momento donde el sistema no se comportó como esperabas?
-   [User response]
-
-3. ¿Qué información adicional habrías necesitado durante el proceso?
-   [User response]
-
-4. ¿Los resultados coinciden con lo que buscabas inicialmente?
-   [User response]
-
-5. ¿Qué mejorarías del workflow que acabamos de ejecutar?
-   [User response]
-
-### Learning Insights
-[Insights derived from user responses]
-
-**Last Updated**: [current-timestamp]
-`)
-
-// PATTERN CONSOLIDATION: Update universal patterns file
+// UPDATE EXISTING PATTERNS FILE (NO NEW FILE CREATION)
 Edit("context/patterns/universal-problem-solving-patterns.md", `
-## [Pattern-Name] Pattern
-**Discovered**: [YYYY-MM-DD]
+// APPEND new pattern section to existing content
+## [Pattern-Name] Pattern (Session: [YYYY-MM-DD])
 **Domain**: [workflow-domain]
 
 ### Pattern Description
 [Pattern identification from execution]
 
-### Decision Points
+### Decision Points  
 [Key decisions made during execution]
 
 ### Alternative Approaches
@@ -230,34 +203,14 @@ Edit("context/patterns/universal-problem-solving-patterns.md", `
 ### Reusability Guidelines
 [How this pattern applies to other contexts]
 
-**Last Updated**: [current-timestamp]
+---
 `)
 
 // SYSTEM INTEGRITY VALIDATION
 Task("Matrix Maintenance", "Execute /matrix-maintenance to validate system integrity and cross-reference coherence")
 
-// CONTEXT ORGANIZATION METRICS
-Bash("find context/ -name '*.md' | wc -l && echo 'Total files:' && find context/ -name '*.md' -exec wc -l {} + | tail -1") // Combined metrics
-
-// DISCOVERY CONSOLIDATION: Update appropriate discovery file based on session type
-Edit("context/discoveries/[session-type]-discoveries.md", `
-## Discovery Session: [YYYY-MM-DD]
-**Learning Value Score**: [calculated_score]/10
-**Session Type**: [workflow-type]
-
-### Session Analysis
-- Patterns Identified: [pattern_count]
-- User Insights: [insight_count]  
-- System Improvements: [improvement_count]
-
-### Key Discoveries
-[Major insights from this learning session]
-
-### Implementation Actions
-[Specific improvements to implement]
-
-**Last Updated**: [current-timestamp]
-`)
+// CONTEXT ORGANIZATION METRICS  
+Bash("find context/ -name '*.md' | wc -l") // File count only - no creation
 ```
 
 ### Learning Value Calculation
