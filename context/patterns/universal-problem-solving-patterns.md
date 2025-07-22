@@ -107,3 +107,19 @@
 **Detection Method**: Tool call ratio analysis revealing <1:1 implementation to documentation ratio
 **Prevention Framework**: 3:1 minimum tool call requirement, mandatory execution layer sections
 **System Recovery**: Immediate audit and enforcement protocol preventing future theater incidents
+
+## Optimization Patterns
+
+### Bash Authorization Grouping Pattern
+**Problem**: Multiple individual bash calculations requiring separate authorizations (7→2 achieved: 71% reduction)
+**Solution**: Logical grouping of mathematical operations in single bash commands with detailed output
+**Evidence**: docs-validate.md (4→1) + docs-audit.md (3→1) optimization successfully implemented
+**User Validation**: "Estoy complacido con que hubiéramos reducido las autorizaciones BASH de 7 a 2"
+**Reusability Confirmed**: "siempre que podamos deberíamos intentar reducir el número de operaciones o agruparlas de manera lógica"
+**Process Validation**: "el análisis inicial ayuda mucho... La implementación estuvo bien, el resultado estuvo bien, el flujo de análisis es justo lo que esperaría"
+
+### Progressive Analysis Flow Pattern
+**Framework**: Analysis → Exploration → Implementation → Validation approach confirmed effective
+**User Confirmation**: "el flujo de análisis es justo lo que esperaría" 
+**Application Strategy**: Continue systematic pre-analysis for optimization opportunities
+**Integration**: Apply grouping strategy across command system for authorization reduction

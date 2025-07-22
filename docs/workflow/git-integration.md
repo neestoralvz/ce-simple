@@ -7,22 +7,22 @@ Define standardized Git integration patterns for workflow commands to enable aut
 
 ### Success Completion Template
 ```bash
-git add . && git commit -m "[command]: [action] | files: [N] | time: [X]min | quality: [X]% ✓session-[N]"
+git add . && git commit -m "[command]: [action] | [key-metric] | [status] ✓session-[N]"
 ```
 
 ### Health Check Template
 ```bash
-git add . && git commit -m "[command]: health check | status: [Healthy/Attention/Critical] | quality: [X]% | trend: [direction] ✓session-[N]"
+git add . && git commit -m "[command]: health check | status: [state] | metrics: [X]% | trend: [direction] ✓session-[N]"
 ```
 
 ### Discovery Workflow Template
 ```bash
-git add . && git commit -m "[command]: [intent] | complexity: [X]/10 | time: [X]min | outcome: [result] ✓session-[N]"
+git add . && git commit -m "[command]: [intent] | complexity: [X]/10 | outcome: [result] ✓session-[N]"
 ```
 
 ### Partial Success Template
 ```bash
-git add . && git commit -m "[command]: partial completion | completed: [X]/[Y] | pending: [issues] | next: [actions] ⚠️session-[N]"
+git add . && git commit -m "[command]: partial | completed: [X]/[Y] | pending: [issues] ⚠️session-[N]"
 ```
 
 ## 🔧 Core Integration Patterns
@@ -34,7 +34,7 @@ git add . && git commit -m "[command]: partial completion | completed: [X]/[Y] |
 
 ### Standard Commit Message Structure
 ```bash
-git add . && git commit -m "[command]: [operation] | [key-metric] | time: [X]min | [outcome] ✓session-[N]"
+git add . && git commit -m "[command]: [operation] | [key-metric] | [outcome] ✓session-[N]"
 ```
 
 ## 📊 Metric Integration Functions
