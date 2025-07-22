@@ -151,12 +151,13 @@ TodoWrite([
 **System Enhancement Impact**: Learning patterns and integrity findings influence future workflow optimization
 **Documentation Quality**: Evidence-based pattern documentation with structured organization and cross-validation
 
-### Context Documentation Locations
-**Primary Output Directories**:
-- `context/experience/` → User interview responses and behavioral insights
-- `context/patterns/` → Documented patterns, approaches, and best practices
-- `context/discoveries/` → Process learning, decisions, and workflow insights
-- **Anti-Fragmentation**: Consolidated documentation with maximum density and cross-reference integrity
+### Semantic Context Organization
+**Semantic Consolidation Targets**:
+- `context/learn/` → Domain-specific learning consolidation (git, system, workflow, etc.)
+- `context/patterns/` → Validated patterns with reusability guidelines
+- `context/dev/` → Development insights and complexity analysis
+- `context/ops/` → Operations workflow and monitoring insights
+- **Consolidation Strategy**: Update existing semantic files with timestamp tracking only
 
 ## ⚡ EXECUTION LAYER
 
