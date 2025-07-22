@@ -52,45 +52,17 @@ Execute: `/start [optional: initial request]`
 - **Load Balancing**: Distribute tasks across multiple agent instances
 - **Context Switching**: Minimize context loss during agent handoffs
 
-### Intelligent Notification System
-**Real-Time Progress with Decision Context**:
-```
-🎯 START: Discovery initiated [timestamp]
-📊 DISCOVERY: Questions generated → User response required
-🧠 DECISION: [Brief decision reasoning]
-🔧 EXPLORATION: Deploying [N] agents → [strategy + rationale]
-⚡ ANALYSIS: Think-layers activated → Level [N] ([why this depth])
-🧠 LEARNING: Pattern capture active → Process learning in parallel
-✓ COMPLETION: Plan generated → Ready for execution
-🎯 ASSESSMENT: Post-execution learning evaluation → [interview decision]
-```
+### Intelligent Orchestration
+**Real-Time Progress**: Discovery → Dynamic questions → Context validation → Multi-agent deployment
 
-**Decision Transparency Examples**:
-```
-🧠 DECISION: Local exploration sufficient → Request matches existing patterns
-🧠 DECISION: Web research needed → External validation required for solution
-🧠 DECISION: Parallel agents optimal → Independent domains identified
-🧠 DECISION: Sequential flow required → Analysis dependencies detected
-🧠 DECISION: Level 3 analysis needed → Complex integration patterns found
-🧠 DECISION: Sufficient at level 2 → Clear execution path identified
-```
+**Decision Framework**: Transparent rationale for exploration strategy, agent coordination, and analysis depth selection
 
-**Agent Communication Protocol**:
-- **Deploy**: Main agent → Task agent with specific objectives
-- **Execute**: Task agent performs assigned function
-- **Return**: Task agent → Main agent with results summary
-- **Announce**: Main agent updates user with progress + brief rationale
+**Communication Protocol**: Deploy → Execute → Return → Announce cycle with progress rationale
 
-### Auto-Activation Triggers
-**IMMEDIATE Activation**:
-- User provides initial request with `/start`
-- Insufficient context detected in any command
-- Complex multi-step request identified
+### Auto-Activation Framework
+**IMMEDIATE Triggers**: Direct `/start` invocation, insufficient context detection, complex multi-step requests
 
-**Quick Decision Matrix**:
-- **Complexity ≤5**: Local exploration, sequential agents, level 1-2 analysis
-- **Complexity 6-7**: Mixed exploration, context-dependent agents, level 2-3 analysis  
-- **Complexity ≥8**: Full exploration, parallel agents, level 3-4 analysis
+**Complexity Matrix**: ≤5 (local+sequential+L1-2) → 6-7 (mixed+context+L2-3) → ≥8 (full+parallel+L3-4)
 
 ### Output Standards
 **Context Generation**:
@@ -122,18 +94,38 @@ Execute: `/start [optional: initial request]`
 **Exploration Success**: Comprehensive patterns identified → Generate actionable plan
 **Analysis Success**: Clear execution roadmap created → Initiate implementation
 
-### Git Integration Protocol
-**SESSION-COMPLETION Tracking**: Automatic commit generation on successful discovery workflow completion
+### Automatic Learning Capture Protocol
+**POST-WORKFLOW ASSESSMENT**: After workflow completion, evaluate learning value using scoring framework
 
-**Commit Structure**:
-```bash
-git add . && git commit -m "start: [intent] | [complexity]([X]) | [X]min | [outcome]
+**Learning Value Detection**:
+```
+📊 AUTO-SCORING: Calculate session complexity and learning value
+🎯 THRESHOLD: ≥4 points → Automatic /capture-learnings execution
+🔄 DECISION-LOGIC:
+  - Sequential commands >2 (+2 points)
+  - Error resolution occurred (+2 points)  
+  - New patterns discovered (+2 points)
+  - Alternative strategies (+1 point)
+  - Context switching required (+1 point)
 
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
+🧠 AUTO-EXECUTE: /capture-learnings when threshold exceeded
+⚡ NOTIFICATION: Learning capture initiated → Dynamic interview activated
 ```
 
+**Automatic Integration Framework**:
+1. **Workflow Complete** → Calculate learning value score from session
+2. **Threshold Assessment** → Compare against ≥4 point minimum requirement
+3. **Auto-Execution** → Launch /capture-learnings with session context when threshold met
+4. **Learning Documentation** → Capture patterns and user insights automatically
+5. **System Enhancement** → Apply learning insights to future workflow optimization
+
+### Git Integration Protocol
+**SESSION-COMPLETION Tracking**: Automatic standardized commit generation on successful workflow completion
+
 ## 🔗 See Also
+
+### Implementation Details
+- `../../standards/start-agent-communication.md` - Complete agent communication protocols and decision transparency framework
 
 ### Related Commands
 - Execute `/explore-codebase` for internal knowledge discovery and pattern analysis

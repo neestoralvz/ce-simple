@@ -37,51 +37,12 @@ Compliance: [X]% files within size limits, [Y] standard violations
 Health Score: [X]/100 (Navigation: [Y], Density: [Z], Coherence: [W])
 ```
 
-### Issue Categorization Matrix
-**CRITICAL Issues** (Immediate attention required):
-- Duplicate content >40% overlap between files
-- Broken references >10% of total links
-- File size violations >200 lines
-- Authority conflicts (multiple files claiming same domain)
+### Analysis Framework
+**Issue Classification**: CRITICAL (>40% duplication, >10% broken links) → WARNING (20-40%, 5-10%) → INFO (<20%, <5%)
 
-**WARNING Issues** (Review recommended):
-- Moderate duplication 20-40% overlap
-- Broken references 5-10% of total links
-- File size approaching limits 180-200 lines
-- Cross-reference gaps in navigation chain
+**Health Scoring**: Link integrity (25pts) + Navigation efficiency (10pts) + Content density (25pts) + Structure coherence (25pts) + Compliance (15pts) = 100pts total
 
-**INFO Issues** (Optimization opportunities):
-- Minor duplication <20% overlap
-- Isolated broken references <5%
-- Suboptimal file organization
-- Navigation efficiency improvements available
-
-### Health Metrics Calculation
-**Documentation Effectiveness Scoring**:
-- **Link Health**: Functional references / Total references × 25 points
-- **Navigation Efficiency**: (3.0 - Average cognitive steps) × 10 points
-- **Content Density**: Value per cognitive unit × 25 points
-- **Structural Coherence**: Logical organization assessment × 25 points
-- **Standards Compliance**: Files within limits / Total files × 15 points
-
-**Target Thresholds**:
-- >90 points: Excellent documentation health
-- 75-90 points: Good health with minor optimization opportunities
-- 60-75 points: Moderate health requiring attention
-- <60 points: Poor health requiring systematic remediation
-
-### Automated Validation Protocols
-**Quick Health Check Commands**:
-```bash
-# File size validation
-find . -name "*.md" -exec wc -l {} \; | awk '$1 > 200'
-
-# Cross-reference validation
-grep -r "\.md" --include="*.md" . | grep -v "archive"
-
-# Duplication detection pattern
-grep -r "CRITICAL\|MANDATORY\|REQUIRED" --include="*.md" .
-```
+**Quality Thresholds**: >90pts (Excellent) → 75-90pts (Good) → 60-75pts (Moderate) → <60pts (Poor)
 
 ## ⚡ Triggers
 
@@ -98,51 +59,9 @@ grep -r "CRITICAL\|MANDATORY\|REQUIRED" --include="*.md" .
 **Chain**: audit → workflow (complete) OR audit → generate → optimize → validate (with plans)
 
 ### Git Integration Protocol
-**BASELINE ESTABLISHMENT**: Automatic Git tracking for audit sessions establishing quality baselines
+**BASELINE ESTABLISHMENT**: Automatic Git tracking for audit sessions with quality benchmarking
 
-**Audit Completion Commit** (when significant findings):
-```bash
-git add . && git commit -m "docs-audit: System health assessment completed
-
-📊 AUDIT RESULTS:
-- Files analyzed: [N]
-- Health score: [X]%
-- Issues identified: [N] critical, [N] warning, [N] info
-- Analysis duration: [X] minutes
-
-🔍 SYSTEM STATUS:
-- Reference integrity: [X]%
-- Template compliance: [X]%
-- Cross-reference health: [X]%
-- Content quality: [X]%
-
-🎯 RECOMMENDATIONS:
-- Priority actions: [list]
-- Workflow triggers: [triggered/not-triggered]
-- Next audit recommended: [timeframe]
-- System trend: [improving/stable/declining]
-
-📈 BASELINE ESTABLISHED:
-- Quality benchmark: [X]% for future comparisons
-- Issue tracking: [patterns identified]
-- Performance baseline: [metrics captured]
-
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
-```
-
-**Health Check Commit** (for regular maintenance audits):
-```bash
-git add . && git commit -m "docs-audit: Regular health check completed
-
-📊 HEALTH CHECK: [Date] system maintenance validation
-✅ Status: [Healthy/Attention-Needed/Critical]
-📈 Quality: [X]% (trend: [direction])
-🔧 Actions: [none-required/maintenance-scheduled/immediate-attention]
-
-🤖 Generated with Claude Code - Health Check
-Co-Authored-By: Claude <noreply@anthropic.com>"
-```
+**Automated Commit Templates**: Generate standardized commit messages based on audit findings and system health status
 
 ### Success Patterns
 **Audit Success**: >95% structure mapped → Comprehensive analysis complete
@@ -150,6 +69,9 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 **Health Assessment**: Baseline established → Improvement targets defined
 
 ## 🔗 See Also
+
+### Implementation Details
+- `../../standards/docs-audit-metrics.md` - Complete metrics calculation and validation protocols
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated documentation optimization

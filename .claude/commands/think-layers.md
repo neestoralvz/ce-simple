@@ -57,6 +57,30 @@ Execute: `/think-layers [analysis-target] [starting-layer]`
 **Delegation Success**: Documentation + execution tasks → Parallel workflow coordination
 **Integration Success**: Multi-agent workflows → Combined execution readiness
 
+### Automatic Learning Capture Integration
+**POST-ANALYSIS ASSESSMENT**: After analysis completion, evaluate session learning value and auto-trigger capture when warranted
+
+**Learning Value Auto-Detection**:
+```
+📊 ANALYSIS-SCORING: Calculate cognitive complexity and pattern discovery value
+🧠 COMPLEXITY-INDICATORS:
+  - Multiple thinking layers activated (+2 points)
+  - Novel pattern synthesis achieved (+2 points)
+  - Error resolution during analysis (+2 points)
+  - Alternative strategies evaluated (+1 point)
+  - Cross-domain insights generated (+1 point)
+
+🎯 AUTO-THRESHOLD: ≥4 points → Automatic /capture-learnings activation
+⚡ EXECUTION: Seamless transition from analysis → learning documentation
+```
+
+**Integration Protocol**:
+1. **Analysis Complete** → Evaluate session complexity using learning scoring framework
+2. **Threshold Check** → Compare against ≥4 point learning value requirement
+3. **Auto-Trigger** → Execute /capture-learnings with analysis context when threshold met
+4. **Pattern Documentation** → Capture analysis insights and decision patterns automatically
+5. **System Learning** → Integrate discoveries into context architecture for future analysis enhancement
+
 ## 🔗 See Also
 
 ### Implementation References

@@ -28,6 +28,32 @@ Execute: `/docs-workflow [mode]`
 5. **VALIDATION**: Comprehensive verification and quality measurement
 6. **RECURSIVE CORRECTION**: Auto-retry if threshold not achieved (max 3 iterations)
 
+### Recursive Quality Correction Logic
+**AUTOMATIC EXECUTION**: After Phase 5 (Validation), evaluate health score and initiate correction cycles
+
+**Threshold Validation Protocol**:
+```
+📊 HEALTH-CHECK: Extract numeric score from validation results
+🎯 THRESHOLD: Compare score against 85% minimum requirement
+🔄 DECISION-TREE:
+  - Score ≥85% → ✅ SUCCESS: Workflow completion with final report
+  - Score <85% AND retry_count <3 → ⚡ RETRY: Execute correction iteration
+  - Score <85% AND retry_count ≥3 → ⚠️ ESCALATION: Manual intervention required
+
+🧠 AUTO-RETRY Logic: /docs-workflow maintain with comprehensive error context
+⚡ RETRY-[N]: Corrective workflow → Focus specific failed metrics → Re-validate
+```
+
+**Error Context Transmission Framework**:
+```
+ERROR CONTEXT FROM ITERATION-[N]:
+- Health Score: [current]% ([points] below 85% threshold)  
+- Failed Metrics: [specific measurements below standard]
+- Issue Locations: [exact files and violations identified]
+- Correction Focus: [targeted improvement areas for next iteration]
+- Iteration: RETRY-[N] of maximum 3 iterations
+```
+
 ### Auto-Execution Framework
 **Mode Detection**:
 - **Error Context Detected**: Execute MAINTAIN mode with focused corrections
@@ -41,6 +67,50 @@ Execute: `/docs-workflow [mode]`
 ⚡ FOCUS: Target specific failed metrics from error context
 ✅ SUCCESS: System optimization complete with Git tracking
 ```
+
+### Recursive Execution Notifications
+**Real-time Progress Tracking**:
+```
+📊 FINAL-SCORE: Health score [X]/100 → Threshold: 85% minimum
+🔄 DECISION: [Score < 85%] → Deploy /docs-workflow maintain with error context
+⚡ RETRY-[N]: Corrective workflow initiated → Focus: [specific failed areas]
+🎯 ITERATION: [N]/3 maximum → Targeting [failed metrics]
+📈 PROGRESS: [previous]% → [current]% ([+/-X] points)
+✅ SUCCESS: Quality threshold achieved → Workflow completed
+⚠️ ESCALATION: Max iterations reached → Manual intervention required
+```
+
+**Automatic Delegation Protocol**:
+1. **Validation Complete** → Extract health score from results
+2. **Threshold Check** → Compare against 85% minimum requirement  
+3. **Decision Logic** → Determine SUCCESS/RETRY/ESCALATION path
+4. **Context Preparation** → Generate detailed error context for retry
+5. **Recursive Execution** → Launch `/docs-workflow maintain` with context
+6. **Progress Monitoring** → Track improvement across iterations
+7. **Final Resolution** → Report success or escalation status
+
+### Automatic Learning Capture Protocol
+**POST-WORKFLOW ASSESSMENT**: Complex documentation workflows consistently generate high learning value - auto-trigger capture-learnings
+
+**High-Value Learning Indicators**:
+```
+📊 WORKFLOW-SCORING: Documentation workflows typically exceed learning threshold
+🔧 COMPLEXITY-FACTORS:
+  - Sequential workflow phases (5+ phases) → +2 points guaranteed
+  - Recursive correction iterations → +2 points per retry cycle
+  - System health improvement → +2 points for optimization success
+  - Progressive disclosure application → +1 point for architectural enhancement
+  - Cross-reference repair → +1 point for system integrity improvement
+
+🎯 AUTO-TRIGGER: Most docs-workflow sessions >6 points → Automatic /capture-learnings execution
+⚡ INTEGRATION: Seamless transition from workflow completion → learning capture
+```
+
+**Learning Capture Integration**:
+1. **Workflow Success** → Auto-calculate learning value (typically >6 points for complex workflows)
+2. **Automatic Activation** → Execute /capture-learnings with workflow context and results
+3. **Pattern Documentation** → Capture workflow effectiveness and optimization insights
+4. **System Enhancement** → Apply learnings to improve future workflow automation
 
 ## ⚡ Triggers
 

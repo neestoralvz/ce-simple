@@ -17,103 +17,30 @@ Execute: `/docs-optimize [target]`
 6. **INTEGRATION VALIDATION**: Ensure compatibility with Claude Code workflows
 
 ### CLAUDE.md Optimization Framework
+**Standards Compliance**: File hierarchy + content sections + import system + token efficiency validation
 
-#### Anthropic Standards Compliance
-**Official Requirements Validation**:
-- **File Hierarchy**: Verify project root placement and structure compliance
-- **Content Sections**: Validate tech stack, bash commands, code style, project structure
-- **Import System**: Test @path/to/import functionality and avoid circular references
-- **Token Efficiency**: Optimize content density and context window usage
+**Date Maintenance**: "Last Updated: YYYY-MM-DD" verification and temporal context accuracy
 
-#### Date Maintenance Framework
-**Temporal Context Management**:
-- **Current Date Verification**: Check if "Last Updated: YYYY-MM-DD" exists in CLAUDE.md header
-- **Date Accuracy**: Validate date reflects actual last modification date
-- **Discovery Context**: Ensure all exploration and discovery operations can reference accurate temporal context
-- **Standards Enforcement**: Apply date maintenance requirements from writing standards
+**Structure Analysis**: Line count + header assessment + reference density optimization
 
-#### Content Structure Analysis
-**Current CLAUDE.md Assessment**:
-```bash
-# Line count and density analysis
-wc -l CLAUDE.md
-grep -c "^#" CLAUDE.md  # Header count
-grep -c "@" CLAUDE.md   # Import reference count
-```
-
-**Optimization Targets**:
-- **Token Efficiency**: Reduce redundant content and optimize information density
-- **Navigation Structure**: Implement clear hierarchy and strategic cross-references
-- **Progressive Disclosure**: Move complex details to referenced files
-- **Essential Focus**: Maintain only mission-critical project information
+**Progressive Disclosure**: Extract complex details to referenced files while maintaining core functionality
 
 ### System-Wide Standards Compliance
+**File Size Policy**: Commands ≤140 lines (optimal), ≤200 lines (maximum) with progressive disclosure for violations
 
-#### File Size Policy Enforcement
-**Compliance Validation**:
-```bash
-# Commands size compliance (≤140 optimal, 200 max)
-find .claude/commands -name "*.md" -exec wc -l {} \; | awk '$1 > 140'
+**Cross-Reference Optimization**: ≤20 essential references with hub-based navigation and bidirectional flow
 
-# Documentation size compliance (≤200 max)
-find standards context -name "*.md" -exec wc -l {} \; | awk '$1 > 200'
-```
-
-**Optimization Strategies**:
-- **Size Violations**: Apply progressive disclosure extraction
-- **Content Optimization**: Eliminate redundancy and improve density
-- **Structural Refinement**: Maintain functionality within size constraints
-- **Reference Implementation**: Replace inline content with external links
-
-#### Cross-Reference Network Optimization
-
-#### Reference Density Management
-**CLAUDE.md Cross-Reference Analysis**:
-- **Current State**: Evaluate internal link density and navigation efficiency
-- **Optimization Target**: Reduce to ≤20 essential references
-- **Strategic Linking**: Implement hub-based navigation architecture
-- **Bidirectional Flow**: Ensure reverse navigation capabilities
-
-**Reference Quality Improvement**:
-- **Authority Clarification**: Establish clear primary sources for each concept
-- **Link Validation**: Verify all references functional and accurate
-- **Navigation Efficiency**: Optimize cognitive steps to information access
-- **Hub Implementation**: Create strategic navigation entry points
+**Quality Assurance**: Authority clarification + link validation + navigation efficiency
 
 ### Token Efficiency Optimization
+**Content Density**: Redundancy elimination + concept consolidation + essential focus prioritization
 
-#### Content Density Enhancement
-**Information Value Maximization**:
-- **Redundancy Elimination**: Remove duplicate explanations across files
-- **Concept Consolidation**: Unify related information in appropriate locations
-- **Essential Focus**: Prioritize high-impact, frequently-accessed information
-- **Progressive Detail**: Layer information complexity appropriately
-
-#### Claude Code Integration
-**Workflow Optimization**:
-- **Memory Management**: Optimize for Claude Code's context handling
-- **Command Integration**: Ensure seamless interaction with slash commands
-- **Session Efficiency**: Minimize context loading overhead
-- **Performance Focus**: Enhance Claude's operational effectiveness
+**Claude Code Integration**: Memory management + command integration + session efficiency optimization
 
 ### Quality Assurance Validation
+**Success Metrics**: 30% content reduction + ≤2.5 cognitive steps + 100% compliance + seamless integration
 
-#### Optimization Success Metrics
-**Performance Indicators**:
-- **Token Efficiency**: 30% reduction in redundant content
-- **Navigation Speed**: ≤2.5 cognitive steps to any information
-- **Compliance Rate**: 100% adherence to size and structure standards
-- **Integration Quality**: Seamless Claude Code workflow operation
-
-#### Post-Optimization Validation
-**Systematic Verification**:
-- [ ] CLAUDE.md complies with all Anthropic official standards
-- [ ] "Last Updated: YYYY-MM-DD" header exists and reflects current date
-- [ ] Date maintenance enables accurate discovery and exploration temporal references
-- [ ] System-wide file size compliance achieved
-- [ ] Cross-reference network optimized and functional
-- [ ] Token efficiency targets met without information loss
-- [ ] Claude Code integration verified and optimized
+**Systematic Verification**: CLAUDE.md standards compliance + date maintenance + size compliance + reference optimization + token efficiency + Claude Code integration
 
 ## ⚡ Triggers
 
@@ -134,6 +61,9 @@ find standards context -name "*.md" -exec wc -l {} \; | awk '$1 > 200'
 **Efficiency Success**: Token optimization achieved → Improved operational performance
 
 ## 🔗 See Also
+
+### Implementation Details
+- `../../standards/docs-optimize-compliance.md` - Complete standards compliance and token efficiency protocols
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated documentation optimization workflow
