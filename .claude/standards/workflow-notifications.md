@@ -21,6 +21,32 @@ Provide transparent, real-time progress tracking for orchestrated agent workflow
 
 ## 🔧 IMPLEMENTATION PROTOCOL
 
+### Standard Notification Format
+```
+🎯 [PHASE]: [Action] initiated [timestamp/context]
+📊 [METRIC]: [Description] → [Status/Progress]
+🧠 DECISION: [Brief reasoning] → [Strategy selected]
+🔧 [ACTION]: [Description] → [Status/Result]
+⚡ [PROGRESS]: [Current state] → [Next action]
+✅ [COMPLETION]: [Summary] → [Outcome/Result]
+```
+
+### Decision Transparency Framework
+
+#### Decision Context Templates
+```
+🧠 DECISION: [Strategy] selected → [Primary reason]
+🧠 DECISION: [Analysis depth] needed → [Complexity justification]  
+🧠 DECISION: [Agent deployment] optimal → [Resource allocation reasoning]
+🧠 DECISION: [Execution path] required → [Dependency analysis]
+```
+
+#### Progress Rationale Standards
+- Include brief reasoning for major workflow decisions
+- Provide context for strategy selection (parallel vs sequential)
+- Explain analysis depth choices and agent deployment rationale
+- Maintain transparency without verbose explanations
+
 ### Phase Tracking System
 **MANDATORY**: Each workflow phase MUST announce start and completion
 
@@ -81,6 +107,20 @@ Provide transparent, real-time progress tracking for orchestrated agent workflow
 **FREQUENCY**: Every significant state change
 **FORMAT**: Clear, concise, actionable information
 **CONTENT**: Current status, next steps, user actions required
+
+#### Cognitive Load Management
+
+##### Notification Efficiency
+- **One-line summaries** over paragraph explanations
+- **Strategic timing** to avoid notification fatigue
+- **Essential updates** prioritized over comprehensive reporting
+- **Decision context** included only when strategy changes
+
+##### User Experience Optimization
+- Predictable notification patterns for familiar workflows
+- Clear phase transitions with completion indicators
+- Transparent decision-making without overwhelming detail
+- Progress tracking that enables user confidence in execution
 
 #### Attention Alerts
 ```
