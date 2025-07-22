@@ -189,8 +189,13 @@ Agent-3 ┘
 // COMPLEXITY ASSESSMENT (1-10 scale calculation)
 Bash("echo 'scale=1; ([scope_score] + [breadth_score] + [interdependency_score]) / 3' | bc")
 
+// PHILOSOPHICAL COMPATIBILITY GATE (complexity prevention)
+// Execute self-monitor philosophical validation before agent deployment
+Grep("meta-|orchestration.*system|advanced.*framework", {glob: "**/*.md", output_mode: "count"}) // Detect complexity keywords
+Task("Philosophical Gate", "/self-monitor philosophical compatibility for agent deployment") // Auto-trigger compatibility check
+
 // DEPLOYMENT STRATEGY DECISION
-// Based on complexity score, choose deployment pattern:
+// Based on complexity score AND philosophical compatibility, choose deployment pattern:
 
 // SEQUENTIAL DEPLOYMENT (Complexity 1-5)
 // Deploy agents one after another with dependency coordination

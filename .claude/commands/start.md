@@ -255,17 +255,17 @@ Grep("\\[.*\\]\\(.*\.md\\)", {glob: "**/*.md", output_mode: "content"}) // Find 
 Task("Philosophical Gate", "/self-monitor philosophical compatibility validation") // Auto-trigger compatibility check
 Grep("meta-|orchestration|framework.*complexity|mathematical.*threshold", {glob: "**/*.md", output_mode: "count"}) // Detect expansion keywords
 
-// 6. GIT INTEGRATION (real execution - workflow completion)
-Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verified | philosophy: validated | metrics: [data] ✓session-[N]\"") // Clean commit format
-
 // 6. WORK TREE LIFECYCLE (real execution) - COMPLEXITY-BASED ACTIVATION
 // Initialize work tree for complex workflows requiring isolation
 Bash("if [[ complexity >= 6 ]]; then echo 'Complexity threshold met: activating work tree'; fi") // Complexity check
 Task("Worktree initialization", "/worktree-start [topic-description]") // Initialize session work tree
 
-// 7. AGENT DEPLOYMENT (real execution via Task tool) - ONLY AFTER EXPLORATION
-// Deploy agents ONLY after mandatory exploration confirms system integrity
-Task("Agent deployment", "[deployment-strategy] based on verified complexity assessment")
+// 7. AGENT DEPLOYMENT (real execution via Task tool) - ONLY AFTER EXPLORATION AND PHILOSOPHY
+// Deploy agents ONLY after mandatory exploration AND philosophical validation confirms system integrity
+Task("Agent deployment", "[deployment-strategy] based on verified complexity assessment and philosophical compatibility")
+
+// 8. GIT INTEGRATION (real execution - workflow completion)
+Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verified | philosophy: validated | metrics: [data] ✓session-[N]\"") // Clean commit format
 ```
 
 ### Execution Prevention Framework
