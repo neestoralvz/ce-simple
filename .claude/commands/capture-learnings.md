@@ -252,8 +252,8 @@ Write("context/discoveries/learning-session-[timestamp].md", `# Learning Session
 ### Session Completion Protocol  
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with learning metrics (no Claude attribution)
-Bash("git add . && git commit -m \"capture-learnings: [session-type] | value: [score]/10 | patterns: [N] | session-[N]\"")
+// Git automation with learning metrics
+Bash("git add . && git commit -m \"capture-learnings: [session-type] | value: [score]/10 | patterns: [N] ✓session-[N]\"")
 ```
 
 ### Execution Verification
