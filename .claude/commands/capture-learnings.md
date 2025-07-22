@@ -62,7 +62,7 @@ TodoWrite([
 #### Integration & Validation Protocol
 **Contextual Validation**: Workflow-aware focus on just-executed commands and patterns
 **Learning Enhancement**: Interview insights inform system improvement priorities
-**Pattern Documentation**: Systematic capture in context/ directories with structured organization
+**Pattern Documentation**: Update existing context/ files only - NO new file creation
 **System Evolution**: Learning patterns influence future workflow optimization and command enhancement
 
 ### Learning Quality Assurance & Documentation Framework
@@ -74,9 +74,10 @@ TodoWrite([
 **Cross-Reference Integrity**: Systematic validation via `/matrix-maintenance` integration
 
 #### Intelligent Documentation Organization
-**File Placement Strategy**:
-- `context/experience/session-[timestamp].md` → User interview responses and insights
-- `context/patterns/learning-[domain].md` → Documented patterns and approaches
+**File Update Strategy**:
+- Update `context/universal-problem-solving-patterns.md` → Add new patterns and approaches  
+- Update `context/workflow-notifications.md` → Document workflow insights
+- NO new file creation - ONLY update existing files
 - `context/discoveries/workflow-[session].md` → Process learning and decision documentation
 
 #### System Integrity Validation Framework
