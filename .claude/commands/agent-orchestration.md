@@ -289,8 +289,8 @@ Write("context/system/orchestration-log-[timestamp].md", `# Orchestration Progre
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with orchestration metrics (no Claude attribution)  
-Bash("git add . && git commit -m \"agent-orchestration: [strategy] | complexity: [N]/10 | agents: [N] | session-[N]\"")
+// Git automation with orchestration metrics  
+Bash("git add . && git commit -m \"agent-orchestration: [strategy] | complexity: [N]/10 | agents: [N] ✓session-[N]\"")
 ```
 
 ### Execution Verification
