@@ -274,7 +274,16 @@ Bash("find docs/ -name '*.md' | wc -l") // Final docs count
 Bash("find . -name '*.md' -exec wc -l {} + | awk '{sum+=$1} END {print sum}'") // Total system lines
 Grep("BROKEN|MISSING|ERROR", {glob: "{context,docs}/**/*.md", output_mode: "files_with_matches"}) // Quality check
 
-// 10. GIT INTEGRATION (real execution)
+// 10. COMMAND-CREATE INTEGRATION AUTO-TRIGGER
+// Detect documentation gaps that might require new commands
+Grep("TODO.*command|needed.*command|missing.*automation", {glob: "{context,docs}/**/*.md", output_mode: "files_with_matches"}) // Detect command needs in docs
+Bash("if [[ $(find docs/ -name '*.md' -exec grep -l 'TODO.*automation\\|missing.*command' {} \\; | wc -l) -gt 0 ]]; then echo 'DOCUMENTATION-COMMAND-GAP-DETECTED'; fi") // Check docs for command gaps
+
+// AUTO-TRIGGER: Command creation when documentation reveals automation needs
+trigger_notification "context-optimize" "command-create" "documentation-gap-analysis"
+Task("Command Development Opportunity", "Execute /command-create documentation-driven to identify command development opportunities from optimized documentation")
+
+// 11. GIT INTEGRATION (real execution)
 Bash("git add . && git commit -m \"context-optimize: [mode] | context: [ctx-files] docs: [doc-files] | density: [improvement]% | quality: [score]/10 ✓session-[N]\"")
 ```
 

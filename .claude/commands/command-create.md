@@ -33,6 +33,14 @@ slash_command_start() {
   data "📊 WORKFLOW: Active command chain → [${ACTIVE_COMMANDS[@]}]"
 }
 
+# Cross-command trigger notifications
+trigger_notification() {
+  local source_cmd=$1
+  local target_cmd=$2
+  local trigger_type=$3
+  warn "🔗 TRIGGER: /$source_cmd → /$target_cmd ($trigger_type)"
+}
+
 slash_command_progress() {
   local cmd_name=$1
   local phase=$2

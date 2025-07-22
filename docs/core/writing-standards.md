@@ -15,13 +15,13 @@
 ## 📊 CONTENT OPTIMIZATION
 
 ### Density Standards
-- **COMMAND LIMITS**: ≤140 lines optimal, 200 lines maximum (operational efficiency)
+- **COMMAND LIMITS**: ≤150 lines maximum (operational efficiency and cognitive load)
 - **DOCUMENTATION LIMITS**: ≤200 lines maximum (cognitive digestibility)
 - **PRINCIPLE**: Maximum value per cognitive unit
 - **STRUCTURE**: Progressive hierarchy (Summary → Details → Comprehensive)
 - **RESPONSIBILITY**: Single responsibility principle per file
 
-**CRITICAL**: These limits are system-wide standards referenced by all architectural components for consistency.
+**CRITICAL**: 150-line command limit is system-wide standard referenced by all architectural components for consistency.
 
 ### Content Hierarchy
 1. **Primary**: Critical operational instructions

@@ -372,6 +372,15 @@ Bash("echo 'Performance optimization: [optimization_gain]% | Autonomy level: [au
 Bash("echo 'Matrix maintenance cycle completed: [timestamp] | Autonomous: [autonomy_mode]'")
 Bash("echo 'Dependencies analyzed: [dependency_count] | Predictions generated: [prediction_count]'")
 Bash("echo 'Integrity score: [integrity_score]% | Self-healing actions: [healing_actions]'")
+
+// 9D. COMMAND-CREATE INTEGRATION AUTO-TRIGGER
+// Detect missing commands based on dependency analysis and workflow gaps
+Grep("TODO.*command|MISSING.*command|create.*command", {glob: "**/*.md", output_mode: "files_with_matches"}) // Detect command creation needs
+Bash("if [[ $(grep -r 'TODO.*command\\|MISSING.*command' . | wc -l) -gt 0 ]]; then echo 'COMMAND-CREATION-OPPORTUNITY-DETECTED'; fi") // Check for command gaps
+
+// AUTO-TRIGGER: Command creation when workflow gaps detected
+trigger_notification "matrix-maintenance" "command-create" "workflow-gap-detection"
+Task("Command Creation Analysis", "Execute /command-create analysis mode to identify systematic command development opportunities based on matrix analysis")
 ```
 
 ### FMEA Analysis Framework
