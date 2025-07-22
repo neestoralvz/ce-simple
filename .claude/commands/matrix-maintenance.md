@@ -256,12 +256,24 @@ Write("context/system/dependency-matrix-[timestamp].md", `# Cross-Reference Depe
 
 ## FMEA Risk Assessment
 [Failure mode analysis and prevention strategies]
+
+## Post-Cleanup Validation Results (if cleanup-validation mode)
+- Broken Tool References: [broken_tool_refs]
+- Component Count Accuracy: [count_accuracy]%
+- Health Improvement: [old_health]% → [new_health]%
 `)
 
 // 6. INTEGRITY VALIDATION
 Bash("find . -name '*.md' | wc -l")                       // Count markdown files
 Bash("find . -name '*.md' -exec grep -l 'EXECUTION LAYER' {} + | wc -l") // Count implemented commands
 Bash("echo 'scale=1; ([implemented_commands] * 100) / [total_commands]' | bc") // Calculate coverage %
+
+// 6A. CLEANUP VALIDATION (when cleanup-validation mode active)
+Grep("tools/|.claude/tools/", {glob: "**/*.md", output_mode: "files_with_matches"}) // Detect broken tool references
+Bash("ls -la tools/ 2>/dev/null || echo 'VERIFIED: tools directory removed'")        // Verify tool directory removal
+Bash("ls -la .claude/tools/ 2>/dev/null || echo 'VERIFIED: .claude/tools removed'") // Verify .claude/tools removal
+Bash("find . -name '*.md' -path './context/*' | wc -l")   // Updated context file count
+Bash("find . -name '*.md' -path './docs/*' | wc -l")      // Updated docs file count
 
 // 7. FMEA ANALYSIS (Failure Mode and Effects Analysis)
 Write("context/system/fmea-analysis-[timestamp].md", `# FMEA Analysis Results

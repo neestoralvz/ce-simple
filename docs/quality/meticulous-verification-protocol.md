@@ -1,25 +1,25 @@
-# Meticulous Verification Protocol - Anti-Error Framework
+# Exhaustive Verification Protocol - Standard Operating Procedure
 
 **Last Updated: 2025-07-22**
 
 ## 🎯 PURPOSE
 
-**CRITICAL**: Prevent analysis errors through mandatory exhaustive verification when "meticulosamente" or "meticulous" keywords are used.
+**CRITICAL**: All system operations MUST use exhaustive verification by default. This is the STANDARD operating procedure, not an optional mode.
 
-## 🚨 TRIGGER CONDITIONS
+## 🚨 MANDATORY OPERATION
 
-### Activation Keywords
-- "meticulosamente" (Spanish)
-- "meticulous", "meticulously" (English) 
-- "systematically", "systematic review"
-- "exhaustive", "comprehensive analysis"
-- "verify everything", "double-check"
+### Default Standards
+**ALL COMMANDS** now operate with exhaustive verification by default. This includes:
+- **File Existence Claims**: NEVER claim files exist without LS/Glob verification
+- **Content Analysis**: NEVER describe content without Read/Grep verification  
+- **System Status**: NEVER report status without comprehensive tool validation
+- **Cross-References**: NEVER reference without existence verification
 
-### Mandatory Activation Scenarios
-- **Discrepancy Detection**: When initial analysis conflicts with evidence
-- **High-Stakes Analysis**: When analysis affects system architecture decisions
-- **Compliance Verification**: When validating execution layer implementations
-- **Cross-Reference Validation**: When verifying file existence claims
+### Critical Operations Requiring Enhanced Verification
+- **System Analysis**: Architecture, execution layer compliance, command status
+- **File Operations**: Creation, modification, deletion, reference validation
+- **Cross-Reference Validation**: Links, paths, documentation references
+- **Compliance Verification**: Standards adherence, execution layer implementations
 
 ## ⚡ PROTOCOL IMPLEMENTATION
 
@@ -109,18 +109,18 @@ LS(".claude/commands") && Read("specific-file.md") // Direct verification
 
 ## 🚀 INTEGRATION REQUIREMENTS
 
-### Command Enhancement
-All commands should support "meticulous mode" when triggered:
-- **Enhanced verification**: 3x normal tool usage
-- **Systematic approach**: Follow defined verification sequence
-- **Evidence documentation**: Complete verification trails
-- **Error prevention**: Proactive contradiction detection
+### Default Command Operation
+ALL commands now operate with exhaustive verification by DEFAULT:
+- **Enhanced verification**: 3x verification protocol as standard
+- **Systematic approach**: Mandatory verification sequence for all operations
+- **Evidence documentation**: Complete verification trails required
+- **Error prevention**: Proactive contradiction detection built-in
 
-### System-Wide Implementation
-- **CLAUDE.md Integration**: Reference meticulous protocol standards
-- **Cross-Command Support**: All commands support meticulous mode
-- **Documentation Standards**: All analysis follows verification requirements
-- **Quality Assurance**: Regular protocol effectiveness reviews
+### System-Wide Standards
+- **CLAUDE.md Integration**: Exhaustive verification as core operational standard
+- **Cross-Command Compliance**: ALL commands implement exhaustive verification
+- **Documentation Standards**: ALL analysis requires verification evidence
+- **Quality Assurance**: Continuous protocol compliance monitoring
 
 ## 🎯 CASE STUDY: Execution Layer Analysis
 
@@ -147,4 +147,25 @@ All commands should support "meticulous mode" when triggered:
 
 **CRITICAL**: This protocol prevents analysis errors through systematic verification. When "meticulosamente" is specified, this framework becomes MANDATORY for all analysis activities.
 
-**INTEGRATION**: All commands must support meticulous mode to prevent false claims and ensure analytical accuracy.
+**STANDARD OPERATION**: ALL commands now operate with exhaustive verification by default. This prevents false claims and ensures analytical accuracy across the entire system.
+
+## 📋 COMMAND COMPLIANCE CHECKLIST
+
+### Every Command Must Include:
+- [ ] **Pre-operation verification**: LS/Glob to verify referenced directories/files exist
+- [ ] **Content validation**: Read/Grep to verify content claims before making assertions
+- [ ] **Cross-reference validation**: Verify all referenced files/paths exist
+- [ ] **Multi-vector verification**: Use 2+ tools to verify critical claims
+- [ ] **Evidence documentation**: Document verification steps in execution layer
+- [ ] **Error prevention**: Never make claims without tool-verified evidence
+
+### Standard Verification Sequence:
+1. **Structure Check**: LS to verify directories exist
+2. **Content Discovery**: Glob to find relevant files
+3. **Content Analysis**: Grep/Read to verify content claims
+4. **Cross-Validation**: Use alternative methods to confirm findings
+5. **Evidence Trail**: Document all verification steps
+
+---
+
+**CRITICAL**: This exhaustive verification protocol is now the BASELINE for ALL ce-simple operations. No command should operate without implementing these verification standards.

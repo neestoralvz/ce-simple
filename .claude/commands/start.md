@@ -37,9 +37,9 @@ TodoWrite([
 ])
 ```
 
-### Meticulous Mode Activation
-**TRIGGERED BY**: Keywords "meticulosamente", "meticulous", "systematic review", "exhaustive"
-**EFFECT**: 3x verification protocol, multi-vector validation, complete evidence trails
+### Standard Exhaustive Verification
+**DEFAULT OPERATION**: All system operations use exhaustive verification protocol
+**STANDARD**: 3x verification protocol, multi-vector validation, complete evidence trails
 **REFERENCE**: `docs/quality/meticulous-verification-protocol.md` for full framework
 
 **Progressive Todo Management**: Mark todos as completed in real-time as actions are executed for complete user transparency
