@@ -29,11 +29,11 @@ progress() { local p=$(calc "$1*100/$2" 0); process "$3 [$p% complete]"; }
 
 ```javascript
 TodoWrite([
+  {"content": "🏗️ PHASE-0: Integrate structural intelligence from Phase 0 assessment context", "status": "pending", "priority": "high", "id": "think-phase0-1"},
   {"content": "🧠 DEPTH: Determine analysis depth via /agent-orchestration complexity matrix (L1-L4)", "status": "pending", "priority": "high", "id": "think-depth-1"},
-  {"content": "🔄 ESCALATION: Execute progressive layer escalation with cognitive load management", "status": "pending", "priority": "high", "id": "think-escalate-1"},
-  {"content": "🔀 ORCHESTRATION: Coordinate thinking layers via /agent-orchestration for optimal cognitive distribution", "status": "pending", "priority": "high", "id": "think-orchestration-1"},
-  {"content": "🎯 CONSOLIDATION: Synthesize progressive analysis into implementable action plan", "status": "pending", "priority": "medium", "id": "think-consolidate-1"},
-  {"content": "🤖 DELEGATION: Deploy intelligent task division and workflow coordination", "status": "pending", "priority": "medium", "id": "think-delegate-1"},
+  {"content": "🔄 ESCALATION: Execute progressive layer escalation with validation checkpoint awareness", "status": "pending", "priority": "high", "id": "think-escalate-1"},
+  {"content": "🔀 ORCHESTRATION: Coordinate thinking layers with structural failure prevention protocols", "status": "pending", "priority": "high", "id": "think-orchestration-1"},
+  {"content": "🎯 CONSOLIDATION: Synthesize analysis with Phase 0 risk assessment integration", "status": "pending", "priority": "medium", "id": "think-consolidate-1"},
   {"content": "📚 LEARNING: Auto-trigger /capture-learnings if complexity threshold ≥4 points", "status": "pending", "priority": "low", "id": "think-learning-1"}
 ])
 ```
