@@ -1,7 +1,7 @@
 # Capture-Learnings - Intelligent Post-Execution Learning System
 
 ## 🎯 Purpose
-Dual-phase learning capture system that automatically documents execution patterns during workflows and conducts intelligent user interviews post-execution based on learning value assessment.
+Dual-phase learning capture system that automatically documents execution patterns during workflows and conducts intelligent user interviews post-execution based on learning value assessment. Includes systematic integrity validation for command system coherence.
 
 ## 🚀 Usage
 **Auto-Triggered**: Activates automatically during analysis phase and post-execution
@@ -113,7 +113,76 @@ context/experience/
 1. **Execution Analysis**: Review full workflow trace and outcomes
 2. **Interview Generation**: Create dynamic questions based on execution patterns
 3. **User Engagement**: Conduct structured feedback interview
-4. **Insight Integration**: Enhance existing patterns with experience data
+4. **System Integrity Validation**: Verify command system coherence and reference integrity
+5. **Insight Integration**: Enhance existing patterns with experience data
+
+### System Integrity Validation Framework
+
+#### Rational Validation Protocol
+**WHEN**: Activated during Phase 2 when interview threshold exceeded (≥4 learning points)
+**WHY**: Validate the system that just executed the workflow when learning context is maximum
+**HOW**: Intelligent reference analysis with gap detection and resolution recommendations
+
+#### Validation Components
+
+**Reference Integrity Check**:
+- **Command Existence**: Verify all referenced commands in "See Also" sections actually exist
+- **Chain Consistency**: Validate workflow chains are bidirectional and complete
+- **Cross-Reference Health**: Ensure referenced files and sections are accessible
+- **Trigger Logic**: Verify input/output trigger consistency across commands
+
+**Gap Discovery System**:
+```
+🔍 INTEGRITY: Scanning command references from executed workflow
+📊 ANALYSIS: [X] commands checked, [Y] references validated
+⚠️  GAPS: [N] missing references detected → [list of gaps]
+🔧 RECOMMENDATIONS: [Specific actions to resolve gaps]
+```
+
+**Validation Scope**:
+- **Executed Commands**: Primary focus on commands used in current workflow
+- **Referenced Network**: Secondary check on "See Also" and trigger chains
+- **Critical Paths**: Verify essential workflow progressions are intact
+- **Evidence-Based**: Only flag definitive issues, avoid false positives
+
+#### Gap Resolution Framework
+
+**Classification System**:
+- **Critical Gap**: Missing command breaks workflow execution (like `/plan-execution`)
+- **Reference Gap**: Broken cross-reference reduces navigation efficiency  
+- **Chain Gap**: Incomplete workflow progression creates user confusion
+- **Documentation Gap**: Inconsistent or outdated references in documentation
+
+**Resolution Priority**:
+1. **Immediate**: Critical gaps affecting workflow functionality
+2. **High**: Reference gaps in frequently used commands
+3. **Medium**: Chain gaps in secondary workflows
+4. **Low**: Documentation gaps in rarely accessed sections
+
+**Recommendation Engine**:
+```
+🎯 RESOLUTION RECOMMENDATIONS:
+├── Create missing command: [command-name] referenced in [N] locations
+├── Update references: Replace [old-ref] with [new-ref] in [files]
+├── Complete chain: Add [missing-link] to connect [workflow-a] → [workflow-b]  
+└── Validate architecture: Review [command-set] for consistency
+```
+
+#### Integration with Learning System
+
+**Contextual Validation**:
+- **Workflow-Aware**: Focus validation on commands and patterns just experienced
+- **Learning-Enhanced**: Use interview insights to inform gap priority assessment
+- **Pattern-Integrated**: Document discovered gaps as system architecture patterns
+- **User-Guided**: Include gap findings in overall learning capture and documentation
+
+**Notification Integration**:
+```
+🔍 INTEGRITY: System validation initiated → Workflow context analysis
+📊 VALIDATION: [X] commands verified, [Y] references checked
+⚠️  DISCOVERY: [N] gaps identified → [severity breakdown]
+✅ COMPLETION: System health documented → Recommendations generated
+```
 
 ### Learning Quality Assurance
 
@@ -144,7 +213,9 @@ context/experience/
 ```
 🎯 ASSESSMENT: Interview necessity evaluated → [score]/10 points
 📊 DECISION: User interview activated → [question-count] dynamic questions
-✅ COMPLETION: Learning captured → [pattern-count] patterns enhanced
+🔍 INTEGRITY: System validation initiated → [X] commands from executed workflow
+⚠️  GAPS: [N] system gaps discovered → [priority breakdown]
+✅ COMPLETION: Learning + validation captured → [pattern-count] patterns enhanced
 🚫 SKIP: Auto-documentation → Low learning value detected
 ```
 
@@ -158,6 +229,7 @@ context/experience/
 ### Output Triggers  
 **Enhanced Context**: Updated pattern and discovery documentation
 **User Interview**: Dynamic feedback collection when learning value detected
+**System Validation**: Integrity check and gap discovery when interview triggered
 **Pattern Evolution**: Cross-reference updates and trend identification
 
 ### Success Patterns

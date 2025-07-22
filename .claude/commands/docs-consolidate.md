@@ -9,144 +9,56 @@ Execute: `/docs-consolidate [scope]`
 ## 🔧 Implementation
 
 ### Consolidation Protocol
-1. **DUPLICATION RESOLUTION**: Identify and merge overlapping content across files
-2. **REFERENCE REPAIR**: Fix broken cross-references and create missing target files
-3. **CONTENT UNIFICATION**: Consolidate fragmented concepts into authoritative sources
-4. **PROGRESSIVE DISCLOSURE**: Extract verbose content to appropriate architectural layers
-5. **INTEGRITY VALIDATION**: Ensure consolidation maintains system coherence
+**Sequential Execution**: Execute in dependency order to prevent reference breaks during consolidation
+**Duplication Resolution**: Identify and merge overlapping content with authoritative source establishment
+**Reference Repair**: Fix broken cross-references, create missing targets, ensure bidirectional linking
+**Progressive Disclosure**: Extract verbose content from commands to standards/context layers
 
-### Parallel Consolidation Framework
+### Consolidation Strategy Framework
+**High Priority** (>40% overlap): Merge files with substantial duplication, establish single sources
+**Medium Priority** (20-40% overlap): Consolidate sections, standardize terminology and explanations
+**Low Priority** (<20% overlap): Optimize cross-references, standardize formatting conventions
 
-#### Core Consolidation Tasks (Sequential Execution)
-**MANDATORY**: Execute in dependency order to prevent reference breaks
+### Content Organization System
+**Commands** (≤140 optimal): Extract educational content → context, detailed criteria → standards  
+**Standards** (≤200 max): Consolidate frameworks, unify criteria, establish authoritative guidelines
+**Context** (≤200 max): Consolidate patterns, document relationships, preserve historical decisions
 
-**Essential Operations**:
-- **Content Overlap Analysis**: Identify duplicate concepts and determine authoritative sources
-- **Reference Chain Mapping**: Trace all cross-references and identify repair requirements
-- **Progressive Extraction**: Move detailed content from commands to standards/context layers
-- **Authority Establishment**: Designate single sources of truth for each concept domain
-
-### Consolidation Strategies
-
-#### Duplication Resolution Matrix
-**HIGH Priority** (>40% overlap):
-- Merge files with substantial content duplication
-- Establish single authoritative source
-- Create reference links from eliminated locations
-- Preserve unique value-adding content
-
-**MEDIUM Priority** (20-40% overlap):
-- Consolidate overlapping sections within files
-- Standardize terminology and explanations
-- Cross-reference shared concepts
-- Eliminate redundant examples
-
-**LOW Priority** (<20% overlap):
-- Optimize cross-reference patterns
-- Standardize formatting and structure
-- Unify symbol usage and conventions
-- Streamline navigation paths
-
-#### Reference Repair Operations
-**Broken Reference Patterns**:
-```bash
-# Identify broken internal links
-grep -r "\.md\b" --include="*.md" . | grep -v "archive"
-
-# Validate file existence for references
-find . -name "*.md" -exec basename {} \; | sort
-```
-
-**Repair Strategies**:
-- **Create Missing Files**: Generate referenced files with appropriate content
-- **Update References**: Modify links to point to consolidated locations
-- **Bidirectional Linking**: Ensure reverse navigation capabilities
-- **Authority Chain**: Establish clear hierarchy for cross-references
-
-### Content Extraction Guidelines
-
-#### Progressive Disclosure Implementation
-**Commands** (≤140 lines optimal):
-- Extract educational content → Move to context layer
-- Extract detailed criteria → Move to standards layer
-- Extract examples → Move to pattern documentation
-- Maintain execution focus and coordination instructions
-
-**Standards** (≤200 lines):
-- Consolidate framework documentation
-- Unify criteria and metrics
-- Establish authoritative guidelines
-- Cross-reference related concepts
-
-**Context** (≤200 lines):
-- Consolidate learning patterns
-- Document discovered relationships
-- Capture implementation examples
-- Preserve historical decisions
-
-### File Size Optimization
-
-#### Size Violation Resolution
-**Commands Exceeding Limits**:
-- Apply progressive disclosure principles
-- Extract verbose sections to external files
-- Optimize redundant explanations
-- Maintain coordination functionality
-
-**Documentation Exceeding Limits**:
-- Identify consolidation opportunities
-- Merge related concept files
-- Eliminate redundant sections
-- Preserve information completeness
-
-### Quality Assurance Protocols
-
-#### Consolidation Validation
-**Post-Consolidation Checklist**:
-- [ ] All references functional and verified
-- [ ] No information loss during consolidation
-- [ ] File size compliance achieved
-- [ ] Architectural boundaries maintained
-- [ ] Navigation efficiency improved
-
-**Success Metrics**:
-- Content duplication reduced to <5%
-- 100% functional cross-references
-- File size compliance achieved
-- Navigation steps ≤2.5 cognitive units
-- System coherence maintained
+### Quality Assurance Framework
+**Success Metrics**: <5% duplication, 100% functional references, file size compliance, ≤2.5 navigation steps
+**Validation Checklist**: All references functional, no information loss, size compliance, boundaries maintained
+**Integrity Preservation**: System coherence maintained throughout consolidation operations
 
 ## ⚡ Triggers
 
 ### Input Triggers
-**Context**: Post-audit identification of duplication and reference issues
-**Previous**: `/docs-audit` → identified consolidation requirements
+**Context**: Post-audit identification of content duplication and reference issues requiring unification
+**Previous**: `/docs-audit` identified consolidation requirements or direct duplication resolution needs
 **Keywords**: consolidate, unify, merge, repair, references, duplication
 
 ### Output Triggers
-**When**: Content unified → `/docs-optimize` for standards compliance
-**When**: Complete workflow → `/docs-workflow` for automated optimization
-**When**: Complex size violations → `/docs-validate` for architecture verification
-**Chain**: audit → consolidate → optimize → validate (granular) OR audit → workflow (complete)
+**Success**: Content unified → `/docs-optimize` for standards compliance application
+**Complete**: Complex consolidation → `/docs-validate` for architecture verification
+**Workflow**: Automated path → `/docs-workflow` for complete optimization integration
+**Chain**: audit → consolidate → optimize → validate (workflow completion)
 
 ### Success Patterns
 **Consolidation Success**: <5% content duplication → Architectural integrity achieved
 **Reference Success**: 100% functional links → Navigation completeness verified
-**Size Success**: All files compliant → Progressive disclosure effective
+**Size Success**: All files compliant → Progressive disclosure effectiveness demonstrated
 
 ## 🔗 See Also
 
-### Related Commands
-- Execute `/docs-workflow` for complete automated documentation optimization workflow
-- Execute `/docs-audit` for comprehensive system analysis and issue identification
-- Execute `/docs-optimize` for CLAUDE.md optimization and standards compliance
-- Execute `/docs-validate` for post-consolidation system health verification
+### Implementation References
+- `standards/docs-consolidate-implementation.md` - Complete consolidation framework details
+- `standards/simplicity-principles.md` - Progressive disclosure implementation standards
+- `standards/writing-standards.md` - Content unification and organization standards
 
-### Integration References
-- `context/discoveries/documentation-workflow-discoveries.md` - Consolidation methodology
-- `standards/simplicity-principles.md` - Progressive disclosure implementation
-- `standards/writing-standards.md` - Content unification standards
-- `context/patterns/command-complexity-management.md` - Architectural integrity patterns
+### Related Commands
+- Execute `/docs-workflow` for complete automated optimization workflow integration
+- Execute `/docs-audit` for comprehensive system analysis and issue identification
+- Execute `/docs-optimize` for standards compliance and CLAUDE.md optimization
+- Execute `/docs-validate` for post-consolidation system health verification
 
 ---
 
