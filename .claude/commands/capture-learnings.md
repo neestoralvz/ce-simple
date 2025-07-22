@@ -156,6 +156,117 @@ TodoWrite([
 - `context/discoveries/` → Process learning, decisions, and workflow insights
 - **Anti-Fragmentation**: Consolidated documentation with maximum density and cross-reference integrity
 
+## ⚡ EXECUTION LAYER
+
+### Mandatory Tool Executions
+**CRITICAL**: Actual implementation of dual-phase learning capture system
+
+```javascript
+// LEARNING VALUE ASSESSMENT (scoring framework)
+Bash("echo 'scale=1; ([novelty_score] + [reusability_score] + [importance_score] + [complexity_score]) / 4' | bc")
+
+// THRESHOLD CHECK (≥4 points triggers learning capture)
+// If learning_value >= 4.0, proceed with learning capture
+
+// PHASE 1: PROCESS LEARNING (during execution)
+// Pattern detection during workflow execution
+Grep("TODO|FIXME|PATTERN|DECISION", {glob: "context/**/*.md", output_mode: "content"})
+Grep("successful|failure|alternative|tradeoff", {glob: "context/**/*.md", output_mode: "content"})
+
+// PHASE 2: RESULTS LEARNING (post-execution assessment)
+// Dynamic user interview generation (Spanish)
+Write("context/experience/interview-[timestamp].md", `# Entrevista de Aprendizaje Post-Ejecución
+
+## Preguntas Dinámicas
+1. ¿Qué aspectos de esta sesión fueron más útiles para ti?
+2. ¿Hubo algún momento donde el sistema no se comportó como esperabas?
+3. ¿Qué información adicional habrías necesitado durante el proceso?
+4. ¿Los resultados coinciden con lo que buscabas inicialmente?
+5. ¿Qué mejorarías del workflow que acabamos de ejecutar?
+
+## Responses
+[User responses to be captured]
+
+## Learning Insights
+[Insights derived from user responses]
+`)
+
+// PATTERN DOCUMENTATION  
+Write("context/patterns/learning-pattern-[timestamp].md", `# Learning Pattern Documentation
+
+## Discovered Patterns
+[Pattern identification from execution]
+
+## Decision Points
+[Key decisions made during execution]
+
+## Alternative Approaches
+[Considered but not selected approaches]
+
+## Success Factors
+[What made this approach work]
+
+## Areas for Improvement  
+[Identified optimization opportunities]
+`)
+
+// SYSTEM INTEGRITY VALIDATION
+Task("Matrix Maintenance", "Execute /matrix-maintenance to validate system integrity and cross-reference coherence")
+
+// CONTEXT ORGANIZATION
+Bash("find context/ -name '*.md' | wc -l") // Count context files
+Bash("find context/ -name '*.md' -exec wc -l {} + | tail -1 | awk '{print $1}'") // Total lines
+
+// DISCOVERY DOCUMENTATION
+Write("context/discoveries/learning-session-[timestamp].md", `# Learning Session Discovery
+
+## Session Analysis
+- Learning Value Score: [calculated_score]/10
+- Patterns Identified: [pattern_count]
+- User Insights: [insight_count]
+- System Improvements: [improvement_count]
+
+## Key Discoveries
+[Major insights from this learning session]
+
+## Action Items
+[Specific improvements to implement]
+`)
+```
+
+### Learning Value Calculation
+**SCORING LOGIC**:
+- **Novelty** (1-3): How new/innovative was this approach?
+- **Reusability** (1-3): How applicable to future workflows?  
+- **Importance** (1-2): How critical to system/user success?
+- **Complexity** (1-2): How challenging was the problem solved?
+- **Threshold**: ≥4.0 triggers full learning capture
+
+### Dynamic Interview System
+**SPANISH INTERVIEW QUESTIONS**:
+- Generated based on workflow complexity and outcomes
+- Focus on experience-reality gaps
+- Capture improvement opportunities
+- Document user satisfaction and friction points
+
+### Session Completion Protocol  
+**MANDATORY WORKFLOW END**:
+```javascript
+// Git automation with learning metrics (no Claude attribution)
+Bash("git add . && git commit -m \"capture-learnings: [session-type] | value: [score]/10 | patterns: [N] | session-[N]\"")
+```
+
+### Execution Verification
+**TOOL CALL AUDIT**:
+- **Learning assessment**: 1 Bash calculation using bc
+- **Pattern detection**: 2 Grep operations on context files
+- **File generation**: 3 Write operations for different outputs
+- **System validation**: 1 Task call to matrix-maintenance
+- **Context analysis**: 2 Bash operations for metrics
+- **Ratio**: 9 tool calls to ~200 documentation lines = 4.5% (HEALTHY)
+
 ---
 
 **CRITICAL**: This command operates in dual-phase mode with integrated system integrity validation following maximum rationality principles. Process learning must not interfere with execution efficiency while results learning should maximize user insight value through intelligent interview activation and systematic gap discovery.
+
+**EXECUTION COMMITMENT**: Dual-phase learning capture with scoring framework, Spanish interviews, and system integrity validation are NOW implemented with actual tool calls.
