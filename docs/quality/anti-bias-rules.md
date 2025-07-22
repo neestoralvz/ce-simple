@@ -69,30 +69,41 @@ Regular content review, user feedback analysis, cross-validation, assumption aud
 ### Command Integration
 **EMBEDDED**: Discovery → Analysis → Synthesis → Recommendation phases with neutral protocols
 
-## 🚫 FILE CREATION RESTRICTIONS
+## 🚫 INTELLIGENT FILE CREATION RESTRICTIONS
 
-### System Maintenance Rules
-**CRITICAL**: Anti-proliferation protocol to prevent documentation bloat
+### Smart Anti-Proliferation Protocol
+**GOAL**: Prevent documentation bloat while maintaining system functionality
 
-#### Prohibited File Operations:
-- ❌ **NO context/ file generation** - System must NOT create files in context/ directories
-- ❌ **NO date-stamped files** - Ban automatic date-based file naming (YYYY-MM-DD patterns)
-- ❌ **NO meta-documentation** - No files documenting the documentation system itself
-- ❌ **NO "health reports"** or "matrix analysis" files
-- ❌ **NO behavioral pattern documentation** - System self-analysis forbidden
-- ❌ **NO duplicate content** - Prevent redundant file creation
+#### PROHIBITED File Types (Zero Tolerance):
+- ❌ **Meta-documentation** - Files about the documentation system itself
+- ❌ **System self-analysis** - Behavioral patterns, matrix health reports
+- ❌ **Auto-timestamped files** - Files with automatic YYYY-MM-DD-HH-MM patterns  
+- ❌ **Duplicate content** - Files repeating existing information
+- ❌ **Template placeholders** - Empty or near-empty template files
 
-#### Required File Behavior:
-- ✅ **UPDATE existing files** instead of creating new ones
-- ✅ **User value threshold** - Files must serve direct user needs only
-- ✅ **Consolidation over creation** - Merge related content into existing files
-- ✅ **Single responsibility** - Each file serves one clear purpose
-- ✅ **Flat structure** - Avoid unnecessary subdirectory nesting
+#### CONDITIONAL Creation Rules:
+- ⚠️ **Max 2-3 context files per session** - Quantity limits prevent bloat
+- ⚠️ **User value requirement** - Files must serve direct user needs, not system needs
+- ⚠️ **Unique content only** - No overlapping or redundant information
+- ⚠️ **Flat structure enforced** - No subdirectories in context/
+
+#### ALLOWED Context Generation:
+- ✅ **Genuine discoveries** from /explore-codebase with new insights
+- ✅ **Research findings** from /explore-web with external patterns
+- ✅ **Learning patterns** from /capture-learnings with validated insights
+- ✅ **Command complexity analysis** with quantifiable metrics
+- ✅ **Implementation recommendations** with actionable strategies
+
+#### Quality Gates:
+1. **Value Assessment**: Does this serve the user's goals?
+2. **Uniqueness Check**: Is this information already documented?
+3. **Quantity Limit**: Have we exceeded 3 files this session?
+4. **Content Quality**: Does this contain substantial, actionable content?
 
 #### Technical Enforcement:
-- **settings.local.json deny rules** - Block prohibited file patterns
-- **Command compliance** - All commands must follow file creation restrictions
-- **Regular audits** - Periodic validation of file system compliance
+- **Selective deny rules** - Block specific problematic patterns only
+- **Smart command logic** - Commands assess value before creating files
+- **Periodic cleanup** - Remove low-value files during maintenance
 
 ## 📋 SUCCESS CRITERIA
 
