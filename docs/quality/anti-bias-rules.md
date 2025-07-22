@@ -69,6 +69,31 @@ Regular content review, user feedback analysis, cross-validation, assumption aud
 ### Command Integration
 **EMBEDDED**: Discovery → Analysis → Synthesis → Recommendation phases with neutral protocols
 
+## 🚫 FILE CREATION RESTRICTIONS
+
+### System Maintenance Rules
+**CRITICAL**: Anti-proliferation protocol to prevent documentation bloat
+
+#### Prohibited File Operations:
+- ❌ **NO context/ file generation** - System must NOT create files in context/ directories
+- ❌ **NO date-stamped files** - Ban automatic date-based file naming (YYYY-MM-DD patterns)
+- ❌ **NO meta-documentation** - No files documenting the documentation system itself
+- ❌ **NO "health reports"** or "matrix analysis" files
+- ❌ **NO behavioral pattern documentation** - System self-analysis forbidden
+- ❌ **NO duplicate content** - Prevent redundant file creation
+
+#### Required File Behavior:
+- ✅ **UPDATE existing files** instead of creating new ones
+- ✅ **User value threshold** - Files must serve direct user needs only
+- ✅ **Consolidation over creation** - Merge related content into existing files
+- ✅ **Single responsibility** - Each file serves one clear purpose
+- ✅ **Flat structure** - Avoid unnecessary subdirectory nesting
+
+#### Technical Enforcement:
+- **settings.local.json deny rules** - Block prohibited file patterns
+- **Command compliance** - All commands must follow file creation restrictions
+- **Regular audits** - Periodic validation of file system compliance
+
 ## 📋 SUCCESS CRITERIA
 
 ### Compliance Metrics
@@ -76,5 +101,7 @@ Regular content review, user feedback analysis, cross-validation, assumption aud
 - **Evidence Coverage**: 100% conclusion support
 - **Option Completeness**: Comprehensive alternative coverage
 - **Language Neutrality**: Bias terminology elimination
+- **File Proliferation Rate**: Zero unauthorized file creation
+- **Structure Compliance**: 100% adherence to flat context/ structure
 
-**CRITICAL**: These anti-bias rules are MANDATORY for ALL system operations. Bias introduction compromises system reliability and effectiveness.
+**CRITICAL**: These anti-bias rules and file restrictions are MANDATORY for ALL system operations. Violations compromise system reliability and effectiveness.

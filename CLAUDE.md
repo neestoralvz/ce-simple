@@ -8,21 +8,7 @@
 
 **Core Philosophy**: Pragmatic effectiveness, autocontained commands, LLM optimized, anti-bias processing → `docs/system/architectural-principles.md`
 
-## 🚫 FILE CREATION RESTRICTIONS
-
-**CRITICAL**: Anti-proliferation protocol to prevent documentation bloat
-
-### Prohibited File Creation:
-- ❌ **NO context/ file generation** - System must NOT create files in context/ directories
-- ❌ **NO date-stamped files** - Ban automatic date-based file naming (YYYY-MM-DD patterns)
-- ❌ **NO meta-documentation** - No files documenting the documentation system itself
-- ❌ **NO "health reports"** or "matrix analysis" files
-- ❌ **NO behavioral pattern documentation** - System self-analysis forbidden
-
-### Required Behavior:
-- ✅ **UPDATE existing files** instead of creating new ones
-- ✅ **User value threshold** - Files must serve direct user needs only
-- ✅ **Consolidation over creation** - Merge related content into existing files
+**File Management Rules**: All file creation restrictions and maintenance rules → `docs/quality/anti-bias-rules.md`
 
 ## 🚀 COMMAND DIRECTORY
 
