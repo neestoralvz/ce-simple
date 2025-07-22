@@ -129,8 +129,44 @@ Task("Standards Optimization", "Execute /docs-optimize for CLAUDE.md compliance 
 Task("Final Validation", "Execute /docs-validate for cross-reference integrity and health score verification")
 
 // 6. RECURSIVE CORRECTION LOGIC
-// Health score assessment and correction cycles
+// Health score assessment and automatic retry implementation
 Bash("echo 'scale=1; ([valid_references] * 100) / [total_references]' | bc") // Calculate health score
+
+// 6A. THRESHOLD VALIDATION AND AUTOMATIC RETRY
+Grep("Health Score:|Final.*Score", {glob: "context/discoveries/docs-workflow-session-*.md", output_mode: "content", -n: true}) // Extract health score
+Bash("echo 'Health threshold check: [extracted_score] vs 85.0 minimum'")
+
+// 6B. RETRY DECISION LOGIC
+Task("Recursive Correction", `IF health_score < 85.0 AND retry_count < 3: 
+  - RETRY: Execute /docs-workflow maintain with error context
+  - CONTEXT: Health score [score]%, Failed areas: [failed_metrics], Locations: [issue_files]
+  - FOCUS: [specific_correction_areas]
+ELIF health_score < 85.0 AND retry_count >= 3:
+  - ESCALATE: Manual intervention required, preserve system state
+ELSE:
+  - SUCCESS: Quality threshold achieved, proceed to completion`)
+
+// 6C. RETRY EXECUTION FRAMEWORK
+Write("context/patterns/docs-workflow-retry-context.md", `# Docs Workflow Retry Context
+
+## Current Status
+- Health Score: [current_score]%
+- Retry Iteration: [retry_count]/3
+- Previous Results: [previous_results]
+
+## Failed Metrics
+[List of specific metrics below 85% threshold]
+
+## Issue Locations  
+[Files and sections requiring correction]
+
+## Correction Focus
+[Targeted improvement areas for next iteration]
+
+## Error Context Transmission
+[Structured error data for retry workflow]`)
+
+Bash("if [ $(echo '[health_score] < 85.0' | bc) -eq 1 ] && [ [retry_count] -lt 3 ]; then echo 'RETRY-[retry_count]: Initiating corrective workflow with focused context'; fi")
 
 // 7. WORKFLOW RESULT DOCUMENTATION
 Write("context/discoveries/docs-workflow-session-[timestamp].md", `# Documentation Workflow Results
