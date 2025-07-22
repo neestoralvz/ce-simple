@@ -81,22 +81,18 @@ function commit_partial_success() {
     local completed_phases="$2"
     local pending_issues="$3"
     local recovery_actions="$4"
+    local session_num="${5:-1}"
     
-    git add . && git commit -m "${command_name}: partial | ${pending_issues} pending | next: ${recovery_actions}
-
-🤖 Generated with Claude Code - Partial
-Co-Authored-By: Claude <noreply@anthropic.com>"
+    git add . && git commit -m "${command_name}: partial | completed: ${completed_phases} | pending: ${pending_issues} | next: ${recovery_actions} ⚠️session-${session_num}"
 }
 
 function commit_error_recovery() {
     local command_name="$1"
     local error_context="$2"
     local recovery_success="$3"
+    local session_num="${4:-1}"
     
-    git add . && git commit -m "${command_name}: recovery | ${error_context} | status: ${recovery_success}
-
-🤖 Generated with Claude Code - Recovery
-Co-Authored-By: Claude <noreply@anthropic.com>"
+    git add . && git commit -m "${command_name}: recovery | context: ${error_context} | status: ${recovery_success} 🔄session-${session_num}"
 }
 ```
 
