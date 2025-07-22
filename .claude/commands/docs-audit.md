@@ -221,8 +221,8 @@ Bash("echo 'Recommendation: [WORKFLOW_MAINTAIN|CONSOLIDATE_FIRST|AUDIT_ONLY]'")
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with audit metrics (no Claude attribution)
-Bash("git add . && git commit -m \"docs-audit: health [score]/100 | issues: [critical]/[warning]/[info] | session-[N]\"")
+// Git automation with audit metrics
+Bash("git add . && git commit -m \"docs-audit: health [score]/100 | issues: [critical]/[warning]/[info] ✓session-[N]\"")
 ```
 
 ### Execution Verification

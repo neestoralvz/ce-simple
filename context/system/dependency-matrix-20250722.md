@@ -50,6 +50,15 @@ docs/
 ├── structure/ (1 file) → Organization protocol
 ├── system/ (2 files) → Architectural principles
 └── workflow/ (4 files) → Notifications and git integration
+
+context/
+├── discoveries/ (27 files) → Session discoveries and analysis
+├── experience/ (17 files) → Learning sessions and interviews  
+├── implementation/ (2 files) → Implementation guides
+├── patterns/ (21 files) → Behavioral and structural patterns
+├── research/ (3 files) → External research and standards
+├── system/ (6 files) → System matrices and analysis
+└── workflows/ (4 files) → Workflow templates and examples
 ```
 
 ### Integration Points

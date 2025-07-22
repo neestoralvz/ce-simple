@@ -229,8 +229,8 @@ if (error_detected) {
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with problem-solving metrics (no Claude attribution)
-Bash("git add . && git commit -m \"problem-solving: [problem-type] | phases: 6 | complexity: [N]/10 | session-[N]\"")
+// Git automation with problem-solving metrics
+Bash("git add . && git commit -m \"problem-solving: [problem-type] | phases: 6 | complexity: [N]/10 ✓session-[N]\"")
 ```
 
 ### Execution Verification
