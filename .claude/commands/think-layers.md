@@ -8,6 +8,22 @@ Execute: `/think-layers [analysis-target] [starting-layer]`
 
 ## 🔧 Implementation
 
+### Autocontained Notification System
+```bash
+#!/bin/bash
+# NOTIFICATION SYSTEM - Functional colors + unique emoticons
+readonly B='\e[34m' G='\e[32m' R='\e[31m' Y='\e[33m' C='\e[36m' M='\e[35m' GB='\e[32;1m' N='\e[0m'
+info()     { echo -e "${B}🔵 INFO${N}: $1"; }
+success()  { echo -e "${G}🟢 SUCCESS${N}: $1"; }  
+error()    { echo -e "${R}🔴 ERROR${N}: $1"; }
+warn()     { echo -e "${Y}🟡 WARNING${N}: $1"; }
+process()  { echo -e "${C}⚡ PROCESS${N}: $1"; }
+data()     { echo -e "${M}📊 DATA${N}: $1"; }
+complete() { echo -e "${GB}✅ COMPLETE${N}: $1"; }
+calc()     { echo "scale=${2:-2}; $1" | bc -l; }
+progress() { local p=$(calc "$1*100/$2" 0); process "$3 [$p% complete]"; }
+```
+
 ### Behavioral Reinforcement Protocol
 **MANDATORY at analysis initialization**:
 

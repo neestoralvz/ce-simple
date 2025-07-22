@@ -21,11 +21,12 @@ All commands in this directory are optimized for **aggressive parallelization** 
 - **Codebase Analysis**: 52 operations reduce exploration from hours to minutes  
 - **Overall Improvement**: 90% efficiency gain through parallelization
 
-### Integration with Automation Tools
-All commands integrate with `tools/` automation suite:
-- Git WorkTree parallel development environments
-- Real-time monitoring and performance tracking
-- Automated workflow orchestration
+### Autocontained Architecture
+All commands follow strict autocontained principles:
+- Embedded notification system with functional colors + unique emoticons
+- Zero external dependencies - no tools/ directory reliance
+- Integrated mathematical operations via bc for precision calculations
+- One-line compact notifications for token efficiency
 
 ---
 **CRITICAL**: All commands use direct tools (Write, Read, Bash, Grep, Glob) to prevent agent stopping issues and maximize parallel execution efficiency.
