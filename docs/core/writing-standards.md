@@ -15,13 +15,14 @@
 ## 📊 CONTENT OPTIMIZATION
 
 ### Density Standards
-- **COMMAND LIMITS**: ≤150 lines maximum (operational efficiency and cognitive load)
+- **COMMAND LIMITS**: ≤130 lines maximum (operational efficiency and cognitive load)
+- **DOCUMENTATION LIMITS**: ≤200 lines maximum (general documents)
 - **DOCUMENTATION LIMITS**: ≤200 lines maximum (cognitive digestibility)
 - **PRINCIPLE**: Maximum value per cognitive unit
 - **STRUCTURE**: Progressive hierarchy (Summary → Details → Comprehensive)
 - **RESPONSIBILITY**: Single responsibility principle per file
 
-**CRITICAL**: 150-line command limit is system-wide standard referenced by all architectural components for consistency.
+**CRITICAL**: 130-line command limit applies ONLY to .claude/commands/ files. Documentation standards (200 lines) apply to all other files.
 
 ### Content Hierarchy
 1. **Primary**: Critical operational instructions
