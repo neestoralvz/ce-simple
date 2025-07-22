@@ -6,11 +6,11 @@
 
 **ce-simple**: Streamlined command system for Claude Code enabling efficient context engineering through intelligent workflow orchestration and agent deployment.
 
-**Core Philosophy**: Pragmatic effectiveness, autocontained commands, LLM optimized, anti-bias processing → `docs/system/architectural-principles.md`
+**Core Philosophy**: Pragmatic effectiveness, autocontained commands, LLM optimized, anti-bias processing → `docs/core/architectural-principles.md`
 
-**Standard Operation**: ALL commands use exhaustive verification by default → `docs/quality/meticulous-verification-protocol.md`
+**Standard Operation**: ALL commands use exhaustive verification by default → `docs/matrix/validation-protocols.md`
 
-**File Management Rules**: All file creation restrictions and maintenance rules → `docs/quality/anti-bias-rules.md`
+**File Management Rules**: All file creation restrictions and maintenance rules → `docs/core/anti-bias-enforcement.md`
 
 ## 🚀 COMMAND DIRECTORY
 
@@ -36,7 +36,7 @@
 - **`/context-optimize`** - Intelligent context maintenance with consolidation and density optimization
 
 ### System Standards
-Commands follow integrated standards → `docs/documentation/writing-standards.md`, `docs/workflow/workflow-notifications.md`, `docs/quality/anti-bias-rules.md`, `docs/command/command-template.md`
+Commands follow integrated standards → `docs/core/writing-standards.md`, `docs/matrix/validation-protocols.md`, `docs/core/anti-bias-enforcement.md`, `docs/commands/command-template.md`
 
 ## 🔧 WORKFLOW INTEGRATION
 
@@ -48,7 +48,7 @@ Commands follow integrated standards → `docs/documentation/writing-standards.m
 ├─ /worktree-cleanup → Automated work tree maintenance (weekly)
 ```
 
-**Complete workflow details**: `docs/workflow/primary-discovery-flow.md`
+**Complete workflow details**: Integrated in command implementations
 
 ### Intelligence Parallelization Protocol
 **MANDATORY**: Autocontained analysis → optimization → aggressive execution
@@ -56,7 +56,7 @@ Commands follow integrated standards → `docs/documentation/writing-standards.m
 - **Adaptive codebase operations** (12-52 based on project size)
 - **Message-level optimization** - maximize efficiency through intelligent batching
 
-**Detailed specifications**: `docs/implementation/aggressive-parallelization-protocol.md`
+**Detailed specifications**: `docs/core/parallelization-system.md`
 
 ## 🎯 IMPLEMENTATION READY
 
@@ -73,7 +73,7 @@ Commands follow integrated standards → `docs/documentation/writing-standards.m
 4. **Review**: Evaluate generated context and analysis results
 5. **Execute**: Implement recommendations from workflow
 
-**Complete operation guide**: `docs/system/usage-instructions.md`
+**Complete operation guide**: `docs/core/usage-instructions.md`
 
 ---
 
