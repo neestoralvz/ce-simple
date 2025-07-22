@@ -165,10 +165,10 @@
 ### Problem-Solving Progress Tracking
 ```
 🔍 DIAGNOSIS: Problem identified → [type] classified, [severity] level
-📁 DISCOVERY: Context analysis → [N] relevant files found
-🌐 RESEARCH: External knowledge → [N] solution patterns discovered  
-🧠 ANALYSIS: Think-layers active → Level [N] ([problem-solving mode])
-📋 SOLUTION: Plan generated → [N] implementation steps ready
+📁 DISCOVERY: Context analysis → Relevant files identified
+🌐 RESEARCH: External knowledge → Solution patterns discovered  
+🧠 ANALYSIS: Think-layers active → Progressive analysis mode
+📋 SOLUTION: Plan generated → Implementation steps ready
 ✅ READY: Execution plan complete → Solution deployment prepared
 ```
 

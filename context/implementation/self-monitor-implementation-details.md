@@ -130,7 +130,7 @@ Bash("echo 'scale=1; ([compliant_files] * 100) / [total_files]' | bc") // Compli
 Bash("echo 'scale=1; ([size_score] + [bias_score] + [reference_score] + [implementation_score])' | bc") // Total score calculation
 
 // Correction effectiveness measurement
-Bash("echo 'Iteration [N]: Compliance [previous]% → [current]% ([improvement] point change)'")
+Bash("echo 'Iteration: Compliance improvement tracked'")
 
 // 6. WORKFLOW INTEGRATION MONITORING
 // Ensure seamless operation without disruption
