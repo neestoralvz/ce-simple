@@ -227,8 +227,8 @@ Task("Learning Assessment", "Evaluate generation learning value: if complexity â
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with generation metrics (no Claude attribution)
-Bash("git add . && git commit -m \"docs-generate: 3-wave | docs: [N] | quality: [score]% | session-[N]\"")
+// Git automation with generation metrics
+Bash("git add . && git commit -m \"docs-generate: 3-wave | docs: [N] | quality: [score]% âœ“session-[N]\"")
 ```
 
 ### Execution Verification

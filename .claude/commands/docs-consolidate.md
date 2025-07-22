@@ -211,8 +211,8 @@ Write("context/discoveries/consolidation-results-[timestamp].md", `# Content Con
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with consolidation metrics (no Claude attribution)
-Bash("git add . && git commit -m \"docs-consolidate: duplication [before]%→[after]% | refs: [repaired] | session-[N]\"")
+// Git automation with consolidation metrics
+Bash("git add . && git commit -m \"docs-consolidate: duplication [before]%→[after]% | refs: [repaired] ✓session-[N]\"")
 ```
 
 ### Execution Verification
