@@ -188,30 +188,45 @@ TodoWrite([
 **CRITICAL**: These are the ACTUAL tool calls that implement the documented functionality
 
 ```javascript
-// 1. STRUCTURAL VALIDATION (real execution)
-LS("/Users/nalve/ce-simple") // Verify root structure
-LS("/Users/nalve/ce-simple/docs") // Verify docs/ directory  
-LS("/Users/nalve/ce-simple/context") // Verify context/ directory
-LS("/Users/nalve/ce-simple/.claude") // Verify .claude/ directory
+// 1. STRUCTURAL VALIDATION (real execution) - MANDATORY EXPLORATION PROTOCOL
+// NEVER claim a file exists without FIRST exploring its existence
+LS("/Users/nalve/ce-simple") // Verify root structure exists
+LS("/Users/nalve/ce-simple/docs") // Verify docs/ directory exists
+LS("/Users/nalve/ce-simple/context") // Verify context/ directory exists  
+LS("/Users/nalve/ce-simple/.claude") // Verify .claude/ directory exists
 
-// 2. STRUCTURAL VIOLATIONS DETECTION (real execution)
-Glob("**/*.md", {path: "."}) // Find all markdown files
-Grep("BROKEN|MISSING|ERROR", {glob: "**/*.md", output_mode: "files_with_matches"}) // Find violations
+// 2. FILE EXISTENCE VALIDATION (real execution) - EXPLORATION BEFORE CLAIMS
+// Explore ALL referenced files before making any existence claims
+Glob("**/*.md", {path: "."}) // Find all markdown files that actually exist
+Grep("BROKEN|MISSING|ERROR", {glob: "**/*.md", output_mode: "files_with_matches"}) // Find violations in existing files
 
-// 3. GIT INTEGRATION (real execution - workflow completion)
-Bash("git add . && git commit -m \"start: [workflow-name] | [metrics] ✓session-[N]\"") // Clean commit format
+// 3. COMMAND EXISTENCE VALIDATION (real execution) - VERIFY BEFORE REFERENCE
+// Validate all 15 commands exist with execution layers before referencing them
+LS("/Users/nalve/ce-simple/.claude/commands") // List actual command files
+Grep("EXECUTION LAYER", {glob: ".claude/commands/*.md", output_mode: "files_with_matches"}) // Verify execution implementation
 
-// 4. AGENT DEPLOYMENT (real execution via Task tool)
-Task("Agent deployment", "[deployment-strategy] based on complexity assessment")
+// 4. CROSS-REFERENCE VALIDATION (real execution) - VALIDATE BEFORE CLAIM
+// Explore all cross-references to ensure they point to existing resources
+Grep("docs/|context/|\.claude/", {glob: "**/*.md", output_mode: "content"}) // Find directory references
+Grep("\\[.*\\]\\(.*\.md\\)", {glob: "**/*.md", output_mode: "content"}) // Find markdown links
+
+// 5. GIT INTEGRATION (real execution - workflow completion)
+Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verified | metrics: [data] ✓session-[N]\"") // Clean commit format
+
+// 6. AGENT DEPLOYMENT (real execution via Task tool) - ONLY AFTER EXPLORATION
+// Deploy agents ONLY after mandatory exploration confirms system integrity
+Task("Agent deployment", "[deployment-strategy] based on verified complexity assessment")
 ```
 
 ### Execution Prevention Framework
 **ANTI-DOCUMENTATION-THEATER MEASURES**:
 
-1. **Execution Verification**: Every documented automation MUST have corresponding tool calls
-2. **Tool Call Ratio**: Minimum 3:1 ratio of actual tools to documentation lines
-3. **Git Commit Tracking**: Each workflow completion triggers real git commit
-4. **Performance Metrics**: Track execution vs documentation discrepancies
+1. **Mandatory Exploration Protocol**: NEVER claim file/resource existence without FIRST using exploration tools (LS, Glob, Grep)
+2. **Execution Verification**: Every documented automation MUST have corresponding tool calls
+3. **Tool Call Ratio**: Minimum 3:1 ratio of actual tools to documentation lines  
+4. **Git Commit Tracking**: Each workflow completion triggers real git commit
+5. **Performance Metrics**: Track execution vs documentation discrepancies
+6. **Exploration-Before-Claims**: All existence statements must be preceded by actual exploration tool execution
 
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
