@@ -59,9 +59,9 @@ Execute: `/explore-web [search-topic] [research-depth]`
 ## 🔗 See Also
 
 ### Implementation References
-- `standards/explore-web-implementation.md` - Complete research framework details
+- `../../standards/explore-web-implementation.md` - Complete research framework details
 - `context/research/` - Research output documentation location
-- `standards/anti-bias-rules.md` - Research neutrality standards
+- `../../standards/anti-bias-rules.md` - Research neutrality standards
 
 ### Related Commands
 - Execute `/start` to initiate discovery workflows triggering research

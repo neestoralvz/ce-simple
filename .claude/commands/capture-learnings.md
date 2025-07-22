@@ -12,193 +12,56 @@ Dual-phase learning capture system that automatically documents execution patter
 ### Dual-Phase Learning Architecture
 
 #### Phase 1: Process Learning (Auto-Triggered During Analysis)
-**WHEN**: Activated parallel to `/explore-codebase` and `/think-layers`
-**WHAT**: Automatic pattern detection and decision documentation
-**OUTPUT**: Enhanced context files with discovered patterns
-
-**Auto-Capture Elements**:
-- **Architectural Decisions**: Why specific approaches chosen over alternatives
-- **Pattern Recognition**: New patterns discovered vs existing patterns applied
-- **Problem Resolution**: Issues encountered and resolution strategies
-- **Discovery Documentation**: Previously unknown aspects of codebase/domain
-- **Decision Trees**: Alternative paths considered and rationale for choices
+**Auto-captures**: Architectural decisions, pattern recognition, problem resolution during workflow execution
+**Integration**: Parallel to `/explore-codebase` and `/think-layers` for enhanced context files
 
 #### Phase 2: Results Learning (Post-Execution Decision Point)
-**WHEN**: After workflow execution completion
-**WHAT**: Intelligent assessment of interview necessity + dynamic user feedback
-**OUTPUT**: Experience documentation and system improvement insights
+**Assessment**: Intelligent evaluation of interview necessity based on learning value scoring
+**Output**: Experience documentation and system improvement insights
 
 ### Intelligent Interview Decision Matrix
+**Learning Value Scoring**: Historical weighting + execution complexity assessment
+**Decision Threshold**: ≥4 points → Activate Interview
+**Conservative Bias**: Emphasis on high-value learning opportunities only
 
-#### Learning Value Assessment (Conservative Bias)
-**Historical Context Weighting**:
-- Days since last interview: +1 point (max +3)
-- Consecutive simple executions: +1 point per 3 executions
-- Novel domain interactions: +2 points
-
-**Execution Complexity Scoring**:
-```
-Sequential commands (>2): +2 points
-Error resolution occurred: +2 points  
-New patterns discovered: +2 points
-Alternative strategies evaluated: +1 point
-Unexpected execution time: +1 point
-Novel tool combinations: +1 point
-Context switching required: +1 point
-```
-
-**Decision Logic**: ≥4 points OR historical factor present → Activate Interview
+*Implementation details in `../../standards/capture-learnings-implementation.md`*
 
 #### Dynamic Interview Generation
-**Adaptive Question Count** (3-6 questions based on learning density):
-- **Core Set (Always)**: 3 high-value questions based on execution patterns
-- **Extended Set (Conditional)**: +1-3 questions when novel patterns detected
-- **Quality Gate**: Stop when diminishing value detected or user certainty confirmed
+**Adaptive Questions**: 3-6 context-driven questions based on execution patterns
+**Quality Gate**: Stop when diminishing value detected
+**Language Optimization**: Spanish questions for natural user engagement
 
-**Context-Driven Question Pool**:
-- **Process Effectiveness**: "¿El workflow siguió la secuencia que esperabas?"
-- **Result Quality**: "¿Los resultados coinciden con tu visión inicial?"
-- **Friction Points**: "¿Hubo algún momento donde te sentiste perdido o confundido?"
-- **Discovery Value**: "¿Aprendiste algo inesperado sobre tu código/dominio?"
-- **Efficiency Assessment**: "¿Qué cambiarías del proceso para la próxima vez?"
-- **System Evolution**: "¿El resultado sugiere mejoras al sistema mismo?"
-
-**Adaptive Selection Logic**:
-- Select 3 highest-value questions based on execution patterns detected
-- Add extended questions only when multiple novel patterns found
-- Prioritize density over quantity for cognitive load optimization
+*Question pools and selection logic in `../../standards/capture-learnings-implementation.md`*
 
 ### Learning Documentation Framework
+**Pattern Storage**: Extends existing context architecture with domain-specific patterns
+**Experience Integration**: Monthly user feedback consolidation for system improvement
 
-#### Pattern Storage Enhancement
-**Extend Existing Context Architecture**:
-```
-context/patterns/
-├── execution-patterns-[domain].md      # How workflows typically execute
-├── decision-patterns-[domain].md       # Why certain choices made repeatedly  
-├── friction-patterns-[domain].md       # Common obstacles and solutions
-└── discovery-patterns-[domain].md      # Learning insights and breakthroughs
-```
-
-#### Experience Integration
-**User Feedback Integration**:
-```
-context/experience/
-├── workflow-effectiveness-[month].md   # Process efficiency insights
-├── expectation-reality-[month].md      # Outcome vs prediction analysis
-└── improvement-suggestions-[month].md  # User-driven enhancement ideas
-```
+*Complete framework structure in `../../standards/capture-learnings-implementation.md`*
 
 ### Parallel Agent Integration
+**Process Agent**: Deploys parallel to analysis commands for pattern capture
+**Results Agent**: Post-execution learning when value threshold exceeded
+**Integration Workflow**: Analysis → Interview → Validation → Enhancement
 
-#### Process Learning Agent (During Analysis)
-**Deploy Parallel To**:
-- `/explore-codebase` → Capture structural discovery patterns
-- `/think-layers` → Document analysis decision progression  
-- Web research → Record external pattern validation insights
-
-**Agent Objectives**:
-1. **Decision Documentation**: Record why specific approaches chosen
-2. **Pattern Classification**: Identify if discoveries are novel vs familiar
-3. **Alternative Assessment**: Document considered but rejected options
-4. **Context Enhancement**: Enrich existing context with meta-insights
-
-#### Results Learning Agent (Post-Execution)
-**Trigger Conditions**:
-- Workflow execution marked complete
-- Context files generated and consolidated
-- Learning value assessment ≥4 points OR historical trigger active
-
-**Agent Workflow**:
-1. **Execution Analysis**: Review full workflow trace and outcomes
-2. **Interview Generation**: Create dynamic questions based on execution patterns
-3. **User Engagement**: Conduct structured feedback interview
-4. **System Integrity Validation**: Verify command system coherence and reference integrity
-5. **Insight Integration**: Enhance existing patterns with experience data
+*Complete agent protocols in `../../standards/capture-learnings-implementation.md`*
 
 ### System Integrity Validation Framework
+**Activation**: During Phase 2 when interview threshold exceeded
+**Purpose**: Validate command system coherence when learning context is maximum
+**Components**: Reference integrity + gap discovery + resolution recommendations
 
-#### Rational Validation Protocol
-**WHEN**: Activated during Phase 2 when interview threshold exceeded (≥4 learning points)
-**WHY**: Validate the system that just executed the workflow when learning context is maximum
-**HOW**: Intelligent reference analysis with gap detection and resolution recommendations
-
-#### Validation Components
-
-**Reference Integrity Check**:
-- **Command Existence**: Verify all referenced commands in "See Also" sections actually exist
-- **Chain Consistency**: Validate workflow chains are bidirectional and complete
-- **Cross-Reference Health**: Ensure referenced files and sections are accessible
-- **Trigger Logic**: Verify input/output trigger consistency across commands
-
-**Gap Discovery System**:
-```
-🔍 INTEGRITY: Scanning command references from executed workflow
-📊 ANALYSIS: [X] commands checked, [Y] references validated
-⚠️  GAPS: [N] missing references detected → [list of gaps]
-🔧 RECOMMENDATIONS: [Specific actions to resolve gaps]
-```
-
-**Validation Scope**:
-- **Executed Commands**: Primary focus on commands used in current workflow
-- **Referenced Network**: Secondary check on "See Also" and trigger chains
-- **Critical Paths**: Verify essential workflow progressions are intact
-- **Evidence-Based**: Only flag definitive issues, avoid false positives
-
-#### Gap Resolution Framework
-
-**Classification System**:
-- **Critical Gap**: Missing command breaks workflow execution (like `/plan-execution`)
-- **Reference Gap**: Broken cross-reference reduces navigation efficiency  
-- **Chain Gap**: Incomplete workflow progression creates user confusion
-- **Documentation Gap**: Inconsistent or outdated references in documentation
-
-**Resolution Priority**:
-1. **Immediate**: Critical gaps affecting workflow functionality
-2. **High**: Reference gaps in frequently used commands
-3. **Medium**: Chain gaps in secondary workflows
-4. **Low**: Documentation gaps in rarely accessed sections
-
-**Recommendation Engine**:
-```
-🎯 RESOLUTION RECOMMENDATIONS:
-├── Create missing command: [command-name] referenced in [N] locations
-├── Update references: Replace [old-ref] with [new-ref] in [files]
-├── Complete chain: Add [missing-link] to connect [workflow-a] → [workflow-b]  
-└── Validate architecture: Review [command-set] for consistency
-```
+*Complete validation protocols and gap resolution framework in `../../standards/capture-learnings-implementation.md`*
 
 #### Integration with Learning System
-
-**Contextual Validation**:
-- **Workflow-Aware**: Focus validation on commands and patterns just experienced
-- **Learning-Enhanced**: Use interview insights to inform gap priority assessment
-- **Pattern-Integrated**: Document discovered gaps as system architecture patterns
-- **User-Guided**: Include gap findings in overall learning capture and documentation
-
-**Notification Integration**:
-```
-🔍 INTEGRITY: System validation initiated → Workflow context analysis
-📊 VALIDATION: [X] commands verified, [Y] references checked
-⚠️  DISCOVERY: [N] gaps identified → [severity breakdown]
-✅ COMPLETION: System health documented → Recommendations generated
-```
+**Contextual Validation**: Workflow-aware focus on just-executed commands
+**Learning Enhancement**: Interview insights inform gap priority assessment
+**Pattern Integration**: Document gaps as system architecture patterns
 
 ### Learning Quality Assurance
-
-#### Anti-Bias Learning Processing
-**Neutral Pattern Documentation**:
-- Focus on evidence-based observations over interpretations
-- Document multiple perspectives when applicable  
-- Separate factual patterns from subjective preferences
-- Validate patterns through multiple execution instances
-
-#### Progressive Learning Disclosure
-**Context File Enhancement** (≤200 lines max):
-- Append insights to existing context files rather than creating new ones
-- Cross-reference related patterns across domains
-- Maintain maximum information density principles
-- Enable pattern evolution tracking over time
+**Anti-Bias Processing**: Evidence-based observations with neutral documentation
+**Progressive Disclosure**: Append to existing context files (≤200 lines max)
+**Pattern Validation**: Multiple execution instances for evidence-based insights
 
 ### Notification Integration
 

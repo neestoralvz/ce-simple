@@ -36,9 +36,8 @@ Execute: `/start [optional: initial request]`
 **Agent Deployment Matrix**:
 - `/explore-codebase` → Internal knowledge discovery
 - `/explore-web` → External pattern research  
-- `/think-layers` → Progressive analysis depth
+- `/think-layers` → Progressive analysis with context consolidation
 - `/capture-learnings` → Parallel pattern detection and post-execution learning
-- `/generate-context` → Consolidated context creation
 
 #### Phase 3: Analysis & Planning
 **Progressive Thinking Protocol**:
@@ -128,13 +127,7 @@ Execute: `/start [optional: initial request]`
 
 **Commit Structure**:
 ```bash
-git add . && git commit -m "start: Discovery workflow session completed
-
-🎯 SESSION: [Complex/Medium/Simple] (score: [X]/10) - [Intent] - [X]min
-🔧 ORCHESTRATION: [N] agents ([commands]) - [workflow-type] - [X]% load
-⚡ DERIVATIONS: /explore-codebase:[Y/N], /think-layers:[Level], /docs-workflow:[Mode]
-📊 RESULTS: [X]% clarity - [Resolution-status] - [Efficiency-level]
-🎯 LEARNING: [Pattern-type] - [Optimizations] - [Next-prediction]
+git add . && git commit -m "start: [intent] | [complexity]([X]) | [X]min | [outcome]
 
 🤖 Generated with Claude Code
 Co-Authored-By: Claude <noreply@anthropic.com>"

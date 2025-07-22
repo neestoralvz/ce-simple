@@ -31,9 +31,12 @@ Execute: `/think-layers [analysis-target] [starting-layer]`
 
 ### Plan Consolidation Framework
 **AUTO-TRIGGER**: After synthesis completion → Intelligent task division
+**Context Consolidation**: Aggregate discoveries from parallel analysis agents when triggered by `/start`
 **Documentation Detection**: Automatic classification of documentation tasks (README, API docs, guides, .md files)
 **Agent Delegation**: Deploy independent docs-agent for `/docs-workflow` with structured todo plans
 **Parallel Execution**: Documentation workflow + main implementation workflow coordination
+
+*Context consolidation protocols and implementation details in `../../standards/think-layers-implementation.md`*
 
 ## ⚡ Triggers
 
@@ -57,9 +60,9 @@ Execute: `/think-layers [analysis-target] [starting-layer]`
 ## 🔗 See Also
 
 ### Implementation References
-- `standards/think-layers-implementation.md` - Complete analysis framework details
+- `../../standards/think-layers-implementation.md` - Complete analysis framework details
 - `context/discoveries/` - Analysis output documentation location
-- `standards/simplicity-principles.md` - Progressive analysis principles
+- `../../standards/simplicity-principles.md` - Progressive analysis principles
 
 ### Related Commands
 - Execute `/start` to initiate workflows triggering progressive analysis

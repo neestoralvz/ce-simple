@@ -12,7 +12,7 @@ Execute: `/docs-consolidate [scope]`
 **Sequential Execution**: Execute in dependency order to prevent reference breaks during consolidation
 **Duplication Resolution**: Identify and merge overlapping content with authoritative source establishment
 **Reference Repair**: Fix broken cross-references, create missing targets, ensure bidirectional linking
-**Progressive Disclosure**: Extract verbose content from commands to standards/context layers
+**Progressive Disclosure**: Extract verbose content from commands to ../../standards/context layers
 
 ### Consolidation Strategy Framework
 **High Priority** (>40% overlap): Merge files with substantial duplication, establish single sources
@@ -50,9 +50,9 @@ Execute: `/docs-consolidate [scope]`
 ## 🔗 See Also
 
 ### Implementation References
-- `standards/docs-consolidate-implementation.md` - Complete consolidation framework details
-- `standards/simplicity-principles.md` - Progressive disclosure implementation standards
-- `standards/writing-standards.md` - Content unification and organization standards
+- `../../standards/docs-consolidate-implementation.md` - Complete consolidation framework details
+- `../../standards/simplicity-principles.md` - Progressive disclosure implementation standards
+- `../../standards/writing-standards.md` - Content unification and organization standards
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated optimization workflow integration

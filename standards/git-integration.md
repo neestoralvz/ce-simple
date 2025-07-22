@@ -12,22 +12,7 @@ Define standardized Git integration patterns for workflow commands to enable aut
 
 ### Standard Commit Message Structure
 ```bash
-git add . && git commit -m "[command]: [operation] [status]
-
-📊 EXECUTION METRICS:
-- [Key performance indicators]
-- [Duration and efficiency metrics]
-- [Quality measurements]
-
-🎯 RESULTS SUMMARY:
-- [Primary outcomes achieved]
-- [Secondary effects and improvements]
-- [System impact assessment]
-
-🔄 WORKFLOW INTELLIGENCE:
-- [Process insights and patterns]
-- [Decision rationale and alternatives]
-- [Optimization opportunities identified]
+git add . && git commit -m "[command]: [operation] | [key-metric] | [X]min | [outcome]
 
 🤖 Generated with Claude Code
 Co-Authored-By: Claude <noreply@anthropic.com>"
@@ -136,14 +121,9 @@ function commit_partial_success() {
     local pending_issues="$3"
     local recovery_actions="$4"
     
-    git add . && git commit -m "${command_name}: Partial completion with recovery plan
+    git add . && git commit -m "${command_name}: partial | ${pending_issues} pending | next: ${recovery_actions}
 
-⚠️ EXECUTION STATUS: Partial success requiring attention
-📊 Completed Phases: ${completed_phases}
-🔧 Pending Issues: ${pending_issues}
-🎯 Recovery Actions: ${recovery_actions}
-
-🤖 Generated with Claude Code - Partial Execution
+🤖 Generated with Claude Code - Partial
 Co-Authored-By: Claude <noreply@anthropic.com>"
 }
 
@@ -152,14 +132,9 @@ function commit_error_recovery() {
     local error_context="$2"
     local recovery_success="$3"
     
-    git add . && git commit -m "${command_name}: Error recovery completed
+    git add . && git commit -m "${command_name}: recovery | ${error_context} | status: ${recovery_success}
 
-🔧 ERROR RECOVERY: ${error_context}
-✅ Recovery Status: ${recovery_success}
-📊 System State: Restored and validated
-🎯 Prevention: Error patterns documented for future optimization
-
-🤖 Generated with Claude Code - Error Recovery
+🤖 Generated with Claude Code - Recovery
 Co-Authored-By: Claude <noreply@anthropic.com>"
 }
 ```

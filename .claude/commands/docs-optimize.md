@@ -143,8 +143,8 @@ find standards context -name "*.md" -exec wc -l {} \; | awk '$1 > 200'
 
 ### Integration References
 - `context/research/anthropic-claude-md-standards.md` - Official optimization criteria
-- `standards/writing-standards.md` - System compliance requirements
-- `standards/simplicity-principles.md` - Optimization implementation guidelines
+- `../../standards/writing-standards.md` - System compliance requirements
+- `../../standards/simplicity-principles.md` - Optimization implementation guidelines
 - `context/discoveries/documentation-workflow-discoveries.md` - Optimization methodology
 
 ---

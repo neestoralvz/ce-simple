@@ -90,20 +90,7 @@
 
 **Success Commit Structure**:
 ```bash
-git add . && git commit -m "docs-workflow: [mode] optimization completed
-
-📊 EXECUTION METRICS:
-- Mode: [Default/Audit/Maintain]
-- Duration: [X] minutes
-- Health Score: [before]% → [after]% (+[delta]%)
-- Files Modified: [N] files
-
-🎯 PHASE RESULTS:
-$(if_generation_executed)
-- Audit: [X] issues identified → [Y] resolved
-- Consolidation: [X]% duplication reduction
-- Optimization: [X]% standards compliance
-- Validation: [X]% reference integrity
+git add . && git commit -m "docs-workflow: [mode] | health [before]%→[after]% | [X]min | [Y] issues resolved
 
 🔄 QUALITY MANAGEMENT:
 - Recursive iterations: [N]/3
@@ -117,14 +104,9 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 
 **Error Recovery Commit** (if partial success):
 ```bash
-git add . && git commit -m "docs-workflow: [mode] partial completion
+git add . && git commit -m "docs-workflow: [mode] partial | [X] issues pending | next: [actions]
 
-⚠️ EXECUTION STATUS: Partial success with [X] unresolved issues
-📊 Achieved: [list of completed phases]
-🔧 Pending: [list of pending issues]
-🎯 Next Steps: [recommended actions]
-
-🤖 Generated with Claude Code - Partial Execution
+🤖 Generated with Claude Code - Partial
 Co-Authored-By: Claude <noreply@anthropic.com>"
 ```
 

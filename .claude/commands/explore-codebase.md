@@ -52,7 +52,7 @@ Execute: `/explore-codebase [search-target] [depth-level]`
 ## 🔗 See Also
 
 ### Implementation References
-- `standards/explore-codebase-implementation.md` - Complete exploration framework details
+- `../../standards/explore-codebase-implementation.md` - Complete exploration framework details
 - `context/discoveries/` - Structure and component analysis output location
 - `context/patterns/` - Code pattern identification output location
 - `context/research/` - Dependency and technology analysis output location

@@ -62,9 +62,9 @@ Execute: `/docs-workflow [mode]`
 ## 🔗 See Also
 
 ### Implementation References
-- `standards/docs-workflow-implementation.md` - Complete workflow orchestration details
-- `standards/simplicity-principles.md` - Progressive disclosure principles
-- `standards/writing-standards.md` - File size and optimization standards
+- `../../standards/docs-workflow-implementation.md` - Complete workflow orchestration details
+- `../../standards/simplicity-principles.md` - Progressive disclosure principles
+- `../../standards/writing-standards.md` - File size and optimization standards
 
 ### Related Commands
 - Execute `/docs-audit` for isolated system health assessment

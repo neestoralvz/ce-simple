@@ -50,9 +50,9 @@ Execute: `/docs-validate [scope]`
 ## 🔗 See Also
 
 ### Implementation References
-- `standards/docs-validate-implementation.md` - Complete validation framework details
-- `standards/writing-standards.md` - Compliance validation criteria
-- `standards/simplicity-principles.md` - Quality assurance framework
+- `../../standards/docs-validate-implementation.md` - Complete validation framework details
+- `../../standards/writing-standards.md` - Compliance validation criteria
+- `../../standards/simplicity-principles.md` - Quality assurance framework
 
 ### Related Commands
 - Execute `/docs-workflow` for complete automated optimization workflow

@@ -160,8 +160,8 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 ### Integration References
 - `context/discoveries/documentation-workflow-discoveries.md` - Audit methodology basis
 - `context/research/anthropic-claude-md-standards.md` - Compliance validation criteria
-- `standards/simplicity-principles.md` - Structural assessment framework
-- `standards/writing-standards.md` - Content quality evaluation standards
+- `../../standards/simplicity-principles.md` - Structural assessment framework
+- `../../standards/writing-standards.md` - Content quality evaluation standards
 
 ---
 
