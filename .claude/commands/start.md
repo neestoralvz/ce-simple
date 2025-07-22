@@ -97,27 +97,8 @@ Execute: `/start [optional: initial request]`
 ### Automatic Learning Capture Protocol
 **POST-WORKFLOW ASSESSMENT**: After workflow completion, evaluate learning value using scoring framework
 
-**Learning Value Detection**:
-```
-📊 AUTO-SCORING: Calculate session complexity and learning value
-🎯 THRESHOLD: ≥4 points → Automatic /capture-learnings execution
-🔄 DECISION-LOGIC:
-  - Sequential commands >2 (+2 points)
-  - Error resolution occurred (+2 points)  
-  - New patterns discovered (+2 points)
-  - Alternative strategies (+1 point)
-  - Context switching required (+1 point)
-
-🧠 AUTO-EXECUTE: /capture-learnings when threshold exceeded
-⚡ NOTIFICATION: Learning capture initiated → Dynamic interview activated
-```
-
-**Automatic Integration Framework**:
-1. **Workflow Complete** → Calculate learning value score from session
-2. **Threshold Assessment** → Compare against ≥4 point minimum requirement
-3. **Auto-Execution** → Launch /capture-learnings with session context when threshold met
-4. **Learning Documentation** → Capture patterns and user insights automatically
-5. **System Enhancement** → Apply learning insights to future workflow optimization
+**Learning Value Detection**: Auto-scoring ≥4 points → /capture-learnings execution
+**Framework**: Session completion → threshold assessment → auto-execution → system enhancement
 
 ### Git Integration Protocol
 **SESSION-COMPLETION Tracking**: Automatic standardized commit generation on successful workflow completion
@@ -135,9 +116,8 @@ Execute: `/start [optional: initial request]`
 - Execute `/docs-workflow` via automatic agent delegation during analysis completion
 
 ### Documentation Workflow Commands
-- Execute `/docs-workflow` for complete automated documentation optimization
-- Execute `/docs-audit` → `/docs-consolidate` → `/docs-optimize` → `/docs-validate` for granular control
-- Comprehensive documentation health analysis and systematic optimization
+- Execute `/docs-workflow` for automated optimization
+- Execute individual commands for granular control
 
 ### System Integration
 - All commands follow writing standards for LLM-optimized documentation

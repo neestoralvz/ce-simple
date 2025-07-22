@@ -90,27 +90,9 @@ ERROR CONTEXT FROM ITERATION-[N]:
 7. **Final Resolution** → Report success or escalation status
 
 ### Automatic Learning Capture Protocol
-**POST-WORKFLOW ASSESSMENT**: Complex documentation workflows consistently generate high learning value - auto-trigger capture-learnings
+**POST-WORKFLOW ASSESSMENT**: Documentation workflows auto-trigger /capture-learnings due to high complexity scores
 
-**High-Value Learning Indicators**:
-```
-📊 WORKFLOW-SCORING: Documentation workflows typically exceed learning threshold
-🔧 COMPLEXITY-FACTORS:
-  - Sequential workflow phases (5+ phases) → +2 points guaranteed
-  - Recursive correction iterations → +2 points per retry cycle
-  - System health improvement → +2 points for optimization success
-  - Progressive disclosure application → +1 point for architectural enhancement
-  - Cross-reference repair → +1 point for system integrity improvement
-
-🎯 AUTO-TRIGGER: Most docs-workflow sessions >6 points → Automatic /capture-learnings execution
-⚡ INTEGRATION: Seamless transition from workflow completion → learning capture
-```
-
-**Learning Capture Integration**:
-1. **Workflow Success** → Auto-calculate learning value (typically >6 points for complex workflows)
-2. **Automatic Activation** → Execute /capture-learnings with workflow context and results
-3. **Pattern Documentation** → Capture workflow effectiveness and optimization insights
-4. **System Enhancement** → Apply learnings to improve future workflow automation
+**Integration**: Seamless workflow completion → learning capture → pattern documentation
 
 ## ⚡ Triggers
 

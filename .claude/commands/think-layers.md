@@ -81,6 +81,48 @@ Execute: `/think-layers [analysis-target] [starting-layer]`
 4. **Pattern Documentation** → Capture analysis insights and decision patterns automatically
 5. **System Learning** → Integrate discoveries into context architecture for future analysis enhancement
 
+### Problem-Solving Mode Enhancement
+
+**SPECIALIZED CAPABILITIES**: When called from `/problem-solving` workflow, each thinking layer applies problem-resolution focused analysis
+
+**🧠 THINK: Problem Understanding & Root Cause Analysis**
+```
+🔍 SYMPTOM ANALYSIS: Break down error manifestation and behavior patterns
+🎯 ROOT CAUSE HYPOTHESIS: Initial theories based on symptoms and context
+⚡ QUICK MITIGATION: Immediate actions to prevent further impact
+📊 IMPACT ASSESSMENT: System stability and user experience evaluation
+```
+
+**💪 THINK-HARD: Deep Investigation & Solution Architecture**
+```
+🕵️ FORENSIC ANALYSIS: Detailed investigation using internal context and external research
+🔧 SOLUTION STRATEGIES: Multiple approach evaluation with trade-off analysis
+📐 ARCHITECTURE REVIEW: System design implications and improvement opportunities
+🧪 HYPOTHESIS TESTING: Validation approach for root cause theories
+```
+
+**🚀 THINK-HARDER: Complex Solution Design & Implementation Strategy**
+```
+🏗️ SOLUTION ARCHITECTURE: Comprehensive fix design with dependency analysis
+⚠️ RISK ASSESSMENT: Potential side effects and rollback strategy planning
+🔄 INTEGRATION PLANNING: How solution fits within existing system architecture
+📋 IMPLEMENTATION ROADMAP: Detailed step-by-step execution planning
+```
+
+**⭐ ULTRA-THINK: Comprehensive Resolution & Future Prevention**
+```
+🎯 EXECUTION PLAN: Complete solution implementation with validation criteria
+🛡️ PREVENTION STRATEGY: System enhancements to prevent recurrence
+📈 MONITORING APPROACH: Success metrics and ongoing health assessment
+🔄 SYSTEM EVOLUTION: Learning integration and architecture improvements
+```
+
+**Problem-Solving Integration**:
+- **Context Inheritance**: Receives diagnosis, codebase analysis, and web research from previous phases
+- **Enhanced Analysis**: Applies problem-resolution lens to all thinking layers
+- **Solution Focus**: Prioritizes actionable solutions over theoretical analysis
+- **Risk Awareness**: Considers system stability and rollback requirements throughout analysis
+
 ## 🔗 See Also
 
 ### Implementation References
