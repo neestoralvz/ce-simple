@@ -123,6 +123,23 @@ Execute: `/start [optional: initial request]`
 **Exploration Success**: Comprehensive patterns identified → Generate actionable plan
 **Analysis Success**: Clear execution roadmap created → Initiate implementation
 
+### Git Integration Protocol
+**SESSION-COMPLETION Tracking**: Automatic commit generation on successful discovery workflow completion
+
+**Commit Structure**:
+```bash
+git add . && git commit -m "start: Discovery workflow session completed
+
+🎯 SESSION: [Complex/Medium/Simple] (score: [X]/10) - [Intent] - [X]min
+🔧 ORCHESTRATION: [N] agents ([commands]) - [workflow-type] - [X]% load
+⚡ DERIVATIONS: /explore-codebase:[Y/N], /think-layers:[Level], /docs-workflow:[Mode]
+📊 RESULTS: [X]% clarity - [Resolution-status] - [Efficiency-level]
+🎯 LEARNING: [Pattern-type] - [Optimizations] - [Next-prediction]
+
+🤖 Generated with Claude Code
+Co-Authored-By: Claude <noreply@anthropic.com>"
+```
+
 ## 🔗 See Also
 
 ### Related Commands

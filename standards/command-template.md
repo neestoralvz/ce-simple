@@ -118,50 +118,22 @@ Execute: `/[command-name] [parameters]`
 
 ### 🚫 COMPLEXITY CHECKPOINTS
 
-#### Feature Creep Detection
-**MANDATORY Validation Before Completion**:
-- [ ] **Role Clarity**: Command remains coordinator vs becomes documentation
-- [ ] **Section Value**: Each section adds execution value vs explanation value  
-- [ ] **Transparency Method**: Concise reasoning vs verbose criteria frameworks
-- [ ] **Line Count**: Follow limits in `standards/writing-standards.md`
+**MANDATORY Validation**:
+- [ ] Role clarity (coordinator vs documentation)
+- [ ] Section value (execution vs explanation)
+- [ ] Transparency method (concise vs verbose)
+- [ ] Line count (follow `standards/writing-standards.md`)
 
-#### Simplicity Signals
-**✅ GOOD Patterns**:
-- One-line decision reasoning with clear rationale
-- Function-focused sections that enable execution
-- Examples that demonstrate usage vs educate concepts
-- Cross-references to detailed documentation vs inline verbosity
+**PATTERNS**:
+- ✅ **GOOD**: One-line reasoning, function-focused, usage examples, cross-references
+- ⚠️ **WARNING**: Extensive examples, detailed criteria, concept explanations
+- ❌ **BAD**: Documentation repository, theoretical frameworks, science education
 
-**⚠️ WARNING Patterns** (Immediate Review Required):
-- Extensive examples that could be separate documentation
-- Detailed criteria that could be referenced standards
-- Multiple paragraphs explaining concepts vs directing actions
-- Growing from coordination to educational content
+**EMERGENCY** (≥180 lines): AUDIT → EXTRACT → REFERENCE → VALIDATE
 
-**❌ BAD Patterns** (Complexity Bloat Detected):
-- Coordination command becoming documentation repository
-- Implementation instructions becoming theoretical frameworks
-- Decision transparency becoming decision science education
-- Template sections expanding beyond functional necessity
-
-#### Emergency Simplification Protocol
-**When ≥180 lines detected**:
-1. **AUDIT**: Identify education vs execution content
-2. **EXTRACT**: Move detailed explanations to separate files
-3. **REFERENCE**: Replace verbose sections with file links
-4. **VALIDATE**: Confirm execution capability remains intact
-
-### Language Requirements
-- **English Only**: 100% English content enforcement
-- **Action-Oriented**: Strong verbs and clear directives
-- **Technical Precision**: Accurate and specific terminology
-- **LLM Optimized**: Structure for automated processing
-
-### Structural Requirements
-- **Hierarchical Organization**: Clear information hierarchy
-- **Progressive Detail**: General to specific information flow
-- **Consistent Formatting**: Standardized section structures
-- **Reference Integration**: Links to standards and other commands
+### Standards
+**LANGUAGE**: English only, action-oriented, technical precision, LLM optimized
+**STRUCTURE**: Hierarchical organization, progressive detail, consistent formatting, reference integration
 
 ## 🚫 ANTI-BIAS ENFORCEMENT
 
