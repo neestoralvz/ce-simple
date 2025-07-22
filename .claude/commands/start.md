@@ -29,12 +29,11 @@ progress() { local p=$(calc "$1*100/$2" 0); process "$3 [$p% complete]"; }
 
 ```javascript
 TodoWrite([
-  {"content": "🏗️ STRUCTURAL: Execute structural validation - verify docs/, context/, .claude/ directories", "status": "pending", "priority": "high", "id": "start-struct-1"},
-  {"content": "🎯 COMPLEXITY: Analyze request complexity and determine optimal agent strategy via /agent-orchestration", "status": "pending", "priority": "high", "id": "start-complex-1"},
-  {"content": "❓ QUESTIONS: Generate dynamic clarification questions based on context sufficiency", "status": "pending", "priority": "high", "id": "start-questions-1"},
-  {"content": "🤖 ORCHESTRATION: Execute /agent-orchestration for intelligent deployment coordination", "status": "pending", "priority": "high", "id": "start-orchestration-1"},
-  {"content": "📊 MONITORING: Track workflow progress with real-time coordination updates", "status": "pending", "priority": "medium", "id": "start-monitoring-1"},
-  {"content": "🔄 CONSOLIDATION: Synchronize agent results and prepare integrated output", "status": "pending", "priority": "medium", "id": "start-consolidation-1"}
+  {"content": "🏗️ PHASE-0: Execute mandatory structural assessment with validation protocols", "status": "pending", "priority": "high", "id": "start-phase0-1"},
+  {"content": "📊 THRESHOLD: Verify 85% completeness before agent deployment", "status": "pending", "priority": "high", "id": "start-threshold-1"},
+  {"content": "🤖 ORCHESTRATION: Deploy agents only after Phase 0 validation gates passed", "status": "pending", "priority": "high", "id": "start-orchestration-1"},
+  {"content": "⚠️ FAILURE-PREVENTION: Generate comprehensive failure mode analysis", "status": "pending", "priority": "high", "id": "start-prevention-1"},
+  {"content": "📋 MONITORING: Track validation checkpoint progress", "status": "pending", "priority": "medium", "id": "start-monitoring-1"}
 ])
 ```
 
