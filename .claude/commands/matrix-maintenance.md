@@ -358,8 +358,8 @@ Bash("echo 'Integrity score: [integrity_score]% | Self-healing actions: [healing
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with matrix metrics (no Claude attribution)
-Bash("git add . && git commit -m \"matrix-maintenance: [scan-type] | integrity: [N]% | coverage: [N]% | session-[N]\"")
+// Git automation with matrix metrics
+Bash("git add . && git commit -m \"matrix-maintenance: [scan-type] | integrity: [N]% | coverage: [N]% ✓session-[N]\"")
 ```
 
 ### Execution Verification

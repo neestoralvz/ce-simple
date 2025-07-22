@@ -198,7 +198,7 @@ Glob("**/*.md", {path: "."}) // Find all markdown files
 Grep("BROKEN|MISSING|ERROR", {glob: "**/*.md", output_mode: "files_with_matches"}) // Find violations
 
 // 3. GIT INTEGRATION (real execution - workflow completion)
-Bash("git add . && git commit -m \"start: [workflow-name] | [metrics] | session-[N]\"") // Clean commit format
+Bash("git add . && git commit -m \"start: [workflow-name] | [metrics] ✓session-[N]\"") // Clean commit format
 
 // 4. AGENT DEPLOYMENT (real execution via Task tool)
 Task("Agent deployment", "[deployment-strategy] based on complexity assessment")
@@ -215,8 +215,8 @@ Task("Agent deployment", "[deployment-strategy] based on complexity assessment")
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with usage tracking (no Claude attribution)
-Bash("git add . && git commit -m \"start: [description] | metrics: [data] | session-[N]\"")
+// Git automation with usage tracking
+Bash("git add . && git commit -m \"start: [description] | metrics: [data] ✓session-[N]\"")
 ```
 
 ---

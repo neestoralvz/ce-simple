@@ -264,8 +264,8 @@ Read("LICENSE")              // If exists - Project license
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with metrics tracking (no Claude attribution)
-Bash("git add . && git commit -m \"explore-codebase: [codebase-type] analysis | files: [N] | patterns: [N] | session-[N]\"")
+// Git automation with metrics tracking
+Bash("git add . && git commit -m \"explore-codebase: [codebase-type] analysis | files: [N] | patterns: [N] ✓session-[N]\"")
 ```
 
 ### Execution Verification

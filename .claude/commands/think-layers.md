@@ -289,8 +289,8 @@ if (complexity_score >= 4) {
 ### Session Completion Protocol  
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with analysis metrics (no Claude attribution)
-Bash("git add . && git commit -m \"think-layers: [analysis-topic] | depth: L[N] | complexity: [N]/10 | session-[N]\"")
+// Git automation with analysis metrics
+Bash("git add . && git commit -m \"think-layers: [analysis-topic] | depth: L[N] | complexity: [N]/10 ✓session-[N]\"")
 ```
 
 ### Execution Verification
