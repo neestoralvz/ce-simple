@@ -29,12 +29,12 @@ progress() { local p=$(calc "$1*100/$2" 0); process "$3 [$p% complete]"; }
 
 ```javascript
 TodoWrite([
-  {"content": "📏 ASSESSMENT: Analyze codebase size via /agent-orchestration for optimal parallelization", "status": "pending", "priority": "high", "id": "explore-assess-1"},
-  {"content": "⚡ DEPLOYMENT: Execute intelligent operation scaling (12-52 ops) based on complexity matrix", "status": "pending", "priority": "high", "id": "explore-deploy-1"},
-  {"content": "🔍 DISCOVERY: Apply anti-bias pattern recognition with evidence-based conclusions", "status": "pending", "priority": "high", "id": "explore-discover-1"},
-  {"content": "🔄 ORCHESTRATION: Coordinate parallel operations (16 Glob + 24 Grep + 12 Read) via /agent-orchestration", "status": "pending", "priority": "high", "id": "explore-orchestration-1"},
-  {"content": "✅ CONSOLIDATION: Integrate all parallel operation results into coherent findings", "status": "pending", "priority": "medium", "id": "explore-consolidation-1"},
-  {"content": "📝 CONTEXT: Generate structured documentation from exploration discoveries", "status": "pending", "priority": "medium", "id": "explore-context-1"}
+  {"content": "🏗️ PHASE-0: Execute structural assessment with 85% completeness validation", "status": "pending", "priority": "high", "id": "explore-phase0-1"},
+  {"content": "📊 THRESHOLD: Enforce 85% exploration completeness before consolidation", "status": "pending", "priority": "high", "id": "explore-threshold-1"},
+  {"content": "⚡ DEPLOYMENT: Execute intelligent operation scaling (12-52 ops) with validation checkpoints", "status": "pending", "priority": "high", "id": "explore-deploy-1"},
+  {"content": "🔍 DISCOVERY: Apply anti-bias pattern recognition with Phase 0 context integration", "status": "pending", "priority": "high", "id": "explore-discover-1"},
+  {"content": "🔄 ORCHESTRATION: Coordinate parallel operations via validation-guided /agent-orchestration", "status": "pending", "priority": "high", "id": "explore-orchestration-1"},
+  {"content": "✅ CONSOLIDATION: Integrate results only after completeness threshold validation", "status": "pending", "priority": "medium", "id": "explore-consolidation-1"}
 ])
 ```
 
