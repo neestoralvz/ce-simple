@@ -4,7 +4,10 @@
 Intelligent session closure with automated merge/abandon decision framework for Git work tree lifecycle completion.
 
 ## 🚀 Usage
-Execute: `/worktree-close [optional: merge|abandon|auto]`
+Execute: `/worktree-close [optional: abandon|force-prompt]`
+
+**Default Behavior**: Intelligent auto-SQUASH for successful workflows
+**Override Options**: `abandon` to discard, `force-prompt` to see all options
 
 ## 🔧 Implementation
 
@@ -37,36 +40,74 @@ CONFLICTS="$(git merge-tree $(git merge-base HEAD master) HEAD master | grep -c 
 ```
 
 ### Auto-Decision Matrix
-**Intelligent Merge Criteria**:
+**Enhanced Intelligent Merge Criteria**:
 
 | Condition | Score | Action |
 |-----------|-------|--------|
-| Zero conflicts + docs only | +3 | Auto-merge |
-| ≤3 files modified + clean | +2 | Auto-merge |
-| Config/CLAUDE.md only | +2 | Auto-merge |
-| Session duration <30min | +1 | Auto-merge |
-| **Threshold: ≥4 points** | | **AUTO-MERGE** |
-| **Threshold: <4 points** | | **USER PROMPT** |
+| Zero conflicts + successful workflow | +4 | Auto-SQUASH |
+| Documentation optimization | +3 | Auto-SQUASH |
+| ≤5 files modified + zero conflicts | +2 | Auto-SQUASH |
+| Config/CLAUDE.md + docs updates | +2 | Auto-SQUASH |
+| Session >2 hours BUT successful | +1 | Auto-SQUASH |
+| **NEW THRESHOLD: ≥3 points** | | **AUTO-SQUASH** |
+| **Error/Conflict detected** | | **USER PROMPT** |
+| **User wants to abandon** | | **USER PROMPT** |
 
-**Manual Review Required**:
+**Smart Automation Logic**:
+```bash
+# Enhanced Auto-Decision Implementation
+if [[ $CONFLICTS -eq 0 && $WORKFLOW_SUCCESSFUL == "true" ]]; then
+    SCORE=$((SCORE + 4))  # Zero conflicts + successful workflow
+fi
+
+if [[ "$SESSION_TYPE" == "docs-reorganization" || "$SESSION_TYPE" == "optimization" ]]; then
+    SCORE=$((SCORE + 3))  # Documentation optimization
+fi
+
+if [[ $MODIFIED_FILES -le 5 && $CONFLICTS -eq 0 ]]; then
+    SCORE=$((SCORE + 2))  # Small changes + clean
+fi
+
+# AUTO-SQUASH if score ≥3, otherwise prompt user
+if [[ $SCORE -ge 3 && "$1" != "force-prompt" ]]; then
+    echo "🔀 AUTO-SQUASH: Successful workflow detected"
+    execute_squash_merge
+else
+    prompt_user_decision
+fi
+```
+
+**Manual Review Only Required For**:
 - 🔴 **Conflicts detected** → Manual resolution required
-- 🔴 **Core code changes** → User decision mandatory  
-- 🔴 **Complexity ≥7** → Review and confirmation needed
-- 🔴 **Session >2 hours** → Comprehensive review
+- 🔴 **User requests abandonment** → Confirmation needed
+- 🔴 **Force-prompt flag used** → User wants to see options
 
-### User Decision Interface
-**Interactive Prompt Framework**:
+### Success Notification Framework
+**Auto-SQUASH Success Message**:
+```
+✅ WORKTREE SESSION COMPLETED
+📊 SESSION: session-20250722-170816-docs-reorganization-optimization
+🎯 ACTION: Auto-SQUASH executed (score: 4/3 threshold)
+📈 CHANGES: 87 files changed, +1475/-14493 lines
+🔀 RESULT: Successfully merged to master branch
+🧹 CLEANUP: Work tree removed, session branch deleted
+
+⚡ AUTOMATION: Future similar workflows will auto-SQUASH
+💡 OVERRIDE: Use `/worktree-close force-prompt` to see all options
+```
+
+**User Decision Interface** (only when needed):
 ```
 🎯 SESSION: session-20250722-143045-lifecycle
 📊 CHANGES: 5 files modified, 2 new files
 ⚠️  CONFLICTS: 0 detected
 🎚️  COMPLEXITY: 6/10
 
-AUTO-MERGE CRITERIA: 3/4 points (threshold not met)
+AUTO-MERGE CRITERIA: 2/3 points (threshold not met)
 
 Choose completion action:
 [1] 🔀 MERGE: Integrate changes to master
-[2] 🗜️  SQUASH: Squash commits and merge  
+[2] 🗜️  SQUASH: Squash commits and merge (RECOMMENDED)
 [3] 🗑️  ABANDON: Discard work tree changes
 [4] 🔍 REVIEW: Show detailed diff before deciding
 
