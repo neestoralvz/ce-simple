@@ -217,8 +217,8 @@ Task("Learning Assessment", "Evaluate workflow learning value: if complexity ≥
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with workflow metrics (no Claude attribution)
-Bash("git add . && git commit -m \"docs-workflow: [mode] | health: [initial]%→[final]% | cycles: [N] | session-[N]\"")
+// Git automation with workflow metrics
+Bash("git add . && git commit -m \"docs-workflow: [mode] | health: [initial]%→[final]% | cycles: [N] ✓session-[N]\"")
 ```
 
 ### Execution Verification

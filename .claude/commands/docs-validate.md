@@ -261,8 +261,8 @@ Bash("echo 'Standards compliance: [overall_compliance]% | Critical issues: [crit
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with validation metrics (no Claude attribution)
-Bash("git add . && git commit -m \"docs-validate: health [score]/100 | integrity: [ref]% | session-[N]\"")
+// Git automation with validation metrics
+Bash("git add . && git commit -m \"docs-validate: health [score]/100 | integrity: [ref]% ✓session-[N]\"")
 ```
 
 ### Execution Verification

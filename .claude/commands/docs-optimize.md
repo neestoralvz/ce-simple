@@ -259,8 +259,8 @@ Bash("echo 'Optimization complete: [reduction]% size reduction achieved'")
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Git automation with optimization metrics (no Claude attribution)
-Bash("git add . && git commit -m \"docs-optimize: size [before]→[after] | compliance: [N]% | session-[N]\"")
+// Git automation with optimization metrics
+Bash("git add . && git commit -m \"docs-optimize: size [before]→[after] | compliance: [N]% ✓session-[N]\"")
 ```
 
 ### Execution Verification
