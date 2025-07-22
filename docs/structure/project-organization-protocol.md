@@ -69,11 +69,11 @@ Define canonical project structure and automated maintenance protocols for optim
 #### Documentation and Standards:
 ```
 Is it a standard, protocol, or framework?
-├─ YES → docs/[category]/
+├─ YES → docs/implementation/ (or relevant subcategory)
 └─ NO → Continue...
 
 Is it learning, discovery, or research?
-├─ YES → context/[category]/
+├─ YES → context/discoveries/ (or relevant subcategory)
 └─ NO → Continue...
 
 Is it an executable command?
@@ -115,8 +115,8 @@ Is it an executable command?
 
 ### Cross-Reference Format:
 ```markdown
-- `../docs/[category]/file.md` - Description
-- `../context/[category]/file.md` - Description
+- `../docs/implementation/file.md` - Technical specifications
+- `../context/discoveries/file.md` - Learning and analysis content
 ```
 
 ### Validation Requirements:
