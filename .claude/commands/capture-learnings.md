@@ -176,63 +176,86 @@ Grep("TODO|FIXME|PATTERN|DECISION", {glob: "context/**/*.md", output_mode: "cont
 Grep("successful|failure|alternative|tradeoff", {glob: "context/**/*.md", output_mode: "content"})
 
 // PHASE 2: RESULTS LEARNING (post-execution assessment)
-// Dynamic user interview generation (Spanish)
-Write("context/experience/interview-[timestamp].md", `# Entrevista de Aprendizaje Post-Ejecución
+// SEMANTIC CONSOLIDATION: Update domain-specific learning files
+// Determine target file based on workflow domain
+Read("context/learn/") // Explore existing learning files
+Grep("workflow-type|domain", {output_mode: "content"}) // Identify appropriate target
 
-## Preguntas Dinámicas
+// CONSOLIDATION LOGIC: Update existing semantic files instead of creating timestamped ones
+// Target files: learn/[domain]-[theme]-insights.md
+Edit("context/learn/[domain]-insights.md", `
+## Session: [YYYY-MM-DD]
+
+### User Interview Insights
 1. ¿Qué aspectos de esta sesión fueron más útiles para ti?
+   [User response]
+
 2. ¿Hubo algún momento donde el sistema no se comportó como esperabas?
+   [User response]
+
 3. ¿Qué información adicional habrías necesitado durante el proceso?
+   [User response]
+
 4. ¿Los resultados coinciden con lo que buscabas inicialmente?
+   [User response]
+
 5. ¿Qué mejorarías del workflow que acabamos de ejecutar?
+   [User response]
 
-## Responses
-[User responses to be captured]
-
-## Learning Insights
+### Learning Insights
 [Insights derived from user responses]
+
+**Last Updated**: [current-timestamp]
 `)
 
-// PATTERN DOCUMENTATION  
-Write("context/patterns/learning-pattern-[timestamp].md", `# Learning Pattern Documentation
+// PATTERN CONSOLIDATION: Update universal patterns file
+Edit("context/patterns/universal-problem-solving-patterns.md", `
+## [Pattern-Name] Pattern
+**Discovered**: [YYYY-MM-DD]
+**Domain**: [workflow-domain]
 
-## Discovered Patterns
+### Pattern Description
 [Pattern identification from execution]
 
-## Decision Points
+### Decision Points
 [Key decisions made during execution]
 
-## Alternative Approaches
+### Alternative Approaches
 [Considered but not selected approaches]
 
-## Success Factors
+### Success Factors
 [What made this approach work]
 
-## Areas for Improvement  
-[Identified optimization opportunities]
+### Reusability Guidelines
+[How this pattern applies to other contexts]
+
+**Last Updated**: [current-timestamp]
 `)
 
 // SYSTEM INTEGRITY VALIDATION
 Task("Matrix Maintenance", "Execute /matrix-maintenance to validate system integrity and cross-reference coherence")
 
-// CONTEXT ORGANIZATION
-Bash("find context/ -name '*.md' | wc -l") // Count context files
-Bash("find context/ -name '*.md' -exec wc -l {} + | tail -1 | awk '{print $1}'") // Total lines
+// CONTEXT ORGANIZATION METRICS
+Bash("find context/ -name '*.md' | wc -l && echo 'Total files:' && find context/ -name '*.md' -exec wc -l {} + | tail -1") // Combined metrics
 
-// DISCOVERY DOCUMENTATION
-Write("context/discoveries/learning-session-[timestamp].md", `# Learning Session Discovery
+// DISCOVERY CONSOLIDATION: Update appropriate discovery file based on session type
+Edit("context/discoveries/[session-type]-discoveries.md", `
+## Discovery Session: [YYYY-MM-DD]
+**Learning Value Score**: [calculated_score]/10
+**Session Type**: [workflow-type]
 
-## Session Analysis
-- Learning Value Score: [calculated_score]/10
+### Session Analysis
 - Patterns Identified: [pattern_count]
-- User Insights: [insight_count]
+- User Insights: [insight_count]  
 - System Improvements: [improvement_count]
 
-## Key Discoveries
+### Key Discoveries
 [Major insights from this learning session]
 
-## Action Items
+### Implementation Actions
 [Specific improvements to implement]
+
+**Last Updated**: [current-timestamp]
 `)
 ```
 
