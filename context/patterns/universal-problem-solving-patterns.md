@@ -123,3 +123,63 @@
 **User Confirmation**: "el flujo de análisis es justo lo que esperaría" 
 **Application Strategy**: Continue systematic pre-analysis for optimization opportunities
 **Integration**: Apply grouping strategy across command system for authorization reduction
+
+## Guardrail Failure Prevention Pattern (2025-07-22)
+**Domain**: System integrity and rule enforcement
+
+### Pattern Description
+User correctly anticipates violation sources while system guardrails fail to prevent rule violations, requiring reactive correction instead of proactive prevention.
+
+### Decision Points
+- Git investigation validates user intuition about problem source
+- Systematic command modification chosen over ad-hoc fixes
+- Existing file updates prioritized over new file creation
+- Structure preservation maintained during correction
+
+### Alternative Approaches
+- Automated violation detection systems
+- Real-time rule enforcement during command execution
+- Pre-commit hooks for file creation validation
+- Command-level guardrail integration
+
+### Success Factors
+- User domain knowledge enables rapid problem identification
+- Git history provides clear violation trail
+- Systematic approach ensures complete correction
+- Learning capture prevents pattern repetition
+
+### Reusability Guidelines
+- Implement proactive guardrails at command execution level
+- Validate user intuition through systematic investigation
+- Prioritize prevention over correction in guardrail design
+- Maintain structure consistency during violation correction
+
+## Workflow Efficiency Optimization Need Pattern (2025-07-22)
+**Domain**: Process improvement and system optimization
+
+### Pattern Description
+Functional workflows identified as suboptimal for efficiency, requiring systematic improvement to meet user productivity expectations.
+
+### Decision Points
+- Current processes work but need efficiency improvement
+- User explicitly requests "mejores workflows para ello"
+- System simplicity maintenance identified as critical requirement
+- Proactive prevention preferred over reactive correction
+
+### Alternative Approaches
+- Automated workflow optimization
+- User-driven workflow customization
+- Template-based workflow acceleration
+- AI-assisted workflow enhancement
+
+### Success Factors
+- Clear user feedback on efficiency needs
+- Specific improvement areas identified
+- System simplicity maintained during optimization
+- Learning patterns inform workflow enhancement
+
+### Reusability Guidelines
+- Regularly assess workflow efficiency from user perspective
+- Prioritize simplicity during workflow optimization
+- Implement user-requested efficiency improvements systematically
+- Document optimization patterns for reuse across workflows

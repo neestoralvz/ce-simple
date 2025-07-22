@@ -86,6 +86,20 @@ TodoWrite([
 **Triggers**: Periodic maintenance (weekly) or major system changes
 **Actions**: Execute all optimization phases in sequence with validation
 
+#### **Docs-Consolidate Mode** (`/context-optimize docs-consolidate`)
+**Focus**: Merge redundant documentation and eliminate docs/ fragmentation
+**Triggers**: After command creation or major documentation updates
+**Actions**: 
+- Identify overlapping documentation across docs/ subdirectories
+- Merge related content into canonical documentation files
+- Update cross-references to point to consolidated sources
+- Maintain single source of truth principle
+
+#### **Full-System Mode** (`/context-optimize full-system`)
+**Complete System Maintenance**: Context + Docs comprehensive optimization
+**Triggers**: After major system changes or new command integration
+**Actions**: Execute context optimization + docs consolidation + cross-validation
+
 ### Auto-Integration Architecture
 
 #### **Intelligent Trigger Framework**
@@ -241,13 +255,27 @@ Edit("context/patterns/essential-patterns.md", `# Essential Problem-Solving Patt
 Bash("find context/ -name '*.md' -path '*/wrong-dir/*' -exec mv {} context/correct-dir/ \\;") // Move misplaced files
 Bash("find context/ -name '*-20[0-9][0-9]-*' -exec rm {} \\;") // Remove timestamp violations
 
-// 8. VALIDATION & METRICS (real execution)
-Bash("find context/ -name '*.md' | wc -l") // Final file count
-Bash("find context/ -name '*.md' -exec wc -l {} + | awk '{sum+=$1} END {print sum}'") // Total line count
-Grep("BROKEN|MISSING|ERROR", {glob: "context/**/*.md", output_mode: "files_with_matches"}) // Quality check
+// 8. DOCS MAINTENANCE (when docs-consolidate or full-system mode)
+Bash("find docs/ -name '*.md' | wc -l") // Docs file count
+Grep("\\[.*\\]\\(.*\\.md\\)", {glob: "docs/**/*.md", output_mode: "content"}) // Find docs cross-references
+Bash("find docs/ -name '*.md' -exec wc -l {} + | sort -nr | head -10") // Identify large docs files
 
-// 9. GIT INTEGRATION (real execution)
-Bash("git add context/ && git commit -m \"context-optimize: [mode] | files: [before]→[after] | density: [improvement]% | quality: [score]/10 ✓session-[N]\"")
+// DOCS CONSOLIDATION LOGIC
+Grep("# [Tt]itle|## [Tt]opic", {glob: "docs/**/*.md", output_mode: "content"}) // Identify topic overlap
+Edit("docs/core/consolidated-standards.md", `# Consolidated System Standards
+**Last Updated**: [current-timestamp]
+
+[Consolidated content from overlapping docs files]
+`)
+
+// 9. VALIDATION & METRICS (real execution)
+Bash("find context/ -name '*.md' | wc -l") // Final context count
+Bash("find docs/ -name '*.md' | wc -l") // Final docs count
+Bash("find . -name '*.md' -exec wc -l {} + | awk '{sum+=$1} END {print sum}'") // Total system lines
+Grep("BROKEN|MISSING|ERROR", {glob: "{context,docs}/**/*.md", output_mode: "files_with_matches"}) // Quality check
+
+// 10. GIT INTEGRATION (real execution)
+Bash("git add . && git commit -m \"context-optimize: [mode] | context: [ctx-files] docs: [doc-files] | density: [improvement]% | quality: [score]/10 ✓session-[N]\"")
 ```
 
 ### Optimization Algorithms

@@ -278,11 +278,53 @@ Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verifie
 5. **Performance Metrics**: Track execution vs documentation discrepancies
 6. **Exploration-Before-Claims**: All existence statements must be preceded by actual exploration tool execution
 
+### Enhanced Workflow Notification Integration
+**REAL-TIME SLASH COMMAND TRACKING**:
+```bash
+# Enhanced notification functions with slash command awareness
+slash_command_start() {
+  local cmd_name=$1
+  local complexity=${2:-"N/A"}
+  process "🚀 EXECUTING: /$cmd_name (Complexity: $complexity/10)"
+  data "📊 WORKFLOW: Active command chain → [$cmd_name${ACTIVE_COMMANDS:+ → ${ACTIVE_COMMANDS[@]}}]"
+}
+
+slash_command_progress() {
+  local cmd_name=$1
+  local phase=$2
+  local progress=${3:-"processing"}
+  process "⚡ PROGRESS: /$cmd_name → $phase [$progress]"
+}
+
+slash_command_complete() {
+  local cmd_name=$1
+  local duration=${2:-"N/A"}
+  local next_cmd=$3
+  success "✅ COMPLETE: /$cmd_name (${duration}s)"
+  if [ -n "$next_cmd" ]; then
+    info "🔄 CHAIN: Next → /$next_cmd"
+  fi
+}
+
+trigger_notification() {
+  local source_cmd=$1
+  local target_cmd=$2
+  local trigger_type=$3
+  warn "🔗 TRIGGER: /$source_cmd → /$target_cmd ($trigger_type)"
+}
+```
+
 ### Session Completion Protocol
 **MANDATORY WORKFLOW END**:
 ```javascript
-// Context optimization before session completion
-Task("Context Optimization", "Execute /context-optimize full for comprehensive context maintenance")
+// Enhanced notification for session completion
+slash_command_start "start" "completion-phase"
+
+// System-wide optimization before session completion
+Task("Context Optimization", "Execute /context-optimize full-system for comprehensive context + docs maintenance")
+
+// Enhanced completion notification
+slash_command_complete "start" "${SESSION_DURATION}" "session-end"
 
 // Git automation with usage tracking
 Bash("git add . && git commit -m \"start: [description] | metrics: [data] ✓session-[N]\"")
