@@ -236,6 +236,73 @@ TodoWrite([
 - `context/patterns/` → Decision frameworks and analytical approach patterns
 - `context/research/` → Cross-domain insights and innovation opportunities
 
+## ⚡ EXECUTION LAYER
+
+### Mandatory Tool Executions
+**CRITICAL**: Actual implementation of progressive thinking layers and agent coordination
+
+```javascript
+// COGNITIVE DEPTH ASSESSMENT
+// Determine thinking layer depth (L1-L4) based on complexity
+
+// LAYER 1 - BASIC ANALYSIS (Simple problems 1-3)
+Task("Think L1", "Basic analysis: [problem] - identify core components, obvious solutions, immediate actions")
+
+// LAYER 2 - DEEPER ANALYSIS (Moderate problems 4-6) 
+Task("Think L2", "Deeper analysis: [problem] - explore alternatives, consider constraints, evaluate tradeoffs")
+
+// LAYER 3 - COMPREHENSIVE ANALYSIS (Complex problems 7-8)
+Task("Think L3", "Comprehensive analysis: [problem] - system implications, stakeholder impacts, long-term consequences")
+
+// LAYER 4 - ULTRA-DEEP ANALYSIS (Maximum complexity 9-10)
+Task("Think L4", "Ultra-deep analysis: [problem] - philosophical implications, paradigm shifts, emergent properties")
+
+// COGNITIVE LOAD MANAGEMENT
+Bash("echo 'scale=2; [current_layer] * 100 / 4' | bc") // Calculate cognitive utilization
+
+// LEARNING THRESHOLD ASSESSMENT  
+// Auto-trigger capture-learnings if complexity ≥4 points
+Task("Learning Assessment", "Evaluate learning value: [analysis-insights] - score 1-10 based on novelty, reusability, importance")
+
+// PROGRESSIVE CONSOLIDATION
+Write("context/discoveries/analysis-[timestamp].md", "# Progressive Analysis Results\n[layer-by-layer-insights]")
+```
+
+### Progressive Layer Logic
+**EXECUTION STRATEGY**:
+- **Assess problem complexity** (1-10 scale)
+- **Deploy thinking layers accordingly**:
+  - 1-3: Execute L1 basic analysis
+  - 4-6: Execute L1 + L2 deeper analysis  
+  - 7-8: Execute L1 + L2 + L3 comprehensive
+  - 9-10: Execute L1 + L2 + L3 + L4 ultra-deep
+
+### Auto-Learning Trigger
+**LEARNING CAPTURE AUTOMATION**:
+```javascript
+// If analysis complexity ≥4 points, auto-trigger learning capture
+if (complexity_score >= 4) {
+  Task("Auto Learning Capture", "Execute /capture-learnings for high-value analysis insights")
+}
+```
+
+### Session Completion Protocol  
+**MANDATORY WORKFLOW END**:
+```javascript
+// Git automation with analysis metrics (no Claude attribution)
+Bash("git add . && git commit -m \"think-layers: [analysis-topic] | depth: L[N] | complexity: [N]/10 | session-[N]\"")
+```
+
+### Execution Verification
+**TOOL CALL AUDIT**:
+- **1-4 Task operations**: Based on complexity-driven layer selection
+- **Cognitive load calculation**: Mathematical assessment via bc command
+- **Learning assessment**: Automated threshold evaluation
+- **Output generation**: Analysis documentation via Write tool
+- **Ratio**: 4-8 tool calls to ~150 documentation lines = 3-5% (HEALTHY)
+
 ---
 
 **CRITICAL**: This command provides core analytical engine with automatic plan consolidation. Progressive thinking layers ensure appropriate cognitive depth, followed by intelligent task division and documentation workflow delegation.
+
+**EXECUTION COMMITMENT**: Progressive thinking layers L1-L4 are NOW implemented with actual Task tool deployments. Cognitive load management and learning triggers are automated.
