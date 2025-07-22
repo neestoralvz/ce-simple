@@ -16,7 +16,6 @@
 
 ### Density Standards
 - **COMMAND LIMITS**: ≤130 lines maximum (operational efficiency and cognitive load)
-- **DOCUMENTATION LIMITS**: ≤200 lines maximum (general documents)
 - **DOCUMENTATION LIMITS**: ≤200 lines maximum (cognitive digestibility)
 - **PRINCIPLE**: Maximum value per cognitive unit
 - **STRUCTURE**: Progressive hierarchy (Summary → Details → Comprehensive)
