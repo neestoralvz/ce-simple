@@ -7,19 +7,34 @@
 ## Preguntas Dinámicas
 
 ### 1. ¿Qué aspectos de esta sesión fueron más útiles para ti?
-*Respuesta pendiente del usuario*
+- [ ] La corrección del error inicial sobre execution layers
+- [ ] La implementación del protocolo de verificación exhaustiva  
+- [ ] El cambio de sistema opcional a estándar por defecto
+- [ ] Otro: _________________
 
 ### 2. ¿Hubo algún momento donde el sistema no se comportó como esperabas?
-*Respuesta pendiente del usuario*
+- [ ] El error inicial sin verificación fue frustrante
+- [ ] El proceso de corrección fue satisfactorio
+- [ ] La velocidad de implementación del cambio
+- [ ] Otro: _________________
 
-### 3. ¿Los resultados coinciden con lo que buscabas inicialmente?
-*Respuesta pendiente del usuario*
+### 3. ¿Los resultados coinciden con lo que buscabas cuando dijiste "No debería de tener que decir meticuloso, debería de hacerlo por default"?
+- [ ] Sí, completamente implementado
+- [ ] Parcialmente, necesita refinamiento
+- [ ] No, esperaba algo diferente
+- [ ] Comentario: _________________
 
 ### 4. ¿El enfoque de búsqueda sistemática (múltiples patrones Grep) fue efectivo para tu objetivo?
-*Respuesta pendiente del usuario*
+- [ ] Muy efectivo, encontró todo lo necesario
+- [ ] Efectivo pero podría optimizarse
+- [ ] Poco efectivo, faltaron elementos
+- [ ] Sugerencia: _________________
 
 ### 5. ¿Qué mejorarías del proceso de análisis y verificación que ejecutamos?
-*Respuesta pendiente del usuario*
+- [ ] Velocidad de detección de errores
+- [ ] Claridad en documentación de cambios
+- [ ] Proceso de validación cruzada
+- [ ] Idea: _________________
 
 ## Contexto de Sesión
 

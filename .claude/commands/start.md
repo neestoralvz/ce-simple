@@ -48,16 +48,18 @@ TodoWrite([
 **AUTO-EXECUTION**:
 1. **🏗️ VALIDATE**: LS directories → Verify docs/, context/, .claude/ structure
 2. **🔍 DETECT**: Glob/Grep → Find structural violations and outdated references
-3. **⚡ CORRECT**: Auto-fix violations → Migrate structure and update references
-4. **✅ VERIFY**: Confirm corrections applied successfully
+3. **🧠 PHILOSOPHY**: Execute `/self-monitor` philosophical compatibility gates → Prevent complexity reintroduction
+4. **⚡ CORRECT**: Auto-fix violations → Migrate structure and update references
+5. **✅ VERIFY**: Confirm corrections applied successfully
 
-### Discovery Protocol
+### Discovery Protocol with Work Tree Lifecycle
 1. **VALIDATE**: Execute structural pre-validation
-2. **CAPTURE**: Analyze user input complexity
-3. **QUESTION**: Generate contextual clarification queries
-4. **ASSESS**: Determine context sufficiency
-5. **ORCHESTRATE**: Deploy parallel/sequential agents
-6. **TRACK**: Maintain workflow notifications
+2. **WORKTREE-INIT**: Initialize session work tree for complex workflows (complexity ≥6)
+3. **CAPTURE**: Analyze user input complexity
+4. **QUESTION**: Generate contextual clarification queries
+5. **ASSESS**: Determine context sufficiency
+6. **ORCHESTRATE**: Deploy parallel/sequential agents
+7. **TRACK**: Maintain workflow notifications
 
 ### Workflow Orchestration Framework
 
@@ -126,6 +128,36 @@ TodoWrite([
 
 **Auto-Scaling**: Dynamic agent count based on request scope, breadth, and interdependency requirements
 
+### Work Tree Lifecycle Integration
+**Session-Based Isolation Protocol**:
+
+#### Auto-Activation Criteria
+**Work Tree Initialization Triggers**:
+- **Complexity ≥6**: Multi-component changes requiring isolation
+- **Code Modifications**: Changes to core system files
+- **Extended Sessions**: Workflows expected >30 minutes
+- **Experimentation**: Feature testing or major refactoring
+- **User Request**: Explicit isolation requirement
+
+#### Lifecycle Management Integration
+**Workflow Enhancement**:
+```
+/start → complexity assessment → [if ≥6] /worktree-start → isolated workflow → completion assessment → /worktree-close
+```
+
+**Session State Management**:
+- **Active Tracking**: Maintain current session metadata
+- **Progress Monitoring**: Track changes and completion status
+- **Auto-Prompts**: Suggest closure when workflow complete
+- **Cleanup Integration**: Auto-trigger `/worktree-cleanup` weekly
+
+#### Session Completion Integration
+**Automatic Closure Assessment**:
+- **Workflow End**: Evaluate session completion eligibility
+- **User Prompt**: "Close work tree session? [merge/abandon/continue]"
+- **Auto-Merge**: Apply intelligent merge criteria
+- **Learning Capture**: Trigger `/capture-learnings` on valuable sessions
+
 ### Output Standards
 **INTELLIGENT CONTEXT GENERATION**:
 - **Quality Gates**: Max 2-3 context files per session | User value requirement | Unique content only
@@ -167,6 +199,9 @@ TodoWrite([
 **Core Integration**:
 - `/agent-orchestration` → Intelligent agent deployment and coordination protocol
 - `/matrix-maintenance` → Cross-reference matrix validation and system integrity maintenance
+- `/worktree-start` → Session isolation initialization for complex workflows
+- `/worktree-close` → Intelligent session completion with merge/abandon decisions
+- `/worktree-cleanup` → Automated maintenance and orphan work tree management
 
 **Execution Chain**:
 - `/explore-codebase` → Internal knowledge discovery and pattern analysis
@@ -215,10 +250,20 @@ Grep("EXECUTION LAYER", {glob: ".claude/commands/*.md", output_mode: "files_with
 Grep("docs/|context/|\.claude/", {glob: "**/*.md", output_mode: "content"}) // Find directory references
 Grep("\\[.*\\]\\(.*\.md\\)", {glob: "**/*.md", output_mode: "content"}) // Find markdown links
 
-// 5. GIT INTEGRATION (real execution - workflow completion)
-Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verified | metrics: [data] ✓session-[N]\"") // Clean commit format
+// 5. PHILOSOPHICAL COMPATIBILITY GATES (real execution) - COMPLEXITY PREVENTION
+// Execute self-monitor philosophical validation to prevent archive-style complexity reintroduction
+Task("Philosophical Gate", "/self-monitor philosophical compatibility validation") // Auto-trigger compatibility check
+Grep("meta-|orchestration|framework.*complexity|mathematical.*threshold", {glob: "**/*.md", output_mode: "count"}) // Detect expansion keywords
 
-// 6. AGENT DEPLOYMENT (real execution via Task tool) - ONLY AFTER EXPLORATION
+// 6. GIT INTEGRATION (real execution - workflow completion)
+Bash("git add . && git commit -m \"start: [workflow-name] | exploration: verified | philosophy: validated | metrics: [data] ✓session-[N]\"") // Clean commit format
+
+// 6. WORK TREE LIFECYCLE (real execution) - COMPLEXITY-BASED ACTIVATION
+// Initialize work tree for complex workflows requiring isolation
+Bash("if [[ complexity >= 6 ]]; then echo 'Complexity threshold met: activating work tree'; fi") // Complexity check
+Task("Worktree initialization", "/worktree-start [topic-description]") // Initialize session work tree
+
+// 7. AGENT DEPLOYMENT (real execution via Task tool) - ONLY AFTER EXPLORATION
 // Deploy agents ONLY after mandatory exploration confirms system integrity
 Task("Agent deployment", "[deployment-strategy] based on verified complexity assessment")
 ```

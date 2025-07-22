@@ -26,6 +26,11 @@
 - **`/think-layers`** - Progressive analysis: think → think-hard → think-harder → ultra-think
 - **`/capture-learnings`** - Pattern detection and post-execution learning with dynamic interviews
 
+### Work Tree Lifecycle
+- **`/worktree-start`** - Initialize session work tree with automated isolation for complex workflows
+- **`/worktree-close`** - Intelligent session completion with merge/abandon decision framework
+- **`/worktree-cleanup`** - Automated maintenance and orphan work tree management
+
 ### System Maintenance
 - **`/matrix-maintenance`** - Cross-reference matrix validation and system integrity monitoring
 
@@ -36,8 +41,9 @@ Commands follow integrated standards → `docs/documentation/writing-standards.m
 
 ### Primary Discovery Flow
 ```
-⟳ /start → dynamic questions → /explore-codebase + /explore-web → /think-layers → execution plan → /capture-learnings
+⟳ /start → [complexity ≥6: /worktree-start] → dynamic questions → /explore-codebase + /explore-web → /think-layers → execution plan → /capture-learnings → [session end: /worktree-close]
 ├─ /matrix-maintenance → Cross-reference validation (periodic)
+├─ /worktree-cleanup → Automated work tree maintenance (weekly)
 ```
 
 **Complete workflow details**: `docs/workflow/primary-discovery-flow.md`
