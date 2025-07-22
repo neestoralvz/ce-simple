@@ -64,6 +64,7 @@ TodoWrite([
 **Proactive Activation System**:
 - **Pre-Problem-Solving**: Mandatory matrix validation during `/problem-solving` Phase 0
 - **Post-Migration**: Auto-triggered after command architecture changes
+- **Post-Cleanup**: Auto-triggered after tool/directory removal with cleanup-validation mode
 - **Scheduled Maintenance**: Periodic validation during `/docs-workflow` maintenance cycles
 - **Change Detection**: Real-time monitoring of file system modifications with dependency impact assessment
 

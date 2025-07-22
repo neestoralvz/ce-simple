@@ -151,6 +151,40 @@
    Handoff: [context preservation method]
 ```
 
+## 🧠 Learning Capture Notifications
+
+### Learning Value Assessment
+```
+🎯 ASSESSMENT: Learning value evaluation initiated
+   Complexity: [novelty + reusability + importance + complexity]/10
+   Score: [X]/10 points
+   Threshold: ≥4 → Interview activation
+```
+
+### Results Learning Notifications  
+```
+📊 DECISION: User interview activated → [question-count] dynamic questions
+🔍 INTEGRITY: System validation initiated → [X] commands from executed workflow
+⚠️  GAPS: [N] system gaps discovered → [priority breakdown]
+✅ COMPLETION: Learning + validation captured → [pattern-count] patterns enhanced
+🚫 SKIP: Auto-documentation → Low learning value detected
+```
+
+### Pattern Documentation Updates
+```
+📚 CAPTURE: Decision documented → [pattern-category] updated  
+🔗 INTEGRATION: Context enhanced → [context-file] enriched
+🧠 LEARNING: Pattern detection active → [discovery-type] identified
+```
+
+### System Evolution Tracking
+```
+🎯 EVOLUTION: Command network enhancement triggered
+   Patterns: [N] validated patterns integrated
+   Improvements: [specific enhancements]
+   Impact: [system coherence score]
+```
+
 ---
 
-**CONTEXT**: Implementation examples extracted from workflow-notifications.md for progressive disclosure. Contains detailed notification templates and formatting patterns for all workflow scenarios.
+**CONTEXT**: Implementation examples extracted from workflow-notifications.md for progressive disclosure. Contains detailed notification templates and formatting patterns for all workflow scenarios including learning capture and system evolution.
