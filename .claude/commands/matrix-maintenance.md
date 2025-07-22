@@ -103,6 +103,12 @@ TodoWrite([
 #### Report Mode (`/matrix-maintenance report`)
 **Intelligence Dashboard**: Comprehensive analytics with predictive insights and optimization recommendations
 
+#### Cleanup-Validation Mode (`/matrix-maintenance cleanup-validation`)
+**Post-Cleanup Integrity**: Specialized validation after tool/directory removal with dependency repair
+- **Pattern Application**: `context/patterns/dependency-validation-post-cleanup.md`
+- **Success Metrics**: System health improvement (e.g., 96.4% → 98.8%)
+- **Scope**: Component count synchronization, broken reference elimination
+
 #### Full Mode (`/matrix-maintenance full`)
 **Complete Autonomous Cycle**: Scan → Update → Validate → Optimize → Monitor → Learn sequence
 
