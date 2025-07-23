@@ -45,7 +45,7 @@ Brief system description (keep essential info here)
 ### Phase 2: Selective Content Organization
 ```markdown
 # Import high-value, frequently referenced content
-@docs/core/principles.md           # Core architectural principles
+@docs/core/system-principles.md    # Core architectural principles
 @docs/frameworks/execution-patterns.md # Common execution patterns
 @10-standards/template-command.md  # Command development template
 ```

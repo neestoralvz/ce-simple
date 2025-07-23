@@ -1,68 +1,123 @@
-# Start - Primary Discovery Engine
+# start
 
 ## Purpose
-Initiate intelligent discovery workflow with dynamic assessment, parallel task deployment, and auto-triggering to transform user vision into actionable execution plans.
 
-## Principles and Guidelines
-- **Interview-Driven Development**: Question dynamically for clarification throughout discovery when requirements unclear
-- **Mathematical Decision Framework**: Calculate complexity scores (4-decimal precision) and confidence thresholds for auto-triggering
-- **Parallel Deployment Intelligence**: Deploy optimal agent counts based on statistical validation and complexity assessment
-- **Zero External Dependencies**: Complete self-containment with embedded knowledge base for workflow orchestration
+Executes intelligent discovery workflow through mathematical assessment providing actionable execution plans with optimized performance targeting and accuracy validation.
+
+## Principles
+
+- **Single Responsibility**: Focus on discovery workflow without execution operations
+- **Granular Approach**: Break mathematical scoring into precision units with clear validation
+- **Resource Management**: Handle parallel deployment with explicit threshold requirements
+- **Error Recovery**: Built-in simplified metrics fallback and conservative deployment
 
 ## Execution Process
 
-### Phase 1: Mathematical Assessment and Validation
-```javascript
-TodoWrite([
-  {"content": "Calculate complexity score with 4-decimal precision using scope/breadth/interdependency metrics", "status": "pending", "priority": "high", "id": "start-complexity-1"},
-  {"content": "Assess confidence levels using keyword/token/context analysis for auto-trigger decisions", "status": "pending", "priority": "high", "id": "start-confidence-1"}
-])
-```
+### Phase 1: Mathematical Assessment
+Mark "Mathematical Assessment and Complexity Analysis" as in_progress using TodoWrite
 
-### Phase 2: Statistical Deployment and Auto-Triggering
-```javascript
-// Auto-trigger thresholds (98.1% accuracy validation):
-// Complexity ≥0.6000 → `/worktree-start` activation
-// Analysis Confidence ≥0.7500 → Agent orchestration deployment
-// Learning Value ≥0.4000 → `/capture-learnings` pattern capture
-// Multi-Domain Score ≥0.5500 → Combined `/explore-codebase` + `/explore-web`
+Execute complexity calculation:
+- Calculate complexity scores using mathematical algorithms and scope analysis
+- Determine confidence levels through statistical validation metrics
+- Perform mathematical assessment validation ensuring accuracy thresholds
+- Generate assessment metadata including complexity factors and indicators
 
-TodoWrite([
-  {"content": "Deploy agents based on confidence thresholds with statistical validation", "status": "pending", "priority": "high", "id": "start-deploy-1"},
-  {"content": "Execute dynamic questioning for clarification when confidence <0.7500", "status": "pending", "priority": "medium", "id": "start-clarify-1"}
-])
-```
+Use Bash to calculate metrics:
+- Mathematical algorithms achieving complexity scoring
+- Statistical analysis with confidence metrics
 
-### Phase 3: Optimized Execution and Performance Monitoring
-```javascript
-TodoWrite([
-  {"content": "Route using mathematical decision trees with structure validation (≥98.8% integrity)", "status": "pending", "priority": "high", "id": "start-route-1"},
-  {"content": "Monitor performance against 0.8±0.2s targets with statistical feedback loops", "status": "pending", "priority": "medium", "id": "start-monitor-1"}
-])
-```
+If assessment calculation failures occur:
+- Add TodoWrite task: "Resolve calculation error: simplified metrics"
+- Execute retry with simplified metrics and manual validation
+- Validate calculation completeness ensuring assessment accuracy
+- Continue with validated assessment parameters
 
-### Phase 4: Workflow Validation and Learning Capture
-```javascript
-TodoWrite([
-  {"content": "Validate completion confidence ≥0.9500 with 4-decimal precision tracking", "status": "pending", "priority": "high", "id": "start-validate-1"},
-  {"content": "Trigger learning capture when threshold ≥0.4000 for pattern documentation", "status": "pending", "priority": "medium", "id": "start-learn-1"}
-])
-```
+Complete previous phase, mark "Deployment Decision and Auto-Trigger Logic" as in_progress using TodoWrite
 
-## Success Criteria
-- Request clarity ≥0.7500 (statistical validation)
-- Structure integrity ≥0.9880 (archive-validated accuracy)
-- Tool accessibility = 1.0000 (binary verification)
-- Completion confidence ≥0.9500 (4-decimal precision)
-- Performance execution ≤1.0000s (optimization target)
+### Phase 2: Deployment Decision
+Mark "Deployment Decision and Auto-Trigger Logic" as in_progress using TodoWrite
 
-## Auto-Activation Framework
-Mathematical validation loop with real-time decision criteria:
-- Complexity scoring with scope/breadth/interdependency analysis
-- Confidence calculation using keywords/tokens/context weighting
-- Auto-trigger deployment based on statistical thresholds
-- Performance monitoring with 0.8±0.2s target validation
+Execute auto-trigger logic:
+- Execute auto-trigger logic based on complexity threshold analysis
+- Validate deployment decision criteria using statistical confidence
+- Prepare agent deployment parameters based on threshold analysis
+- Configure deployment mode selection ensuring optimal allocation
+
+Use TodoWrite to configure deployment:
+- Threshold analysis achieving decision validation
+- Decision algorithms with deployment configuration
+
+If threshold decision errors occur:
+- Add TodoWrite task: "Resolve threshold error: conservative deployment"
+- Execute default to conservative deployment with manual review
+- Validate deployment readiness ensuring resource availability
+- Continue with validated deployment configuration
+
+Complete previous phase, mark "Workflow Execution and Agent Deployment" as in_progress using TodoWrite
+
+### Phase 3: Workflow Execution
+Mark "Workflow Execution and Agent Deployment" as in_progress using TodoWrite
+
+Execute agent deployment:
+- Deploy agents based on validated decision criteria
+- Coordinate parallel task execution ensuring optimal utilization
+- Monitor agent deployment progress with status tracking
+- Manage workflow execution state ensuring continuity capabilities
+
+Use TodoWrite to deploy agents:
+- Agent deployment achieving parallel initialization
+- Parallel coordination with execution monitoring
+
+If agent deployment issues occur:
+- Add TodoWrite task: "Resolve deployment error: sequential fallback"
+- Execute sequential deployment with enhanced monitoring
+- Validate deployment restoration ensuring agent functionality
+- Continue with validated deployment state
+
+Complete previous phase, mark "Validation Monitoring and Performance Optimization" as in_progress using TodoWrite
+
+### Phase 4: Validation Monitoring
+Mark "Validation Monitoring and Performance Optimization" as in_progress using TodoWrite
+
+Execute performance monitoring:
+- Monitor performance metrics ensuring completion confidence targets
+- Validate execution results against mathematical assessment predictions
+- Generate performance analytics with target validation recommendations
+- Capture learning patterns for continuous improvement optimization
+
+Use Bash to monitor performance:
+- Performance monitoring achieving validation targets
+- Validation systems with analytics generation
+
+If validation failures occur:
+- Add TodoWrite task: "Resolve validation error: learning capture"
+- Execute learning capture activation with pattern documentation
+- Validate learning completeness ensuring improvement capability
+- Complete workflow with validated performance metrics
+
+Complete previous phase, mark "Command Routing and Workflow Handoff" as in_progress using TodoWrite
+
+### Phase 5: Command Routing and Handoff
+Mark "Command Routing and Workflow Handoff" as in_progress using TodoWrite
+
+Execute intelligent workflow continuation based on assessment results and user context:
+- Route to `/enhanced-start` for complex multi-domain investigations requiring advanced analysis
+- Handoff to `/explore-codebase` when assessment indicates internal project focus and documentation gaps
+- Transfer to `/think-layers` for problems requiring progressive complexity analysis and layered solutions
+- Connect to `/agent-orchestration` for high-complexity scenarios requiring parallel coordination and resource management
+
+Use TodoWrite to configure workflow routing:
+- Assessment-based routing achieving workflow continuity
+- Context-aware handoffs with optimized transitions
+
+If routing decisions are unclear:
+- Add TodoWrite task: "Resolve routing ambiguity: user clarification"
+- Execute clarification dialog with context preservation
+- Validate routing decision ensuring workflow optimization
+- Continue with validated routing configuration
+
+Complete all tasks using TodoWrite
 
 ---
 
-**Single Responsibility**: Master discovery engine ensuring systematic workflow initialization with intelligent coordination and adaptive optimization for maximum execution effectiveness.
+**Discovery workflow executes intelligent assessment providing optimized execution plans with automated routing.**

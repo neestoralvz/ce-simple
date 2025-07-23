@@ -2,6 +2,22 @@
 
 ## 🎯 Orchestration Patterns - Complete Specifications
 
+### Git-Based Intelligence System
+Orchestration driven by Git metrics and autonomous decision making:
+```yaml
+Intelligence Sources:
+  - Commit patterns and success indicators
+  - Branch lifecycle and merge success rates
+  - File change patterns correlating with efficiency
+  - Performance timeline data from Git history
+
+Autonomous Decisions:
+  - Optimal command sequence selection
+  - Resource allocation based on historical data
+  - Recovery strategy selection from past patterns
+  - New command creation triggers from usage analysis
+```
+
 ### 1. Seven-Parallel-Tasks Pattern
 The most efficient pattern for component development:
 ```yaml

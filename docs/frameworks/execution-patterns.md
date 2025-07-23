@@ -15,12 +15,7 @@ Deploy seven independent creation tasks simultaneously for rapid development:
 6. Integration points
 7. Documentation
 
-**Orchestration Framework**:
-1. Analyze requirements and identify components
-2. Design parallel development strategy
-3. Deploy seven creation tasks concurrently
-4. Monitor progress and adjust allocation
-5. Aggregate results and integrate components
+**Implementation Strategy**: Deploy seven creation tasks concurrently with component-focused allocation and result integration.
 
 ### Creation Scaling Adaptations
 
@@ -149,6 +144,27 @@ Five-phase universal methodology applicable to any error/problem type:
 4. **Multi-Layer Analysis**: Progressive depth analysis
 5. **Solution Planning**: Implementation strategy development
 
+### Mathematical Assessment Framework
+Foundation for optimal execution strategy selection:
+
+**Complexity Scoring Algorithm**
+- Base Complexity: File count × 0.1 (file factor)
+- Command Density: Command count × 1.5 (orchestration factor)
+- Size Factor: Project size (MB) × 0.05 (scaling factor)
+- Domain Breadth: Categories affected × 2.0 (cross-domain complexity)
+- Innovation Factor: Novel components × 3.0 (uncertainty multiplier)
+
+**Decision Thresholds**
+- MODERATE (< 50): Sequential execution with single agent
+- HIGH (50-200): Parallel execution with 2-3 specialized agents
+- EXTREME (> 200): Wave deployment with full orchestration
+
+**Execution Strategy Patterns**
+- **Foundation-First Sequencing**: creation → optimization → innovation for risk graduation
+- **Domain-Parallel Distribution**: Independent domains execute concurrently
+- **Knowledge-Transfer Sequential**: High interdependency phases execute sequentially
+- **Infrastructure-Multiplier Effect**: Base optimization before feature enhancement
+
 ### Problem Classification
 
 **Universal Problem Types**
@@ -255,4 +271,4 @@ Maintain quality throughout execution:
 
 **Pattern Philosophy**: Universal execution patterns enable consistent, optimized implementation across all workflow types while maintaining quality, safety, and performance through intelligent parallel orchestration.
 
-See creation-pattern.md, discovery-pattern.md, transformation-pattern.md, and problem-solving.md for detailed specifications and advanced techniques.
+**Core Integration**: See [Task Orchestration](../core/task-orchestration.md) for detailed orchestration strategies and [Development Standards](../standards/development-standards.md) for implementation guidelines.

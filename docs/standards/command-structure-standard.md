@@ -1,162 +1,195 @@
 # Command Structure Standard
 
-## Overview
+## Purpose
+Define executable command structure for Claude Code using simple, direct instructions with maximum clarity and immediate actionability.
 
-Standardized structure for all slash commands in ce-simple system based on enhanced-start pattern with granular, low-density instructions for maximum clarity and executability.
+## Core Requirements
 
-**Foundation**: Enhanced-start structure with 4-section organization  
-**Density**: Low-density, granular instructions for easy execution  
-**Tool Integration**: Explicit tool calls when necessary with specific usage patterns
+### Structure Pattern
+All commands follow 4-section structure:
+1. **Purpose** - Single responsibility statement
+2. **Principles** - 4 execution guidelines  
+3. **Execution Process** - 5-phase workflow
+4. **Core Import Footer** - Automatic architectural context loading
 
-## Required Structure
+### Length Limits
+- Total command: ≤150 lines
+- Purpose: 1 paragraph (3-5 lines)
+- Principles: 4 bullets (8-12 lines)
+- Execution: 5 phases (120-130 lines)
+- Core Import Footer: 2-3 lines
 
-### Section 1: Purpose
-**Content**: Single, clear statement of command's primary responsibility
-**Format**: One paragraph defining what the command does
-**Requirements**: 
-- Maps to single taxonomy type from 12-type system
-- Clear boundary definition
-- No overlap with other command purposes
+## Writing Standards
 
-### Section 2: Principles and Guidelines
-**Content**: Core principles governing command execution
-**Format**: 4 key principles in bullet format
-**Requirements**:
-- Single Responsibility emphasis
-- Granular approach specification  
-- Dependency management approach
-- Error handling philosophy
+### Word Economy
+- ≤15 words per instruction
+- Action verbs only: Execute, Create, Deploy, Monitor, Validate
+- Remove: "should", "might", "perhaps", "comprehensive", "utilize"
+- Essential words only, no fluff
 
-**Standard Template**:
-```markdown
-**Single Responsibility**: Focus exclusively on [primary responsibility] without [other areas]
-**Granular [Approach]**: Break [process] into small, manageable [units]
-**[Domain] Management**: Clear [domain-specific] dependencies with explicit [requirements]
-**Error Recovery**: Built-in [failure type] handling and recovery protocols
+### Natural Language Instructions
+```
+GOOD: "Search TypeScript files for function definitions"
+BAD: "Use Grep tool with pattern to locate function declarations"
+
+GOOD: "Mark task as in_progress using TodoWrite" 
+BAD: "TodoWrite([{"status": "in_progress"}])"
+
+GOOD: "Analyze current context and recommend next command"
+BAD: "Execute context analysis algorithm to determine optimal routing"
 ```
 
-### Section 3: Execution Process
-**Content**: Phase-based execution with granular, low-density tasks
-**Format**: 3-4 phases with specific TodoWrite integration and tool calls
-**Requirements**:
-- Each phase has clear completion criteria
-- TodoWrite updates at every phase transition
-- Specific tool calls with explicit parameters
-- Granular tasks that are easy to follow
-- Error handling integrated within phases
+### Anti-Patterns
+Never include:
+- Programming syntax or code blocks
+- Tool syntax: `Grep('*.ts')` → "Search TypeScript files"
+- Meta-commentary: "This phase will..." → Direct instruction
+- Theoretical explanations → Executable actions only
 
-**Phase Template**:
-```markdown
+## Section Templates
+
+### Purpose Template
+```
+Executes [primary function] through [method] providing [outcome] with [quality criteria].
+```
+
+### Principles Template
+```
+- **Single Responsibility**: Focus on [primary task] without [excluded areas]
+- **Granular Approach**: Break [process] into manageable [units] with clear [criteria]
+- **Resource Management**: Handle [dependencies] with explicit [requirements]
+- **Error Recovery**: Built-in [failure handling] and recovery protocols
+```
+
+### Phase Template
+```
 ### Phase N: [Phase Name]
-Update TodoWrite: Mark "[specific task description]" as in_progress
+Mark "[specific task]" as in_progress using TodoWrite
 
-[First granular task]:
-- [Specific action item 1]
-- [Specific action item 2] 
-- [Specific action item 3]
-- [Specific action item 4]
+Execute [task group]:
+- [Action verb] [specific object] [outcome criteria]
+- [Action verb] [specific object] [validation step]
+- [Action verb] [specific object] [documentation step]
 
-[Tool usage when needed]:
-Use [ToolName] to [specific action]:
-- [Specific parameter/usage 1]
-- [Specific parameter/usage 2]
+Use [Tool] to [specific action]:
+- [Parameter 1] for [specific purpose]
+- [Parameter 2] with [validation criteria]
 
-[Second granular task group]:
-- [Next specific action]
-- [Validation step]
-- [Documentation step]
-
-### Error Handling (within phases)
-If [specific condition occurs]:
-- Add TodoWrite task: "[specific error resolution description]"
-- [Specific recovery action]
-- [Validation of recovery]
-- [Continue/retry instruction]
-
-Update TodoWrite: Complete previous, mark "[next phase]" as in_progress
+Complete current phase, mark "[next phase]" as in_progress using TodoWrite
 ```
 
-### Section 4: Single Responsibility Statement (Footer)
-**Content**: Reinforcement of single responsibility principle
-**Format**: Standardized closing statement
-**Template**: `**Single Responsibility**: [Primary type] focused exclusively on [specific responsibility] [without other areas].`
+### Error Handling Pattern
+```
+If [specific condition]:
+- Add TodoWrite task: "Resolve [error type]: [specific issue]"
+- [Specific recovery action]
+- [Validation step]
+- [Continue instruction]
+```
 
-## Documentation Standards Integration
+## Phase 5: Command Routing and Handoff
 
-### Length Requirements
-- **Total Command**: ≤150 lines maximum
-- **Purpose Section**: 1 paragraph (3-5 lines)
-- **Principles Section**: 4 bullet points (8-12 lines)
-- **Execution Process**: 3-4 phases (120-130 lines)
-- **Footer**: 1 line single responsibility statement
+### Mandatory Elements
+All commands must include Phase 5 with:
+- **Context Analysis**: Assess current state and achievements
+- **Next Command Recommendations**: Suggest logical follow-up commands
+- **Handoff Protocol**: Provide clear transition message
 
-### Instruction Density
-**Low-Density Requirement**: Each instruction should be:
-- Single, specific action
-- Easy to understand and execute
-- No complex multi-part instructions
-- Clear validation criteria
-- Explicit tool usage when needed
+### Phase 5 Template
+```
+### Phase 5: Command Routing and Handoff
+Mark "Command routing and handoff" as in_progress using TodoWrite
 
-**Granular Task Guidelines**:
-- Break complex operations into 3-4 simple steps
-- Each step has clear completion criteria
-- Validation built into each step
-- No assumptions about prior knowledge
+Analyze current context:
+- Review [completed objectives] and [key outcomes]
+- Identify [remaining requirements] or [next logical steps]
+- Assess [system state] and [available resources]
 
-### Tool Integration Standards
-**Explicit Tool Calls**: When tools are needed, specify:
-- Tool name and specific usage
-- Required parameters
-- Expected outcomes
-- Validation of tool results
+Recommend next commands:
+- [Command category/name]: [Specific use case scenario]
+- [Command category/name]: [Alternative workflow option]
+- [Command category/name]: [Advanced capability need]
 
-**TodoWrite Integration**: Required at:
+Provide handoff message:
+"[Summary of completion] - Ready for [next phase] via [recommended command]"
+
+Complete all tasks using TodoWrite
+```
+
+## Tool Integration
+
+### TodoWrite Requirements
+Must appear at:
 - Phase start: Mark new phase as in_progress
-- Phase completion: Complete current, mark next as in_progress
-- Error conditions: Add specific error resolution tasks
-- Command completion: Complete all tasks, add follow-ups
+- Phase end: Complete current, mark next as in_progress  
+- Phase 5: Context analysis, recommendations, and completion
+- Errors: Add specific resolution tasks
 
-## Implementation Requirements
+### Tool Usage Pattern
+```
+Use [ToolName] to [action]:
+- [Specific parameter] achieving [outcome]
+- [Validation criteria] ensuring [quality]
+```
 
-### All Commands Must:
-1. **Follow 4-section structure exactly**
-2. **Maintain ≤150 line limit**
-3. **Use granular, low-density instructions**
-4. **Integrate TodoWrite at every phase transition**
-5. **Include explicit tool calls when needed**
-6. **Have built-in error handling within phases**
-7. **End with single responsibility statement**
+## Quality Gates
 
-### Quality Gates
-**Structure Compliance**: All 4 sections present and properly formatted
-**Density Compliance**: Instructions are granular and easy to follow
-**Length Compliance**: ≤150 lines total
-**Tool Integration**: Proper tool usage with explicit parameters
-**Single Responsibility**: Clear focus on primary taxonomy type
+### Structure Compliance
+- [ ] 4 sections present and properly formatted
+- [ ] ≤150 lines total length
+- [ ] Single responsibility clearly defined
+- [ ] 5-phase execution with TodoWrite integration
+- [ ] Phase 5 routing and handoff included
 
-### Validation Checklist
-- [ ] Purpose section clearly defines single responsibility
-- [ ] Principles section has 4 standardized guidelines
-- [ ] Execution process has 3-4 phases with TodoWrite integration
-- [ ] Instructions are granular and low-density
-- [ ] Tool calls are explicit with specific usage
+### Writing Compliance  
+- [ ] ≤15 words per instruction
+- [ ] Action verbs used throughout
+- [ ] No programming syntax or meta-commentary
+- [ ] Natural language instructions only
+
+### Execution Compliance
+- [ ] Immediately actionable instructions
+- [ ] Clear validation criteria per step
 - [ ] Error handling integrated within phases
-- [ ] Single responsibility footer statement present
-- [ ] Total length ≤150 lines
-- [ ] Command maps to single taxonomy type
+- [ ] Tool usage explicit with parameters
 
-## Migration Plan for Existing Commands
+## Validation Checklist
 
-### Phase 1: Document Current State (27 commands)
-Review all existing commands for structure compliance and identify required changes.
+**Structure**:
+- Purpose defines single responsibility
+- 4 principles follow template pattern
+- 5 execution phases with TodoWrite
+- Phase 5 includes routing and handoff
+- Core Import Footer provides automatic architectural context
 
-### Phase 2: Apply Structure Standard
-Convert all commands to 4-section structure with granular instructions.
+**Writing**:
+- Instructions use ≤15 words
+- Action verbs throughout
+- No code syntax or theoretical explanations
+- Natural language tool usage
 
-### Phase 3: Validate and Test
-Ensure all commands meet structure standard and maintain functionality.
+**Execution**:
+- Each instruction immediately executable
+- Validation built into every step
+- Error recovery protocols included
+- Tool calls explicit with outcomes
+
+## Core Import Footer
+
+### Template
+```
+---
+
+@./docs/core/README.md
+@./docs/core/system-principles.md
+```
+
+### Purpose
+Automatic loading of architectural foundation ensuring:
+- **Compliance Automation**: Core principles automatically available
+- **Educational Integration**: System architecture context in every command
+- **Consistency Enforcement**: Unified foundation across all interactions
 
 ---
 
-**This standard ensures consistent, executable, maintainable commands across the entire ce-simple system with maximum clarity and usability.**
+**All commands follow simple, direct structure using natural language instructions for immediate Claude Code execution success.**

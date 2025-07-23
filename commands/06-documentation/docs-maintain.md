@@ -1,105 +1,76 @@
-# Docs-Maintain - Unified Documentation Maintenance System
+# /docs-maintain - Documentation Maintenance System
 
 ## Purpose
-Comprehensive documentation maintenance system with audit, consolidate, optimize, validate, generate, and workflow management capabilities through mode-based execution and error handling.
+Orchestrates comprehensive documentation maintenance through parallel analysis, consolidation, optimization, and validation with automated quality assurance protocols.
 
 ## Principles and Guidelines
-• **Mode-Based Execution**: Support audit, consolidate, optimize, validate, generate, workflow, and full modes for targeted operations
-• **Content Unification**: Merge duplicated content, repair broken references, and establish authoritative documentation sources
-• **Performance Optimization**: Implement progressive disclosure for oversized files and optimize cross-reference integrity
-• **Error Handling**: Detect and resolve broken links, missing references, and structural integrity violations
+- **Parallel Execution**: Deploy concurrent analysis, consolidation, optimization, and validation tasks
+- **Quality Assurance**: Automated error detection, broken link resolution, and content validation
+- **Progressive Disclosure**: Split oversized files while maintaining coherent structure
+- **Self-Validation**: Built-in integrity checks ensuring maintenance quality standards
 
 ## Execution Process
 
-### Phase 1: Audit and Analysis
-```javascript
-TodoWrite([
-  {"content": "🔍 AUDIT: Execute comprehensive structure and health analysis", "status": "pending", "priority": "high", "id": "docs-audit-1"},
-  {"content": "🔗 CONSOLIDATE: Unify duplicated content and repair references", "status": "pending", "priority": "high", "id": "docs-consolidate-1"}
-])
-```
+### Phase 1: Structure Analysis
+Update TodoWrite mark "documentation structure analysis" as in_progress
 
-**Structure Analysis**:
-- Map documentation directory structure and file relationships
-- Count cross-references and identify broken links
-- Detect duplicate content through MD5 checksums
-- Assess file sizes and identify optimization opportunities
+Analyze documentation directory structure using LS and Bash:
+- Map file relationships and cross-references
+- Identify oversized files requiring progressive disclosure
+- Detect broken links and missing dependencies
+- Generate structure health metrics
 
-### Phase 2: Optimization and Validation
-```javascript
-TodoWrite([
-  {"content": "⚡ OPTIMIZE: Performance and size optimization", "status": "pending", "priority": "high", "id": "docs-optimize-1"},
-  {"content": "✅ VALIDATE: Cross-reference and integrity validation", "status": "pending", "priority": "medium", "id": "docs-validate-1"}
-])
-```
+### Phase 2: Content Consolidation
+Update TodoWrite complete previous, mark "content consolidation" as in_progress
 
-**Content Enhancement**:
-- Implement progressive disclosure for files >200 lines
-- Repair broken references and establish link integrity
-- Generate dynamic content and system health reports
-- Execute comprehensive validation protocols
+Consolidate duplicate content using Grep and Edit:
+- Merge redundant documentation sections
+- Repair cross-reference links during consolidation
+- Preserve chronological information and context
+- Update file references across system
 
-### Phase 3: Generation and Workflow
-```javascript
-TodoWrite([
-  {"content": "🚀 GENERATE: Dynamic content generation", "status": "pending", "priority": "medium", "id": "docs-generate-1"},
-  {"content": "📋 WORKFLOW: Complete maintenance pipeline execution", "status": "pending", "priority": "low", "id": "docs-workflow-1"}
-])
-```
+### Phase 3: Optimization & Validation
+Update TodoWrite complete previous, mark "optimization validation" as in_progress
 
-**Workflow Orchestration**:
-- Execute complete maintenance pipeline in optimized sequence
-- Generate comprehensive system health reports
-- Integrate with matrix-maintenance for cross-validation
-- Commit changes with detailed metrics
+Optimize documentation structure using parallel validation:
+- Implement progressive disclosure for oversized files
+- Validate cross-references and internal links
+- Check documentation standards compliance
+- Generate comprehensive health report
 
-### Tool Execution Implementation
-```javascript
-// MODE-BASED EXECUTION STRATEGY
-const mode = process.argv[2] || 'full'
+### Phase 4: Quality Reporting
+Update TodoWrite complete previous, mark "quality reporting" as in_progress
 
-// AUDIT MODE TOOLS
-if (mode === 'audit' || mode === 'full') {
-  LS(".") // Directory structure analysis
-  Bash("find . -name '*.md' -exec wc -l {} + | sort -nr") // File size analysis
-  Grep("\\[.*\\]\\(.*\\.md\\)", {glob: "**/*.md", output_mode: "count"}) // Reference count
-  Bash("find . -name '*.md' | wc -l") // Total file count
-}
+Generate maintenance summary using Write and Bash:
+- Create system health report with metrics
+- Document improvements and optimizations performed
+- Provide actionable recommendations for future maintenance
+- Commit changes with detailed improvement summary
 
-// CONSOLIDATE MODE TOOLS
-if (mode === 'consolidate' || mode === 'full') {
-  Bash("find . -name '*.md' -exec md5sum {} + | sort | uniq -d") // Duplicate detection
-  Grep("docs/", {glob: "**/*.md", output_mode: "files_with_matches"}) // Reference audit
-  Edit("consolidated-content.md", "merged-content") // Content consolidation
-}
+### Phase 5: Command Routing and Handoff
+Update TodoWrite complete previous, mark "command routing and handoff" as in_progress
 
-// OPTIMIZE MODE TOOLS
-if (mode === 'optimize' || mode === 'full') {
-  Bash("find . -name '*.md' -exec wc -l {} + | awk '$1 > 200 {print $2, $1}'") // Oversized files
-  Task("Progressive Disclosure", "Extract oversized content to implementation files")
-  Bash("echo 'Optimization complete'") // Completion notification
-}
+**Context Analysis**: Review documentation maintenance outcomes and identify integration opportunities
+- Analyze documentation structure changes and validation requirements
+- Assess need for validation commands based on structural modifications
+- Evaluate learning capture opportunities from maintenance patterns
+- Consider matrix validation requirements for cross-reference updates
 
-// VALIDATE MODE TOOLS
-if (mode === 'validate' || mode === 'full') {
-  Grep("BROKEN|MISSING|ERROR", {glob: "**/*.md", output_mode: "files_with_matches"}) // Error detection
-  Bash("find . -name '*.md' -exec grep -l 'docs/' {} \\; | wc -l") // Reference validation
-  Bash("echo 'Validation health score: 95%'") // Health assessment
-}
+**Intelligent Routing**: Route to 4-6 related commands based on documentation outcomes
+- **Documentation validation flow**: /validate-complete (high) - verify documentation integrity post-maintenance
+- **Learning extraction**: /capture-learnings (medium) - extract maintenance patterns for future optimization
+- **System monitoring**: /system-monitor (medium) - track documentation health metrics over time
+- **Matrix validation**: /matrix-maintenance (low) - validate cross-reference consistency after structural changes
+- **Context optimization**: /context-optimize (low) - consolidate documentation context for performance
+- **Performance tracking**: /performance-track (low) - measure documentation maintenance efficiency
 
-// GENERATE MODE TOOLS
-if (mode === 'generate' || mode === 'full') {
-  Write("docs-health-report.md", "# System Health Report\\n\\nGenerated: $(date)") // Report generation
-  Bash("echo 'Dynamic content generation complete'") // Generation complete
-}
+**Handoff Protocol**: Format: "Next: /command (priority) - rationale"
 
-// WORKFLOW MODE TOOLS (orchestration)
-if (mode === 'workflow' || mode === 'full') {
-  Task("Workflow Orchestration", "Execute complete docs maintenance pipeline")
-  Bash("git add . && git commit -m 'docs-maintain: complete maintenance cycle ✓'") // Git integration
-}
-```
+Update TodoWrite complete all documentation maintenance tasks
+
+**Error Handling**: Automatically detect broken references, generate merge recommendations, implement progressive disclosure, create placeholder files with proper structure
 
 ---
 
-**Single Responsibility**: Unified documentation maintenance with mode-based execution, error handling, and comprehensive quality assurance protocols.
+@./docs/core/README.md
+@./docs/core/system-principles.md

@@ -275,4 +275,4 @@ Execute before any solution development to prevent failures through systematic s
 
 **Validation Principle**: Systematic validation framework prevents failures through comprehensive assessment, continuous monitoring, and automatic correction while maintaining quality standards and user experience across all operations.
 
-See validation-protocols.md and cross-reference-framework.md for detailed specifications and advanced validation techniques.
+**Core Integration**: See [Development Standards](../standards/development-standards.md) for quality standards and [System Principles](../core/system-principles.md) for validation foundations.

@@ -1,88 +1,68 @@
-# Context-Optimize - Intelligent Context Maintenance System
+# /context-optimize - Context Consolidation System
 
 ## Purpose
-Automated context directory maintenance ensuring semantic organization, content consolidation, density optimization, and structural integrity through intelligent analysis and systematic optimization.
+Orchestrates intelligent context directory maintenance through parallel structural analysis, content consolidation, and density optimization ensuring semantic organization and maximum information efficiency.
 
 ## Principles and Guidelines
-• **Semantic Organization**: Maintain `dev/`, `ops/`, `learn/`, `sys/`, `patterns/` directory structure with proper file placement
-• **Content Consolidation**: Merge redundant files with >70% overlap while preserving unique insights and proven patterns  
-• **Density Optimization**: Remove verbose language, extract actionable insights, maximize information per line ratio
-• **Structural Integrity**: Enforce 200-line limits, eliminate timestamp violations, maintain cross-reference health
+- **Semantic Preservation**: Maintain directory structure across dev/, ops/, learn/, sys/, patterns/
+- **Density Optimization**: Remove verbose language while preserving unique insights
+- **Structural Enforcement**: Apply naming conventions and directory organization standards
+- **Parallel Processing**: Execute structural assessment, redundancy detection, and consolidation concurrently
 
 ## Execution Process
 
 ### Phase 1: Structural Assessment
-```javascript
-TodoWrite([
-  {"content": "🔍 AUDIT: Scan context structure and identify semantic violations", "status": "pending", "priority": "high", "id": "context-audit-1"},
-  {"content": "📦 CONSOLIDATE: Merge redundant content and eliminate duplication", "status": "pending", "priority": "high", "id": "context-consolidate-1"}
-])
-```
+Update TodoWrite mark "context structural assessment" as in_progress
 
-**Directory Structure Validation**:
-- Verify semantic organization compliance
-- Identify misplaced files requiring relocation  
-- Detect timestamp violations in naming patterns
-- Monitor files approaching 200-line limits
+Analyze context directory structure using LS and Bash:
+- Map semantic organization violations
+- Identify misplaced files requiring relocation
+- Detect timestamp-based naming patterns
+- Generate structural compliance metrics
 
-### Phase 2: Content Analysis and Consolidation
-**Intelligent File Merging**:
-- Group content by semantic domain (git, system, workflow)
-- Detect redundancy patterns and duplicate insights
-- Consolidate related content into comprehensive files
-- Preserve chronological context with "Last Updated" tracking
+### Phase 2: Redundancy Detection & Consolidation
+Update TodoWrite complete previous, mark "content consolidation" as in_progress
 
-### Phase 3: Optimization and Validation
-```javascript
-TodoWrite([
-  {"content": "🧹 OPTIMIZE: Improve content density and reduce to essentials", "status": "pending", "priority": "high", "id": "context-optimize-1"},
-  {"content": "✅ VALIDATE: Confirm optimization results and system integrity", "status": "pending", "priority": "medium", "id": "context-validate-1"}
-])
-```
+Execute parallel redundancy analysis using Grep and Edit:
+- Detect duplicate content patterns across files
+- Merge redundant files preserving unique insights
+- Update cross-references during consolidation process
+- Maintain chronological context information
 
-**Content Enhancement**:
-- Remove verbose explanations and redundant text
-- Extract essential patterns and actionable insights  
-- Improve organization for maximum information density
-- Add intelligent cross-references between concepts
-- Execute quality validation and integrity checks
+### Phase 3: Density Optimization & Structure Enforcement
+Update TodoWrite complete previous, mark "density optimization" as in_progress
 
-### Tool Execution Implementation
-```javascript
-// STRUCTURAL ASSESSMENT
-LS("/Users/nalve/ce-simple/context") // Verify semantic directory structure
-Bash("find context/ -name '*.md' | wc -l") // Current file count
-Bash("find context/ -name '*2025*' -o -name '*timestamp*' | wc -l") // Detect violations
+Optimize information density using parallel processing:
+- Remove verbose language maximizing information density
+- Split oversized files at logical boundaries
+- Enforce directory structure and naming conventions
+- Relocate misplaced files to appropriate directories
 
-// CONTENT ANALYSIS
-Grep("^# ", {glob: "context/**/*.md", output_mode: "content", -n: true}) // Extract titles
-Bash("find context/ -name '*.md' -exec wc -l {} + | sort -nr") // Size analysis
-Grep("Last Updated:", {glob: "context/**/*.md", output_mode: "content"}) // Track updates
+### Phase 4: Integrity Validation & Reporting
+Update TodoWrite complete previous, mark "integrity validation" as in_progress
 
-// REDUNDANCY DETECTION
-Grep("git workflow|Git Workflow", {glob: "context/**/*.md", output_mode: "files_with_matches"})
-Grep("system integrity|System Integrity", {glob: "context/**/*.md", output_mode: "files_with_matches"})
+Validate optimization results using Bash and Grep:
+- Verify semantic organization maintenance
+- Check cross-reference integrity post-consolidation
+- Generate quality metrics and consolidation summary
+- Commit changes with compression ratio documentation
 
-// CONTENT CONSOLIDATION
-Edit("context/learn/git-insights.md", `# Git Workflow & Learning Insights\n**Last Updated**: [timestamp]\n\n[Consolidated content]`)
-Edit("context/sys/system-health.md", `# System Health & Integrity\n**Last Updated**: [timestamp]\n\n[Consolidated content]`)
+### Phase 5: Command Routing and Handoff
+Update TodoWrite complete previous, mark "command routing" as in_progress
 
-// DENSITY OPTIMIZATION
-Grep("\\bvery\\b|\\breally\\b|\\bobviously\\b", {glob: "context/**/*.md", output_mode: "content"})
-Edit("context/patterns/essential-patterns.md", `# Essential Problem-Solving Patterns\n[Optimized content]`)
+Analyze maintenance results and route to related commands:
+- If significant redundancies found → Next: /capture-learnings (high) - document optimization patterns
+- If performance impacts detected → Next: /performance-track (high) - monitor system efficiency
+- If structural violations found → Next: /system-monitor (medium) - validate system health
+- If context density improved → Next: /validate-complete (medium) - verify optimization success
+- If cross-references updated → Next: /docs-maintain (low) - ensure documentation consistency
+- Always → Next: /notify-manager (low) - report maintenance completion status
 
-// STRUCTURE ENFORCEMENT
-Bash("find context/ -name '*.md' -path '*/wrong-dir/*' -exec mv {} context/correct-dir/ \\;")
-Bash("find context/ -name '*-20[0-9][0-9]-*' -exec rm {} \\;")
+Update TodoWrite complete all context optimization and routing tasks
 
-// VALIDATION & METRICS
-Bash("find context/ -name '*.md' | wc -l") // Final count
-Grep("BROKEN|MISSING|ERROR", {glob: "{context,docs}/**/*.md", output_mode: "files_with_matches"})
-
-// GIT INTEGRATION
-Bash("git add . && git commit -m \"context-optimize: [mode] | quality: [score]/10 ✓session\"")
-```
+**Error Handling**: Automatically relocate misplaced files, remove timestamp violations maintaining content, split oversized files, update broken references during consolidation
 
 ---
 
-**Single Responsibility**: Context directory maintenance through semantic organization, content consolidation, and density optimization with automated quality assurance.
+@./docs/core/README.md
+@./docs/core/system-principles.md

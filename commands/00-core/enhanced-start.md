@@ -1,101 +1,123 @@
-# Enhanced Start - Discovery Command
+# enhanced-start
 
 ## Purpose
-Discovery command with structural validation, conditional agent deployment, and parallel orchestration for comprehensive investigation and maximum efficiency.
 
-## Principles and Guidelines
+Executes advanced discovery workflow through Phase 0 assessment providing comprehensive investigation with intelligent complexity-based routing and autotrigger execution.
 
-**Single Responsibility**: Focus exclusively on enhanced discovery without execution or implementation
-**Granular Discovery**: Break investigation into small, manageable discovery steps
-**Assessment Management**: Clear complexity thresholds with explicit deployment requirements
-**Error Recovery**: Built-in discovery failure handling and re-assessment protocols
+## Principles
+
+- **Single Responsibility**: Focus on advanced discovery without basic discovery execution
+- **Granular Approach**: Break Phase 0 validation into conditional deployment with clear thresholds
+- **Resource Management**: Handle agent coordination with explicit monitoring requirements
+- **Error Recovery**: Built-in restart protocols and preserved intermediate results
 
 ## Execution Process
 
-### Phase 1: Structure Validation and Assessment
-Update TodoWrite: Mark "Enhanced discovery structure validation" as in_progress
+### Phase 1: Structure Validation
+Mark "Structure Validation and Complexity Assessment" as in_progress using TodoWrite
 
-Validate system structure and readiness:
-- Use LS tool to check docs/ directory exists and is accessible
-- Use LS tool to verify commands/ directory structure and contents
-- Use LS tool to confirm context/ directory presence and organization
-- Validate system integrity before proceeding with discovery
+Execute system validation:
+- Validate complete system structure across ce-simple domains
+- Calculate complexity scores using scope and interdependency analysis
+- Assess learning requirements determining deployment thresholds
+- Prepare conditional deployment matrix based on complexity parameters
 
-Calculate discovery complexity using embedded formula:
-```bash
-scope=$(analyze_request_scope)
-breadth=$(count_domains) 
-interdep=$(analyze_dependencies)
-complexity=$(echo "scale=1; ($scope + $breadth + $interdep) / 3" | bc)
-```
+Use LS to validate structure:
+- Directory traversal achieving system validation
+- Structure validation with component verification
 
-Assess discovery requirements:
-- Determine scope depth and investigation breadth
-- Identify domain expertise requirements
-- Evaluate interdependency complexity factors
-- Calculate deployment strategy based on complexity score
+If structure validation failures occur:
+- Add TodoWrite task: "Resolve structure error: integrity reconstruction"
+- Execute incremental directory checks with reconstruction
+- Validate structure completeness ensuring system integrity
+- Continue with validated structure parameters
 
-### Phase 2: Conditional Agent Deployment
-Update TodoWrite: Complete previous, mark "Conditional agent deployment" as in_progress
+Complete previous phase, mark "Agent Deployment and Coordination Setup" as in_progress using TodoWrite
 
-Deploy agents based on complexity assessment:
-- If complexity ≥6: Use Task Tool executing `/worktree-start` for isolation setup
-- If learning value ≥4: Use Task Tool executing `/capture-learnings` for knowledge extraction
-- If multi-domain detected: Use Task Tool executing `/explore-codebase` for internal analysis
-- If multi-domain detected: Use Task Tool executing `/explore-web` for external research
+### Phase 2: Agent Deployment
+Mark "Agent Deployment and Coordination Setup" as in_progress using TodoWrite
 
-Execute parallel deployment coordination:
-- Deploy Task Tools simultaneously for maximum efficiency
-- Monitor agent startup and initialization status
-- Validate successful deployment before proceeding
-- Handle deployment failures with retry mechanisms
+Execute agent initialization:
+- Deploy Task Tool agents based on complexity thresholds
+- Configure agent coordination parameters establishing monitoring capabilities
+- Initialize discovery scope allocation assigning domains to agents
+- Establish communication channels and result aggregation pathways
 
-### Phase 3: Discovery Coordination and Monitoring
-Update TodoWrite: Complete previous, mark "Discovery coordination and monitoring" as in_progress
+Use TodoWrite to deploy agents:
+- Task Tool deployment achieving parallel initialization
+- Agent configuration with monitoring setup
 
-Coordinate parallel discovery execution:
-- Monitor Task Tool agent progress and status
-- Track discovery completion across deployed agents
-- Coordinate inter-agent communication and dependencies
-- Handle agent coordination issues and bottlenecks
+If agent deployment issues occur:
+- Add TodoWrite task: "Resolve deployment error: sequential fallback"
+- Execute fallback to sequential deployment with enhanced monitoring
+- Validate agent readiness ensuring coordination capability
+- Continue with deployed agent configuration
 
-Collect intermediate discovery results:
-- Gather partial findings from active agents
-- Validate discovery quality and completeness
-- Identify gaps requiring additional investigation
-- Adjust discovery strategy based on intermediate results
+Complete previous phase, mark "Discovery Coordination and Execution" as in_progress using TodoWrite
 
-### Phase 4: Result Aggregation and Validation
-Update TodoWrite: Complete previous, mark "Discovery result aggregation" as in_progress
+### Phase 3: Discovery Coordination
+Mark "Discovery Coordination and Execution" as in_progress using TodoWrite
 
-Aggregate discovery findings:
-- Collect outputs from all deployed Task Tool agents
-- Synthesize findings with pattern extraction and analysis
-- Resolve conflicts between different agent discoveries
-- Generate comprehensive discovery summary
+Execute parallel monitoring:
+- Monitor parallel Task Tool agents with status tracking
+- Coordinate execution across discovery domains ensuring coverage
+- Capture intermediate results maintaining execution state
+- Manage resource allocation and load balancing across agents
 
-Validate discovery completion using systematic checks:
-```bash
-total_scope=$(calculate_total_scope)
-covered_scope=$(get_covered_scope)
-completeness=$(echo "scale=1; $covered_scope * 100 / $total_scope" | bc)
-```
+Use Bash to monitor agents:
+- Agent monitoring achieving status tracking
+- Execution coordination with coverage validation
 
-Perform completion validation:
-- Verify request fulfilled completely (≥95% scope coverage)
-- Confirm all Task Tool agents completed successfully
-- Validate learning patterns captured and documented
-- Check system integrity maintained (completeness ≥85%)
+If coordination problems occur:
+- Add TodoWrite task: "Resolve coordination error: agent restart"
+- Execute agent restart with preserved intermediate results
+- Validate coordination restoration ensuring execution continuity
+- Continue with coordinated agent execution
 
-If discovery validation fails:
-- Add TodoWrite task: "Resolve discovery gap: [specific issue]"
-- Re-deploy agents with enhanced discovery protocols
-- Recalculate complexity using refined assessment parameters
-- Re-execute discovery phases with adjusted scope and strategy
+Complete previous phase, mark "Result Aggregation and Validation" as in_progress using TodoWrite
 
-Update TodoWrite: Complete all enhanced discovery tasks
-Add follow-up: "Enhanced discovery complete with comprehensive findings ready"
+### Phase 4: Result Aggregation
+Mark "Result Aggregation and Validation" as in_progress using TodoWrite
+
+Execute synthesis processing:
+- Synthesize findings from discovery agents into investigation summary
+- Validate coverage completeness ensuring scope coverage across domains
+- Extract patterns and generate insights from aggregated results
+- Produce final validation report with deployment decisions
+
+Use Read to synthesize results:
+- Result synthesis achieving investigation summary
+- Coverage analysis with pattern extraction
+
+If coverage gaps occur:
+- Add TodoWrite task: "Resolve coverage gap: targeted re-deployment"
+- Execute re-deployment of targeted agents with refined scope
+- Validate coverage restoration ensuring comprehensive investigation
+- Complete aggregation with validated coverage parameters
+
+Complete previous phase, mark "Advanced Command Routing and Intelligent Handoff" as in_progress using TodoWrite
+
+### Phase 5: Command Routing and Intelligent Handoff
+Mark "Advanced Command Routing and Intelligent Handoff" as in_progress using TodoWrite
+
+Execute intelligent workflow continuation based on investigation results and complexity assessment:
+- Route to `/agent-orchestration` for high-complexity investigations requiring parallel coordination and advanced resource management
+- Handoff to `/matrix-maintenance` when comprehensive scope reveals system integrity concerns and cross-reference validation needs
+- Transfer to `/capture-learnings` for investigations revealing significant patterns requiring documentation and system evolution
+- Connect to `/worktree-start` for complex implementations requiring isolated development environment and controlled integration
+
+Use TodoWrite to configure advanced routing:
+- Complexity-based routing achieving sophisticated workflow orchestration
+- Investigation-aware handoffs with comprehensive context preservation
+
+If advanced routing complexity requires clarification:
+- Add TodoWrite task: "Resolve advanced routing: complexity reassessment"
+- Execute complexity reassessment with refined parameters and enhanced validation
+- Validate advanced routing ensuring optimal resource allocation and workflow efficiency
+- Continue with validated advanced routing configuration
+
+Complete all tasks using TodoWrite
 
 ---
 
-**Single Responsibility**: Discovery focused exclusively on enhanced investigation with conditional agent deployment and parallel orchestration optimization.**
+**Enhanced discovery executes advanced investigation with complexity-based routing and intelligent automation.**

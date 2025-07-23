@@ -285,4 +285,4 @@ Weighted Average: (0.4 × accuracy) + (0.3 × consistency) + (0.3 × stability)
 
 **Performance Principle**: Mathematical precision tracking enables 10x productivity gains through intelligent parallel operation scaling while maintaining quality standards and resource efficiency.
 
-See performance-benchmarks.md and monitoring-architecture.md for detailed specifications and advanced optimization techniques.
+**Core Integration**: See [Task Orchestration](../core/task-orchestration.md) for orchestration patterns and [System Principles](../core/system-principles.md) for foundational performance standards.

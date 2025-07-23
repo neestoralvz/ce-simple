@@ -69,16 +69,14 @@ ce-simple/
 │   ├── commands/          # Command implementation details
 │   ├── context/           # Context system documentation
 │   ├── core/              # Core architecture
-│   │   ├── architecture-v2-overview.md # Architecture overview
-│   │   ├── context-system.md           # Distributed memory
-│   │   ├── evolution.md                # System evolution
-│   │   ├── orchestration.md            # Task coordination
-│   │   ├── principles.md               # Design principles
-│   │   └── README.md                   # Core documentation
+│   │   ├── context-architecture.md     # Distributed memory and context management
+│   │   ├── evolution-learning.md       # System evolution and learning protocols
+│   │   ├── system-principles.md        # Design principles and architecture overview
+│   │   ├── task-orchestration.md       # Task coordination and orchestration
+│   │   └── README.md                   # Core documentation navigation hub
 │   ├── frameworks/        # System frameworks
 │   │   ├── execution-patterns.md       # Execution patterns
 │   │   ├── performance-framework.md    # Performance monitoring
-│   │   ├── task-orchestration-framework.md # Task coordination
 │   │   └── validation-framework.md     # Quality assurance
 │   ├── standards/         # Development standards
 │   │   ├── command-standards.md        # Command specifications
@@ -99,7 +97,7 @@ ce-simple/
 
 ## Directory Statistics
 
-- **Total Files**: 101
+- **Total Files**: 98
 - **Total Directories**: 33
 - **Command Categories**: 15 (00-core through 14-utils)
 - **Core Commands**: 4 (foundation infrastructure)

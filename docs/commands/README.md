@@ -55,9 +55,9 @@ To find implementation details for any command:
 3. **Look for files** ending with `-implementation.md`
 
 For example:
-- `/start` command details → `/commands/01-discovery/start-implementation.md`
-- `/capture-learnings` details → `/commands/08-learning/capture-learnings-implementation.md`
-- TodoWrite patterns → `/commands/00-core/todowrite-system.md`
+- `/start` command details → `start-implementation.md`
+- `/capture-learnings` details → `capture-learnings-implementation.md`
+- TodoWrite patterns → `todowrite-system.md`
 
 ## System Integration
 

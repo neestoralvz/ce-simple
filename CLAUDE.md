@@ -12,6 +12,20 @@
 
 **Complete Vision**: See [docs/vision/overview.md](docs/vision/overview.md) for full system philosophy and evolution roadmap.
 
+## Vision-Driven Development
+
+**Absolute Authority**: The `docs/vision/` directory contains the **single source of truth** for all system direction, user intent, and project evolution. Every component of ce-simple exists to serve and implement the user's vision as captured in these documents.
+
+**Authority Hierarchy**: 
+1. **`docs/vision/`** - User intent and system direction (absolute authority)
+2. **`docs/core/`** - Technical implementation of vision principles  
+3. **`commands/`** - Executable manifestation of vision workflows
+4. **`CLAUDE.md`** - System documentation reflecting current vision state
+
+**Vision-First Principle**: All system changes, updates, and evolution must originate from and align with `docs/vision/`. No component may contradict or override user vision as captured in these foundational documents.
+
+**Feedback Integration**: Use `/feedback-vision` to capture user feedback through dynamic interviews and automatically update vision documents. Use `/vision-propagate` to ensure all system components reflect the latest vision state.
+
 ## Core Architecture
 
 **Foundation Documentation**: [docs/core/README.md](docs/core/README.md) - Complete architectural overview with reading path.
@@ -30,13 +44,13 @@
 **Integration**: Foundation commands integrate with all workflow phases and provide essential infrastructure for system operation.
 
 ### Reading Order
-1. **[Principles](docs/core/principles.md)** - System foundation and architectural principles
-2. **[Orchestration](docs/core/orchestration.md)** - Task coordination patterns and strategies  
-3. **[Context System](docs/core/context-system.md)** - Distributed memory architecture
+1. **[System Principles](docs/core/system-principles.md)** - System foundation and architectural principles
+2. **[Task Orchestration](docs/core/task-orchestration.md)** - Task coordination patterns and strategies  
+3. **[Context Architecture](docs/core/context-architecture.md)** - Distributed memory architecture
 4. **[Performance](docs/frameworks/performance-framework.md)** - Performance monitoring and optimization
 5. **[Patterns](docs/frameworks/execution-patterns.md)** - Comprehensive execution pattern library
 6. **[Validation](docs/frameworks/validation-framework.md)** - Quality assurance and validation framework
-7. **[Evolution](docs/core/evolution.md)** - Learning and adaptation protocols
+7. **[Evolution and Learning](docs/core/evolution-learning.md)** - Comprehensive learning and adaptation protocols
 
 Each core document includes references to detailed implementations.
 
@@ -44,7 +58,7 @@ Each core document includes references to detailed implementations.
 
 ```
 ce-simple/
-├── commands/                 # Executable slash commands (15 categories, 46 commands)
+├── commands/                 # Executable slash commands (15 categories, 54 commands)
 │   ├── 00-core/             # System foundation layer (6 commands)
 │   │   ├── context-engine.md    # Distributed memory management
 │   │   ├── enhanced-start.md     # Advanced discovery with Phase 0 assessment
@@ -56,7 +70,9 @@ ce-simple/
 │   │   ├── explore-codebase.md   # Internal project analysis
 │   │   ├── explore-web.md        # External research
 │   │   └── think-layers.md       # Progressive analysis
-│   ├── 02-planning/         # Strategic planning (0 commands)
+│   ├── 02-planning/         # Strategic planning (2 commands)
+│   │   ├── feedback-vision.md    # User feedback collection and vision update
+│   │   └── vision-propagate.md   # Vision-driven system propagation
 │   ├── 03-analysis/         # Analysis and assessment (5 commands)
 │   │   ├── analyze-parallel.md   # Parallel processing analysis
 │   │   ├── analyze-parallel-implementation.md # Implementation details
@@ -99,8 +115,15 @@ ce-simple/
 │   │   ├── command-maintain.md   # Command maintenance
 │   │   └── matrix-maintenance.md # Cross-reference validation
 │   ├── 12-math/             # Mathematical operations (0 commands)
-│   ├── 13-search/           # Search and discovery (0 commands)
-│   └── 14-utils/            # Utility engines (5 commands)
+│   ├── 13-search/           # Information discovery & retrieval (4 commands)
+│   │   ├── search-advanced.md   # Complex search operations
+│   │   ├── index-content.md     # Content indexing with metadata
+│   │   ├── discover-information.md # Intelligent information retrieval
+│   │   └── filter-results.md    # Result filtering and refinement
+│   └── 14-utils/            # Utility engines (8 commands)
+│       ├── phase-manager.md      # Universal TodoWrite orchestration
+│       ├── validation-engine.md  # Multi-domain validation coordination
+│       ├── agent-lifecycle.md    # Agent deployment and management
 │       ├── calc-engine.md        # Calculation engine
 │       ├── deploy-core.md        # Deployment engine
 │       ├── monitor-core.md       # Monitoring infrastructure
@@ -110,10 +133,11 @@ ce-simple/
 │   ├── commands/            # Command implementation documentation
 │   ├── context/             # Context system documentation
 │   ├── core/                # Core architecture documentation
-│   │   ├── README.md        # Complete architectural overview
-│   │   ├── orchestration.md # Task orchestration patterns
-│   │   ├── principles.md    # System foundation and principles
-│   │   └── context-system.md # Distributed memory architecture
+│   │   ├── README.md           # Complete architectural overview
+│   │   ├── system-principles.md # System foundation and principles
+│   │   ├── task-orchestration.md # Task orchestration patterns
+│   │   ├── context-architecture.md # Distributed memory architecture
+│   │   └── evolution-learning.md # Learning and adaptation protocols
 │   ├── frameworks/          # System frameworks
 │   │   ├── execution-patterns.md     # Execution pattern library
 │   │   ├── performance-framework.md  # Performance monitoring
@@ -134,6 +158,14 @@ ce-simple/
 **Executable Commands**: `commands/` - Self-contained slash commands organized in 15 functional categories  
 **Implementation Docs**: `docs/commands/` - Detailed implementation guides and system documentation
 
+### Information Discovery & Retrieval (13-search) - 4 Commands
+Advanced search capabilities with intelligent filtering, content indexing, and context-aware information discovery.
+
+- **`/search-advanced`** - Complex search operations with multi-criteria filtering and boolean logic
+- **`/index-content`** - Content indexing and organization with metadata management and relationship mapping
+- **`/discover-information`** - Intelligent information retrieval with context awareness and gap detection
+- **`/filter-results`** - Result filtering and refinement with relevance scoring and ranking algorithms
+
 ### System Foundation (00-core) - 6 Commands
 Essential infrastructure commands providing core functionality for all operations.
 
@@ -144,7 +176,7 @@ Essential infrastructure commands providing core functionality for all operation
 - **`/start`** - Primary entry point with dynamic questioning and mathematical assessment
 - **`/enhanced-start`** - Advanced discovery with Phase 0 assessment and autotrigger execution
 
-### Discovery & Analysis (01-discovery, 03-analysis) - 8 Commands
+### Discovery & Analysis (01-discovery, 03-analysis) - 7 Commands
 Commands for understanding requirements, context, and technical analysis.
 
 - **`/explore-codebase`** - Internal project analysis and code understanding
@@ -153,16 +185,15 @@ Commands for understanding requirements, context, and technical analysis.
 - **`/analyze-parallel`** - Parallel processing analysis and optimization strategies
 - **`/analyze-parallel-implementation`** - Implementation details for parallel analysis
 - **`/complexity-assess`** - Technical complexity evaluation and assessment methodology
-- **`/load-balance`** - Load balancing strategies for distributed workloads
+- **`/load-balance`** - Load balancing strategies for distributed workloads (consolidated from execution)
 - **`/problem-solving`** - Systematic problem decomposition and solution frameworks
 
-### Execution & Orchestration (04-execution) - 5 Commands
+### Execution & Orchestration (04-execution) - 4 Commands
 Commands for active development, implementation, and parallel coordination.
 
 - **`/agent-coordinate`** - Agent coordination and task distribution
 - **`/agent-deploy`** - Agent deployment and orchestration setup
 - **`/agent-orchestration`** - Advanced parallel task coordination and management
-- **`/load-balance`** - Distributed workload management and optimization
 - **`/result-consolidate`** - Result aggregation and synthesis from parallel operations
 
 ### Quality Assurance (05-validation) - 4 Commands
@@ -203,16 +234,25 @@ Standards, templates, and development guidelines.
 - **`/template-command`** - Command development templates and structures
 - **`/template-docs`** - Documentation templates and formatting standards
 
-### Utility Engines (14-utils) - 5 Commands
-Core utility engines providing specialized functionality.
+### Utility Engines (14-utils) - 8 Commands
+Core utility engines providing specialized functionality and eliminating duplicate logic across commands.
 
+- **`/phase-manager`** - Universal TodoWrite orchestration eliminating 91% command duplication
+- **`/validation-engine`** - Multi-domain validation orchestration with parallel execution
+- **`/agent-lifecycle`** - Comprehensive agent deployment, monitoring, and recovery management
 - **`/calc-engine`** - Mathematical calculation and computation engine
 - **`/deploy-core`** - Universal deployment engine for system components
 - **`/monitor-core`** - Core monitoring infrastructure and metrics collection
 - **`/todo-manager`** - Advanced task management and tracking system
 - **`/validator-core`** - Core validation framework and quality assurance
 
-### Expansion Categories (02-planning, 12-math, 13-search) - 0 Commands
+### Strategic Planning (02-planning) - 2 Commands
+Vision-driven development commands ensuring user intent drives all system evolution.
+
+- **`/feedback-vision`** - User feedback collection through dynamic interviews with integrated research
+- **`/vision-propagate`** - Vision-driven system propagation maintaining docs/vision/ as absolute authority
+
+### Expansion Categories (12-math) - 0 Commands
 Reserved categories for future system expansion and specialized functionality.
 
 ## Development Standards
@@ -234,7 +274,7 @@ Reserved categories for future system expansion and specialized functionality.
 ### Command Organization
 - **00-core**: Foundation infrastructure (6 commands)
 - **01-14**: Specialized categories with focused functionality
-- **Empty categories** (02-planning, 12-math, 13-search) reserved for future expansion
+- **Empty categories** (12-math) reserved for future expansion
 
 ## Quick Start
 
@@ -244,12 +284,16 @@ Reserved categories for future system expansion and specialized functionality.
 - **Advanced Discovery**: Use `/enhanced-start` (00-core) for Phase 0 assessment and autotrigger execution
 - **Complex Problems**: Deploy `/think-layers` (01-discovery) for progressive analysis and deep thinking
 - **Research Tasks**: Combine `/explore-codebase` (01-discovery) with `/explore-web` (01-discovery)
+- **User Feedback**: Use `/feedback-vision` (02-planning) to capture feedback and update vision documents
+- **System Updates**: Execute `/vision-propagate` (02-planning) to align entire system with current vision
 
 ### Workflow Integration
+- **Vision Authority**: All workflows respect docs/vision/ as absolute source of truth
 - **Foundation Layer**: All commands use 00-core infrastructure (context-engine, notify-manager, handoff-manager)
 - **Parallel Execution**: Commands designed for parallel execution through Task Tool orchestration
 - **Quality Assurance**: 05-validation commands ensure quality throughout all phases
 - **Learning Loop**: 08-learning commands capture patterns for continuous improvement
+- **Feedback Integration**: System continuously aligns with user vision through feedback-vision and vision-propagate
 
 ### Command Path Examples
 ```bash
@@ -260,13 +304,15 @@ Reserved categories for future system expansion and specialized functionality.
 
 # Specialized workflow commands
 /explore-codebase      # commands/01-discovery/explore-codebase.md
+/feedback-vision       # commands/02-planning/feedback-vision.md
+/vision-propagate      # commands/02-planning/vision-propagate.md
 /agent-orchestration   # commands/04-execution/agent-orchestration.md
 /validate-complete     # commands/05-validation/validate-complete.md
 /worktree-start        # commands/09-git/worktree-start.md
 ```
 
 ### Learning Path  
-Begin with [docs/core/principles.md](docs/core/principles.md) to understand system foundation, then see [docs/core/README.md](docs/core/README.md) for complete navigation guide.
+Begin with [docs/core/system-principles.md](docs/core/system-principles.md) to understand system foundation, then see [docs/core/README.md](docs/core/README.md) for complete navigation guide.
 
 ---
 
