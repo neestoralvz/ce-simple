@@ -34,6 +34,7 @@ Use fewer words for better results:
 - Patterns: ≤100 lines
 
 ## Progressive Disclosure
+
 Extract to separate files when content is:
 - Rarely needed during daily execution
 - Complex details requiring deep study
@@ -43,7 +44,23 @@ Keep in main file when content is:
 - Used frequently (daily/weekly)
 - Essential for basic understanding
 
-Reference format: "See [filename].md for [specific details]"
+### Import Strategies (CLAUDE.md)
+
+**@ Import Syntax** (Preferred for Claude Code CLI):
+```markdown
+@docs/core/project-structure.md
+@docs/commands/command-index.md
+```
+- Automatically includes complete file contents
+- Eliminates duplication
+- Dynamic updates when imported files change
+
+**Reference Format** (Alternative):
+```markdown
+[See filename](filename.md) for [specific details]
+```
+- Use when @ imports not available
+- Better for interactive navigation
 
 ## Natural Language Instructions
 
@@ -68,7 +85,7 @@ Use lowercase, hyphens for spaces, descriptive but concise names.
 
 ## Document Structure
 
-Use the standard template. See document-template.md for complete structure and variations.
+Use the standard template. See ../templates/documentation-template.md for complete structure and variations.
 
 ## Anti-Patterns
 

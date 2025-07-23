@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-07-23T06:20:13-06:00",
+  "reference_snapshot": "",
+  "total_errors": 1,
+  "total_warnings": 0,
+  "status": "FAIL",
+  "results": [
+    "OK: Critical file exists: CLAUDE.md""CRITICAL: Missing critical file: README.md""OK: Critical file exists: commands""OK: Critical file exists: docs/core""OK: Critical file exists: docs/standards""OK: Git repository is functional""OK: Command system has       67 commands"
+  ]
+}

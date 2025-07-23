@@ -1,0 +1,150 @@
+=== Documentation Analysis ===
+Total docs:       67
+
+=== Documentation Structure ===
+docs
+├── category-taxonomy.md
+├── commands
+│   ├── capture-learnings-details.md
+│   ├── command-creation-details.md
+│   ├── command-creation-patterns.md
+│   ├── command-creation.md
+│   ├── command-maintain-details.md
+│   ├── enhanced-start-details.md
+│   ├── explore-codebase-details.md
+│   ├── explore-web-details.md
+│   ├── matrix-maintenance-details.md
+│   ├── modularization.md
+│   ├── start-details.md
+│   ├── think-layers-details.md
+│   └── todowrite.md
+├── context
+│   ├── dev
+│   │   ├── categorization.md
+│   │   ├── claude-standards.md
+│   │   ├── complexity-analysis.md
+│   │   ├── complexity-matrix.md
+│   │   └── git-worktrees.md
+│   ├── discoveries
+│   │   └── automation-gaps.md
+│   ├── learn
+│   │   ├── git-optimization.md
+│   │   └── integrity-insights.md
+│   ├── ops
+│   │   ├── cleanup-metrics.md
+│   │   ├── monitoring.md
+│   │   ├── risk-assessment.md
+│   │   └── validation-schedule.md
+│   ├── patterns
+│   │   ├── attribution-cleanup.md
+│   │   ├── dependency-validation.md
+│   │   ├── error-evolution.md
+│   │   └── git-formatting.md
+│   └── sys
+│       ├── architecture.md
+│       └── health.md
+├── core
+│   ├── architecture-v2-overview.md
+│   ├── context-system-details.md
+│   ├── context-system.md
+│   ├── evolution-details.md
+│   ├── evolution.md
+│   ├── orchestration-details.md
+│   ├── orchestration.md
+│   ├── principles-details.md
+│   ├── principles.md
+│   └── README.md
+├── frameworks
+│   ├── execution-patterns.md
+│   ├── performance-framework.md
+│   ├── task-orchestration-framework.md
+│   └── validation-framework.md
+├── migration
+│   ├── migration-baseline-metrics.md
+│   └── migration-metrics-framework.md
+├── migration-guide.md
+├── standards
+│   ├── command-standards.md
+│   ├── command-structure-standard.md
+│   └── documentation-standards.md
+├── templates
+│   ├── command-template.md
+│   └── documentation-template.md
+└── vision
+    ├── command-philosophy-details.md
+    ├── command-philosophy.md
+    ├── overview.md
+    ├── parallelization-strategy-details.md
+    ├── parallelization-strategy.md
+    └── task-orchestration-details.md
+
+15 directories, 60 files
+
+=== Documentation Files ===
+docs/category-taxonomy.md
+docs/commands/capture-learnings-details.md
+docs/commands/command-creation-details.md
+docs/commands/command-creation-patterns.md
+docs/commands/command-creation.md
+docs/commands/command-maintain-details.md
+docs/commands/enhanced-start-details.md
+docs/commands/explore-codebase-details.md
+docs/commands/explore-web-details.md
+docs/commands/matrix-maintenance-details.md
+docs/commands/modularization.md
+docs/commands/start-details.md
+docs/commands/think-layers-details.md
+docs/commands/todowrite.md
+docs/context/dev/categorization.md
+docs/context/dev/claude-standards.md
+docs/context/dev/complexity-analysis.md
+docs/context/dev/complexity-matrix.md
+docs/context/dev/git-worktrees.md
+docs/context/discoveries/automation-gaps.md
+docs/context/learn/git-optimization.md
+docs/context/learn/integrity-insights.md
+docs/context/ops/cleanup-metrics.md
+docs/context/ops/monitoring.md
+docs/context/ops/risk-assessment.md
+docs/context/ops/validation-schedule.md
+docs/context/patterns/attribution-cleanup.md
+docs/context/patterns/dependency-validation.md
+docs/context/patterns/error-evolution.md
+docs/context/patterns/git-formatting.md
+docs/context/sys/architecture.md
+docs/context/sys/health.md
+docs/core/.archived/02-writing-standards.md
+docs/core/.archived/03-anti-bias-enforcement.md
+docs/core/.archived/04-parallelization-system.md
+docs/core/.archived/05-performance-system.md
+docs/core/.archived/06-user-customization.md
+docs/core/.archived/07-usage-instructions.md
+docs/core/.archived/README.old.md
+docs/core/architecture-v2-overview.md
+docs/core/context-system-details.md
+docs/core/context-system.md
+docs/core/evolution-details.md
+docs/core/evolution.md
+docs/core/orchestration-details.md
+docs/core/orchestration.md
+docs/core/principles-details.md
+docs/core/principles.md
+docs/core/README.md
+docs/frameworks/execution-patterns.md
+docs/frameworks/performance-framework.md
+docs/frameworks/task-orchestration-framework.md
+docs/frameworks/validation-framework.md
+docs/migration-guide.md
+docs/migration/migration-baseline-metrics.md
+docs/migration/migration-metrics-framework.md
+docs/standards/command-standards.md
+docs/standards/command-structure-standard.md
+docs/standards/documentation-standards.md
+docs/templates/command-template.md
+docs/templates/documentation-template.md
+docs/vision/command-philosophy-details.md
+docs/vision/command-philosophy.md
+docs/vision/overview.md
+docs/vision/parallelization-strategy-details.md
+docs/vision/parallelization-strategy.md
+docs/vision/task-orchestration-details.md

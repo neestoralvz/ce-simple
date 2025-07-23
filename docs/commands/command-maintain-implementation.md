@@ -1,241 +1,86 @@
 # Command-Maintain Implementation Details
 
-## 🎯 Purpose
-Detailed implementation specifications for `/command-maintain` command following Progressive Disclosure principles.
+## Purpose
+Implementation specifications for `/command-maintain` command with proactive guardrails and automated repair.
 
-## 🔧 Proactive Guardrail Implementation Specifications
+## Proactive Guardrails
 
-### Real-Time Validation System
-```javascript
-const guardrails = {
-  fileSizeEnforcement: {
-    trigger: "Pre-save validation",
-    action: "Block edits exceeding 150 lines",
-    feedback: "Progressive disclosure suggestion provided",
-    implementation: "Hook into file save events"
-  },
-  
-  complexityLimiter: {
-    trigger: "Real-time scoring during editing",
-    threshold: "7.0 complexity score",
-    action: "Warning notification with optimization suggestions",
-    implementation: "Calculate complexity on content changes"
-  },
-  
-  executionRequirement: {
-    trigger: "Command editing or creation",
-    ratio: "3:1 tool calls to documentation lines minimum",
-    action: "Enforce ratio during validation",
-    implementation: "Parse and count tool call patterns"
-  },
-  
-  templateCompliance: {
-    trigger: "Command structure validation",
-    requirements: "🎯 Purpose, 🚀 Usage, 🔧 Implementation, ⚡ Triggers sections",
-    action: "Template structure validation and completion prompts",
-    implementation: "Section presence and format checking"
-  },
-  
-  antiBiasProtection: {
-    trigger: "Content analysis during editing",
-    patterns: "Predetermined categories, assumptions, bias language",
-    action: "Real-time detection and neutralization suggestions",
-    implementation: "Pattern matching and language analysis"
-  }
-};
-```
+### Validation System
+- **File Size**: Block edits >150 lines, suggest progressive disclosure
+- **Complexity**: Real-time scoring, warn at 7.0 threshold
+- **Execution Ratio**: Enforce 3:1 tool calls to documentation minimum
+- **Template**: Validate Purpose, Usage, Implementation, Triggers sections
+- **Anti-Bias**: Detect assumptions, provide neutralization suggestions
 
-## 📊 Comprehensive Audit Framework
+**Guardrail Specifications**:
+- **Size Guard**: Reject edits >150 lines, suggest progressive disclosure extraction
+- **Complexity Guard**: Real-time scoring with 7.0 threshold warnings
+- **Execution Guard**: Enforce minimum 3:1 tool calls to documentation ratio
+- **Template Guard**: Validate required sections (Purpose, Usage, Implementation, Triggers)
+- **Anti-Bias Guard**: Detect assumptions, provide neutralization recommendations
+
+## Audit Framework
 
 ### File Size Analysis
-```bash
-# Detailed size violation detection
-find .claude/commands -name '*.md' -exec wc -l {} + | sort -nr | while read lines file; do
-  if [ $lines -gt 150 ]; then
-    echo "VIOLATION: $file ($lines lines) - Progressive disclosure required"
-    # Calculate content that should be extracted
-    excess=$((lines - 150))
-    echo "  EXTRACT: ~$excess lines to implementation file"
-  fi
-done
-```
+Detect violations >150 lines, calculate excess content for extraction.
 
 ### Documentation Theater Detection
-```bash
-# Advanced execution layer analysis
-grep -c "LS\|Bash\|Edit\|Read\|Glob\|Grep\|Task\|Write" .claude/commands/*.md | while IFS=: read file count; do
-  lines=$(wc -l < "$file")
-  ratio=$(echo "scale=2; $count / $lines" | bc)
-  if (( $(echo "$ratio < 0.03" | bc -l) )); then
-    echo "THEATER: $file - Ratio: $ratio (Required: >0.03)"
-  fi
-done
-```
+Analyze tool call ratio, require >0.03 tool calls per line.
 
-### Template Compliance Validation
-```bash
-# Comprehensive template structure verification
-for file in .claude/commands/*.md; do
-  purpose=$(grep -c "## 🎯 Purpose" "$file")
-  usage=$(grep -c "## 🚀 Usage" "$file") 
-  implementation=$(grep -c "## 🔧 Implementation" "$file")
-  triggers=$(grep -c "## ⚡ Triggers" "$file")
-  
-  missing=()
-  [ $purpose -eq 0 ] && missing+=("Purpose")
-  [ $usage -eq 0 ] && missing+=("Usage") 
-  [ $implementation -eq 0 ] && missing+=("Implementation")
-  [ $triggers -eq 0 ] && missing+=("Triggers")
-  
-  if [ ${#missing[@]} -gt 0 ]; then
-    echo "TEMPLATE VIOLATION: $file - Missing: ${missing[*]}"
-  fi
-done
-```
+### Template Compliance
+Verify Purpose, Usage, Implementation, Triggers sections presence.
 
-## 🔧 Automated Repair Operations
+**Audit Framework**:
+- **Size Analysis**: Detect files >150 lines, calculate excess for extraction
+- **Theater Detection**: Analyze tool call ratio, flag <0.03 calls per line
+- **Template Compliance**: Verify all required sections present and complete
+- **Reference Integrity**: Validate cross-references and link accessibility
+- **Standards Compliance**: Check against documentation and command standards
 
-### Progressive Disclosure Implementation
-```bash
-# Extract oversized content to implementation files
-extract_to_implementation() {
-  local command_file="$1"
-  local base_name=$(basename "$command_file" .md)
-  local impl_file="docs/commands/${base_name}-implementation.md"
-  
-  # Identify extractable sections (detailed implementations, examples, specs)
-  # Create implementation file with extracted content
-  # Update original command with reference links
-  
-  echo "# ${base_name^} Implementation Details" > "$impl_file"
-  echo "" >> "$impl_file"
-  echo "## 🎯 Purpose" >> "$impl_file"
-  echo "Detailed implementation specifications for \`/$base_name\` command following Progressive Disclosure principles." >> "$impl_file"
-  
-  # Replace detailed sections in original with references
-  sed -i 's/### Detailed Implementation/### Implementation\n**REFERENCE**: `docs\/commands\/'$base_name'-implementation.md` for detailed specifications/' "$command_file"
-}
-```
+## Automated Repair
+
+### Progressive Disclosure
+Extract oversized content to implementation files, update with references.
 
 ### Execution Layer Addition
-```bash
-# Add missing tool calls to commands with documentation theater
-add_execution_layer() {
-  local command_file="$1"
-  
-  # Check if EXECUTION LAYER section exists
-  if ! grep -q "## ⚡ EXECUTION LAYER" "$command_file"; then
-    cat >> "$command_file" << 'EOF'
+Add missing tool calls to commands with documentation theater.
 
-## ⚡ EXECUTION LAYER
+**Repair Operations**:
+- **Progressive Disclosure**: Extract oversized content to *-details.md files with references
+- **Execution Addition**: Add missing tool calls to eliminate documentation theater
+- **Template Repair**: Insert missing sections with standard templates
+- **Reference Repair**: Fix broken links, update paths, consolidate duplicate content
+- **Standards Alignment**: Apply current documentation and command standards
 
-### Mandatory Tool Executions
-**CRITICAL**: Actual implementation with real tool calls
+## Workflow Efficiency
 
-```javascript
-// TODO: Add specific tool implementations
-LS("target-directory") // Verify directory structure
-Bash("command-implementation") // Execute core functionality  
-Task("Integration", "Execute related command for workflow completion")
-```
-EOF
-  fi
-}
-```
+### Batch Operations
+1. **Audit Phase**: LS, Bash, Grep operations for analysis
+2. **Repair Phase**: Size violations, theater detection, template compliance
+3. **Reporting**: Compliance metrics, violation summary, health score
 
-## 📈 Workflow Efficiency Features
+### Parallel Execution
+Concurrent analysis with batch processing for performance optimization.
 
-### Batch Operations Framework
-```javascript
-const batchOperations = {
-  auditPhase: [
-    "LS('.claude/commands')",
-    "Bash('find .claude/commands -name \"*.md\" -exec wc -l {} + | sort -nr')",
-    "Grep('EXECUTION LAYER', {glob: '.claude/commands/*.md', output_mode: 'count'})",
-    "Bash('wc -l .claude/commands/*.md | awk \"{if($1>150) print $2, $1}\"')"
-  ],
-  
-  repairPhase: {
-    sizeViolations: "extract_to_implementation()",
-    theaterDetection: "add_execution_layer()",
-    templateCompliance: "add_missing_sections()",
-    referenceRepair: "validate_and_fix_links()"
-  },
-  
-  reportingPhase: [
-    "generate_compliance_metrics()",
-    "create_violation_summary()",
-    "update_system_health_score()"
-  ]
-};
-```
+**Workflow Efficiency**:
+- **Batch Phase**: Parallel LS/Bash/Grep operations for comprehensive analysis
+- **Repair Phase**: Sequential size violations, theater detection, template compliance
+- **Report Phase**: Generate compliance metrics, violation summary, health scores
+- **Optimization**: Concurrent analysis with resource pooling for performance
 
-### Parallel Execution Strategy
-```bash
-# Concurrent analysis for performance optimization
-analyze_commands_parallel() {
-  # Split command files into batches for parallel processing
-  find .claude/commands -name '*.md' | xargs -n 5 -P 4 analyze_batch
-}
+## Smart Defaults
 
-analyze_batch() {
-  for file in "$@"; do
-    {
-      analyze_size "$file"
-      analyze_theater "$file"  
-      analyze_template "$file"
-    } &
-  done
-  wait
-}
-```
+### Decision Matrix
+- **Size Violations**: Auto-extract at 150 lines (no confirmation)
+- **Documentation Theater**: Add execution layer at <0.03 ratio (confirm)
+- **Template Violations**: Auto-add missing sections (no confirmation)
+- **Broken References**: Auto-repair with manual fallback
 
-## 🎯 Smart Defaults Configuration
+## Progress Tracking
 
-### Automated Decision Matrix
-```yaml
-AutomaticRepairs:
-  SizeViolations:
-    threshold: 150
-    action: progressive_disclosure_extraction
-    confirmation: false
-    
-  DocumentationTheater:
-    ratio_threshold: 0.03
-    action: add_execution_layer
-    confirmation: true
-    
-  TemplateViolations:
-    missing_sections: auto_add
-    confirmation: false
-    
-  BrokenReferences:
-    action: auto_repair
-    fallback: report_manual_fix_needed
-```
-
-## 📊 Progress Tracking & Notifications
-
-### Real-Time Status Updates
-```bash
-# Enhanced progress tracking with TodoWrite integration
-track_maintenance_progress() {
-  local phase="$1"
-  local current="$2" 
-  local total="$3"
-  local percentage=$((current * 100 / total))
-  
-  echo "⚡ PROGRESS: /command-maintain → $phase [$percentage% complete]"
-  
-  # Update TodoWrite status
-  case "$phase" in
-    "audit") update_todo "maintain-audit-1" "in_progress" ;;
-    "repair") update_todo "maintain-repair-1" "in_progress" ;;
-    "optimize") update_todo "maintain-optimize-1" "in_progress" ;;
-  esac
-}
-```
+### Real-Time Updates
+Progress tracking with TodoWrite integration for audit, repair, and optimize phases.
 
 ---
 
-**CRITICAL**: This implementation file provides the detailed specifications extracted from the main command following Progressive Disclosure principles. All automated maintenance operations are implemented with actual tool executions and comprehensive verification protocols.
+**Detailed specifications for command-maintain with automated operations and verification protocols.**

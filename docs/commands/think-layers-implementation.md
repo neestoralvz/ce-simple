@@ -90,10 +90,12 @@ Define progressive thinking methodology with escalating cognitive depth and auto
 
 ## 🔗 Implementation Examples
 
-### Detailed Examples and Schemas
-- **Location**: `../../context/think-layers-detailed-examples.md`
-- **Contains**: JSON schemas, workflow patterns, integration examples
-- **Usage**: Implementation reference for complex analysis scenarios
+### Implementation Examples
+**Layer Progression Example**:
+- **Layer-1**: "Implement user authentication" → Basic analysis: requirements, approach
+- **Layer-2**: Pattern analysis → OAuth vs JWT, security considerations, database requirements
+- **Layer-3**: System integration → API design, session management, security architecture
+- **Layer-4**: Complete roadmap → Implementation phases, testing strategy, deployment plan
 
 ---
 

@@ -1,0 +1,42 @@
+[0;36m[SECTION][0m Starting Comprehensive System Validation
+==================================================
+[0;36m[SECTION][0m Core System Validation
+==================================================
+[0;32m[PASS][0m 06:13:40 - Critical file exists: CLAUDE.md
+[0;31m[FAIL][0m 06:13:40 - Critical file missing: README.md
+[0;32m[PASS][0m 06:13:40 - Commands directory has       55 commands
+[0;32m[PASS][0m 06:13:40 - Documentation has       67 files
+[0;32m[PASS][0m 06:13:40 - Essential command found: start.md
+[0;32m[PASS][0m 06:13:40 - Essential command found: explore-codebase.md
+[0;32m[PASS][0m 06:13:40 - Essential command found: capture-learnings.md
+[0;36m[SECTION][0m Git Repository Validation
+==================================================
+[0;32m[PASS][0m 06:13:40 - Git repository is functional
+[0;32m[PASS][0m 06:13:40 - Git user configuration present
+[0;31m[FAIL][0m 06:13:41 - Excessive deleted files detected: 1465 (possible migration issue)
+[0;32m[PASS][0m 06:13:41 - Git history accessible (       5 recent commits)
+[0;32m[PASS][0m 06:13:41 - Currently on branch: master
+[0;36m[SECTION][0m File Integrity Validation
+==================================================
+[0;32m[PASS][0m 06:13:41 - All files have correct permissions
+[0;32m[PASS][0m 06:13:41 - File encoding validation passed
+[1;33m[WARN][0m 06:13:41 - Large file detected: ./.archive/knowledge-management/principles/operational-excellence.md (112KB)
+[1;33m[WARN][0m 06:13:41 - Large file detected: ./.archive/recovery-systems/principles/systems/operational-excellence.md (112KB)
+[1;33m[WARN][0m 06:13:43 - 2 large files detected
+[0;36m[SECTION][0m Command System Validation
+==================================================
+[1;33m[WARN][0m 06:13:43 - Command file very large: commands/14-utils/deploy-core.md (     211 lines)
+[1;33m[WARN][0m 06:13:43 - 1 command files have issues
+[0;32m[PASS][0m 06:13:43 - Core command exists: init-project.md
+[0;32m[PASS][0m 06:13:43 - Core command exists: context-engine.md
+[0;32m[PASS][0m 06:13:43 - Core command exists: notify-manager.md
+[0;32m[PASS][0m 06:13:43 - Core command exists: handoff-manager.md
+[0;32m[PASS][0m 06:13:43 - All commands accessible
+[0;36m[SECTION][0m Documentation Validation
+==================================================
+[0;32m[PASS][0m 06:13:43 - Core documentation exists: docs/core/README.md
+[0;32m[PASS][0m 06:13:43 - Core documentation exists: docs/core/principles.md
+[0;32m[PASS][0m 06:13:43 - Core documentation exists: docs/standards/command-standards.md
+[0;32m[PASS][0m 06:13:43 - Documentation directory exists: docs/core
+[0;32m[PASS][0m 06:13:43 - Documentation directory exists: docs/standards
+[0;32m[PASS][0m 06:13:43 - Documentation directory exists: docs/templates

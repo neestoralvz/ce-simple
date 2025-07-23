@@ -1,0 +1,76 @@
+=== Command System Analysis ===
+Total commands:       55
+
+=== Commands by Directory ===
+commands:       27 commands
+commands/04-execution:        1 commands
+commands/01-discovery:        1 commands
+commands/07-maintenance:        1 commands
+commands/10-standards:        1 commands
+commands/06-documentation:        1 commands
+commands/12-math:        1 commands
+commands/02-planning:        1 commands
+commands/11-meta:        2 commands
+commands/08-learning:        1 commands
+commands/05-validation:        5 commands
+commands/00-core:        6 commands
+commands/14-utils:        5 commands
+commands/03-analysis:        1 commands
+commands/09-git:        1 commands
+
+=== All Commands ===
+commands/00-core/context-engine.md
+commands/00-core/handoff-manager.md
+commands/00-core/init-project.md
+commands/00-core/notify-manager.md
+commands/00-core/README.md
+commands/00-core/todowrite-system.md
+commands/01-discovery/README.md
+commands/02-planning/README.md
+commands/03-analysis/README.md
+commands/04-execution/README.md
+commands/05-validation/README.md
+commands/05-validation/validate-code.md
+commands/05-validation/validate-complete.md
+commands/05-validation/validate-creative.md
+commands/05-validation/validate-visual.md
+commands/06-documentation/README.md
+commands/07-maintenance/README.md
+commands/08-learning/README.md
+commands/09-git/README.md
+commands/10-standards/README.md
+commands/11-meta/command-creation.md
+commands/11-meta/README.md
+commands/12-math/README.md
+commands/14-utils/calc-engine.md
+commands/14-utils/deploy-core.md
+commands/14-utils/monitor-core.md
+commands/14-utils/todo-manager.md
+commands/14-utils/validator-core.md
+commands/agent-coordinate.md
+commands/agent-deploy.md
+commands/agent-orchestration.md
+commands/analyze-parallel-implementation.md
+commands/analyze-parallel.md
+commands/capture-learnings.md
+commands/command-create.md
+commands/command-maintain.md
+commands/complexity-assess.md
+commands/context-optimize.md
+commands/docs-maintain.md
+commands/enhanced-start.md
+commands/explore-codebase.md
+commands/explore-web.md
+commands/git-worktree.md
+commands/load-balance.md
+commands/matrix-maintenance.md
+commands/performance-track.md
+commands/problem-solving.md
+commands/result-consolidate.md
+commands/start.md
+commands/system-monitor-agents.md
+commands/system-monitor.md
+commands/think-layers.md
+commands/worktree-cleanup.md
+commands/worktree-close.md
+commands/worktree-start.md

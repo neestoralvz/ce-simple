@@ -1,0 +1,6 @@
+[0;36m[SECTION][0m Quick Validation Check
+==================================================
+[0;31m[FAIL][0m 06:12:55 - Critical file missing: CLAUDE.md
+[0;31m[FAIL][0m 06:12:55 - Critical file missing: commands
+[0;31m[FAIL][0m 06:12:55 - No commands found
+[0;31m[FAIL][0m 06:12:55 - Quick validation failed (3 issues)
