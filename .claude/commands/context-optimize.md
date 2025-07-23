@@ -86,7 +86,7 @@ TodoWrite([
 **Triggers**: Periodic maintenance (weekly) or major system changes
 **Actions**: Execute all optimization phases in sequence with validation
 
-#### **Docs-Consolidate Mode** (`/context-optimize docs-consolidate`)
+#### **Docs-Consolidate Mode** (`/context-optimize docs-consolidate`) *[deprecated: use `/docs-maintain consolidate`]*
 **Focus**: Merge redundant documentation and eliminate docs/ fragmentation
 **Triggers**: After command creation or major documentation updates
 **Actions**: 
@@ -255,7 +255,7 @@ Edit("context/patterns/essential-patterns.md", `# Essential Problem-Solving Patt
 Bash("find context/ -name '*.md' -path '*/wrong-dir/*' -exec mv {} context/correct-dir/ \\;") // Move misplaced files
 Bash("find context/ -name '*-20[0-9][0-9]-*' -exec rm {} \\;") // Remove timestamp violations
 
-// 8. DOCS MAINTENANCE (when docs-consolidate or full-system mode)
+// 8. DOCS MAINTENANCE (when docs-consolidate legacy mode or full-system mode)
 Bash("find docs/ -name '*.md' | wc -l") // Docs file count
 Grep("\\[.*\\]\\(.*\\.md\\)", {glob: "docs/**/*.md", output_mode: "content"}) // Find docs cross-references
 Bash("find docs/ -name '*.md' -exec wc -l {} + | sort -nr | head -10") // Identify large docs files

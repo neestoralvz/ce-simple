@@ -60,14 +60,14 @@ Task("Development integration", "coordinate worktree management with monitoring 
 ### Output Triggers
 **When**: New feature development → Create isolated worktree
 **When**: Multiple features → Setup parallel worktrees
-**Chain**: git-worktree → monitor-dev (for tracking) → track-performance (for metrics)
+**Chain**: git-worktree → system-monitor development (for tracking) → system-monitor performance (for metrics)
 
 ## 🔗 Module Integration
 
 ### Command Dependencies
 **Development Workflow Integration**:
-- `/monitor-dev` → Real-time monitoring of worktree activities
-- `/track-performance` → Performance metrics for worktree operations
+- `/system-monitor development` → Real-time monitoring of worktree activities
+- `/system-monitor performance` → Performance metrics for worktree operations
 - `/analyze-parallel` → Optimization of parallel development workflows
 
 ### Success Indicators

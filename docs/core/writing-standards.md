@@ -20,6 +20,7 @@
 - **PRINCIPLE**: Maximum value per cognitive unit
 - **STRUCTURE**: Progressive hierarchy (Summary → Details → Comprehensive)
 - **RESPONSIBILITY**: Single responsibility principle per file
+- **SIMPLICITY**: Minimal viable complexity with direct solutions
 
 **CRITICAL**: 130-line command limit applies ONLY to .claude/commands/ files. Documentation standards (200 lines) apply to all other files.
 
@@ -58,25 +59,12 @@
 @import[FULL]     # Complete file inclusion
 ```
 
-## 📝 TEMPLATE STRUCTURE
+## 📝 TEMPLATE STANDARDS
 
-### Universal Command Format
-```markdown
-# [Name] - Command Description
-
-## 🎯 Purpose
-[Single line objective]
-
-## 🚀 Usage
-Execute: `/command-name [parameters]`
-
-## 🔧 Implementation
-[Detailed instructions]
-
-## ⚡ Triggers
-- **Input**: [Activation conditions]
-- **Output**: [Next command suggestions]
-```
+### Template Organization
+- **LOCATION**: All templates in `templates/` directory
+- **SEPARATION**: No embedded structures within documentation
+- **REFERENCE**: Use external file references only
 
 ### Symbol Standards
 - ⚡ Triggers and automation
@@ -107,7 +95,7 @@ Execute: `/command-name [parameters]`
 - **TESTING**: Immediate functional verification ≤5 minutes
 
 ### Content Standards
-- **REDUNDANCY**: Zero tolerance for duplication
+- **REDUNDANCY**: Zero tolerance for duplication (single concept per location)
 - **COHERENCE**: Logical flow with cross-references
 - **COMPLETENESS**: Self-contained with all necessary context
 

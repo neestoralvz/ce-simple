@@ -86,7 +86,7 @@ TodoWrite transforms from simple task tracking to **intelligent behavioral memor
 ]
 ```
 
-### `/docs-workflow` Behavioral Protocol
+### `/docs-maintain` Behavioral Protocol
 ```json
 [
   {"content": "🔍 HEALTH-ASSESS: Execute comprehensive system assessment", "status": "pending", "priority": "high", "id": "docs-assess"},
@@ -200,7 +200,7 @@ TodoWrite transforms from simple task tracking to **intelligent behavioral memor
 ## 🎯 EVOLUTION ROADMAP
 
 ### Immediate Implementation (Weeks 1-2)
-1. **Complete Secondary Command Integration**: docs-validate, docs-optimize, docs-consolidate, docs-generate
+1. **Complete Secondary Command Integration**: docs-maintain modes (validate, optimize, consolidate, generate)
 2. **Basic Context Analysis**: Implement core context engine for predictive todo generation
 3. **Performance Baseline**: Establish metrics for effectiveness measurement
 

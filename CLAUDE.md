@@ -2,6 +2,8 @@
 
 **Last Updated: 2025-07-22**
 
+**CRITICAL**: MANDATORY exploration of ALL `docs/core/` documentation BEFORE any content creation or system interaction.
+
 ## 🎯 SYSTEM OVERVIEW
 
 **ce-simple**: Streamlined command system for Claude Code enabling efficient context engineering through intelligent workflow orchestration and agent deployment.
@@ -112,7 +114,7 @@ Commands follow integrated standards → `docs/core/writing-standards.md`, `docs
 - ✓ **Command Structure**: Core commands implemented and cross-referenced
 - ✓ **Standards Framework**: Writing, notification, and anti-bias protocols established
 - ✓ **Workflow Integration**: Discovery-to-execution pipeline operational
-- ✓ **Context Architecture**: Organized subdirectories (discoveries/, patterns/, research/, workflows/) with intelligent file creation controls
+- ✓ **Context Architecture**: Organized subdirectories (discoveries/, patterns/, research/, workflows/) + docs/notes/ with intelligent file creation controls
 
 ### Usage Instructions
 1. **Initialize**: Execute `/start` with initial request

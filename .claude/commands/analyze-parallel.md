@@ -47,7 +47,7 @@ Task("Performance analysis", "analyze codebase for parallelization opportunities
 ### Performance Benchmarking Protocol
 **Measurement Integration**:
 ```javascript
-// Performance tracking integration with /track-performance
+// Performance tracking integration with /system-monitor performance
 Bash("if [[ -f tools/performance-tracker.json ]]; then echo 'Performance baseline available'; fi") // Check baseline
 Task("Benchmark execution", "measure current performance metrics and establish optimization targets")
 ```
@@ -60,14 +60,14 @@ Task("Benchmark execution", "measure current performance metrics and establish o
 
 ### Output Triggers
 **When**: Optimization opportunities detected → Generate implementation recommendations
-**Chain**: analyze-parallel → track-performance → monitor-dev (for validation)
+**Chain**: analyze-parallel → system-monitor performance → system-monitor development (for validation)
 
 ## 🔗 Module Integration
 
 ### Command Dependencies
 **Performance Suite**:
-- `/track-performance` → Baseline metrics and benchmarking
-- `/monitor-dev` → Real-time optimization validation
+- `/system-monitor performance` → Baseline metrics and benchmarking
+- `/system-monitor development` → Real-time optimization validation
 - `/git-worktree` → Isolated optimization testing environment
 
 ### Success Indicators

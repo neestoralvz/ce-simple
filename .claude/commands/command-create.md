@@ -22,218 +22,40 @@ TodoWrite([
 ])
 ```
 
-### Enhanced Workflow Notification System
-**REAL-TIME SLASH COMMAND TRACKING**:
-```bash
-# Enhanced notification functions with slash command awareness
-slash_command_start() {
-  local cmd_name=$1
-  local complexity=$2
-  process "🚀 EXECUTING: /$cmd_name (Complexity: $complexity/10)"
-  data "📊 WORKFLOW: Active command chain → [${ACTIVE_COMMANDS[@]}]"
-}
+### Command Development Framework
+**5-PHASE SYSTEM**:
+1. **📋 SPECIFICATION**: Integration analysis, dependency detection, trigger identification
+2. **🏗️ IMPLEMENTATION**: Complete command structure with execution layer and notifications
+3. **🔗 INTEGRATION**: Cross-command triggers, workflow chains, automated integration
+4. **📚 DOCUMENTATION**: CLAUDE.md updates, workflow documentation, cross-references
+5. **✅ VALIDATION**: Integration testing, trigger validation, error scenario testing
 
-# Cross-command trigger notifications
-trigger_notification() {
-  local source_cmd=$1
-  local target_cmd=$2
-  local trigger_type=$3
-  warn "🔗 TRIGGER: /$source_cmd → /$target_cmd ($trigger_type)"
-}
+### Integration Levels
+- **Basic**: Standalone command with minimal dependencies (CLAUDE.md + notifications)
+- **Standard**: Workflow integration (2-4 triggers, enhanced notifications, chain updates)
+- **Comprehensive**: Core system command (5+ triggers, full integration, system health monitoring)
 
-slash_command_progress() {
-  local cmd_name=$1
-  local phase=$2
-  local progress=$3
-  process "⚡ PROGRESS: /$cmd_name → $phase [$progress% complete]"
-}
+### Enhanced Notification System
+**Real-Time Slash Command Tracking**: Progressive workflow notifications with cross-command trigger awareness and chain execution monitoring
 
-slash_command_complete() {
-  local cmd_name=$1
-  local duration=$2
-  local next_cmd=$3
-  success "✅ COMPLETE: /$cmd_name (${duration}s)"
-  if [ -n "$next_cmd" ]; then
-    info "🔄 CHAIN: Next → /$next_cmd"
-  fi
-}
-
-# Cross-command trigger notifications
-trigger_notification() {
-  local source_cmd=$1
-  local target_cmd=$2
-  local trigger_type=$3
-  warn "🔗 TRIGGER: /$source_cmd → /$target_cmd ($trigger_type)"
-}
-```
-
-### Systematic Command Development Framework
-
-#### **Phase 1: Command Specification & Analysis**
-**Integration Analysis Engine**:
-- **Dependency Detection**: Analyze command purpose to identify integration points
-- **Trigger Identification**: Determine which commands should auto-invoke this command
-- **Reverse Integration**: Identify which commands this command should trigger
-- **Complexity Assessment**: Calculate integration complexity and notification requirements
-
-#### **Phase 2: Command Implementation**
-**Complete Command Structure Generation**:
-- **Header & Purpose**: Auto-generate purpose, usage, and behavioral reinforcement
-- **Implementation Framework**: Create core functionality with execution layer
-- **Notification Integration**: Embed enhanced notification system
-- **Trigger Points**: Include auto-trigger detection and execution logic
-- **Error Handling**: Comprehensive error recovery and validation
-
-#### **Phase 3: Cross-Command Integration**
-**Automated Integration Implementation**:
-- **Forward Triggers**: Add Task() calls to trigger this command from others
-- **Reverse Triggers**: Add Task() calls for this command to trigger others
-- **Workflow Chains**: Update command chains and dependency documentation
-- **Integration Validation**: Verify all triggers are executable and functional
-
-#### **Phase 4: Documentation & System Update**
-**Comprehensive Documentation Update**:
-- **CLAUDE.md**: Add command to appropriate category with description
-- **Workflow Documentation**: Update primary discovery flow and integration chains
-- **Cross-Reference**: Update all relevant documentation with new command references
-- **Standards Compliance**: Ensure command follows all system standards
-
-#### **Phase 5: Integration Testing & Validation**
-**Meticulous Integration Verification**:
-- **Trigger Testing**: Validate all auto-triggers execute correctly
-- **Chain Validation**: Test complete workflow chains with new command
-- **Notification Testing**: Verify enhanced notifications work correctly
-- **Error Scenario Testing**: Test failure modes and recovery procedures
-
-### Command Integration Levels
-
-#### **Basic Integration**
-**Scope**: Standalone command with minimal dependencies
-**Integrations**: 
-- CLAUDE.md documentation update
-- Basic workflow notification integration
-- Standard error handling
-
-#### **Standard Integration**  
-**Scope**: Command that fits into existing workflows
-**Integrations**:
-- 2-4 cross-command triggers
-- Enhanced notification system
-- Workflow chain updates
-- Context/docs integration as needed
-
-#### **Comprehensive Integration**
-**Scope**: Core system command that affects multiple workflows
-**Integrations**:
-- 5+ cross-command triggers
-- Full notification enhancement
-- Multiple workflow chain updates
-- Documentation system integration
-- Matrix maintenance integration
-- System health monitoring integration
-
-### Enhanced Notification Framework
-
-#### **Progressive Workflow Notifications**
-```bash
-# Workflow-aware notification levels
-NOTIFICATION_LEVEL=${NOTIFICATION_LEVEL:-"STANDARD"}
-
-notify_workflow_start() {
-  local workflow_name=$1
-  local estimated_commands=$2
-  info "🎯 WORKFLOW: $workflow_name started ($estimated_commands commands estimated)"
-}
-
-notify_command_chain() {
-  local current=$1
-  local total=$2
-  local command=$3
-  process "📋 CHAIN: [$current/$total] Executing /$command"
-}
-
-notify_auto_trigger() {
-  local source=$1
-  local target=$2
-  local reason=$3
-  warn "⚡ AUTO-TRIGGER: /$source → /$target (Reason: $reason)"
-}
-
-notify_workflow_complete() {
-  local workflow_name=$1
-  local total_time=$2
-  local commands_executed=$3
-  success "🏁 WORKFLOW: $workflow_name completed (${total_time}s, $commands_executed commands)"
-}
-```
-
-#### **TodoWrite Integration Enhancement**
-```bash
-# Enhanced TodoWrite with command awareness
-todo_command_start() {
-  local cmd_name=$1
-  local phase=$2
-  TodoWrite([{"content": "⚡ ACTIVE: /$cmd_name → $phase", "status": "in_progress", "priority": "high", "id": "${cmd_name}-${phase}"}])
-}
-
-todo_command_complete() {
-  local cmd_name=$1
-  local phase=$2
-  TodoWrite([{"content": "⚡ ACTIVE: /$cmd_name → $phase", "status": "completed", "priority": "high", "id": "${cmd_name}-${phase}"}])
-}
-```
-
-### Docs Maintenance Integration
-
-#### **Extend Context-Optimize to Docs**
-**Docs Maintenance Modes**:
-- **`/context-optimize docs-consolidate`**: Merge redundant documentation
-- **`/context-optimize docs-clean`**: Remove outdated and duplicate content
-- **`/context-optimize docs-optimize`**: Improve density and cross-references
-- **`/context-optimize full-system`**: Comprehensive context + docs maintenance
-
-#### **Single Source of Truth Enforcement**
-**Anti-Fragmentation Protocol**:
-- **Topic Consolidation**: Merge documentation covering same topics
-- **Cross-Reference Validation**: Ensure all links point to canonical sources
-- **Duplicate Detection**: Identify and eliminate redundant information
-- **Quality Densification**: Optimize information density while preserving completeness
+**DETAILED IMPLEMENTATION**: Complete technical specifications and notification framework in `docs/commands/command-create-implementation.md`
 
 ## ⚡ Triggers
 
 ### Input Triggers
-**Context**: Need to create new system command with proper integration
-**Manual**: Explicit command creation with integration requirements
-**Keywords**: create, implement, develop, integrate, command
+**Context**: New functionality needed, workflow gaps identified, system expansion
+**Previous**: `/matrix-maintenance` gap detection → command creation recommendations
+**Keywords**: create, new command, workflow, functionality, integration
 
 ### Output Triggers
-**When**: Command created → Execute integration testing → Update system documentation
-**When**: Integration complete → Notify system health improvement → Log creation success
-**Chain**: command-create → integration testing → documentation updates → system validation
+**When**: Command created → `/matrix-maintenance` for dependency integration
+**When**: Integration complete → `/context-optimize` for documentation cleanup
+**Chain**: command-create → matrix-maintenance → context-optimize → validation
 
 ### Success Patterns
-**Creation Success**: Command implemented with full execution layer and integration
-**Integration Success**: All auto-triggers functional and cross-command integration verified
-**Documentation Success**: System documentation updated and cross-references validated
-**System Success**: New command operational and contributing to system efficiency
-
-## 🔗 Module Integration
-
-### Command Module Dependencies
-**Core Integration**:
-- `/matrix-maintenance` → Validate new command integration integrity
-- `/context-optimize` → Maintain documentation quality during command addition
-
-**Execution Chain**:
-- **All Commands** → Potential integration points for new commands
-- **Documentation System** → Automatic updates and cross-reference management
-- **Workflow Chains** → Integration into existing and new workflow patterns
-
-### Success Patterns & Performance Metrics
-**Creation Success**: Command functional with complete integration within 30 minutes
-**Integration Success**: All triggers executable and workflow chains updated
-**Documentation Success**: System consistency maintained with comprehensive updates
-**Validation Success**: New command passes all integration tests and quality checks
+**Implementation Success**: Command created with full execution layer and integration
+**Integration Success**: All triggers functional, workflow chains updated
+**Documentation Success**: CLAUDE.md updated, cross-references validated
 
 ## ⚡ EXECUTION LAYER
 
@@ -241,102 +63,96 @@ todo_command_complete() {
 **CRITICAL**: Complete command creation and integration automation
 
 ```javascript
-// 1. COMMAND SPECIFICATION GENERATION (real execution)
+// 1. COMMAND SPECIFICATION GENERATION
 Write(".claude/commands/${COMMAND_NAME}.md", `# ${COMMAND_NAME} - [Auto-Generated Purpose]
 
 ## 🎯 Purpose
-[Generated based on command analysis and integration requirements]
+[Detailed purpose and value proposition]
 
 ## 🚀 Usage
-Execute: \`/${COMMAND_NAME} [parameters]\`
+Execute: /${COMMAND_NAME} [parameters]
 
 ## 🔧 Implementation
-[Complete implementation framework with execution layer]
+[Implementation framework with behavioral reinforcement]
 
 ## ⚡ EXECUTION LAYER
-[Mandatory tool executions with actual implementation]
-`)
+[Complete tool execution implementation]`)
 
-// 2. INTEGRATION ANALYSIS (real execution)
-Grep("Task.*${COMMAND_NAME}", {glob: ".claude/commands/*.md", output_mode: "files_with_matches"}) // Find existing references
-Grep("Integration:|Triggers:|Chain:", {glob: ".claude/commands/*.md", output_mode: "content"}) // Analyze integration patterns
+// 2. INTEGRATION ANALYSIS
+Grep("${COMMAND_NAME}|${INTEGRATION_KEYWORDS}", {glob: "**/*.md", output_mode: "files_with_matches"}) // Find integration points
+Grep("Execute.*/${RELATED_COMMANDS}", {glob: ".claude/commands/*.md", output_mode: "content"}) // Analyze trigger patterns
 
-// 3. CROSS-COMMAND INTEGRATION (real execution)
-// For each identified integration point:
-Edit(".claude/commands/[target-command].md", `
-// AUTO-TRIGGER INTEGRATION: Add to existing command
-Task("${COMMAND_NAME}", "Execute /${COMMAND_NAME} [trigger-reason] for [specific-purpose]")
-`)
+// 3. CROSS-COMMAND INTEGRATION
+Edit("${TRIGGER_COMMAND}.md", `
+// Auto-trigger integration
+if (${TRIGGER_CONDITION}) {
+  Task("${COMMAND_NAME} Execution", "Execute /${COMMAND_NAME} ${PARAMETERS}")
+}`) // Add triggers to related commands
 
-// 4. ENHANCED NOTIFICATION INTEGRATION (real execution)
-Edit(".claude/commands/${COMMAND_NAME}.md", `
-# Enhanced notification system integration
-slash_command_start "${COMMAND_NAME}" "${COMPLEXITY_SCORE}"
-[command implementation with notifications]
-slash_command_complete "${COMMAND_NAME}" "\${DURATION}" "${NEXT_COMMAND}"
-`)
-
-// 5. DOCUMENTATION SYSTEM UPDATE (real execution)
+// 4. CLAUDE.MD DOCUMENTATION UPDATE
 Edit("CLAUDE.md", `
-### [Appropriate Category]
-- **\`/${COMMAND_NAME}\`** - [Generated description based on purpose and integration]
-`)
+### ${CATEGORY}
+- **/${COMMAND_NAME}** - ${PURPOSE} [Complexity: ${COMPLEXITY}] [Tools: ${TOOL_COUNT}]`) // Add to command directory
 
-Edit("docs/workflow/primary-discovery-flow.md", `
-[Update workflow documentation with new command integration points]
-`)
+// 5. WORKFLOW INTEGRATION
+Edit("CLAUDE.md", `
+${WORKFLOW_SECTION} → /${COMMAND_NAME} → ${NEXT_COMMANDS}`) // Update workflow chains
 
-// 6. VALIDATION AND TESTING (real execution)
-Bash("find .claude/commands -name '*.md' -exec grep -l '${COMMAND_NAME}' {} +") // Verify integration
-Grep("EXECUTION LAYER", {glob: ".claude/commands/${COMMAND_NAME}.md", output_mode: "content"}) // Verify implementation
+// 6. VALIDATION & TESTING
+Bash("grep -r '/${COMMAND_NAME}' .claude/commands/ | wc -l") // Count integration references
+Grep("Task.*${COMMAND_NAME}", {glob: ".claude/commands/*.md", output_mode: "count"}) // Verify trigger implementations
 
-// 7. SYSTEM HEALTH INTEGRATION (real execution)
-Task("Matrix Maintenance", "Execute /matrix-maintenance to validate new command integration")
-Task("Context Optimization", "Execute /context-optimize full-system to maintain documentation quality")
+// 7. ENHANCED NOTIFICATION INTEGRATION
+Edit("${COMMAND_NAME}.md", `
+### Autocontained Notification System
+\`\`\`bash
+#!/bin/bash
+readonly B='\\e[34m' G='\\e[32m' R='\\e[31m' Y='\\e[33m' C='\\e[36m' M='\\e[35m' GB='\\e[32;1m' N='\\e[0m'
+info()     { echo -e "\${B}🔵 INFO\${N}: \$1"; }
+success()  { echo -e "\${G}🟢 SUCCESS\${N}: \$1"; }
+process()  { echo -e "\${C}⚡ PROCESS\${N}: \$1"; }
+\`\`\``) // Add notification system
 
-// 8. DEPLOYMENT VERIFICATION (real execution)
-Bash("ls -la .claude/commands/${COMMAND_NAME}.md") // Confirm file creation
-Bash("wc -l .claude/commands/${COMMAND_NAME}.md") // Verify substantial implementation
-Grep("Task.*", {glob: ".claude/commands/${COMMAND_NAME}.md", output_mode: "content"}) // Verify executable triggers
+// 8. MATRIX MAINTENANCE INTEGRATION
+Task("Matrix Maintenance", "Execute /matrix-maintenance update to integrate new command dependencies")
 
-// 9. GIT INTEGRATION (real execution)
-Bash("git add . && git commit -m \"command-create: ${COMMAND_NAME} implementation | integration: [N] commands | automation: verified | system: enhanced ✓session-[N]\"")
+// 9. CONTEXT OPTIMIZATION
+Task("Context Optimization", "Execute /context-optimize to maintain documentation structure post-creation")
+
+// 10. INTEGRATION VERIFICATION
+Bash("find .claude/commands -name '${COMMAND_NAME}.md' -exec wc -l {} +") // Verify command created
+Bash("echo 'Command creation completed: ${COMMAND_NAME} | Integration level: ${INTEGRATION_LEVEL}'")
+
+// 11. GIT INTEGRATION
+Bash("git add . && git commit -m 'command-create: ${COMMAND_NAME} | integration: ${INTEGRATION_LEVEL} | triggers: ${TRIGGER_COUNT} ✓session-${SESSION_ID}'")
 ```
 
-### Command Creation Algorithm
-```javascript
-generateCommand(name, purpose, integrationLevel) {
-  // 1. Analyze integration requirements
-  const integrationPoints = analyzeIntegrationPoints(purpose, integrationLevel)
-  
-  // 2. Generate command specification
-  const spec = generateCommandSpec(name, purpose, integrationPoints)
-  
-  // 3. Implement cross-command triggers
-  integrationPoints.forEach(point => implementTrigger(point, name))
-  
-  // 4. Update documentation system
-  updateSystemDocumentation(name, purpose, integrationPoints)
-  
-  // 5. Validate integration completeness
-  validateIntegration(name, integrationPoints)
-  
-  return { command: spec, integrations: integrationPoints, validated: true }
-}
-```
+### Command Template Integration
+**MANDATORY**: Follow standardized command structure from `docs/commands/command-template.md`
+- Purpose section with clear value proposition
+- Usage section with parameter specification
+- Implementation section with behavioral reinforcement
+- Triggers section with input/output workflow integration
+- Execution layer with actual tool implementations
 
-### Session Completion Protocol
-**MANDATORY WORKFLOW END**:
-```javascript
-// Context and docs optimization after command creation
-Task("Context Optimization", "Execute /context-optimize full-system for comprehensive maintenance after command addition")
+### Integration Verification
+**COMPREHENSIVE VALIDATION**:
+- Command file created with proper structure
+- Integration triggers implemented in related commands
+- CLAUDE.md updated with command reference
+- Workflow chains updated with new command
+- Matrix maintenance triggered for dependency integration
 
-// Git automation with command creation metrics
-Bash("git add . && git commit -m \"command-create: [command-name] | integrations: [N] | triggers: verified | docs: updated ✓session-[N]\"")
-```
+### Execution Verification
+**TOOL CALL SUMMARY**: 11 tool operations implementing complete command creation lifecycle
+- **Creation**: 1 Write operation for command file generation
+- **Analysis**: 2 Grep operations for integration point discovery
+- **Integration**: 3 Edit operations for cross-command triggers and documentation
+- **Validation**: 3 Bash operations for verification and metrics
+- **Workflow**: 2 Task operations for matrix maintenance and context optimization
 
 ---
 
-**CRITICAL**: This command automates the complete command development lifecycle, ensuring systematic integration, comprehensive documentation, and meticulous validation. Every created command must be fully functional with complete integration before deployment.
+**CRITICAL**: This command ensures systematic command development with complete integration lifecycle, preventing orphaned commands and maintaining system coherence.
 
-**EXECUTION COMMITMENT**: Complete automation of command creation process with real tool executions, integration validation, and system enhancement verification.
+**EXECUTION COMMITMENT**: All command creation, integration, and validation operations implemented with actual tool calls for systematic development.

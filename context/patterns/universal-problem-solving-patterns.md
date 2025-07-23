@@ -113,7 +113,7 @@
 ### Bash Authorization Grouping Pattern
 **Problem**: Multiple individual bash calculations requiring separate authorizations (7→2 achieved: 71% reduction)
 **Solution**: Logical grouping of mathematical operations in single bash commands with detailed output
-**Evidence**: docs-validate.md (4→1) + docs-audit.md (3→1) optimization successfully implemented
+**Evidence**: docs-maintain modes (validate, audit) optimization successfully implemented via consolidation
 **User Validation**: "Estoy complacido con que hubiéramos reducido las autorizaciones BASH de 7 a 2"
 **Reusability Confirmed**: "siempre que podamos deberíamos intentar reducir el número de operaciones o agruparlas de manera lógica"
 **Process Validation**: "el análisis inicial ayuda mucho... La implementación estuvo bien, el resultado estuvo bien, el flujo de análisis es justo lo que esperaría"

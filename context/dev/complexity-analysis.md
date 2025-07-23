@@ -27,13 +27,13 @@
 
 #### **Tier 3: Specialized Operations (4-6)**
 - **capture-learnings**: 5/10 - Dual-phase learning with user interviews
-- **docs-workflow**: 5/10 - Documentation orchestration and validation
+- **docs-maintain**: 5/10 - Documentation orchestration and validation (unified)
 - **problem-solving**: 4/10 - Systematic issue resolution framework
 
 #### **Tier 4: Utility & Support (2-4)**
-- **docs-validate**: 3/10 - Documentation integrity checking
-- **docs-audit**: 3/10 - Performance and compliance assessment
-- **docs-optimize**: 2/10 - Content consolidation and cleanup
+- **docs-maintain validate**: 3/10 - Documentation integrity checking (mode)
+- **docs-maintain audit**: 3/10 - Performance and compliance assessment (mode)
+- **docs-maintain optimize**: 2/10 - Content consolidation and cleanup (mode)
 
 ### Complexity Management Recommendations
 

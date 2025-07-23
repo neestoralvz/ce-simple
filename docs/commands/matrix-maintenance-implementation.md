@@ -3,7 +3,7 @@
 **Version**: 1.0  
 **Last Updated**: 2025-07-22  
 **Integration**: Core command system workflow  
-**Dependencies**: explore-codebase, docs-workflow, validation-framework
+**Dependencies**: explore-codebase, docs-maintain, validation-framework
 
 ## TECHNICAL SPECIFICATIONS
 
@@ -165,7 +165,7 @@ Trigger Conditions:
    - Scheduled runs: Daily maintenance scans
 
 3. Command Integration:
-   - /docs-workflow: Auto-trigger on documentation changes
+   - /docs-maintain: Auto-trigger on documentation changes
    - /explore-codebase: Matrix update after discovery
    - /start: Health check during initialization
 
@@ -292,7 +292,7 @@ Storage Optimization:
 Integration Flows:
 /start → matrix health check → workflow decisions
 /explore-codebase → dependency discovery → matrix updates
-/docs-workflow → documentation validation → cross-reference updates
+/docs-maintain workflow → documentation validation → cross-reference updates
 /capture-learnings → pattern detection → matrix optimization
 ```
 

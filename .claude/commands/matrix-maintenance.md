@@ -1,7 +1,7 @@
 # Matrix-Maintenance - Cross-Reference Dependency Management System
 
 ## 🎯 Purpose
-Comprehensive maintenance of cross-reference matrix for systematic dependency tracking, structural integrity validation, and proactive failure prevention through intelligent FMEA-based analysis.
+Comprehensive maintenance of cross-reference matrix for systematic dependency tracking, structural integrity validation, and proactive failure prevention.
 
 ## 🚀 Usage
 **Auto-Triggered**: Activates during `/problem-solving` Phase 0, `/docs-workflow` maintenance cycles
@@ -22,133 +22,30 @@ TodoWrite([
 ])
 ```
 
-**Intelligence-Driven Todos**: Add conditional validation todos based on discovered inconsistencies and risk assessment results
-
-### Structural Validation Protocol
-**PRE-EXECUTION**:
-1. 🏗️ **STRUCTURE**: Validate organization compliance and matrix storage location
-2. 🔗 **REFERENCES**: Verify existing matrix accessibility and format integrity
-3. 📏 **SCOPE**: Determine scanning scope based on execution mode and recent changes
-4. ⚡ **BASELINE**: Establish current state baseline for delta analysis
-
-### Matrix Management Operations
-
-#### Core Dependency Scanning Framework
-**Comprehensive Discovery Protocol**:
+### Core Matrix Operations
+**COMPREHENSIVE Framework**:
 1. **🔍 COMPONENT-SCAN**: Identify all system components (commands, modules, documentation)
-2. **🔗 DEPENDENCY-MAP**: Trace all cross-references, imports, and functional dependencies  
+2. **🔗 DEPENDENCY-MAP**: Trace cross-references, imports, and functional dependencies  
 3. **📊 MATRIX-GENERATION**: Create comprehensive dependency matrix with relationship mapping
 4. **⚠️ INTEGRITY-CHECK**: Validate reference completeness and identify broken links
 5. **🛡️ FMEA-ANALYSIS**: Failure Mode and Effects Analysis for proactive risk assessment
 
-#### Multi-Layer Integrity Verification
-**Intelligence Framework**:
-```
-🎯 SCOPE-ANALYSIS: System boundaries → Component discovery → Dependency mapping
-🔍 DEEP-SCAN: Cross-references → Integration points → Validation protocols  
-📊 MATRIX-BUILD: Dependency matrix → FMEA integration → Risk assessment
-⚠️ VALIDATION: Integrity verification → Broken link detection → Gap analysis
-🛡️ PREVENTION: Risk mitigation → Failure prevention → Monitoring protocols
-```
+### Operation Modes
+- **scan**: Enhanced discovery with AI-assisted pattern recognition
+- **update**: Intelligent synchronization with ML-driven optimization
+- **validate**: AI-powered integrity verification with anomaly detection
+- **report**: Intelligence dashboard with predictive insights
+- **cleanup-validation**: Specialized validation after tool/directory removal
+- **full**: Complete autonomous cycle with scan → update → validate → optimize
 
-#### Advanced Matrix Architecture
-**Matrix Structure**: Multi-dimensional dependency tracking with relationship classification
-- **Direct Dependencies**: Command-to-command references and functional integration points
-- **Indirect Dependencies**: Transitive relationships and cascading impact analysis
-- **Resource Dependencies**: File system requirements, documentation linkages, tool dependencies
-- **Temporal Dependencies**: Execution sequence requirements and coordination protocols
-
-### Auto-Integration Architecture
-
-#### Intelligent Trigger Framework
-**Proactive Activation System**:
+### Integration Points
+**Auto-Triggered Integration**:
 - **Pre-Problem-Solving**: Mandatory matrix validation during `/problem-solving` Phase 0
 - **Post-Migration**: Auto-triggered after command architecture changes
-- **Post-Cleanup**: Auto-triggered after tool/directory removal with cleanup-validation mode
 - **Scheduled Maintenance**: Periodic validation during `/docs-workflow` maintenance cycles
-- **Change Detection**: Real-time monitoring of file system modifications with dependency impact assessment
+- **Change Detection**: Real-time monitoring of file system modifications
 
-#### Command Integration Protocols
-**Seamless Coordination Framework**:
-```
-🔄 PROBLEM-SOLVING: Phase 0 → Matrix validation → Structural integrity confirmed
-📚 DOCS-WORKFLOW: Maintenance cycle → Matrix synchronization → Documentation consistency
-🤖 AGENT-ORCHESTRATION: Coordination requirements → Dependency awareness → Execution optimization
-🎯 CAPTURE-LEARNINGS: Pattern detection → Matrix intelligence → Enhancement recommendations
-```
-
-**Integration Success Indicators**:
-- **Problem-Solving Enhancement**: >95% first-attempt resolution through dependency awareness
-- **Documentation Synchronization**: Zero broken references across documentation network
-- **Agent Coordination**: Dependency-aware orchestration with optimal execution pathways
-- **System Intelligence**: Continuous matrix enhancement through pattern learning
-
-### Phase 4: Autonomous Operation Modes
-
-#### Autonomous Mode (`/matrix-maintenance autonomous`)
-**PHASE 4 IMPLEMENTATION**: Self-managing matrix maintenance with predictive analysis
-- **Auto-Detection**: Continuous monitoring of system changes with intelligent trigger algorithms
-- **Predictive Maintenance**: Machine learning-based failure prediction and proactive intervention
-- **Self-Healing**: Automatic resolution of detected issues within defined safety parameters
-- **Performance Optimization**: Dynamic resource allocation and processing efficiency enhancement
-
-#### Scan Mode (`/matrix-maintenance scan`)
-**Enhanced Discovery**: Full system scanning with AI-assisted pattern recognition and dependency intelligence
-
-#### Update Mode (`/matrix-maintenance update`)
-**Intelligent Synchronization**: Matrix regeneration with ML-driven optimization and predictive enhancement
-
-#### Validate Mode (`/matrix-maintenance validate`)
-**Advanced Assessment**: AI-powered integrity verification with anomaly detection and trend analysis
-
-#### Report Mode (`/matrix-maintenance report`)
-**Intelligence Dashboard**: Comprehensive analytics with predictive insights and optimization recommendations
-
-#### Cleanup-Validation Mode (`/matrix-maintenance cleanup-validation`)
-**Post-Cleanup Integrity**: Specialized validation after tool/directory removal with dependency repair
-- **Pattern Application**: `context/patterns/dependency-validation-post-cleanup.md`
-- **Success Metrics**: System health improvement (e.g., 96.4% → 98.8%)
-- **Scope**: Component count synchronization, broken reference elimination
-
-#### Full Mode (`/matrix-maintenance full`)
-**Complete Autonomous Cycle**: Scan → Update → Validate → Optimize → Monitor → Learn sequence
-
-### Advanced Failure Prevention Intelligence
-
-#### Predictive Analysis Engine
-**FMEA-Based Risk Assessment Framework**:
-```
-📊 HISTORICAL-ANALYSIS: Pattern recognition → Failure prediction → Prevention strategies
-🎯 IMPACT-ASSESSMENT: Dependency chains → Cascading failure analysis → Mitigation priorities
-⚠️ VULNERABILITY-DETECTION: Weak points identification → Risk scoring → Prevention protocols
-🔄 CONTINUOUS-LEARNING: Failure patterns → Prevention enhancement → System evolution
-```
-
-#### Real-Time Monitoring & Health Assessment
-**Intelligence Monitoring Protocol**:
-- **Change Impact Analysis**: Real-time assessment of modifications with dependency chain evaluation
-- **Integrity Health Metrics**: Continuous monitoring of matrix completeness and accuracy
-- **Proactive Alert System**: Early warning detection for potential structural inconsistencies
-- **Performance Intelligence**: Matrix maintenance efficiency and system health optimization
-
-#### Comprehensive Prevention Strategies
-**Multi-Layer Protection Framework**:
-1. **🛡️ STRUCTURAL**: Prevent architectural inconsistencies through mandatory validation
-2. **🔗 REFERENCE**: Eliminate broken links through comprehensive dependency tracking
-3. **⚡ EXECUTION**: Prevent workflow failures through dependency-aware coordination
-4. **📊 INTELLIGENCE**: Enhance system reliability through continuous matrix learning
-
-### Notification Integration
-
-#### Matrix Maintenance Notifications
-```
-🔍 SCAN: Dependency discovery initiated → [N] components identified
-📊 MATRIX: Cross-reference update processing → [X]% completion
-⚠️  VALIDATION: Integrity check results → [N] issues detected
-🛡️ PREVENTION: Risk analysis complete → [N] mitigation strategies generated
-✅ COMPLETION: Matrix maintenance successful → System integrity: [X]%
-🚨 CRITICAL: Structural inconsistencies detected → Immediate attention required
-```
+**DETAILED IMPLEMENTATION**: Complete technical specifications in `docs/commands/matrix-maintenance-implementation.md`
 
 ## ⚡ Triggers
 
@@ -156,52 +53,16 @@ TodoWrite([
 **Auto-Prevention**: Triggered by `/problem-solving`, `/docs-workflow`, structural changes
 **Manual-Maintenance**: Direct execution for comprehensive system validation
 **Change-Detection**: Automated response to file system modifications
-**Scheduled-Cycles**: Periodic maintenance during documentation workflow execution
 
 ### Output Triggers
 **Enhanced Problem-Solving**: Updated matrix enables comprehensive Phase 0 structural assessment
 **Documentation Synchronization**: Matrix updates trigger documentation consistency validation
 **System Intelligence**: Continuous matrix maintenance enhances overall system reliability
-**Prevention Activation**: Risk detection triggers proactive mitigation workflow initiation
 
 ### Success Patterns
 **Matrix Integrity**: >95% dependency coverage with <5% broken references
 **Validation Success**: Complete structural integrity with zero critical inconsistencies
 **Prevention Effectiveness**: Proactive identification and mitigation of potential failure modes
-**System Enhancement**: Continuous improvement of cross-reference accuracy and completeness
-
-## 🔗 Module Integration
-
-### Command Module Dependencies
-**Core Integration**: Autocontained matrix management with no external dependencies
-**Universal Validation**: Integrates with all commands requiring dependency awareness
-
-### Execution Integration
-**Primary Integration Points**:
-- `/problem-solving` → Phase 0 mandatory matrix validation for structural assessment
-- `/docs-workflow` → Periodic matrix maintenance cycles with documentation consistency
-- `/explore-codebase` → Dependency discovery enhancement during architectural analysis
-- `/capture-learnings` → Pattern integration for matrix intelligence and system evolution
-- `/agent-orchestration` → Dependency-aware coordination for optimal execution pathways
-
-### Success Patterns & Performance Metrics
-**Matrix Success**: >95% dependency coverage achieved → Structural integrity confirmed
-**Validation Success**: Zero critical inconsistencies detected → System reliability ensured  
-**Prevention Success**: Proactive failure prevention → >90% first-attempt problem resolution
-**Intelligence Success**: Continuous learning integration → System enhancement achieved
-
-### Integration Success Indicators
-**Dependency Awareness**: Complete cross-reference tracking with intelligent relationship mapping
-**Structural Integrity**: Comprehensive validation preventing architectural inconsistencies
-**Failure Prevention**: FMEA-based analysis with proactive risk mitigation strategies
-**System Enhancement**: Matrix intelligence continuously improving coordination and reliability
-
-### Matrix Output Locations
-**Semantic Matrix Consolidation**:
-- `context/sys/health-monitoring.md` → Consolidated system health with timestamp tracking
-- `context/ops/risk-assessment.md` → FMEA analysis and prevention strategies
-- `context/sys/architecture-integrity.md` → Cross-reference validation results
-- **Consolidation Strategy**: Update existing files with "Last Updated" timestamp only
 
 ## ⚡ EXECUTION LAYER
 
@@ -209,214 +70,74 @@ TodoWrite([
 **CRITICAL**: Actual implementation of cross-reference matrix maintenance and FMEA analysis
 
 ```javascript
-// COMPREHENSIVE DEPENDENCY SCANNING
-// Scan all system components for cross-references and dependencies
-
 // 1. COMPONENT DISCOVERY
 Glob("**/*.md", {path: "."})                              // All markdown files
 Glob("**/*.json", {path: "."})                            // Configuration files
-Glob("**/*.sh", {path: "."})                              // Shell scripts
 Glob("**/.claude/**/*", {path: "."})                      // Command system files
 
 // 2. CROSS-REFERENCE ANALYSIS
 Grep("\\[.*\\]\\(.*\\.md\\)", {glob: "**/*.md", output_mode: "content", -n: true})  // Markdown links
 Grep("/[a-zA-Z-]+", {glob: "**/*.md", output_mode: "content", -n: true})             // Slash commands
 Grep("docs/|context/|\\.claude/", {glob: "**/*.md", output_mode: "content", -n: true}) // Directory references
-Grep("import|require|include", {glob: "**/*", output_mode: "content", -n: true})     // Code imports
 
 // 3. DEPENDENCY MAPPING
 Grep("Execute.*:", {glob: "**/*.md", output_mode: "content", -n: true})              // Command executions
-Grep("\\→|→", {glob: "**/*.md", output_mode: "content", -n: true})                   // Workflow arrows
 Grep("Chain:|Triggers:", {glob: "**/*.md", output_mode: "content", -n: true})        // Workflow chains
 Grep("Integration:", {glob: "**/*.md", output_mode: "content", -n: true})            // Integration points
 
 // 4. BROKEN LINK DETECTION  
 Grep("BROKEN|MISSING|ERROR|FIXME", {glob: "**/*.md", output_mode: "files_with_matches"}) // Error indicators
-Grep("\\[.*\\]\\(.*\\)", {glob: "**/*.md", output_mode: "content"}) // Extract all links for validation
 
-// 5. MATRIX CONSOLIDATION: Update existing health monitoring file
+// 5. MATRIX CONSOLIDATION
 Edit("context/sys/health-monitoring.md", `
 ## Health Check: [YYYY-MM-DD]
 
 ### System Components Analysis
 - Total Components: [component_count]
 - Commands: [command_count]  
-- Documentation Files: [doc_count]
 - Cross-References: [reference_count]
 
 ### Current Integrity Score: [score]%
 - Structural Integrity: [structural]%
 - Cross-References: [references]%
 - Command Coverage: [coverage]%
-- Dependency Matrix: [dependencies]%
-
-### Dependency Mapping
-[Comprehensive dependency relationships]
 
 **Last Updated**: [current-timestamp]
-`)
-[Command integration analysis]
-
-## Reference Integrity  
-- Valid References: [valid_count]
-- Broken References: [broken_count]
-- Integrity Score: [integrity_percentage]%
-
-## FMEA Risk Assessment
-[Failure mode analysis and prevention strategies]
-
-## Post-Cleanup Validation Results (if cleanup-validation mode)
-- Broken Tool References: [broken_tool_refs]
-- Component Count Accuracy: [count_accuracy]%
-- Health Improvement: [old_health]% → [new_health]%
 `)
 
 // 6. INTEGRITY VALIDATION
 Bash("find . -name '*.md' | wc -l")                       // Count markdown files
-Bash("find . -name '*.md' -exec grep -l 'EXECUTION LAYER' {} + | wc -l") // Count implemented commands
 Bash("echo 'scale=1; ([implemented_commands] * 100) / [total_commands]' | bc") // Calculate coverage %
 
-// 6A. CLEANUP VALIDATION (when cleanup-validation mode active)
-Grep("tools/|.claude/tools/", {glob: "**/*.md", output_mode: "files_with_matches"}) // Detect broken tool references
-Bash("ls -la tools/ 2>/dev/null || echo 'VERIFIED: tools directory removed'")        // Verify tool directory removal
-Bash("ls -la .claude/tools/ 2>/dev/null || echo 'VERIFIED: .claude/tools removed'") // Verify .claude/tools removal
-Bash("find . -name '*.md' -path './context/*' | wc -l")   // Updated context file count
-Bash("find . -name '*.md' -path './docs/*' | wc -l")      // Updated docs file count
-
-// ENHANCED WORKFLOW NOTIFICATIONS
-trigger_notification "matrix-maintenance" "context-optimize" "post-validation-cleanup"
-
-// 7. CONTEXT OPTIMIZATION POST-VALIDATION
-Task("Context Optimization", "Execute /context-optimize clean to maintain semantic structure after system validation")
-
-// 8. FMEA ANALYSIS (Failure Mode and Effects Analysis)
+// 7. FMEA ANALYSIS
 Edit("context/ops/risk-assessment.md", `
-## FMEA Analysis Results: [YYYY-MM-DD]
-
+## FMEA Analysis: [YYYY-MM-DD]
 ### Potential Failure Modes
 1. **Documentation Theater**: Commands without execution layers
 2. **Broken References**: Links to non-existent resources  
 3. **Integration Gaps**: Missing workflow connections
-4. **Dependency Loops**: Circular reference detection
 
-## Risk Assessment
-[Risk severity ratings and mitigation strategies]
-
-## Prevention Strategies  
-[Proactive measures to prevent identified failure modes]
-
-## Monitoring Recommendations
-[Ongoing validation and maintenance protocols]
+**Risk Assessment**: [risk_severity] | **Prevention**: [mitigation_strategies]
 `)
 
-// 8. HEALTH REPORTING
-Write("context/system/matrix-health-report-[timestamp].md", `# Matrix Maintenance Health Report
-
-## System Health Metrics
-- Matrix Coverage: [coverage_percentage]%
-- Reference Integrity: [integrity_percentage]%
-- Command Implementation: [implementation_percentage]%
-- Risk Level: [risk_level]
-
-## Key Findings
-[Summary of critical discoveries]
-
-## Action Items
-[Prioritized maintenance and improvement tasks]
-
-## Trend Analysis
-[System health evolution over time]
-`)
-
-// 9. PHASE 4: AUTONOMOUS OPERATION IMPLEMENTATION
-// Advanced monitoring and self-healing capabilities
-Task("Autonomous Intelligence", `PHASE 4 AUTONOMOUS OPERATION:
-- PREDICTIVE-ANALYSIS: ML-based failure prediction with 72-hour lead time
-- AUTO-HEALING: Resolve dependency conflicts within safety parameters
-- PERFORMANCE-OPTIMIZATION: Dynamic resource allocation and processing enhancement
-- CONTINUOUS-LEARNING: Pattern recognition with system intelligence evolution`)
-
-// 9A. PREDICTIVE MAINTENANCE ENGINE
-Write("context/system/predictive-maintenance-analysis-[timestamp].md", `# Predictive Maintenance Analysis
-
-## Machine Learning Insights
-- Failure Prediction Accuracy: [prediction_accuracy]%
-- Risk Trend Analysis: [trend_analysis]
-- Anomaly Detection Results: [anomaly_count] detected
-- System Health Trajectory: [health_trajectory]
-
-## Autonomous Actions Taken
-- Auto-Resolved Issues: [auto_resolved_count]
-- Preventive Interventions: [intervention_count]
-- Performance Optimizations: [optimization_count]
-- Learning Adaptations: [adaptation_count]
-
-## Monitoring Intelligence
-- Change Impact Predictions: [impact_predictions]
-- Resource Utilization Optimization: [resource_optimization]%
-- Proactive Alert Generation: [alert_count]
-- System Stability Enhancement: [stability_score]
-
-## Autonomous Success Metrics
-- Self-Healing Success Rate: [healing_success]%
-- Predictive Accuracy: [predictive_accuracy]%
-- Performance Improvement: [performance_gain]%
-- Operational Autonomy: [autonomy_level]%`)
-
-// 9B. CONTINUOUS MONITORING FRAMEWORK
-Bash("echo 'PHASE-4: Autonomous operation initiated with predictive intelligence'")
-Bash("echo 'Self-healing capabilities: ACTIVE | Predictive accuracy: [prediction_rate]%'")
-Bash("echo 'Performance optimization: [optimization_gain]% | Autonomy level: [autonomy_percent]%'")
-
-// 9C. VALIDATION CYCLES WITH AUTONOMOUS ENHANCEMENT
-Bash("echo 'Matrix maintenance cycle completed: [timestamp] | Autonomous: [autonomy_mode]'")
-Bash("echo 'Dependencies analyzed: [dependency_count] | Predictions generated: [prediction_count]'")
-Bash("echo 'Integrity score: [integrity_score]% | Self-healing actions: [healing_actions]'")
-
-// 9D. COMMAND-CREATE INTEGRATION AUTO-TRIGGER
-// Detect missing commands based on dependency analysis and workflow gaps
-Grep("TODO.*command|MISSING.*command|create.*command", {glob: "**/*.md", output_mode: "files_with_matches"}) // Detect command creation needs
-Bash("if [[ $(grep -r 'TODO.*command\\|MISSING.*command' . | wc -l) -gt 0 ]]; then echo 'COMMAND-CREATION-OPPORTUNITY-DETECTED'; fi") // Check for command gaps
-
-// AUTO-TRIGGER: Command creation when workflow gaps detected
-trigger_notification "matrix-maintenance" "command-create" "workflow-gap-detection"
-Task("Command Creation Analysis", "Execute /command-create analysis mode to identify systematic command development opportunities based on matrix analysis")
-```
-
-### FMEA Analysis Framework
-**FAILURE MODE ASSESSMENT**:
-- **Severity** (1-5): Impact if failure occurs
-- **Occurrence** (1-5): Probability of failure  
-- **Detection** (1-5): Ability to detect before impact
-- **RPN** (Risk Priority Number): Severity × Occurrence × Detection
-- **Action Required**: RPN ≥50 requires mitigation plan
-
-### Matrix Validation Logic
-**INTEGRITY SCORING**:
-- Valid references / Total references × 100
-- Execution layer coverage / Total commands × 100
-- Integration completeness / Required integrations × 100
-- **Healthy System**: All scores ≥95%
-
-### Session Completion Protocol
-**MANDATORY WORKFLOW END**:
-```javascript
-// Git automation with matrix metrics
+// 8. COMPLETION
 Bash("git add . && git commit -m \"matrix-maintenance: [scan-type] | integrity: [N]% | coverage: [N]% ✓session-[N]\"")
 ```
 
+### Matrix Output Locations
+**Semantic Consolidation**:
+- `context/sys/health-monitoring.md` → System health with timestamp tracking
+- `context/ops/risk-assessment.md` → FMEA analysis and prevention strategies
+
 ### Execution Verification
-**TOOL CALL AUDIT**:
-- **Component discovery**: 4 Glob operations for system scanning
-- **Cross-reference analysis**: 4 Grep operations for link detection  
-- **Dependency mapping**: 4 Grep operations for workflow analysis
-- **Integrity validation**: 3 Bash calculations for health metrics
-- **Documentation generation**: 3 Write operations for reports
-- **Monitoring**: 3 Bash operations for cycle tracking
-- **Ratio**: 21 tool calls to ~200 documentation lines = 10.5% (HEALTHY)
+**TOOL CALL SUMMARY**: 13 tool operations implementing comprehensive matrix maintenance
+- **Discovery**: 3 Glob operations for system scanning
+- **Analysis**: 6 Grep operations for cross-reference and dependency detection  
+- **Documentation**: 2 Edit operations for health and risk reporting
+- **Validation**: 2 Bash operations for metrics calculation
 
 ---
 
-**CRITICAL**: This command ensures systematic prevention of the "exploration previa" problems through comprehensive cross-reference matrix maintenance, enabling reliable first-attempt problem resolution through complete dependency awareness and proactive failure prevention.
+**CRITICAL**: This command ensures systematic prevention of dependency failures through comprehensive cross-reference matrix maintenance, enabling reliable first-attempt problem resolution.
 
-**EXECUTION COMMITMENT**: Cross-reference matrix maintenance with dependency scanning, FMEA analysis, integrity validation, and health reporting are NOW implemented with actual tool calls.
+**EXECUTION COMMITMENT**: All matrix maintenance operations implemented with actual tool calls for dependency scanning, FMEA analysis, and health reporting.

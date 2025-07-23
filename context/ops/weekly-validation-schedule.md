@@ -12,8 +12,8 @@
 #!/bin/bash
 # Weekly validation automation script
 /start matrix-maintenance --mode=full
-/start docs-audit --depth=comprehensive  
-/start self-monitor --validation=weekly
+/docs-maintain audit  
+/system-monitor compliance
 ```
 
 ### Critical Checkpoints
