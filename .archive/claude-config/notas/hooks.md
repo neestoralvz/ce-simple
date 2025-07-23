@@ -1,0 +1,1 @@
+ya entiendo para que nos va a servir hooks si estoy trabajndo asi con los agentes

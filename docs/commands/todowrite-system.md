@@ -221,5 +221,5 @@ TodoWrite transforms from simple task tracking to **intelligent behavioral memor
 **Cross-References**:
 - Core Architecture → `core/architectural-principles.md`
 - Quality Standards → `matrix/validation-protocols.md`
-- Command Templates → `commands/command-template.md`
+- Writing Standards → `core/writing-standards.md`
 - Performance Metrics → `matrix/performance-benchmarks.md`
