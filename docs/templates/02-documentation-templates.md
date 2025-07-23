@@ -84,112 +84,17 @@ Consolidated documentation templates providing standardized structure, progressi
 ```markdown
 # [Topic Name]
 
-## Layer 1: Quick Start (Essential Information)
+@./docs/templates/shared/metadata-schema.md#ownership_schema
+@./docs/templates/shared/metadata-schema.md#versioning_schema
 
-### Quick Summary
-[One sentence describing the core concept]
+@./docs/templates/mixins/template-mixins.md#progressive_disclosure_mixin
 
-### Key Points
-- **[Point 1]**: [Brief essential detail]
-- **[Point 2]**: [Brief essential detail]
-- **[Point 3]**: [Brief essential detail]
+@./docs/templates/shared/phase-structures.md#documentation_progressive_disclosure_phase
 
-### Immediate Actions
-1. [Most important action]
-2. [Second most important action]
-3. [Third most important action]
-
-### Success Indicator
-[How to know if this is working correctly]
+@./docs/templates/shared/metadata-schema.md#cross_reference_schema
 
 ---
-*For detailed implementation → See [Layer 2: Implementation Details](#layer-2-implementation-details)*
-
-## Layer 2: Implementation Details
-
-### Prerequisites
-- [Requirement 1 with verification method]
-- [Requirement 2 with verification method]
-
-### Step-by-Step Process
-1. **[Step 1 Name]**: [Detailed description]
-   - Expected outcome: [What should happen]
-   - Troubleshooting: [Common issues and solutions]
-
-2. **[Step 2 Name]**: [Detailed description]
-   - Expected outcome: [What should happen]
-   - Troubleshooting: [Common issues and solutions]
-
-### Validation Steps
-- [ ] [Checkpoint 1]: [How to verify]
-- [ ] [Checkpoint 2]: [How to verify]
-
----
-*For advanced configuration → See [Layer 3: Advanced Details](#layer-3-advanced-details)*
-
-## Layer 3: Advanced Details
-
-### Configuration Options
-```yaml
-# Standard configuration
-option_1: value_1  # [Description of what this controls]
-option_2: value_2  # [Description of what this controls]
-
-# Advanced configuration
-advanced_option_1: value_1  # [When to use this]
-```
-
-### Customization Patterns
-- **[Pattern 1]**: [Use case, implementation, benefits]
-- **[Pattern 2]**: [Use case, implementation, considerations]
-
-### Performance Optimization
-- **[Optimization 1]**: [What it does] - [Expected improvement]
-- **[Optimization 2]**: [What it does] - [Expected improvement]
-
----
-*For expert information → See [Layer 4: Expert Details](#layer-4-expert-details)*
-
-## Layer 4: Expert Details
-
-### Architecture Overview
-```
-[ASCII diagram or description]
-Component A ←→ Component B ←→ Component C
-```
-
-### Design Principles
-1. **[Principle 1]**: [Description and rationale]
-2. **[Principle 2]**: [Description and rationale]
-
-### Integration Patterns
-- **[Integration Type 1]**: [How it works and when to use]
-- **[Integration Type 2]**: [How it works and when to use]
-
----
-*For troubleshooting → See [Layer 5: Deep Troubleshooting](#layer-5-deep-troubleshooting)*
-
-## Layer 5: Deep Troubleshooting
-
-### Diagnostic Commands
-```bash
-# System status check
-command --status --verbose
-
-# Debug mode execution
-command --debug --log-level=trace
-```
-
-### Log Analysis
-```
-[TIMESTAMP] INFO: [Normal message pattern]
-[TIMESTAMP] ERROR: [Error pattern] → [Cause and solution]
-```
-
-### Recovery Procedures
-1. [Recovery step 1]
-2. [Recovery step 2]
-3. [Verification step]
+@./docs/templates/shared/metadata-schema.md#document_status_schema
 ```
 
 ### 3. Architecture Documentation Template
@@ -360,39 +265,44 @@ graph LR
 
 ## Implementation Guidelines
 
+@./docs/templates/shared/composition-framework.md#template_creation_process
+
 ### Choosing the Right Template
-1. **Standard Documentation**: General-purpose documentation needs
-2. **Progressive Disclosure**: Complex topics requiring layered information
-3. **Architecture Documentation**: System design and technical specifications
-4. **Process Documentation**: Workflow procedures and operational processes
+1. **Standard Documentation**: Use documentation-base + standard metadata components
+2. **Progressive Disclosure**: Use documentation-base + progressive disclosure mixin + layered phases
+3. **Architecture Documentation**: Use documentation-base + integration patterns mixin
+4. **Process Documentation**: Use documentation-base + performance monitoring mixin
 
-### Writing Standards
-- **Clarity**: ≥90% comprehension for target audience
-- **Brevity**: Maximum information density per word
-- **Structure**: Logical flow from purpose to implementation
-- **Navigation**: ≤3 cognitive steps to any information
+### Template Composition Process
+```markdown
+# Example: Creating Progressive Disclosure Documentation
 
-### Progressive Disclosure Guidelines
-- **Layer 1**: ≤200 words, 3-5 key points maximum
-- **Layer 2**: Detailed implementation, practical focus
-- **Layer 3**: Configuration and customization options
-- **Layer 4**: Architecture and theoretical background
-- **Layer 5**: Deep diagnostic and troubleshooting
+<!-- Base structure -->
+@./docs/templates/shared/documentation-base.md
 
-## Quality Standards
-- **Line Limit**: ≤200 lines using progressive disclosure
-- **Information Density**: ≥95% executable value per word
-- **Cross-Reference Validity**: ≥90% accurate links
-- **Update Frequency**: Regular review and maintenance
+<!-- Add progressive disclosure -->
+@./docs/templates/mixins/template-mixins.md#progressive_disclosure_mixin
+
+<!-- Use layered phases -->
+@./docs/templates/shared/phase-structures.md#documentation_progressive_disclosure_phase
+```
+
+@./docs/templates/shared/composition-framework.md#writing_standards
+@./docs/templates/shared/composition-framework.md#quality_standards
 
 ## Cross-References
+- [Shared Components](./shared/) - Core template building blocks
+- [Template Mixins](./mixins/template-mixins.md) - Composable feature enhancements
 - [Command Templates](./01-command-templates.md) - For command documentation
 - [Validation Templates](./03-validation-templates.md) - For documentation testing
-- [Communication Templates](./05-communication-templates.md) - For user communication
+- [Composition Framework](./shared/composition-framework.md) - Template assembly guidelines
 
 ---
 
+@./docs/templates/shared/metadata-schema.md#document_status_schema
+
 **Template Category**: Documentation development templates
-**Consolidation**: 3 templates → 4 variants (Standard, Progressive, Architecture, Process)
+**Evolution**: DRY violations eliminated through shared component system
+**Composition**: Base templates + mixins + shared components = modular documentation
 **Usage**: All documentation in ce-simple system
-**Authority**: Unified documentation template system
+**Authority**: Unified documentation template system with composition framework

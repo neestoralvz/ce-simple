@@ -1,13 +1,21 @@
 # Validation Templates - Unified Template System
 
+@./docs/templates/shared/metadata-schema.md#document_status_schema
+@./docs/templates/shared/template-versioning.md#version_declaration_format
+
 ## Purpose
-Consolidated validation templates providing standardized testing frameworks, compliance verification, and quality assurance protocols for all ce-simple system components.
+Consolidated validation templates using shared component system to eliminate DRY violations and promote modular, reusable validation patterns.
+
+**Template Evolution**: Now leverages shared components and mixins for maximum reusability and maintainability.
 
 ## Template Categories
 
 ### 1. System Validation Template
 ```markdown
 # [System/Component Name] Validation
+
+@./docs/templates/shared/metadata-schema.md#ownership_schema
+@./docs/templates/shared/metadata-schema.md#versioning_schema
 
 ## Purpose
 [What this validation ensures or verifies]
@@ -17,121 +25,35 @@ Consolidated validation templates providing standardized testing frameworks, com
 - **Coverage**: [Percentage or scope of validation]
 - **Frequency**: [How often validation occurs]
 
-## Validation Criteria
-1. **[Criterion 1]**: [Specific requirement with measurable threshold]
-2. **[Criterion 2]**: [Specific requirement with measurable threshold]
-3. **[Criterion 3]**: [Specific requirement with measurable threshold]
+@./docs/templates/shared/metadata-schema.md#success_metrics_template
 
 ## Validation Process
+@./docs/templates/shared/phase-structures.md#validation_testing_phase
 
-### Phase 1: Pre-validation Setup
-- [Setup step 1 with specific configuration]
-- [Setup step 2 with environment preparation]
-- [Setup step 3 with baseline establishment]
-
-### Phase 2: Core Validation Execution
-- [Validation execution step 1 with measurement]
-- [Validation execution step 2 with data collection]
-- [Validation execution step 3 with result analysis]
-
-### Phase 3: Result Analysis and Interpretation
-- [Analysis step 1 with threshold comparison]
-- [Analysis step 2 with trend evaluation]
-- [Analysis step 3 with compliance assessment]
-
-### Phase 4: Post-validation Actions
-- [Reporting step 1 with status communication]
-- [Reporting step 2 with evidence documentation]
-- [Reporting step 3 with follow-up planning]
-
-## Success Metrics
-- **[Metric 1]**: [≥/≤][value] [unit] for validation success
-- **[Metric 2]**: [≥/≤][value] [unit] for validation success
-- **Overall Compliance**: [≥/≤][value]% for validation pass
-
-## Failure Handling
-- **Detection**: [How failures are identified with specific indicators]
-- **Classification**: [How failures are categorized by severity]
-- **Response**: [What happens when validation fails with action steps]
-- **Recovery**: [How to remediate failures with specific procedures]
-
-## Automation Integration
-```bash
-# Automated validation execution
-./scripts/validation/[validation-name].sh --target=[target] --threshold=[value]
-
-# Continuous monitoring integration
-./scripts/monitoring/continuous-validation.sh --validation=[name] --frequency=[interval]
-```
+@./docs/templates/shared/metadata-schema.md#code_block_standards
 
 ---
-
-**Validation Authority**: [Responsible team/person]
-**Execution Frequency**: [Schedule]
-**Last Updated**: [Date]
+@./docs/templates/shared/metadata-schema.md#document_status_schema
 ```
 
 ### 2. Compliance Validation Template
 ```markdown
 # [Standard/Requirement Name] Compliance Validation
 
+@./docs/templates/shared/metadata-schema.md#ownership_schema
+@./docs/templates/shared/metadata-schema.md#versioning_schema
+
 ## Purpose
 Verify adherence to [specific standard/requirement] with automated checking and reporting
 
-## Compliance Areas
-- **Standard Adherence**: [Specific standards being validated]
-- **Process Compliance**: [Process requirements being checked]
-- **Documentation Currency**: [Documentation standards verification]
-- **Cross-Reference Integrity**: [Link and reference validation]
+@./docs/templates/shared/metadata-schema.md#compliance_framework
 
-## Validation Methods
+@./docs/templates/shared/phase-structures.md#validation_testing_phase
 
-### Automated Compliance Checking
-```bash
-# Standard adherence validation
-./scripts/compliance/check-standards.sh --standard=[name] --scope=[area]
-
-# Process compliance verification
-./scripts/compliance/verify-processes.sh --process=[name] --coverage=full
-
-# Documentation currency check
-./scripts/compliance/doc-currency.sh --threshold=90 --update-required
-```
-
-### Manual Review Protocols
-1. **[Review Area 1]**: [Manual inspection requirements and criteria]
-2. **[Review Area 2]**: [Manual verification steps and expected outcomes]
-3. **[Review Area 3]**: [Manual validation process and documentation]
-
-### Cross-Reference Verification
-- **Link Validation**: Check ≥95% link accuracy across all documentation
-- **Reference Integrity**: Verify cross-references point to valid, current content
-- **Navigation Testing**: Ensure ≤3 cognitive steps to any referenced information
-
-## Compliance Metrics
-- **Standard adherence**: ≥95% compliance rate
-- **Process compliance**: 100% for critical processes
-- **Documentation currency**: ≥90% up-to-date status
-- **Cross-reference accuracy**: ≥95% valid links
-
-## Non-Compliance Response
-### Critical Non-Compliance (Immediate Action Required)
-1. **Immediate halt** of affected processes
-2. **Emergency correction** protocol activation
-3. **Stakeholder notification** within 15 minutes
-4. **Root cause analysis** and corrective action plan
-
-### Minor Non-Compliance (Scheduled Correction)
-1. **Documentation** of non-compliance issue
-2. **Correction planning** with timeline
-3. **Progress tracking** until resolution
-4. **Verification** of correction effectiveness
+@./docs/templates/shared/metadata-schema.md#code_block_standards
 
 ---
-
-**Compliance Standard**: [Standard name and version]
-**Audit Frequency**: [Schedule]
-**Next Review**: [Date]
+@./docs/templates/shared/metadata-schema.md#document_status_schema
 ```
 
 ### 3. Performance Validation Template
@@ -309,53 +231,44 @@ curl -X GET "[api-endpoint]" -H "Authorization: Bearer [token]" | jq '.'
 
 ## Implementation Guidelines
 
+@./docs/templates/shared/composition-framework.md#template_creation_process
+
 ### Choosing the Right Template
-1. **System Validation**: Component functionality and integrity testing
-2. **Compliance Validation**: Standards adherence and regulatory compliance
-3. **Performance Validation**: Speed, efficiency, and scalability testing
-4. **Integration Validation**: System interoperability and data flow testing
+1. **System Validation**: Use validation-base + performance monitoring mixin
+2. **Compliance Validation**: Use validation-base + P55/P56 compliance mixin
+3. **Performance Validation**: Use validation-base + performance monitoring mixin
+4. **Integration Validation**: Use validation-base + integration patterns mixin
 
-### Validation Design Principles
-- **Completeness**: All critical aspects covered with measurable criteria
-- **Accuracy**: Validation results reflect actual system state
-- **Reliability**: Consistent results across multiple executions
-- **Efficiency**: Minimal resource impact during validation execution
-- **Automation**: Maximum automation with manual override capabilities
+### Template Composition Process
+```markdown
+# Example: Creating Compliance Validation Template
 
-### Success Criteria Standards
-- **Threshold Definition**: Clear, measurable success/failure criteria
-- **Baseline Establishment**: Historical performance and compliance baselines
-- **Trend Analysis**: Performance over time with improvement tracking
-- **Exception Handling**: Clear procedures for validation failures
+<!-- Base structure -->
+@./docs/templates/shared/validation-base.md
 
-## Validation Integration Patterns
+<!-- Add compliance capabilities -->
+@./docs/templates/mixins/template-mixins.md#p55_p56_mathematical_compliance_mixin
 
-### Continuous Validation
-- **Frequency**: Real-time or near real-time monitoring
-- **Triggers**: System events, data changes, threshold violations
-- **Automation**: Fully automated with intelligent alerting
-- **Response**: Immediate notification and automated corrective action
+<!-- Use validation phases -->
+@./docs/templates/shared/phase-structures.md#validation_testing_phase
+```
 
-### Scheduled Validation
-- **Frequency**: Regular intervals (hourly, daily, weekly)
-- **Scope**: Comprehensive system validation with full coverage
-- **Automation**: Automated execution with detailed reporting
-- **Response**: Scheduled review and planned remediation
-
-### On-Demand Validation
-- **Triggers**: Manual initiation, incident response, deployment verification
-- **Scope**: Targeted validation of specific components or functions
-- **Execution**: Manual or automated based on validation requirements
-- **Response**: Immediate results with actionable recommendations
+@./docs/templates/shared/composition-framework.md#validation_design_principles
+@./docs/templates/shared/composition-framework.md#quality_standards
 
 ## Cross-References
+- [Shared Components](./shared/) - Core template building blocks
+- [Template Mixins](./mixins/template-mixins.md) - Composable feature enhancements
 - [Command Templates](./01-command-templates.md) - For validation command structure
 - [Documentation Templates](./02-documentation-templates.md) - For validation documentation
-- [Integration Templates](./04-integration-templates.md) - For system integration validation
+- [Composition Framework](./shared/composition-framework.md) - Template assembly guidelines
 
 ---
 
+@./docs/templates/shared/metadata-schema.md#document_status_schema
+
 **Template Category**: Validation and testing templates
-**Consolidation**: 1 template → 4 variants (System, Compliance, Performance, Integration)
+**Evolution**: DRY violations eliminated through shared component system
+**Composition**: Base templates + mixins + shared components = modular validation
 **Usage**: All validation activities in ce-simple system
-**Authority**: Unified validation template system
+**Authority**: Unified validation template system with composition framework

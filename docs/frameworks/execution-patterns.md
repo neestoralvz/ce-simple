@@ -267,6 +267,69 @@ Maintain quality throughout execution:
 - System learns from execution patterns for enhanced future performance
 - Continuous methodology improvement through pattern capture
 
+## Phase 5 Command Routing Patterns
+
+### Embedded Intelligence Architecture
+Revolutionary distributed decision-making architecture eliminating single points of failure while maintaining mathematical precision across 76-command system:
+
+**Core Implementation Pattern**
+- **Embedded Routing Logic**: Each command contains intelligent routing decisions based on execution outcomes and context analysis
+- **Mathematical Decision Frameworks**: 4-decimal precision thresholds for consistent, measurable routing decisions (≥85% pattern recognition, ≥90% element identification)
+- **Category-Aware Flow**: Discovery→Analysis→Execution→Validation routing with adaptive complexity assessment
+- **Context Preservation**: Complete execution state maintenance during intelligent handoffs
+
+**Routing Decision Matrix**
+- **High Complexity (≥7.0000)**: Route to `/agent-orchestration` for parallel coordination and advanced resource management
+- **Medium Complexity (4.0000-6.9999)**: Route to `/think-layers` for progressive analysis and layered solutions
+- **Analysis Required (≥5.5000)**: Route to `/complexity-assess` for technical evaluation and assessment methodology
+- **Discovery Focus (≥6.0000)**: Route to `/explore-codebase` for internal project analysis and documentation gaps
+
+### Progressive Disclosure Methodology
+Systematic approach for optimizing oversized documentation while preserving core functionality:
+
+**Implementation Strategy**
+- **Content Analysis**: Systematic examination of information density and functional necessity
+- **Core Extraction**: Identify essential functionality and preserve in main command structure
+- **Reference Integration**: Extract detailed content to supporting documentation with import footer linking
+- **Validation Testing**: Ensure 95%+ functionality preservation with ≤150 line compliance
+
+**Success Metrics**
+- **phase-manager.md**: 614→151 lines (75% reduction) while maintaining TodoWrite orchestration functionality
+- **System-wide Application**: 4 commands optimized using progressive disclosure with full functionality preservation
+- **Quality Maintenance**: All optimized commands maintain natural language standards and self-containment principles
+
+### Import Footer Documentation Pattern
+Unified documentation linking system replacing generic footers across 76 commands:
+
+**Pattern Implementation**
+```markdown
+---
+
+@./docs/core/README.md
+@./docs/core/system-principles.md
+```
+
+**Architectural Benefits**
+- **Single Source of Truth**: Consistent documentation access across all commands eliminates fragmentation
+- **Automatic Propagation**: Updates to core documentation automatically available to all commands
+- **Consistency Automation**: Eliminates manual documentation drift and reference inconsistencies
+- **Load Reduction**: Reduces command size while improving documentation accessibility
+
+### 4-Wave Deployment Strategy
+Optimal parallel coordination approach for large-scale system modifications:
+
+**Wave Structure**
+- **Wave 1**: Discovery/Analysis Commands (01-03) - 17 commands, 3 agents
+- **Wave 2**: Execution/Git Commands (04,09) - 8 commands, 3 agents  
+- **Wave 3**: System Management (06-08,11) - 12 commands, 5 agents
+- **Wave 4**: Standards/Utils (10,14) - 12 commands, 4 agents
+
+**Coordination Principles**
+- **≤20% Coordination Overhead**: Maximum coordination cost maintaining 80%+ efficiency
+- **Parallel Processing**: 3-5 agents per wave with mathematical load balancing
+- **Quality Gates**: Each wave validates completion before next wave initiation
+- **Rollback Capability**: Wave-level rollback for systematic error recovery
+
 ---
 
 **Pattern Philosophy**: Universal execution patterns enable consistent, optimized implementation across all workflow types while maintaining quality, safety, and performance through intelligent parallel orchestration.
