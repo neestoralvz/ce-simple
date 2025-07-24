@@ -1,124 +1,67 @@
 # Core Architecture - ce-simple
 
-**Last Updated: 2025-07-23**
+**Updated**: 2025-07-24 | **Navigation**: [System Hub](../navigation/index.md) | **Limit**: 80 lines
+**Purpose**: Central architecture overview with references to technical authorities
 
-## Purpose
+## Architecture Foundation (Lines 5-25)
+**Complete PTS Framework**: @docs/technical/pts-framework-technical.md:1-80
+**Agent Deployment Patterns**: @docs/technical/agent-deployment-technical.md:1-80
+**Markdown Compliance**: @docs/technical/markdown-compliance-technical.md:1-80
+**Context Economy**: @docs/technical/context-economy-framework.md:1-80
+**Git Protocols**: @docs/technical/git-protocols-technical.md:1-80
 
-Core system documentation for ce-simple command architecture implementing PTS (Pragmatic Technical Simplicity) framework with specialized agent coordination and parallel execution capabilities.
+### Core System Elements
+- **PTS Foundation**: 12-component validation framework (blocking enforcement)
+- **Agent Coordination**: Parallel execution with specialized agent types
+- **Quality Gates**: Automated compliance + line limits + English-only
+- **Authority Hierarchy**: docs/vision/ → CLAUDE_RULES → docs/core/ → Navigation
 
-## Architecture Overview
+### Command Development Standards
+**PTS Compliance**: @docs/technical/pts-framework-technical.md:76-80
+**File Limits**: @docs/technical/markdown-compliance-technical.md:5-20
+**Agent Deployment**: @docs/technical/agent-deployment-technical.md:21-40
 
-### Foundation: PTS Framework
-- **12-Component Validation**: Technical, Communication, Cognitive clusters
-- **Blocking Enforcement**: Development stops when PTS compliance fails
-- **Authority Hierarchy**: CLAUDE_RULES.md → PTS Framework → System Implementation
+## Navigation Hub (Lines 26-50)
+### Framework Files (Local Access)
+- **[pts-framework.md](pts-framework.md)** - Navigation hub + technical references
+- **[pts-checklist.md](pts-checklist.md)** - Development validation checklist  
+- **[development-principles.md](development-principles.md)** - 33-principle hierarchy
+- **[decision-navigation-system.md](decision-navigation-system.md)** - Decision trees
+- **[command-index.md](command-index.md)** - Available commands reference
 
-### Specialized Agent Strategy
-- **Analysis Agents**: Domain experts (frontend, backend, research, security)
-- **Operations Agents**: Mass execution (file creation, CLI automation)  
-- **Synthesis Agent**: Content consolidation following writing standards
-- **Validation Guardian**: PTS compliance and quality assurance
+### Implementation Resources
+- **[Templates](../templates/)** - Reusable command patterns + cognitive load guidelines
+- **[Frameworks](../frameworks/)** - Validation systems + composition patterns
+- **[Standards](../standards/)** - Context compaction + import methodologies
+- **[Validation](../validation/)** - Quality gates + compliance checklists
+- **[Vision](../vision/overview.md)** - System philosophy + technical direction
 
-### Task Tool Communication
-- **10-Agent Parallel Limit**: Claude Code maximum concurrent sub-agents
-- **Wave-Based Deployment**: Batch coordination (Analysis → Operations → Validation)
-- **One-Way Communication**: Sub-agents return only final results
-- **Context Isolation**: Sub-agents operate in separate contexts
+### Specialized Areas
+- **[Rules](../rules/)** - Governance protocols + development standards
+- **[Patterns](../patterns/)** - Task tool communication + error resolution
+- **[Implementation](../implementation/)** - Practical guides + refactoring approaches
+- **[Governance](../governance/)** - Decision frameworks + architecture records
 
-## Command Development Standards
+## Development Workflow (Lines 51-75)
+### Pre-Development Phase
+**PTS Pre-validation**: @docs/technical/pts-framework-technical.md:76-80
+**Agent Strategy Planning**: @docs/technical/agent-deployment-technical.md:41-60
+**Context Budget Check**: @docs/technical/context-economy-framework.md:21-40
 
-### PTS Compliance Requirements
-```bash
-# Pre-development validation (2 minutes)
-- [ ] Clear purpose in 30 seconds?
-- [ ] Single responsibility only?
-- [ ] Simplest solution that works?
-- [ ] Works without configuration?
+### Development Execution
+**Wave-Based Deployment**: @docs/technical/agent-deployment-technical.md:21-40
+**Quality Gate Enforcement**: @docs/technical/markdown-compliance-technical.md:66-80
+**Real-time PTS Validation**: Apply 12-component checklist continuously
 
-# Deployment gates
-- [ ] ≤150 lines (commands), ≤200 lines (docs)
-- [ ] English-only content
-- [ ] 12/12 PTS components pass
-- [ ] Self-contained operation
-```
+### Deployment Validation
+**Complete PTS Assessment**: @docs/technical/pts-framework-technical.md:1-80
+**Integration Testing**: Verify agent coordination + system functionality
+**Documentation Updates**: Maintain reference accuracy + system currency
 
-### Quality Gates
-- **Length Limits**: 150 lines commands, 200 lines documentation (blocking)
-- **Complexity Scoring**: Normalized complexity with objective thresholds
-- **Marketing Language**: Zero tolerance (blocking violation)
-- **PTS Validation**: Automated 12-component checking
-
-## Document Organization
-
-### Core Framework Files
-- **[pts-framework.md](pts-framework.md)** - Complete 12-component PTS specification
-- **[pts-checklist.md](pts-checklist.md)** - Development validation checklist
-- **[development-principles.md](development-principles.md)** - 33-principle hierarchy (6 tiers)
-
-### Implementation Guidance
-- **[../templates/foundation-command-patterns.md](../templates/foundation-command-patterns.md)** - Proven command templates
-- **[../frameworks/](../frameworks/)** - Validation and quality frameworks
-- **[../vision/overview.md](../vision/overview.md)** - System philosophy and technical direction
-
-## Agent Coordination Patterns
-
-### Wave-Based Deployment
-```yaml
-Wave 1 - Analysis (2-3 agents):
-  - Domain expert agents for technical assessment
-  - Research agents for external information gathering
-  - Context analysis agents for requirement understanding
-
-Wave 2 - Operations (4-6 agents):
-  - File creation and modification agents
-  - CLI tool execution agents  
-  - Configuration and setup agents
-
-Wave 3 - Validation (1-2 agents):
-  - PTS compliance validation agent
-  - Quality assurance and integration testing agent
-```
-
-### Communication Protocols
-- **Explicit Orchestration**: Detailed delegation instructions (like multi-threading)
-- **Result Aggregation**: Main agent synthesizes sub-agent outputs
-- **Error Isolation**: Sub-agent failures contained within their context
-- **State Management**: Main agent maintains workflow state
-
-## Implementation Checklist
-
-### Before Development
-1. **PTS Pre-validation**: 2-minute essential criteria check
-2. **Agent Strategy**: Determine if parallel agents needed
-3. **Tool Selection**: Choose appropriate Claude Code tools
-4. **Wave Planning**: Design agent deployment sequence
-
-### During Development  
-1. **Real-time Validation**: Apply PTS checklist continuously
-2. **Length Monitoring**: Track line count against limits
-3. **Quality Gates**: Check compliance before proceeding
-4. **Agent Coordination**: Manage parallel execution effectively
-
-### Before Deployment
-1. **Complete PTS Validation**: Full 12-component assessment
-2. **Integration Testing**: Verify agent coordination works
-3. **Documentation Updates**: Ensure all references current
-4. **Pattern Capture**: Save successful patterns for reuse
-
-## Success Metrics
-
-### Development Quality
-- **PTS Compliance**: 12/12 components pass (blocking requirement)
-- **Execution Speed**: Optimized for 10-agent parallel coordination
-- **Token Efficiency**: Minimal context consumption, maximum value
-- **User Experience**: ≤30 seconds to understand component purpose
-
-### Agent Effectiveness
-- **Wave Coordination**: Smooth transition between agent batches
-- **Result Quality**: High-quality output from parallel execution
-- **Error Recovery**: Graceful handling of sub-agent failures
-- **Pattern Reuse**: Successful patterns documented and reused
+## Success Metrics (Lines 76-80)
+- **PTS Compliance**: 12/12 components pass (blocking) | **File Limits**: 100% ≤80 lines
+- **Agent Effectiveness**: Parallel coordination + quality output | **Context Economy**: Optimal token efficiency
+- **Navigation Excellence**: ≤3 clicks any content | **Reference Integrity**: 100% functional links
 
 ---
-
-**Core Principle**: Simple commands with clear responsibilities that coordinate through intelligent parallel execution to achieve complex workflows while maintaining PTS compliance and token efficiency.
+**Core Principle**: Simple commands with intelligent parallel execution achieving complex workflows via PTS-compliant reference architecture.

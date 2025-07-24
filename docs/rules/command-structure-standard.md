@@ -1,195 +1,91 @@
 # Command Structure Standard
 
-## Purpose
-Define executable command structure for Claude Code using simple, direct instructions with maximum clarity and immediate actionability.
+**Updated**: 2025-07-24 12:54 (Mexico City)  
+**Authority**: Core Development Framework
 
-## Core Requirements
+## 4-Section Command Architecture
 
-### Structure Pattern
-All commands follow 4-section structure:
-1. **Purpose** - Single responsibility statement
-2. **Principles** - 4 execution guidelines  
-3. **Execution Process** - 5-phase workflow
-4. **Core Import Footer** - Automatic architectural context loading
+**Template**: Purpose(3-5L) | Principles(8-12L) | Execution(120-130L) | Footer(2-3L) = ≤150L total
 
-### Length Limits
-- Total command: ≤150 lines
-- Purpose: 1 paragraph (3-5 lines)
-- Principles: 4 bullets (8-12 lines)
-- Execution: 5 phases (120-130 lines)
-- Core Import Footer: 2-3 lines
+1. **Purpose**: "Executes [function] through [method] providing [outcome] with [criteria]"
+2. **Principles**: Single Responsibility | Granular Execution | Resource Management | Error Recovery
+3. **Execution**: 5-Phase TodoWrite pattern with Phase 5 routing/handoff (MANDATORY)
+4. **Footer**: @./docs/core/README.md architectural context links
 
 ## Writing Standards
 
-### Word Economy
-- ≤15 words per instruction
-- Action verbs only: Execute, Create, Deploy, Monitor, Validate
-- Remove: "should", "might", "perhaps", "comprehensive", "utilize"
-- Essential words only, no fluff
+**Word Economy**: ≤15 words/instruction | Action verbs only | Remove: should/might/perhaps/utilize
+**Natural Language**: "Search TypeScript files" ✓ | `Grep('*.ts')` ✗ | Direct instructions only
+**Anti-Patterns**: No code syntax | tool syntax | meta-commentary | theoretical explanations
 
-### Natural Language Instructions
+## 5-Phase Execution Template
+
+### Phases 1-4: Standard Task Execution
 ```
-GOOD: "Search TypeScript files for function definitions"
-BAD: "Use Grep tool with pattern to locate function declarations"
-
-GOOD: "Mark task as in_progress using TodoWrite" 
-BAD: "TodoWrite([{"status": "in_progress"}])"
-
-GOOD: "Analyze current context and recommend next command"
-BAD: "Execute context analysis algorithm to determine optimal routing"
+Phase N: [Descriptive Name]
+1. TodoWrite: Mark Phase N as in_progress
+2. Execute: [Specific verb] [object] [criteria]
+3. Use [Tool]: [parameters] → [expected outcome]
+4. Validate: [success criteria]
+5. TodoWrite: Mark Phase N complete, mark Phase N+1 pending
 ```
 
-### Anti-Patterns
-Never include:
-- Programming syntax or code blocks
-- Tool syntax: `Grep('*.ts')` → "Search TypeScript files"
-- Meta-commentary: "This phase will..." → Direct instruction
-- Theoretical explanations → Executable actions only
-
-## Section Templates
-
-### Purpose Template
+### Phase 5: Routing/Handoff (MANDATORY)
 ```
-Executes [primary function] through [method] providing [outcome] with [quality criteria].
-```
-
-### Principles Template
-```
-- **Single Responsibility**: Focus on [primary task] without [excluded areas]
-- **Granular Approach**: Break [process] into manageable [units] with clear [criteria]
-- **Resource Management**: Handle [dependencies] with explicit [requirements]
-- **Error Recovery**: Built-in [failure handling] and recovery protocols
-```
-
-### Phase Template
-```
-### Phase N: [Phase Name]
-Mark "[specific task]" as in_progress using TodoWrite
-
-Execute [task group]:
-- [Action verb] [specific object] [outcome criteria]
-- [Action verb] [specific object] [validation step]
-- [Action verb] [specific object] [documentation step]
-
-Use [Tool] to [specific action]:
-- [Parameter 1] for [specific purpose]
-- [Parameter 2] with [validation criteria]
-
-Complete current phase, mark "[next phase]" as in_progress using TodoWrite
-```
-
-### Error Handling Pattern
-```
-If [specific condition]:
-- Add TodoWrite task: "Resolve [error type]: [specific issue]"
-- [Specific recovery action]
-- [Validation step]
-- [Continue instruction]
-```
-
-## Phase 5: Command Routing and Handoff
-
-### Mandatory Elements
-All commands must include Phase 5 with:
-- **Context Analysis**: Assess current state and achievements
-- **Next Command Recommendations**: Suggest logical follow-up commands
-- **Handoff Protocol**: Provide clear transition message
-
-### Phase 5 Template
-```
-### Phase 5: Command Routing and Handoff
-Mark "Command routing and handoff" as in_progress using TodoWrite
-
-Analyze current context:
-- Review [completed objectives] and [key outcomes]
-- Identify [remaining requirements] or [next logical steps]
-- Assess [system state] and [available resources]
-
-Recommend next commands:
-- [Command category/name]: [Specific use case scenario]
-- [Command category/name]: [Alternative workflow option]
-- [Command category/name]: [Advanced capability need]
-
-Provide handoff message:
-"[Summary of completion] - Ready for [next phase] via [recommended command]"
-
-Complete all tasks using TodoWrite
+Phase 5: Analysis and Routing
+1. TodoWrite: Mark Phase 5 in_progress
+2. Analyze: Current context and completed achievements
+3. Review: Overall success against original objectives
+4. Identify: Next logical steps in workflow progression
+5. Recommend: 2-3 specific commands for continuation
+6. Handoff: Prepare transition message with context summary
+7. TodoWrite: Mark Phase 5 complete
 ```
 
 ## Tool Integration
 
-### TodoWrite Requirements
-Must appear at:
-- Phase start: Mark new phase as in_progress
-- Phase end: Complete current, mark next as in_progress  
-- Phase 5: Context analysis, recommendations, and completion
-- Errors: Add specific resolution tasks
+**TodoWrite Points**: Phase start | Phase end | Phase 5 complete | Error tasks
+**Tool Pattern**: Use [Tool] to [action]: [parameters] → [outcome] with [validation]
 
-### Tool Usage Pattern
-```
-Use [ToolName] to [action]:
-- [Specific parameter] achieving [outcome]
-- [Validation criteria] ensuring [quality]
-```
+**Examples**:
+✓ Use Grep to search TypeScript files: pattern="interface" → List interface definitions
+✓ Use Read to examine configuration: file="/path/config.json" → Extract settings
+✗ Utilize the Grep functionality to search for patterns
 
-## Quality Gates
+## Quality Validation
 
 ### Structure Compliance
-- [ ] 4 sections present and properly formatted
-- [ ] ≤150 lines total length
-- [ ] Single responsibility clearly defined
-- [ ] 5-phase execution with TodoWrite integration
-- [ ] Phase 5 routing and handoff included
+- [ ] 4 sections | ≤150L total | Single responsibility | 5-phase execution | Phase 5 routing
 
-### Writing Compliance  
-- [ ] ≤15 words per instruction
-- [ ] Action verbs used throughout
-- [ ] No programming syntax or meta-commentary
-- [ ] Natural language instructions only
+### Writing Quality  
+- [ ] ≤15 words/instruction | Action verbs only | Natural language | No meta-commentary
 
-### Execution Compliance
-- [ ] Immediately actionable instructions
-- [ ] Clear validation criteria per step
-- [ ] Error handling integrated within phases
-- [ ] Tool usage explicit with parameters
+### Execution Readiness
+- [ ] TodoWrite integration | Tool parameter→outcome pattern | Error recovery | Command recommendations
 
-## Validation Checklist
+## Error Recovery
 
-**Structure**:
-- Purpose defines single responsibility
-- 4 principles follow template pattern
-- 5 execution phases with TodoWrite
-- Phase 5 includes routing and handoff
-- Core Import Footer provides automatic architectural context
+**Pattern**: If [condition] → TodoWrite: "Resolve [error]" → Recovery action → Validate → Continue
 
-**Writing**:
-- Instructions use ≤15 words
-- Action verbs throughout
-- No code syntax or theoretical explanations
-- Natural language tool usage
+**Scenarios**: Tool failure (retry with alternative) | Dependency missing (add resolution task) | Validation failure (create debugging task) | Context loss (add recovery task)
 
-**Execution**:
-- Each instruction immediately executable
-- Validation built into every step
-- Error recovery protocols included
-- Tool calls explicit with outcomes
+## Command Template
 
-## Core Import Footer
-
-### Template
 ```
----
+# [Command Name]
 
-@./docs/core/README.md
-@./docs/core/system-principles.md
+Executes [function] through [method] providing [outcome] with [criteria].
+
+## Principles
+Single Responsibility: [task] without [exclusions] | Granular: [process]→[units] | Resource: [deps] with [reqs] | Error: [validation] and recovery
+
+## Execution
+[5-phase workflow with TodoWrite integration including mandatory Phase 5 routing]
+
+## Footer
+@./docs/core/README.md - Complete architectural context
 ```
-
-### Purpose
-Automatic loading of architectural foundation ensuring:
-- **Compliance Automation**: Core principles automatically available
-- **Educational Integration**: System architecture context in every command
-- **Consistency Enforcement**: Unified foundation across all interactions
 
 ---
 
-**All commands follow simple, direct structure using natural language instructions for immediate Claude Code execution success.**
+**Core Standard**: Commands use natural language instructions with TodoWrite orchestration for reliable, trackable execution across all development workflows.

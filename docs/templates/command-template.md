@@ -69,5 +69,5 @@ If [specific error] occurs:
 **Output**: [What command produces - specific deliverables]
 
 **Authority References**:
-@./docs/core/development-principles.md
-@./docs/vision/overview.md
+- [Development Principles](../core/development-principles.md) - UltraThink x4 + PTS compliance
+- [System Vision](../vision/overview.md) - Core objectives and direction

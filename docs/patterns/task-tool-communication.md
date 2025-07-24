@@ -1,110 +1,69 @@
 # Task Tool Communication Patterns
 
-**Pattern Type**: Technology/Workflow
-**Status**: Active
-**Complexity**: Moderate
+**Updated**: 2025-07-24 | **Pattern Type**: Technology/Workflow | **Status**: Active | **Limit**: 80 lines
+**Purpose**: Agent coordination patterns and communication protocols
 
-## Overview
+## Technical Authority References (Lines 5-20)
+**Complete Agent Deployment Framework**: @docs/technical/agent-deployment-technical.md:1-80
+**Parallel Execution Patterns**: @docs/technical/agent-deployment-technical.md:21-40
+**Specialization Framework**: @docs/technical/agent-deployment-technical.md:41-60
+**Best Practices**: @docs/technical/agent-deployment-technical.md:61-80
 
-Communication protocols and coordination strategies for Claude Code Task Tool parallel execution, including 10-agent coordination, wave-based deployment, and result synthesis patterns.
-
-## Context
-
-Applies when:
-- Complex workflows require parallel execution
-- Multiple independent operations can be parallelized
-- Coordination between multiple sub-agents is needed
+## Pattern Application Context (Lines 21-35)
+### When to Apply
+- Complex workflows requiring parallel execution
+- Multiple independent operations can be parallelized  
+- Coordination between multiple sub-agents needed
 - Large-scale operations benefit from distributed processing
 
-## Implementation
+### Core Patterns
+- **10-Agent Coordination**: @docs/technical/agent-deployment-technical.md:21-40
+- **Wave-Based Deployment**: @docs/technical/agent-deployment-technical.md:21-40
+- **Communication Protocols**: @docs/technical/agent-deployment-technical.md:41-60
+- **Result Synthesis**: @docs/technical/agent-deployment-technical.md:61-80
 
-### 10-Agent Parallel Coordination
-```markdown
-# Deploy up to 10 simultaneous Task Tools for:
-- Independent file operations (reads, writes, analysis)
-- Parallel CLI tool execution
-- Simultaneous research and data gathering
-- Mass creation operations (multiple files/configs)
+### Deployment Strategies
+**Analysis Wave**: Domain experts + research + context assessment (2-3 agents)
+**Operations Wave**: File ops + CLI execution + configuration (4-6 agents) 
+**Validation Wave**: Quality assurance + integration testing (1-2 agents)
 
-# Queue Management: 
-- Tasks beyond 10-agent limit automatically queue
-- Batch processing for operations requiring >10 agents
-```
+## Implementation Patterns (Lines 36-55)
+### Communication Architecture
+- **Explicit Orchestration**: Detailed delegation instructions (multi-threading pattern)
+- **One-Way Communication**: Sub-agents return final results only
+- **Context Isolation**: Sub-agents operate in separate contexts  
+- **Result Aggregation**: Main agent synthesizes all outputs
 
-### Wave-Based Deployment Strategy
-```yaml
-Wave 1 - Analysis (2-3 agents):
-  - Domain expert analysis
-  - Research and external data gathering
-  - Context and requirement assessment
-
-Wave 2 - Operations (4-6 agents):
-  - File creation and modification
-  - CLI tool execution
-  - Configuration and setup tasks
-
-Wave 3 - Validation (1-2 agents):
-  - Quality assurance and compliance checking
-  - Integration testing and error detection
-```
-
-### Communication Protocols
-- **Explicit Orchestration**: Detailed delegation instructions (like multi-threading programming)
-- **One-Way Communication**: Sub-agents return only final results to main agent
-- **Context Isolation**: Sub-agents operate in separate context windows
-- **Result Aggregation**: Main agent synthesizes outputs from all sub-agents
-
-## Evolution Log
-
-### 2025-07-23 15:45 - Initial Discovery
-Identified Task Tool parallel execution capabilities through Anthropic documentation research. Confirmed 10-agent limit with automatic queueing for additional tasks.
-
-### 2025-07-23 16:20 - Wave Strategy Integration
-Added wave-based deployment pattern as alternative to pure parallel execution. Recognized that some workflows benefit from sequential waves with dependencies rather than full parallelization.
-
-### 2025-07-23 16:35 - Communication Protocol Clarification
-Documented one-way communication limitation and context isolation characteristics. Identified need for explicit orchestration similar to multi-threading programming patterns.
-
-## Related Patterns
-
-- [Error Resolution Workflow](error-resolution-workflow.md) - Uses Task Tools for systematic debugging
-- [Agent Coordination Strategies](../workflows/agent-coordination.md) - General coordination principles
-- [Quality Assurance Patterns](../workflows/quality-assurance.md) - Validation wave integration
-
-## Success Metrics
-
-### Performance Indicators
-- **Execution Time Reduction**: ≥50% improvement over sequential execution
-- **Task Completion Rate**: ≥95% successful sub-agent task completion
-- **Coordination Efficiency**: <10% overhead for agent coordination
-
-### Quality Measures
-- **Result Synthesis Quality**: Clear, coherent integration of sub-agent outputs
-- **Error Isolation Effectiveness**: Sub-agent failures don't cascade to other agents
-- **Context Preservation**: Main agent maintains workflow state effectively
-
-### Usage Patterns
-- **Parallel vs Wave Decision**: Clear criteria for choosing execution strategy
-- **Agent Load Balancing**: Optimal distribution of work across available agents
-- **Tool Selection Optimization**: Best tool choices for specific operation types
-
-## Best Practices Discovered
-
-### Optimal Task Distribution
+### Task Distribution Optimization
 - **Group Related Operations**: Batch similar tasks for efficiency
-- **Balance Complexity**: Distribute complex and simple tasks across agents
+- **Balance Complexity**: Distribute complex/simple tasks across agents
 - **Consider Dependencies**: Use waves when output dependencies exist
+- **Token Efficiency**: Design tasks minimizing context consumption
 
-### Error Handling Strategies
-- **Graceful Degradation**: Continue with available results when sub-agents fail
+### Error Handling Protocols
+- **Graceful Degradation**: Continue with available results on failures
+- **Error Isolation**: Sub-agent failures contained within their context
 - **Retry Mechanisms**: Automated retry for transient failures
-- **Escalation Protocols**: Clear escalation when multiple agents fail
+- **Escalation Protocols**: Clear escalation for multiple agent failures
 
-### Context Management
-- **Token Efficiency**: Design tasks to minimize context consumption
-- **State Preservation**: Maintain workflow state in main agent
-- **Result Compression**: Efficiently compress sub-agent outputs for integration
+## Success Metrics & Evolution (Lines 56-80)
+### Performance Targets
+- **Execution Time**: ≥50% improvement over sequential | **Completion Rate**: ≥95% successful tasks
+- **Coordination Overhead**: <10% agent coordination cost | **Context Efficiency**: Optimal token usage
+
+### Quality Indicators  
+- **Result Synthesis**: Clear, coherent sub-agent output integration
+- **Error Isolation**: No failure cascades between agents
+- **State Preservation**: Main agent maintains workflow state effectively
+
+### Pattern Network
+- **Error Resolution**: [error-resolution-workflow.md](error-resolution-workflow.md) - Task Tool debugging
+- **Agent Coordination**: [../workflows/agent-coordination.md](../workflows/agent-coordination.md) - General principles
+- **Quality Assurance**: [../frameworks/stp-validation-framework.md](../frameworks/stp-validation-framework.md) - Validation integration
+
+### Evolution Log
+- **2025-07-23**: Initial 10-agent parallel discovery + wave strategy integration
+- **2025-07-24**: Authority consolidation + reference architecture implementation
 
 ---
-
-**Application Note**: This pattern is fundamental to ce-simple's agent coordination strategy and should be referenced when designing any complex workflow requiring parallel execution or multi-agent coordination.
+**Application Authority**: This pattern references technical authority for agent deployment while providing application-specific coordination strategies.

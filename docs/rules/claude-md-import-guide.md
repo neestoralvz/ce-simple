@@ -1,34 +1,30 @@
 # CLAUDE.md Import Strategies Guide
 
-**Purpose**: Comprehensive guide for implementing @ import strategies in CLAUDE.md files for maximum efficiency and context utilization.
+**Purpose**: Comprehensive @ import strategies in CLAUDE.md for maximum efficiency and context utilization in Claude Code.
 
-## Overview
+## Overview | Import Syntax Rules
 
-CLAUDE.md files support native @ import syntax that automatically includes complete file contents when Claude Code CLI starts sessions, enabling dynamic context management and eliminating duplication.
+CLAUDE.md supports @ syntax that includes complete file contents when Claude Code starts, creating dynamic context without duplication.
 
-## Import Syntax
+### Basic Syntax Examples
+- `@docs/core/project-structure.md` - Relative from CLAUDE.md location
+- `@/Users/project/docs/standards.md` - Absolute path from root
+- `@docs/nested/deep/content.md` - Full nested path support
+- All .md files are auto-processed with full content inclusion
 
-### Basic @ Import
+### Path Resolution Rules
+1. **Relative paths**: Start from CLAUDE.md directory
+2. **Absolute paths**: Start from filesystem root
+3. **Nested support**: Unlimited directory depth
+4. **Auto-extension**: .md assumed if not specified
+
+## Strategic Implementation | 3 Phases
+
+### Phase 1: Core Architecture Imports (~40 lines + complete content)
 ```markdown
-@docs/core/project-structure.md
-@docs/commands/command-index.md
-@docs/standards/command-standards.md
-```
-
-### File Path Rules
-- **Relative paths**: From CLAUDE.md location
-- **Absolute paths**: From project root
-- **Nested directories**: Full path specification required
-- **Extensions**: .md files automatically processed
-
-## Strategic Implementation
-
-### Phase 1: Core Content Imports
-```markdown
-# CLAUDE.md - Optimized with Imports
-
+# CLAUDE.md - Optimized Structure
 ## System Overview
-Brief system description (keep essential info here)
+Brief 3-5 line project summary with key objectives and approach.
 
 ## Project Structure
 @docs/core/project-structure.md
@@ -36,182 +32,210 @@ Brief system description (keep essential info here)
 ## Command System
 @docs/commands/command-index.md
 
-## Development Standards
+## Development Standards  
 @docs/standards/command-standards.md
+
+## Quality Framework
+@docs/frameworks/pts-framework.md
 ```
 
-**Result**: ~40 lines CLAUDE.md + complete imported content availability
-
-### Phase 2: Selective Content Organization
-```markdown
-# Import high-value, frequently referenced content
-@docs/core/system-principles.md    # Core architectural principles
-@docs/frameworks/execution-patterns.md # Common execution patterns
-@10-standards/template-command.md  # Command development template
-```
+### Phase 2: Selective Content Organization (High-value additions)
+- `@docs/core/system-principles.md` - Core architectural principles
+- `@docs/frameworks/execution-patterns.md` - Proven implementation patterns
+- `@export/commands/10-standards/template-command.md` - Command templates
+- `@docs/patterns/validated-approaches.md` - Successful pattern library
 
 ### Phase 3: Dynamic Content Management
-```markdown
-# Use # during sessions to add content automatically
-# Claude incorporates improvements into relevant CLAUDE.md files
-# Team benefits through git commits
+Claude automatically adds content during sessions:
+```bash
+# Session workflow
+Claude identifies missing context → Adds @import to CLAUDE.md → 
+git add CLAUDE.md → commit "docs: add import for [context]"
 ```
 
-## File Organization Strategy
+## File Organization | Import Hierarchy
 
-### Import Hierarchy
-1. **Essential Context** (Always import)
-   - Project structure
-   - Core principles  
-   - Command index
-   - Development standards
+### Essential Imports (Always Include)
+- **Structure**: Project layout, directory organization
+- **Core Principles**: Foundational development guidelines  
+- **Command Standards**: Implementation requirements and templates
+- **Quality Framework**: Validation and compliance standards
 
-2. **Functional Context** (Import as needed)
-   - Framework specifications
-   - Pattern libraries
-   - Template structures
+### Functional Imports (Context-Dependent)
+- **Execution Frameworks**: When implementing complex workflows
+- **Pattern Libraries**: When applying proven solutions
+- **Template Systems**: When creating new components
 
-3. **Reference Material** (Keep as links)
-   - Detailed implementation guides
-   - Historical documentation
-   - External resources
+### Reference Links (Not Imported)
+- **Historical Documentation**: Archived decisions and evolution
+- **External Guides**: Third-party documentation and tutorials
+- **Implementation Details**: Specific code examples and snippets
 
-### Content Distribution
-```
-CLAUDE.md (40-50 lines)
-├── @docs/core/project-structure.md     # Complete directory tree
-├── @docs/commands/command-index.md     # All command listings  
-├── @docs/standards/command-standards.md # Development requirements
-└── Brief overview and navigation
-```
+### Content Distribution Strategy
+- **CLAUDE.md**: 40-50 lines with strategic imports
+- **Imported Files**: Detailed content (50-200 lines each)
+- **Total Context**: Complete information without navigation overhead
 
-## Best Practices
+## Best Practices | Content Organization
 
-### Content Organization
-- **Single source of truth**: Define content once, import everywhere
-- **Progressive disclosure**: Core info in CLAUDE.md, details in imports
-- **Logical grouping**: Organize imports by functional area
-- **Update efficiency**: Changes in imported files automatically reflected
+### Single Source of Truth (SSOT)
+- Define content once in dedicated files
+- Import everywhere needed via @ syntax
+- Automatic updates reflect across all contexts
+- Eliminate duplication and synchronization issues
 
-### File Structure
-```markdown
-# CLAUDE.md Template with Imports
-
-**Last Updated**: [Date]
-
-## System Overview
-[Essential system description - 3-5 lines]
-
-## Project Structure  
-@docs/core/project-structure.md
-
-## Command System
-@docs/commands/command-index.md
-
-## Development Standards
-@docs/standards/command-standards.md
-
-## Quick Start
-[Essential entry points - 3-5 lines]
-
----
-**System Principle**: [Core philosophy]
-```
+### Progressive Disclosure
+- Core concepts in CLAUDE.md overview
+- Detailed implementation in imported files
+- Advanced patterns in specialized imports
+- Logical information hierarchy maintained
 
 ### Import Selection Criteria
-✅ **Include**: Frequently referenced, stable content  
-✅ **Include**: Core architectural information  
-✅ **Include**: Standards and requirements  
-❌ **Exclude**: Highly dynamic content  
-❌ **Exclude**: Implementation-specific details  
-❌ **Exclude**: Experimental documentation  
+✅ **Include**: Frequently referenced content; Core architecture decisions; Development standards; Quality frameworks; Proven patterns
 
-## Performance Optimization
+❌ **Exclude**: Dynamic session content; Implementation-specific details; Experimental approaches; Temporary documentation
 
-### Token Budget Management
-- **Before**: 196 lines with duplication
-- **After**: ~40 lines + imported content (no duplication)
-- **Benefit**: More context available within same token budget
+## Performance | Token Management Optimization
 
-### Context Quality
-- **Complete information**: All imported content available to Claude
-- **No navigation required**: User doesn't need to manually access files
-- **Consistent updates**: Changes automatically reflected in all sessions
+### Before Import Strategy
+- CLAUDE.md: 196 lines with duplicated content
+- Multiple file references requiring navigation
+- Context switching overhead for complete information
+- Redundant content across multiple files
 
-## Team Collaboration
+### After Import Strategy  
+- CLAUDE.md: ~40 lines + complete imported content
+- Immediate access to all essential information
+- Higher context density per token consumed
+- No navigation required for comprehensive understanding
 
-### Dynamic Content Addition
+### Efficiency Metrics
+- **Token Efficiency**: 3x more context per token
+- **Access Speed**: Immediate vs. multi-step navigation
+- **Information Completeness**: 100% essential content available
+- **Maintenance Overhead**: Single-point updates vs. multiple file sync
+
+## Team Collaboration | Dynamic Content Addition
+
+### Session-Based Enhancement
 ```bash
-# During Claude Code session
-# Press # to add instructions that Claude incorporates automatically
-# Example workflow:
-User: # Remember to run npm run typecheck after code changes
-Claude: Added to CLAUDE.md - team will benefit from this guideline
+# During development session
+Claude identifies knowledge gap → 
+Adds relevant @import to CLAUDE.md →
+git add CLAUDE.md →
+git commit -m "docs: add import for [specific context]"
 ```
 
-### Git Integration  
-```bash
-# Include CLAUDE.md changes in commits
-git add CLAUDE.md docs/
-git commit -m "docs: add typecheck reminder to development workflow"
-```
+### Collaboration Benefits
+- **Team Consistency**: Everyone works with same context
+- **Knowledge Capture**: Automatic documentation of discovered patterns
+- **Efficient Onboarding**: New team members get complete context immediately
+- **Context Evolution**: Documentation grows organically with project needs
 
-### Shared Context Benefits
-- **Team consistency**: All developers get same context
-- **Knowledge capture**: Best practices automatically documented
-- **Onboarding efficiency**: New team members get complete project context
-
-## Migration Strategy
-
-### From References to Imports
+### Workflow Examples
 ```markdown
-# Before (Reference)
-[Ver estructura completa →](docs/core/project-structure.md)
+# Developer A discovers pattern
+Session adds: @docs/patterns/error-handling.md
 
-# After (Import)  
-@docs/core/project-structure.md
+# Developer B encounters same scenario  
+Pattern automatically available via import
+
+# Team meeting reviews additions
+Validates and refines imported content
 ```
 
-### Validation Process
-1. **Test imports**: Verify all @ paths resolve correctly
-2. **Measure efficiency**: Compare token usage and context quality
-3. **Team feedback**: Ensure improved development experience
-4. **Iterate**: Adjust import selections based on usage patterns
+## Migration Strategy | References to Imports
 
-## Advanced Patterns
-
-### Conditional Imports (Future)
+### Current State Analysis
 ```markdown
-# Development vs Production context
-@docs/dev/debug-guidelines.md     # Development only
-@docs/prod/deployment-checklist.md # Production only
+# Before: Static references
+[Ver estructura →](docs/structure.md)
+[Command patterns →](docs/commands/)
+[Quality standards →](docs/standards/)
 ```
 
-### Hierarchical Organization
+### Target State Implementation
+```markdown  
+# After: Dynamic imports
+@docs/structure.md
+@docs/commands/patterns.md
+@docs/standards/quality.md
+```
+
+### Migration Steps
+1. **Audit Current**: Identify all reference links in CLAUDE.md
+2. **Prioritize Content**: Rank by frequency and importance of access
+3. **Convert Incrementally**: Replace references with imports in priority order
+4. **Validate Functionality**: Test import paths and content accessibility
+5. **Measure Efficiency**: Compare token usage and access patterns
+6. **Team Feedback**: Gather developer experience improvements
+7. **Iterate Optimization**: Refine based on usage patterns
+
+## Advanced Patterns | Complex Scenarios
+
+### Conditional Context Imports
 ```markdown
-# Global context
+# Development environment
+@docs/dev/debug-patterns.md
+@docs/dev/testing-frameworks.md
+
+# Production environment  
+@docs/prod/deployment-procedures.md
+@docs/prod/monitoring-standards.md
+```
+
+### Hierarchical Import Chains
+```markdown
+# Global Claude configuration
 @~/.claude/global-standards.md
 
-# Project context  
-@docs/core/project-context.md
+# Project-specific overrides
+@docs/core/project-standards.md  
 
-# Local context
+# Local development customizations
 @CLAUDE.local.md
 ```
 
+### Domain-Specific Import Sets
+```markdown
+# Frontend development
+@docs/frontend/react-patterns.md
+@docs/frontend/styling-standards.md
+
+# Backend development
+@docs/backend/api-patterns.md
+@docs/backend/database-standards.md
+```
+
+## Error Handling | Troubleshooting
+
+### Common Import Issues
+- **Path Resolution Errors**: Verify relative/absolute path accuracy
+- **Content Not Found**: Check file existence and permissions
+- **Circular Dependencies**: Avoid imports that reference each other
+- **Performance Impact**: Monitor token consumption with large imports
+
+### Debugging Strategies
+1. **Path Validation**: Test import paths in isolation
+2. **Content Verification**: Confirm imported content renders correctly
+3. **Performance Monitoring**: Track token usage before/after imports
+4. **Incremental Testing**: Add imports one at a time to identify issues
+
 ## Success Metrics
 
-### Quantitative
-- **File size reduction**: CLAUDE.md <50 lines
-- **Context completeness**: 100% essential info available
-- **Maintenance efficiency**: Single-point updates
-- **Token optimization**: More context per token
+### Quantitative Measurements
+- **CLAUDE.md Size**: <50 lines core content
+- **Context Completeness**: 100% essential information accessible
+- **Update Efficiency**: Single-point changes propagate automatically
+- **Token Optimization**: >3x context density improvement
+- **Access Speed**: Immediate vs. multi-step navigation eliminated
 
-### Qualitative  
-- **Developer experience**: Faster onboarding, better AI assistance
-- **Team consistency**: Shared understanding and practices
-- **Knowledge management**: Automatic capture and distribution
+### Qualitative Improvements  
+- **Developer Experience**: Faster onboarding with complete context
+- **Team Consistency**: Everyone works with identical information
+- **Knowledge Evolution**: Automatic capture of discovered patterns
+- **Documentation Quality**: Higher accuracy through SSOT principle
+- **Maintenance Efficiency**: Reduced synchronization overhead
 
 ---
-
-**Implementation Priority**: High - Transform CLAUDE.md from static reference to dynamic context engine for maximum AI development efficiency.
+**Implementation Priority**: High - Transform CLAUDE.md from static reference to dynamic context engine for maximum development efficiency.

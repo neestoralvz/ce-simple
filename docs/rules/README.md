@@ -1,134 +1,127 @@
 # Modular Rule System - ce-simple
 
-**Last Updated: 2025-07-23**
-**Authority**: Master registry implementing docs/vision/ absolute authority
+**Updated**: 2025-07-24 12:54 (Mexico City) | **Authority**: Master registry implementing docs/vision/ absolute authority
 
-## Purpose
+## Rule Module Registry
 
-Master registry and navigation hub for ce-simple modular rule system. Each rule module handles specific aspects of the partnership protocol while maintaining coherent integration.
+### Core Partnership Foundation
+1. **[Partnership Protocol](partnership-protocol.md)** - Core partnership definition establishing fundamental working relationship between user and Claude. Defines roles, responsibilities, mission alignment, success metrics, and foundational interaction principles that govern all other rule modules.
 
-## Rule Module Architecture
+### Communication & Language Standards
+2. **[Communication Rules](communication-rules.md)** - Communication protocol specifications including English-only mandate, model selection criteria, question protocols, feedback mechanisms, and clarity standards ensuring precise technical communication.
 
-### Core Rule Modules
+3. **[Documentation Standards](documentation-standards.md)** - Writing standards enforcing English-only content, word economy principles, technical clarity requirements, structure consistency, and documentation quality gates across all system components.
 
-#### 1. [Partnership Protocol](partnership-protocol.md)
-**Scope**: Core partnership definition and role boundaries
-- Partnership roles and responsibilities  
-- Core mission and objectives
-- Success metrics for partnership effectiveness
+### Technical Development Framework
+4. **[Development Standards](development-standards.md)** - Technical implementation requirements including PTS (Pragmatic Technical Simplicity) 12-component framework, line limits (150 commands/200 docs), autocontained principles, and quality validation protocols.
 
-#### 2. [Communication Rules](communication-rules.md) 
-**Scope**: All communication protocols and context management
-- Language standards and communication style
-- Model selection guidance and transparency requirements
-- Question protocols and clarification procedures
+5. **[Tool Usage Protocols](tool-usage-protocols.md)** - Task Tool optimization strategies including parallel execution patterns, Think x4 methodology, token economy management, agent coordination, and workflow efficiency maximization.
 
-#### 3. [Development Standards](development-standards.md)
-**Scope**: Technical implementation requirements and quality frameworks
-- PTS 12-component framework and quality gates
-- Line limits and autocontained principles
-- Error resolution and pattern storage protocols
+6. **[Command Structure Standard](command-structure-standard.md)** - Command formatting specifications including 4-section pattern (Purpose/Usage/Logic/Notes), length limits, natural language requirements, and consistency protocols for all slash commands.
 
-#### 4. [Tool Usage Protocols](tool-usage-protocols.md)
-**Scope**: Task Tool optimization and execution patterns
-- Parallel execution and wave-based deployment
-- Think x4 methodology and context economy
-- Token optimization guidelines
+### Project & Process Management
+7. **[Git Workflow Protocols](git-workflow-protocols.md)** - Version control standards including commit protocol specifications, worktree strategy implementation, quality gate enforcement, branch management, and integration procedures.
 
-#### 5. [Git Workflow Protocols](git-workflow-protocols.md)
-**Scope**: Version control excellence and collaborative development
-- Claude Code commit protocol and signature requirements
-- Git worktree strategy and branch management
-- Quality gates and automation integration
+8. **[Project Governance](project-governance.md)** - Structure maintenance protocols including directory hierarchy enforcement, file management standards, integrity validation, organization consistency, and system boundary definitions.
 
-#### 6. [Project Governance](project-governance.md)
-**Scope**: Structure maintenance and file organization
-- Directory authority hierarchy
-- File management and command system architecture  
-- Structure integrity enforcement
+### System Evolution Framework
+9. **[Evolution and Learning](evolution-learning.md)** - System growth management including rule update procedures, pattern capture methodologies, scaling requirement assessment, continuous improvement protocols, and adaptation strategies.
 
-#### 7. [Evolution and Learning](evolution-learning.md)
-**Scope**: System growth and continuous improvement
-- Rule updating protocols and pattern capture
-- Learning integration and system scaling
-- Backward compatibility requirements
+10. **[Claude MD Import Guide](claude-md-import-guide.md)** - CLAUDE.md enhancement protocols including dynamic integration procedures, user improvement incorporation, git evolution tracking, and context optimization strategies.
 
-#### 8. [Documentation Standards](documentation-standards.md)
-**Scope**: Writing standards and clarity requirements
-- English-only documentation mandate
-- Word economy and simplicity principles
-- Technical communication standards
+## Authority Hierarchy & Governance
 
-#### 9. [Command Structure Standard](command-structure-standard.md)
-**Scope**: Command development and formatting requirements
-- 4-section command structure pattern
-- Length limits and word economy standards
-- Natural language execution instructions
+### Authority Chain
+**docs/vision/** (Absolute Authority) → **Partnership Protocol** (Foundation) → **Specialized Modules** (Implementation) → **System Components** (Application)
 
-#### 10. [Claude MD Import Guide](claude-md-import-guide.md)
-**Scope**: CLAUDE.md enhancement and import protocols
-- Dynamic content integration procedures
-- User-driven improvement capture methods
-- Git integration and documentation evolution
+### Authority Scope Definitions
+- **docs/vision/**: Technical direction, system philosophy, architectural decisions
+- **Partnership Protocol**: Working relationship, core principles, fundamental interactions
+- **Communication/Documentation Standards**: Language use, writing quality, format consistency
+- **Development/Tool/Command Standards**: Technical implementation, code quality, structure
+- **Git/Project Governance**: Process management, organization maintenance, integrity
+- **Evolution and Learning**: System adaptation, improvement protocols, scaling strategies
 
-## Authority Hierarchy
+## Cross-Module Dependencies & Integration
 
-```
-docs/vision/overview.md (Absolute Authority)
-    ↓
-Partnership Protocol (Foundation)
-    ↓
-Specialized Rule Modules (Implementation)
-    ↓
-System Components (Execution)
-```
+### Foundational Dependencies
+- **Partnership Protocol** → All Modules (establishes working relationship foundation)
+- **docs/vision/** → Partnership Protocol (provides technical direction and philosophy)
 
-## Integration Protocols
+### Integration Clusters
+**Communication Cluster**: Communication Rules + Documentation Standards + Tool Usage Protocols
+- Ensures consistent, efficient, high-quality interaction across all system touchpoints
 
-### Cross-Module Dependencies
-- **Partnership Protocol** ← foundational for → **All Modules**
-- **Communication Rules** ← integrates with → **Tool Usage Protocols** + **Documentation Standards**
-- **Development Standards** ← enforces → **Git Workflow Protocols** + **Project Governance** + **Command Structure Standard**
-- **Git Workflow Protocols** ← supports → **Tool Usage Protocols** + **Development Standards** + **Claude MD Import Guide**
-- **Documentation Standards** ← enforces → **Command Structure Standard** + **Claude MD Import Guide**
-- **Command Structure Standard** ← implements → **Development Standards** + **Documentation Standards**
-- **Claude MD Import Guide** ← integrates → **Git Workflow Protocols** + **Documentation Standards**
-- **Evolution and Learning** ← captures insights from → **All Modules**
+**Technical Cluster**: Development Standards + Command Structure + Git Workflow
+- Maintains technical quality, consistency, and process integrity throughout development
 
-### Conflict Resolution
-1. **Vision Authority**: docs/vision/ overrides all rules
-2. **Partnership Foundation**: Partnership Protocol mediates module conflicts
-3. **Practical Implementation**: Most specific rule takes precedence
-4. **Evolution Path**: Conflicts drive rule system evolution
+**Management Cluster**: Project Governance + Evolution and Learning + Claude MD Import
+- Provides structure maintenance, continuous improvement, and system evolution capabilities
 
-## Rule Application Guidelines
+### Dependency Examples
+- Development Standards → Git Workflow (PTS compliance affects commit protocols)
+- Tool Usage → Communication Rules (parallel execution requires clear delegation)
+- Evolution Learning ← All Modules (captures insights from every rule implementation)
+- Project Governance → Command Structure (directory organization affects command placement)
 
-### Development Decisions
-1. Check docs/vision/ for alignment
-2. Reference Partnership Protocol for role clarity
-3. Apply relevant specialized module rules
-4. Document decisions for learning capture
+## Integration Protocols & Conflict Resolution
 
-### Quality Validation
-1. **PTS Compliance**: Development Standards framework
-2. **Communication Quality**: Communication Rules validation
-3. **Tool Efficiency**: Tool Usage Protocols optimization
-4. **Structure Integrity**: Project Governance enforcement
+### Rule Application Sequence
+1. **Vision Alignment**: Verify decision aligns with docs/vision/ technical direction
+2. **Partnership Clarity**: Apply Partnership Protocol foundational principles
+3. **Module Rules**: Execute relevant specialized module protocols
+4. **Cross-Module Integration**: Resolve dependencies and ensure consistency
+5. **Learning Capture**: Document patterns and insights for Evolution module
 
-## Continuous Evolution
+### Conflict Resolution Hierarchy
+1. **Vision Authority**: docs/vision/ overrides all other considerations
+2. **Partnership Foundation**: Partnership Protocol principles when vision unclear
+3. **Most Specific Rule**: More specific module rule takes precedence over general
+4. **Evolution Path**: Evolution and Learning module provides adaptation strategy
+5. **User Clarification**: Request user guidance when hierarchy insufficient
 
-### Rule Update Protocol
-1. **Insight Capture**: Document new learnings from interactions
-2. **Module Assignment**: Determine which module needs updates
-3. **Integration Testing**: Validate rule changes across modules
-4. **Version Control**: Track evolution with timestamp logging
+### Integration Quality Gates
+- **Consistency Validation**: No contradictions between applied rules
+- **Completeness Check**: All relevant modules consulted for decision
+- **Efficiency Assessment**: Solution optimizes across communication, technical, and process requirements
+- **Evolution Readiness**: Decision supports system growth and improvement
 
-### Pattern Integration
-- Success patterns automatically captured in Evolution and Learning
-- Rule effectiveness measured against Partnership success metrics
-- Cross-module optimizations identified and implemented
-- System evolution guided by practical experience
+## Evolution & Update Procedures
+
+### Module Update Protocol
+1. **Insight Identification**: Recognize pattern or improvement opportunity
+2. **Module Assignment**: Determine which rule module should incorporate insight
+3. **Integration Analysis**: Assess impact on dependent and related modules
+4. **Testing Implementation**: Validate change doesn't break existing functionality
+5. **Version Control**: Update module with proper documentation and cross-references
+
+### System-Wide Evolution
+- **Pattern Recognition**: Evolution module captures successful implementation patterns
+- **Rule Refinement**: Modules updated based on practical application experience
+- **Integration Optimization**: Cross-module dependencies refined for efficiency
+- **Scale Adaptation**: Rules evolved to handle growing system complexity
+
+## Navigation & Usage Guidelines
+
+### Quick Reference Navigation
+- **New Partnership**: Start with Partnership Protocol + Communication Rules
+- **Technical Development**: Development Standards + Tool Usage + Command Structure
+- **Process Management**: Git Workflow + Project Governance
+- **System Enhancement**: Evolution Learning + Claude MD Import + Documentation Standards
+
+### Module Consultation Protocol
+1. **Identify Decision Type**: Determine which aspect of system is affected
+2. **Primary Module**: Consult most relevant rule module first
+3. **Cross-References**: Check dependent and related modules
+4. **Integration Check**: Ensure consistency across all applicable rules
+5. **Document Application**: Record rule application for learning capture
+
+### Validation & Application Protocols
+- **Rule Compliance**: All decisions must comply with applicable rule modules
+- **Documentation**: Rule applications documented for pattern recognition
+- **Quality Assurance**: Regular validation of rule effectiveness and consistency
+- **Continuous Improvement**: Rules refined based on practical application results
 
 ---
 
-**Usage**: Reference appropriate rule modules for specific development contexts. All modules work together to implement the partnership protocol while maintaining alignment with system vision.
+**Master Registry Purpose**: This comprehensive index provides complete navigation and governance for the modular rule system, ensuring consistent application of partnership protocols, technical standards, and evolution strategies aligned with system vision.

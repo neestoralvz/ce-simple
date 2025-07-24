@@ -1,6 +1,7 @@
 # Pragmatic Technical Simplicity (PTS) - System Checklist
 
-**Last Updated: 2025-07-23**
+**Updated**: 2025-07-24 12:54 (Mexico City)  
+**Navigation**: [System Hub](../navigation/index.md) | [PTS Framework](pts-framework.md) | [Development Principles](development-principles.md)
 
 ## Tier 0 - PTS Foundation (MANDATORY)
 
@@ -230,3 +231,10 @@ Idea/Requirement:
 **Fundamental Principle**: PTS is the mandatory filter that ensures we only develop solutions that are simultaneously simple, technically sound, and pragmatically valuable.
 
 **Application**: Every system element must pass PTS before any other consideration - it's the foundation that enables architectural excellence without over-engineering.
+
+## See Also
+- **[PTS Framework](pts-framework.md)** - Complete technical framework definition
+- **[Development Principles](development-principles.md)** - Tier 0-5 principle hierarchy
+- **[Development Standards](../rules/development-standards.md)** - Implementation requirements
+- **[CLAUDE_RULES.md](../../CLAUDE_RULES.md)** - Partnership protocol with PTS mandates
+- **[System Navigation](../navigation/index.md)** - Complete system access hub

@@ -1,6 +1,6 @@
 # Partnership Protocol Rules
 
-**Last Updated: 2025-07-23**
+**Updated**: 2025-07-24 12:54 (Mexico City)
 **Authority**: Foundation protocol implementing docs/vision/ absolute authority
 
 ## Partnership Definition

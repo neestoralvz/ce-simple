@@ -1,6 +1,6 @@
 # Command Governance Framework - ce-simple
 
-**Last Updated: 2025-07-23**
+**Updated**: 2025-07-24 12:54 (Mexico City)
 
 ## STP-Compliant Governance Structure
 

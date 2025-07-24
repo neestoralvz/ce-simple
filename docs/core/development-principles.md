@@ -1,16 +1,37 @@
 # Development Principles - ce-simple
 
-**Last Updated: 2025-07-23**
+**Updated**: 2025-07-24 12:54 (Mexico City)  
+**Navigation**: [System Hub](../navigation/index.md) | [PTS Framework](pts-framework.md) | [PTS Checklist](pts-checklist.md)
 
 ## Quick Reference
 
-**PTS + 20 principles in 6 tiers** - Use this checklist for all development decisions:
+**UltraThink x4 + PTS + 20 principles in 7 tiers** - Use this checklist for all development decisions:
 
-### Tier 0 - PRAGMATIC TECHNICAL SIMPLICITY (PTS) - ABSOLUTE GOVERNING PRINCIPLE
+### Tier 0 - ULTRATHINK X4 (Universal Cognitive Methodology) - MANDATORY THINKING FOUNDATION
 
-**Definition**: The meta-principle governing all other principles. Direct, forceful, and technically precise solutions that say exactly what's necessary at the exact point, with sober, concise, clear, coherent, effective, and pragmatic structure.
+**Definition**: Progressive layered analysis methodology applied to ALL actions using >1 tool or affecting >1 file. Foundation cognitive framework ensuring systematic understanding before solution development.
 
-**Authority**: PTS is the mandatory primary filter. The other 20 principles apply ONLY after PTS has been meticulously and exhaustively fulfilled.
+**Authority**: UltraThink x4 is the mandatory cognitive filter. All other principles apply ONLY after proper cognitive analysis has been completed.
+
+#### The 4 Progressive Layers (ALL MANDATORY)
+**Think (Layer 1)**: Foundation analysis → Core concepts, initial understanding, scope clarity  
+**Think Hard (Layer 2)**: Deep analysis → Pattern recognition, trade-offs, dependencies  
+**Think Harder (Layer 3)**: Complex integration → Multi-system coordination, risk assessment  
+**Ultra Think (Layer 4)**: Ultra synthesis → Complete solution architecture, implementation roadmap
+
+**Universal Application**: Analysis | Planning | Implementation | Validation | All multi-step processes
+**Auto-Advancement**: Each layer determines if deeper analysis needed based on measurable criteria
+**Quality Gates**: Validation criteria for advancement and completion at each layer
+
+**🛑 BLOCKING REQUIREMENT**: Required thinking layer depth must be applied before proceeding.
+
+**📋 Complete Framework**: @docs/commands/think-layers-implementation.md
+
+### Tier 1 - PRAGMATIC TECHNICAL SIMPLICITY (PTS) - TECHNICAL GOVERNING PRINCIPLE
+
+**Definition**: The meta-principle governing technical decisions. Direct, forceful, and technically precise solutions that say exactly what's necessary at the exact point, with sober, concise, clear, coherent, effective, and pragmatic structure.
+
+**Authority**: PTS is the mandatory technical filter. The other 20 principles apply ONLY after PTS has been meticulously and exhaustively fulfilled.
 
 #### The 12 PTS Components (ALL MANDATORY)
 
@@ -47,31 +68,31 @@
 
 **📋 Complete Framework**: [Tier 0 PTS Framework](tier0-pragmatic-technical-simplicity.md) | **🔧 Validation Tools**: [PTS Validation Framework](../frameworks/pts-validation-framework.md)
 
-### Tier 1 - Fundamentals
+### Tier 2 - Fundamentals
 - **KISS**: Simplest solution that works
 - **SOLID**: SRP, OCP, LSP, ISP, DIP  
 - **DRY**: Single source of truth
 - **YAGNI**: Only implement what's needed
 
-### Tier 2 - Critical  
+### Tier 3 - Critical  
 - **Separation of Concerns**: Distinct responsibilities
 - **Fail Fast**: Early error detection
 - **Convention over Configuration**: Sensible defaults
 - **Least Surprise**: Predictable behavior
 
-### Tier 3 - Important
+### Tier 4 - Important
 - **Composition over Inheritance**: Flexible design
 - **Loose Coupling/High Cohesion**: Independent modules
 - **Immutability**: Stable foundations
 
-### Tier 4 - Modularization
+### Tier 5 - Modularization
 - **Modular Design**: Reusable components
 - **Information Hiding**: Clean interfaces
 - **Progressive Disclosure**: Gradual complexity
 - **Orthogonality**: Independent changes
 - **Abstraction**: Appropriate layers
 
-### Tier 5 - Architecture
+### Tier 6 - Architecture
 - **Single Source of Truth**: One authority
 - **Least Privilege**: Minimal access
 - **Graceful Degradation**: Fault tolerance
@@ -82,15 +103,42 @@
 Simple implementation of proven principles that solve real problems without over-engineering.
 
 **Priority when principles conflict:**
-1. **PTS Foundation** (Tier 0 - absolute priority)
-2. KISS (simplicity)
-3. SSOT (single truth)
-4. SRP (clear responsibility)  
-5. Fail Fast (early detection)
+1. **UltraThink x4 Cognitive Foundation** (Tier 0 - absolute priority)
+2. **PTS Technical Foundation** (Tier 1 - technical priority)
+3. KISS (simplicity)
+4. SSOT (single truth)
+5. SRP (clear responsibility)
 
 ## Principle Details
 
-### Tier 0 - PTS Foundation (Pragmatic Technical Simplicity)
+### Tier 0 - UltraThink x4 Foundation (Universal Cognitive Methodology)
+
+**OBLIGATORY COGNITIVE PRE-FILTER** - Must pass before applying any other principles.
+
+UltraThink x4 represents the systematic cognitive approach to understanding problems before developing solutions. Every action using >1 tool or affecting >1 file requires systematic thinking depth:
+- **Think**: Foundation understanding and scope definition
+- **Think Hard**: Pattern analysis and trade-off evaluation  
+- **Think Harder**: System integration and risk assessment
+- **Ultra Think**: Complete solution architecture and roadmap
+
+**ce-simple application:**
+- All complex decisions use progressive cognitive layers
+- Analysis depth matches problem complexity automatically
+- Quality gates ensure appropriate cognitive rigor
+- Universal application across all development phases
+
+**Example:** Adding authentication feature → Think (requirements, basic approach) → Think Hard (OAuth vs JWT patterns, security considerations) → Think Harder (system integration, session management) → Ultra Think (complete implementation roadmap, testing strategy)
+
+**Critical Integration:** UltraThink x4 precedes all other principles:
+- **UltraThink x4 + PTS**: Proper analysis BEFORE technical filtering
+- **UltraThink x4 + SOLID**: Cognitive depth BEFORE architectural decisions
+- **UltraThink x4 + Planning**: Understanding BEFORE implementation design
+
+**Blocking Enforcement:** Any complex action without appropriate thinking depth cannot proceed to principle evaluation. This ensures comprehensive understanding before solution development.
+
+**Complete Framework:** See @docs/commands/think-layers-implementation.md for detailed methodology, auto-advancement criteria, and quality gates.
+
+### Tier 1 - PTS Foundation (Pragmatic Technical Simplicity)
 
 **OBLIGATORY PRE-FILTER** - Must pass before applying any other principles.
 
@@ -116,7 +164,7 @@ PTS represents the synthesis of technical excellence with pragmatic value. Every
 
 **Complete Framework:** See [PTS Checklist](pts-checklist.md) for comprehensive validation process, context-specific matrices, and integration guidelines.
 
-### Tier 1 - Fundamentals
+### Tier 2 - Fundamentals
 
 #### KISS (Keep It Simple)
 Simplest solution that works.
@@ -166,7 +214,7 @@ Don't implement until actually needed.
 
 **Example:** Complex orchestration archived until needed
 
-### Tier 2 - Critical
+### Tier 3 - Critical
 
 #### Separation of Concerns
 Different aspects in distinct sections.
@@ -202,7 +250,7 @@ Predictable, expected behavior.
 - Commands behave as names suggest
 - Predictable file organization
 
-### Tier 3 - Important
+### Tier 4 - Important
 
 #### Composition over Inheritance
 Favor composition for flexibility.
@@ -228,7 +276,7 @@ Preserve stability where possible.
 - Command templates provide consistent patterns
 - Core principles remain consistent
 
-### Tier 4 - Modularization
+### Tier 5 - Modularization
 
 #### Modular Design
 Independent, reusable components.
@@ -270,7 +318,7 @@ Appropriate abstraction layers.
 - `docs/core/` - architectural abstractions  
 - Commands - workflow abstractions
 
-### Tier 5 - Architecture
+### Tier 6 - Architecture
 
 #### Single Source of Truth (SSOT)
 Exactly one authoritative representation.
@@ -308,7 +356,15 @@ Basic functionality first, advanced features incrementally.
 
 When creating or modifying components:
 
-**Tier 0 - PTS Foundation (OBLIGATORY):**
+**Tier 0 - UltraThink x4 Foundation (OBLIGATORY):**
+- [ ] **Appropriate Thinking Layer**: Applied cognitive depth matching problem complexity?
+- [ ] **Progressive Analysis**: Each layer builds on previous understanding?
+- [ ] **Quality Gates**: Validation criteria met for current layer?
+- [ ] **Auto-Advancement**: Complexity indicators assessed for deeper analysis?
+
+**⚠️ STOP if cognitive analysis insufficient - Apply deeper thinking layer**
+
+**Tier 1 - PTS Foundation (OBLIGATORY):**
 - [ ] **Clear Purpose**: What specific problem does it solve?
 - [ ] **Minimal Implementation**: Simplest version that works?
 - [ ] **Single Responsibility**: Does exactly one thing well?
@@ -324,31 +380,31 @@ When creating or modifying components:
 
 **⚠️ STOP if any PTS component fails - Return to design phase**
 
-**Tier 1 - Fundamentals:**
+**Tier 2 - Fundamentals:**
 - [ ] Simplest solution? (KISS + PTS)
 - [ ] SOLID principles followed? (Architecture + PTS)
 - [ ] No duplication? (DRY + PTS pragmatism)
 - [ ] Only needed features? (YAGNI + PTS value)
 
-**Tier 2 - Critical:**
+**Tier 3 - Critical:**
 - [ ] Concerns separated?
 - [ ] Fast failure with guidance?
 - [ ] Sensible defaults?
 - [ ] Predictable behavior?
 
-**Tier 3 - Important:**
+**Tier 4 - Important:**
 - [ ] Composition used?
 - [ ] Loose coupling, high cohesion?
 - [ ] Immutability preserved?
 
-**Tier 4 - Modularization:**
+**Tier 5 - Modularization:**
 - [ ] Modular design?
 - [ ] Implementation hidden?
 - [ ] Progressive disclosure?
 - [ ] Orthogonal components?
 - [ ] Appropriate abstraction?
 
-**Tier 5 - Architecture:**
+**Tier 6 - Architecture:**
 - [ ] Single source of truth?
 - [ ] Minimal access granted?
 - [ ] Graceful degradation?
@@ -365,5 +421,12 @@ Principles evolve through:
 - Alignment with `docs/vision/`
 
 ---
+
+## See Also
+- **[PTS Framework](pts-framework.md)** - Complete 12-component technical framework
+- **[PTS Checklist](pts-checklist.md)** - Mandatory validation process
+- **[Development Standards](../rules/development-standards.md)** - Implementation requirements
+- **[Command Template](../templates/command-template.md)** - Standard development structure
+- **[System Navigation](../navigation/index.md)** - Complete system access hub
 
 **Next:** [System Principles](system-principles.md) for architectural implementation

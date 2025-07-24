@@ -1,7 +1,7 @@
 # Global Command System - ce-simple
 
 **Version**: 1.0  
-**Last Updated**: 2025-07-23  
+**Updated**: 2025-07-24 12:54 (Mexico City)  
 **Purpose**: Global slash commands for workflow automation across domains
 
 ## System Overview
@@ -128,7 +128,7 @@ Core utility engines providing specialized functionality.
 - **Boundary Enforcement**: Commands cannot reference external files or directories
 
 ### Development Standards
-- **Maximum Length**: 150 lines per command (LLM optimization)
+- **Maximum Length**: 80 lines per command (LLM optimization)
 - **Documentation**: Self-documenting with clear purpose and usage
 - **Error Handling**: Comprehensive error recovery and user guidance
 - **Quality Compliance**: All commands meet STP 12-component framework
@@ -142,7 +142,7 @@ Core utility engines providing specialized functionality.
 - **Clean Separation**: Clear boundary between global and local functionality
 
 ### Workflow Patterns
-- **Discovery ’ Planning ’ Execution ’ Validation**: Standard workflow progression
+- **Discovery ï¿½ Planning ï¿½ Execution ï¿½ Validation**: Standard workflow progression
 - **Parallel Execution**: Multiple commands can run simultaneously via orchestration
 - **Error Recovery**: Built-in fallback strategies and user guidance
 - **Learning Integration**: Commands capture patterns for continuous improvement

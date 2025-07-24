@@ -1,5 +1,7 @@
 # init-project
 
+**Updated**: 2025-07-24 12:54 (Mexico City) | **Navigation**: [System Hub](../docs/navigation/index.md) | [Development Standards](../docs/rules/development-standards.md) | [PTS Framework](../docs/core/pts-framework.md)
+
 ## Purpose
 
 Initialize ce-simple project with git repository, directory structure, and core documentation.
@@ -102,6 +104,13 @@ Final validation:
 **Tool Usage**: Direct Bash and Write calls without orchestration overhead
 **Error Handling**: Specific error messages with manual resolution steps
 **Validation**: Confirm each phase completion before proceeding
+
+## See Also
+- **[System Navigation](../docs/navigation/index.md)** - Complete system access hub
+- **[Development Standards](../docs/rules/development-standards.md)** - Implementation requirements
+- **[PTS Framework](../docs/core/pts-framework.md)** - Technical validation system
+- **[Git Workflow](../docs/rules/git-workflow-protocols.md)** - Version control standards
+- **[Command Template](../docs/templates/command-template.md)** - Standard development structure
 
 **Authority References**:
 @./docs/core/development-principles.md

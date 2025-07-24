@@ -1,112 +1,100 @@
 # Git Workflow Protocols
 
-**Last Updated: 2025-07-24**
-**Authority**: Git workflow standards implementing Partnership Protocol
+**Updated: 2025-07-24** | **Authority**: Git workflow standards implementing Partnership Protocol
 
 ## Commit Excellence Standards
 
 ### Claude Code Commit Protocol
-**All commits must include Claude signature**:
-- **Signature Format**: Every commit message ends with:
-```
+**Mandatory signature for all commits**:
+```bash
 🤖 Generated with [Claude Code](https://claude.ai/code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
-- **Required Implementation**: Use heredoc format for proper formatting
-- **No Exceptions**: Every commit requires Claude attribution
-- **Automated Integration**: Build into git hooks and automation tools
+- **Implementation**: Heredoc format `git commit -m "$(cat <<'EOF'\n<message>\n\n<signature>\nEOF\n)"`
+- **Integration**: Pre-commit hooks + CI/CD compatible | **No exceptions**: Every commit requires signature
 
-### Commit Message Structure
-**Clear, actionable commit messages**:
-- **Format**: `<type>: <description>` followed by signature
-- **Types**: feat, fix, docs, refactor, test, style, chore
-- **Description**: Clear action and outcome (≤72 characters)
-- **Context**: Include why the change was made, not just what
+### Commit Structure & Atomicity
+**Standard format**: `<type>: <description>` followed by mandatory signature
+- **Types**: feat (new feature) | fix (bug fix) | docs (documentation) | refactor (code restructuring) | test (testing) | style (formatting) | chore (maintenance)
+- **Scope principles**: Single purpose commits | Complete functional changes | Independent rollback units | Self-contained modifications
+- **Message guidelines**: Focus on why > what | ≤72 characters first line | Clear action and expected outcome
 
-### Commit Scope and Atomicity
-- **Single Purpose**: One logical change per commit
-- **Complete Changes**: All related files included in single commit
-- **Functional Units**: Commits represent working states
-- **Rollback Safety**: Each commit can be safely reverted
+### Commit Quality Standards
+**Before every commit**:
+1. Run `git status` to review all changes
+2. Run `git diff` to validate modifications  
+3. Review `git log --oneline -5` for message consistency
+4. Verify all changes serve single purpose
+5. Ensure commit is functionally complete
 
 ## Branch Management Excellence
 
-### Git Worktree Strategy
-**Mandatory parallel development approach**:
-- **Worktree Requirement**: Use git worktrees for parallel feature development
-- **Isolation Benefits**: Independent working directories for different features
-- **Context Switching**: Seamless transition between feature contexts
-- **Resource Efficiency**: Shared .git directory with multiple working trees
+### Git Worktree Strategy (Mandatory)
+**Parallel development**: `git worktree add -b <branch> <path>` → Independent directories → Seamless context switching
+- **Benefits**: Complete isolation | Shared .git | Resource efficiency | Parallel workflows
+- **Use cases**: Feature development | Bug fixes | Experimental changes | Documentation updates
 
-### Branch Naming Conventions
-- **Feature Branches**: `feature/descriptive-name`
-- **Bugfix Branches**: `fix/issue-description`
-- **Documentation**: `docs/section-update`
-- **Maintenance**: `chore/task-description`
+### Branch Conventions & Integration
+**Naming standards**:
+- `feature/<description>` - New functionality development
+- `fix/<issue-description>` - Bug fixes and corrections  
+- `docs/<section>` - Documentation updates and improvements
+- `chore/<task>` - Maintenance and administrative tasks
 
-### Integration Patterns
-- **Fast-Forward Preferred**: Keep linear history when possible
-- **Merge Commits**: For complex feature integration
-- **Rebase Strategy**: Clean up local history before integration
-- **Conflict Resolution**: Immediate resolution with team coordination
+**Integration hierarchy**: Fast-forward preferred > Merge commits > Rebase for cleanup
+**Conflict resolution**: Immediate resolution → Context preservation → Pattern documentation → Thorough testing
 
 ## Advanced Git Operations
 
 ### Pre-Commit Quality Gates
-**Automated validation before commits**:
-- **PTS Compliance**: Validate all changes against 12-component framework
-- **File Size Limits**: Enforce line limits (commands ≤150, docs ≤200)
-- **Cross-Reference Validation**: Check documentation links and references
-- **Quality Metrics**: Run automated quality checks
+**Automated validation checklist**:
+- PTS compliance verification (all 12 components)
+- Length limits enforcement (≤150 lines commands, ≤200 lines docs)
+- Cross-reference integrity checks
+- Quality metrics validation
+- English-only content verification
 
-### Repository State Management
-- **Status Monitoring**: Regular git status checks before operations
-- **Diff Analysis**: Review changes before commit with git diff
-- **Log Analysis**: Understand commit history and patterns
-- **Branch Hygiene**: Regular cleanup of merged branches
+**State management**: `git status` → `git diff --staged` → `git log --oneline -10` → Branch hygiene verification
 
-### Conflict Resolution Protocol
-- **Immediate Resolution**: Address merge conflicts immediately
-- **Context Preservation**: Maintain both sides' intent when possible
-- **Documentation Updates**: Update related documentation for resolved conflicts
-- **Pattern Learning**: Document resolution patterns for similar future conflicts
+### Repository Operations & Maintenance
+**Daily workflow standards**:
+- Regular commits (maximum 30-minute intervals during active work)
+- Push to remote repository at end of each session
+- Tag significant milestones and releases appropriately  
+- Archive completed branches to maintain repository hygiene
+- Monthly cleanup of merged branches and obsolete references
 
-## Tool Integration and Automation
+**Monitoring and integration**:
+- Editor git integration enabled for real-time status
+- Automated hooks for quality enforcement and validation
+- CI/CD pipeline triggers on push events
+- Health metrics tracking (commit frequency, branch health, merge success rates)
 
-### Git Integration with Development Tools
-**Seamless workflow integration**:
-- **Editor Integration**: Git status and operations visible in development environment
-- **Automated Hooks**: Pre-commit, pre-push, and post-merge automation
-- **CI/CD Integration**: Automated testing and deployment triggers
-- **Monitoring Tools**: Real-time repository health monitoring
+## Error Handling & Recovery
 
-### Version Control Best Practices
-- **Regular Commits**: Frequent commits with meaningful progress
-- **Backup Strategy**: Regular pushes to remote repositories
-- **Tag Management**: Version tagging for stable releases
-- **Archive Strategy**: Systematic archiving of obsolete branches
+### Common Scenarios & Solutions
+**Commit mistakes**: `git commit --amend` (fix last) | `git reset --soft HEAD~1` (undo, keep changes) | `git reset --hard HEAD~1` (undo completely)
+**Branch issues**: `git checkout -b recovery` | `git cherry-pick <commit>` | `git rebase -i HEAD~n` (cleanup)
+
+**Merge conflict resolution workflow**:
+1. Identify conflicting files with `git status`
+2. Open files and resolve `<<<<<<<` `=======` `>>>>>>>` markers
+3. Test functionality thoroughly after resolution
+4. Stage resolved files with `git add`
+5. Complete merge with `git commit`
+6. Document resolution patterns for team reference
 
 ## Cross-Module Integration
 
-### Git + Tool Usage Protocols
-- **Parallel Git Operations**: Multiple git operations in different worktrees
-- **Version Control Agents**: Dedicated sub-agents for git operations
-- **State Coordination**: Git state consistency across parallel development
-- **Change Aggregation**: Coordinate changes from multiple development streams
+### Git + Development Standards Integration
+**PTS compliance**: Every commit validated (12 components) → Structure integrity → Documentation sync → Change validation
+**Tool coordination**: Multiple worktrees | Version control agents | State coordination | Change aggregation protocols
 
-### Git + Development Standards
-- **Commit Quality**: Every commit meets PTS 12-component requirements
-- **File Organization**: Git operations respect project structure authority
-- **Documentation Sync**: Commits include documentation updates when needed
-- **Change Validation**: All git operations validated against development standards
-
-### Git + Project Governance
-- **Structure Integrity**: Git operations preserve project structure
-- **Authority Respect**: Git changes align with directory authority hierarchy
-- **File Management**: Git operations follow file management protocols
-- **System Integration**: Git workflow supports overall project governance
+### Git + Project Governance Integration  
+**Authority hierarchy**: Structure validation → Protocol compliance → Cross-reference maintenance → System alignment
+**Quality enforcement**: Standards validation → Governance rules → Integration testing → Mandatory documentation updates
 
 ---
 
-**Application**: These protocols ensure git operations maintain system quality while supporting efficient collaborative development. Reference for all version control decisions and workflow optimization.
+**Application**: All git operations must follow these protocols to maintain system quality and consistency. Reference this document for all version control decisions and workflow implementations.

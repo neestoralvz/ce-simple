@@ -54,7 +54,7 @@ Use Task Tools for parallel exploration:
 - Validate approaches against project architecture
 ```
 
-### Phase 3: Think x4 Analysis & Diagnosis
+### Phase 3: UltraThink x4 Analysis & Diagnosis
 ```markdown
 ## Layered Thinking Process
 Think (Initial Analysis):
@@ -103,7 +103,7 @@ Ultra Think (Integral Solution):
 - Use logging context for deeper investigation
 
 ## Escalated Resolution
-- Apply Think x4 analysis to logged information
+- Apply UltraThink x4 analysis to logged information
 - Research advanced debugging techniques
 - Consider architectural changes if needed
 - Implement monitoring for ongoing issue detection
@@ -124,7 +124,7 @@ Integrated logging-based escalation for cases where initial integral solutions f
 
 - [Task Tool Communication](task-tool-communication.md) - Parallel agent deployment for exploration
 - [Visual Validation Workflow](visual-validation-workflow.md) - Screenshot analysis techniques
-- [Think x4 Methodology](../workflows/think-x4-analysis.md) - Layered thinking process
+- [UltraThink x4 Methodology](../workflows/think-x4-analysis.md) - Layered thinking process
 - [System Monitoring Patterns](../workflows/system-monitoring.md) - Ongoing error detection
 
 ## Success Metrics
@@ -178,7 +178,7 @@ This workflow pattern is inherently complex due to the systematic nature of erro
 Consider implementing as coordinated command suite:
 - `/debug-explore` - Evidence gathering and initial exploration
 - `/debug-research` - External research and best practice identification  
-- `/debug-analyze` - Think x4 analysis and solution design
+- `/debug-analyze` - UltraThink x4 analysis and solution design
 - `/debug-implement` - Solution implementation and validation
 - `/debug-monitor` - Ongoing monitoring and prevention
 

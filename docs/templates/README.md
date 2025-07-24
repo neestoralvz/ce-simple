@@ -1,85 +1,60 @@
-# Template System - Enhanced with DRY Elimination and Composition Framework
+# Template System - Simple and Direct
 
 ## Overview
 
-The ce-simple template system has been enhanced to eliminate DRY violations and implement composition over inheritance principles through a comprehensive shared component system.
+The ce-simple template system provides essential templates for system components, emphasizing simplicity and direct implementation over complex composition frameworks.
 
-## System Evolution
+## Available Templates
 
-### Before: DRY Violations and Monolithic Templates
-- **Repeated Patterns**: Same metadata patterns copied across all templates
-- **Duplicate Phase Structures**: Phase definitions repeated in every template
-- **Monolithic Design**: Large, inflexible templates with embedded logic
-- **Maintenance Issues**: Changes required updates in multiple locations
+### Core Templates
+- **command-template.md** - Standard command structure template
+- **claude-md-template.md** - Four-section CLAUDE.md architecture template
+- **claude-rules-template.md** - Partnership protocol template
 
-### After: Shared Component System with Composition
-- **Shared Components**: Common patterns abstracted into reusable components
-- **Modular Design**: Templates composed from base + components + mixins
-- **DRY Compliance**: Single source of truth for all common patterns
-- **Maintainable**: Changes in one place propagate throughout system
+### Documentation Templates  
+- **foundation-command-patterns.md** - Common command patterns
+- **three-layer-methodology-template.md** - Foundation/Implementation/Validation structure
+- **cognitive-load-guidelines.md** - Information density optimization
 
-## Component Architecture
+## Template Standards
 
-### 1. Shared Components (`shared/`)
-```
-shared/
-├── metadata-schema.md       # Common metadata patterns
-├── phase-structures.md      # Reusable phase templates
-├── composition-framework.md # Template assembly system
-├── template-versioning.md   # Version control and compatibility
-└── composition-examples.md  # Practical usage examples
-```
+### Line Limits
+- **Commands**: ≤80 lines maximum
+- **Documentation**: ≤100 lines maximum  
+- **CLAUDE.md**: ≤50 lines maximum
+- **Concepts**: ≤50 lines for cognitive optimization
 
-### 2. Template Mixins (`mixins/`)
-```
-mixins/
-└── template-mixins.md       # Composable feature library
-    ├── P55/P56 Mathematical Compliance
-    ├── Enforcement Framework
-    ├── Progressive Disclosure
-    ├── Integration Patterns
-    └── Performance Monitoring
-```
+### Quality Requirements
+- **PTS Compliance**: All templates must meet 12/12 PTS component validation
+- **English Only**: Zero non-English content
+- **Self-Contained**: No external dependencies
+- **Single Responsibility**: Each template serves one specific purpose
 
-### 3. Enhanced Base Templates
-```
-01-command-templates.md      # Now uses shared components
-02-documentation-templates.md # Now uses shared components  
-03-validation-templates.md   # Now uses shared components
-```
+## Usage Guidelines
 
-## Key Improvements
+### Command Templates
+Use `command-template.md` as the base for all new commands. Follow the established pattern:
+1. **Purpose** - Single sentence problem definition
+2. **Principles** - PTS compliance specifications  
+3. **Execution Process** - Phase-based implementation
+4. **Error Handling** - Specific fallback procedures
 
-### 1. DRY Violations Eliminated
+### Documentation Templates
+Follow three-layer architecture:
+1. **Foundation** (≤50 lines) - Essential concepts
+2. **Implementation** (≤100 lines) - Detailed procedures
+3. **Validation** (≤100 lines) - Quality gates
 
-**Metadata Schema Consolidation**:
-- ✅ **Document Status Schema**: Single definition replaces 15+ duplicates
-- ✅ **Ownership Schema**: Unified ownership patterns across all templates
-- ✅ **Versioning Schema**: Consistent version tracking methodology
-- ✅ **Cross-Reference Schema**: Standardized reference patterns
+### CLAUDE.md Templates
+Use four-section architecture:
+1. **Essential Context** - @ imports for immediate loading
+2. **Conditional Instructions** - Task-based loading with READ syntax
+3. **Context Navigation** - Directory references
+4. **Practical Development** - Anthropic best practices integration
 
-**Phase Structure Reuse**:
-- ✅ **Basic 5-Phase Structure**: Reusable across all standard commands
-- ✅ **P55/P56 Compliant Phases**: Mathematical compliance patterns
-- ✅ **Enforcement Phases**: Blocking mechanism patterns
-- ✅ **Progressive Disclosure Layers**: Layered information architecture
+---
 
-### 2. Composition Over Inheritance
-
-**Template Construction**:
-```markdown
-# Template = Base + Components + Mixins + Variants
-Template = command-base.md + 
-          metadata-schema.md + 
-          phase-structures.md + 
-          [optional-mixins]
-```
-
-**Mixin System**:
-- ✅ **Modular Features**: Add capabilities without template duplication
-- ✅ **Compatible Combinations**: Tested mixin compatibility matrix
-- ✅ **Single Responsibility**: Each mixin adds one specific capability
-- ✅ **Optional Integration**: Base templates function without mixins
+**Principle**: Simple, direct templates that eliminate complexity while maintaining functionality.
 
 ### 3. Template Versioning System
 

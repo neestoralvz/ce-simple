@@ -14,10 +14,10 @@ TodoWrite reinforces four essential components:
 
 ### Automatic Trigger Framework
 Context analysis generates todos dynamically:
-- **Complex task**: Deploy parallel agents with cognitive load monitoring
-- **Simple task**: Execute sequential workflow with validation checkpoints
-- **Insufficient context**: Request clarification through dynamic questioning
-- **Quality issues**: Apply correction protocol with urgent priority
+- **Task using >1 tool or affecting >1 file**: Deploy parallel agents with cognitive load monitoring
+- **Task using 1 tool and affecting 1 file**: Execute sequential workflow with validation checkpoints
+- **Missing >1 required parameter**: Request clarification through dynamic questioning
+- **Fails >1 measurable criteria**: Apply correction protocol with urgent priority
 
 ## Standard Implementation Patterns
 
@@ -41,9 +41,9 @@ TodoWrite Format:
 
 ### Context-Driven Generation Framework
 **Intelligent Expansion** based on runtime discoveries:
-- **Structural issues**: Urgent priority with immediate correction protocol
-- **Performance optimization**: Medium priority with efficiency improvements
-- **Learning opportunities**: Low priority with pattern capture integration
+- **Violates file organization rules**: Urgent priority with immediate correction protocol
+- **Execution time >target threshold**: Medium priority with efficiency improvements
+- **Pattern recognition opportunities**: Low priority with pattern capture integration
 - **User clarification**: High priority with dynamic questioning deployment
 
 ### Quality Assurance Integration

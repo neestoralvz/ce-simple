@@ -1,96 +1,52 @@
 # Project Governance
 
-**Last Updated: 2025-07-23**
-**Authority**: Structure and organization protocols implementing Partnership Protocol
+**Updated**: 2025-07-23 | **Authority**: Structure & organization implementing Partnership Protocol
 
 ## Directory Authority Hierarchy
 
-### Project Structure Standards
+**Project Structure**:
 ```
 ce-simple/
-├── docs/vision/             # System direction (absolute authority)
-├── docs/core/               # Technical implementation of vision
-├── docs/rules/              # Partnership protocol rule modules
-├── CLAUDE_RULES.md          # Master partnership protocol (deprecated → docs/rules/)
-├── CLAUDE.md                # Project overview and navigation hub
-├── commands/                # Essential local commands (3 core commands)
-├── export/                  # Global commands + export CLAUDE.md
-├── development/             # Development workspace (prototypes, testing)
-├── templates/               # Master templates for development
-└── automation/              # CI/CD and quality automation
+├── docs/vision/     # System direction (absolute authority)
+├── docs/core/       # Technical implementation of vision
+├── docs/rules/      # Partnership protocol rule modules
+├── CLAUDE_RULES.md  # Master protocol (deprecated → docs/rules/)
+├── CLAUDE.md        # Project overview & navigation hub
+├── commands/        # Essential local commands (3 core)
+├── export/          # Global commands + export CLAUDE.md
+├── development/     # Dev workspace (prototypes, testing)
+├── templates/       # Master development templates
+└── automation/      # CI/CD & quality automation
 ```
 
-### Authority Implementation
-- **docs/vision/**: Absolute authority for all system direction decisions
-- **docs/core/**: Technical implementation authority for architectural decisions  
-- **docs/rules/**: Partnership protocol authority for collaboration standards
-- **CLAUDE.md**: Navigation and overview authority for project structure
-- **commands/**: Local execution authority for project-specific workflows
+**Authority Implementation**: vision→absolute direction | core→technical architecture | rules→collaboration standards | CLAUDE.md→navigation authority | commands→local execution
 
 ## File Management Rules
 
-### Structure Maintenance Standards
-- **Structure Integrity**: Keep all files in correct directories according to purpose
-- **No File Displacement**: Zero tolerance for files out of designated locations
-- **Directory Purpose Clarity**: Each directory maintains clear, focused purpose
-- **Clean Organization**: Regular cleanup of temporary or misplaced files
+**Structure Maintenance**: Integrity→correct directories | Zero tolerance→file displacement | Purpose clarity→focused directories | Clean organization→regular cleanup
 
-### CLAUDE.md Update Protocol
-**CLAUDE.md Update Rules**:
-- **Structure Changes**: Update CLAUDE.md immediately when directory structure changes
-- **New Component Addition**: Add references to new major components or documentation
-- **Navigation Updates**: Ensure navigation paths remain current and functional
-- **Cross-Reference Maintenance**: Keep links to related documentation current
+**CLAUDE.md Updates**: Structure changes→immediate update | New components→add references | Navigation→keep current | Cross-references→maintain links
 
-### Context Documentation Standards
-- **Achievement Documentation**: Document major achievements and milestones for future context
-- **Error Learning Capture**: Record errors and their solutions for learning purposes
-- **Decision Rationale**: Document reasoning behind major structural decisions
-- **Evolution Tracking**: Maintain history of structural changes and their motivations
+**Context Documentation**: Achievements→milestone docs | Errors→solution capture | Decisions→rationale recording | Evolution→change tracking
 
 ## Command System Architecture
 
-### Command Boundary Enforcement
-- **Global Commands** (export/): Core reusable commands for any project
-- **Local Commands** (commands/): Project-specific commands that cannot modify global system
-- **Interaction Rule**: Commands reference each other only via slash command calls
-- **Self-Contained Principle**: Each command includes all necessary logic and patterns
+**Boundary Enforcement**: Global (export/)→reusable any project | Local (commands/)→project-specific | Interaction→slash calls only | Self-contained→embedded logic
 
-### Command Reference Standards
-- **Slash Command Only**: Commands can only invoke other commands via `/command-name` syntax
-- **No File Dependencies**: Commands cannot reference files outside their designated scope
-- **Embedded Logic**: All patterns, templates, and logic included inline within commands
-- **Boundary Respect**: Local commands cannot modify global system components
+**Reference Standards**: Slash syntax only `/command-name` | No file dependencies | Embedded patterns & templates | Boundary respect→local can't modify global
 
-## Integration and Cross-Reference Rules
+## Integration & Cross-Reference Rules
 
-### Documentation Integration Standards
-- **No Fragmentation**: Create consolidated context, not scattered information
-- **Cross-Reference Requirements**: All major documents must include references to related documents
-- **Navigation Flow**: Each document should guide users to relevant next steps
-- **Context Linking**: Technical concepts linked to their definitions and explanations
+**Documentation Integration**: No fragmentation→consolidated context | Cross-references→all major docs linked | Navigation flow→guide next steps | Context linking→technical definitions
 
-### Rule Update Protocol Implementation
-**Continuous Rule Updates**:
-- **Insight Capture**: Document new learnings and rules from each interaction
-- **Module Integration**: Add new rules to appropriate rule modules based on content
-- **Cross-Module Validation**: Ensure new rules don't conflict with existing rule modules
-- **Evolution Documentation**: Track rule evolution with timestamp logging
+**Rule Update Protocol**: Insight capture→document learnings | Module integration→appropriate placement | Cross-module validation→no conflicts | Evolution→timestamp logging
 
-## Quality Assurance and Compliance
+## Quality Assurance & Compliance
 
-### Structure Integrity Enforcement
-- **Regular Audits**: Periodic validation of directory structure compliance
-- **Automated Checks**: Where possible, implement automated structure validation
-- **Violation Correction**: Immediate correction of structure violations when detected
-- **Prevention Strategies**: Design workflows to prevent common structure violations
+**Structure Integrity**: Regular audits→periodic validation | Automated checks→where possible | Violation correction→immediate | Prevention→workflow design
 
-### Governance Metrics
-- **Structure Compliance**: 100% of files in correct directories
-- **Documentation Currency**: CLAUDE.md and navigation documents always current
-- **Command Compliance**: 100% adherence to command boundary rules
-- **Cross-Reference Coverage**: All major documents properly linked and referenced
+**Governance Metrics**: Structure compliance→100% correct directories | Documentation currency→CLAUDE.md always current | Command compliance→100% boundary adherence | Cross-reference coverage→all major docs linked
 
 ---
 
-**Application**: These governance rules ensure project structure integrity and organization standards. Reference when making structural changes or validating project organization.
+**Application**: Ensures structure integrity & organization standards. Reference for structural changes or project validation. Details: @docs/core/development-principles.md

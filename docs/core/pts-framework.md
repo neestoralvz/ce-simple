@@ -1,8 +1,9 @@
 # Pragmatic Technical Simplicity (PTS) Framework
 
 **Authority Level**: Core Technical Framework  
-**Last Updated**: 2025-07-23  
-**Status**: Active Implementation Framework
+**Updated**: 2025-07-24 12:54 (Mexico City)  
+**Status**: Active Implementation Framework  
+**Navigation**: [System Hub](../navigation/index.md) | [Development Principles](development-principles.md) | [PTS Checklist](pts-checklist.md)
 
 ## Governing Principle Definition
 
@@ -21,7 +22,7 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 - **ce-simple Example**: `/init-project` completes setup in 2 main commands
 
 #### 2. **Precision**  
-- **Definition**: Forceful and specific technical accuracy
+- **Definition**: Specific technical accuracy with measurable precision
 - **Criteria**: 100% absolute paths, 0 ambiguities in specifications
 - **Measurement**: Technical precision score ≥ 0.95
 - **ce-simple Example**: Commands specify exact tools (Task Tool, Read, Write, Edit)
@@ -33,7 +34,7 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 - **ce-simple Example**: 3 essential commands cover complete development workflow
 
 #### 4. **Technical Excellence**
-- **Definition**: Impeccable technical quality in simple solution
+- **Definition**: Measurable technical quality in minimal solution
 - **Criteria**: Code quality ≥ 90%, complete error handling, optimized performance
 - **Measurement**: Technical debt ratio ≤ 5%, bug density ≤ 0.1/kloc
 - **ce-simple Example**: Commands integrate natively with Claude Code tools without errors
@@ -54,9 +55,9 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 
 #### 7. **Structure**
 - **Definition**: Logical, clear, well-structured organization
-- **Criteria**: ≤3 hierarchy levels, intuitive navigation
-- **Measurement**: Navigation efficiency ≥ 0.90, structural coherence = 1.0
-- **ce-simple Example**: docs/ structure with clear and predictable paths
+- **Criteria**: ≤3 hierarchy levels, navigation time ≤30 seconds to find target
+- **Measurement**: Navigation time ≤30 seconds, structural coherence = 1.0
+- **ce-simple Example**: docs/ structure with ≤30 second navigation to any target
 
 #### 8. **Conciseness**
 - **Definition**: Maximum value per unit of complexity
@@ -85,7 +86,7 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 - **ce-simple Example**: Commands achieve successful setup/analysis/guidance in >90% cases
 
 #### 12. **Pragmatism**
-- **Definition**: Works effectively under real conditions
+- **Definition**: Functions under real conditions with measurable success rate
 - **Criteria**: Real-world applicability 100%, functional in production
 - **Measurement**: Production success rate ≥ 0.95, maintenance overhead ≤ 5%
 - **ce-simple Example**: System works consistently in real projects without configuration
@@ -102,7 +103,7 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 ```markdown
 - [ ] What is the specific purpose? (Clarity test)
 - [ ] Does it solve exactly one problem? (Sufficiency test)  
-- [ ] Is it the simplest solution that works? (Directness test)
+- [ ] Uses ≤3 steps to achieve objective? (Directness test)
 - [ ] Does it work without additional configuration? (Pragmatism test)
 ```
 
@@ -125,13 +126,13 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 #### Critical Blocking (Stops development)
 - Purpose not clear in <30 seconds (Clarity failure)
 - Multiple responsibilities (Sufficiency failure)  
-- Evident unnecessary complexity (Sobriety failure)
+- >3 steps to complete task (Sobriety failure)
 - Doesn't work without configuration (Pragmatism failure)
 
 #### Quality Blocking (Requires correction)
 - Technical metrics <90% (Technical Excellence failure)
 - Redundant information >20% (Conciseness failure)
-- Non-intuitive navigation (Structure failure)
+- Navigation time >30 seconds to target (Structure failure)
 - Requirements drift >5% (Exactitude failure)
 
 ## Integration with Existing Principles
@@ -143,7 +144,7 @@ Direct, forceful, and technically precise solutions that say exactly what's nece
 - **SOLID + PTS**: Solid architecture AND pragmatically valuable
 - **DRY + PTS**: Eliminate duplication only if it reduces practical complexity  
 - **YAGNI + PTS**: Implement only proven pragmatic value
-- **Fail Fast + PTS**: Early detection with direct and clear guidance
+- **Fail Fast + PTS**: Early detection with <5 second error identification
 
 ### Absolute Priority
 
@@ -183,9 +184,9 @@ PragmatismMetrics:
 ### Qualitative Metrics
 
 - **Sobriety Assessment**: Complete marketing language elimination
-- **Clarity Validation**: Immediate comprehension without additional context
+- **Clarity Validation**: Understanding achieved in <5 minutes without additional context
 - **Coherence Check**: Absolute conceptual and technical consistency
-- **Structure Analysis**: Intuitive navigation and logical hierarchy
+- **Structure Analysis**: Navigation time <30 seconds and ≤3 hierarchy levels
 
 ## Application in ce-simple
 
@@ -198,19 +199,19 @@ PragmatismMetrics:
 
 **`/explore-codebase`**: 8/12 PTS compliance  
 - ✅ Technical Excellence, Structure, Effectiveness
-- ⚠️ Conciseness (163 lines), Clarity (complex explanation)
-- ❌ Directness (too many meta-descriptions)
+- ⚠️ Conciseness (163 lines), Clarity (>5 minute comprehension time)
+- ❌ Directness (>3 steps to complete objective)
 
 **`/start`**: 11/12 PTS compliance
-- ✅ Most components excellent
-- ⚠️ Precision (vague complexity detection criteria)
+- ✅ 10/12 components meet measurable criteria
+- ⚠️ Precision (criteria require >1 interpretation method)
 
 ### Optimization Roadmap
 
 #### Phase 1 (Immediate - Week 1)
-1. **Precision Enhancement**: Quantify all vague criteria
+1. **Precision Enhancement**: Replace criteria requiring >1 interpretation with measurable metrics
 2. **Conciseness Optimization**: Reduce length 30-40% maintaining functionality
-3. **Directness Improvement**: Eliminate unnecessary meta-descriptions
+3. **Directness Improvement**: Reduce to ≤3 steps for objective completion
 
 #### Phase 2 (Short-term - Week 2-3)
 1. **Technical Excellence**: Add specific error handling and metrics
@@ -228,4 +229,11 @@ PragmatismMetrics:
 
 Meticulous and exhaustive application of the 12 PTS components ensures that every system element delivers maximum value with minimal complexity, maintaining the highest technical quality and practical effectiveness.
 
-**PTS Mantra**: *"Direct, forceful, technically excellent, practically effective - no exceptions."*
+**PTS Mantra**: *"≤3 steps, measurable accuracy, technical quality ≥90%, production success ≥95% - no exceptions."*
+
+## See Also
+- **[PTS Checklist](pts-checklist.md)** - Validation process & blocking criteria
+- **[Development Principles](development-principles.md)** - Complete principle hierarchy with PTS integration
+- **[CLAUDE_RULES.md](../../CLAUDE_RULES.md)** - Partnership protocol with PTS requirements
+- **[System Navigation](../navigation/index.md)** - Complete system access hub
+- **[Development Standards](../rules/development-standards.md)** - Implementation requirements
