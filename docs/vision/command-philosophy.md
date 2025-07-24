@@ -50,6 +50,142 @@ Internal Sophistication:
   - Complex orchestration logic
   - Parallel task deployment
   - Intelligent aggregation
+  - Learning integration
+```
+
+## 📋 Command Anatomy
+
+### Essential Components Template
+```markdown
+# command-name
+
+## Purpose
+[What this command orchestrates]
+
+## Usage
+/command-name [parameters]
+
+## Task Orchestration
+[How work is distributed]
+
+## Patterns
+[Embedded reusable patterns]
+
+## Error Handling
+[Recovery strategies]
+
+## Learning
+[What improves over time]
+```
+
+### Task Deployment Section
+```yaml
+Task Strategy:
+  Analysis:
+    - Assess scope
+    - Determine parallelization
+    - Plan task distribution
+    
+  Deployment:
+    - Create task instructions
+    - Include full context
+    - Deploy via Task Tool
+    
+  Aggregation:
+    - Collect results
+    - Resolve conflicts
+    - Synthesize output
+```
+
+## 🏗️ Design Principles
+
+### 1. Complete Context Principle
+```yaml
+Why: Sub-agents can't access external resources
+How:
+  - Include all patterns inline
+  - Embed templates in commands
+  - Pass full context to tasks
+  - No external dependencies
+```
+
+### 2. Parallel-First Principle
+```yaml
+Why: 10x productivity through parallelization
+How:
+  - Assume independence
+  - Design for parallelism
+  - Use Git WorkTrees
+  - Aggregate intelligently
+```
+
+### 3. Learning Integration Principle
+```yaml
+Why: Commands should improve with use
+How:
+  - Capture execution patterns
+  - Measure success rates
+  - Refine strategies
+  - Evolve capabilities
+```
+
+### 4. Error Resilience Principle
+```yaml
+Why: Real-world execution has failures
+How:
+  - Graceful degradation
+  - Partial result handling
+  - Retry strategies
+  - Clear error reporting
+```
+
+## 🎭 Command Patterns
+
+### Discovery Commands
+```yaml
+Purpose: Explore and understand
+Pattern:
+  - Parallel search deployment
+  - Multiple perspective analysis
+  - Pattern recognition
+  - Insight synthesis
+Example: /explore-codebase
+```
+
+### Creation Commands
+```yaml
+Purpose: Generate new artifacts
+Pattern:
+  - Requirement analysis
+  - Parallel generation
+  - Quality validation
+  - Integration verification
+Example: /create-component
+```
+
+### Transformation Commands
+```yaml
+Purpose: Modify existing code
+Pattern:
+  - Current state analysis
+  - Change planning
+  - Parallel execution
+  - Verification & rollback
+Example: /refactor-auth
+```
+
+### Analysis Commands
+```yaml
+Purpose: Deep understanding
+Pattern:
+  - Multi-layer thinking
+  - Parallel perspectives
+  - Synthesis & insights
+  - Recommendation generation
+Example: /think-layers
+```
+  - Parallel task deployment
+  - Intelligent aggregation
   - Learning mechanisms
 ```
 

@@ -47,62 +47,181 @@ See [parallelization-strategy-details.md](parallelization-strategy-details.md) f
 
 ## 🔧 Implementation Strategies
 
-### Core Methods
-- **7-Parallel-Tasks Method**: Optimal for component development
-- **Wave-Based Execution**: Multi-stage workflows with checkpoints
-- **Dynamic Parallelization**: Adjust based on scope findings
+### The 7-Parallel-Tasks Method
+```yaml
+Optimal for: Component development
+Tasks:
+  1. Core component logic
+  2. Styling and appearance
+  3. Test suite creation
+  4. Type definitions
+  5. Utility functions
+  6. Integration points
+  7. Documentation
 
-See [parallelization-strategy-details.md](parallelization-strategy-details.md) for complete implementation details and examples.
+Why 7?: 
+  - Balances overhead vs benefit
+  - Clear separation of concerns
+  - Manageable aggregation
+```
+
+### Wave-Based Execution
+```yaml
+When: Multi-stage workflows
+Pattern:
+  Wave 1: All discovery tasks
+  Wave 2: All analysis tasks
+  Wave 3: All creation tasks
+  Wave 4: All validation tasks
+
+Benefits:
+  - Clear stage boundaries
+  - Easy progress tracking
+  - Natural checkpoints
+```
+
+### Dynamic Parallelization
+```yaml
+Concept: Adjust based on findings
+Flow:
+  1. Initial probe (1-3 tasks)
+  2. Analyze scope
+  3. Calculate optimal parallelization
+  4. Deploy calculated tasks
+
+Example:
+  - Small codebase: 4 parallel
+  - Medium codebase: 8 parallel
+  - Large codebase: 10 parallel
+```
 
 ## 🎪 Advanced Techniques
 
-### Specialized Approaches
-- **Competitive Parallelization**: Multiple approaches, best result
-- **Hierarchical Parallelization**: Pre-planned task hierarchies
-- **Resource-Aware Parallelization**: Dynamic adaptation to constraints
+### Competitive Parallelization
+```yaml
+Use Case: Critical operations
+Strategy:
+  - Same task, different approaches
+  - Compare results
+  - Select best outcome
 
-See [parallelization-strategy-details.md](parallelization-strategy-details.md) for complete advanced technique specifications.
+Example:
+  - 3 different search strategies
+  - 3 different fix approaches
+  - Choose most effective
+```
+
+### Hierarchical Parallelization
+```yaml
+Concept: Parallel tasks spawn parallel subtasks
+Implementation:
+  - Main command: 5 high-level tasks
+  - Each task: Handles subsection
+  - Natural work distribution
+
+Caution: Sub-agents can't spawn tasks
+Solution: Pre-plan hierarchy
+```
+
+### Resource-Aware Parallelization
+```yaml
+Monitoring:
+  - File system load
+  - API rate limits
+  - Memory usage
+  - Network capacity
+
+Adaptation:
+  - Reduce parallelism if constrained
+  - Queue tasks if at limit
+  - Batch similar operations
+```
 
 ## 📈 Performance Metrics
 
-### Speedup Guidelines
-- **Linear Operations**: Near p times speedup
-- **Complex Operations**: 60-80% of theoretical max
-- **Optimal Levels**: 3-16 parallel depending on task type
+### Speedup Calculations
+```yaml
+Linear Operations:
+  Sequential: O(n)
+  Parallel: O(n/p) where p = parallel tasks
+  Speedup: Near p times
 
-See [parallelization-strategy-details.md](parallelization-strategy-details.md) for complete metrics and calculation formulas.
+Complex Operations:
+  Consider: Aggregation overhead
+  Formula: Speedup = n/(n/p + overhead)
+  Typical: 60-80% of theoretical max
+```
+
+### Optimal Parallelization Levels
+```yaml
+Search Tasks: 8-16 parallel
+File Operations: 5-10 parallel
+Analysis Tasks: 4-8 parallel
+Creation Tasks: 3-7 parallel
+Validation Tasks: 5-10 parallel
+```
 
 ## 🚨 Anti-Patterns
 
-### Common Problems
-- **Over-Parallelization**: Overhead exceeds benefit
-- **False Dependencies**: Assuming sequential need
-- **Shared State Trap**: Hidden dependencies causing conflicts
+### Over-Parallelization
+```yaml
+Problem: Overhead exceeds benefit
+Signs:
+  - Tasks complete instantly
+  - Aggregation takes longer
+  - Resource contention
 
-See [parallelization-strategy-details.md](parallelization-strategy-details.md) for complete anti-pattern identification and solutions.
+Solution: Larger work units
+```
+
+### False Dependencies
+```yaml
+Problem: Assuming sequential need
+Signs:
+  - "Must do X before Y"
+  - Linear thinking
+  - Slow execution
+
+Solution: Challenge assumptions
+```
+
+### Shared State Trap
+```yaml
+Problem: Hidden dependencies
+Signs:
+  - Race conditions
+  - Inconsistent results
+  - Merge conflicts
+
+Solution: True isolation
+```
 
 ## 💡 Parallelization Checklist
 
 ### Before Implementation
-- [ ] Task independence verified
-- [ ] Work unit size appropriate
-- [ ] Outputs mergeable
-- [ ] Complete isolation
-- [ ] Self-contained instructions
+- [ ] Can tasks run independently?
+- [ ] Is work unit size appropriate?
+- [ ] Are outputs mergeable?
+- [ ] Is isolation complete?
+- [ ] Are instructions self-contained?
 
 ### During Execution
-- [ ] Resource usage monitored
-- [ ] Completion rates tracked
-- [ ] Partial results validated
-- [ ] Failures handled gracefully
+- [ ] Monitor resource usage
+- [ ] Track completion rates
+- [ ] Validate partial results
+- [ ] Handle failures gracefully
 
 ### After Completion
-- [ ] Actual speedup measured
-- [ ] Bottlenecks identified
-- [ ] Strategy refined
-- [ ] Patterns documented
+- [ ] Measure actual speedup
+- [ ] Identify bottlenecks
+- [ ] Refine for next time
+- [ ] Document patterns
 
-See [parallelization-strategy-details.md](parallelization-strategy-details.md) for expanded checklists and validation procedures.
+### Validation Procedures
+- [ ] Test with different parallelization levels
+- [ ] Verify result consistency
+- [ ] Measure performance impact
+- [ ] Document optimal configurations
 
 ---
 

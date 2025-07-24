@@ -35,17 +35,41 @@ Master registry and navigation hub for ce-simple modular rule system. Each rule 
 - Think x4 methodology and context economy
 - Token optimization guidelines
 
-#### 5. [Project Governance](project-governance.md)
+#### 5. [Git Workflow Protocols](git-workflow-protocols.md)
+**Scope**: Version control excellence and collaborative development
+- Claude Code commit protocol and signature requirements
+- Git worktree strategy and branch management
+- Quality gates and automation integration
+
+#### 6. [Project Governance](project-governance.md)
 **Scope**: Structure maintenance and file organization
 - Directory authority hierarchy
 - File management and command system architecture  
 - Structure integrity enforcement
 
-#### 6. [Evolution and Learning](evolution-learning.md)
+#### 7. [Evolution and Learning](evolution-learning.md)
 **Scope**: System growth and continuous improvement
 - Rule updating protocols and pattern capture
 - Learning integration and system scaling
 - Backward compatibility requirements
+
+#### 8. [Documentation Standards](documentation-standards.md)
+**Scope**: Writing standards and clarity requirements
+- English-only documentation mandate
+- Word economy and simplicity principles
+- Technical communication standards
+
+#### 9. [Command Structure Standard](command-structure-standard.md)
+**Scope**: Command development and formatting requirements
+- 4-section command structure pattern
+- Length limits and word economy standards
+- Natural language execution instructions
+
+#### 10. [Claude MD Import Guide](claude-md-import-guide.md)
+**Scope**: CLAUDE.md enhancement and import protocols
+- Dynamic content integration procedures
+- User-driven improvement capture methods
+- Git integration and documentation evolution
 
 ## Authority Hierarchy
 
@@ -63,8 +87,12 @@ System Components (Execution)
 
 ### Cross-Module Dependencies
 - **Partnership Protocol** ← foundational for → **All Modules**
-- **Communication Rules** ← integrates with → **Tool Usage Protocols**  
-- **Development Standards** ← enforces → **Project Governance**
+- **Communication Rules** ← integrates with → **Tool Usage Protocols** + **Documentation Standards**
+- **Development Standards** ← enforces → **Git Workflow Protocols** + **Project Governance** + **Command Structure Standard**
+- **Git Workflow Protocols** ← supports → **Tool Usage Protocols** + **Development Standards** + **Claude MD Import Guide**
+- **Documentation Standards** ← enforces → **Command Structure Standard** + **Claude MD Import Guide**
+- **Command Structure Standard** ← implements → **Development Standards** + **Documentation Standards**
+- **Claude MD Import Guide** ← integrates → **Git Workflow Protocols** + **Documentation Standards**
 - **Evolution and Learning** ← captures insights from → **All Modules**
 
 ### Conflict Resolution

@@ -1,6 +1,6 @@
 # CLAUDE.md - ce-simple
 
-**Last Updated: 2025-07-23**
+**Last Updated: 2025-07-24**
 
 ## Tech Stack
 - **Platform**: Claude Code slash commands
@@ -12,8 +12,12 @@
 ```
 ce-simple/
 ├── CLAUDE_RULES.md          # Partnership protocol (READ FIRST)
-├── docs/core/               # PTS framework and development principles  
-├── docs/vision/             # System philosophy and technical direction
+├── docs/
+│   ├── core/                # PTS framework and development principles  
+│   ├── vision/              # System philosophy and technical direction
+│   ├── rules/               # Modular rule system (7 rule modules)
+│   ├── patterns/            # Dynamic pattern storage with internal timestamps
+│   └── governance/          # Modular architecture and quality frameworks
 ├── export/commands/         # 86 production-ready commands (15 categories)
 ├── commands/                # 3 essential local commands (init-project, start, explore-codebase)
 └── development/             # Prototyping and testing workspace
@@ -44,6 +48,9 @@ ce-simple/
 - **Autocontained**: All logic, patterns, templates embedded inline
 - **Single Responsibility**: Each command does exactly one thing well
 - **PTS Compliance**: Must pass all 12 PTS components before deployment
+- **Rule Integration**: Reference modular rule system (@docs/rules/)
+- **Pattern Capture**: Utilize dynamic pattern storage (@docs/patterns/)
+- **Git Workflow**: Integrated commit protocols with vision-driven development
 
 ### Documentation Standards
 - **English Only**: Zero tolerance for mixed language content
@@ -77,12 +84,16 @@ ce-simple/
 
 ### Authority Hierarchy
 1. **CLAUDE_RULES.md** - Partnership protocol (foundation authority)
-2. **docs/core/development-principles.md** - PTS framework and technical standards
-3. **docs/vision/overview.md** - System philosophy and direction
-4. **CLAUDE.md** - System overview and navigation (this file)
+2. **docs/rules/** - Modular rule system (10 specialized rule modules)
+3. **docs/core/development-principles.md** - PTS framework and technical standards
+4. **docs/vision/overview.md** - System philosophy and direction
+5. **CLAUDE.md** - System overview and navigation (this file)
 
 ### Reference System
 - **Detailed Architecture**: @docs/core/README.md
+- **Modular Rules**: @docs/rules/ (10 specialized rule modules)
+- **Pattern Storage**: @docs/patterns/ (dynamic patterns with timestamps)
+- **Governance Framework**: @docs/governance/ (modular architecture)
 - **PTS Framework**: @docs/core/pts-framework.md  
 - **Validation Checklist**: @docs/core/pts-checklist.md
 - **Command Patterns**: @export/CLAUDE.md
@@ -101,6 +112,8 @@ ce-simple/
 - **No cross-command file references** - use slash command calls only
 - **No vision document authority override** - docs/vision/ is absolute
 - **No PTS compliance bypass** - 12/12 components mandatory
+- **No rule module bypass** - modular rule system must be consulted
+- **No pattern storage circumvention** - dynamic patterns provide context continuity
 
 ### Quality Standards
 - **No deployment without validation** - PTS compliance required
@@ -121,6 +134,8 @@ ce-simple/
 - **Context Economy**: Efficient token usage in all documentation
 - **User Experience**: ≤30 seconds to understand command purpose
 - **Integration Success**: Seamless operation across different projects
+- **Modular Navigation**: Efficient access through rule/pattern/governance modules
+- **Vision Alignment**: All changes traceable to vision-driven development
 
 ### Partnership Effectiveness
 - **Vision Alignment**: 100% decisions traceable to stated vision

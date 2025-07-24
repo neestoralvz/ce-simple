@@ -30,7 +30,7 @@ Wave 1 - Analysis (2-3 agents):
 
 Wave 2 - Operations (4-6 agents):
   - File creation and modification agents
-  - CLI tool execution agents
+  - CLI tool execution agents (including git operations per Git Workflow Protocols)
   - Configuration and setup agents
 
 Wave 3 - Validation (1-2 agents):
@@ -85,6 +85,7 @@ Wave 3 - Validation (1-2 agents):
 ### Tool Combination Patterns
 - **Analysis + Research**: Combine internal analysis with external research agents
 - **Implementation + Validation**: Pair operation agents with validation agents
+- **Git + Parallel Operations**: Coordinate version control with multi-agent development (see Git Workflow Protocols)
 - **Creation + Optimization**: Balance creation agents with performance optimization
 - **Monitoring + Learning**: Integrate monitoring tools with learning capture mechanisms
 
