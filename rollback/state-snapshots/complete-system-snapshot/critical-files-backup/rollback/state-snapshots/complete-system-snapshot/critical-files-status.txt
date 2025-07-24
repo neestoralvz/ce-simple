@@ -1,9 +1,0 @@
-=== Critical Files Status ===
-FILE: CLAUDE.md (     195 lines)
-MISSING: README.md
-MISSING: .gitignore
-FILE: .session-info (      11 lines)
-DIR:  commands (      55 files)
-DIR:  docs/core (      17 files)
-DIR:  docs/standards (       3 files)
-DIR:  rollback (      86 files)

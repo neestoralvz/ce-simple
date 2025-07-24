@@ -1,8 +1,0 @@
-{
-  "snapshot_name": "initial",
-  "timestamp": "2025-07-23T06:10:59-06:00",
-  "total_files":     1238,
-  "git_commit": "d453a357ecc86a07b42f66e30427eaabb5934b13",
-  "project_root": "/Users/nalve/ce-simple",
-  "rollback_version": "1.0.0"
-}

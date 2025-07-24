@@ -1,71 +1,33 @@
-# Automation Directory
+# Automation & CI/CD
 
-**Purpose**: Executable scripts and automated systems for project operations.
+**Purpose**: Automated quality assurance, validation, and deployment pipelines for command system.
 
-## Directory Structure
+## Automation Categories
 
-### Core (`/core/`)
-**Python Intelligence Scripts** - Advanced automation and orchestration
-- Pattern recognition systems
-- Intelligent orchestration engines  
-- Performance optimization systems
-- Governance and monitoring systems
+### Quality Assurance
+- **STP Validation**: Automated 12-component compliance checking
+- **Structure Validation**: Directory organization and file placement verification
+- **Content Validation**: Line limits, language consistency, autocontainment verification
 
-### Scripts (`/scripts/`)
-**Shell Operational Scripts** - System operations and maintenance
-- Git workflow automation
-- File system operations
-- Deployment and configuration scripts
-- System maintenance utilities
+### Deployment Automation
+- **Export Preparation**: Automated preparation of commands for global deployment
+- **Version Management**: Semantic versioning and release management
+- **Documentation Sync**: Automated CLAUDE.md updates and cross-reference validation
 
-### Testing (`/testing/`)
-**Validation Scripts** - Quality assurance and testing
-- Automated test suites
-- Compliance validation scripts
-- Performance testing tools
-- Integration test frameworks
-
-### Config (`/config/`)
-**Configuration Files** - System and application configuration
-- Environment configurations
-- Service configurations
-- Tool configurations
-- Integration settings
-
-## File Organization Rules
-
-**Python Files** (.py):
-- Core intelligence: `/core/`
-- Operational scripts: `/scripts/` 
-- Test automation: `/testing/`
-
-**Shell Scripts** (.sh):
-- System operations: `/scripts/`
-- Test execution: `/testing/`
-
-**Configuration** (.json, .yaml, .toml):
-- All configurations: `/config/`
-
-**JavaScript** (.js):
-- Web interfaces: `/scripts/web/`
-- Build tools: `/scripts/build/`
-
-## Navigation Patterns
-
-**Predictable Locations**:
-- Intelligence systems: `automation/core/{domain}-{system}.py`
-- Operational tools: `automation/scripts/{purpose}-{action}.sh`
-- Test suites: `automation/testing/{component}-test.py`
-- Configurations: `automation/config/{service}-config.{format}`
-
-**Quick Access**:
-- Core systems: `find automation/core -name "*orchestrat*"`
-- Scripts by purpose: `find automation/scripts -name "*git*"`
-- Test suites: `find automation/testing -name "*test*"`
+### Development Support
+- **Template Generation**: Automated template instantiation for new commands
+- **Quality Gates**: Automated validation at each development stage
+- **Performance Monitoring**: Command execution and quality metrics collection
 
 ## Integration Points
 
-- **Commands**: Automation called from executable commands
-- **Documentation**: Implementation guides in `docs/implementation/`
-- **Templates**: Automation templates in `templates/automation/`
-- **Standards**: Development standards in `docs/standards/`
+- **Development Workflow**: Automated validation at prototype → testing → staging → export
+- **CLAUDE_RULES.md**: Enforcement of partnership protocol and quality standards
+- **Documentation**: Automated documentation currency and integrity verification
+
+## Success Metrics
+
+- **Quality**: 100% STP compliance across all commands
+- **Consistency**: Zero deviation from established standards
+- **Efficiency**: Automated validation reduces manual quality checking
+- **Reliability**: ≥95% successful automated validation rate

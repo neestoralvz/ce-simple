@@ -77,7 +77,7 @@ ce-simple/
 │   ├── frameworks/        # System frameworks
 │   │   ├── execution-patterns.md       # Execution patterns
 │   │   ├── performance-framework.md    # Performance monitoring
-│   │   └── validation-framework.md     # Quality assurance
+│   │   └── stp-validation-framework.md # STP validation tools
 │   ├── standards/         # Development standards
 │   │   ├── command-standards.md        # Command specifications
 │   │   ├── command-structure-standard.md # Structure standards

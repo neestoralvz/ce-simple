@@ -1,7 +1,0 @@
-[0;36m[RECOVERY][0m Emergency Damage Assessment
-==================================================
-[0;34m[INFO][0m 06:14:00 - Damage Assessment Complete
-[0;34m[INFO][0m 06:14:00 - Damage Score: 20/100
-[0;35m[CRITICAL][0m 06:14:00 - Critical Issues Detected:
-  - Critical file missing: README.md
-[1;33m[WARNING][0m 06:14:00 - MODERATE DAMAGE - Targeted recovery required

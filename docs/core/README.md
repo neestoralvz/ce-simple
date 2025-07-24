@@ -1,98 +1,124 @@
-# ce-simple: Core Architecture
+# Core Architecture - ce-simple
+
+**Last Updated: 2025-07-23**
 
 ## Purpose
-Core documentation for ce-simple's living command system using progressive disclosure principles.
 
-## System Overview
-ce-simple creates **self-contained slash commands** that orchestrate **parallel task execution** through Claude Code's Task Tool to transform **user vision into reality**.
+Core system documentation for ce-simple command architecture implementing PTS (Pragmatic Technical Simplicity) framework with specialized agent coordination and parallel execution capabilities.
 
-### Foundation Layer Integration
-The system includes a **00-core foundation layer** providing essential infrastructure:
-- **Project initialization** with complete setup and git integration
-- **Automated context management** with distributed memory synchronization
-- **Centralized notifications** for transparent delegation and state tracking  
-- **Seamless handoff management** between agents, sessions, and workflow phases
+## Architecture Overview
 
-## Core Documentation
+### Foundation: PTS Framework
+- **12-Component Validation**: Technical, Communication, Cognitive clusters
+- **Blocking Enforcement**: Development stops when PTS compliance fails
+- **Authority Hierarchy**: CLAUDE_RULES.md → PTS Framework → System Implementation
 
-### [System Principles](system-principles.md) 
-System foundation and architectural principles.
-- Interview-Driven Development
-- Task Orchestration philosophy  
-- Living System qualities
-- Complete architectural overview with embedded detail patterns
+### Specialized Agent Strategy
+- **Analysis Agents**: Domain experts (frontend, backend, research, security)
+- **Operations Agents**: Mass execution (file creation, CLI automation)  
+- **Synthesis Agent**: Content consolidation following writing standards
+- **Validation Guardian**: PTS compliance and quality assurance
 
-### [Task Orchestration](task-orchestration.md)
-Task orchestration patterns and strategies.
-- 7-Parallel-Tasks method
-- Wave deployment patterns
-- Parallelization guidelines
-- Complete Task Tool specifications
+### Task Tool Communication
+- **10-Agent Parallel Limit**: Claude Code maximum concurrent sub-agents
+- **Wave-Based Deployment**: Batch coordination (Analysis → Operations → Validation)
+- **One-Way Communication**: Sub-agents return only final results
+- **Context Isolation**: Sub-agents operate in separate contexts
 
-### [Context Architecture](context-architecture.md)
-Distributed context and memory architecture.
-- Minimal conductor context
-- Dynamic context loading  
-- Git-based persistence
-- Complete distributed memory framework with implementation details
+## Command Development Standards
 
-### [Evolution and Learning](evolution-learning.md)
-Comprehensive learning and adaptation protocols.
-- Multi-level learning architecture
-- Sophisticated adaptation mechanisms
-- Quality-controlled evolution cycles
-- Cross-domain knowledge transfer
+### PTS Compliance Requirements
+```bash
+# Pre-development validation (2 minutes)
+- [ ] Clear purpose in 30 seconds?
+- [ ] Single responsibility only?
+- [ ] Simplest solution that works?
+- [ ] Works without configuration?
 
-### [Performance](../frameworks/performance-framework.md)
-Performance monitoring, benchmarks, and optimization.
-- Scale-based performance standards
-- Concurrent operations framework
-- Resource utilization monitoring
-- Mathematical performance models
+# Deployment gates
+- [ ] ≤150 lines (commands), ≤200 lines (docs)
+- [ ] English-only content
+- [ ] 12/12 PTS components pass
+- [ ] Self-contained operation
+```
 
-### [Patterns](../frameworks/execution-patterns.md)
-Comprehensive execution pattern library.
-- Creation patterns (Seven-Parallel-Tasks)
-- Discovery patterns (Four-Phase approach)
-- Transformation patterns (Safety-first)
-- Problem-solving patterns (Universal framework)
+### Quality Gates
+- **Length Limits**: 150 lines commands, 200 lines documentation (blocking)
+- **Complexity Scoring**: Normalized complexity with objective thresholds
+- **Marketing Language**: Zero tolerance (blocking violation)
+- **PTS Validation**: Automated 12-component checking
 
-### [Validation](../frameworks/validation-framework.md)
-Unified validation and quality assurance framework.
-- Three-layer verification protocol
-- Cross-reference analysis
-- Quality assurance standards
-- Anti-bias enforcement
+## Document Organization
 
-## Documentation Standards
-All core documents follow progressive disclosure:
-- **Core files** (≤200 lines): Essential concepts and practices
-- **Detail files** (unlimited): Advanced specifications and implementation
+### Core Framework Files
+- **[pts-framework.md](pts-framework.md)** - Complete 12-component PTS specification
+- **[pts-checklist.md](pts-checklist.md)** - Development validation checklist
+- **[development-principles.md](development-principles.md)** - 33-principle hierarchy (6 tiers)
 
-## Reading Order
-1. Start with **system-principles.md** for system foundation
-2. Continue with **task-orchestration.md** for execution patterns
-3. Review **context-architecture.md** for memory architecture
-4. Study **[performance-framework.md](../frameworks/performance-framework.md)** for optimization guidelines
-5. Explore **[execution-patterns.md](../frameworks/execution-patterns.md)** for execution strategies
-6. Complete with **[validation-framework.md](../frameworks/validation-framework.md)** for quality standards
-7. Finish with **evolution-learning.md** for comprehensive learning and adaptation protocols
+### Implementation Guidance
+- **[../templates/foundation-command-patterns.md](../templates/foundation-command-patterns.md)** - Proven command templates
+- **[../frameworks/](../frameworks/)** - Validation and quality frameworks
+- **[../vision/overview.md](../vision/overview.md)** - System philosophy and technical direction
 
-Each core document ends with a reference to its detail file for deeper exploration.
+## Agent Coordination Patterns
 
-## Integration
-Core documentation integrates with:
-- **Foundation layer** in `/commands/00-core/` - Essential infrastructure commands
-- Command templates in `/standards/`
-- System overview in `/vision/`
-- Context patterns in `/context/`
+### Wave-Based Deployment
+```yaml
+Wave 1 - Analysis (2-3 agents):
+  - Domain expert agents for technical assessment
+  - Research agents for external information gathering
+  - Context analysis agents for requirement understanding
 
-### Foundation Command Integration
-- **init-project** integrates with system-principles.md for project architecture
-- **context-engine** implements context-architecture.md distributed memory patterns
-- **notify-manager** supports task-orchestration.md transparency requirements
-- **handoff-manager** enables evolution-learning.md learning and adaptation protocols
+Wave 2 - Operations (4-6 agents):
+  - File creation and modification agents
+  - CLI tool execution agents  
+  - Configuration and setup agents
+
+Wave 3 - Validation (1-2 agents):
+  - PTS compliance validation agent
+  - Quality assurance and integration testing agent
+```
+
+### Communication Protocols
+- **Explicit Orchestration**: Detailed delegation instructions (like multi-threading)
+- **Result Aggregation**: Main agent synthesizes sub-agent outputs
+- **Error Isolation**: Sub-agent failures contained within their context
+- **State Management**: Main agent maintains workflow state
+
+## Implementation Checklist
+
+### Before Development
+1. **PTS Pre-validation**: 2-minute essential criteria check
+2. **Agent Strategy**: Determine if parallel agents needed
+3. **Tool Selection**: Choose appropriate Claude Code tools
+4. **Wave Planning**: Design agent deployment sequence
+
+### During Development  
+1. **Real-time Validation**: Apply PTS checklist continuously
+2. **Length Monitoring**: Track line count against limits
+3. **Quality Gates**: Check compliance before proceeding
+4. **Agent Coordination**: Manage parallel execution effectively
+
+### Before Deployment
+1. **Complete PTS Validation**: Full 12-component assessment
+2. **Integration Testing**: Verify agent coordination works
+3. **Documentation Updates**: Ensure all references current
+4. **Pattern Capture**: Save successful patterns for reuse
+
+## Success Metrics
+
+### Development Quality
+- **PTS Compliance**: 12/12 components pass (blocking requirement)
+- **Execution Speed**: Optimized for 10-agent parallel coordination
+- **Token Efficiency**: Minimal context consumption, maximum value
+- **User Experience**: ≤30 seconds to understand component purpose
+
+### Agent Effectiveness
+- **Wave Coordination**: Smooth transition between agent batches
+- **Result Quality**: High-quality output from parallel execution
+- **Error Recovery**: Graceful handling of sub-agent failures
+- **Pattern Reuse**: Successful patterns documented and reused
 
 ---
 
-**Next Step**: Begin with [system-principles.md](system-principles.md) to understand the system foundation.
+**Core Principle**: Simple commands with clear responsibilities that coordinate through intelligent parallel execution to achieve complex workflows while maintaining PTS compliance and token efficiency.

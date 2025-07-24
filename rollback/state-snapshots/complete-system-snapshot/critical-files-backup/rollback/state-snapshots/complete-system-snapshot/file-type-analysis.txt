@@ -1,5 +1,0 @@
-=== File Type Analysis ===
-Markdown files:     1181
-Shell scripts:       97
-JSON files:       18
-Total tracked files:     1244
