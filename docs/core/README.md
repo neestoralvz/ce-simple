@@ -1,69 +1,72 @@
-# Core Framework Documentation
+# Core Technical Authority - Organized Framework
 
-**Updated**: 2025-07-26 | **Status**: Consolidated Authority Structure  
-**Purpose**: Core technical frameworks and principles
+**Updated**: 2025-07-26 | **Authority**: Consolidated technical standards | **Status**: Reorganized for clarity
 
-## PTS Framework - Consolidated Authority (Lines 5-25)
+## Directory Structure
 
-The Pragmatic Technical Simplicity (PTS) Framework is consolidated into 4 authoritative modules:
+### 01-fnd-foundations
+Core principles and framework authority
+- **[PTS Framework](01-fnd-foundations/fnd-pts-framework.md)** - 12-component technical authority
+- **[Development Principles](01-fnd-foundations/fnd-development-principles.md)** - 33 principles in 6 tiers
+- **[Partnership Protocol](01-fnd-foundations/fnd-partnership-protocol.md)** - Core working relationship
+- **[System Principles](01-fnd-foundations/fnd-system-principles.md)** - System-wide principles
 
-### 1. Framework Definition
-**[pts-framework-consolidated.md](pts-framework-consolidated.md)** - Core 12-component definitions & quantitative metrics
+### 02-std-standards
+Development and quality standards
+- **[Command Governance](02-std-standards/std-command-governance.md)** - Command creation standards
+- **[Command Patterns](02-std-standards/std-command-patterns.md)** - Implementation patterns
+- **[Tier Matrix](02-std-standards/std-tier-matrix.md)** - Principle validation
+- **[Development Standards](02-std-standards/std-development.md)** - Technical requirements
 
-### 2. Validation Procedures  
-**[pts-validation-consolidated.md](pts-validation-consolidated.md)** - Practical checklists & blocking criteria
+### 03-com-communication
+Documentation and communication standards
+- **[Documentation Standards](03-com-communication/com-documentation.md)** - Writing standards
+- **[Communication Rules](03-com-communication/com-rules.md)** - Communication protocols
+- **[Context Management](03-com-communication/com-context-management.md)** - Import/reference standards
+- **[Markdown Standards](03-com-communication/com-markdown.md)** - Formatting compliance
 
-### 3. Governance Framework
-**[pts-governance-consolidated.md](pts-governance-consolidated.md)** - Tier integration & governance structure
+### 04-pro-protocols
+Technical protocols and workflows
+- **[Task Orchestration](04-pro-protocols/pro-task-orchestration.md)** - Parallel execution framework
+- **[Git Workflow](04-pro-protocols/pro-git-workflow.md)** - Version control standards
+- **[Tool Usage](04-pro-protocols/pro-tool-usage.md)** - Task Tool optimization
+- **[Parallel Execution](04-pro-protocols/pro-parallel-execution.md)** - Parallelization rules
 
-### 4. Application Guidelines
-**[pts-application-consolidated.md](pts-application-consolidated.md)** - Context-specific applications & examples
+### 05-per-performance
+Performance and optimization frameworks
+- **[Performance Framework](05-per-performance/per-framework.md)** - Performance metrics
+- **[Context Economy](05-per-performance/per-context-economy.md)** - Token optimization
+- **[Compaction Techniques](05-per-performance/per-compaction.md)** - Efficiency techniques
+- **[Progressive Disclosure](05-per-performance/per-progressive-disclosure.md)** - UI/UX patterns
 
-## Authority Flow (Lines 26-35)
-**User Vision** → **Technical Requirements** → **Core Framework** → **Implementation**
+### 06-inf-infrastructure
+Supporting systems and legacy content
+- **[Project Structure](06-inf-infrastructure/inf-project-structure.md)** - Current architecture
+- **[Command Index](06-inf-infrastructure/inf-command-index.md)** - Available commands
+- **[Navigation System](06-inf-infrastructure/inf-navigation-system.md)** - Decision trees
+- **[Environment Setup](06-inf-infrastructure/inf-environment.md)** - System configuration
+- **[VDD Dashboard](06-inf-infrastructure/inf-vdd-dashboard.md)** - Metrics tracking
+- **[Known Issues](06-inf-infrastructure/inf-known-issues.md)** - System warnings
+- **[Evolution Learning](06-inf-infrastructure/inf-evolution.md)** - System improvement
 
-```
-user-input/vision/ → user-input/technical-requirements/ → docs/core/ → commands/
-```
+## Authority Hierarchy
 
-### Core System Elements
-- **PTS Foundation**: 12-component validation framework (blocking enforcement)
-- **Authority Hierarchy**: user-input/ → CLAUDE_RULES → docs/core/ → implementation
-- **Coherence Validation**: Systematic alignment between all layers
+1. **user-input/** - Sacred User Space (absolute authority)
+2. **01-foundations/** - Core principles and PTS framework
+3. **02-standards/** - Development and quality standards
+4. **03-communication/** - Documentation and communication
+5. **04-protocols/** - Technical protocols and workflows
+6. **05-performance/** - Performance and optimization
+7. **06-infrastructure/** - Supporting systems
 
-### Implementation Resources
-- **[Templates](../templates/)** - Reusable command patterns + cognitive load guidelines
-- **[Frameworks](../frameworks/)** - Validation systems + composition patterns
-- **[Standards](../standards/)** - Context compaction + import methodologies
-- **[Validation](../validation/)** - Quality gates + compliance checklists
-- **[Vision](../vision/overview.md)** - System philosophy + technical direction
+## Quick Navigation
 
-### Specialized Areas
-- **[Rules](../rules/)** - Governance protocols + development standards
-- **[Patterns](../patterns/)** - Task tool communication + error resolution
-- **[Implementation](../implementation/)** - Practical guides + refactoring approaches
-- **[Governance](../governance/)** - Decision frameworks + architecture records
-
-## Development Workflow (Lines 51-75)
-### Pre-Development Phase
-**PTS Pre-validation**: @docs/technical/pts-framework-technical.md:76-80
-**Agent Strategy Planning**: @docs/technical/agent-deployment-technical.md:41-60
-**Context Budget Check**: @docs/technical/context-economy-framework.md:21-40
-
-### Development Execution
-**Wave-Based Deployment**: @docs/technical/agent-deployment-technical.md:21-40
-**Quality Gate Enforcement**: @docs/technical/markdown-compliance-technical.md:66-80
-**Real-time PTS Validation**: Apply 12-component checklist continuously
-
-### Deployment Validation
-**Complete PTS Assessment**: @docs/technical/pts-framework-technical.md:1-80
-**Integration Testing**: Verify agent coordination + system functionality
-**Documentation Updates**: Maintain reference accuracy + system currency
-
-## Success Metrics (Lines 76-80)
-- **PTS Compliance**: 12/12 components pass (blocking) | **File Limits**: 100% ≤80 lines
-- **Agent Effectiveness**: Parallel coordination + quality output | **Context Economy**: Optimal token efficiency
-- **Navigation Excellence**: ≤3 clicks any content | **Reference Integrity**: 100% functional links
+**Getting Started**: 01-fnd-foundations/fnd-pts-framework.md
+**Creating Commands**: 02-std-standards/std-command-governance.md
+**Writing Docs**: 03-com-communication/com-documentation.md
+**Parallel Execution**: 04-pro-protocols/pro-task-orchestration.md
+**Performance**: 05-per-performance/per-framework.md
 
 ---
-**Core Principle**: Simple commands with intelligent parallel execution achieving complex workflows via PTS-compliant reference architecture.
+
+**Organization Principle**: Clear categorization with logical hierarchy for improved navigation and reduced cognitive load.

@@ -63,6 +63,13 @@
 - Analysis tasks: 4-8 parallel (4x speedup)
 - Validation operations: distributed testing (minutes vs hours)"
 
+**Multi-File Editing Agility**: "Efficient multi-file operations through intelligent tool selection:
+- Parallel Task Tools: Multiple simultaneous file edits across different files (3-8 concurrent agents)
+- MultiEdit Tool: Multiple edits within single file for complex refactoring operations
+- Decision Criteria: Use parallel Task Tools for cross-file operations, MultiEdit for intensive single-file work
+- Performance Target: Multi-file workflows should complete 5-10x faster than sequential editing
+- User Visibility: Each parallel agent must report individual progress and results before synthesis"
+
 ---
 
 **User's Technical Vision**: "Sophisticated parallel architecture with simple user interface, powered by intelligent Git-based decision making."

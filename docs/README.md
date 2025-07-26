@@ -64,7 +64,7 @@ Operational knowledge, proven patterns, and system intelligence.
 - **18 files**: Live operational knowledge and patterns
 - **Authority**: Operational intelligence and methodology
 
-### [commands/](commands/)
+### [.claude/commands/](../.claude/commands/)
 Command implementation documentation and technical specifications.
 - **13 files**: Implementation details for command development
 - **Authority**: Command technical specifications
@@ -82,19 +82,19 @@ System philosophy, direction, and evolutionary principles.
 3. **Apply rules**: [rules/development-standards.md](rules/development-standards.md) - Development requirements & standards
 4. **Use templates**: [templates/command-template.md](templates/command-template.md) - Command structure & patterns
 5. **Follow implementation**: [implementation/refactoring-guide.md](implementation/refactoring-guide.md) - Development process & workflows
-6. **Validate quality**: [frameworks/stp-validation-framework.md](frameworks/stp-validation-framework.md) - Quality gates & compliance
+6. **Validate quality**: [core/pts-validation-consolidated.md](core/pts-validation-consolidated.md) - Quality gates & compliance
 
 ### For Understanding System
 1. **System overview**: [vision/README.md](vision/README.md) - Complete user vision navigation
 2. **Technical architecture**: [vision/technical-architecture.md](vision/technical-architecture.md) - Core execution mechanism  
-3. **Quality framework**: [frameworks/stp-validation-framework.md](frameworks/stp-validation-framework.md) - Validation tools
+3. **Quality framework**: [core/pts-validation-consolidated.md](core/pts-validation-consolidated.md) - Validation tools
 4. **Command system**: [core/command-index.md](core/command-index.md) - 86 commands in 15 categories
 5. **Implementation guides**: [implementation/](implementation/) - Practical development guidance
 
 ## Navigation Patterns
 
 ### Progressive Disclosure
-- **High-level**: vision/ → core/ → frameworks/
+- **High-level**: vision/ → core/ → standards/
 - **Practical**: rules/ → templates/ → implementation/
 - **Operational**: context/ → commands/
 

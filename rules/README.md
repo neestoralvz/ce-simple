@@ -12,9 +12,12 @@
 ## Modular Rules Architecture
 
 ### Core Methodology Rules
+- `master-workflow-protocols.md` - Complete workflow for ALL user requests (commit → explore → research → Think×4 → plan → implement → validate → commit)
+- `communication-standards-protocols.md` - Mandatory communication compliance for all user interactions
 - `planning-methodology.md` - Step-by-step planning + handoffs + parallel conversations
 - `content-auditing-methodology.md` - 4-step content auditing (INVENTORY → EXTRACT → CONSOLIDATE → MODULARIZE)
 - `documentation-first-rule.md` - ANALYZE → DECIDE → DOCUMENT → CREATE protocol
+- `template-usage-protocols.md` - Mandatory template compliance for all file creation
 - `claude-rules-modularization.md` - How to modularize CLAUDE_RULES itself
 
 ### System Operation Rules  

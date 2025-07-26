@@ -73,7 +73,7 @@ This document establishes the **user's mandatory verification methodology** that
 - [ ] **No Pending Items**: Zero incomplete or partially completed elements
 
 #### B. System Integrity Verification
-- [ ] **Coherence Validation Passed**: scripts/validate-coherence.sh passes 100%
+- [ ] **Coherence Validation Passed**: tools/scripts/validate-coherence.sh passes 100%
 - [ ] **PTS Compliance Verified**: All 12 PTS components validated
 - [ ] **Authority Structure Intact**: Sacred User Space integrity maintained
 - [ ] **Cross-References Updated**: All documentation and references current
@@ -152,7 +152,7 @@ This document establishes the **user's mandatory verification methodology** that
 4. **Other Technical Requirements**: Subject to this verification process
 
 ### Automation Integration
-- **scripts/validate-coherence.sh**: Integrated as part of System Integrity Verification
+- **tools/scripts/validate-coherence.sh**: Integrated as part of System Integrity Verification
 - **Git Hooks**: Enhanced to enforce these verification requirements
 - **TodoWrite Tool**: Must be used to track all checklist items
 - **Progress Tracking**: All checkpoints must be documented and tracked
