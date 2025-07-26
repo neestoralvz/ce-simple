@@ -13,6 +13,11 @@
 **IF content auditing** → READ rules/content-auditing-methodology.md
 **IF file creation needed** → READ rules/documentation-first-rule.md
 **IF sub-agent deployment** → READ rules/transparency-requirements.md
+**IF development work** → READ rules/development-workflow-protocols.md
+**IF architecture decisions** → READ rules/architecture-decision-protocols.md
+**IF quality validation** → READ rules/validation-protocols.md
+**IF writing standards** → READ rules/writing-standards-protocols.md
+**IF context optimization** → READ rules/context-optimization-protocols.md
 
 ## Core Mission
 **Objective**: Autocontained command system for workflow automation  
@@ -98,14 +103,14 @@
 **NOTE**: @ imports work ONLY in CLAUDE.md files and load immediately. True conditional loading achieved via reference links.
 
 **IF session start** → CORE DECISION SUPPORT FRAMEWORK (always loaded above)
-**IF documentation work** → READ docs/rules/documentation-standards-foundation.md (three-layer methodology) + READ docs/rules/markdown-standards.md:10-25 (format standards)
-**IF development work** → READ docs/core/pts-framework.md:1-50 (PTS components) + READ docs/templates/command-template.md:25-50 (essential patterns) + READ docs/rules/development-standards.md:15-40 (core standards)
+**IF documentation work** → READ docs/rules/documentation-standards-foundation.md + READ docs/rules/markdown-standards.md
+**IF development work** → READ rules/development-workflow-protocols.md
 **IF git operations** → READ docs/rules/git-workflow-protocols.md
-**IF architecture decisions** → READ docs/core/development-principles.md:8-30 (UltraThink x4 + PTS)
-**IF quality validation** → READ docs/core/pts-checklist.md:15-45 (validation criteria)
-**IF writing standards** → READ docs/standards/context-compaction-techniques.md:51-70 (compaction techniques) + READ docs/standards/line-level-import-standards.md:15-45 (import strategies)
-**IF context optimization** → READ docs/standards/import-analysis-methodology.md (rigorous criteria) + READ docs/standards/context-efficiency-optimization.md (systematic process) + READ docs/validation/context-economy-metrics.md (measurement framework)
-**IF claude.md architecture** → READ docs/standards/claude-md-import-methodology.md (@ import scope + three-section architecture)
+**IF architecture decisions** → READ rules/architecture-decision-protocols.md
+**IF quality validation** → READ rules/validation-protocols.md
+**IF writing standards** → READ rules/writing-standards-protocols.md
+**IF context optimization** → READ rules/context-optimization-protocols.md
+**IF claude.md architecture** → READ docs/standards/claude-md-import-methodology.md
 **IF three-layer architecture** → READ docs/rules/documentation-standards-foundation.md + READ docs/implementation/documentation-standards-implementation.md + READ docs/validation/documentation-standards-checklist.md
 
 ## Navigation & References

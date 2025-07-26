@@ -165,6 +165,15 @@ This document establishes the **user's required methodology** for ensuring syste
 - **Trend Analysis**: Coherence quality over time
 - **User Summary**: High-level coherence status for user review
 
+## Integration with Mandatory Verification
+
+**Authority Integration**: This coherence validation methodology is integrated as a component within the MANDATORY implementation verification framework:
+- **Higher Authority**: [implementation-verification-mandatory-user.md](implementation-verification-mandatory-user.md) (OVERRIDES this methodology when conflicts arise)
+- **Integration Point**: System Integrity Verification phase of mandatory framework
+- **Usage Context**: Called automatically as part of mandatory verification process
+
+**Cross-Reference**: All coherence validation requirements are subject to mandatory verification framework requirements.
+
 ---
 
 **User's Coherence Vision**: "Systematic validation ensures user vision authority flows correctly through all system layers, maintaining absolute fidelity to user intentions while enabling confident evolution and optimization."

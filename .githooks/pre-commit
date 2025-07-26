@@ -1,26 +1,42 @@
 #!/bin/bash
 
-# Pre-commit Hook for VDD Coherence Validation
-# Automatically validates coherence before allowing commits
+# Pre-commit Hook for VDD Mandatory Verification
+# Automatically validates mandatory verification before allowing commits
+# Authority: user-input/technical-requirements/implementation-verification-mandatory-user.md
 
 set -e
 
-echo "🔍 Running VDD Coherence Validation..."
+echo "🔍 Running VDD MANDATORY Implementation Verification..."
 
-# Run coherence validation script
-if [ -f "./scripts/validate-coherence.sh" ]; then
-    ./scripts/validate-coherence.sh
-    validation_result=$?
+# Run mandatory implementation verification
+if [ -f "./scripts/validate-implementation-mandatory.sh" ]; then
+    ./scripts/validate-implementation-mandatory.sh post-implementation
+    verification_result=$?
     
-    if [ $validation_result -eq 0 ]; then
-        echo "✅ Coherence validation passed - commit allowed"
+    if [ $verification_result -eq 0 ]; then
+        echo "✅ Mandatory verification passed - commit allowed"
     else
-        echo "❌ Coherence validation failed - commit blocked"
-        echo "Please fix coherence issues before committing"
+        echo "❌ MANDATORY VERIFICATION FAILED - commit blocked"
+        echo "❌ Gap detection triggered - re-planning required"
+        echo "Authority: implementation-verification-mandatory-user.md"
         exit 1
     fi
 else
-    echo "⚠️  Coherence validation script not found - commit allowed but validation skipped"
+    echo "⚠️  Mandatory verification script not found"
+    echo "🔍 Falling back to coherence validation..."
+    
+    # Fallback to coherence validation
+    if [ -f "./scripts/validate-coherence.sh" ]; then
+        ./scripts/validate-coherence.sh
+        if [ $? -eq 0 ]; then
+            echo "✅ Coherence validation passed - commit allowed"
+        else
+            echo "❌ Coherence validation failed - commit blocked"
+            exit 1
+        fi
+    else
+        echo "⚠️  No validation scripts found - commit allowed but verification skipped"
+    fi
 fi
 
 # Additional PTS compliance checks for commands

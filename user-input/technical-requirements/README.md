@@ -43,6 +43,10 @@ User-established technical quality and compliance requirements:
 User-required systematic alignment and coherence validation:
 - **[coherence-validation-methodology-user.md](coherence-validation-methodology-user.md)** → User's methodology for ensuring alignment between user-input/ → docs/ → implementation
 
+### Implementation Verification (MANDATORY)
+User-required mandatory verification for ALL implementations, handoffs, and applications:
+- **[implementation-verification-mandatory-user.md](implementation-verification-mandatory-user.md)** → User's MANDATORY verification methodology (HIGHEST AUTHORITY)
+
 ## Integration with VDD Framework
 
 **Technical Authority Flow**: user-input/technical-requirements/ → docs/technical/ → implementation
@@ -58,6 +62,7 @@ User-required systematic alignment and coherence validation:
 2. **No AI Enhancement**: Technical requirements reflect pure user technical input
 3. **Implementation Authority**: Maximum authority for technical implementation decisions
 4. **Modularization Principle**: Always divide files rather than compact to preserve technical detail
+5. **MANDATORY VERIFICATION**: implementation-verification-mandatory-user.md MUST be followed for ALL work (HIGHEST AUTHORITY)
 
 ---
 
