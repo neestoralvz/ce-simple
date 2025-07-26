@@ -1,9 +1,26 @@
 # Communication Documentation
 
-**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Documentation & communication philosophy | **Lines**: ≤80
+**Updated**: 2025-07-25 23:02 (Mexico City) | **Authority**: Documentation & communication philosophy | **Lines**: ≤80
 
 ## Core Documentation Philosophy
-Create clear, actionable documentation optimized for Claude Code agent deployment with maximum information density while maintaining clarity.
+Create clear, actionable documentation optimized for Claude Code agent deployment with maximum information density while maintaining clarity AND professional online accessibility.
+
+## Professional Documentation Online Vision
+
+**Universal Principle**: Every project MUST have professional online documentation accessible via URL. This is non-negotiable standard for all ce-simple implementations.
+
+**Technical Standard**: MkDocs Material + GitHub Actions automation providing:
+- Professional Material Design theme with corporate appearance
+- 100% CLI-based setup & maintenance (zero GUI dependency) 
+- Automatic deployment via `git push` (GitHub Actions handles build/deploy)
+- Mobile responsive with integrated search functionality
+- Dark/light mode support with navigation optimization
+
+**Decision Journey**: UltraThink x4 analysis → Options evaluation (Docsify, Jekyll, Hugo, MkDocs) → CLI-first priority → MkDocs Material selection → GitHub Actions automation → Professional result with zero manual maintenance.
+
+**Implementation Pattern**: `pip install mkdocs-material` → `mkdocs.yml` configuration → `.github/workflows/docs.yml` automation → `mkdocs gh-deploy` initial deployment → `git push` maintenance workflow.
+
+**Future Standard**: This approach will be applied to ALL ce-simple projects, ensuring consistent professional documentation accessibility across the entire ecosystem.
 
 ## Three-Layer Architecture Vision
 
@@ -43,6 +60,9 @@ Objective criteria | Measurable standards | Agnostic tone | Zero marketing embel
 
 ## Success Metrics
 **Density Ratio**: ≥2:1 compression without loss | **Agent Deployment**: 100% successful coordination | **Comprehension**: ≤30% time increase | **Reference Efficiency**: ≤3 hops to details
+
+## Timestamp Protocol
+**Dynamic Timestamps**: Always use `TZ='America/Mexico_City' date '+%Y-%m-%d %H:%M'` command to obtain real current time before document updates. Never use fixed/estimated timestamps.
 
 ---
 

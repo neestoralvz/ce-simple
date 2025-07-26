@@ -5,6 +5,7 @@ Continuous learning and pattern extraction system. These commands capture insigh
 
 ## Commands
 - `/capture-learnings` - Pattern extraction and documentation with interview-driven learning
+- `/interview-feedback` - Systematic user feedback capture via structured interview process
 - `/system-monitor` - Unified system monitoring with compliance validation and performance metrics
 - `/system-monitor-agents` - Agent health monitoring and status tracking for orchestration systems
 - `/performance-track` - Performance metrics collection and optimization analysis

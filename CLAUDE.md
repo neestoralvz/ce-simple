@@ -1,4 +1,4 @@
-# CLAUDE.md - ce-simple
+# CLAUDE.md - VDD
 
 **Updated**: 2025-07-26 | **Authority**: Four-section architecture | **Limit**: 50 lines
 

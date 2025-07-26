@@ -1,0 +1,87 @@
+{
+  "vdd_config_version": "2.0",
+  "framework_info": {
+    "name": "VDD (Vision Driven Development)",
+    "description": "Dynamic configuration for intelligent sub-agent coordination",
+    "last_updated": "2025-07-26T00:00:00Z"
+  },
+  
+  "agent_profiles": {
+    "discovery_agent": {
+      "max_parallel_tasks": 8,
+      "token_limit": 4000,
+      "specialization": ["code_analysis", "file_exploration", "pattern_detection", "codebase_mapping"],
+      "coordination_level": "autonomous",
+      "error_tolerance": "medium",
+      "timeout_seconds": 300,
+      "retry_attempts": 3,
+      "tools_priority": ["Read", "Grep", "LS", "Task"]
+    },
+    
+    "planning_agent": {
+      "max_parallel_tasks": 5,
+      "token_limit": 6000,
+      "specialization": ["strategy_development", "resource_planning", "timeline_generation", "requirement_analysis"],
+      "coordination_level": "collaborative",
+      "error_tolerance": "low",
+      "timeout_seconds": 450,
+      "retry_attempts": 2,
+      "tools_priority": ["Task", "TodoWrite", "Read", "Write"]
+    },
+    
+    "execution_agent": {
+      "max_parallel_tasks": 10,
+      "token_limit": 3000,
+      "specialization": ["implementation", "file_modification", "parallel_execution", "code_generation"],
+      "coordination_level": "coordinated",
+      "error_tolerance": "high",
+      "timeout_seconds": 180,
+      "retry_attempts": 5,
+      "tools_priority": ["Edit", "Write", "MultiEdit", "Bash"]
+    },
+    
+    "validation_agent": {
+      "max_parallel_tasks": 6,
+      "token_limit": 5000,
+      "specialization": ["quality_assurance", "testing", "compliance_check", "pts_validation"],
+      "coordination_level": "independent",
+      "error_tolerance": "none",
+      "timeout_seconds": 360,
+      "retry_attempts": 1,
+      "tools_priority": ["Read", "Bash", "Grep", "Task"]
+    }
+  },
+  
+  "coordination_rules": {
+    "max_concurrent_agents": 15,
+    "agent_communication": "result_sharing",
+    "conflict_resolution": "priority_based",
+    "load_balancing": "dynamic",
+    "failure_handling": "graceful_degradation",
+    "synchronization": "checkpoint_based",
+    "resource_sharing": "cooperative"
+  },
+  
+  "resource_constraints": {
+    "global_token_limit": 50000,
+    "memory_limit_mb": 2048,
+    "max_file_operations_per_minute": 500,
+    "max_task_depth": 3,
+    "concurrent_tool_limit": 20
+  },
+  
+  "performance_tuning": {
+    "task_batching": true,
+    "result_caching": true,
+    "adaptive_timeouts": true,
+    "load_prediction": true,
+    "resource_monitoring": true
+  },
+  
+  "error_handling": {
+    "auto_recovery": true,
+    "escalation_levels": ["retry", "fallback", "human_intervention"],
+    "logging_detail": "standard",
+    "checkpoint_frequency": "per_phase"
+  }
+}

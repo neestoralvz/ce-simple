@@ -1,10 +1,10 @@
-# ce-simple: Revolutionary Command Engineering Platform
+# VDD: Vision Driven Development Framework
 
 **Transform complex workflows into simple commands through intelligent parallel orchestration**
 
-ce-simple is a breakthrough command engineering platform that combines the power of Claude Code's parallel execution capabilities with rigorous quality frameworks to deliver **86+ self-contained commands** that automate complex workflows across domains.
+VDD (Vision Driven Development) is a breakthrough command engineering platform that combines the power of Claude Code's parallel execution capabilities with rigorous quality frameworks to deliver **86+ self-contained commands** that automate complex workflows across domains.
 
-## ✨ What Makes ce-simple Revolutionary
+## ✨ What Makes VDD Revolutionary
 
 ### 🚀 Parallel AI Orchestration
 - **Multi-Agent Coordination**: Commands deploy up to 10 parallel sub-agents via Claude Code's Task Tool
@@ -25,7 +25,7 @@ ce-simple is a breakthrough command engineering platform that combines the power
 
 ### Command Systems
 ```
-ce-simple/
+vdd/
 ├── export/commands/           # 86 global commands in 15 categories
 │   ├── 00-core/              # Foundation operations
 │   ├── 01-discovery/         # Information gathering
@@ -179,7 +179,7 @@ Comprehensive project analysis with architecture mapping and improvement recomme
 ## 🤝 Contributing
 
 ### System Evolution
-ce-simple evolves through systematic analysis of usage patterns and measurable outcomes. The system captures learning automatically and integrates improvements through the governance framework.
+VDD evolves through systematic analysis of usage patterns and measurable outcomes. The system captures learning automatically and integrates improvements through the governance framework.
 
 ### Quality Standards
 All contributions must meet PTS 12/12 component validation. The system provides automated checking and guided improvement suggestions to ensure consistent excellence.
@@ -206,9 +206,9 @@ All contributions must meet PTS 12/12 component validation. The system provides 
 
 ## 🚀 What's Next
 
-ce-simple represents a paradigm shift from traditional development tools to **intelligent workflow orchestration systems**. The combination of parallel AI coordination, rigorous quality frameworks, and context economy optimization creates a platform that grows more capable while remaining simple to use.
+VDD represents a paradigm shift from traditional development tools to **intelligent workflow orchestration systems**. The combination of parallel AI coordination, rigorous quality frameworks, and context economy optimization creates a platform that grows more capable while remaining simple to use.
 
-**Core Innovation**: ce-simple proves that sophisticated parallel AI coordination can be packaged into simple, reusable commands that deliver immediate value while maintaining long-term architectural integrity.
+**Core Innovation**: VDD proves that sophisticated parallel AI coordination can be packaged into simple, reusable commands that deliver immediate value while maintaining long-term architectural integrity.
 
 ---
 

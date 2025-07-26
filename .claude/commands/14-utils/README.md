@@ -5,6 +5,7 @@ Shared utilities and helper functions supporting all categories. These commands 
 
 ## Commands
 - `/calc-engine` - Mathematical computation and calculation utilities
+- `/config-manager` - Configuration management utility for VDD framework validation and optimization
 - `/deploy-core` - Deployment coordination and environment management
 - `/monitor-core` - System monitoring and health diagnostics
 - `/todo-manager` - Task management and workflow coordination

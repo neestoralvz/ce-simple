@@ -16,7 +16,7 @@ Transform complex software workflows into simple command executions through inte
 **Vision-Driven Development**: docs/vision/ serves as absolute North Star. All development decisions reference and align with vision documents. Vision → Core → Implementation (never inverted).
 
 ## System Purpose
-ce-simple is a command engineering platform creating reusable, intelligent slash commands capable of:
+VDD is a command engineering platform creating reusable, intelligent slash commands capable of:
 - Orchestrating complex workflows through Task Tool parallel execution
 - Maintaining complete self-containment with embedded logic & patterns  
 - Learning & evolving from usage patterns with git-tracked metrics
@@ -38,4 +38,4 @@ Create an intelligent command system where complex software development becomes 
 
 ---
 
-**Core Truth**: ce-simple transforms user intent into reality through intelligent parallel orchestration.
+**Core Truth**: VDD transforms user intent into reality through intelligent parallel orchestration.

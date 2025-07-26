@@ -8,6 +8,7 @@ Meta-level system operations and self-management. These commands handle system e
 - `/command-creation` - Complete development framework for self-contained slash commands
 - `/command-maintain` - Automated command system maintenance with standards enforcement  
 - `/matrix-maintenance` - Cross-reference matrix maintenance and structural integrity validation
+- `/sub-agent-migrate` - Migrate existing commands to specialized sub-agent architecture
 
 ## Category Relations
 - **Coordinates**: System-wide evolution and architecture improvement

@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Initialize ce-simple project with git repository, directory structure, and core documentation.
+Initialize VDD project with git repository, directory structure, and core documentation.
 
 ## Principles
 

@@ -1,4 +1,4 @@
-# CLAUDE RULES - ce-simple Partnership Protocol
+# CLAUDE RULES - VDD Partnership Protocol
 
 **Version**: 1.2 | **Updated**: 2025-07-26 12:00 (Mexico City) | **Context Economy**: 100 lines max
 

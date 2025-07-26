@@ -1,495 +1,503 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://nalve.github.io/ce-simple/</loc>
+         <loc>https://neestoralvz.github.io/vdd/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/analysis/authority-mapping-final/</loc>
+         <loc>https://neestoralvz.github.io/vdd/analysis/authority-mapping-final/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/analysis/content-duplication-mapping/</loc>
+         <loc>https://neestoralvz.github.io/vdd/analysis/content-duplication-mapping/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/analysis/core-strategic-directory-import-analysis/</loc>
+         <loc>https://neestoralvz.github.io/vdd/analysis/core-strategic-directory-import-analysis/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/analysis/file-optimization-matrix/</loc>
+         <loc>https://neestoralvz.github.io/vdd/analysis/file-optimization-matrix/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/analysis/import-elimination-plan/</loc>
+         <loc>https://neestoralvz.github.io/vdd/analysis/import-elimination-plan/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/</loc>
+         <loc>https://neestoralvz.github.io/vdd/analysis/vdd-content-categorization-analysis/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/12-math-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/13-search-integration/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/12-math-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/capture-learnings-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/13-search-integration/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/command-index/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/capture-learnings-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/command-maintain-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/command-index/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/command-modularization-standards/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/command-maintain-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/enhanced-start-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/command-modularization-standards/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/exploration-patterns/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/enhanced-start-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/matrix-maintenance-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/exploration-patterns/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/start-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/matrix-maintenance-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/think-layers-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/start-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/commands/todowrite-system/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/think-layers-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/</loc>
+         <loc>https://neestoralvz.github.io/vdd/commands/todowrite-system/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/02-writing-standards/</loc>
+         <loc>https://neestoralvz.github.io/vdd/context/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/03-anti-bias-enforcement/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/04-parallelization-system/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/02-writing-standards/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/05-performance-system/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/03-anti-bias-enforcement/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/06-user-customization/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/04-parallelization-system/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/07-usage-instructions/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/05-performance-system/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/command-design-patterns/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/06-user-customization/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/command-index/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/07-usage-instructions/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/context-architecture/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/command-design-patterns/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/decision-navigation-system/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/command-index/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/development-principles/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/context-architecture/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/evolution-learning/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/decision-navigation-system/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/principle-compliance-assessment/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/development-principles/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/project-structure-current/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/evolution-learning/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/project-structure/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/principle-compliance-assessment/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/pts-checklist/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/project-structure-current/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/pts-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/project-structure/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/shared-patterns/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/pts-checklist/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/stp-integration-summary/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/pts-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/system-principles/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/shared-patterns/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/task-orchestration/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/stp-integration-summary/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/tier-compliance-matrix/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/system-principles/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/core/tier0-pragmatic-technical-simplicity/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/task-orchestration/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/examples/compaction-examples/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/tier-compliance-matrix/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/33-principle-validation-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/core/tier0-pragmatic-technical-simplicity/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/command-governance-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/examples/compaction-examples/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/composition-patterns-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/33-principle-validation-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/execution-patterns/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/command-governance-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/performance-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/composition-patterns-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/progressive-disclosure-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/execution-patterns/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/stp-examples-library/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/performance-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/stp-implementation-guide/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/progressive-disclosure-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/stp-validation-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/stp-examples-library/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/frameworks/tier-by-tier-validation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/stp-implementation-guide/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/governance/architecture-decision-record-three-layer-system/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/stp-validation-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/governance/modular-rule-system-architecture/</loc>
+         <loc>https://neestoralvz.github.io/vdd/frameworks/tier-by-tier-validation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/governance/nomenclature-decision/</loc>
+         <loc>https://neestoralvz.github.io/vdd/governance/architecture-decision-record-three-layer-system/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/governance/modular-rule-system-architecture/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/implementation/command-examples-by-tier/</loc>
+         <loc>https://neestoralvz.github.io/vdd/governance/nomenclature-decision/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/implementation/documentation-standards-implementation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/implementation/refactoring-guide/</loc>
+         <loc>https://neestoralvz.github.io/vdd/implementation/command-examples-by-tier/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/implementation/stp-analysis-init-project/</loc>
+         <loc>https://neestoralvz.github.io/vdd/implementation/documentation-standards-implementation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/implementation/stp-implementation-guide/</loc>
+         <loc>https://neestoralvz.github.io/vdd/implementation/refactoring-guide/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/methodologies/context-mapping-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/implementation/stp-analysis-init-project/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/patterns/</loc>
+         <loc>https://neestoralvz.github.io/vdd/implementation/stp-implementation-guide/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/patterns/error-resolution-workflow/</loc>
+         <loc>https://neestoralvz.github.io/vdd/methodologies/context-mapping-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/patterns/task-tool-communication/</loc>
+         <loc>https://neestoralvz.github.io/vdd/patterns/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/protocols/agent-deployment-protocols/</loc>
+         <loc>https://neestoralvz.github.io/vdd/patterns/error-resolution-workflow/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/</loc>
+         <loc>https://neestoralvz.github.io/vdd/patterns/task-tool-communication/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/audit-agents-rule/</loc>
+         <loc>https://neestoralvz.github.io/vdd/protocols/agent-deployment-protocols/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/claude-md-import-guide/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/command-structure-standard/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/audit-agents-rule/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/communication-rules/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/claude-md-import-guide/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/development-standards/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/command-structure-standard/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/documentation-standards-foundation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/communication-rules/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/documentation-standards-original-backup/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/development-standards/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/evolution-learning/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/documentation-standards-foundation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/git-workflow-protocols/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/documentation-standards-original-backup/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/markdown-standards/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/evolution-learning/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/parallel-execution-rule/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/git-workflow-protocols/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/partnership-protocol/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/markdown-standards/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/project-governance/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/parallel-execution-rule/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/task-analysis-rule/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/partnership-protocol/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/todowrite-mandatory-rule/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/project-governance/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/rules/tool-usage-protocols/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/task-analysis-rule/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/agent-deployment-footer-standard/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/todowrite-mandatory-rule/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/basic-commands/</loc>
+         <loc>https://neestoralvz.github.io/vdd/rules/tool-usage-protocols/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/behavioral-preferences/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/agent-deployment-footer-standard/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/claude-md-import-methodology/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/basic-commands/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/code-style-preferences/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/behavioral-preferences/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/context-compaction-techniques/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/claude-md-import-methodology/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/context-efficiency-optimization/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/code-style-preferences/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/context-management-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/context-compaction-techniques/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/development-workflow/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/context-efficiency-optimization/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/directory-import-strategy/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/context-management-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/environment-setup/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/development-workflow/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/import-analysis-methodology/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/directory-import-strategy/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/import-vs-reference-criteria/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/environment-setup/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/known-issues-warnings/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/import-analysis-methodology/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/layer-separation-rules/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/import-vs-reference-criteria/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/line-level-import-standards/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/known-issues-warnings/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/standards/timestamp-standards/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/layer-separation-rules/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/technical/agent-deployment-technical/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/line-level-import-standards/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/technical/context-economy-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/standards/timestamp-standards/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/technical/git-protocols-technical/</loc>
+         <loc>https://neestoralvz.github.io/vdd/technical/agent-deployment-technical/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/technical/markdown-compliance-technical/</loc>
+         <loc>https://neestoralvz.github.io/vdd/technical/context-economy-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/technical/pts-framework-technical/</loc>
+         <loc>https://neestoralvz.github.io/vdd/technical/git-protocols-technical/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/validation/binary-validation-framework/</loc>
+         <loc>https://neestoralvz.github.io/vdd/technical/markdown-compliance-technical/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/validation/context-compaction-checklist/</loc>
+         <loc>https://neestoralvz.github.io/vdd/technical/pts-framework-technical/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/validation/context-economy-metrics/</loc>
+         <loc>https://neestoralvz.github.io/vdd/validation/binary-validation-framework/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/validation/documentation-quality-gates/</loc>
+         <loc>https://neestoralvz.github.io/vdd/validation/context-compaction-checklist/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/validation/documentation-standards-checklist/</loc>
+         <loc>https://neestoralvz.github.io/vdd/validation/context-economy-metrics/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/validation/layer-separation-quality-gates/</loc>
+         <loc>https://neestoralvz.github.io/vdd/validation/documentation-quality-gates/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/</loc>
+         <loc>https://neestoralvz.github.io/vdd/validation/documentation-standards-checklist/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/application-evolution/</loc>
+         <loc>https://neestoralvz.github.io/vdd/validation/layer-separation-quality-gates/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/autonomous-systems/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/central-concept/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/application-evolution/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/command-philosophy/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/autonomous-systems/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/communication-documentation/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/central-concept/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/development-methodology/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/command-philosophy/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/execution-strategies/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/communication-documentation/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/global-system/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/development-methodology/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
     <url>
-         <loc>https://nalve.github.io/ce-simple/vision/technical-architecture/</loc>
+         <loc>https://neestoralvz.github.io/vdd/vision/execution-strategies/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+    <url>
+         <loc>https://neestoralvz.github.io/vdd/vision/global-system/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+    <url>
+         <loc>https://neestoralvz.github.io/vdd/vision/technical-architecture/</loc>
          <lastmod>2025-07-26</lastmod>
     </url>
 </urlset>

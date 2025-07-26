@@ -16,6 +16,7 @@ Core implementation and execution engine. These commands transform plans into re
 - `/agent-orchestration` - Master orchestrator for intelligent agent deployment and coordination
 - `/agent-coordinate` - High-level orchestration strategy development for agent coordination workflows
 - `/agent-deploy` - Agent deployment and management for parallel task execution
+- `/config-dynamic` - Dynamic configuration management for sub-agent coordination and runtime adaptation
 - `/load-balance` - Resource distribution analysis and optimization for agent workload management
 - `/result-consolidate` - Result aggregation and consolidation from multiple parallel agents
 

@@ -1,0 +1,47 @@
+{
+  "project_settings": {
+    "name": "vdd",
+    "vdd_version": "1.0",
+    "token_economy_focus": true,
+    "sacred_user_space": "user-input/",
+    "ai_implementation_space": "docs/",
+    "global_commands": "export/commands/"
+  },
+  
+  "metric_thresholds": {
+    "token_density_minimum": 0.3,
+    "duplication_warning": 50.0,
+    "file_length_warning": 1.5,
+    "content_age_warning": 30,
+    "implementation_gap_critical": 0.5,
+    "navigation_health_minimum": 0.8,
+    "context_reuse_target": 0.6
+  },
+  
+  "file_type_limits": {
+    "user-input": 200,
+    "docs": 100,
+    "export": 150,
+    "other": 100
+  },
+  
+  "monitoring": {
+    "watch_interval_seconds": 60,
+    "priority_file_count": 20,
+    "top_issues_count": 10,
+    "alert_thresholds": {
+      "high_duplication": 70.0,
+      "critical_age": 60,
+      "extreme_length": 2.0
+    }
+  },
+  
+  "output_preferences": {
+    "default_format": "text",
+    "show_file_paths": true,
+    "show_aggregate_summary": true,
+    "show_category_breakdown": true,
+    "show_optimization_opportunities": true,
+    "decimal_precision": 3
+  }
+}

@@ -1,15 +1,15 @@
-site_name: ce-simple Vision Documentation
-site_description: Complete user vision for ce-simple command engineering platform
+site_name: VDD Vision Documentation
+site_description: Complete user vision for VDD (Vision Driven Development) framework
 site_author: neestoralvz
-site_url: https://neestoralvz.github.io/ce-simple/
+site_url: https://neestoralvz.github.io/vdd/
 
 # Repository
-repo_name: neestoralvz/ce-simple
-repo_url: https://github.com/neestoralvz/ce-simple
+repo_name: neestoralvz/vdd
+repo_url: https://github.com/neestoralvz/vdd
 edit_uri: edit/master/
 
 # Copyright
-copyright: Copyright &copy; 2025 ce-simple
+copyright: Copyright &copy; 2025 VDD Framework
 
 # Configuration
 theme:
@@ -58,7 +58,23 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/nalve/ce-simple
+      link: https://github.com/neestoralvz/vdd
+  generator: false
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://github.com/neestoralvz/vdd/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">telling us what you're looking for</a>.
 
 # Extensions
 markdown_extensions:
@@ -109,17 +125,16 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: 
-    - Overview: README.md
-    - Project Structure: docs/core/project-structure-current.md
+  - Home: README.md
   - Vision System:
-    - Vision Overview: docs/vision/README.md
-    - Core Mission: docs/vision/central-concept.md
-    - Technical Foundation: docs/vision/technical-architecture.md
-    - Development Philosophy: docs/vision/development-methodology.md
-    - Command Design: docs/vision/command-philosophy.md
-    - Execution Strategies: docs/vision/execution-strategies.md
-    - Autonomous Systems: docs/vision/autonomous-systems.md
-    - Communication & Documentation: docs/vision/communication-documentation.md
-    - Global System: docs/vision/global-system.md
-    - Application Evolution: docs/vision/application-evolution.md
+    - Overview: vision/README.md
+    - Core Mission: vision/central-concept.md
+    - Technical Foundation: vision/technical-architecture.md
+    - Development Philosophy: vision/development-methodology.md
+    - Command Design: vision/command-philosophy.md
+    - Execution Strategies: vision/execution-strategies.md
+    - Autonomous Systems: vision/autonomous-systems.md
+    - Communication & Documentation: vision/communication-documentation.md
+    - Global System: vision/global-system.md
+    - Application Evolution: vision/application-evolution.md
+  - Project Structure: core/project-structure-current.md

@@ -5,7 +5,7 @@
 ## Core System Architecture
 
 ```
-ce-simple/
+vdd/
 ├── CLAUDE_RULES.md          # Partnership protocol (READ FIRST)
 ├── CLAUDE.md                # System navigation hub (≤50 lines) 
 ├── docs/                    # Documentation system
