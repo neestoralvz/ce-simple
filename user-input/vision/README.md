@@ -17,9 +17,7 @@ This directory contains the **pure, original user vision** for the VDD (Vision D
 - **[command-philosophy-user.md](command-philosophy-user.md)** → User's command design principles and philosophy
 - **[development-methodology-user.md](development-methodology-user.md)** → User's development methodology and workflow preferences
 
-### Technical & System Vision  
-- **[technical-architecture-user.md](technical-architecture-user.md)** → User's technical architecture vision
-- **[execution-strategies-user.md](execution-strategies-user.md)** → User's parallelization and execution preferences
+### System & Autonomous Vision  
 - **[autonomous-systems-user.md](autonomous-systems-user.md)** → User's vision for autonomous recovery and learning
 
 ### Communication & Application Vision
@@ -37,11 +35,11 @@ This directory contains the **pure, original user vision** for the VDD (Vision D
 
 ## Reading Flow for User Vision
 
-**First Time Understanding**: core-mission-concept → command-philosophy-user → development-methodology-user → technical-architecture-user
+**First Time Understanding**: core-mission-concept → command-philosophy-user → development-methodology-user → autonomous-systems-user
 
-**Implementation Planning**: execution-strategies-user → autonomous-systems-user → global-system-user
+**Implementation Planning**: global-system-user → communication-documentation-user → application-evolution-user
 
-**Documentation & Evolution**: communication-documentation-user → application-evolution-user
+**Technical Specifications**: For implementation details, see [../technical-requirements/README.md](../technical-requirements/README.md)
 
 ## Sacred User Space Principles
 

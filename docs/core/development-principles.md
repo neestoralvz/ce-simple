@@ -1,7 +1,7 @@
 # Development Principles - ce-simple
 
 **Updated**: 2025-07-24 12:54 (Mexico City)  
-**Navigation**: [System Hub](../navigation/index.md) | [PTS Framework](pts-framework.md) | [PTS Checklist](pts-checklist.md)
+**Navigation**: [System Hub](../navigation/index.md) | [PTS Framework](README.md) | [Core Framework](README.md)
 
 ## Quick Reference
 

@@ -1,7 +1,9 @@
 # Context Economy Metrics Validation
 
 **Updated**: 2025-07-24 | **Authority**: Context efficiency measurement | **Limit**: 100 lines
-**Navigation**: [System Hub](../navigation/index.md) | [Import Analysis](../standards/import-analysis-methodology.md) | [Optimization Process](../standards/context-efficiency-optimization.md)
+**Navigation**: [System Hub](../navigation/index.md) | [Import Analysis](../standards/import-analysis-methodology.md) | [Optimization Process](../standards/context-efficiency-optimization.md)  
+**Framework**: [Context Architecture](../core/context-architecture.md) | [PTS Framework](../core/pts-framework.md) | [Import Methodology](../standards/claude-md-import-methodology.md)  
+**Related**: [Performance System](../core/05-performance-system.md) | [Context Compaction](../standards/context-compaction-techniques.md)
 
 ## Quantitative Measurement Framework
 

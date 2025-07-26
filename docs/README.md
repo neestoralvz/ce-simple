@@ -35,9 +35,9 @@ docs/
 ## Core Architecture
 
 ### [core/](core/)
-System foundation, architectural principles, and STP (Simplicidad Técnica Pragmática) framework.
-- **21 files**: Complete architectural overview
-- **Authority**: Technical implementation patterns
+System foundation, architectural principles, and PTS (Pragmatic Technical Simplicity) framework.
+- **4 consolidated modules**: Complete PTS framework authority
+- **Authority**: Technical implementation patterns and validation
 
 ### [frameworks/](frameworks/)  
 Quality assurance, validation methodologies, and governance frameworks.
@@ -77,17 +77,19 @@ System philosophy, direction, and evolutionary principles.
 ## Quick Start
 
 ### For Command Development
-1. **Start with**: [vision/overview.md](vision/overview.md) - Understand system philosophy
-2. **Learn architecture**: [core/README.md](core/README.md) - Technical foundation  
-3. **Apply rules**: [rules/development-standards.md](rules/development-standards.md) - Development requirements
-4. **Use templates**: [templates/command-template.md](templates/command-template.md) - Command structure
-5. **Follow implementation**: [implementation/refactoring-guide.md](implementation/refactoring-guide.md) - Development process
+1. **Start with**: [vision/central-concept.md](vision/central-concept.md) - Core mission & unique differentiators
+2. **Learn architecture**: [core/README.md](core/README.md) - Technical foundation & PTS framework  
+3. **Apply rules**: [rules/development-standards.md](rules/development-standards.md) - Development requirements & standards
+4. **Use templates**: [templates/command-template.md](templates/command-template.md) - Command structure & patterns
+5. **Follow implementation**: [implementation/refactoring-guide.md](implementation/refactoring-guide.md) - Development process & workflows
+6. **Validate quality**: [frameworks/stp-validation-framework.md](frameworks/stp-validation-framework.md) - Quality gates & compliance
 
 ### For Understanding System
-1. **System overview**: [vision/overview.md](vision/overview.md)
-2. **Technical architecture**: [core/system-principles.md](core/system-principles.md)  
-3. **Quality framework**: [frameworks/stp-validation-framework.md](frameworks/stp-validation-framework.md)
-4. **Operational knowledge**: [context/](context/) - Browse subdirectories by domain
+1. **System overview**: [vision/README.md](vision/README.md) - Complete user vision navigation
+2. **Technical architecture**: [vision/technical-architecture.md](vision/technical-architecture.md) - Core execution mechanism  
+3. **Quality framework**: [frameworks/stp-validation-framework.md](frameworks/stp-validation-framework.md) - Validation tools
+4. **Command system**: [core/command-index.md](core/command-index.md) - 86 commands in 15 categories
+5. **Implementation guides**: [implementation/](implementation/) - Practical development guidance
 
 ## Navigation Patterns
 

@@ -1,6 +1,8 @@
 # Technical Architecture
 
-**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Complete technical vision | **Lines**: ≤80
+**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Complete technical vision | **Lines**: ≤80  
+**Core**: [Central Concept](central-concept.md) | [Command Philosophy](command-philosophy.md) | [Execution Strategies](execution-strategies.md)  
+**Implementation**: [Core Architecture](../core/README.md) | [Agent Deployment](../protocols/agent-deployment-protocols.md) | [Parallelization System](../core/04-parallelization-system.md)
 
 ## Core Execution Mechanism
 

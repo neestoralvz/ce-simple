@@ -10,32 +10,36 @@
 ## Directory Structure
 
 ### `/vision/`
-Pure conceptual content from user:
-- Philosophy and methodology 
-- Core concepts and principles
-- User's vision for the system
-- Organic, conversational user thoughts
+Pure conceptual content and philosophy from user:
+- Mission statement and core philosophy
+- Command design principles and development methodology  
+- Communication philosophy and global system vision
+- Autonomous systems vision and application evolution
+- **Example**: Core mission concept, command philosophy, development methodology
 
 ### `/technical-requirements/`
-Technical specifications mentioned by user:
-- Technical decisions made by user
-- Architecture preferences expressed by user
-- Implementation constraints specified by user
-- Technical vision from user perspective
+Technical specifications and implementation requirements from user:
+- Technical architecture and execution mechanisms
+- Parallelization strategies and performance optimization  
+- Implementation constraints and technical standards
+- Performance targets and resource specifications
+- **Example**: Task Tool integration specs, Git WorkTrees requirements
 
 ### `/evolution/`
-User feedback and context evolution:
-- Interview transcriptions (literal)
-- User feedback sessions
-- Evolution of thinking over time
-- Retrospective insights from user
+Organic user sessions and framework evolution:
+- Major architectural decision sessions (literal transcriptions)
+- Organic user conversations and thinking evolution
+- Framework refinement discussions and insights
+- Natural user voice capturing significant changes
+- **Example**: VDD migration decisions, framework architecture sessions
 
 ### `/context/`
-User feedback sessions via interview command:
-- Systematic feedback capture (logros, desafios, errores, obstaculos, aprendizajes)
-- Session-based retrospectives
-- VDD framework performance assessment
-- User satisfaction and improvement suggestions
+Structured feedback via interview command:
+- Systematic feedback using predefined categories
+- Interview-based retrospectives (logros, desafios, errores, obstaculos, aprendizajes)
+- VDD framework performance structured assessment
+- Regular session-based feedback capture
+- **Example**: Weekly retrospectives, structured performance evaluations
 
 ## Sacred Space Rules
 
@@ -53,6 +57,45 @@ AI Interprets/Implements → docs/ (structured derivatives)
 ```
 
 **Duplication Expected**: Content appears in both spaces - organic source here, structured implementation in docs/
+
+## Directory Usage Guidelines
+
+### When to Use `/vision/`
+- ✅ Core mission and philosophy concepts
+- ✅ Command design principles and methodology
+- ✅ Communication and documentation philosophy
+- ✅ High-level system vision and evolution concepts
+
+### When to Use `/technical-requirements/`
+- ✅ Specific technical architecture requirements
+- ✅ Performance specifications and optimization targets
+- ✅ Implementation constraints and technical standards
+- ✅ Tool integration specifications and technical protocols
+
+### When to Use `/evolution/`
+- ✅ Major framework decisions or architectural changes
+- ✅ Natural user conversations about system evolution  
+- ✅ Organic thinking sessions and insights
+- ✅ Historical decision context preservation
+
+### When to Use `/context/`
+- ✅ Structured interview-based feedback sessions
+- ✅ Regular performance retrospectives using predefined categories
+- ✅ Systematic VDD framework assessment
+- ✅ Periodic user satisfaction measurements
+
+### Content Cross-References
+- **Vision** provides philosophical foundation for technical requirements
+- **Technical requirements** implement vision concepts with specific constraints
+- **Evolution sessions** may reference both vision and technical content  
+- **Context sessions** assess both conceptual and technical implementation success
+
+**Current Cross-References**:
+- `vision/` (7 files) → Pure conceptual framework and philosophy
+- `technical-requirements/` (2 files) → Specific implementation specifications
+- `evolution/2025-07-25-23-39-vdd-migration-vision.md` → Establishes VDD architecture and Sacred User Space concept
+- `evolution/2025-07-26-00-25-framework-refinements-complete.md` → Refines framework implementation details  
+- `context/README.md` → Implements structured feedback system requested in evolution sessions
 
 ---
 

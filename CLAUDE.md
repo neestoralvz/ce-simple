@@ -1,43 +1,33 @@
-# CLAUDE.md - VDD
+# CLAUDE.md - VDD Reset
 
-**Updated**: 2025-07-26 | **Authority**: Four-section architecture | **Limit**: 50 lines
+**Updated**: 2025-07-26 | **Authority**: user-input/ (Sacred User Space) | **Status**: Clean reset from simulation
 
-## Section 1: Essential Context (Always Loaded)
-@docs/core/project-structure-current.md
-@CLAUDE_RULES.md:1-25
-See [README.md](README.md) for complete project overview
+## Section 1: User Vision Authority
+@user-input/vision/core-mission-concept.md - Core mission and philosophy
+@user-input/technical-requirements/technical-architecture-user.md - Real technical requirements
+See [user-input/README.md](user-input/README.md) for Sacred User Space authority
 
-## Section 2: Conditional Instructions (Task-Based Loading)
-**Documentation Work** → READ docs/rules/documentation-standards-foundation.md:15-30 + docs/rules/markdown-standards.md:10-25
-**Development Tasks** → READ docs/core/pts-framework.md:1-50 + docs/templates/command-template.md:25-50
-**Validation Work** → READ docs/core/pts-checklist.md:15-45 + docs/validation/context-economy-metrics.md:20-40
-**Git Operations** → READ docs/rules/git-workflow-protocols.md:25-60
-**Context Optimization** → READ docs/standards/claude-md-import-methodology.md:15-40
-**Architecture Decisions** → READ docs/core/development-principles.md:8-30
-**Handoff Management** → READ handoffs/README.md:125-145 + handoffs/project-[1-7]-*.md:1-30
+## Section 2: Real Implementation
+**Commands** → [commands/](commands/) - Self-contained Task Tool commands (explore-codebase, init-project, start)
+**Export Commands** → [export/commands/](export/commands/) - Full command library (86 commands in 15 categories)
+**Documentation** → [docs/](docs/) - Derived from user-input/ (implementation layer)
 
-## Section 3: Context Navigation (Directory References)
-**Complete User Vision** → [docs/vision/](docs/vision/) - All user vision components (10 files)
-**Core Architecture** → [docs/core/](docs/core/) - System frameworks & principles
-**Rules & Standards** → [docs/rules/](docs/rules/) - Behavioral protocols  
-**Technical Standards** → [docs/standards/](docs/standards/) - Implementation criteria
-**Templates & Patterns** → [docs/templates/](docs/templates/) - Reusable structures
-**Validation Tools** → [docs/validation/](docs/validation/) - Quality gates
-**Implementation Guides** → [docs/implementation/](docs/implementation/) - Detailed procedures
-**Project Handoffs** → [handoffs/](handoffs/) - Context preservation & project execution
+## Section 3: Core Principles (from user-input/)
+**Task Tool Parallelization**: Real parallel execution (8-16 searches, 5-10 files, 4-8 analysis)
+**Self-Contained Commands**: All logic embedded inline (sub-agents can't access external files)
+**Git-Based Intelligence**: Real Git metrics and WorkTrees for parallel development
+**PTS Framework**: 12-component validation (not simulated)
 
-## Section 4: Practical Development (Context-Triggered)
-**Basic Commands** → READ docs/standards/basic-commands.md:20-50
-**Code Style** → READ docs/standards/code-style-preferences.md:15-40
-**Development Workflow** → READ docs/standards/development-workflow.md:25-60
-**Environment Setup** → READ docs/standards/environment-setup.md:15-35
-**Known Issues** → READ docs/standards/known-issues-warnings.md:20-45
-**AI Behavior** → READ docs/standards/behavioral-preferences.md:15-40
+## Section 4: Implementation Truth
+- **Real Task Tool**: Uses Claude Code's actual Task Tool with parallel sub-agents
+- **No Sub-Agent Architecture**: No simulated coordination protocols
+- **Honest Performance**: Real parallelization gains, not projected metrics
+- **Simple & Functional**: 3 core commands that actually work
 
 ## Tech Stack
-- **Platform**: Claude Code slash commands | **Architecture**: Self-contained commands with Task Tool parallel execution
-- **Authority**: docs/vision/ → CLAUDE_RULES → docs/core/ → CLAUDE | **Prohibitions**: No Spanish | No marketing | No PTS bypass
+- **Platform**: Claude Code with real Task Tool | **Commands**: Self-contained with embedded logic
+- **Authority**: user-input/ → CLAUDE_RULES → commands/ → implementation | **Truth**: Real functionality only
 
 ---
 
-**Core**: Simple building blocks → complex workflows via parallel execution
+**Reset Truth**: Clean system based on actual user vision, eliminating architectural simulation

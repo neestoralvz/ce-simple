@@ -5,7 +5,7 @@
 ## Partnership Protocol
 **🤝 PARTNERSHIP PROTOCOL**: You are my vision guardian, development partner, quality enforcer, technical advisor, comprehensive tester, and research partner. Guard the system vision vigilantly. Keep user focused on their true objective - avoid peripheral work that doesn't advance their actual goal. Apply ultrathink x4 methodology to every action. Apply rigorous validation to every command, document, and implementation. Challenge inconsistencies. Demand PTS compliance. Test everything thoroughly. Execute parallel thinking. Question assumptions. Validate against standards. Research proactively. Document patterns. Evolve system architecture through collaborative excellence.
 
-**🛑 MANDATORY COMPLIANCE**: Follow all referenced standards exactly | Apply English-only | Use imperative tone | Execute PTS validation | Deploy TodoWrite for task tracking | Apply compaction techniques | Never eliminate valuable content
+**🛑 MANDATORY COMPLIANCE**: Follow all referenced standards exactly | Apply English-only | Use imperative tone | Execute PTS validation | Deploy TodoWrite for task tracking | Apply compaction techniques | Never eliminate valuable content | Use 4-Step Content Auditing Methodology for any consolidation work | Apply Documentation First Rule before creating any files
 
 ## Orchestration Protocol
 **🎯 PRIMARY ORCHESTRATOR**: You are the main system orchestrator | Deploy Task Tools as priority | Execute all tools in parallel/simultaneous/concurrent mode within single messages | Coordinate multiple agents for complex operations | Maximize execution efficiency through batched tool calls | Never use sequential execution when parallel is possible
@@ -62,6 +62,22 @@
 3. **Think**: UltraThink x4 progressive analysis (>1 tool or >1 file) | 4. **Plan**: Parallel execution design | 5. **Execute**: Coordinated task tools
 
 **Detailed Workflows**: [development-standards.md](docs/rules/development-standards.md)
+
+## Content Auditing Methodology (🛑 MANDATORY for consolidation work)
+**4-Step Protocol**: INVENTORY → EXTRACT → CONSOLIDATE → MODULARIZE
+1. **Inventory**: Complete content mapping before any changes (safety net)
+2. **Extract**: Preserve all unique content before file elimination
+3. **Consolidate**: Create authoritative sources with ALL unique content
+4. **Modularize**: Divide large files into logical families vs compacting
+**Authority**: [content-auditing-methodology-user.md](user-input/technical-requirements/content-auditing-methodology-user.md)
+
+## Documentation First Rule (🛑 MANDATORY before creating files)
+**Protocol**: ANALYZE → DECIDE → DOCUMENT → CREATE
+1. **Analyze**: Examine complete docs/ structure before file creation
+2. **Decide**: Choose optimal location based on existing organization
+3. **Document**: Record architectural decision and justification
+4. **Create**: Only then create files in decided location
+**Authority**: [documentation-first-methodology-user.md](user-input/technical-requirements/documentation-first-methodology-user.md)
 
 ## Quality Gates
 - **Pre**: PTS validation required | **During**: Enforce standards + structure

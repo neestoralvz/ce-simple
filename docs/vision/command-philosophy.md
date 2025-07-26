@@ -1,6 +1,8 @@
 # Command Philosophy
 
-**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Command design vision | **Lines**: ≤80
+**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Command design vision | **Lines**: ≤80  
+**Vision**: [Central Concept](central-concept.md) | [Technical Architecture](technical-architecture.md) | [Execution Strategies](execution-strategies.md)  
+**Implementation**: [Command Templates](../templates/command-template.md) | [Command Structure](../rules/command-structure-standard.md) | [PTS Framework](../core/pts-framework.md)
 
 ## Core Philosophy
 Slash commands are not scripts—they are intelligent orchestrators that transform intent into reality through sophisticated task coordination.

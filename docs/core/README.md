@@ -1,33 +1,35 @@
-# Core Architecture - ce-simple
+# Core Framework Documentation
 
-**Updated**: 2025-07-24 | **Navigation**: [System Hub](../navigation/index.md) | **Limit**: 80 lines
-**Purpose**: Central architecture overview with references to technical authorities
+**Updated**: 2025-07-26 | **Status**: Consolidated Authority Structure  
+**Purpose**: Core technical frameworks and principles
 
-## Architecture Foundation (Lines 5-25)
-**Complete PTS Framework**: @docs/technical/pts-framework-technical.md:1-80
-**Agent Deployment Patterns**: @docs/technical/agent-deployment-technical.md:1-80
-**Markdown Compliance**: @docs/technical/markdown-compliance-technical.md:1-80
-**Context Economy**: @docs/technical/context-economy-framework.md:1-80
-**Git Protocols**: @docs/technical/git-protocols-technical.md:1-80
+## PTS Framework - Consolidated Authority (Lines 5-25)
+
+The Pragmatic Technical Simplicity (PTS) Framework is consolidated into 4 authoritative modules:
+
+### 1. Framework Definition
+**[pts-framework-consolidated.md](pts-framework-consolidated.md)** - Core 12-component definitions & quantitative metrics
+
+### 2. Validation Procedures  
+**[pts-validation-consolidated.md](pts-validation-consolidated.md)** - Practical checklists & blocking criteria
+
+### 3. Governance Framework
+**[pts-governance-consolidated.md](pts-governance-consolidated.md)** - Tier integration & governance structure
+
+### 4. Application Guidelines
+**[pts-application-consolidated.md](pts-application-consolidated.md)** - Context-specific applications & examples
+
+## Authority Flow (Lines 26-35)
+**User Vision** → **Technical Requirements** → **Core Framework** → **Implementation**
+
+```
+user-input/vision/ → user-input/technical-requirements/ → docs/core/ → commands/
+```
 
 ### Core System Elements
 - **PTS Foundation**: 12-component validation framework (blocking enforcement)
-- **Agent Coordination**: Parallel execution with specialized agent types
-- **Quality Gates**: Automated compliance + line limits + English-only
-- **Authority Hierarchy**: docs/vision/ → CLAUDE_RULES → docs/core/ → Navigation
-
-### Command Development Standards
-**PTS Compliance**: @docs/technical/pts-framework-technical.md:76-80
-**File Limits**: @docs/technical/markdown-compliance-technical.md:5-20
-**Agent Deployment**: @docs/technical/agent-deployment-technical.md:21-40
-
-## Navigation Hub (Lines 26-50)
-### Framework Files (Local Access)
-- **[pts-framework.md](pts-framework.md)** - Navigation hub + technical references
-- **[pts-checklist.md](pts-checklist.md)** - Development validation checklist  
-- **[development-principles.md](development-principles.md)** - 33-principle hierarchy
-- **[decision-navigation-system.md](decision-navigation-system.md)** - Decision trees
-- **[command-index.md](command-index.md)** - Available commands reference
+- **Authority Hierarchy**: user-input/ → CLAUDE_RULES → docs/core/ → implementation
+- **Coherence Validation**: Systematic alignment between all layers
 
 ### Implementation Resources
 - **[Templates](../templates/)** - Reusable command patterns + cognitive load guidelines

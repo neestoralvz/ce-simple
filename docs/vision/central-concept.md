@@ -1,6 +1,8 @@
 # Central Concept
 
-**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Core mission vision | **Lines**: ≤80
+**Updated**: 2025-07-26 12:00 (Mexico City) | **Authority**: Core mission vision | **Lines**: ≤80  
+**Related**: [Technical Architecture](technical-architecture.md) | [Command Philosophy](command-philosophy.md) | [Development Methodology](development-methodology.md)  
+**Implementation**: [Core Architecture](../core/README.md) | [PTS Framework](../core/pts-framework.md) | [Command Index](../core/command-index.md)
 
 ## Core Mission
 Transform complex software workflows into simple command executions through intelligent orchestration, parallel processing, and continuous learning across multiple domains.

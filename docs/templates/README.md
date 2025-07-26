@@ -1,5 +1,9 @@
 # Template System - Simple and Direct
 
+**Updated**: 2025-07-26 | **Authority**: Template standards | **Navigation**: [System Hub](../README.md)  
+**Vision**: [Command Philosophy](../vision/command-philosophy.md) | [Development Methodology](../vision/development-methodology.md)  
+**Implementation**: [PTS Framework](../core/pts-framework.md) | [Development Standards](../rules/development-standards.md) | [Command Structure](../rules/command-structure-standard.md)
+
 ## Overview
 
 The ce-simple template system provides essential templates for system components, emphasizing simplicity and direct implementation over complex composition frameworks.

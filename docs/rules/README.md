@@ -1,6 +1,7 @@
 # Modular Rule System - ce-simple
 
-**Updated**: 2025-07-24 12:54 (Mexico City) | **Authority**: Master registry implementing docs/vision/ absolute authority
+**Updated**: 2025-07-24 12:54 (Mexico City) | **Authority**: Master registry implementing docs/vision/ absolute authority  
+**Navigation**: [Vision Hub](../vision/README.md) | [Core Architecture](../core/README.md) | [Templates](../templates/README.md) | [System Hub](../README.md)
 
 ## Rule Module Registry
 

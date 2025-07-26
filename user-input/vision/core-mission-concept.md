@@ -38,13 +38,13 @@ VDD is a command engineering platform creating reusable, intelligent slash comma
 
 **Learning-Driven Evolution**: Every command execution contributes to system improvement. Git-tracked metrics provide objective performance measurement with pattern recognition.
 
-**Transparency & Control**: Users understand system operations always. Clear progress indication, result explanation, override capabilities, manual intervention options.
+**Transparency & Control**: Users understand system operations always. Clear progress indication, result explanation, override capabilities, manual intervention options. CRITICAL: Individual sub-agent results must be visible to user, not hidden behind synthesis.
 
 ## User's Vision Statement
 
 "Create an intelligent command system where complex software development becomes as simple as natural language requests, powered by sophisticated parallel orchestration that learns and evolves with every use."
 
-**Success Measure**: "When users can accomplish complex multi-hour workflows with single command invocations while maintaining full understanding and control of the process."
+**Success Measure**: "When users can accomplish complex multi-hour workflows with single command invocations while maintaining full understanding and control of the process, including visibility into each parallel sub-agent's work and results."
 
 ---
 
