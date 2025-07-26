@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Pre-commit Hook for VDD Coherence Validation
+# Automatically validates coherence before allowing commits
+
+set -e
+
+echo "🔍 Running VDD Coherence Validation..."
+
+# Run coherence validation script
+if [ -f "./scripts/validate-coherence.sh" ]; then
+    ./scripts/validate-coherence.sh
+    validation_result=$?
+    
+    if [ $validation_result -eq 0 ]; then
+        echo "✅ Coherence validation passed - commit allowed"
+    else
+        echo "❌ Coherence validation failed - commit blocked"
+        echo "Please fix coherence issues before committing"
+        exit 1
+    fi
+else
+    echo "⚠️  Coherence validation script not found - commit allowed but validation skipped"
+fi
+
+# Additional PTS compliance checks for commands
+echo "🔍 Checking PTS compliance in commands..."
+
+changed_commands=$(git diff --cached --name-only | grep "commands/.*\.md$" || true)
+
+if [ -n "$changed_commands" ]; then
+    echo "Validating changed commands: $changed_commands"
+    
+    for cmd in $changed_commands; do
+        if [ -f "$cmd" ]; then
+            echo "Checking $cmd..."
+            
+            # Check for 3-step maximum (Directness)
+            step_count=$(grep -c "### Step [0-9]" "$cmd" || echo "0")
+            if [ "$step_count" -gt 3 ]; then
+                echo "❌ $cmd violates Directness (>3 steps: $step_count)"
+                exit 1
+            fi
+            
+            # Check for Task Tool references (Parallelization)
+            if ! grep -q "Task Tool" "$cmd"; then
+                echo "❌ $cmd missing Task Tool parallelization"
+                exit 1
+            fi
+            
+            # Check for external references (Self-containment)
+            if grep -q "\.\./\|@.*\.md" "$cmd"; then
+                echo "❌ $cmd contains external references (not self-contained)"
+                exit 1
+            fi
+            
+            echo "✅ $cmd passes PTS compliance"
+        fi
+    done
+else
+    echo "No command files changed"
+fi
+
+echo "✅ Pre-commit validation completed successfully"
