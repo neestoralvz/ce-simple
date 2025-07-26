@@ -52,7 +52,7 @@ if [ -n "$changed_commands" ]; then
             echo "Checking $cmd..."
             
             # Check for 3-step maximum (Directness)
-            step_count=$(grep -c "### Step [0-9]" "$cmd" || echo "0")
+            step_count=$(grep -c "### Step [0-9]" "$cmd" 2>/dev/null || echo "0")
             if [ "$step_count" -gt 3 ]; then
                 echo "❌ $cmd violates Directness (>3 steps: $step_count)"
                 exit 1
