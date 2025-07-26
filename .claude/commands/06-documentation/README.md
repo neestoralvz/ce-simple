@@ -48,4 +48,6 @@ Intelligent documentation generation and knowledge management. These commands cr
 - **Error Handling**: Built-in detection and resolution of missing references and structural violations
 
 ---
-*Category 06: Knowledge preservation and accessibility system*
+
+@./docs/core/README.md
+@./docs/core/system-principles.md

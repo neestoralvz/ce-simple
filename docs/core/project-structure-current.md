@@ -1,6 +1,6 @@
 # Current Project Structure
 
-**Updated**: 2025-07-24 | **Authority**: Live system structure | **Limit**: 100 lines
+**Updated**: 2025-07-26 | **Authority**: Live system structure | **Limit**: 100 lines
 
 ## Core System Architecture
 
@@ -9,6 +9,7 @@ ce-simple/
 ├── CLAUDE_RULES.md          # Partnership protocol (READ FIRST)
 ├── CLAUDE.md                # System navigation hub (≤50 lines) 
 ├── docs/                    # Documentation system
+│   ├── vision/              # Complete user vision (10 components)
 │   ├── core/                # System architecture + frameworks
 │   ├── rules/               # Behavioral protocols + standards  
 │   ├── standards/           # Technical implementation criteria
@@ -39,6 +40,7 @@ ce-simple/
 - **CLAUDE.md**: Navigation entry point with imports + essential context
 
 ### Documentation Architecture (`docs/`)
+- **vision/**: Complete user vision (10 components: central concept, technical architecture, development methodology, command philosophy, execution strategies, autonomous systems, communication documentation, global system, application evolution)
 - **core/**: System architecture, frameworks, PTS validation, development principles
 - **rules/**: Communication, documentation, markdown, git protocols (behavioral)
 - **standards/**: Technical implementation criteria (when rules/ vs standards/ needed)

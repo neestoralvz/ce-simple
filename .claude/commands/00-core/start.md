@@ -95,8 +95,29 @@ If validation failures occur:
 - Validate learning completeness ensuring improvement capability
 - Complete workflow with validated performance metrics
 
+Complete previous phase, mark "Command Routing and Workflow Handoff" as in_progress using TodoWrite
+
+### Phase 5: Command Routing and Handoff
+Mark "Command Routing and Workflow Handoff" as in_progress using TodoWrite
+
+Execute intelligent workflow continuation based on assessment results and user context:
+- Route to `/enhanced-start` for complex multi-domain investigations requiring advanced analysis
+- Handoff to `/explore-codebase` when assessment indicates internal project focus and documentation gaps
+- Transfer to `/think-layers` for problems requiring progressive complexity analysis and layered solutions
+- Connect to `/agent-orchestration` for high-complexity scenarios requiring parallel coordination and resource management
+
+Use TodoWrite to configure workflow routing:
+- Assessment-based routing achieving workflow continuity
+- Context-aware handoffs with optimized transitions
+
+If routing decisions are unclear:
+- Add TodoWrite task: "Resolve routing ambiguity: user clarification"
+- Execute clarification dialog with context preservation
+- Validate routing decision ensuring workflow optimization
+- Continue with validated routing configuration
+
 Complete all tasks using TodoWrite
 
 ---
 
-**Discovery workflow executes intelligent assessment providing optimized execution plans.**
+**Discovery workflow executes intelligent assessment providing optimized execution plans with automated routing.**

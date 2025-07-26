@@ -47,10 +47,22 @@ Validate optimization results using Bash and Grep:
 - Generate quality metrics and consolidation summary
 - Commit changes with compression ratio documentation
 
-Update TodoWrite complete all context optimization tasks
+### Phase 5: Command Routing and Handoff
+Update TodoWrite complete previous, mark "command routing" as in_progress
+
+Analyze maintenance results and route to related commands:
+- If significant redundancies found → Next: /capture-learnings (high) - document optimization patterns
+- If performance impacts detected → Next: /performance-track (high) - monitor system efficiency
+- If structural violations found → Next: /system-monitor (medium) - validate system health
+- If context density improved → Next: /validate-complete (medium) - verify optimization success
+- If cross-references updated → Next: /docs-maintain (low) - ensure documentation consistency
+- Always → Next: /notify-manager (low) - report maintenance completion status
+
+Update TodoWrite complete all context optimization and routing tasks
 
 **Error Handling**: Automatically relocate misplaced files, remove timestamp violations maintaining content, split oversized files, update broken references during consolidation
 
 ---
 
-**Single Responsibility**: Context directory maintenance through parallel structural analysis, content consolidation, and density optimization ensuring semantic organization and information efficiency.
+@./docs/core/README.md
+@./docs/core/system-principles.md

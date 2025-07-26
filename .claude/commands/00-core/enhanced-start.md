@@ -95,8 +95,29 @@ If coverage gaps occur:
 - Validate coverage restoration ensuring comprehensive investigation
 - Complete aggregation with validated coverage parameters
 
+Complete previous phase, mark "Advanced Command Routing and Intelligent Handoff" as in_progress using TodoWrite
+
+### Phase 5: Command Routing and Intelligent Handoff
+Mark "Advanced Command Routing and Intelligent Handoff" as in_progress using TodoWrite
+
+Execute intelligent workflow continuation based on investigation results and complexity assessment:
+- Route to `/agent-orchestration` for high-complexity investigations requiring parallel coordination and advanced resource management
+- Handoff to `/matrix-maintenance` when comprehensive scope reveals system integrity concerns and cross-reference validation needs
+- Transfer to `/capture-learnings` for investigations revealing significant patterns requiring documentation and system evolution
+- Connect to `/worktree-start` for complex implementations requiring isolated development environment and controlled integration
+
+Use TodoWrite to configure advanced routing:
+- Complexity-based routing achieving sophisticated workflow orchestration
+- Investigation-aware handoffs with comprehensive context preservation
+
+If advanced routing complexity requires clarification:
+- Add TodoWrite task: "Resolve advanced routing: complexity reassessment"
+- Execute complexity reassessment with refined parameters and enhanced validation
+- Validate advanced routing ensuring optimal resource allocation and workflow efficiency
+- Continue with validated advanced routing configuration
+
 Complete all tasks using TodoWrite
 
 ---
 
-**Enhanced discovery executes advanced investigation with complexity-based routing.**
+**Enhanced discovery executes advanced investigation with complexity-based routing and intelligent automation.**

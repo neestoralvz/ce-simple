@@ -1,0 +1,125 @@
+site_name: ce-simple Vision Documentation
+site_description: Complete user vision for ce-simple command engineering platform
+site_author: neestoralvz
+site_url: https://neestoralvz.github.io/ce-simple/
+
+# Repository
+repo_name: neestoralvz/ce-simple
+repo_url: https://github.com/neestoralvz/ce-simple
+edit_uri: edit/master/
+
+# Copyright
+copyright: Copyright &copy; 2025 ce-simple
+
+# Configuration
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.tabs.link
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nalve/ce-simple
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: nalve
+      repo: ce-simple
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: 
+    - Overview: README.md
+    - Project Structure: docs/core/project-structure-current.md
+  - Vision System:
+    - Vision Overview: docs/vision/README.md
+    - Core Mission: docs/vision/central-concept.md
+    - Technical Foundation: docs/vision/technical-architecture.md
+    - Development Philosophy: docs/vision/development-methodology.md
+    - Command Design: docs/vision/command-philosophy.md
+    - Execution Strategies: docs/vision/execution-strategies.md
+    - Autonomous Systems: docs/vision/autonomous-systems.md
+    - Communication & Documentation: docs/vision/communication-documentation.md
+    - Global System: docs/vision/global-system.md
+    - Application Evolution: docs/vision/application-evolution.md

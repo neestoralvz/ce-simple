@@ -1,6 +1,6 @@
 # CLAUDE.md - ce-simple
 
-**Updated**: 2025-07-24 | **Authority**: Four-section architecture | **Limit**: 50 lines
+**Updated**: 2025-07-26 | **Authority**: Four-section architecture | **Limit**: 50 lines
 
 ## Section 1: Essential Context (Always Loaded)
 @docs/core/project-structure-current.md
@@ -14,14 +14,17 @@ See [README.md](README.md) for complete project overview
 **Git Operations** → READ docs/rules/git-workflow-protocols.md:25-60
 **Context Optimization** → READ docs/standards/claude-md-import-methodology.md:15-40
 **Architecture Decisions** → READ docs/core/development-principles.md:8-30
+**Handoff Management** → READ handoffs/README.md:125-145 + handoffs/project-[1-7]-*.md:1-30
 
 ## Section 3: Context Navigation (Directory References)
+**Complete User Vision** → [docs/vision/](docs/vision/) - All user vision components (10 files)
 **Core Architecture** → [docs/core/](docs/core/) - System frameworks & principles
 **Rules & Standards** → [docs/rules/](docs/rules/) - Behavioral protocols  
 **Technical Standards** → [docs/standards/](docs/standards/) - Implementation criteria
 **Templates & Patterns** → [docs/templates/](docs/templates/) - Reusable structures
 **Validation Tools** → [docs/validation/](docs/validation/) - Quality gates
 **Implementation Guides** → [docs/implementation/](docs/implementation/) - Detailed procedures
+**Project Handoffs** → [handoffs/](handoffs/) - Context preservation & project execution
 
 ## Section 4: Practical Development (Context-Triggered)
 **Basic Commands** → READ docs/standards/basic-commands.md:20-50

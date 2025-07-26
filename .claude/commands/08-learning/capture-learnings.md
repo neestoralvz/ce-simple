@@ -32,11 +32,11 @@ Conduct intelligent interview if threshold met using Task:
 ### Phase 3: Pattern Extraction & Integration
 Update TodoWrite complete previous, mark "pattern integration" as in_progress
 
-Extract patterns using parallel processing:
-- Process interview results and workflow analysis data
-- Extract actionable patterns from captured insights
-- Integrate patterns into existing documentation using Read and Edit
-- Maintain documentation consistency and structure integrity
+Extract patterns using parallel processing with architectural routing:
+- Process interview results and workflow analysis data using Task
+- Route user insights to docs/vision/ for strategic planning documentation
+- Route technical patterns to docs/context/ for pattern and research documentation
+- Integrate patterns maintaining documentation consistency and architectural separation
 
 ### Phase 4: System Validation & Documentation
 Update TodoWrite complete previous, mark "learning validation" as in_progress

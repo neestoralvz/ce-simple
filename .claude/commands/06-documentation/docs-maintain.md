@@ -47,10 +47,30 @@ Generate maintenance summary using Write and Bash:
 - Provide actionable recommendations for future maintenance
 - Commit changes with detailed improvement summary
 
+### Phase 5: Command Routing and Handoff
+Update TodoWrite complete previous, mark "command routing and handoff" as in_progress
+
+**Context Analysis**: Review documentation maintenance outcomes and identify integration opportunities
+- Analyze documentation structure changes and validation requirements
+- Assess need for validation commands based on structural modifications
+- Evaluate learning capture opportunities from maintenance patterns
+- Consider matrix validation requirements for cross-reference updates
+
+**Intelligent Routing**: Route to 4-6 related commands based on documentation outcomes
+- **Documentation validation flow**: /validate-complete (high) - verify documentation integrity post-maintenance
+- **Learning extraction**: /capture-learnings (medium) - extract maintenance patterns for future optimization
+- **System monitoring**: /system-monitor (medium) - track documentation health metrics over time
+- **Matrix validation**: /matrix-maintenance (low) - validate cross-reference consistency after structural changes
+- **Context optimization**: /context-optimize (low) - consolidate documentation context for performance
+- **Performance tracking**: /performance-track (low) - measure documentation maintenance efficiency
+
+**Handoff Protocol**: Format: "Next: /command (priority) - rationale"
+
 Update TodoWrite complete all documentation maintenance tasks
 
 **Error Handling**: Automatically detect broken references, generate merge recommendations, implement progressive disclosure, create placeholder files with proper structure
 
 ---
 
-**Single Responsibility**: Documentation maintenance through parallel analysis, consolidation, optimization, and validation ensuring system-wide documentation quality and integrity.
+@./docs/core/README.md
+@./docs/core/system-principles.md
