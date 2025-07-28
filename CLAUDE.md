@@ -13,6 +13,8 @@
 
 **ORQUESTACIÓN OBLIGATORIA** - Agente principal NUNCA ejecuta trabajo directo. SIEMPRE despliega subagentes especializados via Task tools.
 
+**DIÁLOGO MAYÉUTICO + INTENT DETECTION** - Durante conversación exploratoria, semantic analysis automático detecta necesidad documentos y auto-trigger `/create-doc` seamlessly sin interrumpir flujo conversacional.
+
 **COMMUNICATION RULES** - NUNCA bash para comunicar. Solo main agent comunica al usuario. Subagents NUNCA direct communication.
 
 **ANTI-BIAS ENFORCEMENT** - Redacción agnóstica, neutra. NO adjetivos descriptivos. NO sesgos lingüísticos que influencien LLM behavior.
@@ -43,7 +45,11 @@
 **A. ¿Inicio de sesión?** → RESEARCH + EJECUTAR: `/start` con WebSearch + MCP Context7 + handoff auto-loading
 **B. ¿Procesamiento narrativo?** → RESEARCH + EJECUTAR: `/extract-insights` → `/process-layer` con research integration  
 **C. ¿Creación documento?** → RESEARCH + OBLIGATORIO: `/create-doc` → `/align-doc` → `/verify-doc` (NO excepciones)
-**D. ¿Consulta/exploración?** → RESEARCH + EJECUTAR: Subagent orchestration con WebSearch + MCP Context7
+**D. ¿Consulta/exploración?** → RESEARCH + EJECUTAR: Diálogo mayéutico + Intent detection automático
+  - **Semantic analysis** paralelo durante conversación
+  - **Auto-trigger** `/create-doc` si detecta necesidad documento (patterns: "necesito plan", "documentar", "crear reporte")
+  - **Seamless integration** sin interrumpir flujo conversacional
+  - **Background processing** document creation mientras continúa diálogo
 **E. ¿Multi-conversation concurrency?** → RESEARCH + EJECUTAR: `/start-concurrent-worktrees` con coordination
 
 ## WORKFLOW OBLIGATORIO DOCUMENTOS
