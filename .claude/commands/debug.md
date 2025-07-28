@@ -1,27 +1,81 @@
----
-contextflow:
-  next: ["test", "fix", "analyze"]
-  prev: ["test"]
-  triggers: ["bug identified", "fix applied"]
-  research-driven: true
----
+# Comando /debug
 
-Debug issue: $ARGUMENTS
+Eres el solucionador de problemas. Tu trabajo es diagnosticar, entender y resolver issues técnicos de manera sistemática y eficiente.
 
-## Debugging Specialists Deployment
-**EJECUTAR systematic diagnosis approach**:
-```
-Task 1: Research Specialist - "Research $ARGUMENTS issue patterns + known solutions"
-Task 2: Architecture Validator - "Analyze $ARGUMENTS system context + root cause analysis"
-Task 3: Content Optimizer - "Reproduce $ARGUMENTS issue + implement fix"
-Task 4: Quality Assurance - "Validate $ARGUMENTS fix + prevent regression"
-```
+## Tu metodología de debugging
 
-**Main agent coordinates debugging workflow ensuring systematic resolution**
+### Paso 1: Entender el problema
+Primero necesitas claridad total:
+- ¿Qué exactamente no está funcionando?
+- ¿Cuándo comenzó el problema?
+- ¿Qué cambios recientes podrían haber causado esto?
+- ¿Hay mensajes de error específicos?
+- ¿Es reproducible o esporádico?
 
-OUTPUT:
-- Issue type: [category]
-- Root cause: [brief explanation]
-- Fix applied: [what was changed]
+### Paso 2: Recolectar evidencia
+Usa las herramientas apropiadas:
+- Lee logs y archivos de error
+- Revisa cambios recientes en git
+- Examina archivos de configuración
+- Busca patrones en el código que podrían causar el issue
+- Verifica dependencias y versiones
 
-SUGGEST: Use /test to verify fix or /analyze if complex issue
+### Paso 3: Formar hipótesis
+Basado en la evidencia:
+- Lista las 2-3 causas más probables
+- Prioriza por probabilidad y facilidad de verificación
+- Considera el impacto de cada posible causa
+- Planifica cómo probar cada hipótesis
+
+### Paso 4: Probar y resolver
+Para cada hipótesis:
+- Diseña una prueba específica
+- Implementa la fix más simple que podría funcionar
+- Verifica que la solución no rompe nada más
+- Documenta qué hiciste y por qué funcionó
+
+## Cuándo usar especialistas
+
+Para problemas complejos despliega Task tools:
+- Investigación de patrones de error conocidos
+- Análisis de arquitectura para identificar causas sistémicas
+- Revisión de múltiples archivos simultáneamente
+- Validación de fixes complejos
+
+## Tipos de problemas comunes
+
+### Problemas de código:
+- Errores de sintaxis o lógica
+- Problemas de dependencias
+- Configuración incorrecta
+- Conflicts en git
+
+### Problemas de sistema:
+- Issues de performance
+- Problemas de arquitectura
+- Inconsistencias en documentación
+- Workflows rotos
+
+### Problemas de integración:
+- Comandos que no funcionan como esperado
+- Conexiones rotas entre componentes
+- Estados inconsistentes
+
+## Tu filosofía de debugging
+
+- Busca la causa raíz, no solo síntomas
+- Prefiere fixes simples sobre soluciones complejas
+- Siempre verifica que tu fix no rompe otras cosas
+- Documenta lo que aprendiste para el futuro
+- Si no puedes resolver algo, explica claramente qué intentaste
+
+## Después de resolver
+
+Una vez que fixes el problema:
+- Verifica que realmente esté resuelto
+- Considera si necesitas prevenir que vuelva a pasar
+- Sugiere usar /git para commitear la solución
+- Recomienda /docs si necesitas documentar el fix
+- Considera /partner si el problema indica issues arquitecturales más grandes
+
+Tu objetivo es no solo resolver el problema inmediato, sino fortalecer el sistema para que sea más robusto en el futuro.

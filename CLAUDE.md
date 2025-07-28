@@ -1,47 +1,74 @@
-# CLAUDE.md - Simple Intelligence System
+# CLAUDE.md - Sistema de Inteligencia Simple
 
-## ULTIMATE AUTHORITY: user_vision/ FOLDER
+## AUTORIDAD SUPREMA: user-vision/
 
-**TRUTH HIERARCHY**: user_vision/ → OVERRIDES → This document (CLAUDE.md)
-**VALIDATION REQUIRED**: All behavior must align with user_vision/ documents
+**JERARQUÍA DE VERDAD**: user-vision/ → SOBRESCRIBE → Este documento (CLAUDE.md)
+**VALIDACIÓN OBLIGATORIA**: Todo comportamiento debe alinearse con documentos en user-vision/
 
-## CORE PRINCIPLES
+## PRINCIPIOS FUNDAMENTALES
 
-### Metodología Fundamental
-- **Socrática expansiva**: Conversación libre → Comprensión rica → Ejecución optimizada  
-- **Voice preservation**: User voice = source of truth absoluta con citas exactas
-- **Direct work enabled**: Claude can perform analysis, research, implementation directly
+### Metodología Core
+- **Socrática expansiva**: Conversación libre → Comprensión profunda → Ejecución optimizada
+- **Preservación de voz**: La voz del usuario = fuente de verdad absoluta con citas exactas
+- **Trabajo directo habilitado**: Claude puede realizar análisis, investigación, implementación directamente
 
-### Essential Commands
-- `/start` - Session activation with context loading
-- `/session-close` - Capture conversation and commit changes  
-- `/distill-5-layers` - Complete 5-layer distillation: Raw → Consolidated Vision
-- `/extract-insights` - Extract patterns from conversations
-- `/process-layer` - Process and distill conversation content
-- `/create-doc` - Create new documents with validation
-- `/edit-doc` - Edit existing documents with verification
-- `/explore` - Navigate and understand codebase
-- `/analyze` - Deep analysis of systems and patterns
-- `/debug` - Troubleshoot and fix issues
-- `/maintain-system` - System maintenance and health checks
+### 9 Comandos Independientes (Solo Instrucciones de Lenguaje Natural)
+- `/start` - Activación de sesión con carga de contexto
+- `/distill` - Destilación completa de 5 capas: Raw → Visión Consolidada
+- `/docs` - Workflow de creación y edición de documentos
+- `/explore` - Navegación y comprensión del codebase
+- `/debug` - Resolución sistemática de problemas
+- `/maintain` - Mantenimiento del sistema (CLAUDE.md + comandos + docs)
+- `/git` - Workflow Git integrado con otros comandos
+- `/partner` - Agente socio constructor para enfoque y simplicidad
+- `/close` - Captura de conversación y commit de cambios
 
-## ARCHITECTURE SIMPLE
+## ARQUITECTURA MINIMALISTA
 
-### Core Structure
+### Estructura Esencial
 ```
-/.claude/commands/ (ESSENTIAL COMMANDS ONLY)
-/narratives/raw/conversations/ (RAW CONVERSATIONS)
-/user_vision/ (USER TRUTH SOURCE)
-/handoff/ (SESSION CONTINUITY)
-/tools/monitoring/ (BASIC HEALTH ONLY)
+/.claude/commands/ (9 WORKFLOWS INDEPENDIENTES)
+/user-vision/raw/conversations/ (CONVERSACIONES RAW)
+/user-vision/ (FUENTE DE VERDAD USUARIO)
+/handoff/ (CONTINUIDAD ENTRE SESIONES)
 ```
 
-## FOCUS: RAW CONVERSATIONS + DISTILLATION
+## ENFOQUE: CONVERSACIONES RAW + DESTILACIÓN
 
-**PRIMARY MISSION**: Preserve every conversation → Extract insights → Enable user decision-making
+**MISIÓN PRINCIPAL**: Preservar cada conversación → Extraer insights → Habilitar toma de decisiones del usuario
 
-**SIMPLICITY PRINCIPLE**: Fewer moving parts = More reliability + clearer focus
+**PRINCIPIO DE SIMPLICIDAD**: Menos partes móviles = Mayor confiabilidad + enfoque más claro
+
+## FILOSOFÍA DE COMANDOS
+
+### Cada comando es:
+- **Instrucciones puras**: Solo lenguaje natural dirigido al LLM
+- **Sin metadata**: Cero YAML, código, o estructuras técnicas
+- **Propósito único**: Una responsabilidad clara y específica
+- **Independiente**: Funciona solo pero se coordina con otros
+- **Conversacional**: Escrito como si hablaras con el LLM directamente
+
+### Coordinación entre comandos:
+- `/start` orienta → otros comandos ejecutan → `/close` captura
+- `/git` se integra con todos para commits inteligentes
+- `/partner` valida decisiones arquitecturales en cualquier momento
+- `/maintain` asegura consistencia del ecosistema completo
+
+## PRINCIPIOS DE PRESERVACIÓN DE VOZ
+
+- **100% fidelidad**: Citas exactas del usuario sin interpretación
+- **Cero contaminación**: Ideas del usuario vs insights de AI claramente separados
+- **Trazabilidad completa**: Cada insight rastreable a conversación original
+- **user-vision/ como autoridad**: Cuando hay conflicto, la visión del usuario gana
+
+## EVOLUCIÓN ORGÁNICA
+
+El sistema crece por:
+- **Conversación natural** preservada en raw/
+- **Destilación sistemática** que extrae patrones reales
+- **Decisiones cristalizadas** del usuario documentadas fielmente
+- **Simplificación continua** vs complejidad acumulativa
 
 ---
 
-**SYSTEM STAYS SIMPLE** while preserving user voice and enabling organic conversation-driven evolution.
+**EL SISTEMA SE MANTIENE SIMPLE** mientras preserva la voz del usuario y habilita evolución orgánica dirigida por conversación.
