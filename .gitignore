@@ -1,19 +1,58 @@
-# Runtime and monitoring files
-.claude/logs/*.pid
-data/monitoring/health.db*
+# Monitoring Runtime Files (Operational - Auto-Generated)
 data/monitoring/health_daemon_status.json
+data/monitoring/health.db*
+data/monitoring/git-events.log
+data/monitoring/health_monitor.log
+data/monitoring/health_monitor.pid
 data/monitoring/health_status.json
-data/monitoring/*.pid
+data/monitoring/orchestration-update-*.json
+data/monitoring/behavioral_alerts.json
+data/monitoring/behavioral_health.json
+data/monitoring/prevention_escalations.json
 
-# Test artifacts
-test_*.txt
-test_*.md
+# Process Tracking Files
+.claude/logs/*.pid
 
-# System artifacts
-*.pyc
+# Database Runtime Files (SQLite WAL/SHM)
+*.db-shm
+*.db-wal
+
+# Backup Files (Auto-Generated)
+*.backup.*
+
+# Real-time Dashboard Data
+data/performance-metrics/realtime_data.json
+data/performance-metrics/realtime_tracking.json
+
+# Orchestration Runtime State
+data/orchestration/conversations.db-shm
+data/orchestration/conversations.db-wal
+
+# Temporary Analysis Files (User Generated - Should Be Committed)
+# layer1_extracted_quotes_raw_conversations.md (Keep)
+# layer2_relationships_ideas_from_quotes.md (Keep)
+# over-engineering-analysis.md (Keep)
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python Cache
 __pycache__/
-.DS_Store
+*.pyc
+*.pyo
+*.egg-info/
 
-# Temporary files
-*.tmp
-*.temp
+# Node Modules (if any)
+node_modules/
+
+# Logs (General)
+*.log
+logs/
+
+# OS Files
+.DS_Store
+Thumbs.db

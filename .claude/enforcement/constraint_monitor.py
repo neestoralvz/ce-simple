@@ -162,6 +162,13 @@ class BehavioralConstraintMonitor:
                 "SUBAGENT_COORDINATION", 
                 "DELEGATION_ORCHESTRATION",
                 "MONITORING_ONLY"
+            ],
+            "allowed_operations": [
+                "COORDINATION",
+                "TASK_TOOL_DEPLOYMENT",
+                "SUBAGENT_ORCHESTRATION",
+                "MONITORING",
+                "REPORTING"
             ]
         }
     
@@ -267,6 +274,11 @@ class BehavioralConstraintMonitor:
         # Check if main agent is attempting forbidden direct work
         if agent_role == "MAIN_AGENT":
             forbidden_operations = self.user_constraints["forbidden_behaviors"]
+            allowed_operations = self.user_constraints.get("allowed_operations", [])
+            
+            # CRITICAL FIX: Allow coordination and Task tool operations
+            if operation_type in allowed_operations:
+                return None  # Explicitly allowed operations
             
             if operation_type in forbidden_operations:
                 return {
@@ -276,7 +288,12 @@ class BehavioralConstraintMonitor:
                 }
             
             # Check if operation requires specialization but no Task tool is being used
+            # CRITICAL FIX: Task tool invocations are VALID behavior - do NOT block them
             if context.get("requires_specialization", False) and not context.get("using_task_tools", False):
+                # EXCEPTION: If this is a Task tool coordination operation, allow it
+                if operation_type in ["COORDINATION", "TASK_TOOL_DEPLOYMENT", "SUBAGENT_ORCHESTRATION"]:
+                    return None  # Allow Task tool operations
+                    
                 return {
                     "type": "MISSING_TASK_TOOL_DELEGATION",
                     "severity": "CRITICAL", 

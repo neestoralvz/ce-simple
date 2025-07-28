@@ -1,10 +1,20 @@
-# Claude Code - Systematic Pre-Condition Verification Hooks Configuration
-# Based on research findings from July 2025 best practices
-# Implements comprehensive verification system for reliable tool execution
+# Claude Code - Simplicity Focused Configuration
+# AUTHORITY: SIMPLICITY_PROTOCOL.md (Anti-Over-Engineering)
+# Minimal hooks system with complexity prevention
 
 # ============================================================================
-# PRE-TOOL USE VERIFICATION HOOKS
-# Execute before Claude uses specific tools to prevent common failures
+# SIMPLICITY ENFORCEMENT HOOKS
+# Prevent over-engineering and maintain system simplicity
+# ============================================================================
+
+# Anti-over-engineering enforcement on every user prompt
+[[hooks]]
+event = "UserPromptSubmit"
+description = "Enforce simplicity and prevent complexity creep"
+command = "/Users/nalve/ce-simple/.claude/hooks/simplicity-enforcement.sh"
+
+# ============================================================================
+# ESSENTIAL VERIFICATION HOOKS (Minimal Set Only)
 # ============================================================================
 
 # MCP IDE Notebook State Verification
@@ -229,93 +239,20 @@ run_in_background = true
 command = "/Users/nalve/ce-simple/.claude/hooks/debug-logging.sh 'POST' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_OUTPUT'"
 
 # ============================================================================
-# ORCHESTRATION MONITORING HOOKS
-# Real-time progress reporting for specialized conversations
+# ORCHESTRATION MONITORING HOOKS - DISABLED (Over-Engineering)
+# Real-time progress reporting for specialized conversations - NOT NEEDED
 # ============================================================================
 
-# Tool usage progress reporting
-[[hooks]]
-event = "PostToolUse"
-description = "Report tool usage progress to orchestrator hub"
-run_in_background = true
-[hooks.matcher]
-tool_name = "Task"
-command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+# COMMENTED OUT: Excessive orchestration monitoring
+# These hooks represent over-engineering - simple tasks don't need orchestration reporting
 
-[[hooks]]
-event = "PostToolUse"
-description = "Report todo status changes to orchestrator"
-run_in_background = true
-[hooks.matcher]
-tool_name = "TodoWrite"
-command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
-
-[[hooks]]
-event = "PostToolUse"
-description = "Report file operations to orchestrator"
-run_in_background = true
-[hooks.matcher]
-tool_name = "Write"
-command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
-
-[[hooks]]
-event = "PostToolUse"
-description = "Report file edits to orchestrator"
-run_in_background = true
-[hooks.matcher]
-tool_name = "Edit"
-command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
-
-[[hooks]]
-event = "PostToolUse"
-description = "Report multi-file edits to orchestrator"
-run_in_background = true
-[hooks.matcher]
-tool_name = "MultiEdit"
-command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
-
-[[hooks]]
-event = "PostToolUse"
-description = "Report bash commands to orchestrator"
-run_in_background = true
-[hooks.matcher]
-tool_name = "Bash"
-command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
-
-# ============================================================================
-# REAL-TIME MONITORING HOOKS
-# Capture all tool usage for real-time health monitoring and dashboard
+# ============================================================================  
+# REAL-TIME MONITORING HOOKS - DISABLED (Over-Engineering)
+# Capture all tool usage for real-time health monitoring and dashboard - EXCESSIVE
 # ============================================================================
 
-# Pre-tool monitoring - capture start events
-[[hooks]]
-event = "PreToolUse"
-description = "Capture tool start events for real-time monitoring"
-run_in_background = true
-[hooks.matcher]
-command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'PRE' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' ''"
-
-# Post-tool monitoring - capture completion events with performance metrics
-[[hooks]]
-event = "PostToolUse"
-description = "Capture tool completion events with performance metrics"
-run_in_background = true
-[hooks.matcher]
-command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'POST' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
-
-# Notification monitoring - capture system notifications
-[[hooks]]
-event = "Notification"
-description = "Capture system notifications for monitoring dashboard"
-run_in_background = true
-command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'NOTIFY' 'notification' '$CLAUDE_NOTIFICATION_TYPE:$CLAUDE_NOTIFICATION_MESSAGE' ''"
-
-# Session monitoring - capture session lifecycle events
-[[hooks]]
-event = "Stop"
-description = "Capture session stop events for lifecycle monitoring"
-run_in_background = true
-command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'STOP' 'session' '$CLAUDE_SESSION_ID' ''"
+# COMMENTED OUT: Real-time monitoring for basic CLI operations is over-engineered
+# Keep monitoring simple and only for essential health checks
 
 # ============================================================================
 # HOOK CONFIGURATION NOTES
