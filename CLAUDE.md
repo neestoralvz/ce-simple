@@ -21,6 +21,8 @@
 
 **THINK X4 METODOLOGÍA** - Think → Think Hard → Think Harder → Super Think para decisiones complejas.
 
+**DOCUMENT WORKFLOW ENFORCEMENT** - AUTOMATIC blocking de operaciones Write/MultiEdit/NotebookEdit para .md files fuera del workflow obligatorio. Redirection inmediata a `/create-doc`.
+
 ## ÁRBOL DE DECISIÓN PRINCIPAL
 
 ### DECISIÓN INMEDIATA: TIPO DE SOLICITUD
@@ -40,6 +42,71 @@
 
 **Auto-chaining**: Workflow secuencial automático con confirmación usuario.
 **Violation**: Crear documentos fuera de este workflow está PROHIBIDO.
+
+### ENFORCEMENT MECHANISM - ACTIVE BLOCKING
+
+**PRE-EXECUTION VALIDATION REQUIRED**
+
+Antes de CUALQUIER operación Write/MultiEdit/NotebookEdit para archivos .md:
+
+```
+IF (operation == Write/MultiEdit/NotebookEdit AND file_extension == .md) {
+    IF (current_context != "/create-doc workflow") {
+        BLOCK_OPERATION()
+        LOG_VIOLATION(user_request, attempted_file, timestamp)
+        REDIRECT_TO_WORKFLOW()
+        RETURN enforcement_message
+    }
+}
+```
+
+**BLOCKING CONDITIONS:**
+- Direct Write operations to .md files
+- MultiEdit operations to .md files outside workflow
+- Any document creation bypassing `/create-doc`
+- Commands attempting direct file creation
+
+**REDIRECTION PROTOCOL:**
+```
+VIOLATION DETECTED: Direct document creation attempted
+
+REQUIRED WORKFLOW:
+1. Execute `/create-doc [document_type] [description]`
+2. System auto-chains to `/align-doc` for validation
+3. System auto-chains to `/verify-doc` for quality gates
+
+ENFORCEMENT: All .md file operations MUST follow this workflow.
+USER VOICE PRESERVED: Your content will be captured and processed through proper workflow.
+
+Redirecting to `/create-doc`...
+```
+
+**VIOLATION LOGGING:**
+- Track all bypass attempts in `/data/workflow-violations/`
+- Record: timestamp, user_request, attempted_file, violation_type
+- Generate compliance reports for system optimization
+- Pattern analysis for workflow improvements
+
+**ENFORCEMENT EXCEPTIONS:**
+- System-generated files during workflow execution
+- Approved architectural modifications
+- Emergency system maintenance (requires explicit override)
+
+**COMPLIANCE VERIFICATION:**
+- Real-time workflow adherence monitoring
+- Automated compliance scoring
+- Violation trend analysis
+- User guidance optimization based on common violations
+
+**ENFORCEMENT INTEGRATION:**
+- Commands `/create-doc`, `/align-doc`, `/verify-doc` exist and are operational
+- Violation logging active in `/data/workflow-violations/`
+- Auto-redirection messages provide clear user guidance
+- System preserves user voice while enforcing proper workflow
+- Emergency override available for system maintenance only
+
+**ENFORCEMENT STATUS: ✅ ACTIVE**
+All .md file operations now validated pre-execution with automatic blocking and redirection to proper workflow.
 
 ## ARQUITECTURA MODULAR
 

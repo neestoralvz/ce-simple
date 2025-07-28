@@ -1,255 +1,168 @@
-# VDD: Vision Driven Development Framework
+# CE-Simple: Context-Enabled Development System
 
-**Authority**: Level 4 - Global Information | **Updated**: 2025-07-27 16:25 (Mexico City)
-**Superior Authorities**: user-input/PRINCIPLES.md (Level 0) → rules/CLAUDE_RULES.md (Level 1) → rules/perpetual/conditional-loading.md (Level 2) → CLAUDE.md (Level 3) → README.md (Level 4)
+Un sistema inteligente de desarrollo que prioriza la captura y gestión de contexto para crear soluciones que realmente cumplan las necesidades del usuario.
 
-**Transform complex workflows into simple commands through intelligent parallel orchestration**
+## 🎯 Visión del Proyecto
 
-VDD (Vision Driven Development) is a breakthrough command engineering platform that combines the power of Claude Code's parallel execution capabilities with rigorous quality frameworks to deliver **86+ self-contained commands** that automate complex workflows across domains.
+Este proyecto implementa un enfoque revolucionario al desarrollo de software donde **el contexto del usuario es el punto de partida** de toda decisión técnica. En lugar de asumir requisitos o implementar funcionalidades genéricas, el sistema captura sistemáticamente qué quiere lograr el usuario, por qué lo necesita, y bajo qué restricciones opera.
 
-## ✨ What Makes VDD Revolutionary
+## 🚀 Características Principales
 
-### 🚀 Parallel AI Orchestration
-- **Multi-Agent Coordination**: Commands deploy up to 10 parallel sub-agents via Claude Code's Task Tool
-- **Intelligent Workflow Orchestration**: Complex operations execute simultaneously while maintaining logical dependencies
-- **Self-Contained Architecture**: Each command is completely autonomous with no external dependencies
+### Sistema de Entrevistas Dinámicas
+- **Comando `/dynamic-interview`**: Conduce entrevistas inteligentes que se adaptan a las respuestas del usuario
+- **Captura Contextual**: No solo QUÉ quiere el usuario, sino POR QUÉ y PARA QUÉ
+- **Consolidación Automática**: Organiza información por temas, evitando fragmentación
 
-### 🧠 Context Economy Innovation
-- **Three-Section CLAUDE.md Architecture**: Revolutionary memory management reducing cognitive load by 90%
-- **Conditional Loading System**: Load relevant context only when needed, optimizing token usage
-- **@ Import Technology**: Exclusive import syntax for dynamic context integration
+### Gestión Inteligente de Documentación
+- **Documentation-as-Knowledge**: La documentación evoluciona como un sistema vivo de gestión del conocimiento
+- **Consolidación vs Fragmentación**: Se prioriza agrupar información relacionada en lugar de crear múltiples documentos
+- **Context-Driven**: Toda documentación nace de necesidades reales capturadas del usuario
 
-### 🎯 Quality-First Engineering
-- **PTS Framework**: 12-component Pragmatic Technical Simplicity validation ensuring measurable excellence
-- **UltraThink x4 Methodology**: Progressive cognitive framework for complex problem solving
-- **Measurable Success Metrics**: Objective criteria for continuous system improvement
+### Insights Organizados
+- **Por Temas**: Frontend, backend, UX, restricciones técnicas, objetivos de negocio
+- **Evolutivos**: Los documentos crecen y se refinan conforme se obtiene más contexto
+- **Accionables**: Cada insight incluye próximos pasos y criterios de éxito claros
 
-## 🏗️ Architecture Overview
+## 📁 Estructura del Proyecto
 
-### Command Systems
 ```
-vdd/
-├── export/commands/           # 86 global commands in 15 categories
-│   ├── 00-core/              # Foundation operations
-│   ├── 01-discovery/         # Information gathering
-│   ├── 02-planning/          # Strategy development
-│   └── ...                   # 12 more specialized categories
-├── commands/                 # 3 essential local commands
-│   ├── init-project.md      # Complete project initialization
-│   ├── start.md             # Intelligent discovery workflow
-│   └── explore-codebase.md  # Deep project analysis
-├── rules/                   # Behavioral protocols system
-│   ├── perpetual/          # Always-active rules (18 files, 5 categories)
-│   │   ├── authority-*     # User authority & sacred spaces (4)
-│   │   ├── enforcement-*   # Compliance & validation (4)
-│   │   ├── communication-* # Language & interaction standards (2)
-│   │   ├── orchestration-* # Workflow & sub-agent coordination (5)
-│   │   └── quality-*       # Performance & feedback monitoring (3)
-│   ├── conditional/        # Context-triggered rules (26 files, 5 categories)
-│   │   ├── standards-*     # Technical specifications (7)
-│   │   ├── protocols-*     # Specific workflows (9)
-│   │   ├── methodology-*   # Analysis approaches (3)
-│   │   ├── governance-*    # Decision-making processes (6)
-│   │   └── implementation-* # Technical implementation (1)
-│   ├── perpetual/              # Always-active rules
-│   │   └── conditional-loading.md  # Rule routing system
-│   └── rules-naming-convention.md        # Naming standards
-└── docs/                    # Three-layer documentation architecture
-    ├── core/                # System frameworks & principles
-    └── standards/           # Technical implementation criteria
+ce-simple/
+├── .claude/
+│   └── commands/
+│       └── dynamic-interview.md     # Comando principal de entrevistas
+├── docs/
+│   ├── README.md                    # Sistema de documentación
+│   └── context/
+│       ├── README.md                # Gestión de contexto
+│       └── insights/
+│           └── README.md            # Documentación de insights
+└── README.md                        # Este archivo
 ```
 
-### Rules System Architecture
-**Perpetual vs Conditional Loading**:
-- **Perpetual Rules**: Always-active behavioral protocols loaded via `@rules/perpetual/conditional-loading.md`
-- **Conditional Rules**: Context-specific standards triggered by `IF [context] → READ [rule]` patterns  
-- **Naming Convention**: `[category]-[function]-[perpetual|conditional].md` for consistent organization
+### Directorios Clave
 
-**Categories**:
-- **authority-**: User hierarchy, sacred spaces, vision validation
-- **enforcement-**: Compliance, blocking requirements, Think×4 methodology  
-- **communication-**: Language standards, directive patterns, transparency
-- **orchestration-**: Workflow coordination, sub-agent management, parallel execution
-- **quality-**: Performance monitoring, feedback collection, validation gates
-- **standards-**: Technical specifications, writing requirements (conditional only)
-- **protocols-**: Step-by-step workflows, domain processes (conditional only)
-- **methodology-**: Analysis approaches, development methodologies (conditional only)
-- **governance-**: Decision-making, review processes (conditional only)
-- **implementation-**: Technical implementation details (conditional only)
+#### `/docs/context/insights/`
+Aquí se almacenan todos los insights capturados de usuarios:
+- `frontend-requirements.md` - Requisitos de interfaz
+- `api-architecture.md` - Arquitectura de APIs
+- `user-experience-goals.md` - Objetivos de UX
+- `technical-constraints.md` - Limitaciones técnicas
+- `business-objectives.md` - Objetivos de negocio
 
-### Documentation Architecture
-- **Foundation Layer** (≤80 lines): Essential concepts as agent prompts
-- **Implementation Layer** (≤100 lines): Detailed procedures for deployment
-- **Validation Layer** (≤100 lines): Quality gates and compliance checking
+#### `/.claude/commands/`
+Comandos personalizados para facilitar el flujo de trabajo:
+- `dynamic-interview.md` - Sistema de entrevistas dinámicas
 
-### Authority Hierarchy
-1. **docs/vision/** - System direction (absolute authority)
-2. **rules/CLAUDE_RULES.md** - Partnership protocol and decision trees
-3. **docs/core/** - Technical implementation frameworks
-4. **CLAUDE.md** - Navigation hub (≤80 lines with conditional loading)
+## 🎨 Filosofía de Desarrollo
 
-## 🚀 Quick Start
+### 1. Usuario Primero (User-First)
+- Toda funcionalidad nace de una necesidad real del usuario
+- Se captura el contexto completo antes de implementar
+- Los criterios de éxito se definen desde la perspectiva del usuario
 
-### For New Projects
-```bash
-/init-project
-```
-Establishes complete foundation with git repository, directory structure, and core documentation.
+### 2. Contexto sobre Código (Context over Code)
+- Se invierte más tiempo en entender el problema que en codificar la solución
+- Cada decisión técnica se basa en contexto documentado
+- El código es la manifestación del contexto, no el punto de partida
 
-### For Existing Projects
-```bash
-/start
-```
-Initiates intelligent discovery workflow with context analysis and guidance.
+### 3. Evolución Orgánica (Organic Evolution)
+- El sistema crece basado en necesidades reales, no en especulaciones
+- La documentación evoluciona junto con el entendimiento del problema
+- Se prioriza refinamiento sobre reescritura
 
-### Deep Project Understanding
-```bash
-/explore-codebase
-```
-Comprehensive project analysis with architecture mapping and improvement recommendations.
+### 4. Consolidación Inteligente (Intelligent Consolidation)
+- Se evita la fragmentación de información relacionada
+- Los insights se consolidan por temas coherentes
+- Se mantiene una fuente única de verdad para cada área
 
-## 💪 Command Categories (86+ Global Commands)
+## 🛠️ Cómo Usar el Sistema
 
-| Category | Purpose | Examples |
-|----------|---------|----------|
-| **00-core** | Foundation operations | `/vision-create`, `/structure-optimize` |
-| **01-discovery** | Information gathering | `/research-comprehensive`, `/analysis-competitive` |
-| **02-planning** | Strategy development | `/roadmap-create`, `/timeline-generate` |
-| **03-analysis** | Deep investigation | `/requirements-analyze`, `/risk-assessment` |
-| **04-architecture** | System design | `/architecture-design`, `/patterns-identify` |
-| **05-development** | Implementation | `/feature-implement`, `/integration-test` |
-| **06-testing** | Quality assurance | `/test-comprehensive`, `/performance-analyze` |
-| **07-documentation** | Knowledge capture | `/docs-generate`, `/api-document` |
-| **08-deployment** | Release management | `/deploy-production`, `/rollback-execute` |
-| **09-monitoring** | System observation | `/metrics-analyze`, `/health-check` |
-| **10-standards** | Quality frameworks | `/compliance-check`, `/standards-validate` |
-| **11-meta** | System evolution | `/command-create`, `/framework-evolve` |
-| **12-research** | Knowledge discovery | `/literature-review`, `/trend-analysis` |
-| **13-business** | Operations support | `/proposal-generate`, `/process-optimize` |
-| **14-integration** | System connection | `/api-integrate`, `/workflow-connect` |
+### Para Capturar Nuevos Requisitos
+1. **Ejecuta una entrevista dinámica:**
+   ```
+   /dynamic-interview
+   ```
+2. **El sistema automáticamente:**
+   - Hace preguntas adaptativas basadas en tus respuestas
+   - Identifica temas principales
+   - Consolida la información en archivos existentes o crea nuevos según corresponda
 
-## 🎯 Use Cases & Target Users
+### Para Consultar Información Existente
+1. **Navega a `/docs/context/insights/`**
+2. **Busca el archivo relevante por tema**
+3. **Consulta criterios de éxito y restricciones**
+4. **Úsalo como referencia para desarrollo**
 
-### 👨‍💻 Developers
-- **Project Initialization**: Complete setup with architecture, documentation, and standards
-- **Code Analysis**: Deep codebase understanding with improvement recommendations
-- **Deployment Automation**: End-to-end release management with quality gates
+### Para Desarrolladores
+1. **Antes de implementar:** Consulta insights relevantes en `/docs/context/insights/`
+2. **Durante desarrollo:** Valida que tu implementación cumple los criterios de éxito
+3. **Al finalizar:** Actualiza insights si descubres nuevos requisitos
 
-### 🔬 Researchers
-- **Information Synthesis**: Comprehensive research with source validation
-- **Literature Analysis**: Systematic review with trend identification
-- **Documentation Generation**: Automated report creation with visual integration
+## 🎯 Casos de Uso
 
-### 💼 Business Professionals
-- **Process Automation**: Complex workflow orchestration through simple commands
-- **Proposal Development**: Systematic requirement analysis and document structuring
-- **Compliance Management**: Automated validation against standards and regulations
+### Proyectos Nuevos
+- Capturar requisitos completos antes de escribir código
+- Entender restricciones y limitaciones desde el inicio
+- Definir criterios de éxito claros y medibles
 
-### 📝 Content Professionals
-- **Document Engineering**: Structured content creation with quality assurance
-- **Multi-format Output**: Single source generating multiple deliverable formats
-- **Version Management**: Automated document lifecycle with change tracking
+### Proyectos Existentes
+- Documentar el contexto actual para nuevos miembros del equipo
+- Capturar requisitos de nuevas funcionalidades
+- Consolidar conocimiento fragmentado en diferentes fuentes
 
-## 🏆 Quality Framework
+### Consultorías y Freelancing
+- Entender completamente qué necesita el cliente
+- Documentar acuerdos y expectativas claramente
+- Facilitar comunicación continua durante el desarrollo
 
-### PTS (Pragmatic Technical Simplicity) - 12 Components
+## 🔄 Flujo de Trabajo Típico
 
-**Technical Cluster:**
-- **Directness**: ≤3 steps to objective achievement
-- **Precision**: 100% technical accuracy requirement
-- **Sufficiency**: Complete but minimal implementation
-- **Excellence**: Impeccable simple quality standard
+1. **Usuario solicita funcionalidad/proyecto**
+2. **Se ejecuta `/dynamic-interview`**
+3. **Sistema captura contexto completo:**
+   - Objetivos específicos
+   - Restricciones técnicas/temporales/presupuestarias
+   - Criterios de éxito
+   - Contexto de negocio
+4. **Se documenta automáticamente en insights organizados**
+5. **Desarrollo se basa en contexto capturado**
+6. **Validación contra criterios de éxito documentados**
 
-**Communication Cluster:**
-- **Exactitude**: Exact implementation point specification
-- **Sobriety**: Zero embellishments or marketing language
-- **Structure**: Logical organization and flow
-- **Conciseness**: Maximum value per complexity unit
+## 📈 Beneficios del Enfoque
 
-**Cognitive Cluster:**
-- **Clarity**: Immediate comprehension requirement
-- **Coherence**: Internal consistency maintenance
-- **Effectiveness**: Measurable results delivery
-- **Pragmatism**: Real-world functionality focus
+### Para Usuarios/Clientes
+- **Seguridad** de que sus necesidades reales fueron capturadas
+- **Transparencia** en el proceso de desarrollo
+- **Alineación** entre lo que necesitan y lo que se construye
 
-### UltraThink x4 Methodology
-1. **Think**: Foundation analysis and scope clarity
-2. **Think Hard**: Pattern recognition and trade-off evaluation
-3. **Think Harder**: System integration and risk assessment
-4. **Ultra Think**: Complete solution architecture and implementation roadmap
+### Para Desarrolladores
+- **Claridad** sobre qué construir y por qué
+- **Contexto completo** para tomar decisiones técnicas
+- **Criterios objetivos** para validar completitud
 
-## 🛠️ Technical Specifications
+### Para el Proyecto
+- **Reducción de retrabajo** por malentendidos
+- **Mejor calidad** al construir exactamente lo que se necesita
+- **Documentación viva** que evoluciona con el proyecto
 
-### Platform Requirements
-- **Claude Code**: Latest version with Task Tool support
-- **Architecture**: Self-contained commands with parallel execution
-- **Quality Standards**: PTS 12/12 component compliance
-- **Language**: English-only with imperative tone
+## 🚀 Próximos Pasos
 
-### Constraints & Standards
-- **Commands**: ≤80 lines maximum, completely self-contained
-- **Documentation**: ≤100 lines with three-layer architecture
-- **Concepts**: ≤80 lines for cognitive load optimization
-- **Context Economy**: 90% reduction in always-loaded content
+Para empezar a usar el sistema:
 
-### Validation Requirements
-- **Automated Testing**: PTS framework compliance checking
-- **Performance Metrics**: Context usage optimization validation
-- **Quality Gates**: Multi-layer validation before deployment
-- **Evolution Tracking**: Git-based performance measurement
+1. **Ejecuta tu primera entrevista:**
+   ```
+   /dynamic-interview
+   ```
 
-## 📚 Learning Resources
+2. **Explora los insights generados en:**
+   ```
+   docs/context/insights/
+   ```
 
-### Essential Documentation
-- **[CLAUDE.md](CLAUDE.md)** - System navigation hub with conditional loading
-- **[rules/CLAUDE_RULES.md](rules/CLAUDE_RULES.md)** - Partnership protocol and decision trees
-- **[Core Architecture](docs/core/README.md)** - Complete architectural framework
-- **[Navigation Hub](docs/navigation/index.md)** - 2-click access to all components
+3. **Úsalos como referencia para tu desarrollo**
 
-### Advanced Topics
-- **[PTS Framework](docs/core/pts-framework.md)** - Quality validation system
-- **[Context Economy](docs/standards/context-efficiency-optimization.md)** - Cognitive load optimization
-- **[Command Development](docs/templates/command-template.md)** - Creation guidelines
-- **[Three-Layer Architecture](docs/rules/documentation-standards-foundation.md)** - Documentation methodology
-
-## 🤝 Contributing
-
-### System Evolution
-VDD evolves through systematic analysis of usage patterns and measurable outcomes. The system captures learning automatically and integrates improvements through the governance framework.
-
-### Quality Standards
-All contributions must meet PTS 12/12 component validation. The system provides automated checking and guided improvement suggestions to ensure consistent excellence.
-
-### Governance Framework
-- **Vision Authority**: docs/vision/ provides absolute direction
-- **Technical Authority**: rules/CLAUDE_RULES.md governs implementation
-- **Quality Authority**: PTS framework ensures measurable excellence
-- **Evolution Authority**: Handoff system manages systematic development
-
-## 📊 Success Metrics
-
-### Quantitative Measures
-- **Context Economy**: 90% reduction in always-loaded content
-- **Execution Efficiency**: 10x improvement in complex workflow completion
-- **Quality Compliance**: 100% PTS framework adherence
-- **System Growth**: 86+ commands with linear complexity scaling
-
-### Qualitative Improvements
-- **Cognitive Load**: Dramatic reduction in mental overhead
-- **Learning Curve**: Immediate productivity with progressive mastery
-- **Reliability**: Predictable outcomes with measurable quality
-- **Adaptability**: Cross-domain applicability with consistent patterns
-
-## 🚀 What's Next
-
-VDD represents a paradigm shift from traditional development tools to **intelligent workflow orchestration systems**. The combination of parallel AI coordination, rigorous quality frameworks, and context economy optimization creates a platform that grows more capable while remaining simple to use.
-
-**Core Innovation**: VDD proves that sophisticated parallel AI coordination can be packaged into simple, reusable commands that deliver immediate value while maintaining long-term architectural integrity.
+Este sistema está diseñado para evolucionar contigo y tu proyecto, capturando y organizando el conocimiento crítico que hace la diferencia entre construir software genérico y crear soluciones que realmente resuelven problemas reales.
 
 ---
 
-**Get Started**: Execute `/init-project` to experience the future of workflow automation.
-
-**Learn More**: Visit [CLAUDE.md](CLAUDE.md) for complete system navigation and [docs/navigation/index.md](docs/navigation/index.md) for comprehensive resource access.
-
-**Philosophy**: Simple building blocks → complex workflows via parallel execution.
+**¿Listo para empezar?** Ejecuta `/dynamic-interview` y comienza a capturar el contexto que transformará tu desarrollo.

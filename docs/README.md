@@ -1,121 +1,183 @@
-# Documentation Hub - ce-simple
+# Documentation System
 
-**Updated**: 2025-07-24 12:54 (Mexico City) | **Navigation**: [System Hub](navigation/index.md) | **Core**: [Architecture](core/) | [Rules](rules/) | [Templates](templates/)
+Este directorio contiene el sistema de documentación del proyecto, diseñado para capturar, organizar y mantener todo el conocimiento crítico del proyecto de manera estructurada y accesible.
 
-## System Overview
+## Arquitectura del Sistema
 
-**ce-simple** is a methodology and architecture system for creating self-contained slash commands. 
+### `/context/` - Sistema de Gestión de Contexto
+El núcleo del sistema de documentación, enfocado en capturar y mantener el contexto del proyecto:
 
-**docs/**: Contains methodology, architecture frameworks, and development rules
-**export/**: Contains the complete command system ready for global deployment (86 commands in 15 categories)
+#### `/context/insights/` - User Insights
+- **Propósito:** Capturar información directa de usuarios através de entrevistas dinámicas
+- **Contenido:** Objetivos, requisitos, restricciones, criterios de éxito
+- **Proceso:** Uso del comando `/dynamic-interview` con consolidación automática
+- **Organización:** Por temas, con consolidación inteligente para evitar fragmentación
 
-## Purpose Separation
+## Filosofía de Documentación
 
-### **docs/** - Methodology & Architecture
-Development methodology, technical frameworks, and architectural patterns for creating command systems.
+### Principios Core
 
-### **export/** - Executable Commands  
-Complete, self-contained command system organized in 15 categories (00-14) ready for deployment to global slash command directory.
+#### 1. Documentation-as-Knowledge-Management
+La documentación no es solo información estática, sino un sistema vivo de gestión del conocimiento que:
+- **Evoluciona** conforme el proyecto crece y cambia
+- **Consolida** información relacionada para evitar fragmentación
+- **Facilita** la toma de decisiones basada en contexto completo
+- **Preserva** el razonamiento detrás de las decisiones
 
-## Directory Structure
+#### 2. Context-Driven Documentation
+Toda documentación está impulsada por el contexto real del proyecto:
+- **User-Centric:** Se origina en necesidades reales capturadas de usuarios
+- **Purpose-Driven:** Cada documento tiene un propósito claro y medible
+- **Living Documents:** Se actualiza continuamente conforme evoluciona el contexto
+- **Interconnected:** Los documentos se referencian y apoyan mutuamente
 
+#### 3. Consolidation Over Fragmentation
+Se prioriza la consolidación inteligente sobre la creación de múltiples documentos fragmentados:
+- **Theme-Based Organization:** Agrupación por temas coherentes
+- **Intelligent Merging:** Combinación automática de información relacionada
+- **Version Evolution:** Los documentos crecen y se refinan en lugar de multiplicarse
+- **Single Source of Truth:** Cada tema tiene una ubicación autoritativa
+
+## Flujo de Trabajo de Documentación
+
+### 1. Captura (Capture)
 ```
-docs/
-├── README.md              # This navigation hub
-├── core/                  # System architecture and principles
-├── frameworks/            # Quality assurance and validation methodologies  
-├── rules/                 # Development rules and standards
-├── templates/             # Development tools and templates
-├── implementation/        # Implementation guides and examples
-├── context/               # Operational knowledge and patterns
-├── commands/              # Command implementation documentation
-└── vision/                # System philosophy and direction
+Real Need → Dynamic Interview → Structured Documentation
+```
+- **Origen:** Necesidades reales identificadas en conversación con usuarios
+- **Método:** Entrevistas dinámicas usando `/dynamic-interview`
+- **Output:** Insights estructurados en `/context/insights/`
+
+### 2. Consolidación (Consolidate)
+```
+New Information → Theme Analysis → Merge or Create → Update Cross-references
+```
+- **Análisis:** Determinación de temas existentes vs nuevos
+- **Decisión:** Consolidar en documento existente o crear nuevo
+- **Integración:** Incorporación manteniendo coherencia y eliminando duplicación
+
+### 3. Evolución (Evolve)
+```
+Changing Context → Impact Analysis → Selective Updates → Validation
+```
+- **Monitoreo:** Identificación de cambios en el contexto del proyecto
+- **Análisis:** Evaluación del impacto en documentación existente
+- **Actualización:** Modificaciones selectivas manteniendo integridad del sistema
+
+### 4. Aplicación (Apply)
+```
+Development Need → Context Lookup → Information Extraction → Decision Support
+```
+- **Consulta:** Búsqueda de información relevante para decisiones de desarrollo
+- **Extracción:** Obtención de información específica y contextualizada
+- **Aplicación:** Uso de la información para guiar implementación y diseño
+
+## Herramientas y Comandos
+
+### Sistema de Entrevistas
+- **`/dynamic-interview`** - Conduce entrevistas estructuradas para capturar insights del usuario
+  - Preguntas adaptativas basadas en respuestas previas
+  - Identificación automática de temas
+  - Consolidación inteligente con información existente
+
+### Gestión de Documentación (Futuro)
+- **`/consolidate-docs`** - Analiza y consolida documentación fragmentada
+- **`/search-context`** - Búsqueda inteligente en toda la documentación
+- **`/validate-completeness`** - Verifica completitud de documentación por área
+- **`/generate-summary`** - Crea resúmenes ejecutivos de áreas específicas
+
+## Estructura de Archivos
+
+### Nomenclatura Estándar
+```
+[categoria]-[tema-principal]-[subtema].md
 ```
 
-## Core Architecture
+**Ejemplos:**
+- `frontend-requirements.md` - Requisitos de frontend
+- `api-architecture-design.md` - Diseño de arquitectura de API
+- `user-experience-goals.md` - Objetivos de UX
+- `business-objectives-roi.md` - Objetivos de negocio y ROI
 
-### [core/](core/)
-System foundation, architectural principles, and PTS (Pragmatic Technical Simplicity) framework.
-- **4 consolidated modules**: Complete PTS framework authority
-- **Authority**: Technical implementation patterns and validation
+### Templates y Formatos
+Cada tipo de documento sigue templates específicos para mantener consistencia:
 
-### [frameworks/](frameworks/)  
-Quality assurance, validation methodologies, and governance frameworks.
-- **10 files**: Validation and quality frameworks
-- **Authority**: Quality standards and compliance
+#### User Insights Template
+```markdown
+# [Título del Insight]
+## Contexto de la Entrevista
+## Resumen Ejecutivo  
+## Objetivos Identificados
+## Requisitos Específicos
+## Restricciones y Limitaciones
+## Criterios de Éxito
+## Notas Adicionales
+## Próximos Pasos Sugeridos
+## Historial de Actualizaciones
+```
 
-### [rules/](rules/)
-Development rules, standards, and operational guidelines.
-- **4 files**: Development authority and standards
-- **Authority**: Development rules and requirements
+## Casos de Uso por Rol
 
-### [templates/](templates/)
-Development tools, command templates, and reusable patterns.
-- **2 files**: Practical development tools
-- **Authority**: Template standards and patterns
+### Product Owners / Project Managers
+- **Captura de Requirements:** Usar `/dynamic-interview` para documentar requisitos completos
+- **Tracking de Evolución:** Monitorear cambios en objetivos y prioridades
+- **Comunicación con Stakeholders:** Referenciar documentación autoritativa
+- **Planning y Roadmapping:** Basar decisiones en contexto documentado
 
-### [implementation/](implementation/)
-Implementation guides, examples, and practical development guidance.
-- **5 files**: Practical implementation examples and guides
-- **Authority**: Implementation methodology
+### Developers
+- **Context Understanding:** Consultar `/context/insights/` antes de implementar
+- **Requirement Validation:** Verificar implementaciones contra criterios documentados
+- **Architecture Decisions:** Referenciar restricciones y objetivos técnicos
+- **Code Reviews:** Validar alineación con requisitos capturados
 
-### [context/](context/)
-Operational knowledge, proven patterns, and system intelligence.
-- **18 files**: Live operational knowledge and patterns
-- **Authority**: Operational intelligence and methodology
+### Designers
+- **User Understanding:** Consultar insights sobre objetivos de experiencia
+- **Constraint Awareness:** Conocer limitaciones técnicas y de negocio
+- **Success Criteria:** Alinear diseños con criterios de éxito definidos
+- **Iteration Planning:** Basar iteraciones en feedback capturado
 
-### [.claude/commands/](../.claude/commands/)
-Command implementation documentation and technical specifications.
-- **13 files**: Implementation details for command development
-- **Authority**: Command technical specifications
+### QA/Testing
+- **Test Case Development:** Crear casos basados en criterios de éxito
+- **Scenario Understanding:** Conocer contextos de uso críticos
+- **Acceptance Criteria:** Validar completitud contra requisitos documentados
+- **Bug Prioritization:** Entender impacto basado en objetivos del usuario
 
-### [vision/](vision/)
-System philosophy, direction, and evolutionary principles.
-- **9 files**: System philosophy and direction
-- **Authority**: Absolute authority for system direction
+## Métricas de Calidad
 
-## Quick Start
+### Completitud
+- ¿Están documentados todos los aspectos críticos del proyecto?
+- ¿Se capturó suficiente contexto para tomar decisiones informadas?
+- ¿Hay gaps obvios en la información disponible?
 
-### For Command Development
-1. **Start with**: [vision/central-concept.md](vision/central-concept.md) - Core mission & unique differentiators
-2. **Learn architecture**: [core/README.md](core/README.md) - Technical foundation & PTS framework  
-3. **Apply rules**: [rules/development-standards.md](rules/development-standards.md) - Development requirements & standards
-4. **Use templates**: [templates/command-template.md](templates/command-template.md) - Command structure & patterns
-5. **Follow implementation**: [implementation/refactoring-guide.md](implementation/refactoring-guide.md) - Development process & workflows
-6. **Validate quality**: [core/pts-validation-consolidated.md](core/pts-validation-consolidated.md) - Quality gates & compliance
+### Actualidad
+- ¿La documentación refleja el estado actual del proyecto?
+- ¿Se actualizan los documentos cuando cambia el contexto?
+- ¿Hay información obsoleta que necesita limpieza?
 
-### For Understanding System
-1. **System overview**: [vision/README.md](vision/README.md) - Complete user vision navigation
-2. **Technical architecture**: [vision/technical-architecture.md](vision/technical-architecture.md) - Core execution mechanism  
-3. **Quality framework**: [core/pts-validation-consolidated.md](core/pts-validation-consolidated.md) - Validation tools
-4. **Command system**: [core/command-index.md](core/command-index.md) - 86 commands in 15 categories
-5. **Implementation guides**: [implementation/](implementation/) - Practical development guidance
+### Accesibilidad
+- ¿Es fácil encontrar información específica cuando se necesita?
+- ¿La organización es intuitiva para todos los roles?
+- ¿Los templates facilitan la consulta rápida?
 
-## Navigation Patterns
+### Utilidad
+- ¿La documentación realmente ayuda en la toma de decisiones?
+- ¿Se consulta regularmente durante el desarrollo?
+- ¿Facilita la incorporación de nuevos miembros del equipo?
 
-### Progressive Disclosure
-- **High-level**: vision/ → core/ → standards/
-- **Practical**: rules/ → templates/ → implementation/
-- **Operational**: context/ → commands/
+## Evolución del Sistema
 
-### Quick Access
-- **Development rules**: [rules/](rules/)
-- **Quality standards**: [frameworks/](frameworks/)  
-- **Implementation examples**: [implementation/](implementation/)
-- **Templates**: [templates/](templates/)
+### Adaptación Continua
+El sistema de documentación evoluciona basado en:
+- **Feedback de Uso:** Cómo se usa realmente la documentación
+- **Nuevas Necesidades:** Qué información adicional se requiere
+- **Eficiencia:** Dónde se pueden optimizar procesos
+- **Calidad:** Cómo mejorar la utilidad y accesibilidad
 
-## System Integration
+### Expansión Futura
+Áreas planificadas para expansión:
+- **Technical Architecture:** Documentación de decisiones técnicas
+- **Process Documentation:** Workflows y procedimientos
+- **Decision Records:** ADRs (Architecture Decision Records)
+- **Lessons Learned:** Captura de aprendizajes y mejores prácticas
 
-**Authority Hierarchy**:
-1. **vision/** - Absolute authority for system direction
-2. **core/** - Technical implementation authority
-3. **rules/** - Development requirements authority
-4. **frameworks/** - Quality standards authority
-
-**Cross-References**: All documents cross-reference appropriately within docs/ methodology system.
-
-**Export Integration**: docs/ provides methodology for developing commands deployed in export/ system.
-
----
-
-**System Principle**: Methodology drives implementation, architecture enables capability, quality ensures excellence.
+Este sistema de documentación está diseñado para crecer orgánicamente con el proyecto, manteniendo siempre la relevancia y utilidad para todos los miembros del equipo.
