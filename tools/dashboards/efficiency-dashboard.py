@@ -1,479 +1,646 @@
 #!/usr/bin/env python3
 """
-CE-Simple Efficiency Dashboard - Real-Time Performance Monitoring
-Integrated with multi-subagent orchestration architecture
+CE-Simple Efficiency Dashboard
+Real-time command performance tracking with research-driven 2025 best practices
 """
 
-import asyncio
 import json
 import time
-import threading
+import os
+import sqlite3
 from datetime import datetime, timedelta
-from collections import defaultdict, deque
+from typing import Dict, List, Optional
 from pathlib import Path
+import subprocess
+from dataclasses import dataclass, asdict
+from collections import defaultdict, deque
+import asyncio
 import websockets
-import http.server
-import socketserver
-from typing import Dict, List, Any, Optional
+import threading
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 import logging
-import uuid
 
-# Configuration
-CONFIG = {
-    "websocket_port": 8765,
-    "http_port": 8080,
-    "data_retention_hours": 24,
-    "metrics_buffer_size": 1000,
-    "update_interval_ms": 500,
-    "command_timeout_threshold": 5000,  # milliseconds
-    "efficiency_threshold": 0.75
-}
+@dataclass
+class CommandMetrics:
+    """Command execution metrics following 2025 monitoring best practices"""
+    timestamp: str
+    command: str
+    execution_time: float
+    success: bool
+    token_usage: int
+    user_context: str
+    error_message: Optional[str] = None
+    resource_usage: Dict[str, float] = None
 
-class EfficiencyMetrics:
-    """Core metrics collection and calculation engine"""
+class MetricsCollector:
+    """Research-driven metrics collection with real-time capabilities"""
     
-    def __init__(self):
-        self.sessions = {}
-        self.command_history = deque(maxlen=CONFIG["metrics_buffer_size"])
-        self.performance_buffer = defaultdict(lambda: deque(maxlen=100))
-        self.websocket_clients = set()
-        self.lock = threading.Lock()
+    def __init__(self, db_path: str = "data/metrics/efficiency.db"):
+        self.db_path = Path(db_path)
+        self.db_path.parent.mkdir(parents=True, exist_ok=True)
+        self.init_database()
         
-    def record_command_execution(self, command_data: Dict[str, Any]):
-        """Record command execution metrics"""
-        with self.lock:
-            timestamp = datetime.now()
-            execution_record = {
-                "id": str(uuid.uuid4()),
-                "timestamp": timestamp.isoformat(),
-                "command": command_data.get("command", "unknown"),
-                "execution_time_ms": command_data.get("execution_time_ms", 0),
-                "success": command_data.get("success", True),
-                "context_loaded": command_data.get("context_loaded", 0),
-                "user_corrections": command_data.get("user_corrections", 0),
-                "subagents_deployed": command_data.get("subagents_deployed", []),
-                "token_usage": command_data.get("token_usage", 0),
-                "session_id": command_data.get("session_id", "default")
-            }
-            
-            self.command_history.append(execution_record)
-            self.performance_buffer[execution_record["command"]].append(execution_record)
-            
-            # Update session metrics
-            session_id = execution_record["session_id"]
-            if session_id not in self.sessions:
-                self.sessions[session_id] = {
-                    "start_time": timestamp,
-                    "commands_executed": 0,
-                    "total_execution_time": 0,
-                    "success_count": 0,
-                    "efficiency_score": 0.0
-                }
-            
-            session = self.sessions[session_id]
-            session["commands_executed"] += 1
-            session["total_execution_time"] += execution_record["execution_time_ms"]
-            if execution_record["success"]:
-                session["success_count"] += 1
-            
-            session["efficiency_score"] = self.calculate_session_efficiency(session_id)
-    
-    def calculate_session_efficiency(self, session_id: str) -> float:
-        """Calculate efficiency score for a session"""
-        if session_id not in self.sessions:
-            return 0.0
+        # Real-time storage (following 2025 best practices)
+        self.recent_metrics = deque(maxlen=1000)
+        self.active_sessions = {}
+        self.pattern_cache = {}
         
-        session = self.sessions[session_id]
-        if session["commands_executed"] == 0:
-            return 0.0
-        
-        # Efficiency factors
-        success_rate = session["success_count"] / session["commands_executed"]
-        avg_execution_time = session["total_execution_time"] / session["commands_executed"]
-        speed_factor = max(0, 1 - (avg_execution_time / CONFIG["command_timeout_threshold"]))
-        
-        efficiency = (success_rate * 0.6) + (speed_factor * 0.4)
-        return min(1.0, efficiency)
-    
-    def get_real_time_metrics(self) -> Dict[str, Any]:
-        """Generate real-time dashboard metrics"""
-        with self.lock:
-            now = datetime.now()
-            hour_ago = now - timedelta(hours=1)
-            
-            # Recent command performance
-            recent_commands = [cmd for cmd in self.command_history 
-                             if datetime.fromisoformat(cmd["timestamp"]) > hour_ago]
-            
-            # Command frequency analysis
-            command_frequency = defaultdict(int)
-            total_execution_time = 0
-            success_count = 0
-            
-            for cmd in recent_commands:
-                command_frequency[cmd["command"]] += 1
-                total_execution_time += cmd["execution_time_ms"]
-                if cmd["success"]:
-                    success_count += 1
-            
-            # Calculate metrics
-            avg_execution_time = (total_execution_time / len(recent_commands)) if recent_commands else 0
-            success_rate = (success_count / len(recent_commands)) if recent_commands else 0
-            
-            # Active sessions
-            active_sessions = {sid: session for sid, session in self.sessions.items()
-                             if (now - session["start_time"]).seconds < 3600}
-            
-            # System health indicators
-            system_health = self.assess_system_health()
-            
-            return {
-                "timestamp": now.isoformat(),
-                "current_session": {
-                    "commands_executed": len(recent_commands),
-                    "avg_execution_time_ms": round(avg_execution_time, 2),
-                    "success_rate": round(success_rate * 100, 1),
-                    "active_sessions": len(active_sessions)
-                },
-                "command_frequency": dict(command_frequency),
-                "performance_trends": self.calculate_performance_trends(),
-                "system_health": system_health,
-                "efficiency_alerts": self.generate_efficiency_alerts(),
-                "user_patterns": self.analyze_user_patterns(),
-                "resource_utilization": self.get_resource_metrics()
-            }
-    
-    def assess_system_health(self) -> Dict[str, Any]:
-        """Assess overall system health"""
-        return {
-            "status": "healthy",
-            "command_pipeline": "operational",
-            "websocket_connections": len(self.websocket_clients),
-            "data_buffer_usage": f"{len(self.command_history)}/{CONFIG['metrics_buffer_size']}",
-            "performance_score": 0.89,
-            "uptime": "24h 32m"
+        # Performance thresholds (research-based defaults)
+        self.thresholds = {
+            'response_time_warning': 2.0,
+            'response_time_critical': 5.0,
+            'error_rate_warning': 0.05,
+            'error_rate_critical': 0.10,
+            'token_efficiency_minimum': 0.7
         }
+        
+        logging.basicConfig(level=logging.INFO)
+        self.logger = logging.getLogger(__name__)
     
-    def calculate_performance_trends(self) -> Dict[str, Any]:
-        """Calculate performance trends over time"""
-        trends = {}
-        for command, records in self.performance_buffer.items():
-            if len(records) >= 2:
-                recent_avg = sum(r["execution_time_ms"] for r in list(records)[-10:]) / min(10, len(records))
-                older_avg = sum(r["execution_time_ms"] for r in list(records)[-20:-10]) / min(10, len(records)-10) if len(records) > 10 else recent_avg
-                
-                trend = "improving" if recent_avg < older_avg else "stable" if recent_avg == older_avg else "degrading"
-                trends[command] = {
-                    "trend": trend,
-                    "recent_avg_ms": round(recent_avg, 2),
-                    "change_percent": round(((recent_avg - older_avg) / older_avg * 100), 1) if older_avg > 0 else 0
-                }
-        return trends
+    def init_database(self):
+        """Initialize SQLite database with optimized schema"""
+        conn = sqlite3.connect(self.db_path)
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS command_metrics (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                timestamp TEXT NOT NULL,
+                command TEXT NOT NULL,
+                execution_time REAL NOT NULL,
+                success BOOLEAN NOT NULL,
+                token_usage INTEGER NOT NULL,
+                user_context TEXT,
+                error_message TEXT,
+                resource_usage TEXT,
+                session_id TEXT,
+                INDEX(timestamp),
+                INDEX(command),
+                INDEX(success)
+            )
+        ''')
+        
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS performance_trends (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                date TEXT NOT NULL,
+                avg_response_time REAL,
+                success_rate REAL,
+                total_commands INTEGER,
+                unique_users INTEGER,
+                INDEX(date)
+            )
+        ''')
+        
+        conn.commit()
+        conn.close()
     
-    def generate_efficiency_alerts(self) -> List[Dict[str, Any]]:
-        """Generate efficiency alerts and recommendations"""
-        alerts = []
+    def record_command(self, metrics: CommandMetrics) -> str:
+        """Record command execution with real-time processing"""
+        # Store in database
+        conn = sqlite3.connect(self.db_path)
+        resource_json = json.dumps(metrics.resource_usage) if metrics.resource_usage else None
         
-        for command, records in self.performance_buffer.items():
-            if len(records) >= 5:
-                recent_records = list(records)[-5:]
-                avg_time = sum(r["execution_time_ms"] for r in recent_records) / 5
-                success_rate = sum(1 for r in recent_records if r["success"]) / 5
-                
-                if avg_time > CONFIG["command_timeout_threshold"]:
-                    alerts.append({
-                        "type": "performance",
-                        "severity": "warning",
-                        "command": command,
-                        "message": f"Command {command} average execution time is {avg_time:.0f}ms (threshold: {CONFIG['command_timeout_threshold']}ms)",
-                        "recommendation": "Consider optimizing command implementation or splitting into subcommands"
-                    })
-                
-                if success_rate < CONFIG["efficiency_threshold"]:
-                    alerts.append({
-                        "type": "reliability",
-                        "severity": "error",
-                        "command": command,
-                        "message": f"Command {command} success rate is {success_rate*100:.1f}% (threshold: {CONFIG['efficiency_threshold']*100}%)",
-                        "recommendation": "Review command implementation for error handling and validation"
-                    })
+        cursor = conn.execute('''
+            INSERT INTO command_metrics 
+            (timestamp, command, execution_time, success, token_usage, 
+             user_context, error_message, resource_usage, session_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ''', (
+            metrics.timestamp, metrics.command, metrics.execution_time,
+            metrics.success, metrics.token_usage, metrics.user_context,
+            metrics.error_message, resource_json, 
+            self.get_current_session_id()
+        ))
         
-        return alerts
+        record_id = cursor.lastrowid
+        conn.commit()
+        conn.close()
+        
+        # Add to real-time cache
+        self.recent_metrics.append(metrics)
+        
+        # Trigger alerts if needed
+        self._check_performance_alerts(metrics)
+        
+        return str(record_id)
     
-    def analyze_user_patterns(self) -> Dict[str, Any]:
-        """Analyze user interaction patterns"""
-        recent_commands = list(self.command_history)[-50:] if self.command_history else []
+    def get_real_time_metrics(self) -> Dict:
+        """Get current performance metrics for dashboard"""
+        if not self.recent_metrics:
+            return {"status": "no_data"}
         
-        if not recent_commands:
-            return {"status": "insufficient_data"}
-        
-        # Command sequence analysis
-        sequences = []
-        for i in range(len(recent_commands) - 1):
-            current_cmd = recent_commands[i]["command"]
-            next_cmd = recent_commands[i + 1]["command"]
-            sequences.append(f"{current_cmd} → {next_cmd}")
-        
-        sequence_frequency = defaultdict(int)
-        for seq in sequences:
-            sequence_frequency[seq] += 1
-        
-        # Most common patterns
-        common_patterns = sorted(sequence_frequency.items(), key=lambda x: x[1], reverse=True)[:5]
-        
-        return {
-            "most_used_commands": self.get_most_used_commands(),
-            "common_sequences": [{"sequence": seq, "frequency": freq} for seq, freq in common_patterns],
-            "session_duration_avg": self.calculate_avg_session_duration(),
-            "user_efficiency_trend": "improving"  # Placeholder
-        }
-    
-    def get_most_used_commands(self) -> List[Dict[str, Any]]:
-        """Get most frequently used commands"""
-        command_counts = defaultdict(int)
-        for cmd in self.command_history:
-            command_counts[cmd["command"]] += 1
-        
-        sorted_commands = sorted(command_counts.items(), key=lambda x: x[1], reverse=True)
-        return [{"command": cmd, "usage_count": count} for cmd, count in sorted_commands[:10]]
-    
-    def calculate_avg_session_duration(self) -> float:
-        """Calculate average session duration"""
-        if not self.sessions:
-            return 0.0
-        
-        durations = []
+        recent_window = 300  # 5 minutes
         now = datetime.now()
-        
-        for session in self.sessions.values():
-            duration = (now - session["start_time"]).total_seconds() / 60  # minutes
-            durations.append(duration)
-        
-        return sum(durations) / len(durations) if durations else 0.0
-    
-    def get_resource_metrics(self) -> Dict[str, Any]:
-        """Get system resource utilization metrics"""
-        return {
-            "memory_usage_mb": 45.2,  # Placeholder - would use psutil in production
-            "cpu_usage_percent": 12.5,
-            "active_threads": threading.active_count(),
-            "websocket_connections": len(self.websocket_clients),
-            "data_structures": {
-                "command_history": len(self.command_history),
-                "performance_buffers": sum(len(buf) for buf in self.performance_buffer.values()),
-                "active_sessions": len(self.sessions)
-            }
-        }
-
-class WebSocketServer:
-    """WebSocket server for real-time dashboard updates"""
-    
-    def __init__(self, metrics: EfficiencyMetrics):
-        self.metrics = metrics
-        self.running = False
-    
-    async def register(self, websocket, path):
-        """Register new WebSocket client"""
-        self.metrics.websocket_clients.add(websocket)
-        logging.info(f"Client connected. Total clients: {len(self.metrics.websocket_clients)}")
-        
-        try:
-            # Send initial data
-            initial_data = self.metrics.get_real_time_metrics()
-            await websocket.send(json.dumps(initial_data))
-            
-            # Keep connection alive
-            await websocket.wait_closed()
-        finally:
-            self.metrics.websocket_clients.remove(websocket)
-            logging.info(f"Client disconnected. Total clients: {len(self.metrics.websocket_clients)}")
-    
-    async def broadcast_updates(self):
-        """Broadcast updates to all connected clients"""
-        while self.running:
-            if self.metrics.websocket_clients:
-                metrics_data = self.metrics.get_real_time_metrics()
-                message = json.dumps(metrics_data)
-                
-                # Send to all connected clients
-                disconnected_clients = set()
-                for client in self.metrics.websocket_clients:
-                    try:
-                        await client.send(message)
-                    except websockets.exceptions.ConnectionClosed:
-                        disconnected_clients.add(client)
-                
-                # Remove disconnected clients
-                self.metrics.websocket_clients -= disconnected_clients
-            
-            await asyncio.sleep(CONFIG["update_interval_ms"] / 1000.0)
-    
-    async def start_server(self):
-        """Start the WebSocket server"""
-        self.running = True
-        
-        # Start WebSocket server
-        server = await websockets.serve(
-            self.register, 
-            "localhost", 
-            CONFIG["websocket_port"]
-        )
-        
-        # Start update broadcaster
-        asyncio.create_task(self.broadcast_updates())
-        
-        logging.info(f"WebSocket server started on ws://localhost:{CONFIG['websocket_port']}")
-        return server
-
-class HTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-    """Custom HTTP request handler for dashboard"""
-    
-    def __init__(self, *args, metrics=None, **kwargs):
-        self.metrics = metrics
-        super().__init__(*args, **kwargs)
-    
-    def do_GET(self):
-        """Handle GET requests"""
-        if self.path == '/':
-            self.path = '/dashboard.html'
-        elif self.path == '/api/metrics':
-            self.send_response(200)
-            self.send_header('Content-type', 'application/json')
-            self.send_header('Access-Control-Allow-Origin', '*')
-            self.end_headers()
-            
-            metrics_data = self.metrics.get_real_time_metrics()
-            self.wfile.write(json.dumps(metrics_data).encode())
-            return
-        elif self.path == '/api/command':
-            # Endpoint for command execution hooks
-            self.send_response(200)
-            self.send_header('Content-type', 'application/json')
-            self.end_headers()
-            self.wfile.write(json.dumps({"status": "ready"}).encode())
-            return
-        
-        super().do_GET()
-    
-    def do_POST(self):
-        """Handle POST requests for command metrics"""
-        if self.path == '/api/command':
-            content_length = int(self.headers['Content-Length'])
-            command_data = json.loads(self.rfile.read(content_length).decode())
-            
-            # Record command execution
-            self.metrics.record_command_execution(command_data)
-            
-            self.send_response(200)
-            self.send_header('Content-type', 'application/json')
-            self.end_headers()
-            self.wfile.write(json.dumps({"status": "recorded"}).encode())
-        else:
-            self.send_response(404)
-            self.end_headers()
-
-class EfficiencyDashboard:
-    """Main dashboard orchestrator"""
-    
-    def __init__(self):
-        self.metrics = EfficiencyMetrics()
-        self.websocket_server = WebSocketServer(self.metrics)
-        self.http_server = None
-        
-        # Set up logging
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(levelname)s - %(message)s'
-        )
-    
-    def start_http_server(self):
-        """Start HTTP server for dashboard interface"""
-        handler = lambda *args, **kwargs: HTTPRequestHandler(*args, metrics=self.metrics, **kwargs)
-        self.http_server = socketserver.TCPServer(("", CONFIG["http_port"]), handler)
-        
-        def serve_forever():
-            logging.info(f"HTTP server started on http://localhost:{CONFIG['http_port']}")
-            self.http_server.serve_forever()
-        
-        server_thread = threading.Thread(target=serve_forever, daemon=True)
-        server_thread.start()
-    
-    async def start(self):
-        """Start the complete dashboard system"""
-        logging.info("Starting CE-Simple Efficiency Dashboard...")
-        
-        # Start HTTP server
-        self.start_http_server()
-        
-        # Start WebSocket server
-        websocket_server = await self.websocket_server.start_server()
-        
-        logging.info("Dashboard system fully operational")
-        logging.info(f"Dashboard: http://localhost:{CONFIG['http_port']}")
-        logging.info(f"WebSocket: ws://localhost:{CONFIG['websocket_port']}")
-        
-        # Simulate some test data
-        await self.generate_test_data()
-        
-        # Keep running
-        await websocket_server.wait_closed()
-    
-    async def generate_test_data(self):
-        """Generate test data for dashboard demonstration"""
-        test_commands = [
-            {"command": "/start", "execution_time_ms": 1200, "success": True, "context_loaded": 5, "subagents_deployed": ["research", "architecture"]},
-            {"command": "/analyze", "execution_time_ms": 2300, "success": True, "context_loaded": 3, "subagents_deployed": ["content", "quality"]},
-            {"command": "/create-doc", "execution_time_ms": 800, "success": True, "context_loaded": 2, "subagents_deployed": ["content"]},
-            {"command": "/verify-doc", "execution_time_ms": 1500, "success": False, "context_loaded": 4, "user_corrections": 1, "subagents_deployed": ["quality"]},
-            {"command": "/extract-insights", "execution_time_ms": 3200, "success": True, "context_loaded": 8, "subagents_deployed": ["research", "voice-preservation"]},
+        recent_data = [
+            m for m in self.recent_metrics 
+            if (now - datetime.fromisoformat(m.timestamp)).seconds < recent_window
         ]
         
-        for _ in range(20):
-            for cmd_template in test_commands:
-                cmd_data = cmd_template.copy()
-                cmd_data["session_id"] = "demo_session"
-                cmd_data["token_usage"] = cmd_data["execution_time_ms"] // 10
-                
-                # Add some randomness
-                import random
-                cmd_data["execution_time_ms"] += random.randint(-200, 500)
-                cmd_data["success"] = random.choice([True, True, True, False])  # 75% success rate
-                
-                self.metrics.record_command_execution(cmd_data)
-                await asyncio.sleep(0.1)  # Small delay
-
-# Command execution hook decorator
-def track_command_execution(func):
-    """Decorator to track command execution metrics"""
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
-        success = True
-        error = None
+        if not recent_data:
+            return {"status": "no_recent_data"}
         
-        try:
-            result = func(*args, **kwargs)
-            return result
-        except Exception as e:
-            success = False
-            error = str(e)
-            raise
-        finally:
-            execution_time = (time.time() - start_time) * 1000  # Convert to milliseconds
-            
-            # Record metrics (would integrate with actual dashboard instance)
-            command_data = {
-                "command": func.__name__,
-                "execution_time_ms": execution_time,
-                "success": success,
-                "error": error,
-                "timestamp": datetime.now().isoformat()
+        # Calculate key metrics following research best practices
+        total_commands = len(recent_data)
+        successful_commands = sum(1 for m in recent_data if m.success)
+        avg_response_time = sum(m.execution_time for m in recent_data) / total_commands
+        success_rate = successful_commands / total_commands
+        
+        # Command frequency analysis
+        command_frequency = defaultdict(int)
+        for m in recent_data:
+            command_frequency[m.command] += 1
+        
+        # Performance health score (0-100)
+        health_score = self._calculate_health_score(avg_response_time, success_rate)
+        
+        return {
+            "timestamp": now.isoformat(),
+            "total_commands": total_commands,
+            "success_rate": round(success_rate, 3),
+            "avg_response_time": round(avg_response_time, 3),
+            "health_score": health_score,
+            "most_used_commands": dict(sorted(command_frequency.items(), 
+                                            key=lambda x: x[1], reverse=True)[:5]),
+            "alerts": self._get_active_alerts(),
+            "trend_direction": self._calculate_trend()
+        }
+    
+    def get_historical_data(self, hours: int = 24) -> Dict:
+        """Get historical performance data"""
+        conn = sqlite3.connect(self.db_path)
+        
+        start_time = (datetime.now() - timedelta(hours=hours)).isoformat()
+        
+        cursor = conn.execute('''
+            SELECT 
+                strftime('%Y-%m-%d %H:00', timestamp) as hour,
+                AVG(execution_time) as avg_time,
+                AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as success_rate,
+                COUNT(*) as command_count
+            FROM command_metrics 
+            WHERE timestamp > ?
+            GROUP BY hour
+            ORDER BY hour
+        ''', (start_time,))
+        
+        hourly_data = cursor.fetchall()
+        conn.close()
+        
+        return {
+            "timeframe_hours": hours,
+            "data_points": [
+                {
+                    "hour": row[0],
+                    "avg_response_time": round(row[1], 3),
+                    "success_rate": round(row[2], 3),
+                    "command_count": row[3]
+                }
+                for row in hourly_data
+            ]
+        }
+    
+    def _calculate_health_score(self, avg_response_time: float, success_rate: float) -> int:
+        """Calculate overall system health score using research-based formula"""
+        # Response time score (0-50 points)
+        if avg_response_time <= 1.0:
+            time_score = 50
+        elif avg_response_time <= 2.0:
+            time_score = 40
+        elif avg_response_time <= 5.0:
+            time_score = 25
+        else:
+            time_score = 0
+        
+        # Success rate score (0-50 points)
+        success_score = int(success_rate * 50)
+        
+        return min(100, time_score + success_score)
+    
+    def _check_performance_alerts(self, metrics: CommandMetrics):
+        """Check for performance alerts based on thresholds"""
+        alerts = []
+        
+        if metrics.execution_time > self.thresholds['response_time_critical']:
+            alerts.append({
+                "level": "critical",
+                "type": "response_time",
+                "message": f"Command {metrics.command} took {metrics.execution_time:.2f}s",
+                "timestamp": metrics.timestamp
+            })
+        elif metrics.execution_time > self.thresholds['response_time_warning']:
+            alerts.append({
+                "level": "warning",
+                "type": "response_time",
+                "message": f"Slow response for {metrics.command}: {metrics.execution_time:.2f}s",
+                "timestamp": metrics.timestamp
+            })
+        
+        if not metrics.success:
+            alerts.append({
+                "level": "error",
+                "type": "command_failure",
+                "message": f"Command failed: {metrics.command}",
+                "error": metrics.error_message,
+                "timestamp": metrics.timestamp
+            })
+        
+        # Store alerts for dashboard
+        if alerts:
+            self._store_alerts(alerts)
+    
+    def _store_alerts(self, alerts: List[Dict]):
+        """Store alerts for real-time dashboard display"""
+        alert_file = Path("data/metrics/alerts.json")
+        alert_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        existing_alerts = []
+        if alert_file.exists():
+            with open(alert_file) as f:
+                existing_alerts = json.load(f)
+        
+        # Keep only recent alerts (last hour)
+        now = datetime.now()
+        cutoff = now - timedelta(hours=1)
+        
+        recent_alerts = [
+            alert for alert in existing_alerts
+            if datetime.fromisoformat(alert["timestamp"]) > cutoff
+        ]
+        
+        recent_alerts.extend(alerts)
+        
+        with open(alert_file, 'w') as f:
+            json.dump(recent_alerts, f, indent=2)
+    
+    def _get_active_alerts(self) -> List[Dict]:
+        """Get currently active alerts"""
+        alert_file = Path("data/metrics/alerts.json")
+        if not alert_file.exists():
+            return []
+        
+        with open(alert_file) as f:
+            alerts = json.load(f)
+        
+        return alerts[-10:]  # Return last 10 alerts
+    
+    def _calculate_trend(self) -> str:
+        """Calculate performance trend direction"""
+        if len(self.recent_metrics) < 10:
+            return "insufficient_data"
+        
+        recent_10 = list(self.recent_metrics)[-10:]
+        older_10 = list(self.recent_metrics)[-20:-10] if len(self.recent_metrics) >= 20 else []
+        
+        if not older_10:
+            return "baseline"
+        
+        recent_avg = sum(m.execution_time for m in recent_10) / len(recent_10)
+        older_avg = sum(m.execution_time for m in older_10) / len(older_10)
+        
+        if recent_avg < older_avg * 0.9:
+            return "improving"
+        elif recent_avg > older_avg * 1.1:
+            return "degrading"
+        else:
+            return "stable"
+    
+    def get_current_session_id(self) -> str:
+        """Get current session identifier"""
+        return f"session_{datetime.now().strftime('%Y%m%d_%H%M')}"
+
+class DashboardServer:
+    """Real-time dashboard server with WebSocket support"""
+    
+    def __init__(self, collector: MetricsCollector, port: int = 8080):
+        self.collector = collector
+        self.port = port
+        self.websocket_clients = set()
+        
+    def start(self):
+        """Start dashboard server with real-time updates"""
+        # Create dashboard HTML
+        self._create_dashboard_html()
+        
+        # Start WebSocket server for real-time updates
+        websocket_thread = threading.Thread(
+            target=self._start_websocket_server,
+            daemon=True
+        )
+        websocket_thread.start()
+        
+        # Start HTTP server for dashboard
+        http_thread = threading.Thread(
+            target=self._start_http_server,
+            daemon=True
+        )
+        http_thread.start()
+        
+        print(f"Efficiency Dashboard running at http://localhost:{self.port}")
+        print(f"WebSocket updates at ws://localhost:{self.port + 1}")
+        
+        return http_thread, websocket_thread
+    
+    def _create_dashboard_html(self):
+        """Create responsive dashboard HTML with research-based design"""
+        dashboard_dir = Path("tools/dashboards/web")
+        dashboard_dir.mkdir(parents=True, exist_ok=True)
+        
+        html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE-Simple Efficiency Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .metric-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .health-score {
+            text-align: center;
+        }
+        .health-good { color: #28a745; }
+        .health-warning { color: #ffc107; }
+        .health-critical { color: #dc3545; }
+        .alerts-panel {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .alert {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .alert-critical { background: #f8d7da; color: #721c24; }
+        .alert-warning { background: #fff3cd; color: #856404; }
+        .alert-error { background: #f8d7da; color: #721c24; }
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .status-online { background: #28a745; }
+        .status-warning { background: #ffc107; }
+        .status-offline { background: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="dashboard-header">
+        <h1>CE-Simple Efficiency Dashboard</h1>
+        <p>Real-time command performance monitoring</p>
+        <span id="connection-status" class="status-indicator status-offline"></span>
+        <span id="last-update">Connecting...</span>
+    </div>
+    
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-value" id="total-commands">-</div>
+            <div class="metric-label">Commands (5min)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value" id="success-rate">-</div>
+            <div class="metric-label">Success Rate</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value" id="avg-response">-</div>
+            <div class="metric-label">Avg Response Time</div>
+        </div>
+        <div class="metric-card health-score">
+            <div class="metric-value" id="health-score">-</div>
+            <div class="metric-label">System Health</div>
+        </div>
+    </div>
+    
+    <div class="chart-container">
+        <h3>Response Time Trend</h3>
+        <canvas id="response-chart"></canvas>
+    </div>
+    
+    <div class="alerts-panel">
+        <h3>Recent Alerts</h3>
+        <div id="alerts-container">No alerts</div>
+    </div>
+    
+    <script>
+        const ws = new WebSocket('ws://localhost:8081');
+        const connectionStatus = document.getElementById('connection-status');
+        const lastUpdate = document.getElementById('last-update');
+        
+        // Chart setup
+        const ctx = document.getElementById('response-chart').getContext('2d');
+        const responseChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Response Time (s)',
+                    data: [],
+                    borderColor: '#007bff',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        
+        ws.onopen = function() {
+            connectionStatus.className = 'status-indicator status-online';
+            lastUpdate.textContent = 'Connected';
+        };
+        
+        ws.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            updateDashboard(data);
+        };
+        
+        ws.onclose = function() {
+            connectionStatus.className = 'status-indicator status-offline';
+            lastUpdate.textContent = 'Disconnected';
+        };
+        
+        function updateDashboard(data) {
+            if (data.status && data.status !== 'ok') {
+                return;
             }
             
-            # In production, this would send to the dashboard API
-            logging.info(f"Command executed: {json.dumps(command_data)}")
+            // Update metrics
+            document.getElementById('total-commands').textContent = data.total_commands;
+            document.getElementById('success-rate').textContent = (data.success_rate * 100).toFixed(1) + '%';
+            document.getElementById('avg-response').textContent = data.avg_response_time.toFixed(2) + 's';
+            
+            // Update health score with color
+            const healthScore = data.health_score;
+            const healthElement = document.getElementById('health-score');
+            healthElement.textContent = healthScore;
+            healthElement.className = 'metric-value ' + 
+                (healthScore >= 80 ? 'health-good' : 
+                 healthScore >= 60 ? 'health-warning' : 'health-critical');
+            
+            // Update connection status
+            connectionStatus.className = 'status-indicator ' + 
+                (healthScore >= 80 ? 'status-online' : 'status-warning');
+            lastUpdate.textContent = 'Updated: ' + new Date().toLocaleTimeString();
+            
+            // Update alerts
+            updateAlerts(data.alerts || []);
+            
+            // Update chart (simplified for demo)
+            if (responseChart.data.labels.length > 20) {
+                responseChart.data.labels.shift();
+                responseChart.data.datasets[0].data.shift();
+            }
+            responseChart.data.labels.push(new Date().toLocaleTimeString());
+            responseChart.data.datasets[0].data.push(data.avg_response_time);
+            responseChart.update();
+        }
+        
+        function updateAlerts(alerts) {
+            const container = document.getElementById('alerts-container');
+            if (alerts.length === 0) {
+                container.innerHTML = 'No recent alerts';
+                return;
+            }
+            
+            container.innerHTML = alerts.map(alert => 
+                `<div class="alert alert-${alert.level}">
+                    <strong>${alert.type}</strong>: ${alert.message}
+                    <br><small>${new Date(alert.timestamp).toLocaleString()}</small>
+                </div>`
+            ).join('');
+        }
+        
+        // Request initial data
+        fetch('/api/metrics')
+            .then(response => response.json())
+            .then(data => updateDashboard(data))
+            .catch(console.error);
+    </script>
+</body>
+</html>'''
+        
+        with open(dashboard_dir / "index.html", 'w') as f:
+            f.write(html_content)
     
-    return wrapper
+    def _start_websocket_server(self):
+        """Start WebSocket server for real-time updates"""
+        async def handle_client(websocket, path):
+            self.websocket_clients.add(websocket)
+            try:
+                await websocket.wait_closed()
+            finally:
+                self.websocket_clients.remove(websocket)
+        
+        async def broadcast_updates():
+            while True:
+                if self.websocket_clients:
+                    metrics = self.collector.get_real_time_metrics()
+                    message = json.dumps(metrics)
+                    
+                    # Broadcast to all connected clients
+                    disconnected = set()
+                    for client in self.websocket_clients:
+                        try:
+                            await client.send(message)
+                        except:
+                            disconnected.add(client)
+                    
+                    # Remove disconnected clients
+                    for client in disconnected:
+                        self.websocket_clients.discard(client)
+                
+                await asyncio.sleep(5)  # Update every 5 seconds
+        
+        async def main():
+            server = await websockets.serve(handle_client, "localhost", self.port + 1)
+            await asyncio.gather(
+                server.wait_closed(),
+                broadcast_updates()
+            )
+        
+        asyncio.run(main())
+    
+    def _start_http_server(self):
+        """Start HTTP server for dashboard"""
+        os.chdir("tools/dashboards/web")
+        server = HTTPServer(("localhost", self.port), SimpleHTTPRequestHandler)
+        server.serve_forever()
 
+# Command line interface
 if __name__ == "__main__":
-    dashboard = EfficiencyDashboard()
-    asyncio.run(dashboard.start())
+    import sys
+    
+    collector = MetricsCollector()
+    
+    if len(sys.argv) > 1 and sys.argv[1] == "record":
+        # Record a test command
+        metrics = CommandMetrics(
+            timestamp=datetime.now().isoformat(),
+            command=sys.argv[2] if len(sys.argv) > 2 else "test-command",
+            execution_time=float(sys.argv[3]) if len(sys.argv) > 3 else 1.5,
+            success=True,
+            token_usage=150,
+            user_context="cli-test",
+            resource_usage={"cpu": 0.3, "memory": 0.2}
+        )
+        record_id = collector.record_command(metrics)
+        print(f"Recorded command metrics: {record_id}")
+    
+    elif len(sys.argv) > 1 and sys.argv[1] == "server":
+        # Start dashboard server
+        dashboard = DashboardServer(collector)
+        http_thread, ws_thread = dashboard.start()
+        
+        try:
+            http_thread.join()
+        except KeyboardInterrupt:
+            print("\nShutting down dashboard...")
+    
+    else:
+        # Show current metrics
+        metrics = collector.get_real_time_metrics()
+        print("Current System Metrics:")
+        print(json.dumps(metrics, indent=2))
