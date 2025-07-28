@@ -4,6 +4,7 @@ contextflow:
   triggers: ["docs sync", "documentation sync", "sync documents"]
   next: ["maintain-docs", "align-doc", "verify-doc"]
   requires-subagent: true
+  research-driven: false
   auto-chain: false
   communication-rules:
     - "NUNCA bash echo para comunicar con usuario"

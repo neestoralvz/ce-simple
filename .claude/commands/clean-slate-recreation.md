@@ -3,6 +3,7 @@ contextflow:
   purpose: "Recreation protocol para eliminar sesgo información existente"
   triggers: ["staleness detectada", "bias acumulado", "arquitectura refinada"]
   requires-subagent: true
+  research-driven: true
   destructive: true
 ---
 
