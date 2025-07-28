@@ -1,3 +1,27 @@
+---
+contextflow:
+  purpose: "Proactive document maintenance via multi-specialist orchestration"
+  triggers: ["maintain documents", "document health", "proactive maintenance"]
+  next: ["edit-doc", "create-doc", "align-doc"]
+  requires-subagent: true
+  auto-chain: false
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Parallel Task tools obligatorio en mismo mensaje"
+    - "Subagents NUNCA comunican directamente"
+  decision-tree:
+    use-when:
+      - "Document health assessment needed"
+      - "Proactive quality maintenance required"
+      - "System-wide document alignment validation"
+    alternatives: ["edit-doc", "supervise-alignment"]
+    semantic-triggers:
+      - "maintain" / "health check" / "document audit"
+      - "maintenance" / "document health"
+      - "quality check" / "system alignment"
+---
+
 # Comando `/maintain-docs`
 
 ## Propósito Core

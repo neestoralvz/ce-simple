@@ -1,3 +1,27 @@
+---
+contextflow:
+  purpose: "Voice preservation implementation status and methodology summary"
+  triggers: ["voice preservation", "implementation summary", "voice compliance"]
+  next: ["voice-validation", "create-doc", "edit-doc"]
+  requires-subagent: false
+  auto-chain: false
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Documentation reference only"
+    - "Implementation status reporting"
+  decision-tree:
+    use-when:
+      - "Voice preservation methodology reference needed"
+      - "Implementation status review required"
+      - "Voice compliance validation guidance"
+    alternatives: ["create-doc", "edit-doc", "verify-doc"]
+    semantic-triggers:
+      - "voice preservation" / "voice compliance" / "voice validation"
+      - "implementation summary" / "voice status"
+      - "voice methodology" / "preservation system"
+---
+
 # Voice Preservation Implementation Summary - Complete Separation System
 
 ## 🎯 Implementation Status: COMPLETE

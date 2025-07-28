@@ -1,3 +1,27 @@
+---
+contextflow:
+  purpose: "Dynamic intelligent user interview for requirement gathering"
+  triggers: ["dynamic interview", "user interview", "requirement gathering"]
+  next: ["analyze", "implement", "create-doc", "meta-narrative"]
+  requires-subagent: true
+  auto-chain: false
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Interactive interview methodology"
+    - "Adaptive questioning based on responses"
+  decision-tree:
+    use-when:
+      - "User objectives unclear or complex"
+      - "Requirement gathering session needed"
+      - "Strategic planning input required"
+    alternatives: ["analyze", "explore", "meta-narrative"]
+    semantic-triggers:
+      - "interview" / "questions" / "gather requirements"
+      - "dynamic interview" / "user analysis"
+      - "objective clarification" / "preference gathering"
+---
+
 # Dynamic User Interview Command
 
 Realiza una entrevista dinámica e inteligente al usuario para entender completamente qué quiere hacer, sus objetivos, restricciones y preferencias.

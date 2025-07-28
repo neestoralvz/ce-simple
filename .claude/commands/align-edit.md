@@ -1,3 +1,29 @@
+---
+contextflow:
+  purpose: "Edit alignment validation via Architecture Validator subagent"
+  workflow-step: 2
+  prev: ["edit-doc"]
+  next: ["verify-edit"]
+  requires-subagent: true
+  auto-chain: true
+  triggers: ["edit alignment", "document validation", "edit consistency"]
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Parallel Task tools obligatorio en mismo mensaje"
+    - "Subagents NUNCA comunican directamente"
+  decision-tree:
+    use-when:
+      - "Post-edit document alignment validation needed"
+      - "Architecture consistency verification required"
+      - "Voice preservation through edits validation"
+    alternatives: ["edit-doc"]
+    semantic-triggers:
+      - "align edit" / "validate edit" / "check consistency"
+      - "edit alignment" / "document alignment"
+      - "edit validation" / "consistency check"
+---
+
 # Comando `/align-edit`
 
 ## Propósito Core

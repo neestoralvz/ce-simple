@@ -1,3 +1,28 @@
+---
+contextflow:
+  purpose: "Final edit verification via Quality Assurance subagent"
+  workflow-step: 3
+  prev: ["align-edit"]
+  requires-subagent: true
+  auto-chain: false
+  triggers: ["verify edit", "final validation", "edit completion"]
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Parallel Task tools obligatorio en mismo mensaje"
+    - "Subagents NUNCA comunican directamente"
+  decision-tree:
+    use-when:
+      - "Final edit quality validation required"
+      - "Production deployment preparation needed"
+      - "Edit workflow completion validation"
+    alternatives: ["align-edit"]
+    semantic-triggers:
+      - "verify edit" / "validate edit" / "final check"
+      - "edit verification" / "quality gates"
+      - "production ready" / "deployment ready"
+---
+
 # Comando `/verify-edit`
 
 ## Propósito Core

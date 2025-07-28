@@ -1,3 +1,28 @@
+---
+contextflow:
+  purpose: "Document editing via multi-specialist orchestration"
+  workflow-step: 1
+  next: ["align-edit"]
+  requires-subagent: true
+  auto-chain: true
+  triggers: ["edit document", "modify document", "update document"]
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Parallel Task tools obligatorio en mismo mensaje"
+    - "Subagents NUNCA comunican directamente"
+  decision-tree:
+    use-when:
+      - "Existing document modification required"
+      - "Content updates needed while preserving voice"
+      - "Controlled document editing workflow"
+    alternatives: ["create-doc", "maintain-docs"]
+    semantic-triggers:
+      - "edit" / "modify" / "update document"
+      - "change document" / "alter content"
+      - "document modification" / "content edit"
+---
+
 # Comando `/edit-doc`
 
 ## Propósito Core

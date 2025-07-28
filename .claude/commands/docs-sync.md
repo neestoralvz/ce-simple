@@ -1,3 +1,27 @@
+---
+contextflow:
+  purpose: "Documentation synchronization across system components"
+  triggers: ["docs sync", "documentation sync", "sync documents"]
+  next: ["maintain-docs", "align-doc", "verify-doc"]
+  requires-subagent: true
+  auto-chain: false
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Parallel Task tools obligatorio en mismo mensaje"
+    - "Subagents NUNCA comunican directamente"
+  decision-tree:
+    use-when:
+      - "Documentation synchronization required"
+      - "Cross-system document alignment needed"
+      - "Batch document consistency validation"
+    alternatives: ["maintain-docs", "supervise-alignment"]
+    semantic-triggers:
+      - "sync" / "synchronize" / "align documents"
+      - "docs sync" / "documentation sync"
+      - "batch alignment" / "system sync"
+---
+
 # /docs-sync - Actualización Automática de Documentación
 
 Comando para sincronizar y actualizar toda la documentación del proyecto basándose en nuevas narrativas, cambios en código y evolución del sistema.

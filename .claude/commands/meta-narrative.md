@@ -1,3 +1,27 @@
+---
+contextflow:
+  purpose: "CEO Intelligence interface for organic narrative distillation"
+  triggers: ["meta narrative", "CEO interface", "narrative analysis"]
+  next: ["extract-insights", "process-layer", "create-doc", "implement"]
+  requires-subagent: true
+  auto-chain: true
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Parallel Task tools obligatorio en mismo mensaje"
+    - "Subagents NUNCA comunican directamente"
+  decision-tree:
+    use-when:
+      - "Executive narrative analysis required"
+      - "Strategic vision distillation needed"
+      - "CEO-level intelligence interface"
+    alternatives: ["extract-insights", "analyze", "start"]
+    semantic-triggers:
+      - "meta narrative" / "CEO interface" / "executive analysis"
+      - "narrative distillation" / "strategic vision"
+      - "business intelligence" / "enterprise narrative"
+---
+
 # Meta-Narrative Command - CEO Intelligence Interface
 
 ## Propósito

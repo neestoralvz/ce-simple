@@ -1,3 +1,27 @@
+---
+contextflow:
+  purpose: "Predictive intelligence for contextual command recommendations"
+  triggers: ["smart suggest", "command recommendations", "predictive suggestions"]
+  next: ["recommended commands based on context"]
+  requires-subagent: false
+  auto-chain: false
+  communication-rules:
+    - "NUNCA bash echo para comunicar con usuario"
+    - "SIEMPRE Task tools → Main agent → Usuario"
+    - "Non-intrusive recommendation display"
+    - "Pattern-based suggestion generation"
+  decision-tree:
+    use-when:
+      - "Command recommendation assistance needed"
+      - "Context-aware suggestion generation"
+      - "Workflow optimization guidance"
+    alternatives: ["start", "explore"]
+    semantic-triggers:
+      - "suggest" / "recommend" / "what next"
+      - "smart suggestions" / "command help"
+      - "workflow guidance" / "next steps"
+---
+
 # Smart Command Suggestions
 
 **Role**: Predictive Intelligence Specialist
