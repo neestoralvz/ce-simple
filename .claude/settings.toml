@@ -1,0 +1,263 @@
+# Claude Code - Systematic Pre-Condition Verification Hooks Configuration
+# Based on research findings from July 2025 best practices
+# Implements comprehensive verification system for reliable tool execution
+
+# ============================================================================
+# PRE-TOOL USE VERIFICATION HOOKS
+# Execute before Claude uses specific tools to prevent common failures
+# ============================================================================
+
+# MCP IDE Notebook State Verification
+[[hooks]]
+event = "PreToolUse"
+description = "Verify notebook state before executing code"
+[hooks.matcher]
+tool_name = "mcp__ide__executeCode"
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-notebook-state.sh"
+
+# Git Repository Health Check
+[[hooks]]
+event = "PreToolUse"
+description = "Validate git repository health before git operations"
+[hooks.matcher]
+tool_name = "Bash"
+tool_args_regex = "git (add|commit|push|pull|merge|rebase|checkout|branch)"
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-git-state.sh '$CLAUDE_TOOL_ARGS'"
+
+# File System Integrity Verification
+[[hooks]]
+event = "PreToolUse"
+description = "Verify file paths exist and are accessible before Write/Edit operations"
+[hooks.matcher]
+tool_name = "Write"
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-filesystem-integrity.sh '$CLAUDE_TOOL_INPUT'"
+
+[[hooks]]
+event = "PreToolUse"
+description = "Verify file paths exist and are accessible before Edit operations"
+[hooks.matcher]
+tool_name = "Edit"
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-filesystem-integrity.sh '$CLAUDE_TOOL_INPUT'"
+
+[[hooks]]
+event = "PreToolUse"
+description = "Verify file paths exist and are accessible before MultiEdit operations"
+[hooks.matcher]
+tool_name = "MultiEdit"
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-filesystem-integrity.sh '$CLAUDE_TOOL_INPUT'"
+
+# CLAUDE.md Workflow Enforcement
+[[hooks]]
+event = "PreToolUse"
+description = "Enforce CLAUDE.md workflow compliance for document operations"
+[hooks.matcher]
+tool_name = "Write"
+file_paths = ["*.md"]
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-workflow-compliance.sh '$CLAUDE_TOOL_INPUT' '$CLAUDE_FILE_PATHS'"
+
+[[hooks]]
+event = "PreToolUse"
+description = "Enforce CLAUDE.md workflow compliance for document edits"
+[hooks.matcher]
+tool_name = "Edit"
+file_paths = ["*.md"]
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-workflow-compliance.sh '$CLAUDE_TOOL_INPUT' '$CLAUDE_FILE_PATHS'"
+
+[[hooks]]
+event = "PreToolUse"
+description = "Enforce CLAUDE.md workflow compliance for multi-document edits"
+[hooks.matcher]
+tool_name = "MultiEdit"
+file_paths = ["*.md"]
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-workflow-compliance.sh '$CLAUDE_TOOL_INPUT' '$CLAUDE_FILE_PATHS'"
+
+# Permission Boundary Validation
+[[hooks]]
+event = "PreToolUse"
+description = "Validate operations against established permission boundaries"
+[hooks.matcher]
+tool_name = "Bash"
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-permission-boundaries.sh '$CLAUDE_TOOL_ARGS'"
+
+# Context State Validation
+[[hooks]]
+event = "PreToolUse"
+description = "Ensure proper context state before command execution"
+[hooks.matcher]
+command = "/Users/nalve/ce-simple/.claude/hooks/verify-context-state.sh '$CLAUDE_TOOL_NAME'"
+
+# ============================================================================
+# POST-TOOL USE CLEANUP AND LOGGING HOOKS
+# Execute after successful tool completion for cleanup and verification
+# ============================================================================
+
+# Git Operations Logging and Validation
+[[hooks]]
+event = "PostToolUse"
+description = "Log git operations and verify repository state"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Bash"
+tool_args_regex = "git (add|commit|push|pull|merge|rebase)"
+command = "/Users/nalve/ce-simple/.claude/hooks/post-git-verification.sh '$CLAUDE_TOOL_ARGS' '$CLAUDE_TOOL_OUTPUT'"
+
+# Document Operation Logging
+[[hooks]]
+event = "PostToolUse"
+description = "Log document operations and verify integrity"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Write"
+file_paths = ["*.md"]
+command = "/Users/nalve/ce-simple/.claude/hooks/post-document-verification.sh '$CLAUDE_FILE_PATHS' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Log document edits and verify integrity"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Edit"
+file_paths = ["*.md"]
+command = "/Users/nalve/ce-simple/.claude/hooks/post-document-verification.sh '$CLAUDE_FILE_PATHS' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Log multi-document edits and verify integrity"
+run_in_background = true
+[hooks.matcher]
+tool_name = "MultiEdit"
+file_paths = ["*.md"]
+command = "/Users/nalve/ce-simple/.claude/hooks/post-document-verification.sh '$CLAUDE_FILE_PATHS' '$CLAUDE_TOOL_OUTPUT'"
+
+# MCP Tool Usage Logging
+[[hooks]]
+event = "PostToolUse"
+description = "Log MCP tool usage and performance metrics"
+run_in_background = true
+[hooks.matcher]
+tool_name = "mcp__ide__executeCode"
+command = "/Users/nalve/ce-simple/.claude/hooks/post-mcp-logging.sh '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Log MCP diagnostic calls"
+run_in_background = true
+[hooks.matcher]
+tool_name = "mcp__ide__getDiagnostics"
+command = "/Users/nalve/ce-simple/.claude/hooks/post-mcp-logging.sh '$CLAUDE_TOOL_OUTPUT'"
+
+# System Health Monitoring
+[[hooks]]
+event = "PostToolUse"
+description = "Update system health metrics after significant operations"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Bash"
+tool_args_regex = "(python|node|npm|git|docker)"
+command = "/Users/nalve/ce-simple/.claude/hooks/update-system-health.sh '$CLAUDE_TOOL_ARGS' '$CLAUDE_TOOL_OUTPUT'"
+
+# ============================================================================
+# NOTIFICATION HOOKS
+# Execute when Claude sends notifications - used for monitoring and alerts
+# ============================================================================
+
+[[hooks]]
+event = "Notification"
+description = "Log system notifications and trigger alerts if needed"
+run_in_background = true
+command = "/Users/nalve/ce-simple/.claude/hooks/process-notification.sh '$CLAUDE_NOTIFICATION_TYPE' '$CLAUDE_NOTIFICATION_MESSAGE'"
+
+# ============================================================================
+# STOP HOOKS
+# Execute when Claude finishes response - cleanup and session management
+# ============================================================================
+
+[[hooks]]
+event = "Stop"
+description = "Update context state and session metrics"
+run_in_background = true
+command = "/Users/nalve/ce-simple/.claude/hooks/session-cleanup.sh '$CLAUDE_SESSION_ID'"
+
+# ============================================================================
+# EMERGENCY OVERRIDE CONFIGURATION
+# Emergency hooks that can bypass normal validation in critical situations
+# ============================================================================
+
+# Emergency override hook - only activated with special environment variable
+[[hooks]]
+event = "PreToolUse"
+description = "Emergency override for critical system maintenance"
+[hooks.matcher]
+tool_name = ""  # Matches all tools
+command = "/Users/nalve/ce-simple/.claude/hooks/emergency-override.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT'"
+# Only active when CLAUDE_EMERGENCY_OVERRIDE=true environment variable is set
+
+# ============================================================================
+# PERFORMANCE AND DEBUGGING HOOKS
+# Additional hooks for performance monitoring and debugging
+# ============================================================================
+
+# Performance timing for expensive operations
+[[hooks]]
+event = "PreToolUse"
+description = "Start performance timing for expensive operations"
+[hooks.matcher]
+tool_name = "WebSearch"
+command = "/Users/nalve/ce-simple/.claude/hooks/start-performance-timer.sh '$CLAUDE_TOOL_NAME'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "End performance timing and log metrics"
+run_in_background = true
+[hooks.matcher]
+tool_name = "WebSearch"
+command = "/Users/nalve/ce-simple/.claude/hooks/end-performance-timer.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_OUTPUT'"
+
+# Debug logging for troubleshooting
+[[hooks]]
+event = "PreToolUse"
+description = "Debug logging for troubleshooting (disabled by default)"
+[hooks.matcher]
+# Only active when CLAUDE_DEBUG_HOOKS=true environment variable is set
+command = "/Users/nalve/ce-simple/.claude/hooks/debug-logging.sh 'PRE' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Debug logging for troubleshooting (disabled by default)"
+run_in_background = true
+[hooks.matcher]
+command = "/Users/nalve/ce-simple/.claude/hooks/debug-logging.sh 'POST' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_OUTPUT'"
+
+# ============================================================================
+# HOOK CONFIGURATION NOTES
+# ============================================================================
+
+# Environment Variables Available:
+# - $CLAUDE_TOOL_NAME: Name of the tool being used
+# - $CLAUDE_TOOL_INPUT: Input parameters to the tool
+# - $CLAUDE_TOOL_ARGS: Arguments passed to bash commands
+# - $CLAUDE_TOOL_OUTPUT: Output from successful tool execution (PostToolUse only)
+# - $CLAUDE_FILE_PATHS: Space-separated list of file paths being operated on
+# - $CLAUDE_NOTIFICATION_TYPE: Type of notification (Notification hooks only)
+# - $CLAUDE_NOTIFICATION_MESSAGE: Notification message content
+# - $CLAUDE_SESSION_ID: Current session identifier (if available)
+
+# Exit Codes:
+# - 0: Success, continue normal operation
+# - 1: Failure, halt tool execution and show error
+# - 2: Warning, log issue but continue operation
+# - 3: Skip, bypass this specific tool execution
+
+# Logging:
+# All hook output is automatically logged to .claude/logs/hooks.log
+# Individual hooks should use structured logging for better debugging
+
+# Security:
+# Hook scripts have same permissions as Claude Code process
+# Validate all inputs and use absolute paths for security
+# Never trust user input without validation
+
+# Performance:
+# PreToolUse hooks block Claude operation - keep them fast (<100ms recommended)
+# PostToolUse hooks with run_in_background=true don't block but use system resources
+# Use conditional environment variables to disable expensive hooks in production
