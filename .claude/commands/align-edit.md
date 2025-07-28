@@ -86,91 +86,37 @@ Focus: Cross-reference + integration validation
 **Blocking conditions**: Template validation failures, voice <54/60, architecture violations
 **Resolution**: Orchestrator manages rollback decisions and user guidance
 
-## Quality Gates for Auto-Chain to `/verify-edit`
+## Quality Gates (Template-Enforced)
 
-### Success Criteria
-- ✅ **Architecture Consistency**: No system conflicts detected
-- ✅ **Voice Preservation**: Score maintained ≥54/60
-- ✅ **Change Integration**: Modifications properly integrated
-- ✅ **Quality Standards**: Edit quality meets minimum thresholds
+**Success criteria**: Template validation passes for all specialists
+**Auto-chain logic**: Orchestrator-managed conditional progression
+**Context preservation**: Template-based state handoff to verify-edit
 
-### Auto-Chain Execution
-```
-IF all_validations_pass AND no_major_issues AND quality_acceptable:
-    workflow_state = "verifying"
-    auto_chain_to_verify_edit()
-    preserve_alignment_context()
-```
+## Rollback (Template-Based)
 
-### Context Preservation for Verification
-- **Alignment Results**: Complete validation outcomes
-- **Issue Resolution**: Any corrections applied during alignment
-- **Quality Metrics**: Updated quality assessment scores
-- **Voice Validation**: Final voice preservation analysis
+**Triggers**: Template validation failures requiring edit modification
+**Process**: Orchestrator-managed rollback with template-based guidance
 
-## Rollback Scenarios
+## Performance (Template-Optimized)
 
-### Rollback to Edit Phase
-**Triggers**: Issues that require edit modification
-- **Voice contamination detected**: Return to edit phase for voice correction
-- **Architecture conflicts**: Return to edit phase for system compliance
-- **Integration failures**: Return to edit phase for compatibility fixes
+**Efficiency**: Template-based specialist deployment minimizes context usage
+**Parallel processing**: Concurrent template validation
+**Resource optimization**: Template references reduce token consumption
 
-### Rollback Process
-```
-preserve_alignment_analysis()
-revert_to_edit_state()
-provide_specific_correction_guidance()
-maintain_rollback_history()
-```
+## User Communication
 
-## Performance Optimization
+**Success**: "Edit alignment completed via template validation. Auto-chaining to verification."
+**Issues**: "Alignment detected issues: {details}. Template-based resolution applied."
+**Failure**: "Alignment validation failed. Template-guided rollback initiated."
 
-### Alignment Efficiency
-- **Parallel Validation**: Concurrent specialist deployment
-- **Targeted Analysis**: Focus on modified sections primarily
-- **Context Efficiency**: Minimize resource usage during validation
-- **Quick Resolution**: Rapid auto-correction for minor issues
+## System Integration
 
-### Resource Management
-- **Token Economy**: Efficient context usage during alignment
-- **Processing Priority**: Critical validations first
-- **Memory Optimization**: Streamlined state management
-- **Performance Monitoring**: Alignment phase timing optimization
-
-## User Communication Protocol
-
-### Successful Alignment Communication
-```
-"Edit alignment completed successfully. All validations passed. Auto-chaining to /verify-edit for final quality gates."
-```
-
-### Minor Issues Auto-Corrected Communication
-```
-"Edit alignment detected minor issues: {issue_list}. Auto-corrections applied successfully. Proceeding to verification phase."
-```
-
-### Major Issues Detected Communication
-```
-"Edit alignment detected major issues requiring resolution: {issue_details}. Workflow paused. Options: 1) Rollback to edit phase 2) Manual resolution guidance. Please specify preferred approach."
-```
-
-## Integration with Workflow System
-
-### State Management
-- **Workflow Continuity**: Seamless state progression from edit to align to verify
-- **Context Preservation**: Complete information handoff between phases
-- **Error Recovery**: Robust rollback and retry mechanisms
-- **Quality Tracking**: Progressive quality score monitoring
-
-### Enforcement Integration
-- **Workflow Validation**: Ensure proper workflow sequence
-- **Permission Verification**: Validate edit authorization
-- **Compliance Monitoring**: Track alignment success metrics
-- **Audit Trail**: Complete alignment decision logging
+**Template coordination**: All validation via template specialists
+**Orchestrator management**: State progression and context handoff
+**Quality tracking**: Template-enforced progressive validation
 
 ---
 
-**ESTE COMANDO VALIDA** edit consistency y system alignment.
-**AUTO-CHAIN SIGUIENTE**: `/verify-edit` with complete alignment context.
-**ROLLBACK DISPONIBLE**: Return to `/edit-doc` for issue resolution.
+**TEMPLATE-DRIVEN VALIDATION** for edit consistency and system alignment.
+**CONDITIONAL AUTO-CHAIN**: To `/verify-edit` based on validation results.
+**TEMPLATE-BASED ROLLBACK**: Guided resolution for validation failures.

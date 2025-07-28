@@ -1,0 +1,6 @@
+2025-07-28 16:30:02,334 - HealthMonitoringIntegration - INFO - Health database integration tables initialized
+2025-07-28 16:30:02,334 - HealthMonitoringIntegration - INFO - Health monitoring integration initialized
+2025-07-28 16:30:02,335 - HealthMonitoringIntegration - INFO - Behavioral compliance recorded: ORCHESTRATION_COMPLIANCE
+2025-07-28 16:30:02,336 - HealthMonitoringIntegration - WARNING - Health alert generated for violation: DIRECT_WORK_ATTEMPT
+2025-07-28 16:30:02,336 - HealthMonitoringIntegration - CRITICAL - Behavioral violation recorded: DIRECT_WORK_ATTEMPT
+2025-07-28 16:30:02,337 - HealthMonitoringIntegration - INFO - Health daemon status updated with behavioral score: 0.983

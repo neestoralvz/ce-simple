@@ -23,16 +23,23 @@ Cerrar sesión conversacional mediante modular factorization manteniendo funcion
 
 ## Execution Mode Detection & Routing
 
-**MODULAR DETECTION LOGIC**:
+**UTILITY-BASED DETECTION**:
 ```python
-if context.contains(["ORCHESTRATOR_HUB", "orchestrator-hub-coordinator", "orquestador de orquestadores"]):
-    EXECUTE: /session-close-direct
-else:
-    EXECUTE: /session-close-subagent
+# Import execution mode detection utility
+mode = execution_mode_detector.detect_execution_context(conversation_context)
+routing = execution_mode_detector.get_execution_routing(mode)
+
+EXECUTE: routing.command
 ```
 
 
-## Auxiliary Commands
+## Utilities & Auxiliary Commands
+
+### Core Utilities
+- [@execution-mode-detector.md] - Universal dual-mode detection logic
+- [@session-orchestrator.md] - Handoff generation & file management patterns
+
+### Auxiliary Commands  
 - [@session-close-analysis.md] - Universal conversation analysis
 - [@session-close-direct.md] - Orchestrator direct execution
 - [@session-close-subagent.md] - Standard user subagent deployment  
@@ -40,16 +47,15 @@ else:
 
 ## Execution Flow
 ```python
-# Step 1: Universal Analysis
+# Step 1: Universal Analysis with Mode Detection
 analysis = EXECUTE("/session-close-analysis")
+mode = execution_mode_detector.detect_execution_context(analysis.conversation_context)
+routing = execution_mode_detector.get_execution_routing(mode)
 
-# Step 2: Mode-Specific Execution
-if analysis.orchestrator_context:
-    results = EXECUTE("/session-close-direct", analysis)
-else:
-    results = EXECUTE("/session-close-subagent", analysis)
+# Step 2: Mode-Optimized Execution
+results = EXECUTE(routing.command, analysis)
 
-# Step 3: Git Commit
+# Step 3: Universal Git Commit
 EXECUTE("/session-close-git", results)
 ```
 
@@ -61,10 +67,11 @@ EXECUTE("/session-close-git", results)
 ```
 
 ## Factorization Benefits
-- Token Economy: Main <80 lines, auxiliaries ~50-80 lines
-- Functionality preserved via modular execution
-- Self-contained ecosystem per user vision
-- Command interoperability maintained
+- **Token Economy**: Main ~70 lines, utilities ~40-60 lines, auxiliaries ~80-150 lines
+- **Template Integration**: Hardcoded prompts replaced with template references
+- **Utility Reusability**: Core utilities available for other commands
+- **Functionality Preserved**: Identical dual-mode execution via modular architecture
+- **Maintenance Efficiency**: Centralized logic in utilities vs distributed across commands
 
 ---
 **Ready for**: Immediate usage with identical functionality via modular execution
