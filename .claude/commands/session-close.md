@@ -199,11 +199,24 @@ git status
 # Add archivos relacionados con session changes
 git add .claude/commands/[comandos-modificados]
 git add CLAUDE.md  # si fue modificado
-git add handoff/[nuevo-handoff]
+
+# ENHANCED: Smart handoff git handling
+if [ -f "handoff/$(TZ='America/Mexico_City' date +'%Y-%m-%d')_master-consolidated.md" ]; then
+    git add handoff/$(TZ='America/Mexico_City' date +'%Y-%m-%d')_master-consolidated.md
+    git add handoff/archive/$(TZ='America/Mexico_City' date +'%Y-%m-%d')/ # if created
+else
+    git add handoff/[nuevo-handoff-individual]
+fi
+
 git add narratives/raw/conversations/[nueva-narrativa]
 
-# Commit con mensaje descriptivo
+# Enhanced commit message for consolidation tracking
 git commit -m "Session $(TZ='America/Mexico_City' date +'%Y-%m-%d %H:%M'): [tema-sesion]
+
+Handoff Management:
+- Master consolidated: $([ -f handoff/$(TZ='America/Mexico_City' date +'%Y-%m-%d')_master-consolidated.md ] && echo 'Updated' || echo 'Created')
+- Sessions archived: [number] individual handoffs consolidated
+- Archive status: Clean handoff directory maintained
 
 Command updates applied:
 - [comando1]: [cambio realizado]
@@ -245,27 +258,45 @@ EXECUTE: Create narrative file with complete documentation.""",
 )
 ```
 
-#### B. Handoff Generation  
+#### B. Smart Handoff Consolidation
 ```python
 Task(
-    description="Generate handoff with applied changes documented",
-    prompt="""Create comprehensive handoff con all session outcomes.
+    description="Generate or update handoff using smart consolidation logic",
+    prompt="""Execute SMART HANDOFF CONSOLIDATION with proliferation prevention.
 
-HANDOFF GENERATION:
-- Target: /handoff/{timestamp_mx}_{tema}_handoff.md
-- Content: Session summary + command changes applied
-- Context preservation: Complete state for next session
-- User voice: Key quotes and decisions preserved
-- Implementation status: What was completed vs pending
+CONSOLIDATION LOGIC:
+PHASE 1: Check for existing daily master handoff
+- Current date: $(TZ='America/Mexico_City' date +'%Y-%m-%d')
+- Master handoff path: /handoff/{date}_master-consolidated.md
+- IF master exists: APPEND new session to existing file
+- IF master missing: CREATE new master handoff
 
-HANDOFF STRUCTURE:
-- Session summary and outcomes
-- Command changes applied during session
-- User decisions and voice preservation
-- Next steps and priorities
-- Context for session continuation
+PHASE 2: Session consolidation format
+- Add session entry to SESSION INDEX (Chronological)
+- Session format: "**{time}** - {theme} → {summary}"
+- Preserve chronological ordering within daily timeline
+- Update consolidated context sections automatically
 
-EXECUTE: Create handoff file with complete session documentation.""",
+PHASE 3: Archive management
+- Check for individual handoffs in /handoff/ directory
+- IF individual handoffs exist for current date:
+  - CREATE /handoff/archive/{date}/ directory
+  - MOVE individual handoffs to archive with session numbering
+  - CREATE archive README.md with index
+  - CLEAN main handoff directory
+
+EXECUTION TARGETS:
+- Master: /handoff/{date}_master-consolidated.md
+- Archive: /handoff/archive/{date}/session-{nn}_{original-name}.md
+- Index: /handoff/archive/{date}/README.md
+
+CONSOLIDATION BENEFITS:
+- Single daily handoff for easy tracking
+- Complete session history preserved
+- Clean handoff directory maintenance
+- Zero information loss during consolidation
+
+EXECUTE: Create or update master handoff with session consolidation.""",
     subagent_type="general-purpose"
 )
 ```
