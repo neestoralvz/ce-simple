@@ -1,8 +1,0 @@
-{
-  "orchestrator_role": "orquestador_de_orquestadores",
-  "delegated_to": "research-protocol-optimizer-143919",
-  "task_id": "91466564-4fff-4751-b98f-41477d1fae32",
-  "user_feedback": "Hay varios momentos en los que se lanza research protocol y realmente no est\u00e1 justificado",
-  "delegation_timestamp": "2025-07-28T14:39:19.655684",
-  "expected_outcome": "CLAUDE.md optimizaci\u00f3n con criterios selectivos research protocol"
-}

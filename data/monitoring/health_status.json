@@ -1,7 +1,0 @@
-{
-    "status": "running",
-    "pid": 37803,
-    "started_at": "2025-07-28T13:46:47-06:00",
-    "log_file": "/Users/nalve/ce-simple/data/monitoring/health_monitor.log",
-    "monitor_script": "/Users/nalve/ce-simple/tools/monitoring/system-health.py"
-}
