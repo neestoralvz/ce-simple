@@ -60,17 +60,142 @@ Prompt: "
 - "User Profile Refinado" → Preferencias
 - "Contexto para Próxima Sesión" → Continuidad
 
-### 2. Project Maintenance + Analysis Paralelo
-**EJECUTAR simultáneamente en mismo mensaje**:
-```
-Task 1: Research Specialist - "Project maintenance - gaps, TODOs, commitments + git status analysis"
-Task 2: Architecture Validator - "Command compliance + system integrity + git history review"  
-Task 3: Content Optimizer - "Auto-extract insights de conversations + correlate with git commits"
-Task 4: Quality Assurance - "System evolution opportunities + git workflow compliance"
+### 2. Project Maintenance + Analysis Paralelo (EJECUTAR INMEDIATAMENTE)
+**TASK TOOLS DEPLOYMENT**: 4 specialists concurrentes para comprehensive project analysis:
+
+```python
+# TASK 1: Research Specialist
+Task(
+    description="Project maintenance analysis with git integration",
+    prompt="""Actúa como Research Specialist. PROJECT MAINTENANCE MISSION: Comprehensive analysis.
+
+PROJECT ANALYSIS SCOPE:
+- Handoff content: {latest_handoff_content}
+- Git status: {current_git_status}
+- Recent commits: {git_log_recent}
+- System state: Current project architecture
+
+ANALYSIS OBJECTIVES:
+1. Pending Items Detection:
+   - Unfulfilled commitments desde handoffs anteriores
+   - Incomplete TODOs acumulados
+   - Command gaps entre mentions y implementation
+   - Git inconsistencies entre promises y actual commits
+   - Uncommitted changes analysis
+
+2. System Health Assessment:
+   - Command ecosystem integrity
+   - Rules system compliance
+   - Documentation consistency
+   - Architecture coherence
+
+OUTPUT: Detailed maintenance report con priority recommendations.""",
+    subagent_type="general-purpose"
+)
+
+# TASK 2: Architecture Validator
+Task(
+    description="Command compliance and system integrity analysis",
+    prompt="""Actúa como Architecture Validator. SYSTEM INTEGRITY MISSION: Validate architectural coherence.
+
+SYSTEM VALIDATION SCOPE:
+- Command ecosystem: All commands in /.claude/commands/
+- Rules system: Current rules architecture
+- Git history: Recent changes and their architectural impact
+- Integration points: Cross-system dependencies
+
+VALIDATION CHECKLIST:
+1. Command Compliance:
+   - All commands follow established patterns
+   - Contextflow metadata complete + accurate
+   - Decision trees properly implemented
+   - Integration patterns consistent
+
+2. System Architecture:
+   - No conflicts between commands/rules
+   - Proper separation of concerns
+   - Consistent naming conventions
+   - Cross-reference integrity
+
+3. Git Workflow Compliance:
+   - Commit patterns follow standards
+   - Branch strategy alignment
+   - Change documentation completeness
+
+OUTPUT: Architecture compliance report con specific corrections needed.""",
+    subagent_type="general-purpose"
+)
+
+# TASK 3: Content Optimizer
+Task(
+    description="Auto-extract insights and correlate with commits",
+    prompt="""Actúa como Content Optimizer. INSIGHTS EXTRACTION MISSION: Process conversation patterns.
+
+INSIGHTS ANALYSIS SCOPE:
+- Conversations pool: /narratives/raw/conversations/
+- Git commits: Correlation between insights and implementations
+- User voice evolution: Pattern tracking over time
+- System improvements: Methodology refinements identified
+
+EXTRACTION OBJECTIVES:
+1. Pattern Recognition:
+   - Emergent user preferences
+   - Methodology evolution patterns
+   - System usage optimization opportunities
+   - Architecture improvement insights
+
+2. Git Correlation Analysis:
+   - Match insights to actual implementations
+   - Identify implementation gaps
+   - Track promise fulfillment rates
+   - Measure system evolution effectiveness
+
+3. User Voice Tracking:
+   - Evolution in user communication patterns
+   - Preference refinements over time
+   - Feedback integration effectiveness
+
+OUTPUT: Insights summary con implementation correlation + recommendations.""",
+    subagent_type="general-purpose"
+)
+
+# TASK 4: Quality Assurance
+Task(
+    description="System evolution opportunities assessment",
+    prompt="""Actúa como Quality Assurance Specialist. EVOLUTION OPPORTUNITIES MISSION: Identify improvements.
+
+QUALITY ASSESSMENT SCOPE:
+- System performance: Current efficiency metrics
+- User experience: Workflow effectiveness
+- Git workflow: Compliance and optimization opportunities
+- Architecture evolution: Next-level improvements
+
+QUALITY ANALYSIS:
+1. Performance Optimization:
+   - Token economy efficiency
+   - Context loading optimization
+   - Command execution efficiency
+   - Workflow automation opportunities
+
+2. User Experience Enhancement:
+   - Navigation improvements
+   - Workflow simplification opportunities
+   - Error handling optimization
+   - Documentation accessibility
+
+3. System Architecture Evolution:
+   - Next-generation architecture patterns
+   - Integration simplification opportunities
+   - Maintenance burden reduction
+   - Scalability improvements
+
+OUTPUT: Evolution roadmap con prioritized improvement opportunities.""",
+    subagent_type="general-purpose"
+)
 ```
 
 ### 3. Project Health Assessment
-**Main agent evalúa project status basado en subagent analysis**:
+**MAIN AGENT CONSOLIDATION**: Receive outputs from 4 specialists → Synthesize comprehensive project status → Generate intelligent priority-based options:
 
 #### A. Pending Items Tracking
 - **Unfulfilled commitments** desde handoffs anteriores
