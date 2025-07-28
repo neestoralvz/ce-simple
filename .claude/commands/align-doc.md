@@ -34,7 +34,7 @@ ARCHITECTURE CONSISTENCY VALIDATION:
 1. System Integration: Check conflicts con commands/rules existentes
 2. Contextflow Metadata: Verify complete + accurate headers
 3. Decision Tree Logic: Validate semantic triggers, alternatives, next steps
-4. Import References: Verify all @/ imports are valid
+4. Self-Contained References: Verify all embedded content is complete
 5. Navigation Structure: Ensure proper linking + cross-references
 6. Naming Conventions: Validate consistency con sistema standards
 
@@ -165,7 +165,13 @@ OUTPUT: Optimized document version con efficiency metrics validated.""",
 ## Auto-Chaining Implementation:
 
 ```markdown
-IMPORT: @/.claude/commands/utilities/workflow-state-manager.md
+# WORKFLOW STATE MANAGER - EMBEDDED
+
+**Self-Contained Workflow Management**:
+- workflow_id continuation from create-doc
+- State validation and updates
+- Error handling with rollback capability
+- Auto-chain logic for verify-doc
 
 WORKFLOW STATE CONTINUATION:
 1. RECEIVE workflow_id from create-doc step
@@ -275,7 +281,7 @@ else:
 - [x] System consistency verified (NO conflicts detected)
 - [x] Contextflow metadata validated (Complete + accurate)
 - [x] Decision tree logic verified (Semantic triggers, alternatives, next steps)
-- [x] Import references validated (All @/ imports functional)
+- [x] Self-contained references validated (All embedded content functional)
 - [x] Navigation structure optimized (Proper linking + cross-references)
 
 **VOICE PRESERVATION DURING ALIGNMENT** (Auto-verified by Voice Preservation Specialist):

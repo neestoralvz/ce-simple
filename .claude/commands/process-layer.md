@@ -10,7 +10,7 @@ contextflow:
       - "Necesidad de documentación formal estructurada"
       - "Optimización de context loading y token economy"
     alternatives: ["docs-sync", "refactor"]
-    load-context: ["@/narratives/synthesis/", "@/docs/", "@/rules/"]
+    load-context: ["synthesis files", "documentation structure", "rules system"]
 ---
 
 # Comando `/process-layer`
@@ -21,9 +21,10 @@ Transformar synthesis orgánica (preservando voz original) en documentación for
 ## Pipeline Esencial
 
 ### 1. Load Synthesis → Análisis → Distribución
-```import
-@/narratives/synthesis/[archivos-no-procesados]
-```
+**Target Sources**:
+- `/narratives/synthesis/` - Organic synthesis files
+- Content type auto-detection and routing
+- Distribution to appropriate system locations
 
 **Auto-detect content type** → Route to appropriate structure:
 - Commands → `/claude/commands/`

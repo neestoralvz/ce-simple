@@ -16,7 +16,7 @@ contextflow:
 - **NO imports automáticos** para extensions
 
 ### Context Loading Strategy
-- **`@/archivo.md`**: Carga automática context (imperativa)
+- **Self-contained content**: Embedded context loading (imperativa)
 - **[enlaces condicionales]**: "Si necesitas X, ve a Y" (opcional)
 - **Decision trees**: Metadata para usage optimization
 - **Efficiency measurement**: Auto-tracking performance

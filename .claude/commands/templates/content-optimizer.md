@@ -17,7 +17,7 @@ OPTIMIZATION TARGETS:
 OPTIMIZATION STRATEGIES:
 1. **Structure Optimization**: Headers, sections, logical progression
 2. **Language Efficiency**: Concise but complete phrasing
-3. **Reference Strategy**: @/ imports vs conditional links decision
+3. **Reference Strategy**: Self-contained content vs conditional links decision
 4. **Division Strategy**: Core vs extensions cuando sea apropiado
 5. **Metadata Optimization**: Decision trees + context hints
 
@@ -91,9 +91,9 @@ CONSTRAINTS:
 - Redundancy elimination
 
 ### Reference Strategy
-- @/ imports for essential context
-- Conditional links for optional details
-- Cross-reference optimization
+- Embedded context for essential information
+- Conditional links for optional details  
+- Self-contained cross-references
 - Navigation hint placement
 
 ## Quality Criteria for Optimization Output

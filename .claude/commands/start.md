@@ -14,7 +14,7 @@ contextflow:
       - "Usuario necesita orientación sobre qué hacer"
       - "Continuidad desde sesión anterior requerida"
     alternatives: ["meta-narrative", "explore"]
-    load-context: ["@/handoff/[más-reciente].md", "@/.claude/commands/"]
+    load-context: ["handoff más reciente", "commands ecosystem"]
     semantic-triggers:
       - "empezar" / "iniciar" / "comenzar"
       - "qué sigue" / "continuar" / "seguir"

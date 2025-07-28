@@ -771,14 +771,130 @@ class HealthMonitoringAPI:
         """Get active system alerts"""
         return self.monitor._get_active_alerts()
 
+# Daemon Mode Implementation
+def daemon_mode():
+    """Run health monitor in daemon mode for external process management"""
+    import signal
+    import atexit
+    
+    # Configuration for daemon mode
+    status_file = Path("data/monitoring/health_daemon_status.json")
+    status_file.parent.mkdir(parents=True, exist_ok=True)
+    
+    api = HealthMonitoringAPI()
+    
+    # Signal handlers for graceful shutdown
+    def signal_handler(signum, frame):
+        print(f"\nReceived signal {signum}, shutting down gracefully...")
+        
+        # Update status file
+        status_data = {
+            "status": "shutting_down",
+            "timestamp": datetime.now().isoformat(),
+            "signal": signum
+        }
+        with open(status_file, 'w') as f:
+            json.dump(status_data, f, indent=2)
+        
+        sys.exit(0)
+    
+    def cleanup_on_exit():
+        """Cleanup function called on exit"""
+        status_data = {
+            "status": "stopped",
+            "timestamp": datetime.now().isoformat(),
+            "reason": "normal_exit"
+        }
+        try:
+            with open(status_file, 'w') as f:
+                json.dump(status_data, f, indent=2)
+        except:
+            pass  # Don't fail on cleanup
+    
+    # Register signal handlers
+    signal.signal(signal.SIGTERM, signal_handler)
+    signal.signal(signal.SIGINT, signal_handler)
+    atexit.register(cleanup_on_exit)
+    
+    # Write initial status
+    start_time = datetime.now()
+    status_data = {
+        "status": "running",
+        "pid": os.getpid(),
+        "started_at": start_time.isoformat(),
+        "mode": "daemon"
+    }
+    with open(status_file, 'w') as f:
+        json.dump(status_data, f, indent=2)
+    
+    print(f"CE-Simple Health Monitor Daemon started (PID: {os.getpid()})")
+    print(f"Status file: {status_file}")
+    print("Press Ctrl+C to stop")
+    
+    # Main daemon loop
+    cycle_count = 0
+    while True:
+        try:
+            # Get health snapshot
+            health = api.get_health_status()
+            
+            # Update status file with current health
+            status_data = {
+                "status": "running",
+                "pid": os.getpid(),
+                "started_at": start_time.isoformat(),
+                "last_update": datetime.now().isoformat(),
+                "cycle_count": cycle_count,
+                "mode": "daemon",
+                "health_score": health["overall_health_score"],
+                "voice_preservation": health["user_voice_preservation"]["preservation_score"],
+                "active_alerts": len(health["active_alerts"])
+            }
+            with open(status_file, 'w') as f:
+                json.dump(status_data, f, indent=2)
+            
+            # Log every 10 cycles (5 minutes with 30s intervals)
+            if cycle_count % 10 == 0:
+                print(f"[{datetime.now().strftime('%H:%M:%S')}] Health: {health['overall_health_score']:.2f}, "
+                      f"Voice: {health['user_voice_preservation']['preservation_score']:.2f}, "
+                      f"Alerts: {len(health['active_alerts'])}")
+            
+            cycle_count += 1
+            time.sleep(30)  # 30 second intervals
+            
+        except KeyboardInterrupt:
+            print("\nDaemon interrupted by user")
+            break
+        except Exception as e:
+            print(f"Error in daemon loop: {e}")
+            
+            # Update status with error
+            status_data = {
+                "status": "error",
+                "pid": os.getpid(),
+                "error": str(e),
+                "timestamp": datetime.now().isoformat()
+            }
+            try:
+                with open(status_file, 'w') as f:
+                    json.dump(status_data, f, indent=2)
+            except:
+                pass
+            
+            time.sleep(60)  # Wait longer on error
+
 # CLI Interface
 if __name__ == "__main__":
     import sys
     
-    api = HealthMonitoringAPI()
-    
     if len(sys.argv) > 1:
         command = sys.argv[1]
+        
+        if command == "daemon":
+            daemon_mode()
+            sys.exit(0)
+        
+        api = HealthMonitoringAPI()
         
         if command == "status":
             health = api.get_health_status()
@@ -804,14 +920,35 @@ if __name__ == "__main__":
             alerts = api.get_alerts()
             print(json.dumps(alerts, indent=2))
         
+        elif command == "daemon-status":
+            # Check daemon status from file
+            status_file = Path("data/monitoring/health_daemon_status.json")
+            if status_file.exists():
+                with open(status_file, 'r') as f:
+                    status = json.load(f)
+                print(json.dumps(status, indent=2))
+            else:
+                print(json.dumps({"status": "not_running"}, indent=2))
+        
         else:
-            print("Usage: python system-health.py [status|record-tool|record-voice|alerts] [args...]")
+            print("Usage: python system-health.py [daemon|status|record-tool|record-voice|alerts|daemon-status] [args...]")
+            print("")
+            print("Commands:")
+            print("  daemon       - Run in daemon mode (for external launcher)")
+            print("  status       - Show current health status")
+            print("  daemon-status- Show daemon status from file")
+            print("  record-tool  - Record tool usage")
+            print("  record-voice - Record voice preservation")
+            print("  alerts       - Show active alerts")
     
     else:
         print("CE-Simple System Health Monitor - Claude Code CLI Specific")
         print("Real-time monitoring of system health and user voice preservation")
+        print("")
+        print("Run with 'daemon' for background monitoring via external launcher")
         
         # Show current status
+        api = HealthMonitoringAPI()
         health = api.get_health_status()
         print(f"\nCurrent Health Score: {health['overall_health_score']:.2f}")
         print(f"User Voice Preservation: {health['user_voice_preservation']['preservation_score']:.2f}")

@@ -161,7 +161,13 @@ contextflow:
 ## Auto-Chaining Implementation:
 
 ```markdown
-IMPORT: @/.claude/commands/utilities/workflow-state-manager.md
+# WORKFLOW STATE MANAGER - EMBEDDED
+
+**Self-Contained Workflow Management**:
+- workflow_id generation: "doc-{timestamp}"
+- State tracking: current_step, status, document_path
+- Error handling: pause/resume logic
+- Auto-chain triggers: success/failure conditions
 
 WORKFLOW STATE INITIALIZATION:
 1. Create workflow_id: "doc-{timestamp}"

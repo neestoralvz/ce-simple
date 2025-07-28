@@ -9,7 +9,7 @@ contextflow:
       - "Necesidad de consolidar insights antes de estructuración formal"
       - "Detección de patterns emergentes que requieren synthesis"
     alternatives: ["process-layer", "analyze"]
-    load-context: ["@/narratives/raw/conversations/", "@/narratives/synthesis/"]
+    load-context: ["raw conversations pool", "existing synthesis files"]
 ---
 
 # Comando `/extract-insights`
@@ -20,9 +20,10 @@ Procesar conversaciones raw preservando voz original del usuario mientras extrae
 ## Pipeline de Extracción
 
 ### 1. Auto-Scan + Selection
-```import
-@/narratives/raw/conversations/[últimas-N-no-procesadas]
-```
+**Target Sources**: 
+- `/narratives/raw/conversations/` - Raw conversation files
+- Timestamp-based filtering for recent conversations
+- Unprocessed conversations identification
 
 **Criterios automáticos**:
 - Conversaciones sin synthesis correspondiente

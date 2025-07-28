@@ -28,9 +28,9 @@ Method: Direct parameter passing + shared context files
 
 ### Context Sharing
 ```
-@/.claude/commands/[command].md - Load command context
-Internal references only - NO external folder access
-Shared utilities via internal ecosystem
+Self-contained command ecosystem - NO external file dependencies
+Internal references within /.claude/commands/ only
+Shared utilities via embedded templates and context
 ```
 
 ## Internal Ecosystem Structure
@@ -46,9 +46,9 @@ Shared utilities via internal ecosystem
 
 ### Shared Utilities Access
 ```
-Reference: @/.claude/commands/utilities/[utility].md
-Usage: Internal ecosystem components only
-Scope: Command-specific tools + shared functions
+Embedded utilities within command files
+Self-contained functionality - no external references
+Scope: Command-specific tools integrated directly
 ```
 
 ### Context Repository

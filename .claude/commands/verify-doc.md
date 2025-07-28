@@ -180,7 +180,13 @@ OUTPUT: Final optimized document ready for production deployment.""",
 ## Workflow Completion Implementation:
 
 ```markdown
-IMPORT: @/.claude/commands/utilities/workflow-state-manager.md
+# WORKFLOW STATE MANAGER - EMBEDDED
+
+**Self-Contained Workflow Management**:
+- workflow_id finalization
+- Complete state validation
+- Deployment logic with rollback capability
+- Success/failure handling
 
 WORKFLOW STATE FINALIZATION:
 1. RECEIVE workflow_id from align-doc step

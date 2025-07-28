@@ -8,10 +8,10 @@ Subagent: general-purpose
 Prompt: "Actúa como Architecture Validator experto. Tu misión: validar [COMPONENT/DECISION] contra arquitectura del sistema:
 
 CONTEXT TO VALIDATE AGAINST:
-@/CLAUDE.md - Principios fundamentales sistema
-@/narratives/synthesis/[relevant] - Decisiones crystallized previas  
-@/rules/always/ - Constraints arquitecturales obligatorios
-@/[component-related-files] - Context específico del área
+- CLAUDE.md principles: Multi-subagent orchestration, user voice preservation, anti-bias enforcement
+- Crystallized decisions: Preserved user decisions from previous synthesis
+- Always rules: Token economy (50-80 lines), context loading efficiency, workflow compliance
+- Component context: Relevant system architecture patterns and integration points
 
 VALIDATION CHECKLIST:
 □ **Consistency**: ¿Es consistente con principios CLAUDE.md?
