@@ -94,11 +94,13 @@ class ClaudeCodeHealthMonitor:
                 integration_quality TEXT NOT NULL,
                 claude_code_metrics TEXT NOT NULL,
                 overall_score REAL NOT NULL,
-                session_id TEXT,
-                INDEX(timestamp),
-                INDEX(overall_score)
+                session_id TEXT
             )
         ''')
+        
+        # Create indexes
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_timestamp ON health_metrics(timestamp)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_score ON health_metrics(overall_score)')
         
         # User voice preservation tracking
         conn.execute('''
@@ -110,12 +112,14 @@ class ClaudeCodeHealthMonitor:
                 authenticity_markers TEXT NOT NULL,
                 context_fidelity REAL NOT NULL,
                 decision_traceability BOOLEAN NOT NULL,
-                timestamp TEXT NOT NULL,
-                INDEX(session_id),
-                INDEX(preservation_score),
-                INDEX(timestamp)
+                timestamp TEXT NOT NULL
             )
         ''')
+        
+        # Create indexes for voice_preservation
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_voice_session ON voice_preservation(session_id)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_voice_score ON voice_preservation(preservation_score)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_voice_timestamp ON voice_preservation(timestamp)')
         
         # Claude Code tool performance
         conn.execute('''
@@ -128,11 +132,13 @@ class ClaudeCodeHealthMonitor:
                 user_voice_maintained BOOLEAN NOT NULL,
                 subagent_coordination BOOLEAN,
                 timestamp TEXT NOT NULL,
-                session_id TEXT,
-                INDEX(tool_name),
-                INDEX(timestamp)
+                session_id TEXT
             )
         ''')
+        
+        # Create indexes for tool_performance
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_tool_name ON tool_performance(tool_name)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_tool_timestamp ON tool_performance(timestamp)')
         
         # System alerts and anomalies
         conn.execute('''
@@ -143,12 +149,14 @@ class ClaudeCodeHealthMonitor:
                 message TEXT NOT NULL,
                 metrics TEXT,
                 resolved BOOLEAN DEFAULT FALSE,
-                timestamp TEXT NOT NULL,
-                INDEX(alert_type),
-                INDEX(severity),
-                INDEX(timestamp)
+                timestamp TEXT NOT NULL
             )
         ''')
+        
+        # Create indexes for system_alerts
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_alert_type ON system_alerts(alert_type)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_alert_severity ON system_alerts(severity)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_alert_timestamp ON system_alerts(timestamp)')
         
         conn.commit()
         conn.close()
