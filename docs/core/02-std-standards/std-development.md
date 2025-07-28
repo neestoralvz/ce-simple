@@ -6,7 +6,7 @@
 **Technical**: Directness (≤3 steps) | Precision (100%) | Sufficiency (minimal) | Excellence
 **Communication**: Exactitude | Sobriety (no marketing) | Structure | Conciseness  
 **Cognitive**: Clarity | Coherence | Effectiveness | Pragmatism
-**Full Details**: @docs/core/pts-framework.md
+**Full Details**: docs/core/pts-framework.md
 
 ## Technical Standards
 ### Line Limits
@@ -24,7 +24,7 @@ Explore → Research → UltraThink x4 → Solve → Log | Visual validation for
 Internal timestamps only | Dynamic categorization | Auto-capture | Evolution tracking
 
 ### Vision Authority
-@docs/vision/ → Core → Implementation | All decisions traceable to vision
+docs/vision/ → Core → Implementation | All decisions traceable to vision
 
 ## Architecture Standards
 **Single Responsibility**: One purpose | Clear boundaries | Focused | Modular
@@ -55,7 +55,7 @@ Full PTS (12/12) | Integration verified | Docs updated | Patterns captured
 Context → Vision → UltraThink x4 → Parallel design → Execute
 
 ### Tool Usage
-Task Tool priority | Parallel execution | Context economy | @docs/rules/tool-usage-protocols.md
+Task Tool priority | Parallel execution | Context economy | docs/rules/tool-usage-protocols.md
 
 ### Documentation
 Update CLAUDE.md | Capture learnings | Maintain references | Pattern evolution

@@ -95,6 +95,6 @@
 **Density Ratio**: ≥2:1 compression without loss | **Comprehension Time**: ≤30% increase | **Reference Efficiency**: ≤3 hops to details | **Maintenance Ease**: Updates still straightforward
 
 ## See Also
-**[Documentation Standards](../rules/documentation-standards.md)** | **[Communication Rules](../rules/communication-rules.md)** | **[Markdown Standards](../rules/markdown-standards.md)** | **[Import Analysis Methodology](import-analysis-methodology.md)** | **[Context Efficiency Optimization](context-efficiency-optimization.md)** | **[CLAUDE_RULES.md](../../CLAUDE_RULES.md)** | **[System Navigation](../navigation/index.md)**
+**[Documentation Standards](../rules/documentation-standards.md)** | **[Communication Rules](../rules/communication-rules.md)** | **[Markdown Standards](../rules/markdown-standards.md)** | **[Import Analysis Methodology](import-analysis-methodology.md)** | **[Context Efficiency Optimization](context-efficiency-optimization.md)** | **[rules/CLAUDE_RULES.md](../../rules/CLAUDE_RULES.md)** | **[System Navigation](../navigation/index.md)**
 
 **Self-Compliance**: This standard demonstrates its own techniques while preserving content quality

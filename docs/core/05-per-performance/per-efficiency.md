@@ -32,7 +32,7 @@
 ### Phase 3: Implementation & Integration (30 minutes)
 **Execute Coordinated Updates**: Apply optimizations across all affected files
 
-1. **Core File Updates**: Modify CLAUDE.md + CLAUDE_RULES.md with optimized imports
+1. **Core File Updates**: Modify CLAUDE.md + rules/CLAUDE_RULES.md with optimized imports
 2. **Conditional Logic**: Implement trigger-based loading system
 3. **Integration Points**: Update navigation & cross-references for consistency
 4. **Authority Alignment**: Ensure changes respect docs/vision/ → CLAUDE_RULES → docs/core/ hierarchy
@@ -66,7 +66,7 @@
 
 ### Authority Hierarchy Respect
 **docs/vision/**: System direction remains absolute authority
-**CLAUDE_RULES.md**: Partnership protocol maintains precedence
+**rules/CLAUDE_RULES.md**: Partnership protocol maintains precedence
 **docs/core/**: Technical implementation serves authority structure
 **Optimization**: Improves efficiency without changing authority flow
 

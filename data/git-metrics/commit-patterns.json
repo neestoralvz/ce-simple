@@ -1,0 +1,968 @@
+{
+  "metadata": {
+    "collected_at": "2025-07-26T09:57:18-06:00",
+    "project_root": "/Users/nalve/ce-simple",
+    "analysis_period": "30_days"
+  },
+  "commits": [
+    {
+      "hash": "97551d89c8a17caaee160c4f408fdd819c9f9f28",
+      "date": "2025-07-26 09:38:33 -0600",
+      "author": "neestoralvz",
+      "message": "Fix pre-commit hook bash syntax error",
+      "files_changed": 1
+    },
+    {
+      "hash": "f11c6fa0697ec6e57b702b5acb4d42d25229e7ec",
+      "date": "2025-07-26 09:37:10 -0600",
+      "author": "neestoralvz",
+      "message": "Ultra-Parallel User-Input Validation System Complete",
+      "files_changed": 1
+    },
+    {
+      "hash": "86573517be42985cc337b6f2b005fe7112edadc3",
+      "date": "2025-07-26 09:21:29 -0600",
+      "author": "neestoralvz",
+      "message": "VDD Framework Coherence Implementation Complete",
+      "files_changed": 1
+    },
+    {
+      "hash": "514fb0e311dd6ed44dcbfeeebf2a96fb0772fbe8",
+      "date": "2025-07-26 05:02:40 -0600",
+      "author": "neestoralvz",
+      "message": "VDD Mandatory Implementation Verification System",
+      "files_changed": 1
+    },
+    {
+      "hash": "36db7f82e71c808f65ff0b45ad8e6eecf8d29476",
+      "date": "2025-07-26 04:44:24 -0600",
+      "author": "neestoralvz",
+      "message": "VDD Post-Consolidation Optimization: Commands & Automation",
+      "files_changed": 1
+    },
+    {
+      "hash": "faf85a697b4488ae6954eb7ac8ee8ad34a61acdf",
+      "date": "2025-07-26 04:32:23 -0600",
+      "author": "neestoralvz",
+      "message": "VDD Framework Consolidation: Complete System Restructure",
+      "files_changed": 1
+    },
+    {
+      "hash": "1c0228a010e111792cd95d2c148660e6a3848443",
+      "date": "2025-07-26 01:41:06 -0600",
+      "author": "neestoralvz",
+      "message": "GitHub Repository Documentation: VDD Framework Migration Notice",
+      "files_changed": 1
+    },
+    {
+      "hash": "800ebff954cb83b1677dd0954cf0f0feb307bf87",
+      "date": "2025-07-26 01:40:23 -0600",
+      "author": "neestoralvz",
+      "message": "VDD Framework Implementation Complete: 4-Phase Migration to Vision Driven Development",
+      "files_changed": 1
+    },
+    {
+      "hash": "d7cb5fbc38aaf08d60100cbc4db2e14e08b3fc97",
+      "date": "2025-07-25 22:47:24 -0600",
+      "author": "neestoralvz",
+      "message": "Initial MkDocs setup with Material theme and GitHub Actions",
+      "files_changed": 1
+    },
+    {
+      "hash": "16382d47a0751fbca29f9b95ba8672cb5789652a",
+      "date": "2025-07-24 14:47:32 -0600",
+      "author": "neestoralvz",
+      "message": "Git Workspace Cleanup: System Consolidation & Architecture Enhancement",
+      "files_changed": 1
+    },
+    {
+      "hash": "8714241813fd1e81528fb65c03c1c92a93638d08",
+      "date": "2025-07-23 20:07:56 -0600",
+      "author": "neestoralvz",
+      "message": "System Handoffs: Complete 5-Phase Development Roadmap ",
+      "files_changed": 1
+    },
+    {
+      "hash": "4765e2254cf6dc82b9bd3dc60273e465143d74b5",
+      "date": "2025-07-23 19:51:13 -0600",
+      "author": "neestoralvz",
+      "message": "System Finalization: Think x4 + 7-Agent Parallel Execution ",
+      "files_changed": 1
+    },
+    {
+      "hash": "7960cd0b9fe197268bfd33a90d87cd5c9f8b3a87",
+      "date": "2025-07-23 19:38:30 -0600",
+      "author": "neestoralvz",
+      "message": "Archive Cleanup: Major Simplification + Token Optimization",
+      "files_changed": 1
+    },
+    {
+      "hash": "095b126881c55920575b79431727f36a9f535c17",
+      "date": "2025-07-23 19:38:19 -0600",
+      "author": "neestoralvz",
+      "message": "Partnership Enhancement: Modular Rule System + Dynamic Patterns + Vision Integration",
+      "files_changed": 1
+    },
+    {
+      "hash": "630e0c155c228b14bc932f02ae85b2da6fb178a3",
+      "date": "2025-07-23 14:38:44 -0600",
+      "author": "neestoralvz",
+      "message": "Template System Enhancement: DRY Elimination + Composition Framework",
+      "files_changed": 1
+    },
+    {
+      "hash": "bf3f73f35600e8dce2395233450ea0e331b7b004",
+      "date": "2025-07-23 11:35:12 -0600",
+      "author": "neestoralvz",
+      "message": "06-documentation: Phase 5 + Import Footer Implementation Complete",
+      "files_changed": 1
+    },
+    {
+      "hash": "8fc8dd561e5ac8ec58e86703ae98b2d8674deee6",
+      "date": "2025-07-23 09:43:37 -0600",
+      "author": "neestoralvz",
+      "message": "ce-simple optimization: 3-phase implementation complete",
+      "files_changed": 1
+    },
+    {
+      "hash": "55d44378c0048ab9faf9fea8f40d9e5b64f7e810",
+      "date": "2025-07-23 07:45:26 -0600",
+      "author": "neestoralvz",
+      "message": "02-planning: Phase 1 Implementation Complete",
+      "files_changed": 1
+    },
+    {
+      "hash": "8c887847e778b1d2db62d0617e2391355cfc83ee",
+      "date": "2025-07-23 06:50:19 -0600",
+      "author": "neestoralvz",
+      "message": "CLAUDE.md: complete 15-category structure update ",
+      "files_changed": 4615000114
+    },
+    {
+      "hash": "3a73033c3ac955266069b69fb66b8c677f2a61c8",
+      "date": "2025-07-23 06:38:22 -0600",
+      "author": "neestoralvz",
+      "message": "meta-commands-migration: system evolution commands to 11-meta ",
+      "files_changed": 4
+    },
+    {
+      "hash": "62b58eb694b8b6ebba90341a4891fb370b2fb3ac",
+      "date": "2025-07-23 06:32:02 -0600",
+      "author": "neestoralvz",
+      "message": "documentation: migrate docs-maintain to 06-documentation category",
+      "files_changed": 1
+    },
+    {
+      "hash": "4fdae256bad8ed5571dfa83de238cc6ca5525c8f",
+      "date": "2025-07-23 06:27:34 -0600",
+      "author": "neestoralvz",
+      "message": "migrate: system maintenance commands to 07-maintenance category",
+      "files_changed": 1
+    },
+    {
+      "hash": "2c39a7f5ce102bee0beacf17e693b4a05011a2a3",
+      "date": "2025-07-23 06:21:11 -0600",
+      "author": "neestoralvz",
+      "message": "discovery-migration: Move exploration commands to 01-discovery category",
+      "files_changed": 1
+    },
+    {
+      "hash": "d453a357ecc86a07b42f66e30427eaabb5934b13",
+      "date": "2025-07-23 02:49:42 -0600",
+      "author": "neestoralvz",
+      "message": "command-create: enhanced-start ",
+      "files_changed": 077186
+    },
+    {
+      "hash": "26b13a9def96c83aac40fa67fb5958d6fe03f83e",
+      "date": "2025-07-22 20:09:11 -0600",
+      "author": "neestoralvz",
+      "message": "command-cleanup: comprehensive system optimization ",
+      "files_changed": 9882747
+    },
+    {
+      "hash": "c95fdedc5e72c6c3485b14eb8dc9cb448b258b7f",
+      "date": "2025-07-22 17:49:29 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: comprehensive ",
+      "files_changed": 985960487
+    },
+    {
+      "hash": "8246c7ebdb1ec7739a02ace3393db3e39e81f8e2",
+      "date": "2025-07-22 17:47:45 -0600",
+      "author": "neestoralvz",
+      "message": "start: CLAUDE.md optimization complete ",
+      "files_changed": 13213100
+    },
+    {
+      "hash": "2d7c62c310e288e61ab3c7ac0682f870aab14317",
+      "date": "2025-07-22 17:44:38 -0600",
+      "author": "neestoralvz",
+      "message": "command-maintain: 150-line standard compliance + modularization docs ",
+      "files_changed": 17995150
+    },
+    {
+      "hash": "d361f8ba49c11ab10853bafe1a5b9b44a671546e",
+      "date": "2025-07-22 17:32:30 -0600",
+      "author": "neestoralvz",
+      "message": "start: command-create implementation complete ",
+      "files_changed": 14
+    },
+    {
+      "hash": "fb7fe0f0edba80a01fa9050d360d1eaf4f9a0f02",
+      "date": "2025-07-22 17:32:00 -0600",
+      "author": "neestoralvz",
+      "message": "command-maintain: automated maintenance system ",
+      "files_changed": 615
+    },
+    {
+      "hash": "23efb7f8dc96464b0091c4f15aa5f271121e9243",
+      "date": "2025-07-22 17:31:25 -0600",
+      "author": "neestoralvz",
+      "message": "enhance: intelligent auto-SQUASH for worktree-close workflows",
+      "files_changed": 1
+    },
+    {
+      "hash": "62aad99e0b45d223627b6aa360fafadebb060f5d",
+      "date": "2025-07-22 17:27:51 -0600",
+      "author": "neestoralvz",
+      "message": "docs: comprehensive reorganization optimization - 80→21 files (74% reduction)",
+      "files_changed": 1
+    },
+    {
+      "hash": "0231a8474f524d441add43e79c85f068435d79ca",
+      "date": "2025-07-22 17:16:43 -0600",
+      "author": "neestoralvz",
+      "message": "start: context-optimize workflow integration ",
+      "files_changed": 13
+    },
+    {
+      "hash": "1ccece2bd9826e48a3832af419ae74bbaaa8209e",
+      "date": "2025-07-22 17:08:44 -0600",
+      "author": "neestoralvz",
+      "message": "start: context-optimize command implementation ",
+      "files_changed": 251732475212
+    },
+    {
+      "hash": "126565c2023607bf4d5e58efb01800dbf4c3e29a",
+      "date": "2025-07-22 17:07:15 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: git optimization ",
+      "files_changed": 710
+    },
+    {
+      "hash": "1ca0eff35ebce7e7a96e00188a8c65f59f982de4",
+      "date": "2025-07-22 17:04:41 -0600",
+      "author": "neestoralvz",
+      "message": "Merge session: critical-content-recovery ",
+      "files_changed": 1
+    },
+    {
+      "hash": "41a2d618bb4f3848d36f7401f829fee07e9e6ac8",
+      "date": "2025-07-22 17:02:56 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: comprehensive validation ",
+      "files_changed": 991104599523
+    },
+    {
+      "hash": "8c875d83e2da274dc48bb964fedd2b3298854d0a",
+      "date": "2025-07-22 17:02:12 -0600",
+      "author": "neestoralvz",
+      "message": "start: emergency simplification validation ",
+      "files_changed": 99273
+    },
+    {
+      "hash": "808934292a2891930fac889f9979a64fb2022d8b",
+      "date": "2025-07-22 16:59:43 -0600",
+      "author": "neestoralvz",
+      "message": "self-monitor: philosophical compatibility validation ",
+      "files_changed": 992100
+    },
+    {
+      "hash": "49c18904bb1f180dc88d479c319e35c4fa02f1f7",
+      "date": "2025-07-22 16:56:35 -0600",
+      "author": "neestoralvz",
+      "message": "start: context structure verified clean ",
+      "files_changed": 1001511
+    },
+    {
+      "hash": "d139d10a822d5720377df457645f692bc04bb30d",
+      "date": "2025-07-22 16:55:49 -0600",
+      "author": "neestoralvz",
+      "message": "start: semantic organization finalized ",
+      "files_changed": 10041511
+    },
+    {
+      "hash": "730c97919348fed64e3e7b7443efd1a841c0158e",
+      "date": "2025-07-22 16:55:25 -0600",
+      "author": "neestoralvz",
+      "message": "start: final semantic cleanup ",
+      "files_changed": 1511
+    },
+    {
+      "hash": "5de243bcdf8b64e4fd95078e478c39de7d265276",
+      "date": "2025-07-22 16:54:33 -0600",
+      "author": "neestoralvz",
+      "message": "start: context cleanup completion ",
+      "files_changed": 4048156911
+    },
+    {
+      "hash": "a28318de69d4d2c53ba932d151bc6d6191564e15",
+      "date": "2025-07-22 16:53:50 -0600",
+      "author": "neestoralvz",
+      "message": "start: validation complete ",
+      "files_changed": 719199
+    },
+    {
+      "hash": "4c043f3e11e9ca928e01ec712850d938ae4a3362",
+      "date": "2025-07-22 16:53:05 -0600",
+      "author": "neestoralvz",
+      "message": "self-monitor: compliance 71.9% ",
+      "files_changed": 1
+    },
+    {
+      "hash": "d4c8c0a191bbd26e6c95ddd70f56ce095618e302",
+      "date": "2025-07-22 16:51:07 -0600",
+      "author": "neestoralvz",
+      "message": "start: semantic organization implementation ",
+      "files_changed": 6610
+    },
+    {
+      "hash": "311e56ae0441e5572f1a403cf352910c6fe52c66",
+      "date": "2025-07-22 16:51:03 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: post-learning-capture validation complete ",
+      "files_changed": 988108654100020250722
+    },
+    {
+      "hash": "a5a5bee29ca4e54023dd7c288d6401a69be015fc",
+      "date": "2025-07-22 16:49:22 -0600",
+      "author": "neestoralvz",
+      "message": "start: git format optimization ",
+      "files_changed": 330
+    },
+    {
+      "hash": "7aff56daec01bc64629f50fe5fc1c5ee2ad5481a",
+      "date": "2025-07-22 16:49:21 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: git optimization session ",
+      "files_changed": 91054
+    },
+    {
+      "hash": "0e4bfd1bce4645693126f74fbe8c3579eb3ae875",
+      "date": "2025-07-22 16:48:36 -0600",
+      "author": "neestoralvz",
+      "message": "agent-orchestration: git format optimization complete ",
+      "files_changed": 371020250722
+    },
+    {
+      "hash": "3019d11a12e86cfd91802e7842e1a06fc515de99",
+      "date": "2025-07-22 16:48:12 -0600",
+      "author": "neestoralvz",
+      "message": "agent-orchestration: sequential coordination complete ",
+      "files_changed": 361021753224492
+    },
+    {
+      "hash": "d09b0c7321e80469696f26bb36a2d7c4bb0dad14",
+      "date": "2025-07-22 16:45:43 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: philosophical validation ",
+      "files_changed": 701031
+    },
+    {
+      "hash": "102cd9a4a79448f7d3c1fb6e650ffd66efb0881d",
+      "date": "2025-07-22 16:43:59 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: full validation ",
+      "files_changed": 992100
+    },
+    {
+      "hash": "84e7aa66111a7ed1c4995672f10813c8689e2f5f",
+      "date": "2025-07-22 16:42:30 -0600",
+      "author": "neestoralvz",
+      "message": "start: learning capture completion ",
+      "files_changed": 1008
+    },
+    {
+      "hash": "848708dab4d1dad4c83975e0633a0f890c3f32aa",
+      "date": "2025-07-22 16:33:37 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: docs-workflow ",
+      "files_changed": 71061
+    },
+    {
+      "hash": "9a3f097cc859169154b172984d1c2bb91d5531f0",
+      "date": "2025-07-22 16:30:59 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: comprehensive validation ",
+      "files_changed": 9781095
+    },
+    {
+      "hash": "926a6d50cce53aece6b770000023448d9b726978",
+      "date": "2025-07-22 16:29:11 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: comprehensive system validation ",
+      "files_changed": 94285791222
+    },
+    {
+      "hash": "c28e3318ae5d1ba3ec3ea09f564c8609c48864a6",
+      "date": "2025-07-22 16:26:36 -0600",
+      "author": "neestoralvz",
+      "message": "tools-to-commands: complete migration ",
+      "files_changed": 4
+    },
+    {
+      "hash": "3bfd3fbf20fbfcb6c1574983d4c61c7acb78ab98",
+      "date": "2025-07-22 16:20:19 -0600",
+      "author": "neestoralvz",
+      "message": "agent-orchestration: learning capture coordination complete ",
+      "files_changed": 552310298820250722
+    },
+    {
+      "hash": "1168386c46fec2ea755380cc1eabebab1b02d8d5",
+      "date": "2025-07-22 16:14:29 -0600",
+      "author": "neestoralvz",
+      "message": "agent-orchestration: sequential deployment ",
+      "files_changed": 2610298820250722
+    },
+    {
+      "hash": "9ef8b83cf46fcd86791508c66de72620b3f9b082",
+      "date": "2025-07-22 16:13:41 -0600",
+      "author": "neestoralvz",
+      "message": "self-monitor: philosophical validation enhancement ",
+      "files_changed": 1
+    },
+    {
+      "hash": "1f62434ad7d86da882da5f6eb9cd1639c1841f32",
+      "date": "2025-07-22 16:13:11 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: full system validation ",
+      "files_changed": 941069881
+    },
+    {
+      "hash": "3d688666672a527a4a2a6d7e4b69e2b548341289",
+      "date": "2025-07-22 16:10:48 -0600",
+      "author": "neestoralvz",
+      "message": "worktree-lifecycle: complete Git work tree session management system",
+      "files_changed": 1
+    },
+    {
+      "hash": "0f69a4ce3d832e102d847664c9055814308cd54c",
+      "date": "2025-07-22 16:06:19 -0600",
+      "author": "neestoralvz",
+      "message": "start: exhaustive verification now DEFAULT ",
+      "files_changed": 31753221979
+    },
+    {
+      "hash": "1ddf21dbfc7afb16674aa35aa71387fd130ada6c",
+      "date": "2025-07-22 16:00:23 -0600",
+      "author": "neestoralvz",
+      "message": "start: self-monitor philosophy enhancement designed ",
+      "files_changed": 309
+    },
+    {
+      "hash": "c5524857d429cecb32d97f21ba10d576bb704dce",
+      "date": "2025-07-22 15:58:55 -0600",
+      "author": "neestoralvz",
+      "message": "start: meticulous verification protocol implemented ",
+      "files_changed": 1753221535
+    },
+    {
+      "hash": "bca365abd3ad2518aac84da8aa76f7896b41dd4c",
+      "date": "2025-07-22 15:58:05 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: system validation session ",
+      "files_changed": 101049741
+    },
+    {
+      "hash": "58de4ae3b7b719f372b21560082eb541f8251b5e",
+      "date": "2025-07-22 15:57:03 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: comprehensive validation ",
+      "files_changed": 97410015151
+    },
+    {
+      "hash": "f03fd3af54842c299e8f6a0060591b6db1f175a1",
+      "date": "2025-07-22 15:55:36 -0600",
+      "author": "neestoralvz",
+      "message": "docs-optimize: integrated all maintenance rules into CLAUDE.md command ",
+      "files_changed": 1
+    },
+    {
+      "hash": "5cf360d19045862aa2b0bb96d2db58a7d8117e9d",
+      "date": "2025-07-22 15:40:14 -0600",
+      "author": "neestoralvz",
+      "message": "execution-layer-compliance-analysis: CRITICAL DISCOVERY ",
+      "files_changed": 1001515489
+    },
+    {
+      "hash": "9a59d3faddbe32697339070e6c321e1dd55ee306",
+      "date": "2025-07-22 15:36:44 -0600",
+      "author": "neestoralvz",
+      "message": "docs-workflow: complete ",
+      "files_changed": 84696301
+    },
+    {
+      "hash": "dac3a9d180654d2f3af304957506a387f0dfae61",
+      "date": "2025-07-22 15:36:00 -0600",
+      "author": "neestoralvz",
+      "message": "start: philosophy alignment assessment ",
+      "files_changed": 968
+    },
+    {
+      "hash": "a5f2c5400b8aa2aeb47dde6f9725b2ea8cad534c",
+      "date": "2025-07-22 15:35:35 -0600",
+      "author": "neestoralvz",
+      "message": "start: final git format validation ",
+      "files_changed": 11002
+    },
+    {
+      "hash": "8892c10994e62e752d8fc0fd00330ebe1d210306",
+      "date": "2025-07-22 15:29:32 -0600",
+      "author": "neestoralvz",
+      "message": "critical-alignment: integrated CLAUDE.md references into maintenance rules ",
+      "files_changed": 1
+    },
+    {
+      "hash": "cc105a88c3baf9a1ff2f38e75af4c344bf40969f",
+      "date": "2025-07-22 15:28:16 -0600",
+      "author": "neestoralvz",
+      "message": "bash-optimization: authorization reduction implemented ",
+      "files_changed": 41317157
+    },
+    {
+      "hash": "d8ac8dd08047d0f80263783fbae00153d9de6f73",
+      "date": "2025-07-22 15:25:18 -0600",
+      "author": "neestoralvz",
+      "message": "cleanup: removed auto-timestamped file that violated new intelligent restrictions",
+      "files_changed": 1
+    },
+    {
+      "hash": "d368fff931718ce0d7e2447f3423778311f417d0",
+      "date": "2025-07-22 15:25:04 -0600",
+      "author": "neestoralvz",
+      "message": "intelligent-restrictions: commands updated to follow smart file creation rules ",
+      "files_changed": 1
+    },
+    {
+      "hash": "3db6c44bbfe5d7933c05a57dc53042a5abf01454",
+      "date": "2025-07-22 15:18:57 -0600",
+      "author": "neestoralvz",
+      "message": "start: investigation completed ",
+      "files_changed": 1501753219137
+    },
+    {
+      "hash": "edf5e94ac5d8aeb23526254db5aeb380c021b890",
+      "date": "2025-07-22 15:17:14 -0600",
+      "author": "neestoralvz",
+      "message": "start: system ready continuation ",
+      "files_changed": 10107
+    },
+    {
+      "hash": "bc70884e1dc0b6a6bdadd47f984ddc0891db610a",
+      "date": "2025-07-22 15:17:14 -0600",
+      "author": "neestoralvz",
+      "message": "start: system ready continuation ",
+      "files_changed": 10107
+    },
+    {
+      "hash": "ddfb5dadc11cf9bc2560903c80554c14547035ed",
+      "date": "2025-07-22 15:13:19 -0600",
+      "author": "neestoralvz",
+      "message": "start: system validation complete ",
+      "files_changed": 9921
+    },
+    {
+      "hash": "7142f778dff4e1560ed7c0de72df48ca419404aa",
+      "date": "2025-07-22 15:13:19 -0600",
+      "author": "neestoralvz",
+      "message": "start: system validation complete ",
+      "files_changed": 9921
+    },
+    {
+      "hash": "405de3ecbe5def39e568c8d14472b41765358b79",
+      "date": "2025-07-22 15:10:12 -0600",
+      "author": "neestoralvz",
+      "message": "complexity-management: progressive disclosure system complete ",
+      "files_changed": 1515729109
+    },
+    {
+      "hash": "1647947c07326e86bbe954a337bcadbb27a3f203",
+      "date": "2025-07-22 15:10:12 -0600",
+      "author": "neestoralvz",
+      "message": "complexity-management: progressive disclosure system complete ",
+      "files_changed": 1515729109
+    },
+    {
+      "hash": "875cb3b99e794914850367dd8a7cf63ade6f38bd",
+      "date": "2025-07-22 15:07:27 -0600",
+      "author": "neestoralvz",
+      "message": "fmea-analysis: comprehensive failure mode assessment ",
+      "files_changed": 16
+    },
+    {
+      "hash": "405372723f121d09011d1794447155d946a9dcf8",
+      "date": "2025-07-22 15:05:15 -0600",
+      "author": "neestoralvz",
+      "message": "start: bash calculation authorization optimization analysis ",
+      "files_changed": 21565851
+    },
+    {
+      "hash": "4492342f88a2b4dab4f67149c747875da0680f94",
+      "date": "2025-07-22 15:00:58 -0600",
+      "author": "neestoralvz",
+      "message": "file-cleanup: massive reduction 1095->98 files ",
+      "files_changed": 875
+    },
+    {
+      "hash": "7b3f9a93ea480723850da0192630e4c93364dc1c",
+      "date": "2025-07-22 14:58:03 -0600",
+      "author": "neestoralvz",
+      "message": "start: git commit optimization ",
+      "files_changed": 201
+    },
+    {
+      "hash": "e6b25d99d7ef73f0562efb16a930416473f802f6",
+      "date": "2025-07-22 14:57:32 -0600",
+      "author": "neestoralvz",
+      "message": "start: execution principles compliance assessment ",
+      "files_changed": 881005921005
+    },
+    {
+      "hash": "757378347a4de49fa2e93074f97622567835e021",
+      "date": "2025-07-22 14:57:03 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: structural failure prevention ",
+      "files_changed": 71031
+    },
+    {
+      "hash": "aeea247b1c1e40549c5aff9447a32f01f1b60f84",
+      "date": "2025-07-22 14:55:47 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: comprehensive validation ",
+      "files_changed": 1001001455
+    },
+    {
+      "hash": "5d2d1fdf45c42126fff98d424828ef658d76f688",
+      "date": "2025-07-22 14:54:20 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: structural validation session ",
+      "files_changed": 251039882
+    },
+    {
+      "hash": "ff9d36b0e7fb93fbeceb3ad07dd49ff431a14ca4",
+      "date": "2025-07-22 14:52:58 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: validate ",
+      "files_changed": 9889511
+    },
+    {
+      "hash": "0a0dbe964b7a1459f43853c5b67d7c51cdaf8d90",
+      "date": "2025-07-22 14:51:54 -0600",
+      "author": "neestoralvz",
+      "message": "docs-optimize: CLAUDE.md 67→67 lines ",
+      "files_changed": 9991
+    },
+    {
+      "hash": "c9c88dd2a9f2478ecf217820ee2702c606af7598",
+      "date": "2025-07-22 14:51:28 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: docs-workflow ",
+      "files_changed": 231031
+    },
+    {
+      "hash": "e31c65e6b2fa5880ac7609fd763e67fcc8456e08",
+      "date": "2025-07-22 14:50:50 -0600",
+      "author": "neestoralvz",
+      "message": "docs-consolidate: duplication 25%→<15% ",
+      "files_changed": 651
+    },
+    {
+      "hash": "a47dec78b6faefcb06dcda605a668b85a094ea1b",
+      "date": "2025-07-22 14:50:02 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: validate ",
+      "files_changed": 9441001
+    },
+    {
+      "hash": "22f9e2c25a7ed6e81b30c3ee6b2e930aa39573f9",
+      "date": "2025-07-22 14:49:43 -0600",
+      "author": "neestoralvz",
+      "message": "start: self-monitor command integration complete ",
+      "files_changed": 4
+    },
+    {
+      "hash": "267637af6b8f97ee3b5f28a10a03e457d10cd6c4",
+      "date": "2025-07-22 14:47:47 -0600",
+      "author": "neestoralvz",
+      "message": "self-monitor: complete integration ",
+      "files_changed": 150131
+    },
+    {
+      "hash": "b98bfe94aac82b07b423ff1211d0a355707dfa3a",
+      "date": "2025-07-22 14:46:37 -0600",
+      "author": "neestoralvz",
+      "message": "docs-audit: health 84.6/100 ",
+      "files_changed": 123144505
+    },
+    {
+      "hash": "9a0d09b564baa32de9ab9b9d574b676637037da0",
+      "date": "2025-07-22 14:43:57 -0600",
+      "author": "neestoralvz",
+      "message": "start: command analysis cleanup ",
+      "files_changed": 41
+    },
+    {
+      "hash": "44467900388da1dfb2d0e3dec26e45827e3963e8",
+      "date": "2025-07-22 14:42:41 -0600",
+      "author": "neestoralvz",
+      "message": "start: conversación audit completa ",
+      "files_changed": 0129645
+    },
+    {
+      "hash": "7d8b293e8917f38729df5f5011d1c399ee1b22d8",
+      "date": "2025-07-22 14:41:39 -0600",
+      "author": "neestoralvz",
+      "message": "start: tools-to-commands migration ",
+      "files_changed": 41
+    },
+    {
+      "hash": "b404c9db4074737911be8caa043f61ed39b2b4dc",
+      "date": "2025-07-22 14:41:19 -0600",
+      "author": "neestoralvz",
+      "message": "start: incomplete problem resolution completion ",
+      "files_changed": 01001
+    },
+    {
+      "hash": "647edf8c383e7b3eed4722dd79f520d7cd93d8ac",
+      "date": "2025-07-22 14:38:57 -0600",
+      "author": "neestoralvz",
+      "message": "start: paralelización agresiva completada ",
+      "files_changed": 496444
+    },
+    {
+      "hash": "2739367bef394ce9db4eac7213e3e028a781dfed",
+      "date": "2025-07-22 14:38:11 -0600",
+      "author": "neestoralvz",
+      "message": "phase4-completion: automatic retry logic + autonomous systems advancement ",
+      "files_changed": 100
+    },
+    {
+      "hash": "88bf1ebd685bf7cad9456a80c56c4835934173d9",
+      "date": "2025-07-22 14:37:09 -0600",
+      "author": "neestoralvz",
+      "message": "docs-workflow: complete pipeline ",
+      "files_changed": 9092301
+    },
+    {
+      "hash": "25f7f7703ca8b3e73c3fb2f6de127c70f77e7824",
+      "date": "2025-07-22 14:36:45 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: documentation workflow optimization ",
+      "files_changed": 331031
+    },
+    {
+      "hash": "bd5643c38279549624b79db9477f337d0c84311f",
+      "date": "2025-07-22 14:35:10 -0600",
+      "author": "neestoralvz",
+      "message": "start: validation pendientes estructurales ",
+      "files_changed": 284432
+    },
+    {
+      "hash": "8843879bbc53974efe81819e4a5a60110b58b649",
+      "date": "2025-07-22 14:33:45 -0600",
+      "author": "neestoralvz",
+      "message": "start: guidance workflow ",
+      "files_changed": 2102
+    },
+    {
+      "hash": "cefec0b24b5bcf4c4ab0507e812c7613ed9e61b2",
+      "date": "2025-07-22 14:32:06 -0600",
+      "author": "neestoralvz",
+      "message": "start: .claude/tools cleanup ",
+      "files_changed": 51
+    },
+    {
+      "hash": "788cdaea6b10c6ffda8e0566f7f9d0f0f8987963",
+      "date": "2025-07-22 14:31:09 -0600",
+      "author": "neestoralvz",
+      "message": "docs-validate: health 92.3/100 ",
+      "files_changed": 93514141001
+    },
+    {
+      "hash": "8f2c79b53b886a8d32b9117995081172577d2991",
+      "date": "2025-07-22 14:27:32 -0600",
+      "author": "neestoralvz",
+      "message": "docs-optimize: size 298→67 lines ",
+      "files_changed": 921
+    },
+    {
+      "hash": "53f10bce2f64ea74fb933235bb0ee2180759d4e1",
+      "date": "2025-07-22 14:25:08 -0600",
+      "author": "neestoralvz",
+      "message": "start: análisis temporal patrones pendientes ",
+      "files_changed": 32
+    },
+    {
+      "hash": "6153690893908e297dfcc74b41f5c4a282c56883",
+      "date": "2025-07-22 14:24:10 -0600",
+      "author": "neestoralvz",
+      "message": "start: error-indicators analysis ",
+      "files_changed": 19179881
+    },
+    {
+      "hash": "685aefef161175499e86273e2f22deac1817c72d",
+      "date": "2025-07-22 14:21:13 -0600",
+      "author": "neestoralvz",
+      "message": "docs-audit: health 90/100 ",
+      "files_changed": 1231
+    },
+    {
+      "hash": "41d59ab5e081846794cfc4cd9a1d7d963983c81f",
+      "date": "2025-07-22 14:20:27 -0600",
+      "author": "neestoralvz",
+      "message": "start: búsqueda tareas incompletas ",
+      "files_changed": 31
+    },
+    {
+      "hash": "e2e6d4c770b29cc070e3a8d731571ef85a355a3b",
+      "date": "2025-07-22 14:13:10 -0600",
+      "author": "neestoralvz",
+      "message": "docs-execution-layers: final 6 commands ",
+      "files_changed": 1414100
+    },
+    {
+      "hash": "371a6011ff724a771b0a18625d52b4601c444b22",
+      "date": "2025-07-22 14:11:09 -0600",
+      "author": "neestoralvz",
+      "message": "start: context-token optimization orchestrator research ",
+      "files_changed": 2851
+    },
+    {
+      "hash": "099b533e989df4344eb3c113b62c3845c6b1c64d",
+      "date": "2025-07-22 13:53:35 -0600",
+      "author": "neestoralvz",
+      "message": "matrix-maintenance: validate ",
+      "files_changed": 6785331
+    },
+    {
+      "hash": "3e303fbba1673c53550779e9c5888b9473ca37ae",
+      "date": "2025-07-22 13:41:56 -0600",
+      "author": "neestoralvz",
+      "message": "start: Phase 3 execution layer implementation ",
+      "files_changed": 1
+    },
+    {
+      "hash": "e9e3a6a9a6657239a8926df9143408ff9411b28f",
+      "date": "2025-07-22 13:37:59 -0600",
+      "author": "neestoralvz",
+      "message": "start: Phase 2 execution layer implementation ",
+      "files_changed": 1
+    },
+    {
+      "hash": "5235e6d16c7096d99754b7c04797564562d164f5",
+      "date": "2025-07-22 13:27:10 -0600",
+      "author": "neestoralvz",
+      "message": "start: Phase 1 execution layer implementation complete ",
+      "files_changed": 1
+    },
+    {
+      "hash": "bc3a14c39e4cb813dc282d8f3f57789fe54d61f5",
+      "date": "2025-07-22 13:23:53 -0600",
+      "author": "neestoralvz",
+      "message": "start: remaining work analysis ",
+      "files_changed": 3
+    },
+    {
+      "hash": "44ac98330f98bbe179e02158d734c56ad66507ff",
+      "date": "2025-07-22 13:21:37 -0600",
+      "author": "neestoralvz",
+      "message": "start: execution layer implementation complete ",
+      "files_changed": 1
+    },
+    {
+      "hash": "7f1a6742daf58b941b5b042cb9e997150eea680c",
+      "date": "2025-07-22 13:15:31 -0600",
+      "author": "neestoralvz",
+      "message": "system: execution layer implementation ",
+      "files_changed": 1
+    },
+    {
+      "hash": "e05705aad704c75f03301e68f4af66295a07e05d",
+      "date": "2025-07-22 00:40:21 -0600",
+      "author": "neestoralvz",
+      "message": "start: Complete file structure cleanup ",
+      "files_changed": 83
+    },
+    {
+      "hash": "7f7a55fa9e2d4e340459b07275a224217b02d2e3",
+      "date": "2025-07-22 00:39:31 -0600",
+      "author": "neestoralvz",
+      "message": "start: File structure reorganization ",
+      "files_changed": 75
+    },
+    {
+      "hash": "2d3be472c3ba50fdd58e7f131ac0b1fa81ed15dc",
+      "date": "2025-07-22 00:28:38 -0600",
+      "author": "neestoralvz",
+      "message": "docs-workflow: maintain ",
+      "files_changed": 819515
+    },
+    {
+      "hash": "2ba9cdf7d20f703e6101435bd79028d8948755fb",
+      "date": "2025-07-21 23:53:33 -0600",
+      "author": "neestoralvz",
+      "message": "docs-workflow: maintain ",
+      "files_changed": 819515
+    },
+    {
+      "hash": "89a2def22a1cbb45c1751bbd5ac6ddc07412fcb1",
+      "date": "2025-07-21 23:51:07 -0600",
+      "author": "neestoralvz",
+      "message": "start: template optimization ",
+      "files_changed": 825
+    },
+    {
+      "hash": "c7ee8e1b5eabb9a7108c6751cb9f225fecd2a142",
+      "date": "2025-07-21 23:27:33 -0600",
+      "author": "neestoralvz",
+      "message": "start: Discovery workflow session completed",
+      "files_changed": 1
+    },
+    {
+      "hash": "8ad3ff5977bd2ca7f1d3a8ae3cd154ae9e963173",
+      "date": "2025-07-21 23:26:13 -0600",
+      "author": "neestoralvz",
+      "message": "docs-workflow: maintain optimization completed",
+      "files_changed": 1
+    },
+    {
+      "hash": "32245d35096b0b407c849289971bbc79e3acb5ad",
+      "date": "2025-07-21 23:22:45 -0600",
+      "author": "neestoralvz",
+      "message": "capture-learnings: Comprehensive validation documentation completed",
+      "files_changed": 1
+    },
+    {
+      "hash": "6ae718ff0e6668cc567a4b635584992c55f88333",
+      "date": "2025-07-21 23:20:51 -0600",
+      "author": "neestoralvz",
+      "message": "start: Discovery workflow validation completed with Git integration demonstration",
+      "files_changed": 1
+    },
+    {
+      "hash": "54e1e02e0d35ed25970dd05afad1a6fced1c4d64",
+      "date": "2025-07-21 23:15:52 -0600",
+      "author": "neestoralvz",
+      "message": "start: Discovery workflow session completed",
+      "files_changed": 1
+    },
+    {
+      "hash": "75b9142a189b6e777ecec3a2fddcb90da5ec378a",
+      "date": "2025-07-21 23:02:34 -0600",
+      "author": "neestoralvz",
+      "message": "start: Git integration implementation completed",
+      "files_changed": 1
+    }
+  ]
+}

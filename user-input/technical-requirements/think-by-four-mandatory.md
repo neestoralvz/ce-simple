@@ -39,7 +39,7 @@
 **Quality Gate**: No major system changes without demonstrated Think×4 analysis completion.
 
 **Integration Points**:
-- CLAUDE_RULES.md must enforce Think×4 usage
+- rules/CLAUDE_RULES.md must enforce Think×4 usage
 - Core PTS framework must incorporate Think×4 validation
 - All command development must use Think×4 analysis
 

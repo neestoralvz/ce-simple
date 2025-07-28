@@ -64,5 +64,5 @@ Update TodoWrite complete all context optimization and routing tasks
 
 ---
 
-@./docs/core/README.md
-@./docs/core/system-principles.md
+docs/core/README.md
+docs/core/system-principles.md

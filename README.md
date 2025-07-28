@@ -1,5 +1,8 @@
 # VDD: Vision Driven Development Framework
 
+**Authority**: Level 4 - Global Information | **Updated**: 2025-07-27 16:25 (Mexico City)
+**Superior Authorities**: user-input/PRINCIPLES.md (Level 0) → rules/CLAUDE_RULES.md (Level 1) → rules/perpetual/conditional-loading.md (Level 2) → CLAUDE.md (Level 3) → README.md (Level 4)
+
 **Transform complex workflows into simple commands through intelligent parallel orchestration**
 
 VDD (Vision Driven Development) is a breakthrough command engineering platform that combines the power of Claude Code's parallel execution capabilities with rigorous quality frameworks to deliver **86+ self-contained commands** that automate complex workflows across domains.
@@ -35,22 +38,55 @@ vdd/
 │   ├── init-project.md      # Complete project initialization
 │   ├── start.md             # Intelligent discovery workflow
 │   └── explore-codebase.md  # Deep project analysis
+├── rules/                   # Behavioral protocols system
+│   ├── perpetual/          # Always-active rules (18 files, 5 categories)
+│   │   ├── authority-*     # User authority & sacred spaces (4)
+│   │   ├── enforcement-*   # Compliance & validation (4)
+│   │   ├── communication-* # Language & interaction standards (2)
+│   │   ├── orchestration-* # Workflow & sub-agent coordination (5)
+│   │   └── quality-*       # Performance & feedback monitoring (3)
+│   ├── conditional/        # Context-triggered rules (26 files, 5 categories)
+│   │   ├── standards-*     # Technical specifications (7)
+│   │   ├── protocols-*     # Specific workflows (9)
+│   │   ├── methodology-*   # Analysis approaches (3)
+│   │   ├── governance-*    # Decision-making processes (6)
+│   │   └── implementation-* # Technical implementation (1)
+│   ├── perpetual/              # Always-active rules
+│   │   └── conditional-loading.md  # Rule routing system
+│   └── rules-naming-convention.md        # Naming standards
 └── docs/                    # Three-layer documentation architecture
     ├── core/                # System frameworks & principles
-    ├── rules/               # Behavioral protocols
     └── standards/           # Technical implementation criteria
 ```
 
+### Rules System Architecture
+**Perpetual vs Conditional Loading**:
+- **Perpetual Rules**: Always-active behavioral protocols loaded via `@rules/perpetual/conditional-loading.md`
+- **Conditional Rules**: Context-specific standards triggered by `IF [context] → READ [rule]` patterns  
+- **Naming Convention**: `[category]-[function]-[perpetual|conditional].md` for consistent organization
+
+**Categories**:
+- **authority-**: User hierarchy, sacred spaces, vision validation
+- **enforcement-**: Compliance, blocking requirements, Think×4 methodology  
+- **communication-**: Language standards, directive patterns, transparency
+- **orchestration-**: Workflow coordination, sub-agent management, parallel execution
+- **quality-**: Performance monitoring, feedback collection, validation gates
+- **standards-**: Technical specifications, writing requirements (conditional only)
+- **protocols-**: Step-by-step workflows, domain processes (conditional only)
+- **methodology-**: Analysis approaches, development methodologies (conditional only)
+- **governance-**: Decision-making, review processes (conditional only)
+- **implementation-**: Technical implementation details (conditional only)
+
 ### Documentation Architecture
-- **Foundation Layer** (≤50 lines): Essential concepts as agent prompts
+- **Foundation Layer** (≤80 lines): Essential concepts as agent prompts
 - **Implementation Layer** (≤100 lines): Detailed procedures for deployment
 - **Validation Layer** (≤100 lines): Quality gates and compliance checking
 
 ### Authority Hierarchy
 1. **docs/vision/** - System direction (absolute authority)
-2. **CLAUDE_RULES.md** - Partnership protocol and decision trees
+2. **rules/CLAUDE_RULES.md** - Partnership protocol and decision trees
 3. **docs/core/** - Technical implementation frameworks
-4. **CLAUDE.md** - Navigation hub (≤50 lines with conditional loading)
+4. **CLAUDE.md** - Navigation hub (≤80 lines with conditional loading)
 
 ## 🚀 Quick Start
 
@@ -153,7 +189,7 @@ Comprehensive project analysis with architecture mapping and improvement recomme
 ### Constraints & Standards
 - **Commands**: ≤80 lines maximum, completely self-contained
 - **Documentation**: ≤100 lines with three-layer architecture
-- **Concepts**: ≤50 lines for cognitive load optimization
+- **Concepts**: ≤80 lines for cognitive load optimization
 - **Context Economy**: 90% reduction in always-loaded content
 
 ### Validation Requirements
@@ -166,7 +202,7 @@ Comprehensive project analysis with architecture mapping and improvement recomme
 
 ### Essential Documentation
 - **[CLAUDE.md](CLAUDE.md)** - System navigation hub with conditional loading
-- **[CLAUDE_RULES.md](CLAUDE_RULES.md)** - Partnership protocol and decision trees
+- **[rules/CLAUDE_RULES.md](rules/CLAUDE_RULES.md)** - Partnership protocol and decision trees
 - **[Core Architecture](docs/core/README.md)** - Complete architectural framework
 - **[Navigation Hub](docs/navigation/index.md)** - 2-click access to all components
 
@@ -186,7 +222,7 @@ All contributions must meet PTS 12/12 component validation. The system provides 
 
 ### Governance Framework
 - **Vision Authority**: docs/vision/ provides absolute direction
-- **Technical Authority**: CLAUDE_RULES.md governs implementation
+- **Technical Authority**: rules/CLAUDE_RULES.md governs implementation
 - **Quality Authority**: PTS framework ensures measurable excellence
 - **Evolution Authority**: Handoff system manages systematic development
 

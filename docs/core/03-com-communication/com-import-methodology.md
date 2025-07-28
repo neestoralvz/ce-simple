@@ -23,7 +23,7 @@
 ```markdown
 ## Essential Context
 @docs/core/project-structure-current.md
-@CLAUDE_RULES.md:1-25
+@rules/CLAUDE_RULES.md:1-25
 ```
 
 ### Section 2: Conditional Instructions (Reference Links)
@@ -73,7 +73,7 @@
 @docs/core/project-structure-current.md
 
 # Line range import
-@CLAUDE_RULES.md:1-25
+@rules/CLAUDE_RULES.md:1-25
 
 # Multiple range import
 @docs/core/pts-framework.md:1-15,45-60

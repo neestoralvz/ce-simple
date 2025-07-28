@@ -10,7 +10,7 @@
 **🤖 WRITING AGENT**: Deploy when creating methodology docs
 ```
 Agent Mission: Apply three-layer architecture using methodology template
-Required Context: @docs/templates/three-layer-methodology-template.md + @docs/standards/layer-separation-rules.md
+Required Context: docs/templates/three-layer-methodology-template.md + docs/standards/layer-separation-rules.md
 Authority: Documentation standards + PTS 12/12 validation
 Output: Concept layer (≤50 lines) + implementation/verification file structure
 Quality Gate: Layer separation validated + agent deployment footer included
@@ -20,7 +20,7 @@ Quality Gate: Layer separation validated + agent deployment footer included
 **🔍 VALIDATION AGENT**: Deploy for standards compliance audit
 ```
 Agent Mission: Audit documentation against standards + three-layer architecture
-Required Context: @docs/rules/documentation-standards.md + @docs/rules/markdown-standards.md
+Required Context: docs/rules/documentation-standards.md + docs/rules/markdown-standards.md
 Authority: Documentation standards + compaction requirements + anti-bias language
 Output: Compliance report + line count verification + layer separation validation
 Success Criteria: 100% standards compliance + ≤100 lines + proper layer organization

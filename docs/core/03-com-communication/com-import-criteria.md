@@ -37,7 +37,7 @@
 ### Full File Import (Core Context)
 | File | Lines | Justification | Usage |
 |------|-------|---------------|--------|
-| CLAUDE_RULES.md | 100 | Partnership protocol | 100% sessions |
+| rules/CLAUDE_RULES.md | 100 | Partnership protocol | 100% sessions |
 | project-structure-current.md | 82 | Navigation foundation | 90% sessions |
 | command-index.md | 60 | Daily workflow | 85% sessions |
 | decision-navigation-system.md | 88 | Decision support | 80% sessions |

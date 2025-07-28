@@ -23,9 +23,9 @@ Transform CLAUDE_RULES.md from static reference into intelligent conditional ins
 
 ```markdown
 ## Conditional Instructions
-IF writing documentation → READ @docs/rules/documentation-standards.md + @docs/rules/markdown-standards.md
-IF creating commands → READ @docs/templates/command-template.md + @docs/standards/command-development.md  
-IF git operations → READ @docs/rules/git-workflow-protocols.md
+IF writing documentation → READ docs/rules/documentation-standards.md + docs/rules/markdown-standards.md
+IF creating commands → READ docs/templates/command-template.md + docs/standards/command-development.md  
+IF git operations → READ docs/rules/git-workflow-protocols.md
 ```
 
 **Benefit**: Context loaded only when needed, reducing token consumption while ensuring access to relevant standards.
@@ -59,7 +59,7 @@ Each methodology document includes standardized footer:
 **🤖 IMPLEMENTATION AGENT**: Deploy Task Tool
 ```
 Agent Mission: Apply [methodology] using implementation guide
-Required Context: @docs/implementation/[methodology]-implementation.md
+Required Context: docs/implementation/[methodology]-implementation.md
 Authority: This concept document + PTS 12/12 validation
 Output: Complete implementation following all procedures
 Quality Gate: Must pass pre-validation before proceeding
@@ -68,7 +68,7 @@ Quality Gate: Must pass pre-validation before proceeding
 **🔍 VALIDATION AGENT**: Deploy Task Tool
 ```
 Agent Mission: Audit implementation against validation checklist  
-Required Context: @docs/validation/[methodology]-checklist.md
+Required Context: docs/validation/[methodology]-checklist.md
 Authority: Validation criteria + measurement standards
 Output: Compliance report + recommendations
 Success Criteria: 100% validation checklist completion
@@ -80,10 +80,10 @@ Success Criteria: 100% validation checklist completion
 ## Implementation Strategy
 
 ### Phase 1: Foundation (Completed)
-- ✅ Created three-layer document template (@docs/templates/three-layer-methodology-template.md)
-- ✅ Established agent deployment footer standard (@docs/standards/agent-deployment-footer-standard.md)
-- ✅ Defined layer separation rules (@docs/standards/layer-separation-rules.md)
-- ✅ Created validation checklist for agent use (@docs/validation/layer-separation-quality-gates.md)
+- ✅ Created three-layer document template (docs/templates/three-layer-methodology-template.md)
+- ✅ Established agent deployment footer standard (docs/standards/agent-deployment-footer-standard.md)
+- ✅ Defined layer separation rules (docs/standards/layer-separation-rules.md)
+- ✅ Created validation checklist for agent use (docs/validation/layer-separation-quality-gates.md)
 
 ### Phase 2: CLAUDE_RULES.md Enhancement (In Progress)
 - Add conditional instruction system with clear triggers

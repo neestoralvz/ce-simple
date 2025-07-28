@@ -10,7 +10,7 @@ ce-simple/
 ├── docs/vision/     # System direction (absolute authority)
 ├── docs/core/       # Technical implementation of vision
 ├── docs/rules/      # Partnership protocol rule modules
-├── CLAUDE_RULES.md  # Master protocol (deprecated → docs/rules/)
+├── rules/CLAUDE_RULES.md  # Master protocol (deprecated → docs/rules/)
 ├── CLAUDE.md        # Project overview & navigation hub
 ├── commands/        # Essential local commands (3 core)
 ├── export/          # Global commands + export CLAUDE.md

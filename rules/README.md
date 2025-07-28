@@ -1,50 +1,41 @@
-# System-Wide Rules
+# Rules System - Radically Simplified
 
-**Purpose**: Modular system-wide rules for CLAUDE_RULES conditional loading  
-**Scope**: System behavior and methodology (vs project-specific rules in docs/rules/)
+**Purpose**: Only the essential rules you actually need (3 files total)
+**Updated**: 2025-07-27 16:45 (Mexico City) | **Authority**: Organic usage evidence  
+**Lines**: ≤50 | **Principle**: Radical simplification through real usage
 
-## Directory Purpose
+## Your Complete Rules System (3 Files)
 
-**System Rules** (`/rules/`): Core system behavior and methodologies that govern how Claude operates across any project using this VDD framework.
+### 1. CLAUDE_RULES.md (The Core)
+**What**: Main governance protocol with questioning, orchestration, and quality gates
+**When**: Always active for every operation
+**Why**: Essential behavioral framework
 
-**Project Rules** (`docs/rules/`): Project-specific behavioral protocols and development standards for ce-simple.
+### 2. conditional-loading.md (The Router) 
+**What**: 3-branch system (Simple/Development/System) with auto-detection
+**When**: Complex tasks that need specific context
+**Why**: Hides complexity behind simple interfaces
 
-## Modular Rules Architecture
+### 3. essential-standards.md (The Basics)
+**What**: 5 simple rules for daily work (questioning, experts, KISS, templates, growth)
+**When**: When you need quick reference for common situations  
+**Why**: 95% of real situations covered
 
-### Core Methodology Rules
-- `master-workflow-protocols.md` - Complete workflow for ALL user requests (commit → explore → research → Think×4 → plan → implement → validate → commit)
-- `communication-standards-protocols.md` - Mandatory communication compliance for all user interactions
-- `planning-methodology.md` - Step-by-step planning + handoffs + parallel conversations
-- `content-auditing-methodology.md` - 4-step content auditing (INVENTORY → EXTRACT → CONSOLIDATE → MODULARIZE)
-- `documentation-first-rule.md` - ANALYZE → DECIDE → DOCUMENT → CREATE protocol
-- `template-usage-protocols.md` - Mandatory template compliance for all file creation
-- `claude-rules-modularization.md` - How to modularize CLAUDE_RULES itself
+## Everything Else
 
-### System Operation Rules  
-- `orchestration-protocols.md` - Task Tool + parallel execution requirements
-- `transparency-requirements.md` - Sub-agent visibility and reporting protocols
-- `partnership-protocol.md` - Core AI-user collaboration guidelines
-- `pts-compliance.md` - PTS validation enforcement protocols
+**archive/**: 28 files moved here - available if needed but out of your way
+- Complex governance frameworks
+- Detailed protocol specifications  
+- Advanced methodologies
+- Historical implementations
 
-### Conditional Loading Rules
-- `conditional-loading-protocols.md` - When and how to load specific rules
+## How to Use
 
-## Loading Pattern
-
-**CLAUDE_RULES.md contains:**
-```markdown
-**IF planning work** → READ rules/planning-methodology.md
-**IF content auditing** → READ rules/content-auditing-methodology.md  
-**IF orchestration needed** → READ rules/orchestration-protocols.md
-```
-
-## Authority Hierarchy
-
-1. **user-input/** - User vision (absolute authority)
-2. **CLAUDE_RULES.md** - Core partnership protocol + conditional loading
-3. **rules/** - System-wide behavioral rules (this directory)
-4. **docs/rules/** - Project-specific rules and standards
+**Start**: Look at essential-standards.md for daily work
+**Complex task**: conditional-loading.md routes you automatically  
+**Deep work**: CLAUDE_RULES.md has the full framework
+**Stuck**: Question everything, use experts when complex
 
 ---
 
-**System Principle**: Modular rules enable conditional loading, reducing always-loaded context while maintaining comprehensive behavioral guidance when needed.
+**Truth**: 3 files handle 100% of real usage. Archive exists for edge cases. System grows organically based on actual needs, not predictions.

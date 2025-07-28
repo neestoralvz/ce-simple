@@ -22,8 +22,8 @@ ce-simple/
 │       └── docs.yml          # Documentation building
 ├── .githooks/                   # Git hooks
 │   └── pre-commit             # Pre-commit validation
-├── CLAUDE_RULES.md             # Partnership protocol + Think×4 mandates
-├── CLAUDE.md                   # System navigation hub (≤50 lines)
+├── rules/CLAUDE_RULES.md             # Partnership protocol + Think×4 mandates
+├── CLAUDE.md                   # System navigation hub (≤80 lines)
 ├── docs/                       # Documentation system (ultra-simplified)
 │   ├── .archive/              # Historical content (hidden)
 │   │   └── pts-original/      # Original PTS framework files
@@ -66,7 +66,7 @@ ce-simple/
 │       └── 14-utils/        # Utility operations
 ├── mkdocs.yml                 # Documentation site configuration
 ├── README.md                  # Project overview and entry point
-├── rules/                     # Conditional loading rules (CLAUDE_RULES.md)
+├── rules/                     # Conditional loading rules (rules/CLAUDE_RULES.md)
 │   ├── architecture-decision-protocols.md
 │   ├── content-auditing-methodology.md
 │   ├── development-workflow-protocols.md
@@ -89,7 +89,7 @@ ce-simple/
 │   ├── scripts/             # Utility scripts and automation
 │   ├── templates/           # Development templates (moved from docs/)
 │   │   ├── claude-md-template.md      # CLAUDE.md template
-│   │   ├── claude-rules-template.md   # CLAUDE_RULES.md template
+│   │   ├── claude-rules-template.md   # rules/CLAUDE_RULES.md template
 │   │   ├── cognitive-load-guidelines.md # Information density guidelines
 │   │   ├── command-template.md        # Command structure template
 │   │   ├── foundation-command-patterns.md # Common command patterns
@@ -135,7 +135,7 @@ ce-simple/
 ### Command Execution System
 - **.claude/commands/**: 4 core local commands using Claude Code convention
 - **export/commands/**: 86 global commands organized in 15 categories
-- **Rules integration**: Conditional loading through CLAUDE_RULES.md
+- **Rules integration**: Conditional loading through rules/CLAUDE_RULES.md
 
 ### Documentation Architecture (Ultra-Simplified)
 - **docs/core/**: Technical authority (70 consolidated files)
@@ -158,12 +158,12 @@ ce-simple/
 
 ### Think×4 Perpetual Analysis
 - **user-input/technical-requirements/think-by-four-mandatory.md**: User requirement
-- **CLAUDE_RULES.md**: Agent mandate (🧠 MANDATORY section)
+- **rules/CLAUDE_RULES.md**: Agent mandate (🧠 MANDATORY section)
 - **docs/core/pts-framework-consolidated.md**: Technical integration
 
 ### Authority Hierarchy
 1. **user-input/**: Sacred User Space (absolute authority)
-2. **CLAUDE_RULES.md**: Partnership protocol + Think×4 mandates
+2. **rules/CLAUDE_RULES.md**: Partnership protocol + Think×4 mandates
 3. **docs/core/**: Technical implementation authority
 4. **.claude/commands/**: Executable implementation
 

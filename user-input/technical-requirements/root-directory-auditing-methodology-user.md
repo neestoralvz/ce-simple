@@ -45,7 +45,7 @@
 ### Essential Root Files (User Definition)
 **User Mandate**: "Solo archivos críticos para funcionamiento del sistema"
 - CLAUDE.md (navigation and authority)
-- CLAUDE_RULES.md (partnership protocol)  
+- rules/CLAUDE_RULES.md (partnership protocol)  
 - README.md (project overview)
 - mkdocs.yml (documentation generation)
 - .gitignore (git configuration)

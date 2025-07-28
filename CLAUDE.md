@@ -1,54 +1,83 @@
-# CLAUDE.md - VDD Reset
+# CLAUDE.md - Multi-Subagent Intelligence Dispatcher
 
-**Updated**: 2025-07-26 | **Authority**: user-input/ (Sacred User Space) | **Status**: Clean reset from simulation
+```import
+@/.claude/commands/master-plan.md
+@/.claude/commands/contextflow-agent.md
+@/.claude/commands/context/methodology-core.md
+@/.claude/commands/context/system-architecture.md
+```
 
-## Section 1: User Vision Authority
-@user-input/vision/core-mission-concept.md - Core mission and philosophy
-@user-input/technical-requirements/technical-architecture-user.md - Real technical requirements
-@user-input/technical-requirements/think-by-four-mandatory.md - Think×4 perpetual analysis requirement
-See [user-input/README.md](user-input/README.md) for Sacred User Space authority
+## IMPERATIVO OPERACIONAL
 
-## Section 2: Real Implementation
-**Commands** → [.claude/commands/](.claude/commands/) - Self-contained Task Tool commands with individual sub-agent reporting (explore-codebase, init-project, start, docs-audit)
-**Export Commands** → [export/commands/](export/commands/) - Full command library (86 commands in 15 categories)
-**Core Authority** → [docs/core/](docs/core/) - Organized 6-layer technical authority with Think×4 integration:
-  - **01-fnd-foundations/** - PTS framework with Think×4, development principles, partnership protocol, system principles
-  - **02-std-standards/** - Command governance with Think×4, patterns, tier matrix, development standards  
-  - **03-com-communication/** - Documentation standards, communication rules, context management, markdown compliance
-  - **04-pro-protocols/** - Task orchestration with Think×4, Git workflow, tool usage, parallel execution
-  - **05-per-performance/** - Performance framework, context economy, compaction techniques, progressive disclosure
-  - **06-inf-infrastructure/** - Project structure, command index, navigation system, environment, VDD dashboard
-**System Knowledge** → [docs/context/](docs/context/) - Learned patterns, examples, implementation wisdom
-**Strategic Direction** → [docs/decisions/](docs/decisions/) - Vision and architectural governance
-**Development Tools** → [tools/](tools/) - Templates and utilities for development
-**Rules System** → [rules/](rules/) - Conditional loading protocols and modular rule architecture
-@rules/conditional-loading-protocols.md - Context-based rule activation protocols
+**VOZ DEL USUARIO = FUENTE DE VERDAD ABSOLUTA** - Preservación exacta de decisiones originales.
 
-## Section 3: Core Principles (from user-input/)
-**Think×4 Methodology**: Mandatory cognitive framework (Think → Think Hard → Think Harder → Ultra Think) for all decisions
-**Task Tool Parallelization**: Real parallel execution (8-16 searches, 5-10 files, 4-8 analysis)
-**Self-Contained Commands**: All logic embedded inline (sub-agents can't access external files)
-**Git-Based Intelligence**: Real Git metrics and WorkTrees for parallel development
-**PTS Framework**: 12-component validation (not simulated)
+**ORQUESTACIÓN OBLIGATORIA** - Agente principal NUNCA ejecuta trabajo directo. SIEMPRE despliega subagentes especializados via Task tools.
 
-## Section 4: Implementation Truth
-- **Real Task Tool**: Uses Claude Code's actual Task Tool with parallel sub-agents
-- **No Sub-Agent Architecture**: No simulated coordination protocols
-- **Honest Performance**: Real parallelization gains, not projected metrics
-- **Simple & Functional**: 4 core commands that actually work
+**COMMUNICATION RULES** - NUNCA bash para comunicar. Solo main agent comunica al usuario. Subagents NUNCA direct communication.
 
-## Tech Stack
-- **Platform**: Claude Code with real Task Tool | **Commands**: Self-contained with embedded logic
-- **Authority**: user-input/ → CLAUDE_RULES → docs/core/ → .claude/commands/ → implementation | **Truth**: Real functionality only
+**ANTI-BIAS ENFORCEMENT** - Redacción agnóstica, neutra. NO adjetivos descriptivos. NO sesgos lingüísticos que influencien LLM behavior.
 
-## Section 5: Key Framework Files (Think×4 Integrated)
-**Foundations** → docs/core/01-fnd-foundations/fnd-pts-framework.md (Think×4 + PTS integration), docs/core/01-fnd-foundations/fnd-development-principles.md
-**Standards** → docs/core/02-std-standards/std-command-governance.md (Think×4 enhanced governance), docs/core/02-std-standards/std-tier-matrix.md
-**Communication** → docs/core/03-com-communication/com-documentation.md, docs/core/03-com-communication/com-context-management.md
-**Protocols** → docs/core/04-pro-protocols/pro-task-orchestration.md (Think×4 orchestration), docs/core/04-pro-protocols/pro-git-workflow.md
-**Performance** → docs/core/05-per-performance/per-framework.md, docs/core/05-per-performance/per-context-economy.md
-**Transparency** → .claude/commands/ (individual sub-agent reporting), user-input/technical-requirements/transparency-requirements-user.md
+**PARALLEL TASK TOOLS** - SIEMPRE priorizar Task tools concurrentes en mismo mensaje sobre secuenciales.
+
+**THINK X4 METODOLOGÍA** - Think → Think Hard → Think Harder → Super Think para decisiones complejas.
+
+## ÁRBOL DE DECISIÓN PRINCIPAL
+
+### DECISIÓN INMEDIATA: TIPO DE SOLICITUD
+
+**A. ¿Inicio de sesión?** → EJECUTAR: `/start` con handoff auto-loading
+**B. ¿Procesamiento narrativo?** → EJECUTAR: `/extract-insights` → `/process-layer`  
+**C. ¿Creación documento?** → OBLIGATORIO: `/create-doc` → `/align-doc` → `/verify-doc` (NO excepciones)
+**D. ¿Consulta/exploración?** → EJECUTAR: Subagent orchestration apropiada
+
+## WORKFLOW OBLIGATORIO DOCUMENTOS
+
+**ENFORCEMENT TOTAL - NO EXCEPCIONES PERMITIDAS**
+
+1. **`/create-doc`** - Content Specialist deployment (NUNCA crear documentos directamente)
+2. **`/align-doc`** - Architecture Validator deployment (OBLIGATORIO architecture validation)
+3. **`/verify-doc`** - Quality Assurance deployment (OBLIGATORIO quality gates)
+
+**Auto-chaining**: Workflow secuencial automático con confirmación usuario.
+**Violation**: Crear documentos fuera de este workflow está PROHIBIDO.
+
+## ARQUITECTURA MODULAR
+
+### Estructura Self-Contained
+```
+/.claude/commands/ (ECOSYSTEM COMPLETO)
+    ↓ Commands interoperables únicamente
+    ↓ Templates + utilities internos
+    ↓ Decision trees optimizados
+/narratives/ (DESTILACIÓN ORGÁNICA)
+/handoff/ (CONTINUIDAD SESIONES)
+```
+
+## SESSION CONTINUITY
+
+### **`/start`** - Git + Project Maintenance + Insights Extraction
+- **Git status check** + pull latest changes
+- **Auto-load handoff** + full context loading
+- **Project maintenance**: Gaps, TODOs, commitments + git analysis
+- **Auto-extract insights** de conversations + correlate with commits
+- **System evolution** recommendations based on patterns
+- **Intelligent options** prioritized by maintenance + insights
+
+### **`/session-close`** - Capture + Command Updates + Git Commit
+- **Capture conversation** íntegramente preservando voz
+- **Detect command changes** mencionados durante sesión
+- **Auto-apply updates** a comandos modified/created
+- **Git commit** con trazabilidad completa de changes
+- **Generate handoff** con applied changes documented
+
+### **Architecture Logic**
+```
+Session Close: Capture + Apply (fresh memory de cambios)
+Session Start: Maintain + Extract (full context para analysis)
+```
 
 ---
 
-**Reset Truth**: Clean system based on actual user vision, eliminating architectural simulation
+**SISTEMA EVOLUCIONA ORGÁNICAMENTE** preservando user voice como fuente de verdad mientras optimiza automáticamente architecture + efficiency via multi-subagent intelligence.
+
+**Context detallado**: Ver imports automáticos arriba para methodology, architecture, y token economy.

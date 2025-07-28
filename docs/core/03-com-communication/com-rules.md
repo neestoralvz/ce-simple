@@ -47,7 +47,7 @@ Capture decisions | Integrate learnings | Recognize patterns | Improve via feedb
 ## See Also
 - **[Documentation Standards](documentation-standards.md)** - Writing standards & compaction techniques
 - **[Markdown Standards](markdown-standards.md)** - Formatting compliance framework
-- **[CLAUDE_RULES.md](../../CLAUDE_RULES.md)** - Complete partnership protocol
+- **[rules/CLAUDE_RULES.md](../../rules/CLAUDE_RULES.md)** - Complete partnership protocol
 - **[Context Compaction](../standards/context-compaction-techniques.md)** - Token optimization methods
 - **[System Navigation](../navigation/index.md)** - Complete system access hub
 

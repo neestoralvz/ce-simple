@@ -13,7 +13,7 @@
 ### Mandatory Usage
 - **All new files**: Must include timestamp in header metadata
 - **File updates**: Must update timestamp when content is modified
-- **System files**: CLAUDE.md, CLAUDE_RULES.md always use this format
+- **System files**: CLAUDE.md, rules/CLAUDE_RULES.md always use this format
 
 ### Format Specifications
 - **Date**: YYYY-MM-DD format (ISO 8601 compatible)
@@ -46,7 +46,7 @@
 
 ### System Files
 - **CLAUDE.md**: Always current timestamp
-- **CLAUDE_RULES.md**: Always current timestamp  
+- **rules/CLAUDE_RULES.md**: Always current timestamp  
 - **README files**: Always current timestamp
 
 ## Quality Control

@@ -72,5 +72,5 @@ Update TodoWrite complete all documentation maintenance tasks
 
 ---
 
-@./docs/core/README.md
-@./docs/core/system-principles.md
+docs/core/README.md
+docs/core/system-principles.md

@@ -92,7 +92,7 @@ AI Interprets/Implements → docs/ (structured derivatives)
 
 **Current Cross-References**:
 - `vision/` (7 files) → Pure conceptual framework and philosophy
-- `technical-requirements/` (2 files) → Specific implementation specifications
+- `technical-requirements/` (12 files) → Specific implementation specifications including advanced orchestration patterns
 - `evolution/2025-07-25-23-39-vdd-migration-vision.md` → Establishes VDD architecture and Sacred User Space concept
 - `evolution/2025-07-26-00-25-framework-refinements-complete.md` → Refines framework implementation details  
 - `context/README.md` → Implements structured feedback system requested in evolution sessions

@@ -1,70 +1,76 @@
-# Template System - Simple and Direct
+# Templates - Domain-Based Architecture
 
-**Updated**: 2025-07-26 | **Authority**: Template standards | **Navigation**: [System Hub](../README.md)  
-**Vision**: [Command Philosophy](../vision/command-philosophy.md) | [Development Methodology](../vision/development-methodology.md)  
-**Implementation**: [PTS Framework](../core/pts-framework.md) | [Development Standards](../rules/development-standards.md) | [Command Structure](../rules/command-structure-standard.md)
+**Authority**: Template Compliance Rule | **Updated**: 2025-07-27 14:30 (Mexico City)
+**Purpose**: Standardized templates organized by domain functionality | **Lines**: ≤80
 
-## Overview
+## Domain Structure (MANDATORY)
 
-The ce-simple template system provides essential templates for system components, emphasizing simplicity and direct implementation over complex composition frameworks.
+### governance/ - Authority & Architecture Templates
+- `architecture-decision-template.md` - ADR creation for architectural decisions
+- `user-input-unified-template.md` - Consolidated Sacred User Space requirements
+- `principles-template.md` - Fundamental system principles structure
 
-## Available Templates
+### execution/ - Workflow & Orchestration Templates
+- `command-template.md` - Standard command structure and patterns
+- `foundation-command-patterns.md` - Proven implementation patterns
+- `three-layer-methodology-template.md` - Agent deployment coordination
+- `orchestration-template.md` - Expert panel assembly framework
 
-### Core Templates
-- **command-template.md** - Standard command structure template
-- **claude-md-template.md** - Four-section CLAUDE.md architecture template
-- **claude-rules-template.md** - Partnership protocol template
+### communication/ - Documentation & Standards Templates
+- `claude-md-template.md` - Four-section CLAUDE.md architecture
+- `claude-rules-template.md` - Partnership protocol structure
+- `documentation-template.md` - Comprehensive documentation standards
+- `cognitive-load-optimization-template.md` - Context economy framework
 
-### Documentation Templates  
-- **foundation-command-patterns.md** - Common command patterns
-- **three-layer-methodology-template.md** - Foundation/Implementation/Validation structure
-- **cognitive-load-guidelines.md** - Information density optimization
+### specialized/ - Context & Edge Case Templates
+- `enhanced-conditional-rule-template.md` - Context-triggered rule creation
+- `system-rule-template.md` - Protocol and methodology templates
+- `methodology-template.md` - Systematic approach documentation
+- `framework-template.md` - Framework definition structure
+- `metrics-template.md` - Quantitative success criteria framework
 
-### Context Economy Templates
-- **context-economy-template.md** - File optimization using Context Economy Framework
-- **system-rule-template.md** - System protocols and rules standardization
+## Template Standards (UNIVERSAL)
 
-### Specialized Templates
-- **architecture-decision-template.md** - Architecture Decision Records (ADRs)
-- **methodology-template.md** - Methodology definition and documentation
-- **framework-template.md** - Framework definition and component structure
+### Header Format (MANDATORY)
+```markdown
+# {{TITLE}}
+**Authority**: {{DOMAIN}} | **Purpose**: {{SPECIFIC_FUNCTION}}
+**Updated**: YYYY-MM-DD HH:MM (Mexico City) | **Lines**: ≤{{LIMIT}}
+```
 
-## Template Standards
+### Line Limits (BLOCKING)
+- **Governance Templates**: ≤80 lines (principles, decisions)
+- **Execution Templates**: ≤80 lines (commands, workflows)
+- **Communication Templates**: ≤80 lines (documentation, standards)
+- **Specialized Templates**: ≤80 lines (metrics, methodologies)
 
-### Line Limits
-- **Commands**: ≤80 lines maximum
-- **Documentation**: ≤100 lines maximum  
-- **CLAUDE.md**: ≤50 lines maximum
-- **Concepts**: ≤50 lines for cognitive optimization
+### Content Requirements (MANDATORY)
+- **≥80% Information Density**: Maximum value per line
+- **≤20% Redundancy**: Eliminate duplicate content
+- **100% Technical Accuracy**: Precise, actionable guidance
+- **English-Only**: Zero mixed languages enforcement
 
-### Quality Requirements
-- **PTS Compliance**: All templates must meet 12/12 PTS component validation
-- **English Only**: Zero non-English content
-- **Self-Contained**: No external dependencies
-- **Single Responsibility**: Each template serves one specific purpose
+## Usage Protocol (MANDATORY)
 
-## Usage Guidelines
+### Template Selection
+1. **Identify Domain**: Choose appropriate domain directory
+2. **Select Template**: Match template to specific need
+3. **Apply Variables**: Replace {{VARIABLES}} with actual values
+4. **Validate Compliance**: Verify line limits and standards
+5. **Quality Check**: Ensure Template Compliance Rule adherence
 
-### Command Templates
-Use `command-template.md` as the base for all new commands. Follow the established pattern:
-1. **Purpose** - Single sentence problem definition
-2. **Principles** - PTS compliance specifications  
-3. **Execution Process** - Phase-based implementation
-4. **Error Handling** - Specific fallback procedures
+### Quality Gates
+- **Pre-Use**: Verify template matches domain and purpose
+- **During Use**: Apply all variable substitutions completely
+- **Post-Use**: Validate line limits and content standards
+- **Review**: Ensure English-only and technical accuracy
 
-### Documentation Templates
-Follow three-layer architecture:
-1. **Foundation** (≤50 lines) - Essential concepts
-2. **Implementation** (≤100 lines) - Detailed procedures
-3. **Validation** (≤100 lines) - Quality gates
-
-### CLAUDE.md Templates
-Use four-section architecture:
-1. **Essential Context** - @ imports for immediate loading
-2. **Conditional Instructions** - Task-based loading with READ syntax
-3. **Context Navigation** - Directory references
-4. **Practical Development** - Anthropic best practices integration
+## Success Criteria (BLOCKING)
+**Template Compliance**: 100% adherence to domain structure and line limits
+**Content Quality**: ≥80% information density with ≤20% redundancy
+**Functional Accuracy**: Zero broken references or incomplete variable substitutions
+**Domain Alignment**: Perfect match between template purpose and domain classification
 
 ---
 
-**Principle**: Simple, direct templates that eliminate complexity while maintaining functionality.
+**Template Authority**: Domain-based template system ensures consistent quality and cognitive load optimization across all rule and documentation creation

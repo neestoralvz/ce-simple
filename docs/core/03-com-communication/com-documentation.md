@@ -34,7 +34,7 @@
 **Implementation Layer**: ≤100 lines - Detailed procedures for agent deployment (context economy)
 **Validation Layer**: ≤100 lines - Quality gates and checklists for agent validation (focused compliance)
 **Zero Duplication**: One specialized file per concept | Layer separation prevents overlap
-**Protocol Integration**: @CLAUDE_RULES.md partnership governance + @CLAUDE.md navigation rules apply
+**Protocol Integration**: @rules/CLAUDE_RULES.md partnership governance + @CLAUDE.md navigation rules apply
 
 ## Context Management
 

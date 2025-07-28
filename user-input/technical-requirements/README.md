@@ -15,6 +15,7 @@ This directory contains **technical specifications and implementation requiremen
 ### Core Technical Architecture
 - **[technical-architecture-user.md](technical-architecture-user.md)** → User's technical architecture vision and execution mechanisms
 - **[execution-strategies-user.md](execution-strategies-user.md)** → User's parallelization strategies and performance optimization requirements
+- **[advanced-orchestration-patterns-user.md](advanced-orchestration-patterns-user.md)** → User's advanced orchestration patterns for enhanced parallel execution
 
 ## Technical Requirements Categories
 

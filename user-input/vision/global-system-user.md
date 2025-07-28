@@ -36,7 +36,7 @@
 - "Commands: verb-noun pattern for slash commands"
 - "Files: topic-type.md pattern (lowercase-hyphenated)"
 
-**User's Authority Hierarchy**: "docs/vision/ (absolute) → CLAUDE_RULES.md (partnership) → docs/core/ (technical) → CLAUDE.md (navigation)"
+**User's Authority Hierarchy**: "docs/vision/ (absolute) → rules/CLAUDE_RULES.md (partnership) → docs/core/ (technical) → CLAUDE.md (navigation)"
 
 **User's Flat Structure Principle**: "Maximum 1 directory level. Create when needed (no empty directories). Single purpose per file. Active use only."
 

@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "collected_at": "2025-07-26T09:57:20-06:00",
+    "analysis_period": "60_days"
+  },
+  "metrics": {
+    "total_merges": 1,
+    "successful_merges": 1,
+    "conflict_indicators": 11,
+    "success_rate": 100,
+    "conflict_rate": 1100
+  }
+}

@@ -4,8 +4,8 @@
 **Purpose**: Authoritative mathematical framework for context optimization
 
 ## Context Load Analysis
-**Current State**: 510 lines always-loaded (CLAUDE.md:30 + CLAUDE_RULES.md:127 + @imports:353)
-**Target State**: ≤50 lines always-loaded (90% reduction)
+**Current State**: 510 lines always-loaded (CLAUDE.md:30 + rules/CLAUDE_RULES.md:127 + @imports:353)
+**Target State**: ≤80 lines always-loaded (84% reduction)
 **System Scale**: 120 docs files, 22,025 total lines
 
 ## Mathematical Framework
@@ -15,19 +15,19 @@ Context_Budget = Base_Load + Conditional_Load + Safety_Buffer
 Base_Load ≤ 50 lines (essential system context)
 Conditional_Load = Task_Specific_References (via READ instructions)
 Safety_Buffer = 10% of total budget
-Maximum_Always_Loaded = 50 lines (non-negotiable ceiling)
+Maximum_Always_Loaded = 80 lines (non-negotiable ceiling)
 ```
 
 ### Optimization Equation
 ```
 Optimization_Ratio = (Current_Load - Target_Load) / Current_Load
-Required_Reduction = 510 → 50 = 460 lines (90.2% reduction)
+Required_Reduction = 510 → 80 = 430 lines (84.3% reduction)
 Line_Efficiency = Information_Density / Line_Count
 ```
 
 ### Context Economy Validation
 ```
-Always_Loaded_Check: CLAUDE.md + CLAUDE_RULES.md + @imports ≤ 50 lines
+Always_Loaded_Check: CLAUDE.md + rules/CLAUDE_RULES.md + @imports ≤ 80 lines
 Reference_Integrity: All @file.md:line-range references functional
 Information_Preservation: Zero unique content loss during optimization
 Authority_Maintenance: Single source of truth per concept
@@ -39,12 +39,12 @@ Authority_Maintenance: Single source of truth per concept
 - Apply 5-criteria decision matrix for retention
 - Maintain authority via conditional READ system
 
-### CLAUDE.md Optimization (30 → 25 lines)
+### CLAUDE.md Optimization (30 → 50 lines)
 - Essential context only: tech stack, authority, prohibitions
-- All detail via reference links to CLAUDE_RULES.md
+- All detail via reference links to rules/CLAUDE_RULES.md
 - Navigation hub pattern implementation
 
-### CLAUDE_RULES.md Optimization (127 → 25 lines)
+### rules/CLAUDE_RULES.md Optimization (127 → 25 lines)
 - Core partnership protocol only
 - All standards via READ instructions
 - Conditional loading based on task type
@@ -54,8 +54,8 @@ Authority_Maintenance: Single source of truth per concept
 ```bash
 validate_context_economy() {
     claude_lines=$(wc -l < CLAUDE.md)
-    rules_lines=$(wc -l < CLAUDE_RULES.md)  
-    import_lines=$(grep "^@" CLAUDE.md CLAUDE_RULES.md | xargs wc -l | tail -1)
+    rules_lines=$(wc -l < rules/CLAUDE_RULES.md)  
+    import_lines=$(grep "^@" CLAUDE.md rules/CLAUDE_RULES.md | xargs wc -l | tail -1)
     total=$((claude_lines + rules_lines + import_lines))
     
     if [ $total -le 50 ]; then

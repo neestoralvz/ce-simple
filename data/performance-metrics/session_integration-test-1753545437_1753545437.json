@@ -1,0 +1,12 @@
+{
+  "session_id": "integration-test-1753545437",
+  "start_time": 1753545437.5941188,
+  "end_time": 1753545438.654795,
+  "total_duration": 1.060676097869873,
+  "agent_count": 0,
+  "parallel_efficiency": 0,
+  "speedup_factor": 1,
+  "sequential_estimate": 1.060676097869873,
+  "success_rate": 0,
+  "agents": []
+}

@@ -49,5 +49,5 @@ Intelligent documentation generation and knowledge management. These commands cr
 
 ---
 
-@./docs/core/README.md
-@./docs/core/system-principles.md
+docs/core/README.md
+docs/core/system-principles.md

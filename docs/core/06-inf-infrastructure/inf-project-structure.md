@@ -6,8 +6,8 @@
 
 ```
 ce-simple/
-├── CLAUDE_RULES.md               # Partnership protocol + Think×4 mandatory
-├── CLAUDE.md                     # System navigation hub (≤50 lines)
+├── rules/CLAUDE_RULES.md               # Partnership protocol + Think×4 mandatory
+├── CLAUDE.md                     # System navigation hub (≤80 lines)
 ├── .claude/                      # Claude Code integration
 │   ├── commands/                # Executable commands (4 core commands)
 │   │   ├── docs-audit.md       # Documentation system audit
@@ -60,8 +60,8 @@ ce-simple/
 ## Directory Functions
 
 ### Essential System Files
-- **CLAUDE_RULES.md**: Partnership protocol + Think×4 mandates + authority hierarchy
-- **CLAUDE.md**: Navigation entry point with @ imports + essential context
+- **rules/CLAUDE_RULES.md**: Partnership protocol + Think×4 mandates + authority hierarchy
+- **CLAUDE.md**: Navigation entry point with imports + essential context
 
 ### Core Implementation (`.claude/`)
 - **commands/**: Self-contained Task Tool commands using Claude Code convention
@@ -108,7 +108,7 @@ ce-simple/
 - **docs/archive/** → **docs/.archive/** (hidden from navigation)
 
 ### New Integrations
-- **Think×4 perpetual analysis**: Mandatory in user-input/, CLAUDE_RULES.md, core/PTS framework
+- **Think×4 perpetual analysis**: Mandatory in user-input/, rules/CLAUDE_RULES.md, core/PTS framework
 - **Unified technical authority**: All standards, rules, protocols in core/
 - **Conceptual organization**: Context (learned) vs Decisions (strategic) vs Core (technical)
 

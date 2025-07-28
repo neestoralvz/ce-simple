@@ -191,7 +191,7 @@ create_meta_compliant_standard "validation" "Ensure systematic quality complianc
 
 ## Section 1: Essential Context (Always Loaded) - 10 lines max
 @docs/core/project-structure-current.md
-@CLAUDE_RULES.md:1-25
+@rules/CLAUDE_RULES.md:1-25
 
 ## Section 2: Conditional Instructions (Task-Based Loading) - 15 lines max
 **Documentation Work** → READ docs/rules/documentation-standards-foundation.md:15-30 + docs/rules/markdown-standards.md:10-25

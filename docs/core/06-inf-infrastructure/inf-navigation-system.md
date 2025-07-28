@@ -9,43 +9,43 @@
 ## Decision-Triggered References
 
 ### Session Start → Partnership Context
-**Activate**: @CLAUDE_RULES.md | @docs/rules/communication-rules.md | @docs/rules/documentation-standards.md
+**Activate**: rules/CLAUDE_RULES.md | docs/rules/communication-rules.md | docs/rules/documentation-standards.md
 **Purpose**: Establish English-only + imperative tone + partnership protocol
 
 ### Development Tasks → Technical Context  
-**Activate**: @docs/core/development-principles.md | @docs/core/pts-checklist.md
+**Activate**: docs/core/development-principles.md | docs/core/pts-checklist.md
 **Purpose**: Apply Think x4 + PTS 12/12 validation before implementation
 
 ### Documentation Work → Writing Context
-**Activate**: @docs/rules/markdown-standards.md | @docs/standards/context-compaction-techniques.md
+**Activate**: docs/rules/markdown-standards.md | docs/standards/context-compaction-techniques.md
 **Purpose**: Enforce formatting + compaction + 100-line limits
 
 ### Architecture Decisions → Framework Context
-**Activate**: @docs/core/pts-framework.md | @export/CLAUDE.md | @docs/templates/
+**Activate**: docs/core/pts-framework.md | export/CLAUDE.md | docs/templates/
 **Purpose**: Apply technical excellence + proven patterns
 
 ## Navigation Patterns
 
 ### Documentation Creation Pattern
 ```
-Decision: Create new doc → @docs/governance/nomenclature-decision.md → Determine Rule vs Standard
-Decision: Choose tone → @docs/rules/communication-rules.md → Apply imperative verbs  
-Decision: Set limits → @docs/rules/documentation-standards.md → Apply 100-line max
-Decision: Format content → @docs/rules/markdown-standards.md → Apply Markdown compliance
+Decision: Create new doc → docs/governance/nomenclature-decision.md → Determine Rule vs Standard
+Decision: Choose tone → docs/rules/communication-rules.md → Apply imperative verbs  
+Decision: Set limits → docs/rules/documentation-standards.md → Apply 100-line max
+Decision: Format content → docs/rules/markdown-standards.md → Apply Markdown compliance
 ```
 
 ### Command Development Pattern
 ```
-Decision: New command → @export/CLAUDE.md → Reference 80-line limit + global patterns
-Decision: Complexity analysis → @docs/core/development-principles.md → Apply Think x4 layers
-Decision: Validation → @docs/core/pts-checklist.md → Execute 12/12 PTS components
+Decision: New command → export/CLAUDE.md → Reference 80-line limit + global patterns
+Decision: Complexity analysis → docs/core/development-principles.md → Apply Think x4 layers
+Decision: Validation → docs/core/pts-checklist.md → Execute 12/12 PTS components
 ```
 
 ### Communication Pattern
 ```
-Decision: Language detected → @docs/rules/communication-rules.md → Enforce English-only
-Decision: Documentation tone → @docs/rules/communication-rules.md → Use imperative verbs
-Decision: Research needed → @CLAUDE_RULES.md → Execute proactive search protocol
+Decision: Language detected → docs/rules/communication-rules.md → Enforce English-only
+Decision: Documentation tone → docs/rules/communication-rules.md → Use imperative verbs
+Decision: Research needed → rules/CLAUDE_RULES.md → Execute proactive search protocol
 ```
 
 ## Implementation Protocol
@@ -55,7 +55,7 @@ Decision: Research needed → @CLAUDE_RULES.md → Execute proactive search prot
 **Pattern**: Decision point → Reference activation → Informed action
 
 ### Context Economy Optimization
-**Apply**: Line-level references `@file.md:15-23` for precise context
+**Apply**: Line-level references `file.md:15-23` for precise context
 **Balance**: Sufficient information vs token efficiency
 
 ### Decision Audit Trail
@@ -65,7 +65,7 @@ Decision: Research needed → @CLAUDE_RULES.md → Execute proactive search prot
 ## Reference Mapping
 
 ### Always Active (Core Context)
-CLAUDE_RULES.md | communication-rules.md | documentation-standards.md
+rules/CLAUDE_RULES.md | communication-rules.md | documentation-standards.md
 
 ### Context-Triggered (Specific Tasks)
 development-principles.md | pts-framework.md | markdown-standards.md
