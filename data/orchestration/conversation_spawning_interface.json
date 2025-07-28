@@ -1,0 +1,27 @@
+{
+  "voice_preservation": {
+    "immutable_decisions": true,
+    "preference_patterns_maintained": true,
+    "voice_score_minimum": 54,
+    "consistency_validation": true,
+    "research_integration_mandatory": true,
+    "current_date_usage": true,
+    "systematic_integration": true
+  },
+  "orchestrator_id": "orchestrator-hub-coordinator",
+  "active_since": "2025-07-28T14:36:31.982836",
+  "spawned_conversations": [
+    {
+      "conversation_id": "research-specialist-143631",
+      "task_id": "31b10110-7b7a-4e76-97c4-b9724093f479",
+      "type": "research_specialist"
+    }
+  ],
+  "spawn_count": 1,
+  "available_types": [
+    "research_specialist",
+    "architecture_validator",
+    "integration_specialist",
+    "performance_monitor"
+  ]
+}

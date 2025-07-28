@@ -1,0 +1,56 @@
+{
+  "worktree_config": {
+    "base_path": "/Users/nalve/ce-simple/worktrees/",
+    "active_worktrees": [
+      "priority-1-validation",
+      "priority-2-git-cleanup",
+      "priority-3-implementation"
+    ],
+    "orchestrator_worktree": "orchestrator-hub/",
+    "coordination_file": "coordination-state.md",
+    "shared_git_dir": "/Users/nalve/ce-simple/.git",
+    "orchestrator_config": {
+      "isolation_level": "conversation",
+      "resource_sharing": "optimized",
+      "parallel_execution": true,
+      "context_loading": "automatic"
+    },
+    "integration_timestamp": "2025-07-28T14:35:55.616892",
+    "verified_worktrees": [
+      "priority-3-implementation",
+      "priority-2-git-cleanup",
+      "priority-1-validation"
+    ]
+  },
+  "sqlite_integration": {
+    "orchestrator_id": "orchestrator-hub-coordinator",
+    "database_path": "/Users/nalve/ce-simple/data/orchestration/conversations.db",
+    "table_coordination": "conversation_registry",
+    "message_routing": "conversation_messages",
+    "task_management": "conversation_tasks",
+    "worktree_mapping": {
+      "base_path": "/Users/nalve/ce-simple/worktrees/",
+      "active_worktrees": [
+        "priority-1-validation",
+        "priority-2-git-cleanup",
+        "priority-3-implementation"
+      ],
+      "orchestrator_worktree": "orchestrator-hub/",
+      "coordination_file": "coordination-state.md",
+      "shared_git_dir": "/Users/nalve/ce-simple/.git",
+      "orchestrator_config": {
+        "isolation_level": "conversation",
+        "resource_sharing": "optimized",
+        "parallel_execution": true,
+        "context_loading": "automatic"
+      },
+      "integration_timestamp": "2025-07-28T14:35:55.616892",
+      "verified_worktrees": [
+        "priority-3-implementation",
+        "priority-2-git-cleanup",
+        "priority-1-validation"
+      ]
+    },
+    "active_since": "2025-07-28T14:35:55.618901"
+  }
+}

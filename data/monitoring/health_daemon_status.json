@@ -2,10 +2,10 @@
   "status": "running",
   "pid": 37803,
   "started_at": "2025-07-28T13:46:45.574997",
-  "last_update": "2025-07-28T14:31:16.229354",
-  "cycle_count": 89,
+  "last_update": "2025-07-28T15:03:46.656293",
+  "cycle_count": 154,
   "mode": "daemon",
-  "health_score": 0.0,
+  "health_score": 0.245,
   "voice_preservation": 0.0,
   "active_alerts": 0
 }

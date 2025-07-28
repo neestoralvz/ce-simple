@@ -229,6 +229,60 @@ run_in_background = true
 command = "/Users/nalve/ce-simple/.claude/hooks/debug-logging.sh 'POST' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_OUTPUT'"
 
 # ============================================================================
+# ORCHESTRATION MONITORING HOOKS
+# Real-time progress reporting for specialized conversations
+# ============================================================================
+
+# Tool usage progress reporting
+[[hooks]]
+event = "PostToolUse"
+description = "Report tool usage progress to orchestrator hub"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Task"
+command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Report todo status changes to orchestrator"
+run_in_background = true
+[hooks.matcher]
+tool_name = "TodoWrite"
+command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Report file operations to orchestrator"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Write"
+command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Report file edits to orchestrator"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Edit"
+command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Report multi-file edits to orchestrator"
+run_in_background = true
+[hooks.matcher]
+tool_name = "MultiEdit"
+command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+[[hooks]]
+event = "PostToolUse"
+description = "Report bash commands to orchestrator"
+run_in_background = true
+[hooks.matcher]
+tool_name = "Bash"
+command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+# ============================================================================
 # HOOK CONFIGURATION NOTES
 # ============================================================================
 
