@@ -1,970 +1,815 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3  
 """
-System Health Monitoring Suite
-Comprehensive monitoring for system health and user voice preservation metrics
+CE-Simple System Health & User Voice Preservation Monitoring Suite
+Claude Code CLI Specific Implementation - 2025 Best Practices
 """
 
 import json
-import time
 import os
-import logging
-import statistics
-from datetime import datetime, timedelta
-from pathlib import Path
-from typing import Dict, List, Optional, Any, Tuple
-from dataclasses import dataclass, asdict
-from collections import defaultdict, deque
-import hashlib
 import sqlite3
-
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Tuple
+from pathlib import Path
+from dataclasses import dataclass, asdict
+import subprocess
+import hashlib
+import logging
+import time
+from collections import defaultdict, deque
+import threading
+import asyncio
 
 @dataclass
-class SystemHealthMetrics:
-    """Core system health indicators"""
-    timestamp: float
-    cpu_usage: float
-    memory_usage: float
-    response_time: float
-    success_rate: float
-    error_count: int
-    active_sessions: int
-    availability_score: float
+class HealthMetrics:
+    """System health metrics following Claude Code best practices"""
+    timestamp: str
+    system_performance: Dict[str, float]
+    user_voice_preservation: Dict[str, float] 
+    command_effectiveness: Dict[str, float]
+    integration_quality: Dict[str, float]
+    claude_code_metrics: Dict[str, float]
+
+@dataclass
+class VoicePreservationMetric:
+    """User voice preservation tracking specific to Claude Code"""
+    session_id: str
+    user_decision: str
+    preservation_score: float
+    authenticity_markers: List[str]
+    context_fidelity: float
+    decision_traceability: bool
+    timestamp: str
+
+class ClaudeCodeHealthMonitor:
+    """Comprehensive monitoring for Claude Code CLI operations"""
     
-@dataclass
-class UserVoiceMetrics:
-    """User voice preservation tracking"""
-    timestamp: float
-    intent_preservation_score: float
-    context_accuracy: float
-    voice_authenticity: float
-    decision_fidelity: float
-    original_request_hash: str
-    processed_output_quality: float
-    
-@dataclass
-class CommandMetrics:
-    """Command effectiveness tracking"""
-    timestamp: float
-    command_name: str
-    execution_time: float
-    success: bool
-    error_type: Optional[str]
-    resource_usage: Dict[str, float]
-    user_satisfaction: Optional[float]
-    output_quality: float
-
-@dataclass
-class IntegrationMetrics:
-    """Cross-system integration quality"""
-    timestamp: float
-    component_a: str
-    component_b: str
-    interaction_latency: float
-    data_integrity_score: float
-    handoff_success: bool
-    sync_accuracy: float
-
-class HealthDatabase:
-    """SQLite database for metrics storage"""
-    
-    def __init__(self, db_path: str):
-        self.db_path = db_path
+    def __init__(self, data_path: str = "data/monitoring/health.db"):
+        self.data_path = Path(data_path)
+        self.data_path.parent.mkdir(parents=True, exist_ok=True)
+        
         self.init_database()
+        
+        # Claude Code specific configurations
+        self.config = {
+            "voice_preservation_threshold": 0.95,
+            "system_health_threshold": 0.80,
+            "task_tool_success_threshold": 0.90,
+            "context_fidelity_minimum": 0.85,
+            "integration_quality_target": 0.92,
+            "monitoring_interval": 30  # seconds
+        }
+        
+        # Real-time monitoring storage
+        self.recent_metrics = deque(maxlen=500)
+        self.voice_preservation_cache = deque(maxlen=200)
+        self.active_sessions = {}
+        self.alert_history = deque(maxlen=100)
+        
+        # Claude Code tool tracking
+        self.tool_usage_stats = defaultdict(lambda: {
+            'total_calls': 0,
+            'successful_calls': 0, 
+            'avg_execution_time': 0.0,
+            'context_preservation_rate': 0.0
+        })
+        
+        logging.basicConfig(level=logging.INFO)
+        self.logger = logging.getLogger(__name__)
+        
+        # Start background monitoring
+        self.start_monitoring_thread()
     
     def init_database(self):
-        """Initialize database tables"""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                CREATE TABLE IF NOT EXISTS system_health (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp REAL,
-                    cpu_usage REAL,
-                    memory_usage REAL,
-                    response_time REAL,
-                    success_rate REAL,
-                    error_count INTEGER,
-                    active_sessions INTEGER,
-                    availability_score REAL
-                )
-            ''')
-            
-            conn.execute('''
-                CREATE TABLE IF NOT EXISTS user_voice (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp REAL,
-                    intent_preservation_score REAL,
-                    context_accuracy REAL,
-                    voice_authenticity REAL,
-                    decision_fidelity REAL,
-                    original_request_hash TEXT,
-                    processed_output_quality REAL
-                )
-            ''')
-            
-            conn.execute('''
-                CREATE TABLE IF NOT EXISTS command_metrics (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp REAL,
-                    command_name TEXT,
-                    execution_time REAL,
-                    success BOOLEAN,
-                    error_type TEXT,
-                    resource_usage TEXT,
-                    user_satisfaction REAL,
-                    output_quality REAL
-                )
-            ''')
-            
-            conn.execute('''
-                CREATE TABLE IF NOT EXISTS integration_metrics (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp REAL,
-                    component_a TEXT,
-                    component_b TEXT,
-                    interaction_latency REAL,
-                    data_integrity_score REAL,
-                    handoff_success BOOLEAN,
-                    sync_accuracy REAL
-                )
-            ''')
-            
-            conn.execute('''
-                CREATE TABLE IF NOT EXISTS alerts (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    timestamp REAL,
-                    alert_type TEXT,
-                    severity TEXT,
-                    message TEXT,
-                    resolved BOOLEAN DEFAULT FALSE,
-                    resolution_time REAL
-                )
-            ''')
-
-    def store_system_health(self, metrics: SystemHealthMetrics):
-        """Store system health metrics"""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                INSERT INTO system_health 
-                (timestamp, cpu_usage, memory_usage, response_time, success_rate, 
-                 error_count, active_sessions, availability_score)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (
-                metrics.timestamp, metrics.cpu_usage, metrics.memory_usage,
-                metrics.response_time, metrics.success_rate, metrics.error_count,
-                metrics.active_sessions, metrics.availability_score
-            ))
-
-    def store_user_voice(self, metrics: UserVoiceMetrics):
-        """Store user voice metrics"""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                INSERT INTO user_voice 
-                (timestamp, intent_preservation_score, context_accuracy, voice_authenticity,
-                 decision_fidelity, original_request_hash, processed_output_quality)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            ''', (
-                metrics.timestamp, metrics.intent_preservation_score, metrics.context_accuracy,
-                metrics.voice_authenticity, metrics.decision_fidelity, 
-                metrics.original_request_hash, metrics.processed_output_quality
-            ))
-
-    def store_command_metrics(self, metrics: CommandMetrics):
-        """Store command metrics"""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                INSERT INTO command_metrics 
-                (timestamp, command_name, execution_time, success, error_type,
-                 resource_usage, user_satisfaction, output_quality)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (
-                metrics.timestamp, metrics.command_name, metrics.execution_time,
-                metrics.success, metrics.error_type, json.dumps(metrics.resource_usage),
-                metrics.user_satisfaction, metrics.output_quality
-            ))
-
-    def store_integration_metrics(self, metrics: IntegrationMetrics):
-        """Store integration metrics"""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                INSERT INTO integration_metrics 
-                (timestamp, component_a, component_b, interaction_latency,
-                 data_integrity_score, handoff_success, sync_accuracy)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            ''', (
-                metrics.timestamp, metrics.component_a, metrics.component_b,
-                metrics.interaction_latency, metrics.data_integrity_score,
-                metrics.handoff_success, metrics.sync_accuracy
-            ))
-
-    def store_alert(self, alert_type: str, severity: str, message: str):
-        """Store alert"""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                INSERT INTO alerts (timestamp, alert_type, severity, message)
-                VALUES (?, ?, ?, ?)
-            ''', (time.time(), alert_type, severity, message))
-
-class MetricsCollector:
-    """Central metrics collection and analysis"""
+        """Initialize SQLite database with Claude Code specific schema"""
+        conn = sqlite3.connect(self.data_path)
+        
+        # System health metrics table
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS health_metrics (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                timestamp TEXT NOT NULL,
+                system_performance TEXT NOT NULL,
+                user_voice_preservation TEXT NOT NULL,
+                command_effectiveness TEXT NOT NULL,
+                integration_quality TEXT NOT NULL,
+                claude_code_metrics TEXT NOT NULL,
+                overall_score REAL NOT NULL,
+                session_id TEXT,
+                INDEX(timestamp),
+                INDEX(overall_score)
+            )
+        ''')
+        
+        # User voice preservation tracking
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS voice_preservation (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id TEXT NOT NULL,
+                user_decision TEXT NOT NULL,
+                preservation_score REAL NOT NULL,
+                authenticity_markers TEXT NOT NULL,
+                context_fidelity REAL NOT NULL,
+                decision_traceability BOOLEAN NOT NULL,
+                timestamp TEXT NOT NULL,
+                INDEX(session_id),
+                INDEX(preservation_score),
+                INDEX(timestamp)
+            )
+        ''')
+        
+        # Claude Code tool performance
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS tool_performance (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                tool_name TEXT NOT NULL,
+                execution_time REAL NOT NULL,
+                success BOOLEAN NOT NULL,
+                context_preserved BOOLEAN NOT NULL,
+                user_voice_maintained BOOLEAN NOT NULL,
+                subagent_coordination BOOLEAN,
+                timestamp TEXT NOT NULL,
+                session_id TEXT,
+                INDEX(tool_name),
+                INDEX(timestamp)
+            )
+        ''')
+        
+        # System alerts and anomalies
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS system_alerts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                alert_type TEXT NOT NULL,
+                severity TEXT NOT NULL,
+                message TEXT NOT NULL,
+                metrics TEXT,
+                resolved BOOLEAN DEFAULT FALSE,
+                timestamp TEXT NOT NULL,
+                INDEX(alert_type),
+                INDEX(severity),
+                INDEX(timestamp)
+            )
+        ''')
+        
+        conn.commit()
+        conn.close()
     
-    def __init__(self, base_path: str):
-        self.base_path = Path(base_path)
-        self.db_path = self.base_path / "monitoring.db"
-        self.db = HealthDatabase(str(self.db_path))
+    def record_tool_execution(self, tool_name: str, execution_time: float, 
+                            success: bool, context_preserved: bool = True,
+                            user_voice_maintained: bool = True,
+                            subagent_coordination: bool = False) -> str:
+        """Record Claude Code tool execution metrics"""
+        conn = sqlite3.connect(self.data_path)
         
-        # In-memory caches for real-time analysis
-        self.recent_system_metrics = deque(maxlen=100)
-        self.recent_voice_metrics = deque(maxlen=100)
-        self.recent_command_metrics = deque(maxlen=200)
-        self.recent_integration_metrics = deque(maxlen=50)
+        session_id = self.get_current_session_id()
         
-        # Alert thresholds
-        self.alert_thresholds = {
-            'cpu_usage': 80.0,
-            'memory_usage': 85.0,
-            'response_time': 5.0,
-            'success_rate': 95.0,
-            'availability_score': 98.0,
-            'intent_preservation_score': 90.0,
-            'voice_authenticity': 85.0,
-            'context_accuracy': 92.0
+        cursor = conn.execute('''
+            INSERT INTO tool_performance 
+            (tool_name, execution_time, success, context_preserved, 
+             user_voice_maintained, subagent_coordination, timestamp, session_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ''', (
+            tool_name, execution_time, success, context_preserved,
+            user_voice_maintained, subagent_coordination,
+            datetime.now().isoformat(), session_id
+        ))
+        
+        record_id = cursor.lastrowid
+        conn.commit()
+        conn.close()
+        
+        # Update real-time stats
+        self._update_tool_stats(tool_name, execution_time, success, context_preserved)
+        
+        # Check for performance alerts
+        self._check_tool_performance_alerts(tool_name, execution_time, success)
+        
+        return str(record_id)
+    
+    def record_voice_preservation(self, session_id: str, user_decision: str,
+                                preservation_score: float, authenticity_markers: List[str],
+                                context_fidelity: float, decision_traceability: bool) -> str:
+        """Record user voice preservation metrics"""
+        voice_metric = VoicePreservationMetric(
+            session_id=session_id,
+            user_decision=user_decision,
+            preservation_score=preservation_score,
+            authenticity_markers=authenticity_markers,
+            context_fidelity=context_fidelity,
+            decision_traceability=decision_traceability,
+            timestamp=datetime.now().isoformat()
+        )
+        
+        conn = sqlite3.connect(self.data_path)
+        
+        cursor = conn.execute('''
+            INSERT INTO voice_preservation 
+            (session_id, user_decision, preservation_score, authenticity_markers,
+             context_fidelity, decision_traceability, timestamp)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        ''', (
+            voice_metric.session_id, voice_metric.user_decision,
+            voice_metric.preservation_score, json.dumps(voice_metric.authenticity_markers),
+            voice_metric.context_fidelity, voice_metric.decision_traceability,
+            voice_metric.timestamp
+        ))
+        
+        record_id = cursor.lastrowid
+        conn.commit()
+        conn.close()
+        
+        # Add to real-time cache
+        self.voice_preservation_cache.append(voice_metric)
+        
+        # Check voice preservation alerts
+        self._check_voice_preservation_alerts(voice_metric)
+        
+        return str(record_id)
+    
+    def get_system_health_snapshot(self) -> Dict:
+        """Get comprehensive system health snapshot"""
+        now = datetime.now()
+        
+        # System performance metrics
+        system_perf = self._calculate_system_performance()
+        
+        # User voice preservation metrics  
+        voice_preservation = self._calculate_voice_preservation_metrics()
+        
+        # Command effectiveness metrics
+        command_effectiveness = self._calculate_command_effectiveness()
+        
+        # Integration quality metrics
+        integration_quality = self._calculate_integration_quality()
+        
+        # Claude Code specific metrics
+        claude_code_metrics = self._calculate_claude_code_metrics()
+        
+        # Overall health score
+        overall_score = self._calculate_overall_health_score(
+            system_perf, voice_preservation, command_effectiveness,
+            integration_quality, claude_code_metrics
+        )
+        
+        health_snapshot = {
+            "timestamp": now.isoformat(),
+            "overall_health_score": round(overall_score, 3),
+            "system_performance": system_perf,
+            "user_voice_preservation": voice_preservation,
+            "command_effectiveness": command_effectiveness, 
+            "integration_quality": integration_quality,
+            "claude_code_metrics": claude_code_metrics,
+            "active_alerts": self._get_active_alerts(),
+            "recommendations": self._generate_health_recommendations(overall_score)
         }
         
-        # Performance tracking
-        self.performance_windows = {
-            '1h': deque(maxlen=60),    # 1 hour (1min intervals)
-            '24h': deque(maxlen=288),  # 24 hours (5min intervals)
-            '7d': deque(maxlen=168)    # 7 days (1hour intervals)
+        # Store in database
+        self._store_health_metrics(health_snapshot)
+        
+        return health_snapshot
+    
+    def _calculate_system_performance(self) -> Dict[str, float]:
+        """Calculate system performance metrics"""
+        # Get recent tool executions (last hour)
+        cutoff = (datetime.now() - timedelta(hours=1)).isoformat()
+        
+        conn = sqlite3.connect(self.data_path)
+        cursor = conn.execute('''
+            SELECT AVG(execution_time) as avg_time,
+                   AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as success_rate,
+                   COUNT(*) as total_executions
+            FROM tool_performance 
+            WHERE timestamp > ?
+        ''', (cutoff,))
+        
+        result = cursor.fetchone()
+        conn.close()
+        
+        if result and result[2] > 0:
+            avg_response_time = result[0] or 0.0
+            success_rate = result[1] or 0.0
+            total_executions = result[2]
+            
+            # Performance score calculation
+            response_score = max(0, 1.0 - (avg_response_time / 10.0))  # 10s max
+            performance_score = (response_score * 0.4) + (success_rate * 0.6)
+            
+            return {
+                "avg_response_time": round(avg_response_time, 3),
+                "success_rate": round(success_rate, 3),
+                "total_executions": total_executions,
+                "performance_score": round(performance_score, 3),
+                "response_efficiency": round(response_score, 3)
+            }
+        
+        return {
+            "avg_response_time": 0.0,
+            "success_rate": 0.0, 
+            "total_executions": 0,
+            "performance_score": 0.0,
+            "response_efficiency": 0.0
         }
-
-    def collect_system_health(self) -> SystemHealthMetrics:
-        """Collect current system health metrics"""
-        try:
-            # Simulate system metrics collection
-            # In production, these would come from actual system monitoring
-            
-            # CPU and memory would come from psutil or system calls
-            cpu_usage = self._get_cpu_usage()
-            memory_usage = self._get_memory_usage()
-            
-            # Response time from recent command executions
-            response_time = self._calculate_avg_response_time()
-            
-            # Success rate from recent operations
-            success_rate = self._calculate_success_rate()
-            
-            # Error count from recent period
-            error_count = self._count_recent_errors()
-            
-            # Active sessions from session tracking
-            active_sessions = self._count_active_sessions()
-            
-            # Overall availability score
-            availability_score = self._calculate_availability_score(
-                cpu_usage, memory_usage, response_time, success_rate
-            )
-            
-            metrics = SystemHealthMetrics(
-                timestamp=time.time(),
-                cpu_usage=cpu_usage,
-                memory_usage=memory_usage,
-                response_time=response_time,
-                success_rate=success_rate,
-                error_count=error_count,
-                active_sessions=active_sessions,
-                availability_score=availability_score
-            )
-            
-            self.recent_system_metrics.append(metrics)
-            self.db.store_system_health(metrics)
-            
-            # Check for alerts
-            self._check_system_alerts(metrics)
-            
-            return metrics
-            
-        except Exception as e:
-            logger.error(f"Error collecting system health metrics: {e}")
-            raise
-
-    def collect_user_voice_metrics(self, original_request: str, processed_output: str, 
-                                 context_data: Dict[str, Any]) -> UserVoiceMetrics:
-        """Collect user voice preservation metrics"""
-        try:
-            # Generate hash of original request for tracking
-            request_hash = hashlib.sha256(original_request.encode()).hexdigest()[:16]
-            
-            # Analyze intent preservation
-            intent_score = self._analyze_intent_preservation(original_request, processed_output)
-            
-            # Check context accuracy
-            context_accuracy = self._analyze_context_accuracy(context_data, processed_output)
-            
-            # Measure voice authenticity
-            voice_authenticity = self._analyze_voice_authenticity(original_request, processed_output)
-            
-            # Check decision fidelity
-            decision_fidelity = self._analyze_decision_fidelity(original_request, processed_output)
-            
-            # Overall output quality
-            output_quality = self._assess_output_quality(processed_output)
-            
-            metrics = UserVoiceMetrics(
-                timestamp=time.time(),
-                intent_preservation_score=intent_score,
-                context_accuracy=context_accuracy,
-                voice_authenticity=voice_authenticity,
-                decision_fidelity=decision_fidelity,
-                original_request_hash=request_hash,
-                processed_output_quality=output_quality
-            )
-            
-            self.recent_voice_metrics.append(metrics)
-            self.db.store_user_voice(metrics)
-            
-            # Check for voice preservation alerts
-            self._check_voice_alerts(metrics)
-            
-            return metrics
-            
-        except Exception as e:
-            logger.error(f"Error collecting user voice metrics: {e}")
-            raise
-
-    def collect_command_metrics(self, command_name: str, execution_time: float,
-                              success: bool, error_type: Optional[str] = None,
-                              resource_usage: Optional[Dict[str, float]] = None,
-                              user_satisfaction: Optional[float] = None) -> CommandMetrics:
-        """Collect command execution metrics"""
-        try:
-            if resource_usage is None:
-                resource_usage = {}
-            
-            # Assess output quality based on success and execution characteristics
-            output_quality = self._assess_command_output_quality(
-                success, execution_time, error_type
-            )
-            
-            metrics = CommandMetrics(
-                timestamp=time.time(),
-                command_name=command_name,
-                execution_time=execution_time,
-                success=success,
-                error_type=error_type,
-                resource_usage=resource_usage,
-                user_satisfaction=user_satisfaction,
-                output_quality=output_quality
-            )
-            
-            self.recent_command_metrics.append(metrics)
-            self.db.store_command_metrics(metrics)
-            
-            # Check for command performance alerts
-            self._check_command_alerts(metrics)
-            
-            return metrics
-            
-        except Exception as e:
-            logger.error(f"Error collecting command metrics: {e}")
-            raise
-
-    def collect_integration_metrics(self, component_a: str, component_b: str,
-                                  interaction_latency: float, data_integrity_score: float,
-                                  handoff_success: bool, sync_accuracy: float) -> IntegrationMetrics:
-        """Collect integration quality metrics"""
-        try:
-            metrics = IntegrationMetrics(
-                timestamp=time.time(),
-                component_a=component_a,
-                component_b=component_b,
-                interaction_latency=interaction_latency,
-                data_integrity_score=data_integrity_score,
-                handoff_success=handoff_success,
-                sync_accuracy=sync_accuracy
-            )
-            
-            self.recent_integration_metrics.append(metrics)
-            self.db.store_integration_metrics(metrics)
-            
-            # Check for integration alerts
-            self._check_integration_alerts(metrics)
-            
-            return metrics
-            
-        except Exception as e:
-            logger.error(f"Error collecting integration metrics: {e}")
-            raise
-
-    def generate_health_report(self, period_hours: int = 24) -> Dict[str, Any]:
-        """Generate comprehensive health report"""
-        try:
-            end_time = time.time()
-            start_time = end_time - (period_hours * 3600)
-            
-            # Get recent metrics
-            system_metrics = [m for m in self.recent_system_metrics if m.timestamp >= start_time]
-            voice_metrics = [m for m in self.recent_voice_metrics if m.timestamp >= start_time]
-            command_metrics = [m for m in self.recent_command_metrics if m.timestamp >= start_time]
-            integration_metrics = [m for m in self.recent_integration_metrics if m.timestamp >= start_time]
-            
-            report = {
-                'report_timestamp': datetime.now().isoformat(),
-                'period_hours': period_hours,
-                'system_health': self._analyze_system_health(system_metrics),
-                'user_voice_preservation': self._analyze_voice_preservation(voice_metrics),
-                'command_effectiveness': self._analyze_command_effectiveness(command_metrics),
-                'integration_quality': self._analyze_integration_quality(integration_metrics),
-                'trend_analysis': self._perform_trend_analysis(),
-                'alerts_summary': self._get_alerts_summary(),
-                'recommendations': self._generate_recommendations()
+    
+    def _calculate_voice_preservation_metrics(self) -> Dict[str, float]:
+        """Calculate user voice preservation metrics"""
+        if not self.voice_preservation_cache:
+            return {
+                "preservation_score": 0.0,
+                "authenticity_rate": 0.0,
+                "context_fidelity": 0.0,
+                "decision_traceability": 0.0,
+                "total_decisions": 0
             }
+        
+        recent_metrics = list(self.voice_preservation_cache)[-50:]  # Last 50 decisions
+        
+        avg_preservation = sum(m.preservation_score for m in recent_metrics) / len(recent_metrics)
+        avg_fidelity = sum(m.context_fidelity for m in recent_metrics) / len(recent_metrics)
+        traceability_rate = sum(1 for m in recent_metrics if m.decision_traceability) / len(recent_metrics)
+        
+        # Authenticity rate based on preservation score threshold
+        authenticity_rate = sum(1 for m in recent_metrics 
+                              if m.preservation_score >= self.config["voice_preservation_threshold"]) / len(recent_metrics)
+        
+        return {
+            "preservation_score": round(avg_preservation, 3),
+            "authenticity_rate": round(authenticity_rate, 3),
+            "context_fidelity": round(avg_fidelity, 3),
+            "decision_traceability": round(traceability_rate, 3),
+            "total_decisions": len(recent_metrics)
+        }
+    
+    def _calculate_command_effectiveness(self) -> Dict[str, float]:
+        """Calculate command effectiveness metrics"""
+        # Analyze tool usage patterns
+        effectiveness_scores = {}
+        
+        for tool_name, stats in self.tool_usage_stats.items():
+            if stats['total_calls'] > 0:
+                success_rate = stats['successful_calls'] / stats['total_calls']
+                
+                # Time efficiency score (lower is better, normalized)
+                time_efficiency = max(0, 1.0 - (stats['avg_execution_time'] / 30.0))  # 30s baseline
+                
+                # Context preservation rate
+                context_rate = stats['context_preservation_rate']
+                
+                # Combined effectiveness score
+                effectiveness = (success_rate * 0.4) + (time_efficiency * 0.3) + (context_rate * 0.3)
+                effectiveness_scores[tool_name] = round(effectiveness, 3)
+        
+        if effectiveness_scores:
+            avg_effectiveness = sum(effectiveness_scores.values()) / len(effectiveness_scores)
+            most_effective = max(effectiveness_scores.items(), key=lambda x: x[1])
+            least_effective = min(effectiveness_scores.items(), key=lambda x: x[1])
             
-            # Save report
-            report_path = self.base_path / f"health_report_{int(end_time)}.json"
-            with open(report_path, 'w') as f:
-                json.dump(report, f, indent=2)
-            
-            return report
-            
-        except Exception as e:
-            logger.error(f"Error generating health report: {e}")
-            raise
-
-    def get_real_time_status(self) -> Dict[str, Any]:
-        """Get current real-time system status"""
-        try:
-            current_time = time.time()
-            
-            # Get most recent metrics
-            latest_system = self.recent_system_metrics[-1] if self.recent_system_metrics else None
-            latest_voice = self.recent_voice_metrics[-1] if self.recent_voice_metrics else None
-            
-            # Calculate current trends
-            system_trend = self._calculate_system_trend()
-            voice_trend = self._calculate_voice_trend()
-            
-            # Get active alerts
-            active_alerts = self._get_active_alerts()
-            
-            status = {
-                'timestamp': current_time,
-                'status_time': datetime.now().isoformat(),
-                'overall_health': self._calculate_overall_health(),
-                'system_metrics': asdict(latest_system) if latest_system else None,
-                'voice_metrics': asdict(latest_voice) if latest_voice else None,
-                'trends': {
-                    'system': system_trend,
-                    'voice': voice_trend
-                },
-                'active_alerts': active_alerts,
-                'performance_summary': self._get_performance_summary()
+            return {
+                "average_effectiveness": round(avg_effectiveness, 3),
+                "tool_scores": effectiveness_scores,
+                "most_effective_tool": most_effective[0],
+                "most_effective_score": most_effective[1],
+                "least_effective_tool": least_effective[0],
+                "least_effective_score": least_effective[1],
+                "total_tools_monitored": len(effectiveness_scores)
             }
+        
+        return {
+            "average_effectiveness": 0.0,
+            "tool_scores": {},
+            "total_tools_monitored": 0
+        }
+    
+    def _calculate_integration_quality(self) -> Dict[str, float]:
+        """Calculate CE-Simple ↔ ContextFlow integration quality"""
+        # Check recent integrations
+        cutoff = (datetime.now() - timedelta(hours=24)).isoformat()
+        
+        conn = sqlite3.connect(self.data_path)
+        cursor = conn.execute('''
+            SELECT AVG(CASE WHEN context_preserved THEN 1.0 ELSE 0.0 END) as context_rate,
+                   AVG(CASE WHEN user_voice_maintained THEN 1.0 ELSE 0.0 END) as voice_rate,
+                   AVG(CASE WHEN subagent_coordination THEN 1.0 ELSE 0.0 END) as coordination_rate,
+                   COUNT(*) as total_integrations
+            FROM tool_performance 
+            WHERE timestamp > ? AND tool_name LIKE '%contextflow%'
+        ''', (cutoff,))
+        
+        result = cursor.fetchone()
+        conn.close()
+        
+        if result and result[3] > 0:
+            context_preservation = result[0] or 0.0
+            voice_maintenance = result[1] or 0.0  
+            coordination_success = result[2] or 0.0
+            total_integrations = result[3]
             
-            return status
+            # Integration quality score
+            quality_score = (context_preservation * 0.4) + (voice_maintenance * 0.4) + (coordination_success * 0.2)
             
-        except Exception as e:
-            logger.error(f"Error getting real-time status: {e}")
-            raise
-
-    # Private helper methods
+            return {
+                "context_preservation_rate": round(context_preservation, 3),
+                "voice_maintenance_rate": round(voice_maintenance, 3),
+                "coordination_success_rate": round(coordination_success, 3),
+                "integration_quality_score": round(quality_score, 3),
+                "total_integrations": total_integrations
+            }
+        
+        return {
+            "context_preservation_rate": 0.0,
+            "voice_maintenance_rate": 0.0,
+            "coordination_success_rate": 0.0,
+            "integration_quality_score": 0.0,
+            "total_integrations": 0
+        }
     
-    def _get_cpu_usage(self) -> float:
-        """Get current CPU usage (simulated)"""
-        # In production, use psutil.cpu_percent()
-        import random
-        return random.uniform(10, 70)
+    def _calculate_claude_code_metrics(self) -> Dict[str, float]:
+        """Calculate Claude Code CLI specific metrics"""
+        # Count Task tool deployments and subagent coordination
+        cutoff = (datetime.now() - timedelta(hours=6)).isoformat()
+        
+        conn = sqlite3.connect(self.data_path)
+        
+        # Task tool usage
+        cursor = conn.execute('''
+            SELECT COUNT(*) as task_deployments,
+                   AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as task_success_rate
+            FROM tool_performance 
+            WHERE timestamp > ? AND tool_name = 'Task'
+        ''', (cutoff,))
+        
+        task_result = cursor.fetchone()
+        
+        # Subagent coordination
+        cursor = conn.execute('''
+            SELECT COUNT(*) as coordination_events,
+                   AVG(CASE WHEN subagent_coordination THEN 1.0 ELSE 0.0 END) as coordination_rate
+            FROM tool_performance 
+            WHERE timestamp > ? AND subagent_coordination IS NOT NULL
+        ''', (cutoff,))
+        
+        coordination_result = cursor.fetchone()
+        
+        # Parallel execution detection (multiple tools within short timespan)
+        cursor = conn.execute('''
+            SELECT COUNT(DISTINCT session_id) as parallel_sessions
+            FROM (
+                SELECT session_id, 
+                       COUNT(*) as concurrent_tools,
+                       MAX(datetime(timestamp)) - MIN(datetime(timestamp)) as duration_seconds
+                FROM tool_performance 
+                WHERE timestamp > ?
+                GROUP BY session_id
+                HAVING concurrent_tools > 1 AND duration_seconds < 60
+            )
+        ''', (cutoff,))
+        
+        parallel_result = cursor.fetchone()
+        
+        conn.close()
+        
+        # Calculate Claude Code efficiency metrics
+        task_deployments = task_result[0] if task_result else 0
+        task_success_rate = task_result[1] if task_result and task_result[1] else 0.0
+        coordination_events = coordination_result[0] if coordination_result else 0
+        coordination_rate = coordination_result[1] if coordination_result and coordination_result[1] else 0.0
+        parallel_sessions = parallel_result[0] if parallel_result else 0
+        
+        # Claude Code optimization score
+        optimization_score = (task_success_rate * 0.4) + (coordination_rate * 0.3) + (min(1.0, parallel_sessions / 10) * 0.3)
+        
+        return {
+            "task_tool_deployments": task_deployments,
+            "task_success_rate": round(task_success_rate, 3),
+            "subagent_coordination_events": coordination_events,
+            "coordination_success_rate": round(coordination_rate, 3),
+            "parallel_execution_sessions": parallel_sessions,
+            "claude_code_optimization_score": round(optimization_score, 3)
+        }
     
-    def _get_memory_usage(self) -> float:
-        """Get current memory usage (simulated)"""
-        # In production, use psutil.virtual_memory().percent
-        import random
-        return random.uniform(20, 80)
+    def _calculate_overall_health_score(self, system_perf: Dict, voice_preservation: Dict,
+                                      command_effectiveness: Dict, integration_quality: Dict,
+                                      claude_code_metrics: Dict) -> float:
+        """Calculate weighted overall health score"""
+        # Weighted scoring based on importance
+        weights = {
+            "user_voice_preservation": 0.35,  # Highest priority
+            "system_performance": 0.25,
+            "command_effectiveness": 0.20,
+            "integration_quality": 0.15,
+            "claude_code_optimization": 0.05
+        }
+        
+        scores = {
+            "user_voice_preservation": voice_preservation.get("preservation_score", 0.0),
+            "system_performance": system_perf.get("performance_score", 0.0),
+            "command_effectiveness": command_effectiveness.get("average_effectiveness", 0.0),
+            "integration_quality": integration_quality.get("integration_quality_score", 0.0),
+            "claude_code_optimization": claude_code_metrics.get("claude_code_optimization_score", 0.0)
+        }
+        
+        overall_score = sum(scores[metric] * weights[metric] for metric in weights.keys())
+        return min(1.0, max(0.0, overall_score))  # Clamp between 0 and 1
     
-    def _calculate_avg_response_time(self) -> float:
-        """Calculate average response time from recent commands"""
-        if not self.recent_command_metrics:
-            return 0.0
+    def _check_tool_performance_alerts(self, tool_name: str, execution_time: float, success: bool):
+        """Check for performance-related alerts"""
+        alerts = []
         
-        recent_times = [m.execution_time for m in list(self.recent_command_metrics)[-10:]]
-        return statistics.mean(recent_times) if recent_times else 0.0
-    
-    def _calculate_success_rate(self) -> float:
-        """Calculate success rate from recent operations"""
-        if not self.recent_command_metrics:
-            return 100.0
+        # Long execution time alert
+        if execution_time > 30.0:  # 30 seconds
+            alerts.append({
+                "type": "performance",
+                "severity": "warning" if execution_time < 60.0 else "critical",
+                "message": f"Tool {tool_name} took {execution_time:.1f}s to execute",
+                "tool": tool_name,
+                "execution_time": execution_time
+            })
         
-        recent_commands = list(self.recent_command_metrics)[-20:]
-        successes = sum(1 for m in recent_commands if m.success)
-        return (successes / len(recent_commands)) * 100 if recent_commands else 100.0
-    
-    def _count_recent_errors(self) -> int:
-        """Count errors in recent period"""
-        cutoff_time = time.time() - 3600  # Last hour
-        return sum(1 for m in self.recent_command_metrics 
-                  if m.timestamp >= cutoff_time and not m.success)
-    
-    def _count_active_sessions(self) -> int:
-        """Count active sessions (simulated)"""
-        # In production, this would track actual active sessions
-        import random
-        return random.randint(1, 5)
-    
-    def _calculate_availability_score(self, cpu: float, memory: float, 
-                                    response_time: float, success_rate: float) -> float:
-        """Calculate overall availability score"""
-        # Weighted availability calculation
-        cpu_score = max(0, 100 - cpu)
-        memory_score = max(0, 100 - memory)
-        response_score = max(0, 100 - (response_time * 10))
-        
-        # Weighted average
-        availability = (cpu_score * 0.2 + memory_score * 0.2 + 
-                       response_score * 0.3 + success_rate * 0.3)
-        
-        return min(100, max(0, availability))
-    
-    def _analyze_intent_preservation(self, original: str, processed: str) -> float:
-        """Analyze how well original intent was preserved"""
-        # Simplified intent analysis - in production, use NLP techniques
-        original_words = set(original.lower().split())
-        processed_words = set(processed.lower().split())
-        
-        if not original_words:
-            return 100.0
-        
-        overlap = len(original_words.intersection(processed_words))
-        preservation_score = (overlap / len(original_words)) * 100
-        
-        # Bonus for maintaining key concepts
-        key_indicators = ['create', 'implement', 'analyze', 'monitor', 'track']
-        key_preserved = sum(1 for word in key_indicators 
-                           if word in original.lower() and word in processed.lower())
-        
-        if key_preserved > 0:
-            preservation_score += key_preserved * 5
-        
-        return min(100, preservation_score)
-    
-    def _analyze_context_accuracy(self, context_data: Dict, processed: str) -> float:
-        """Analyze context accuracy in processing"""
-        # Simplified context analysis
-        if not context_data:
-            return 90.0  # Default if no context provided
-        
-        # Check if key context elements are reflected in output
-        context_score = 85.0  # Base score
-        
-        # Look for context preservation indicators
-        if 'user_preferences' in context_data:
-            context_score += 5
-        
-        if 'system_state' in context_data:
-            context_score += 5
-        
-        if len(processed) > 100:  # Substantial response suggests context usage
-            context_score += 5
-        
-        return min(100, context_score)
-    
-    def _analyze_voice_authenticity(self, original: str, processed: str) -> float:
-        """Analyze authenticity of user voice preservation"""
-        # Simplified authenticity analysis
-        authenticity_score = 80.0  # Base score
-        
-        # Check for direct user quote preservation
-        if '"' in original and '"' in processed:
-            authenticity_score += 10
-        
-        # Check for instruction following vs modification
-        if 'exactly' in original.lower() or 'precisely' in original.lower():
-            authenticity_score += 10
-        
-        return min(100, authenticity_score)
-    
-    def _analyze_decision_fidelity(self, original: str, processed: str) -> float:
-        """Analyze fidelity to user decisions"""
-        # Simplified decision fidelity analysis
-        fidelity_score = 85.0  # Base score
-        
-        # Look for decision-making language
-        decision_words = ['choose', 'decide', 'select', 'prefer', 'want', 'need']
-        decisions_preserved = sum(1 for word in decision_words 
-                                if word in original.lower())
-        
-        fidelity_score += decisions_preserved * 3
-        
-        return min(100, fidelity_score)
-    
-    def _assess_output_quality(self, output: str) -> float:
-        """Assess overall output quality"""
-        quality_score = 70.0  # Base score
-        
-        # Length appropriateness
-        if 50 <= len(output) <= 2000:
-            quality_score += 10
-        
-        # Structure indicators
-        if '\n' in output:  # Has structure
-            quality_score += 5
-        
-        if any(marker in output for marker in ['1.', '2.', '-', '*']):  # Has lists
-            quality_score += 5
-        
-        # Completeness indicators
-        if len(output) > 200:  # Substantial response
-            quality_score += 10
-        
-        return min(100, quality_score)
-    
-    def _assess_command_output_quality(self, success: bool, execution_time: float, 
-                                     error_type: Optional[str]) -> float:
-        """Assess command output quality"""
+        # Tool failure alert
         if not success:
-            return 30.0 if error_type else 20.0
+            alerts.append({
+                "type": "tool_failure",
+                "severity": "error",
+                "message": f"Tool {tool_name} execution failed",
+                "tool": tool_name
+            })
         
-        quality_score = 90.0  # Base for successful commands
-        
-        # Performance bonus/penalty
-        if execution_time < 1.0:
-            quality_score += 10
-        elif execution_time > 5.0:
-            quality_score -= 15
-        
-        return min(100, max(0, quality_score))
+        # Store alerts
+        if alerts:
+            self._store_alerts(alerts)
     
-    def _check_system_alerts(self, metrics: SystemHealthMetrics):
-        """Check system metrics against alert thresholds"""
+    def _check_voice_preservation_alerts(self, voice_metric: VoicePreservationMetric):
+        """Check for user voice preservation alerts"""
         alerts = []
         
-        if metrics.cpu_usage > self.alert_thresholds['cpu_usage']:
-            alerts.append(('cpu_high', 'warning', f'CPU usage: {metrics.cpu_usage:.1f}%'))
+        # Low preservation score
+        if voice_metric.preservation_score < self.config["voice_preservation_threshold"]:
+            severity = "critical" if voice_metric.preservation_score < 0.8 else "warning"
+            alerts.append({
+                "type": "voice_preservation",
+                "severity": severity,
+                "message": f"User voice preservation score low: {voice_metric.preservation_score:.2f}",
+                "session_id": voice_metric.session_id,
+                "preservation_score": voice_metric.preservation_score
+            })
         
-        if metrics.memory_usage > self.alert_thresholds['memory_usage']:
-            alerts.append(('memory_high', 'warning', f'Memory usage: {metrics.memory_usage:.1f}%'))
+        # Low context fidelity
+        if voice_metric.context_fidelity < self.config["context_fidelity_minimum"]:
+            alerts.append({
+                "type": "context_fidelity",
+                "severity": "warning",
+                "message": f"Context fidelity below threshold: {voice_metric.context_fidelity:.2f}",
+                "session_id": voice_metric.session_id,
+                "context_fidelity": voice_metric.context_fidelity
+            })
         
-        if metrics.response_time > self.alert_thresholds['response_time']:
-            alerts.append(('response_slow', 'warning', f'Response time: {metrics.response_time:.2f}s'))
+        # Decision traceability failure
+        if not voice_metric.decision_traceability:
+            alerts.append({
+                "type": "decision_traceability",
+                "severity": "warning",
+                "message": "User decision traceability lost",
+                "session_id": voice_metric.session_id,
+                "user_decision": voice_metric.user_decision[:100]  # Truncate for storage
+            })
         
-        if metrics.success_rate < self.alert_thresholds['success_rate']:
-            alerts.append(('success_low', 'critical', f'Success rate: {metrics.success_rate:.1f}%'))
-        
-        if metrics.availability_score < self.alert_thresholds['availability_score']:
-            alerts.append(('availability_low', 'critical', f'Availability: {metrics.availability_score:.1f}%'))
-        
-        for alert_type, severity, message in alerts:
-            self.db.store_alert(alert_type, severity, message)
+        if alerts:
+            self._store_alerts(alerts)
     
-    def _check_voice_alerts(self, metrics: UserVoiceMetrics):
-        """Check voice preservation metrics against thresholds"""
+    def _store_alerts(self, alerts: List[Dict]):
+        """Store system alerts"""
+        conn = sqlite3.connect(self.data_path)
+        
+        for alert in alerts:
+            conn.execute('''
+                INSERT INTO system_alerts 
+                (alert_type, severity, message, metrics, timestamp)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (
+                alert["type"], alert["severity"], alert["message"],
+                json.dumps({k: v for k, v in alert.items() if k not in ["type", "severity", "message"]}),
+                datetime.now().isoformat()
+            ))
+        
+        conn.commit()
+        conn.close()
+        
+        # Add to alert history
+        self.alert_history.extend(alerts)
+    
+    def _get_active_alerts(self) -> List[Dict]:
+        """Get currently active alerts"""
+        cutoff = (datetime.now() - timedelta(hours=1)).isoformat()
+        
+        conn = sqlite3.connect(self.data_path)
+        cursor = conn.execute('''
+            SELECT alert_type, severity, message, metrics, timestamp
+            FROM system_alerts 
+            WHERE timestamp > ? AND resolved = FALSE
+            ORDER BY timestamp DESC
+            LIMIT 20
+        ''', (cutoff,))
+        
         alerts = []
-        
-        if metrics.intent_preservation_score < self.alert_thresholds['intent_preservation_score']:
-            alerts.append(('intent_preservation_low', 'critical', 
-                          f'Intent preservation: {metrics.intent_preservation_score:.1f}%'))
-        
-        if metrics.voice_authenticity < self.alert_thresholds['voice_authenticity']:
-            alerts.append(('voice_authenticity_low', 'warning',
-                          f'Voice authenticity: {metrics.voice_authenticity:.1f}%'))
-        
-        if metrics.context_accuracy < self.alert_thresholds['context_accuracy']:
-            alerts.append(('context_accuracy_low', 'warning',
-                          f'Context accuracy: {metrics.context_accuracy:.1f}%'))
-        
-        for alert_type, severity, message in alerts:
-            self.db.store_alert(alert_type, severity, message)
-    
-    def _check_command_alerts(self, metrics: CommandMetrics):
-        """Check command metrics for alerts"""
-        if not metrics.success:
-            self.db.store_alert('command_failure', 'warning', 
-                              f'Command {metrics.command_name} failed: {metrics.error_type}')
-        
-        if metrics.execution_time > 10.0:
-            self.db.store_alert('command_slow', 'warning',
-                              f'Command {metrics.command_name} took {metrics.execution_time:.2f}s')
-    
-    def _check_integration_alerts(self, metrics: IntegrationMetrics):
-        """Check integration metrics for alerts"""
-        if not metrics.handoff_success:
-            self.db.store_alert('integration_failure', 'critical',
-                              f'Integration failure: {metrics.component_a} -> {metrics.component_b}')
-        
-        if metrics.interaction_latency > 2.0:
-            self.db.store_alert('integration_slow', 'warning',
-                              f'Slow integration: {metrics.component_a} -> {metrics.component_b}')
-    
-    def _analyze_system_health(self, metrics: List[SystemHealthMetrics]) -> Dict[str, Any]:
-        """Analyze system health metrics"""
-        if not metrics:
-            return {'status': 'no_data'}
-        
-        cpu_values = [m.cpu_usage for m in metrics]
-        memory_values = [m.memory_usage for m in metrics]
-        response_times = [m.response_time for m in metrics]
-        success_rates = [m.success_rate for m in metrics]
-        
-        return {
-            'avg_cpu_usage': statistics.mean(cpu_values),
-            'max_cpu_usage': max(cpu_values),
-            'avg_memory_usage': statistics.mean(memory_values),
-            'max_memory_usage': max(memory_values),
-            'avg_response_time': statistics.mean(response_times),
-            'max_response_time': max(response_times),
-            'avg_success_rate': statistics.mean(success_rates),
-            'min_success_rate': min(success_rates),
-            'total_errors': sum(m.error_count for m in metrics),
-            'availability_trend': self._calculate_trend([m.availability_score for m in metrics])
-        }
-    
-    def _analyze_voice_preservation(self, metrics: List[UserVoiceMetrics]) -> Dict[str, Any]:
-        """Analyze voice preservation metrics"""
-        if not metrics:
-            return {'status': 'no_data'}
-        
-        intent_scores = [m.intent_preservation_score for m in metrics]
-        context_scores = [m.context_accuracy for m in metrics]
-        authenticity_scores = [m.voice_authenticity for m in metrics]
-        fidelity_scores = [m.decision_fidelity for m in metrics]
-        
-        return {
-            'avg_intent_preservation': statistics.mean(intent_scores),
-            'min_intent_preservation': min(intent_scores),
-            'avg_context_accuracy': statistics.mean(context_scores),
-            'min_context_accuracy': min(context_scores),
-            'avg_voice_authenticity': statistics.mean(authenticity_scores),
-            'min_voice_authenticity': min(authenticity_scores),
-            'avg_decision_fidelity': statistics.mean(fidelity_scores),
-            'min_decision_fidelity': min(fidelity_scores),
-            'voice_preservation_trend': self._calculate_trend(intent_scores)
-        }
-    
-    def _analyze_command_effectiveness(self, metrics: List[CommandMetrics]) -> Dict[str, Any]:
-        """Analyze command effectiveness"""
-        if not metrics:
-            return {'status': 'no_data'}
-        
-        execution_times = [m.execution_time for m in metrics]
-        success_count = sum(1 for m in metrics if m.success)
-        
-        # Command-specific analysis
-        command_stats = defaultdict(list)
-        for m in metrics:
-            command_stats[m.command_name].append(m)
-        
-        command_analysis = {}
-        for cmd, cmd_metrics in command_stats.items():
-            cmd_success_rate = sum(1 for m in cmd_metrics if m.success) / len(cmd_metrics) * 100
-            cmd_avg_time = statistics.mean([m.execution_time for m in cmd_metrics])
-            command_analysis[cmd] = {
-                'success_rate': cmd_success_rate,
-                'avg_execution_time': cmd_avg_time,
-                'execution_count': len(cmd_metrics)
+        for row in cursor.fetchall():
+            alert = {
+                "type": row[0],
+                "severity": row[1],
+                "message": row[2],
+                "timestamp": row[4]
             }
+            
+            # Add metrics if available
+            try:
+                if row[3]:
+                    alert.update(json.loads(row[3]))
+            except json.JSONDecodeError:
+                pass
+            
+            alerts.append(alert)
         
-        return {
-            'overall_success_rate': (success_count / len(metrics)) * 100,
-            'avg_execution_time': statistics.mean(execution_times),
-            'max_execution_time': max(execution_times),
-            'total_commands': len(metrics),
-            'command_breakdown': command_analysis,
-            'performance_trend': self._calculate_trend(execution_times)
-        }
+        conn.close()
+        return alerts
     
-    def _analyze_integration_quality(self, metrics: List[IntegrationMetrics]) -> Dict[str, Any]:
-        """Analyze integration quality"""
-        if not metrics:
-            return {'status': 'no_data'}
-        
-        latencies = [m.interaction_latency for m in metrics]
-        integrity_scores = [m.data_integrity_score for m in metrics]
-        handoff_success_count = sum(1 for m in metrics if m.handoff_success)
-        
-        return {
-            'avg_interaction_latency': statistics.mean(latencies),
-            'max_interaction_latency': max(latencies),
-            'avg_data_integrity': statistics.mean(integrity_scores),
-            'min_data_integrity': min(integrity_scores),
-            'handoff_success_rate': (handoff_success_count / len(metrics)) * 100,
-            'total_integrations': len(metrics),
-            'integration_trend': self._calculate_trend(integrity_scores)
-        }
-    
-    def _perform_trend_analysis(self) -> Dict[str, Any]:
-        """Perform trend analysis across all metrics"""
-        trends = {}
-        
-        # System health trends
-        if len(self.recent_system_metrics) >= 5:
-            recent_availability = [m.availability_score for m in list(self.recent_system_metrics)[-10:]]
-            trends['system_health'] = self._calculate_trend(recent_availability)
-        
-        # Voice preservation trends
-        if len(self.recent_voice_metrics) >= 5:
-            recent_intent = [m.intent_preservation_score for m in list(self.recent_voice_metrics)[-10:]]
-            trends['voice_preservation'] = self._calculate_trend(recent_intent)
-        
-        # Command performance trends
-        if len(self.recent_command_metrics) >= 5:
-            recent_times = [m.execution_time for m in list(self.recent_command_metrics)[-20:]]
-            trends['command_performance'] = self._calculate_trend(recent_times, reverse=True)
-        
-        return trends
-    
-    def _calculate_trend(self, values: List[float], reverse: bool = False) -> str:
-        """Calculate trend direction from values"""
-        if len(values) < 3:
-            return 'insufficient_data'
-        
-        # Simple trend calculation
-        first_half = statistics.mean(values[:len(values)//2])
-        second_half = statistics.mean(values[len(values)//2:])
-        
-        diff = second_half - first_half
-        threshold = statistics.stdev(values) * 0.5 if len(values) > 1 else 0.1
-        
-        if reverse:
-            diff = -diff
-        
-        if diff > threshold:
-            return 'improving'
-        elif diff < -threshold:
-            return 'declining'
-        else:
-            return 'stable'
-    
-    def _get_alerts_summary(self) -> Dict[str, Any]:
-        """Get summary of recent alerts"""
-        # This would query the alerts table
-        return {
-            'active_alerts': 0,
-            'resolved_today': 0,
-            'critical_count': 0,
-            'warning_count': 0
-        }
-    
-    def _generate_recommendations(self) -> List[str]:
-        """Generate optimization recommendations"""
+    def _generate_health_recommendations(self, overall_score: float) -> List[str]:
+        """Generate health improvement recommendations"""
         recommendations = []
         
-        # Analyze recent metrics for recommendations
-        if self.recent_system_metrics:
-            latest_system = self.recent_system_metrics[-1]
-            
-            if latest_system.cpu_usage > 70:
-                recommendations.append("Consider optimizing CPU-intensive operations")
-            
-            if latest_system.memory_usage > 75:
-                recommendations.append("Monitor memory usage and implement cleanup routines")
-            
-            if latest_system.response_time > 3.0:
-                recommendations.append("Investigate performance bottlenecks in command execution")
+        if overall_score < 0.7:
+            recommendations.append("System health critical - immediate attention required")
+        elif overall_score < 0.8:
+            recommendations.append("System performance degraded - optimization needed")
         
-        if self.recent_voice_metrics:
-            latest_voice = self.recent_voice_metrics[-1]
-            
-            if latest_voice.intent_preservation_score < 85:
-                recommendations.append("Review user intent preservation algorithms")
-            
-            if latest_voice.context_accuracy < 90:
-                recommendations.append("Enhance context awareness in processing")
+        # Check specific metrics for targeted recommendations
+        recent_alerts = list(self.alert_history)[-10:]
         
-        if not recommendations:
-            recommendations.append("System performing within normal parameters")
+        voice_alerts = [a for a in recent_alerts if a["type"] in ["voice_preservation", "context_fidelity"]]
+        if voice_alerts:
+            recommendations.append("User voice preservation issues detected - review context handling")
+        
+        performance_alerts = [a for a in recent_alerts if a["type"] == "performance"]
+        if performance_alerts:
+            recommendations.append("Performance degradation detected - consider parallel execution optimization")
+        
+        tool_failures = [a for a in recent_alerts if a["type"] == "tool_failure"]
+        if tool_failures:
+            recommendations.append("Tool execution failures detected - review error handling")
         
         return recommendations
     
-    def _calculate_system_trend(self) -> str:
-        """Calculate current system trend"""
-        if len(self.recent_system_metrics) < 5:
-            return 'insufficient_data'
+    def _store_health_metrics(self, health_data: Dict):
+        """Store health metrics in database"""
+        conn = sqlite3.connect(self.data_path)
         
-        recent_scores = [m.availability_score for m in list(self.recent_system_metrics)[-5:]]
-        return self._calculate_trend(recent_scores)
+        conn.execute('''
+            INSERT INTO health_metrics 
+            (timestamp, system_performance, user_voice_preservation, 
+             command_effectiveness, integration_quality, claude_code_metrics,
+             overall_score, session_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ''', (
+            health_data["timestamp"],
+            json.dumps(health_data["system_performance"]),
+            json.dumps(health_data["user_voice_preservation"]),
+            json.dumps(health_data["command_effectiveness"]),
+            json.dumps(health_data["integration_quality"]),
+            json.dumps(health_data["claude_code_metrics"]),
+            health_data["overall_health_score"],
+            self.get_current_session_id()
+        ))
+        
+        conn.commit()
+        conn.close()
     
-    def _calculate_voice_trend(self) -> str:
-        """Calculate current voice preservation trend"""
-        if len(self.recent_voice_metrics) < 5:
-            return 'insufficient_data'
+    def _update_tool_stats(self, tool_name: str, execution_time: float, success: bool, context_preserved: bool):
+        """Update real-time tool statistics"""
+        stats = self.tool_usage_stats[tool_name]
         
-        recent_scores = [m.intent_preservation_score for m in list(self.recent_voice_metrics)[-5:]]
-        return self._calculate_trend(recent_scores)
+        # Update counters
+        stats['total_calls'] += 1
+        if success:
+            stats['successful_calls'] += 1
+        
+        # Update moving average for execution time
+        current_avg = stats['avg_execution_time']
+        total_calls = stats['total_calls']
+        stats['avg_execution_time'] = ((current_avg * (total_calls - 1)) + execution_time) / total_calls
+        
+        # Update context preservation rate
+        preservation_count = stats.get('context_preserved_count', 0)
+        if context_preserved:
+            preservation_count += 1
+        stats['context_preserved_count'] = preservation_count
+        stats['context_preservation_rate'] = preservation_count / total_calls
     
-    def _get_active_alerts(self) -> List[Dict[str, Any]]:
-        """Get currently active alerts"""
-        # This would query the database for unresolved alerts
-        return []
+    def get_current_session_id(self) -> str:
+        """Get current session identifier"""
+        return f"session_{datetime.now().strftime('%Y%m%d_%H%M')}"
     
-    def _calculate_overall_health(self) -> float:
-        """Calculate overall system health score"""
-        if not self.recent_system_metrics or not self.recent_voice_metrics:
-            return 0.0
+    def start_monitoring_thread(self):
+        """Start background monitoring thread"""
+        def monitoring_loop():
+            while True:
+                try:
+                    # Generate health snapshot
+                    health_snapshot = self.get_system_health_snapshot()
+                    
+                    # Add to recent metrics
+                    self.recent_metrics.append(health_snapshot)
+                    
+                    # Log health status
+                    self.logger.info(f"System Health: {health_snapshot['overall_health_score']:.2f}")
+                    
+                    # Sleep until next monitoring cycle
+                    time.sleep(self.config["monitoring_interval"])
+                    
+                except Exception as e:
+                    self.logger.error(f"Monitoring error: {e}")
+                    time.sleep(60)  # Wait longer on error
         
-        latest_system = self.recent_system_metrics[-1]
-        latest_voice = self.recent_voice_metrics[-1]
-        
-        # Weighted health calculation
-        system_weight = 0.4
-        voice_weight = 0.6  # User voice preservation is higher priority
-        
-        system_health = latest_system.availability_score
-        voice_health = (latest_voice.intent_preservation_score + 
-                       latest_voice.voice_authenticity + 
-                       latest_voice.context_accuracy) / 3
-        
-        overall_health = (system_health * system_weight + voice_health * voice_weight)
-        return min(100, max(0, overall_health))
-    
-    def _get_performance_summary(self) -> Dict[str, Any]:
-        """Get performance summary"""
-        return {
-            'recent_commands': len(self.recent_command_metrics),
-            'recent_integrations': len(self.recent_integration_metrics),
-            'avg_response_time': self._calculate_avg_response_time(),
-            'success_rate': self._calculate_success_rate()
-        }
+        monitor_thread = threading.Thread(target=monitoring_loop, daemon=True)
+        monitor_thread.start()
+        self.logger.info("System health monitoring started")
 
-# Main execution and CLI interface
+# API Interface
+class HealthMonitoringAPI:
+    """API interface for system health monitoring"""
+    
+    def __init__(self):
+        self.monitor = ClaudeCodeHealthMonitor()
+    
+    def get_health_status(self) -> Dict:
+        """Get current system health status"""
+        return self.monitor.get_system_health_snapshot()
+    
+    def record_tool_usage(self, tool_name: str, execution_time: float, 
+                         success: bool, context_preserved: bool = True,
+                         user_voice_maintained: bool = True) -> str:
+        """Record tool usage for monitoring"""
+        return self.monitor.record_tool_execution(
+            tool_name, execution_time, success, context_preserved, user_voice_maintained
+        )
+    
+    def record_user_decision(self, user_decision: str, preservation_score: float,
+                           authenticity_markers: List[str], context_fidelity: float) -> str:
+        """Record user voice preservation metrics"""
+        session_id = self.monitor.get_current_session_id()
+        decision_traceability = preservation_score >= 0.9  # High preservation = good traceability
+        
+        return self.monitor.record_voice_preservation(
+            session_id, user_decision, preservation_score, authenticity_markers,
+            context_fidelity, decision_traceability
+        )
+    
+    def get_alerts(self) -> List[Dict]:
+        """Get active system alerts"""
+        return self.monitor._get_active_alerts()
+
+# CLI Interface
 if __name__ == "__main__":
-    import argparse
+    import sys
     
-    parser = argparse.ArgumentParser(description='System Health Monitoring Suite')
-    parser.add_argument('--base-path', default='/Users/nalve/ce-simple/tools/monitoring',
-                       help='Base path for monitoring data')
-    parser.add_argument('--collect', action='store_true', help='Collect current metrics')
-    parser.add_argument('--report', type=int, default=24, help='Generate report for N hours')
-    parser.add_argument('--status', action='store_true', help='Show real-time status')
-    parser.add_argument('--daemon', action='store_true', help='Run as daemon')
+    api = HealthMonitoringAPI()
     
-    args = parser.parse_args()
-    
-    # Initialize collector
-    collector = MetricsCollector(args.base_path)
-    
-    if args.collect:
-        # Collect current metrics
-        system_metrics = collector.collect_system_health()
-        print(f"System health collected: {system_metrics.availability_score:.1f}% availability")
+    if len(sys.argv) > 1:
+        command = sys.argv[1]
         
-    elif args.status:
-        # Show real-time status
-        status = collector.get_real_time_status()
-        print(json.dumps(status, indent=2))
+        if command == "status":
+            health = api.get_health_status()
+            print(json.dumps(health, indent=2))
         
-    elif args.daemon:
-        # Run as daemon (simplified)
-        print("Starting monitoring daemon...")
-        while True:
-            try:
-                collector.collect_system_health()
-                time.sleep(60)  # Collect every minute
-            except KeyboardInterrupt:
-                print("Monitoring daemon stopped")
-                break
-                
+        elif command == "record-tool":
+            tool_name = sys.argv[2] if len(sys.argv) > 2 else "unknown"
+            exec_time = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0
+            success = sys.argv[4].lower() == 'true' if len(sys.argv) > 4 else True
+            
+            record_id = api.record_tool_usage(tool_name, exec_time, success)
+            print(f"Recorded tool usage: {record_id}")
+        
+        elif command == "record-voice":
+            decision = sys.argv[2] if len(sys.argv) > 2 else "test decision"
+            score = float(sys.argv[3]) if len(sys.argv) > 3 else 0.95
+            fidelity = float(sys.argv[4]) if len(sys.argv) > 4 else 0.90
+            
+            record_id = api.record_user_decision(decision, score, ["authentic"], fidelity)
+            print(f"Recorded user voice: {record_id}")
+        
+        elif command == "alerts":
+            alerts = api.get_alerts()
+            print(json.dumps(alerts, indent=2))
+        
+        else:
+            print("Usage: python system-health.py [status|record-tool|record-voice|alerts] [args...]")
+    
     else:
-        # Generate report
-        report = collector.generate_health_report(args.report)
-        print(json.dumps(report, indent=2))
+        print("CE-Simple System Health Monitor - Claude Code CLI Specific")
+        print("Real-time monitoring of system health and user voice preservation")
+        
+        # Show current status
+        health = api.get_health_status()
+        print(f"\nCurrent Health Score: {health['overall_health_score']:.2f}")
+        print(f"User Voice Preservation: {health['user_voice_preservation']['preservation_score']:.2f}")
+        print(f"System Performance: {health['system_performance']['performance_score']:.2f}")
+        
+        if health['active_alerts']:
+            print(f"\nActive Alerts: {len(health['active_alerts'])}")
+            for alert in health['active_alerts'][:3]:
+                print(f"  - {alert['severity'].upper()}: {alert['message']}")
