@@ -1,11 +1,31 @@
 # CLAUDE.md - Multi-Subagent Intelligence Dispatcher
 
-```import
-@/.claude/commands/master-plan.md
-@/.claude/commands/contextflow-agent.md
-@/.claude/commands/context/methodology-core.md
-@/.claude/commands/context/system-architecture.md
-```
+## CONTEXT CORE - Self-Contained Architecture
+
+### Metodología Fundamental
+- **Socrática expansiva**: Conversación libre → Comprensión rica → Ejecución optimizada  
+- **Multi-subagent obligatorio**: Especialización + parallel orchestration via Task tools
+- **Think x4**: Think → Think Hard → Think Harder → Super Think para decisiones complejas
+- **Voice preservation**: User voice = source of truth absoluta con citas exactas
+
+### Multi-Subagent Orchestration
+**OBLIGATORIO**: Todo trabajo via Task tools con subagentes especializados:
+- **Research Specialist**: Investigation + benchmarking + best practices
+- **Architecture Validator**: System consistency + integration verification  
+- **Content Optimizer**: Token economy + structure optimization
+- **Voice Preservation**: User intent exactitude + authenticity validation
+- **Quality Assurance**: Final validation + standards compliance
+
+### System State & Evolution
+**Master Plan Auto-Evolution**: Multi-Subagent Intelligence System que evoluciona orgánicamente preservando user voice como fuente de verdad while optimizing efficiency via specialized orchestration.
+
+**Current Focus**: Command Self-Containment Architecture completion enabling ecosystem independence + inter-command protocols + internal template management + decision tree optimization.
+
+### Architecture Self-Containment
+- Commands ecosystem independence: NO external dependencies fuera de /.claude/commands/
+- Interoperabilidad SOLO via command chaining between commands
+- Templates + utilities internos dentro del ecosystem  
+- Decision trees optimizados within command structure
 
 ## IMPERATIVO OPERACIONAL
 
@@ -70,43 +90,69 @@
 Antes de CUALQUIER operación Write/MultiEdit/NotebookEdit para archivos .md:
 
 ```
-IF (operation == Write/MultiEdit/NotebookEdit AND file_extension == .md) {
-    IF (current_context != "/create-doc workflow") {
+IF (operation == Write/MultiEdit/NotebookEdit/Edit AND file_extension == .md) {
+    IF (current_context NOT IN ["/create-doc workflow", "/edit-doc workflow"]) {
         BLOCK_OPERATION()
-        LOG_VIOLATION(user_request, attempted_file, timestamp)
-        REDIRECT_TO_WORKFLOW()
+        LOG_VIOLATION(user_request, attempted_file, timestamp, operation_type)
+        IF (file_exists) {
+            REDIRECT_TO_EDIT_WORKFLOW()
+        } ELSE {
+            REDIRECT_TO_CREATE_WORKFLOW()
+        }
         RETURN enforcement_message
     }
 }
 ```
 
 **BLOCKING CONDITIONS:**
-- Direct Write operations to .md files
+- Direct Write operations to .md files outside approved workflows
 - MultiEdit operations to .md files outside workflow
+- Edit operations to .md files outside `/edit-doc` workflow
 - Any document creation bypassing `/create-doc`
-- Commands attempting direct file creation
+- Any document editing bypassing `/edit-doc`
+- Commands attempting direct file creation or modification
 
 **REDIRECTION PROTOCOL:**
+
+**For New Document Creation:**
 ```
 VIOLATION DETECTED: Direct document creation attempted
 
-REQUIRED RESEARCH-FIRST WORKFLOW:
+REQUIRED RESEARCH-FIRST CREATE WORKFLOW:
 1. RESEARCH PHASE: WebSearch + MCP Context7 con fecha $(date)
 2. Execute `/create-doc [document_type] [description]`
 3. System auto-chains to `/align-doc` for validation
 4. System auto-chains to `/verify-doc` for quality gates
 
-ENFORCEMENT: All .md file operations MUST follow research-first workflow.
-USER VOICE PRESERVED: Your content will be captured and processed through proper workflow.
-
 Redirecting to research-first `/create-doc`...
+```
+
+**For Existing Document Editing:**
+```
+VIOLATION DETECTED: Direct document editing attempted
+
+REQUIRED RESEARCH-FIRST EDIT WORKFLOW:
+1. RESEARCH PHASE: WebSearch + MCP Context7 con fecha $(date)
+2. Execute `/edit-doc [file_path] [edit_description]`
+3. System auto-chains to `/align-edit` for validation
+4. System auto-chains to `/verify-edit` for quality gates
+
+Redirecting to research-first `/edit-doc`...
+```
+
+**Universal Enforcement:**
+```
+ENFORCEMENT: All .md file operations MUST follow approved workflows.
+USER VOICE PRESERVED: Your content will be captured and processed through proper workflow.
+CHOICE AUTOMATIC: System detects file existence and routes to appropriate workflow.
 ```
 
 **VIOLATION LOGGING:**
 - Track all bypass attempts in `/data/workflow-violations/`
-- Record: timestamp, user_request, attempted_file, violation_type
+- Record: timestamp, user_request, attempted_file, violation_type, operation_type
 - Generate compliance reports for system optimization
-- Pattern analysis for workflow improvements
+- Pattern analysis for both create and edit workflow improvements
+- Separate tracking for creation vs edit violations
 
 **ENFORCEMENT EXCEPTIONS:**
 - System-generated files during workflow execution
@@ -120,14 +166,21 @@ Redirecting to research-first `/create-doc`...
 - User guidance optimization based on common violations
 
 **ENFORCEMENT INTEGRATION:**
-- Commands `/create-doc`, `/align-doc`, `/verify-doc` exist and are operational
+- **CREATE WORKFLOW**: `/create-doc`, `/align-doc`, `/verify-doc` fully operational
+- **EDIT WORKFLOW**: `/edit-doc`, `/align-edit`, `/verify-edit` fully operational  
+- **MAINTENANCE WORKFLOW**: `/maintain-docs` for proactive document health
 - Violation logging active in `/data/workflow-violations/`
 - Auto-redirection messages provide clear user guidance
 - System preserves user voice while enforcing proper workflow
+- Intelligent routing based on file existence (create vs edit)
 - Emergency override available for system maintenance only
 
-**ENFORCEMENT STATUS: ✅ ACTIVE**
-All .md file operations now validated pre-execution with automatic blocking and redirection to proper workflow.
+**ENFORCEMENT STATUS: ✅ ACTIVE - ENHANCED WITH EDIT WORKFLOW**
+All .md file operations validated pre-execution with intelligent routing:
+- **NEW FILES**: Auto-redirect to `/create-doc` workflow
+- **EXISTING FILES**: Auto-redirect to `/edit-doc` workflow  
+- **MAINTENANCE**: `/maintain-docs` for proactive document health
+- **COMPLETE COVERAGE**: Create, Edit, and Maintenance workflows fully integrated
 
 ## ARQUITECTURA MODULAR
 
