@@ -51,205 +51,97 @@ IF documento_no_existe OR voice_score < 54 OR conflicts_detected:
 
 ## Multi-Specialist Orchestration OBLIGATORIA
 
-### 4 Task Tools Concurrentes (MISMO MENSAJE)
-**EJECUTAR OBLIGATORIO**:
+### Template-Based Specialist Deployment
+**Deploy when**: Document modification required
 ```
-Task 1: Research Specialist - "Edit best practices + change impact analysis"  
-Task 2: Edit Specialist - "Document modification with voice preservation"
-Task 3: Voice Preservation Specialist - "Pre/post-edit voice integrity validation"
-Task 4: Architecture Reviewer - "System impact assessment + conflict detection"
-```
+Task: Edit Specialist (from ../templates/edit-specialist.md)
+Focus: Surgical document modification + voice preservation
 
-## Edit Workflow State Management
+Task: Change Impact Analyzer (from ../templates/change-impact-analyzer.md)
+Focus: Change scope assessment + dependency validation
 
-### State Initialization
-```yaml
-workflow_id: "edit-{timestamp}"  
-workflow_type: "document_edit"
-target_document: "{file_path}"
-original_voice_score: "{pre_edit_score}/60"
-edit_requests: "{user_modifications_requested}"
-rollback_point: "{original_document_backup}"
-state: "editing"
+Task: Voice Preservation (from ../templates/voice-preservation.md)
+Focus: Voice integrity validation (≥54/60 requirement)
+
+Task: Architecture Validator (from ../templates/architecture-validator.md)
+Focus: System impact + conflict detection
 ```
 
-### Change Tracking OBLIGATORIO
-- **Pre-Edit Snapshot**: Complete document backup before any changes
-- **Diff Generation**: Line-by-line change tracking with attribution
-- **Voice Delta Analysis**: Voice score impact assessment
-- **System Impact Log**: Architecture consistency validation results
+## Workflow State Management (via Orchestrator)
 
-## Specialist Deployment Specifications
+**Reference**: ../utilities/edit-workflow-orchestrator.md patterns
 
-### Research Specialist (TASK 1)
-**Mission**: Edit methodology research + impact analysis
-**Specialization**:
-- Document edit best practices for {document_type}
-- Change impact assessment methodology  
-- Voice preservation during modification techniques
-- Edit validation standards research
-- System integration impact analysis
-
-**Deliverable**: Comprehensive edit strategy with methodology recommendations
-
-### Edit Specialist (TASK 2) - NEW SPECIALIST TYPE
-**Mission**: Surgical document modification with voice preservation priority
-**Specialization**:
-- Document diff analysis and surgical editing
-- User request interpretation while preserving existing voice
-- Content modification maintaining structure and flow
-- Change integration without voice contamination
-- Technical accuracy during modifications
-
-**CRITICAL REQUIREMENTS**:
-- **Voice Preservation**: Maintain all existing user quotes EXACTLY
-- **Surgical Precision**: Modify only requested sections
-- **Structure Maintenance**: Preserve document organization
-- **Integration Accuracy**: Ensure changes integrate seamlessly
-
-**Deliverable**: Modified document with complete change documentation
-
-### Voice Preservation Specialist (TASK 3) - MANDATORY
-**Mission**: Voice integrity validation throughout edit process
-**Specialization**:
-- Pre-edit voice score validation (≥54/60 requirement)
-- User voice element identification and protection
-- Immutable decision preservation during edits
-- Post-edit voice integrity verification
-- Voice contamination detection and prevention
-
-**CRITICAL VALIDATION**:
-- **Immutable Elements**: Crystallized user decisions NEVER modified
-- **Quote Preservation**: User quotes maintained EXACTLY
-- **Source Attribution**: Complete traceability preserved
-- **Voice Score Maintenance**: Score must remain ≥54/60
-
-**Deliverable**: Voice preservation validation report with pre/post scores
-
-### Architecture Reviewer (TASK 4)
-**Mission**: System impact validation + conflict prevention
-**Specialization**:
-- Edit impact on command ecosystem analysis
-- Integration point validation post-modification
-- Conflict detection with existing rules/commands
-- Metadata consistency maintenance
-- Self-contained architecture compliance
-
-**CRITICAL VALIDATION**:
-- **System Consistency**: No conflicts with existing commands
-- **Integration Points**: All references remain functional
-- **Metadata Integrity**: Complete contextflow preservation
-- **Architecture Compliance**: Self-contained principles maintained
-
-**Deliverable**: System impact assessment with conflict resolution
-
-## Auto-Chain Logic to `/align-edit`
-
-### Success Criteria for Auto-Chain
+### Conditional Deployment Logic
 ```
-IF edit_successful AND voice_preserved AND no_system_conflicts AND quality_acceptable:
-    workflow_state = "aligning"  
-    auto_chain_to_align_edit()
-    preserve_edit_context()
+IF minor_edit: Deploy Edit + Voice templates only
+IF major_edit: Deploy full template suite
+IF critical_edit: Deploy enhanced validation suite
 ```
 
-### Conditional Logic
-```
-IF minor_issues_detected:
-    auto_correct_issues()
-    continue_to_align_edit()
-ELIF major_issues_detected:
-    execute_rollback()
-    provide_user_guidance()
-    pause_workflow_for_resolution()
-```
+### Auto-Chain Progression (Conditional)
+- **Minor**: skip alignment → direct verification
+- **Major**: full edit → align → verify progression  
+- **Critical**: enhanced validation at each step
 
-### Context Preservation for Chain
-- **Edit Changes**: Complete modification documentation
-- **Voice Analysis**: Pre/post-edit voice scores
-- **System Impact**: Architecture validation results
-- **Quality Metrics**: Initial quality assessment scores
+## Change Classification & Specialist Deployment
 
-## Rollback Mechanism
+### Minor Edits (Streamlined Processing)
+- **Triggers**: Typo corrections, format adjustments, simple content additions
+- **Specialists**: Edit Specialist + Voice Preservation (from templates)
+- **Auto-chain**: Direct to verification if quality gates met
 
-### Automatic Rollback Triggers
-- **Voice Score Drop**: Below 54/60 threshold
-- **System Conflicts**: Architecture violations detected
-- **Edit Failures**: Technical errors during modification
-- **Quality Issues**: Major quality degradation
+### Major Edits (Full Workflow)
+- **Triggers**: Structural changes, logic modifications, voice preservation updates
+- **Specialists**: All 4 template-based specialists deployed
+- **Auto-chain**: Full edit → align → verify progression
 
-### Rollback Process
-```
-restore_from_rollback_point()
-preserve_user_intent_for_retry()
-generate_failure_analysis_report()
-provide_corrective_guidance()
-```
+### Critical Edits (Enhanced Validation)
+- **Triggers**: Architecture changes, system integration modifications
+- **Specialists**: Enhanced template deployment + additional validation
+- **Auto-chain**: Full workflow with rollback checkpoints
 
-## Token Economy Enforcement
+## Auto-Chain Logic (Orchestrator-Managed)
 
-### Edit Scope Limits
-- **Core Changes**: 50-80 lines maximum modification scope
-- **Structure Preservation**: Maintain existing document organization
-- **Voice Economy**: Preserve existing voice content, modify only necessary sections
-- **Quality Focus**: Surgical precision over comprehensive rewrites
+**Reference**: ../utilities/edit-workflow-orchestrator.md conditional progression
+**Success criteria**: Template validation passes + quality gates met
+**Context preservation**: Orchestrator maintains state between workflow steps
 
-### Performance Optimization
-- **Targeted Editing**: Focus modifications on requested sections only
-- **Context Efficiency**: Minimize context usage during edits
-- **Parallel Processing**: Leverage concurrent specialist deployment
-- **Change Minimization**: Smallest possible modifications achieving goals
+## Rollback (Template-Based)
 
-## Quality Gates for Auto-Chain
+**Triggers**: Template validation failures, voice score <54/60, system conflicts
+**Process**: Orchestrator-managed restoration with template-based guidance
 
-### Minimum Requirements
-- ✅ **Voice Preservation**: Score ≥54/60 maintained
-- ✅ **Edit Accuracy**: Requested changes successfully implemented
-- ✅ **System Integrity**: No architecture conflicts introduced
-- ✅ **Technical Quality**: Modified content meets quality standards
+## Token Economy (Template-Driven)
 
-### Warning Thresholds
-- ⚠️ **Voice Score 54-56**: Proceed with enhanced monitoring
-- ⚠️ **Minor Conflicts**: Auto-correct and continue
-- ⚠️ **Quality 70-84**: Flag for alignment phase attention
+**Template optimization**: All specialists follow template efficiency patterns
+**Scope limits**: 50-80 lines maximum (enforced via change classification)
+**Context efficiency**: Template references minimize token usage
+**Parallel processing**: Concurrent template-based deployment
 
-### Blocking Thresholds
-- 🚫 **Voice Score <54**: Immediate rollback required
-- 🚫 **Major Conflicts**: System integrity violations
-- 🚫 **Quality <70**: Fundamental quality failure
+## Quality Gates (Template-Enforced)
 
-## User Communication Protocol
+**Template validation**: All templates include quality thresholds
+**Voice preservation**: ≥54/60 (enforced by voice-preservation.md template)
+**System integrity**: Architecture-validator.md template ensures compliance
+**Change accuracy**: Edit-specialist.md template ensures precision
 
-### Success Path Communication
-```
-"Edit workflow iniciado para {document}. Specialists deployed for modification analysis and voice preservation validation. Auto-chaining to /align-edit upon completion."
-```
+**Auto-chain logic**: Orchestrator handles conditional progression based on change complexity
 
-### Issue Detection Communication  
-```
-"Edit workflow detectó {issue_type}. Applying auto-correction. Workflow will continue to alignment phase with enhanced monitoring."
-```
+## User Communication
 
-### Failure Communication
-```
-"Edit workflow failed: {failure_reason}. Document restored to original state. User guidance: {corrective_steps}"
-```
+**Success**: "Edit workflow initiated via template-based specialists. Change complexity: {classification}. Auto-chaining based on validation results."
+**Issues**: "Edit workflow auto-correcting via template protocols. Enhanced monitoring enabled."
+**Failure**: "Edit workflow failed: {reason}. Template-based rollback initiated."
 
-## Integration with Existing System
+## System Integration
 
-### Enforcement Mechanism Extension
-- **Edit Blocking**: Direct Edit/MultiEdit operations redirected to this workflow
-- **Violation Logging**: Edit bypass attempts logged in `/data/workflow-violations/`
-- **User Guidance**: Clear redirection messages for direct edit attempts
-
-### Workflow Continuity
-- **State Management**: Complete edit workflow state preservation
-- **Context Handoff**: Seamless transition to `/align-edit`
-- **Quality Tracking**: Progressive quality score validation
-- **Voice Monitoring**: Continuous voice preservation verification
+**Template enforcement**: All specialists use validated templates from /templates/
+**Orchestrator coordination**: ../utilities/edit-workflow-orchestrator.md manages progression
+**Workflow continuity**: Conditional auto-chain based on change classification
+**Quality tracking**: Template-based validation ensures consistency
 
 ---
 
-**ESTE COMANDO INICIA** el workflow obligatorio para ALL document edits.
-**AUTO-CHAIN SIGUIENTE**: `/align-edit` with complete context preservation.
-**ROLLBACK AVAILABLE**: Automatic restoration on any critical failures.
+**TEMPLATE-DRIVEN WORKFLOW** for all document edits.
+**CONDITIONAL AUTO-CHAIN**: Based on change complexity classification.
+**ROLLBACK**: Template-based restoration protocols.

@@ -1,11 +1,11 @@
 {
   "status": "running",
-  "pid": 37803,
-  "started_at": "2025-07-28T13:46:45.574997",
-  "last_update": "2025-07-28T15:40:17.251187",
-  "cycle_count": 227,
+  "pid": 20288,
+  "started_at": "2025-07-28T16:22:59.674280",
+  "last_update": "2025-07-28T16:25:29.710821",
+  "cycle_count": 5,
   "mode": "daemon",
-  "health_score": 0.245,
-  "voice_preservation": 0.0,
+  "health_score": 0.352,
+  "voice_preservation": 0.95,
   "active_alerts": 0
 }

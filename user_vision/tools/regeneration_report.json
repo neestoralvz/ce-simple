@@ -1,0 +1,35 @@
+{
+  "regeneration_timestamp": "2025-07-28T16:17:16.860813",
+  "total_quotes_extracted": 124,
+  "documents_created": 5,
+  "source_conversations": 28,
+  "authenticity_score": 1.0,
+  "contamination_eliminated": true,
+  "documents": [
+    {
+      "theme": "methodology",
+      "path": "/Users/nalve/ce-simple/user_vision/methodology/methodology_foundation.md",
+      "quotes": 5
+    },
+    {
+      "theme": "architecture",
+      "path": "/Users/nalve/ce-simple/user_vision/architecture/architecture_foundation.md",
+      "quotes": 29
+    },
+    {
+      "theme": "workflow",
+      "path": "/Users/nalve/ce-simple/user_vision/workflow/workflow_foundation.md",
+      "quotes": 7
+    },
+    {
+      "theme": "communication",
+      "path": "/Users/nalve/ce-simple/user_vision/communication/communication_foundation.md",
+      "quotes": 13
+    },
+    {
+      "theme": "evolution",
+      "path": "/Users/nalve/ce-simple/user_vision/evolution/evolution_foundation.md",
+      "quotes": 4
+    }
+  ]
+}

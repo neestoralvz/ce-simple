@@ -3,6 +3,7 @@ contextflow:
   purpose: "Orchestrator puro - SIEMPRE despliega subagentes especializados via Task tools"
   core-principle: "NUNCA ejecutar tareas directamente - SIEMPRE orquestar especialistas"
   subagents: ["research", "architecture", "content", "voice-preservation", "quality"]
+  research-driven: false
 ---
 
 # ContextFlow Agent - Multi-Subagent Orchestrator v4.0

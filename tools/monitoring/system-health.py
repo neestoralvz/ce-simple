@@ -76,6 +76,9 @@ class ClaudeCodeHealthMonitor:
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
         
+        # Load existing data into caches
+        self._load_existing_data()
+        
         # Start background monitoring
         self.start_monitoring_thread()
     
@@ -160,6 +163,46 @@ class ClaudeCodeHealthMonitor:
         
         conn.commit()
         conn.close()
+    
+    def _load_existing_data(self):
+        """Load existing voice preservation data into cache on startup"""
+        try:
+            conn = sqlite3.connect(self.data_path)
+            
+            # Load recent voice preservation records (last 24 hours)
+            cutoff = (datetime.now() - timedelta(hours=24)).isoformat()
+            cursor = conn.execute('''
+                SELECT session_id, user_decision, preservation_score, 
+                       authenticity_markers, context_fidelity, decision_traceability, timestamp
+                FROM voice_preservation 
+                WHERE timestamp > ?
+                ORDER BY timestamp DESC
+                LIMIT 200
+            ''', (cutoff,))
+            
+            voice_records = cursor.fetchall()
+            conn.close()
+            
+            # Populate voice preservation cache
+            for record in voice_records:
+                voice_metric = VoicePreservationMetric(
+                    session_id=record[0],
+                    user_decision=record[1], 
+                    preservation_score=record[2],
+                    authenticity_markers=json.loads(record[3]),
+                    context_fidelity=record[4],
+                    decision_traceability=bool(record[5]),
+                    timestamp=record[6]
+                )
+                self.voice_preservation_cache.append(voice_metric)
+            
+            if voice_records:
+                self.logger.info(f"Loaded {len(voice_records)} existing voice preservation records into cache")
+            else:
+                self.logger.warning("No existing voice preservation records found - this may indicate data collection issues")
+                
+        except Exception as e:
+            self.logger.error(f"Error loading existing data: {e}")
     
     def record_tool_execution(self, tool_name: str, execution_time: float, 
                             success: bool, context_preserved: bool = True,

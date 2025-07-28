@@ -3,6 +3,7 @@ contextflow:
   purpose: "Inter-command communication protocols for self-contained ecosystem"
   core-utility: true
   internal-use: true
+  research-driven: true
 ---
 
 # Inter-Command Protocol - Ecosystem Communication

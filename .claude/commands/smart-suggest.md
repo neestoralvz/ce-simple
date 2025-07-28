@@ -5,6 +5,7 @@ contextflow:
   next: ["recommended commands based on context"]
   requires-subagent: false
   auto-chain: false
+  research-driven: false
   communication-rules:
     - "NUNCA bash echo para comunicar con usuario"
     - "SIEMPRE Task tools → Main agent → Usuario"

@@ -5,6 +5,7 @@ contextflow:
   next: ["voice-validation", "create-doc", "edit-doc"]
   requires-subagent: false
   auto-chain: false
+  research-driven: false
   communication-rules:
     - "NUNCA bash echo para comunicar con usuario"
     - "SIEMPRE Task tools → Main agent → Usuario"

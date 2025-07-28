@@ -5,6 +5,7 @@ contextflow:
   next: ["extract-insights", "process-layer", "create-doc", "implement"]
   requires-subagent: true
   auto-chain: true
+  research-driven: true
   communication-rules:
     - "NUNCA bash echo para comunicar con usuario"
     - "SIEMPRE Task tools → Main agent → Usuario"

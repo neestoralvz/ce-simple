@@ -4,6 +4,7 @@ contextflow:
   triggers: ["drift detectado", "validation periódica", "compliance check"]
   critical: true
   audit-capability: true
+  research-driven: true
 ---
 
 # Comando `/supervise-alignment`

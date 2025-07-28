@@ -4,6 +4,7 @@ contextflow:
   auto-update: true
   core-document: true
   efficiency-tracker: true
+  research-driven: true
 ---
 
 # Master Plan - Auto-Evolving System Direction

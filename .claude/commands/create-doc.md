@@ -10,118 +10,41 @@ contextflow:
 
 # Comando `/create-doc` - Workflow Step 1
 
-## Subagent Orchestration OBLIGATORIA
+## Document Creation Orchestration
 
-**NUNCA crear contenido directamente** - SIEMPRE via Task tool con Content Specialist.
+**INSTRUCCIÓN**: Deploy document creation specialists using template references
 
-### Task Tools Deployment (EJECUTAR INMEDIATAMENTE):
+### Specialist Deployment (Condicional)
+**SI documento requiere research → Deploy Research Specialist**
+**SI documento complejo → Deploy full specialist suite**
+**SI documento básico → Deploy Content + Voice Preservation only**
 
-**DEPLOYMENT PATTERN**: 4 Task tools concurrentes en mismo mensaje para máxima efficiency:
+### Template References
+```
+Task: Research Specialist (from ../templates/research-specialist.md)
+Description: "Document type best practices research"
+Focus: {document_type} structure + optimization patterns
 
-```python
-# TASK 1: Research Specialist
-Task(
-    description="Research best practices documentation patterns",
-    prompt="""Actúa como Research Specialist. Tu misión: Identificar best practices para el tipo de documento solicitado.
+Task: Content Optimizer (from ../templates/content-optimizer.md)  
+Description: "Generate core document using research"
+Focus: User voice integration + token economy + metadata
 
-DOCUMENT TYPE: {document_type}
-USER REQUEST: {user_request}
-CONTEXT SOURCE: {context_source}
+Task: Voice Preservation (from ../templates/voice-preservation.md)
+Description: "MANDATORY voice separation compliance"
+Focus: synthesis-voice-separation.md template enforcement
 
-RESEARCH OBJECTIVES:
-1. Best practices para {document_type} structure
-2. Token economy optimization patterns
-3. Context loading methodologies
-4. Anti-patterns a evitar
-5. Integration patterns con sistema existente
-
-OUTPUT: Structured research findings con recommendations específicas.""",
-    subagent_type="general-purpose"
-)
-
-# TASK 2: Content Specialist  
-Task(
-    description="Generate core document structure and content",
-    prompt="""Actúa como Content Specialist. MISSION CRITICAL: Generar documento core usando research findings.
-
-INPUT CONTEXT:
-- Document type: {document_type}
-- User requirements: {user_voice_quotes}
-- Research findings: {research_output}
-- Context source: {context_source}
-
-CONTENT GENERATION REQUIREMENTS:
-- Token economy: 50-80 líneas core máximo
-- Context metadata: Complete decision tree
-- User voice integration: Exact quotes preserved
-- Structure optimization: Headers, sections, navigation
-- Technical accuracy: Syntax, references, imports validated
-
-OUTPUT: Complete document draft con metadata + context árbol.""",
-    subagent_type="general-purpose"
-)
-
-# TASK 3: Voice Preservation Specialist (MANDATORY)
-Task(
-    description="MANDATORY voice separation compliance validation",
-    prompt="""Actúa como Voice Preservation Specialist. ENFORCEMENT MISSION: Absolute user voice preservation.
-
-VOICE PRESERVATION IMPERATIVES:
-- Template: synthesis-voice-separation.md (MANDATORY)
-- Separation: User voice vs system analysis (COMPLETE)
-- Scoring: Voice preservation ≥54/60 (90%+ compliance)
-- Immutability: Crystallized user decisions (PROTECTED)
-- Attribution: Every quote linked to source (EXACT)
-
-INPUT FOR ANALYSIS:
-- User voice quotes: {user_voice_content}
-- Context source: {source_location}
-- Content draft: {content_specialist_output}
-
-VOICE PRESERVATION VALIDATION:
-1. Extract exact user quotes (ZERO paraphrasing)
-2. Verify complete source attribution
-3. Ensure user/system content separation
-4. Mark crystallized decisions as immutable
-5. Calculate voice preservation score
-6. Enforce synthesis-voice-separation.md template
-
-OUTPUT: Voice-validated document con scoring matrix + compliance verification.""",
-    subagent_type="general-purpose"
-)
-
-# TASK 4: Architecture Validator
-Task(
-    description="Validate structure and metadata compliance",
-    prompt="""Actúa como Architecture Validator. SYSTEM INTEGRATION MISSION: Ensure document integrates perfectly.
-
-ARCHITECTURE VALIDATION SCOPE:
-- Content draft: {content_with_voice_preservation}
-- System context: Current architecture patterns
-- Integration points: Command ecosystem, rules system
-- Metadata compliance: Contextflow headers, decision trees
-
-VALIDATION CHECKLIST:
-1. Contextflow metadata: Complete y accurate
-2. Decision tree: Semantic triggers, alternatives, next steps
-3. System integration: No conflicts con commands/rules existentes
-4. Token economy: Optimization sin perder functionality
-5. Navigation structure: Clear headers, sections, links
-6. Technical accuracy: Syntax validation, import references
-
-OUTPUT: Architecture-validated document con integration compliance verified.""",
-    subagent_type="general-purpose"
-)
+Task: Architecture Validator (from ../templates/architecture-validator.md)
+Description: "System integration validation"
+Focus: Contextflow metadata + conflict detection
 ```
 
-### VOICE PRESERVATION ENFORCEMENT:
-**MANDATORY TEMPLATE**: synthesis-voice-separation.md automáticamente enforced por Voice Preservation Specialist
-**SEPARATION PROTOCOL**: User voice vs system analysis completely separated via specialist validation
-**SCORING ENFORCEMENT**: Voice preservation score ≥54/60 automatically validated
-**IMMUTABILITY PROTECTION**: Crystallized user decisions automatically marked unchangeable
-**SOURCE ATTRIBUTION**: Every user quote automatically linked to original source
+### Voice Preservation Requirements
+**Template**: synthesis-voice-separation.md (enforced via template)
+**Score minimum**: ≥54/60 (validated by Voice Preservation specialist)
+**Separation**: User voice vs system analysis (template-enforced)
+**Attribution**: Source linking (automatic via specialist)
 
-**MAIN AGENT CONSOLIDATION**: Receive outputs from 4 specialists → Generate final document combining research, content, voice preservation, and architecture validation.
+**Main Agent**: Consolidate specialist outputs → Generate final document
 
 ## Input Requirements:
 - **Document type**: Command, rule, methodology, template
@@ -159,118 +82,29 @@ contextflow:
 **Ready for**: `/align-doc` - Architecture validation with voice preservation verified
 ```
 
-## Auto-Chaining Implementation:
+## Auto-Chain Logic (Condicional)
 
-```markdown
-# WORKFLOW STATE MANAGER - EMBEDDED
+**Workflow progression**: create-doc → align-doc (si documento complejo)
+**State management**: Via ../utilities/document-workflow-orchestrator.md
+**Trigger conditions**: Document quality > basic threshold
 
-**Self-Contained Workflow Management**:
-- workflow_id generation: "doc-{timestamp}"
-- State tracking: current_step, status, document_path
-- Error handling: pause/resume logic
-- Auto-chain triggers: success/failure conditions
-
-WORKFLOW STATE INITIALIZATION:
-1. Create workflow_id: "doc-{timestamp}"
-2. Set current_step: 1
-3. Store document_type from user input
-4. Initialize step_history array
-5. Enable auto_chain_enabled: true
-
-POST-CREATION AUTO-CHAIN LOGIC:
-IF subagent_deployment_success AND document_created:
-  → UPDATE workflow state (step 1 completed)
-  → STORE document_path in workflow state
-  → AUTO-EXECUTE: Task tool with align-doc command
-  → PASS: workflow_id + document_path + user_context
+### Auto-Chain Implementation
+```
+IF document_creation_success AND complexity > basic:
+  → Execute /align-doc con workflow context
+  → Pass document_path + user_context + specialist_results
   
-IF subagent_deployment_failed OR creation_errors:
-  → SET error_state in workflow
-  → PAUSE auto-chain progression
-  → REQUIRE user intervention for error resolution
-  
-IF user_confirmation_required (complex documents):
-  → PAUSE auto-chain temporarily
-  → AWAIT user approval before align-doc trigger
-  → RESUME auto-chain on user confirmation
+IF creation_errors OR user_intervention_required:
+  → Pause auto-chain
+  → Require manual continuation
 ```
 
-### Auto-Chain Task Tool Implementation (EXECUTABLE):
-
-```python
-# POST-SUCCESS AUTO-CHAIN EXECUTION
-if subagent_deployment_success and document_created:
-    # Update workflow state
-    workflow_state.update({
-        "current_step": 1,
-        "status": "completed",
-        "document_path": created_document_path,
-        "timestamp": current_timestamp
-    })
-    
-    # AUTO-CHAIN TO ALIGN-DOC
-    Task(
-        description="Auto-chain workflow to align-doc step",
-        prompt="""Execute /align-doc command con workflow state continuation.
-
-WORKFLOW STATE HANDOFF:
-- workflow_id: {workflow_id}
-- document_path: {created_document_path}
-- document_type: {document_type}
-- user_context: {original_user_request}
-- voice_preservation_score: {voice_score}
-- creation_results: {specialist_outputs_summary}
-- research_findings: {research_specialist_output}
-- auto_chain_enabled: true
-
-EXECUTE: /align-doc command immediately con complete context preservation.
-
-ALIGNMENT MISSION: Validate architecture consistency while preserving user voice and research findings.""",
-        subagent_type="general-purpose"
-    )
-else:
-    # ERROR HANDLING - PAUSE AUTO-CHAIN
-    workflow_state.update({
-        "status": "error",
-        "error_details": error_summary,
-        "auto_chain_paused": true
-    })
-    # Require user intervention
-```
-
-## Success Criteria + Auto-Chain Triggers (AUTOMATED VALIDATION):
-
-**SPECIALIST DEPLOYMENT VALIDATION**:
-- [x] 4 Task tools deployed concurrently (Research, Content, Voice Preservation, Architecture)
-- [x] Voice Preservation Specialist deployment (MANDATORY - auto-enforced)
-- [x] synthesis-voice-separation.md template usage (AUTO-ENFORCED by specialist)
-
-**VOICE PRESERVATION VALIDATION** (Auto-verified by Voice Preservation Specialist):
-- [x] User voice completely separated from system analysis
-- [x] Voice preservation score ≥54/60 (AUTOMATICALLY calculated)
-- [x] All user quotes exact with source attribution (ZERO paraphrasing tolerance)
-- [x] Crystallized decisions marked immutable (AUTO-PROTECTION enabled)
-
-**CONTENT & ARCHITECTURE VALIDATION** (Auto-verified by specialists):
-- [x] Token economy optimized (50-80 líneas core - Content Specialist enforced)
-- [x] Context metadata complete (Architecture Validator enforced)
-- [x] System integration validated (NO conflicts detected)
-- [x] Technical accuracy verified (Syntax, references, imports validated)
-
-**WORKFLOW ORCHESTRATION** (Auto-managed):
-- [x] Workflow state initialized and tracked (workflow_id generated)
-- [x] Document path stored for chain progression
-- [x] Auto-chain to align-doc triggered (CONDITIONAL on success)
-- [x] Complete context handoff prepared (All specialist outputs preserved)
-- [x] Voice preservation verification completed (Ready for next step)
-
-**AUTO-CHAIN EXECUTION LOGIC**:
-```python
-if all_specialists_successful and voice_score >= 54:
-    trigger_auto_chain_to_align_doc()
-else:
-    pause_workflow_for_user_intervention()
-```
+## Success Criteria
+- [ ] Specialists deployed via template references
+- [ ] Voice preservation score ≥54/60
+- [ ] Document structure compliant
+- [ ] Auto-chain logic functional
+- [ ] Token economy optimized (50-80 lines)
 
 ---
 **Workflow**: CREATE → Align → Verify

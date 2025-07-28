@@ -142,6 +142,26 @@ class QuoteAuthenticationEngine:
         with open(self.violations_log, 'a') as f:
             f.write(json.dumps(violation_entry) + "\n")
     
+    def block_operation_if_contaminated(self, target_file, proposed_content):
+        """Block operations that would contaminate user_vision/"""
+        if not str(target_file).startswith(str(self.user_vision_path)):
+            return True  # Allow operations outside user_vision/
+        
+        # Extract quotes from proposed content
+        quotes = re.findall(r'> (.+?)(?:\n|$)', proposed_content, re.MULTILINE)
+        sources = self.load_conversation_sources()
+        
+        for quote in quotes:
+            validation = self.validate_quote_authenticity(quote, sources)
+            if not validation["valid"]:
+                self.log_violation(target_file, validation)
+                print(f"🚫 CONTAMINATION BLOCKED: Quote not found in conversations")
+                print(f"   File: {target_file}")
+                print(f"   Quote: {quote}")
+                return False
+        
+        return True
+    
     def generate_purity_report(self):
         """Generate comprehensive purity status report"""
         audit = self.audit_all_vision_documents()
