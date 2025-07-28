@@ -1,0 +1,19 @@
+# Runtime and monitoring files
+.claude/logs/*.pid
+data/monitoring/health.db*
+data/monitoring/health_daemon_status.json
+data/monitoring/health_status.json
+data/monitoring/*.pid
+
+# Test artifacts
+test_*.txt
+test_*.md
+
+# System artifacts
+*.pyc
+__pycache__/
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp

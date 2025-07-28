@@ -365,6 +365,51 @@ def api_alerts():
     alerts = dashboard_instance._get_recent_alerts()
     return jsonify(alerts)
 
+@app.route('/api/git-event', methods=['POST'])
+def api_git_event():
+    """API endpoint for receiving real-time git events"""
+    try:
+        event_data = request.get_json()
+        if not event_data:
+            return jsonify({'error': 'No event data provided'}), 400
+        
+        # Log the event (could also trigger real-time updates)
+        print(f"Real-time git event: {event_data.get('event_type')} on {event_data.get('git_data', {}).get('branch')}")
+        
+        return jsonify({'status': 'received', 'event_id': str(time.time())})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/claude-event', methods=['POST'])
+def api_claude_event():
+    """API endpoint for receiving real-time Claude events"""
+    try:
+        event_data = request.get_json()
+        if not event_data:
+            return jsonify({'error': 'No event data provided'}), 400
+        
+        # Log the event (could also trigger real-time updates)
+        print(f"Real-time Claude event: {event_data.get('tool_name')} - {event_data.get('hook_event')}")
+        
+        return jsonify({'status': 'received', 'event_id': str(time.time())})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/real-time-event', methods=['POST'])
+def api_real_time_event():
+    """Generic API endpoint for real-time events"""
+    try:
+        event_data = request.get_json()
+        if not event_data:
+            return jsonify({'error': 'No event data provided'}), 400
+        
+        # Log the event
+        print(f"Real-time event: {event_data.get('event_type', 'unknown')}")
+        
+        return jsonify({'status': 'received', 'timestamp': time.time()})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # HTML template for dashboard
 DASHBOARD_TEMPLATE = '''
 <!DOCTYPE html>

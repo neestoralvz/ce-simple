@@ -283,6 +283,41 @@ tool_name = "Bash"
 command = "/Users/nalve/ce-simple/.claude/hooks/orchestration-progress-reporter.sh '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
 
 # ============================================================================
+# REAL-TIME MONITORING HOOKS
+# Capture all tool usage for real-time health monitoring and dashboard
+# ============================================================================
+
+# Pre-tool monitoring - capture start events
+[[hooks]]
+event = "PreToolUse"
+description = "Capture tool start events for real-time monitoring"
+run_in_background = true
+[hooks.matcher]
+command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'PRE' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' ''"
+
+# Post-tool monitoring - capture completion events with performance metrics
+[[hooks]]
+event = "PostToolUse"
+description = "Capture tool completion events with performance metrics"
+run_in_background = true
+[hooks.matcher]
+command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'POST' '$CLAUDE_TOOL_NAME' '$CLAUDE_TOOL_INPUT' '$CLAUDE_TOOL_OUTPUT'"
+
+# Notification monitoring - capture system notifications
+[[hooks]]
+event = "Notification"
+description = "Capture system notifications for monitoring dashboard"
+run_in_background = true
+command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'NOTIFY' 'notification' '$CLAUDE_NOTIFICATION_TYPE:$CLAUDE_NOTIFICATION_MESSAGE' ''"
+
+# Session monitoring - capture session lifecycle events
+[[hooks]]
+event = "Stop"
+description = "Capture session stop events for lifecycle monitoring"
+run_in_background = true
+command = "/Users/nalve/ce-simple/.claude/hooks/real-time-monitoring.sh 'STOP' 'session' '$CLAUDE_SESSION_ID' ''"
+
+# ============================================================================
 # HOOK CONFIGURATION NOTES
 # ============================================================================
 

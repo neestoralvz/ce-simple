@@ -45,6 +45,7 @@
 - Identify required specializations  
 - Spawn specialized conversations via Task tools
 - Monitor and coordinate between spawned conversations
+- **MANDATORY**: Consolidate specialist outputs and provide final user notification
 - Report progress and maintain delegation integrity
 
 **FORBIDDEN ACTIONS**:
@@ -53,6 +54,7 @@
 - Direct problem solving or troubleshooting  
 - Direct content creation or documentation
 - Direct technical work or data processing
+- **CRITICAL VIOLATION**: Allowing subagents to provide final responses without main agent coordination
 
 ## ÁRBOL DE DECISIÓN PRINCIPAL
 
@@ -177,8 +179,34 @@ Session Start: Maintain + Extract (full context para analysis)
 /handoff/ (CONTINUIDAD SESIONES)
 ```
 
+## ORCHESTRATION COMPLETION ENFORCEMENT (CRITICAL ADDITION)
+
+**MANDATORY ORCHESTRATION COMPLETION PROTOCOL**: Every Task tool deployment MUST include main agent final coordination
+
+**OBLIGATORY SEQUENCE**:
+1. Task tool deployment to specialists ✅
+2. Specialist work completion ✅  
+3. **MANDATORY**: Main agent consolidation of specialist outputs
+4. **MANDATORY**: Main agent final user notification  
+5. **MANDATORY**: Orchestration completion verification
+
+**ENFORCEMENT TEMPLATE**: @/templates/orchestration-completion-protocol.md
+
+**VIOLATION PREVENTION**:
+- NO specialist can provide final user communication
+- NO Task tool result stands alone without main agent coordination  
+- EVERY orchestration cycle must be complete end-to-end
+- **ALWAYS**: Main agent provides final summary to user after specialist work
+
+**IMPLEMENTATION REQUIREMENT**: 
+After EVERY Task tool execution, main agent MUST:
+- Consolidate all specialist outputs
+- Provide integration analysis to user
+- Communicate final coordinated results
+- Confirm orchestration completion status
+
 ---
 
-**SISTEMA EVOLUCIONA ORGÁNICAMENTE** preservando user voice como fuente de verdad mientras optimiza automáticamente architecture + efficiency via multi-subagent intelligence + research-first methodology.
+**SISTEMA EVOLUCIONA ORGÁNICAMENTE** preservando user voice como fuente de verdad mientras optimiza automáticamente architecture + efficiency via multi-subagent intelligence + research-first methodology + **COMPLETE ORCHESTRATION CYCLES**.
 
 **Context detallado**: Ver imports automáticos arriba para methodology, architecture, token economy + research-first protocol integration.

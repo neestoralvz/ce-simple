@@ -319,11 +319,12 @@ class ClaudeCodeHealthMonitor:
         return health_snapshot
     
     def _calculate_system_performance(self) -> Dict[str, float]:
-        """Calculate system performance metrics"""
-        # Get recent tool executions (last hour)
+        """Calculate system performance metrics with real-time git and Claude activity"""
         cutoff = (datetime.now() - timedelta(hours=1)).isoformat()
         
         conn = sqlite3.connect(self.data_path)
+        
+        # Get tool performance data
         cursor = conn.execute('''
             SELECT AVG(execution_time) as avg_time,
                    AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as success_rate,
@@ -332,24 +333,77 @@ class ClaudeCodeHealthMonitor:
             WHERE timestamp > ?
         ''', (cutoff,))
         
-        result = cursor.fetchone()
+        tool_result = cursor.fetchone()
+        
+        # Get real-time git activity from new event capture system
+        git_cursor = conn.execute('''
+            SELECT COUNT(*) as git_events,
+                   AVG(operation_time) as avg_git_time,
+                   AVG(files_changed) as avg_files_changed
+            FROM git_events 
+            WHERE timestamp > ?
+        ''', (cutoff,))
+        
+        git_result = git_cursor.fetchone()
+        
+        # Get real-time Claude activity
+        claude_cursor = conn.execute('''
+            SELECT COUNT(*) as claude_events,
+                   AVG(execution_time) as avg_claude_time,
+                   AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as claude_success_rate
+            FROM claude_events 
+            WHERE timestamp > ?
+        ''', (cutoff,))
+        
+        claude_result = claude_cursor.fetchone()
+        
+        # Get performance metrics from event capture
+        perf_cursor = conn.execute('''
+            SELECT metric_name, AVG(metric_value) as avg_value
+            FROM performance_events 
+            WHERE timestamp > ? AND metric_type IN ('git_activity', 'git_metrics', 'claude_metrics')
+            GROUP BY metric_name
+        ''', (cutoff,))
+        
+        perf_metrics = {row[0]: row[1] for row in perf_cursor.fetchall()}
         conn.close()
         
-        if result and result[2] > 0:
-            avg_response_time = result[0] or 0.0
-            success_rate = result[1] or 0.0
-            total_executions = result[2]
+        # Calculate enhanced performance scores
+        total_executions = (tool_result[2] if tool_result else 0) + (git_result[0] if git_result else 0) + (claude_result[0] if claude_result else 0)
+        
+        if total_executions > 0:
+            # Weighted average response time
+            tool_time = tool_result[0] if tool_result and tool_result[0] else 0.0
+            git_time = git_result[1] if git_result and git_result[1] else 0.0
+            claude_time = claude_result[1] if claude_result and claude_result[1] else 0.0
             
-            # Performance score calculation
-            response_score = max(0, 1.0 - (avg_response_time / 10.0))  # 10s max
-            performance_score = (response_score * 0.4) + (success_rate * 0.6)
+            avg_response_time = (tool_time + git_time + claude_time) / 3.0
+            
+            # Weighted success rate
+            tool_success = tool_result[1] if tool_result and tool_result[1] else 0.0
+            claude_success = claude_result[2] if claude_result and claude_result[2] else 0.0
+            
+            success_rate = (tool_success + claude_success) / 2.0
+            
+            # Git activity bonus
+            git_activity_score = perf_metrics.get('activity_score', 0.0)
+            files_activity = min(1.0, (git_result[2] if git_result and git_result[2] else 0) / 10.0)
+            
+            # Enhanced performance score with real-time activity
+            response_score = max(0, 1.0 - (avg_response_time / 10.0))
+            activity_bonus = (git_activity_score * 0.3) + (files_activity * 0.2)
+            performance_score = (response_score * 0.3) + (success_rate * 0.4) + activity_bonus
             
             return {
                 "avg_response_time": round(avg_response_time, 3),
                 "success_rate": round(success_rate, 3),
                 "total_executions": total_executions,
-                "performance_score": round(performance_score, 3),
-                "response_efficiency": round(response_score, 3)
+                "performance_score": round(min(1.0, performance_score), 3),
+                "response_efficiency": round(response_score, 3),
+                "git_activity_score": round(git_activity_score, 3),
+                "git_events": git_result[0] if git_result else 0,
+                "claude_events": claude_result[0] if claude_result else 0,
+                "avg_files_changed": round(git_result[2], 1) if git_result and git_result[2] else 0
             }
         
         return {
@@ -357,7 +411,11 @@ class ClaudeCodeHealthMonitor:
             "success_rate": 0.0, 
             "total_executions": 0,
             "performance_score": 0.0,
-            "response_efficiency": 0.0
+            "response_efficiency": 0.0,
+            "git_activity_score": 0.0,
+            "git_events": 0,
+            "claude_events": 0,
+            "avg_files_changed": 0.0
         }
     
     def _calculate_voice_preservation_metrics(self) -> Dict[str, float]:
@@ -473,13 +531,12 @@ class ClaudeCodeHealthMonitor:
         }
     
     def _calculate_claude_code_metrics(self) -> Dict[str, float]:
-        """Calculate Claude Code CLI specific metrics"""
-        # Count Task tool deployments and subagent coordination
+        """Calculate Claude Code CLI specific metrics with real-time event integration"""
         cutoff = (datetime.now() - timedelta(hours=6)).isoformat()
         
         conn = sqlite3.connect(self.data_path)
         
-        # Task tool usage
+        # Task tool usage from both old and new systems
         cursor = conn.execute('''
             SELECT COUNT(*) as task_deployments,
                    AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as task_success_rate
@@ -489,51 +546,109 @@ class ClaudeCodeHealthMonitor:
         
         task_result = cursor.fetchone()
         
+        # Real-time Claude events from hooks
+        claude_cursor = conn.execute('''
+            SELECT COUNT(*) as real_time_events,
+                   COUNT(DISTINCT tool_name) as unique_tools,
+                   AVG(execution_time) as avg_execution_time,
+                   AVG(CASE WHEN success THEN 1.0 ELSE 0.0 END) as real_time_success_rate,
+                   AVG(CASE WHEN context_preserved THEN 1.0 ELSE 0.0 END) as context_preservation_rate,
+                   AVG(CASE WHEN user_voice_maintained THEN 1.0 ELSE 0.0 END) as voice_maintenance_rate
+            FROM claude_events 
+            WHERE timestamp > ?
+        ''', (cutoff,))
+        
+        claude_result = claude_cursor.fetchone()
+        
         # Subagent coordination
-        cursor = conn.execute('''
+        coordination_cursor = conn.execute('''
             SELECT COUNT(*) as coordination_events,
                    AVG(CASE WHEN subagent_coordination THEN 1.0 ELSE 0.0 END) as coordination_rate
             FROM tool_performance 
             WHERE timestamp > ? AND subagent_coordination IS NOT NULL
         ''', (cutoff,))
         
-        coordination_result = cursor.fetchone()
+        coordination_result = coordination_cursor.fetchone()
         
-        # Parallel execution detection (multiple tools within short timespan)
-        cursor = conn.execute('''
+        # Enhanced parallel execution detection using real-time events
+        parallel_cursor = conn.execute('''
             SELECT COUNT(DISTINCT session_id) as parallel_sessions
             FROM (
                 SELECT session_id, 
                        COUNT(*) as concurrent_tools,
-                       MAX(datetime(timestamp)) - MIN(datetime(timestamp)) as duration_seconds
+                       (MAX(julianday(timestamp)) - MIN(julianday(timestamp))) * 86400 as duration_seconds
+                FROM claude_events 
+                WHERE timestamp > ?
+                GROUP BY session_id
+                HAVING concurrent_tools > 1 AND duration_seconds < 60
+                UNION
+                SELECT session_id, 
+                       COUNT(*) as concurrent_tools,
+                       (MAX(datetime(timestamp)) - MIN(datetime(timestamp))) as duration_seconds
                 FROM tool_performance 
                 WHERE timestamp > ?
                 GROUP BY session_id
                 HAVING concurrent_tools > 1 AND duration_seconds < 60
             )
-        ''', (cutoff,))
+        ''', (cutoff, cutoff,))
         
-        parallel_result = cursor.fetchone()
+        parallel_result = parallel_cursor.fetchone()
         
         conn.close()
         
-        # Calculate Claude Code efficiency metrics
+        # Calculate enhanced Claude Code efficiency metrics
         task_deployments = task_result[0] if task_result else 0
         task_success_rate = task_result[1] if task_result and task_result[1] else 0.0
+        
+        # Real-time metrics
+        real_time_events = claude_result[0] if claude_result else 0
+        unique_tools = claude_result[1] if claude_result else 0
+        avg_execution_time = claude_result[2] if claude_result and claude_result[2] else 0.0
+        real_time_success_rate = claude_result[3] if claude_result and claude_result[3] else 0.0
+        context_preservation_rate = claude_result[4] if claude_result and claude_result[4] else 0.0
+        voice_maintenance_rate = claude_result[5] if claude_result and claude_result[5] else 0.0
+        
+        # Coordination metrics
         coordination_events = coordination_result[0] if coordination_result else 0
         coordination_rate = coordination_result[1] if coordination_result and coordination_result[1] else 0.0
         parallel_sessions = parallel_result[0] if parallel_result else 0
         
-        # Claude Code optimization score
-        optimization_score = (task_success_rate * 0.4) + (coordination_rate * 0.3) + (min(1.0, parallel_sessions / 10) * 0.3)
+        # Enhanced Claude Code optimization score
+        # Weight real-time success higher than legacy metrics
+        combined_success_rate = (real_time_success_rate * 0.7) + (task_success_rate * 0.3) if real_time_events > 0 else task_success_rate
+        
+        # Performance efficiency based on execution time
+        time_efficiency = max(0, 1.0 - (avg_execution_time / 5.0)) if avg_execution_time > 0 else 1.0
+        
+        # Tool diversity bonus
+        tool_diversity = min(1.0, unique_tools / 15.0) if unique_tools > 0 else 0.0
+        
+        # Comprehensive optimization score
+        optimization_score = (
+            (combined_success_rate * 0.25) + 
+            (context_preservation_rate * 0.20) + 
+            (voice_maintenance_rate * 0.20) + 
+            (coordination_rate * 0.15) + 
+            (time_efficiency * 0.10) + 
+            (tool_diversity * 0.05) + 
+            (min(1.0, parallel_sessions / 10) * 0.05)
+        )
         
         return {
             "task_tool_deployments": task_deployments,
             "task_success_rate": round(task_success_rate, 3),
+            "real_time_events": real_time_events,
+            "unique_tools_used": unique_tools,
+            "avg_execution_time": round(avg_execution_time, 3),
+            "real_time_success_rate": round(real_time_success_rate, 3),
+            "context_preservation_rate": round(context_preservation_rate, 3),
+            "voice_maintenance_rate": round(voice_maintenance_rate, 3),
             "subagent_coordination_events": coordination_events,
             "coordination_success_rate": round(coordination_rate, 3),
             "parallel_execution_sessions": parallel_sessions,
-            "claude_code_optimization_score": round(optimization_score, 3)
+            "claude_code_optimization_score": round(optimization_score, 3),
+            "time_efficiency_score": round(time_efficiency, 3),
+            "tool_diversity_score": round(tool_diversity, 3)
         }
     
     def _calculate_overall_health_score(self, system_perf: Dict, voice_preservation: Dict,
