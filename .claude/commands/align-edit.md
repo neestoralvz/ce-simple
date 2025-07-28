@@ -43,149 +43,48 @@ Validación de consistencia y alineación de ediciones documentales con system a
 - **Change Impact Assessment**: Downstream effects of modifications
 - **Integration Validation**: System interoperability preservation
 
-## Multi-Specialist Orchestration OBLIGATORIA
+## Template-Based Alignment Validation
 
-### 4 Task Tools Concurrentes (MISMO MENSAJE)
-**EJECUTAR OBLIGATORIO**:
+### Specialist Deployment (Conditional)
 ```
-Task 1: Architecture Validator - "Edit consistency + system impact validation"
-Task 2: Research Specialist - "Edit alignment best practices + optimization"  
-Task 3: Voice Preservation Validator - "Voice integrity + contamination detection"
-Task 4: Change Impact Analyzer - "Downstream effects + dependency validation"
+Task: Architecture Validator (from ../templates/architecture-validator.md)
+Focus: Edit consistency + system impact validation
+
+Task: Voice Preservation (from ../templates/voice-preservation.md)
+Focus: Voice integrity + contamination detection (≥54/60)
+
+Task: Change Impact Analyzer (from ../templates/change-impact-analyzer.md)
+Focus: Downstream effects + dependency validation
+
+Task: Integration Specialist (from ../templates/integration-specialist.md)
+Focus: Cross-reference + integration validation
 ```
 
 ## Workflow State Continuation
 
-### State Validation OBLIGATORIA
-```yaml
-workflow_validation:
-  prerequisite_state: "editing"
-  required_context: ["edit_changes", "voice_analysis", "system_impact", "quality_metrics"]
-  continuation_state: "aligning"
-  auto_chain_target: "/verify-edit"
-```
+### Orchestrator-Managed State Transition
 
-### Context Requirements
-- **Edit Documentation**: Complete change log from `/edit-doc`
-- **Voice Analysis**: Pre/post-edit voice scores
-- **System Impact**: Architecture validation results
-- **Quality Baseline**: Initial edit quality assessment
+**Reference**: ../utilities/edit-workflow-orchestrator.md state management
+**Context handoff**: Template-based specialists receive editing context
+**Auto-chain logic**: Conditional progression based on validation results
 
-## Specialist Deployment Specifications
+## Template-Driven Validation (Efficient)
 
-### Architecture Validator (TASK 1) - ENHANCED FOR EDITS
-**Mission**: Edit consistency with system architecture validation
-**Edit-Specific Specialization**:
-- Modified content system integration validation
-- Edit impact on command ecosystem assessment
-- Cross-reference consistency after modifications
-- Self-contained architecture compliance verification
-- Integration point functionality validation
+**All specialists**: Use template references from /templates/ directory
+**Validation logic**: Template-enforced quality gates and thresholds
+**Documentation**: Template-based deliverable standardization
+**Integration**: Orchestrator coordinates template specialist deployment
 
-**Enhanced Validation Criteria**:
-- **Command Ecosystem**: No disruption to existing commands
-- **Reference Integrity**: All internal references remain functional
-- **Metadata Consistency**: Contextflow and system metadata preserved
-- **Architecture Standards**: Self-contained principles maintained
+## Auto-Correction (Template-Based)
 
-**Deliverable**: Complete architecture consistency report with conflict resolution
+**Template protocols**: Each template includes auto-correction logic
+**Minor issues**: Template-based automatic resolution
+**Validation**: Template-enforced success criteria
 
-### Research Specialist (TASK 2)
-**Mission**: Edit alignment best practices + optimization research
-**Specialization**:
-- Edit alignment methodology research (current date: $(date))
-- Change management best practices for document workflows
-- Post-edit optimization patterns and standards
-- Quality improvement techniques for modified content
-- Industry standards for edit validation processes
+## Major Issue Resolution (Orchestrator-Managed)
 
-**Research Focus**:
-- **Edit Quality Standards**: Current industry benchmarks
-- **Alignment Methodologies**: Proven edit validation approaches
-- **Optimization Techniques**: Performance and quality improvements
-- **Best Practice Integration**: Modern edit workflow standards
-
-**Deliverable**: Research-driven optimization recommendations for edit quality
-
-### Voice Preservation Validator (TASK 3) - CRITICAL
-**Mission**: Voice integrity validation + contamination detection
-**Critical Validation**:
-- **Voice Score Verification**: Must maintain ≥54/60 threshold
-- **Edit Impact Assessment**: How modifications affected voice elements
-- **Contamination Detection**: New content voice consistency validation
-- **Immutable Element Protection**: Crystallized decisions preservation check
-- **Source Attribution Integrity**: Complete traceability maintenance
-
-**Enhanced Edit Validation**:
-- **Voice Delta Analysis**: Pre/post-edit voice score comparison
-- **Content Integration**: New content voice synthesis validation
-- **Preservation Accuracy**: Existing voice element protection verification
-- **Quality Maintenance**: Voice quality standards throughout modifications
-
-**CRITICAL THRESHOLDS**:
-- **Minimum Voice Score**: ≥54/60 (BLOCKING if below)
-- **Voice Contamination**: Zero tolerance for voice mixing
-- **Attribution Accuracy**: 100% source traceability required
-
-**Deliverable**: Comprehensive voice preservation validation with score analysis
-
-### Change Impact Analyzer (TASK 4) - NEW SPECIALIST
-**Mission**: Downstream effects + dependency validation
-**Specialized Analysis**:
-- **Dependency Chain Impact**: How edits affect related documents/commands
-- **Performance Impact Assessment**: Modifications effect on system performance
-- **Integration Point Analysis**: Impact on cross-system references
-- **Rollback Requirement Evaluation**: Change reversibility assessment
-- **Quality Propagation**: How edits affect connected content quality
-
-**Critical Analysis Areas**:
-- **System Dependencies**: Impact on commands, templates, workflows
-- **Document Relationships**: Effect on related documentation
-- **Performance Implications**: Resource usage and efficiency changes
-- **Maintenance Impact**: Future maintenance complexity assessment
-
-**Deliverable**: Complete change impact analysis with risk assessment
-
-## Auto-Correction Protocol
-
-### Minor Issue Auto-Correction
-**Triggers**: Non-critical issues that don't affect core functionality
-- **Formatting inconsistencies**: Auto-correct to system standards
-- **Minor reference updates**: Automatic cross-reference alignment
-- **Metadata synchronization**: Contextflow metadata updates
-- **Performance optimizations**: Automatic efficiency improvements
-
-### Auto-Correction Process
-```
-detect_minor_issues()
-apply_automatic_corrections()
-validate_correction_success()
-continue_workflow_chain()
-log_auto_corrections_applied()
-```
-
-## Major Issue Resolution Protocol
-
-### Major Issue Detection
-**Blocking Conditions**:
-- **Voice Score Drop**: Below 54/60 threshold
-- **Architecture Violations**: System integrity compromised
-- **Critical Dependencies**: Essential functionality broken
-- **Quality Degradation**: Fundamental quality standards not met
-
-### Resolution Process
-```
-IF major_issues_detected:
-    pause_workflow()
-    generate_issue_report()
-    provide_resolution_options()
-    await_user_decision()
-    IF user_chooses_rollback:
-        execute_rollback_to_edit_phase()
-    ELIF user_chooses_manual_fix:
-        provide_specific_guidance()
-        resume_workflow_after_fixes()
-```
+**Blocking conditions**: Template validation failures, voice <54/60, architecture violations
+**Resolution**: Orchestrator manages rollback decisions and user guidance
 
 ## Quality Gates for Auto-Chain to `/verify-edit`
 
