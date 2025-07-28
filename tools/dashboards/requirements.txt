@@ -1,0 +1,3 @@
+# CE-Simple Efficiency Dashboard Dependencies
+websockets>=12.0
+requests>=2.31.0

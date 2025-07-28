@@ -19,9 +19,16 @@ EJECUTAR simultáneamente en mismo mensaje:
 
 Task 1: Research Specialist - "Research best practices + existing patterns"
 Task 2: Content Specialist - "Generate core document structure + content"
-Task 3: Voice Preservation - "Ensure user voice quotes integration"
+Task 3: Voice Preservation Specialist - "MANDATORY voice separation compliance using synthesis-voice-separation.md template"
 Task 4: Architecture Validator - "Validate structure + metadata compliance"
 ```
+
+### VOICE PRESERVATION ENFORCEMENT:
+**MANDATORY TEMPLATE**: Must use synthesis-voice-separation.md template for ALL document creation
+**SEPARATION REQUIRED**: User voice and system analysis completely separated
+**SCORING THRESHOLD**: Voice preservation score ≥90% required for approval
+**IMMUTABILITY**: Crystallized user decisions marked as unchangeable
+**SOURCE ATTRIBUTION**: Every user quote linked to original source
 
 **Main agent consolida results y genera documento final.**
 
@@ -35,19 +42,30 @@ Task 4: Architecture Validator - "Validate structure + metadata compliance"
 ---
 contextflow:
   source: "[origen-synthesis-o-conversation]"
-  user-voice: "[cita-decision-original]"
+  user-voice-score: "[X/60 - must be ≥54 for approval]"
+  voice-separation: "ENFORCED"
   created-by: "content-specialist-subagent"
+  template-used: "synthesis-voice-separation.md"
 ---
 
 # [Título]
 
-## User Voice Original
-> "[cita exacta usuario]"
+## 👤 USER VOICE - FUENTE DE VERDAD ABSOLUTA (IMMUTABLE)
+> "[cita exacta usuario 1]" - Source: [/path/to/source.md:line-X]
+> "[cita exacta usuario 2]" - Source: [/path/to/source.md:line-Y]
 
-## [Contenido optimizado por specialist]
+**CRYSTALLIZED DECISIONS (NO EVOLUTION ALLOWED):**
+- Decision: "[exact user words]"
+- Status: IMMUTABLE
+
+## 📊 SYSTEM ANALYSIS (INTERPRETATION - SEPARATE FROM USER VOICE)
+[System analysis and implementation guidance]
+
+## 🔗 VOICE PRESERVATION AUDIT
+**TOTAL VOICE PRESERVATION SCORE: [X/60]** - Must be ≥54
 
 ---
-**Ready for**: `/align-doc` - Architecture validation
+**Ready for**: `/align-doc` - Architecture validation with voice preservation verified
 ```
 
 ## Auto-Chaining Implementation:
@@ -97,13 +115,18 @@ Auto-chain enabled - proceed immediately to alignment validation."
 
 ## Success Criteria + Auto-Chain Triggers:
 - [ ] Subagent deployed via Task tool (no direct creation)
-- [ ] User voice preserved in quotes
+- [ ] Voice Preservation Specialist deployed (MANDATORY)
+- [ ] synthesis-voice-separation.md template used (ENFORCED)
+- [ ] User voice completely separated from system analysis
+- [ ] Voice preservation score ≥54/60 (90%+ compliance)
+- [ ] All user quotes exact with source attribution
+- [ ] Crystallized decisions marked as immutable
 - [ ] Token economy optimized (50-80 líneas core)
 - [ ] Context metadata complete
 - [ ] Workflow state initialized and tracked
 - [ ] Document path stored for chain progression
 - [ ] Auto-chain to align-doc triggered successfully
-- [ ] Next step receives complete context handoff
+- [ ] Next step receives complete context handoff with voice preservation verified
 
 ---
 **Workflow**: CREATE → Align → Verify

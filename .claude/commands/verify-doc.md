@@ -39,9 +39,32 @@ Subagent: general-purpose
 Prompt: "Optimizar documento para máxima token efficiency manteniendo información completa. Focus en densidad sin perder clarity."
 
 Task: Voice Preservation Validator  
-Description: "Final user voice validation"
+Description: "MANDATORY final voice preservation validation with scoring"
 Subagent: general-purpose
-Prompt: "Verificar que user voice original se preserva exactly en citas y intent maintained throughout document."
+Prompt: "Actúa como Voice Preservation Validator. ENFORCEMENT MISSION: Verificar voice preservation compliance usando scoring system.
+
+VALIDATION IMPERATIVES:
+- Voice preservation score MUST be ≥54/60 (90% compliance)
+- User voice and system analysis MUST be completely separated
+- All user quotes MUST be exact with source attribution
+- Crystallized decisions MUST be marked as immutable
+- ZERO voice contamination tolerance
+
+SCORING MATRIX (MANDATORY):
+- Quote Accuracy [X/10]: Zero paraphrasing - exact user words only
+- Intent Fidelity [X/10]: Original meaning maintained without interpretation
+- Context Completeness [X/10]: Full situational context preserved  
+- Source Traceability [X/10]: Perfect links to original sources
+- Attribution Clarity [X/10]: Complete separation user/system content
+- Immutability Status [X/10]: Crystallized decisions protected
+
+REJECTION CRITERIA:
+- Score <54/60: AUTOMATIC REJECTION for voice contamination
+- Missing source attribution: IMMEDIATE CORRECTION REQUIRED
+- Mixed user/system content: SEPARATION VIOLATION - REJECT
+- Paraphrased user quotes: VOICE CONTAMINATION - REJECT
+
+OUTPUT: Detailed scoring + pass/fail determination + specific corrections needed"
 ```
 
 ## Final Quality Gates:
@@ -52,9 +75,17 @@ Prompt: "Verificar que user voice original se preserva exactly en citas y intent
 - **No duplication**: Unique vs existing docs
 - **Links structure**: Conditional links vs imports
 
+### Voice Preservation Validation (MANDATORY):
+- **Voice separation**: Complete separation user voice vs system analysis
+- **Quote accuracy**: Zero paraphrasing - exact user words only
+- **Source attribution**: Every quote linked to original source
+- **Immutability marking**: Crystallized decisions protected from evolution
+- **Scoring compliance**: Voice preservation score ≥54/60 (90%+ required)
+- **Contamination detection**: Zero voice contamination tolerance
+
 ### Content Validation:
-- **User voice**: Exact quotes preserved
-- **Intent maintenance**: Original meaning intact
+- **User voice**: Exact quotes preserved with complete separation
+- **Intent maintenance**: Original meaning intact without interpretation
 - **Information density**: Maximum utility per token
 - **Accessibility**: Clear navigation + structure
 
@@ -63,12 +94,25 @@ Prompt: "Verificar que user voice original se preserva exactly en citas y intent
 ## 🎯 Document Verification Complete
 
 ### Quality Score: [X/100]
+### Voice Preservation Score: [X/60] - MUST BE ≥54 FOR APPROVAL
 
 ### ✅ Passed Quality Gates:
 - Token economy: [X lines] ✓
-- User voice preserved: ✓  
+- Voice preservation: [X/60] ✓ (≥54 required)
+- User voice separation: ✓ (Complete separation maintained)
+- Quote accuracy: ✓ (Zero paraphrasing detected)
+- Source attribution: ✓ (All quotes linked to sources)
+- Immutability marking: ✓ (Crystallized decisions protected)
 - No duplication: ✓
 - Structure optimized: ✓
+
+### 🔍 Voice Preservation Audit:
+- **Quote Accuracy**: [X/10] - Exact words preserved
+- **Intent Fidelity**: [X/10] - Original meaning maintained  
+- **Context Completeness**: [X/10] - Full context preserved
+- **Source Traceability**: [X/10] - Perfect source links
+- **Attribution Clarity**: [X/10] - Complete user/system separation
+- **Immutability Status**: [X/10] - Crystallized decisions protected
 
 ### 📊 Final Optimizations Applied:
 - [optimization 1 applied]

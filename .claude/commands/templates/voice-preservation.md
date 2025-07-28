@@ -29,10 +29,26 @@ PRESERVATION STRATEGIES:
 5. **Separation Markers**: [Clear division voice user vs analysis]
 
 OUTPUT FORMAT:
-**👤 USER VOICE ORIGINAL:**
-> \"[Cita exacta 1 - palabras literales usuario]\"
-> \"[Cita exacta 2 - decision/insight específico]\"  
-> \"[Cita exacta 3 - preference/requirement expresado]\"
+## 👤 USER VOICE - FUENTE DE VERDAD ABSOLUTA (IMMUTABLE)
+> \"[Cita exacta 1 - palabras literales usuario]\" - Source: [/path/to/conversation.md:line-X]
+> \"[Cita exacta 2 - decision/insight específico]\" - Source: [/path/to/synthesis.md:line-Y]
+> \"[Cita exacta 3 - preference/requirement expresado]\" - Source: [/path/to/conversation.md:line-Z]
+
+**CRYSTALLIZED DECISIONS (NO EVOLUTION ALLOWED):**
+- Decision: \"[exact user words for decision]\"
+- Context: [situational context when expressed]
+- Status: IMMUTABLE - Cannot be modified/interpreted
+
+## 📊 SYSTEM ANALYSIS (INTERPRETATION - SEPARATE FROM USER VOICE)
+### Analysis Points:
+- [System insight 1 - clearly marked as interpretation]
+- [System insight 2 - clearly marked as analysis]  
+- [System insight 3 - clearly marked as system understanding]
+
+### Implementation Implications:
+- [How system interprets user voice for execution]
+- [Technical translation of user requirements]
+- [Architecture decisions based on user voice]
 
 **📍 CONTEXT PRESERVED:**
 - **When**: [Momento/situación de la conversación]
@@ -44,10 +60,27 @@ OUTPUT FORMAT:
 - Section: [Ubicación exacta dentro de la conversación]
 - Timestamp: [Momento aproximado si disponible]
 
-**✅ VOICE VALIDATION:**
-- Intent preserved: [Yes/No + verification]
-- Context complete: [Yes/No + missing elements if any]
-- Attribution clear: [User voice vs analysis clearly separated]
+**✅ VOICE PRESERVATION SCORING:**
+- **Quote Accuracy**: [X/10] - Exact words preserved without paraphrasing
+- **Intent Fidelity**: [X/10] - Original meaning maintained without distortion
+- **Context Completeness**: [X/10] - Full situational context preserved
+- **Source Traceability**: [X/10] - Clear links to original conversations
+- **Attribution Clarity**: [X/10] - Perfect separation user voice vs system analysis
+- **Immutability Status**: [X/10] - Crystallized decisions marked as unchangeable
+
+**TOTAL VOICE PRESERVATION SCORE: [X/60]**
+- 54-60: Excellent voice preservation (90-100%)
+- 48-53: Good voice preservation (80-89%)
+- 42-47: Acceptable voice preservation (70-79%)
+- Below 42: Voice contamination detected - IMMEDIATE CORRECTION REQUIRED
+
+**✅ VOICE VALIDATION CHECKLIST:**
+- [ ] Intent preserved: [Yes/No + verification]
+- [ ] Context complete: [Yes/No + missing elements if any]
+- [ ] Attribution clear: [User voice vs analysis clearly separated]
+- [ ] Quotes exact: [No paraphrasing or interpretation]
+- [ ] Sources linked: [Direct traceability to originals]
+- [ ] Immutability marked: [Crystallized decisions protected]
 
 CONSTRAINTS:
 - NEVER change, paraphrase, or interpret user words
