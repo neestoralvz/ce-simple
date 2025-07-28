@@ -3,12 +3,14 @@ contextflow:
   purpose: "Cierre inteligente de sesión con captura narrative y handoff generation"
   triggers: ["final sesión", "cambio contexto", "handoff requerido"]
   workflow-final: true
-  requires-subagent: true
+  execution-modes:
+    - subagent: "4 Task tools concurrentes para comprehensive analysis"
+    - direct: "Orchestrator direct execution manteniendo funcionalidad completa"
   communication-rules:
     - "NUNCA bash file generation directo"
-    - "SIEMPRE Task tools paralelos → Main agent consolida → Execution"
-    - "Subagents generan content, main agent ejecuta writes"
-    - "4 Task tools concurrentes obligatorio"
+    - "Mode detection: Si caller es orchestrator → direct execution"
+    - "Mode detection: Si caller es standard user → subagent deployment"
+    - "Direct mode: Main agent ejecuta full workflow internamente"
 ---
 
 # Comando `/session-close`
@@ -16,15 +18,76 @@ contextflow:
 ## Propósito Core
 Cerrar sesión conversacional capturando narrativa completa como fuente de verdad + generar handoff para continuidad.
 
+## Execution Mode Detection
+
+**ORCHESTRATOR DETECTION LOGIC**:
+```python
+if context.contains(["ORCHESTRATOR_HUB", "orchestrator-hub-coordinator", "orquestador de orquestadores"]):
+    execution_mode = "direct"
+    # Direct execution manteniendo funcionalidad completa
+else:
+    execution_mode = "subagent"
+    # 4 Task tools deployment for comprehensive analysis
+```
+
 ## Proceso Automático
 
-### 1. Captura Conversación Completa
-**SIEMPRE via Task tool - Content Specialist**:
-- Conversación íntegra preservando formato exacto
-- Timestamps + participantes identificados
-- User voice quotes destacadas
+### MODE A: Direct Execution (Orchestrator)
+**INTEGRATED WORKFLOW**: Main agent ejecuta complete analysis + capture + handoff + git internally:
 
-### 2. Análisis Paralelo + Command Detection (EJECUTAR INMEDIATAMENTE)
+#### 1. Conversation Analysis (Internal)
+- **Theme Identification**: Extract primary topic, secondary themes, decision points
+- **Category Classification**: Document creation, implementation, planning, optimization
+- **Commands Detection**: Explicit mentions, implied commands, modifications discussed
+- **Decision Inventory**: System changes, command updates, architecture impacts
+- **Voice Preservation**: Exact user quotes with attribution, commitments made
+- **Command Change Scanning**: New commands, modifications, implementation specs
+
+#### 2. Command Updates Application (Direct)
+- **Change Detection**: Commands mentioned, modifications required, commitments made
+- **Auto-Apply Updates**: Create/modify commands directly, update CLAUDE.md if needed
+- **Implementation**: Direct execution without Task tool overhead
+
+#### 3. File Generation (Integrated)
+**DIRECT EXECUTION WORKFLOW**:
+
+```python
+# Phase 1: Conversation Capture
+conversation_content = capture_full_conversation()
+session_context = extract_session_metadata()
+timestamp_mx = generate_mexico_timestamp()
+
+# Phase 2: Integrated Analysis
+analysis_results = {
+    'theme': identify_conversation_theme(conversation_content),
+    'category': classify_conversation_type(conversation_content),
+    'commands_detected': scan_command_mentions(conversation_content),
+    'decisions_made': extract_user_decisions(conversation_content),
+    'voice_quotes': preserve_exact_user_voice(conversation_content),
+    'command_changes': detect_command_modifications(conversation_content),
+    'commitments': extract_implementation_commitments(conversation_content)
+}
+
+# Phase 3: Command Updates (Direct)
+if analysis_results['command_changes']:
+    apply_command_updates_directly(analysis_results['command_changes'])
+    update_claude_md_if_needed(analysis_results['decisions_made'])
+
+# Phase 4: File Generation (Integrated)
+create_narrative_file(conversation_content, analysis_results, timestamp_mx)
+execute_smart_handoff_consolidation(analysis_results, timestamp_mx)
+
+# Phase 5: Git Workflow (Automated)
+execute_enhanced_git_commit(analysis_results, timestamp_mx)
+```
+
+**IMPLEMENTATION BENEFITS**:
+- **Zero Task Tool Overhead**: Direct execution elimina spawning conversaciones
+- **Maintained Functionality**: Identical output compared to subagent mode
+- **Orchestrator Optimized**: Diseñado para orquestador de orquestadores
+- **Performance Gain**: Significant reduction in execution time + resource usage
+
+### MODE B: Subagent Deployment (Standard User)
 **TASK TOOLS DEPLOYMENT**: 4 specialists concurrentes para comprehensive conversation analysis:
 
 ```python
@@ -164,7 +227,7 @@ OUTPUT: Complete command change specification con implementation details.""",
 )
 ```
 
-### 3. Command Updates Application
+### MODE B CONTINUATION: Command Updates Application
 **MAIN AGENT CONSOLIDATION**: Receive outputs from 4 specialists → Identify all command changes → Apply updates immediately → Execute git workflow:
 
 #### A. Command Change Detection
@@ -188,8 +251,8 @@ IF command_changes_detected:
   - Preserve trazabilidad de session changes
 ```
 
-### 4. Git Commit Workflow
-**EJECUTAR SIEMPRE después de command updates**:
+### Universal Git Commit Workflow
+**EJECUTAR SIEMPRE después de command updates** (both modes):
 
 #### Git Commit Pattern
 ```bash
@@ -230,8 +293,8 @@ User decisions implemented:
 Co-Authored-By: Claude <noreply@anthropic.com>"
 ```
 
-### 5. File Generation
-**Después de git commit completado**:
+### MODE B CONTINUATION: File Generation
+**Después de git commit completado** (subagent mode only - direct mode handles internally):
 
 #### A. Narrativa Raw Generation
 ```python
@@ -310,18 +373,50 @@ Incluyendo: changes aplicados + pending items + próximos pasos
 - Handoffs registry updated  
 - Cross-references established
 
-## Parámetros Opcionales
+## Usage Patterns
+
+### Standard User Invocation
 ```bash
 /session-close --tema "nombre-tema"
 /session-close --categoria "tecnico|personal|planning"  
 /session-close --continue  # Indica continuación planeada
 ```
 
-## Success Criteria
+### Orchestrator Direct Execution
+```bash
+# Context detection automatico - no parameters needed
+/session-close
+# System detecta orchestrator context → direct execution mode
+# Mantiene funcionalidad completa sin Task tools overhead
+```
+
+### Execution Mode Selection
+- **Auto-Detection**: System detecta caller context para mode selection
+- **Direct Mode**: Orchestrator context → integrated workflow execution
+- **Subagent Mode**: Standard user → 4 Task tools deployment
+- **Functionality**: Identical output both modes, different execution path
+
+## Success Criteria (Both Modes)
 - [ ] Conversación capturada completamente
+- [ ] Command changes detected y aplicados
 - [ ] Handoff generado con context preservation
+- [ ] Git commit ejecutado con trazabilidad
 - [ ] Índices actualizados automáticamente
 - [ ] Próxima sesión setup preparado
+
+## Mode-Specific Validation
+
+### Direct Mode (Orchestrator)
+- [ ] Context detection successful
+- [ ] Integrated analysis completed
+- [ ] Direct file operations executed
+- [ ] No Task tool overhead
+
+### Subagent Mode (Standard)
+- [ ] 4 Task tools deployed successfully
+- [ ] Specialist outputs consolidated
+- [ ] Main agent coordination completed
+- [ ] Full parallel analysis achieved
 
 ---
 

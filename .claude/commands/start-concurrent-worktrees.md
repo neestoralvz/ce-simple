@@ -5,6 +5,7 @@ contextflow:
   auto-research: true
   websearch-integration: true
   mcp-context7-enabled: true
+  research-driven: conditional
 ---
 
 # Comando `/start-concurrent-worktrees` - Ultra-Parallel Multi-Conversation System

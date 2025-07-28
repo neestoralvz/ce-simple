@@ -3,6 +3,7 @@ contextflow:
   next: ["commit", "deploy", "document"]
   prev: ["refactor", "implement"]
   triggers: ["tests passing", "coverage complete"]
+  research-driven: true
 ---
 
 Test implementation: $ARGUMENTS

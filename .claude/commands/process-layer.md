@@ -11,6 +11,7 @@ contextflow:
       - "Optimización de context loading y token economy"
     alternatives: ["docs-sync", "refactor"]
     load-context: ["synthesis files", "documentation structure", "rules system"]
+  research-driven: false
 ---
 
 # Comando `/process-layer`

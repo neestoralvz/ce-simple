@@ -3,6 +3,7 @@ contextflow:
   next: ["test", "commit", "document"]
   prev: ["analyze"]
   triggers: ["refactoring complete", "code improved"]
+  research-driven: true
 ---
 
 Refactor code: $ARGUMENTS

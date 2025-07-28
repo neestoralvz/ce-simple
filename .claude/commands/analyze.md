@@ -3,6 +3,7 @@ contextflow:
   next: ["visualize", "refactor", "document"]
   prev: ["explore"]
   triggers: ["analysis complete", "patterns identified", "issues found"]
+  research-driven: true
 ---
 
 Analyze codebase: $ARGUMENTS

@@ -2,7 +2,7 @@
 contextflow:
   purpose: "Promote current conversation to orchestration coordinator with mayeutic dialogue engine"
   type: "orchestration-promotion-slash-command"
-  research-driven: true
+  research-driven: false
   voice-preservation: "enforced"
   claude-code-integration: ["Task-tools", "conversation-spawning", "delegation-only"]
 ---

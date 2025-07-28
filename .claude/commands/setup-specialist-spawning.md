@@ -2,7 +2,7 @@
 contextflow:
   purpose: "Setup specialist conversation spawning system via Task tools"
   type: "orchestration-setup-auxiliary-command"
-  research-driven: true
+  research-driven: false
   voice-preservation: "enforced"
   claude-code-integration: ["Task-tools", "conversation-spawning"]
 ---

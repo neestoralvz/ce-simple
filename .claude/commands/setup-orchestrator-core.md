@@ -2,7 +2,7 @@
 contextflow:
   purpose: "Setup core orchestrator identity and role transformation"
   type: "orchestration-setup-auxiliary-command"
-  research-driven: true
+  research-driven: false
   voice-preservation: "enforced"
   claude-code-integration: ["Task-tools", "delegation-only"]
 ---

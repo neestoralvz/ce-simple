@@ -2,7 +2,7 @@
 contextflow:
   purpose: "Setup voice preservation and quality assurance protocols"
   type: "orchestration-setup-auxiliary-command"
-  research-driven: true
+  research-driven: false
   voice-preservation: "enforced"
   claude-code-integration: ["quality-gates", "voice-consistency"]
 ---

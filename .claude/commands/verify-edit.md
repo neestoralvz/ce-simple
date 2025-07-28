@@ -5,6 +5,7 @@ contextflow:
   prev: ["align-edit"]
   requires-subagent: true
   auto-chain: false
+  research-driven: true
   triggers: ["verify edit", "final validation", "edit completion"]
   communication-rules:
     - "NUNCA bash echo para comunicar con usuario"

@@ -2,7 +2,7 @@
 contextflow:
   purpose: "Setup mayeutic dialogue engine for orchestrator discovery patterns"
   type: "orchestration-setup-auxiliary-command"
-  research-driven: true
+  research-driven: false
   voice-preservation: "enforced"
   claude-code-integration: ["conversation-patterns", "intent-detection"]
 ---

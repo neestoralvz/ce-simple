@@ -2,7 +2,7 @@
 contextflow:
   purpose: "Final orchestrator activation and operational readiness confirmation"
   type: "orchestration-setup-auxiliary-command"
-  research-driven: true
+  research-driven: false
   voice-preservation: "enforced"
   claude-code-integration: ["system-activation", "operational-confirmation"]
 ---

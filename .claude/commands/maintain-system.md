@@ -4,6 +4,7 @@ contextflow:
   triggers: ["system inconsistencies", "command misalignment", "metadata gaps", "periodic maintenance"]
   next: ["validate-ecosystem", "standardize-metadata", "optimize-system"]
   requires-subagent: true
+  research-driven: true
   decision-tree:
     use-when: ["command inconsistencies detected", "CLAUDE.md misalignment", "metadata standards violation"]
     alternatives: ["clean-slate-recreation", "individual command updates", "manual validation"]

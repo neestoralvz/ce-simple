@@ -3,6 +3,7 @@ contextflow:
   next: ["test", "fix", "analyze"]
   prev: ["test"]
   triggers: ["bug identified", "fix applied"]
+  research-driven: true
 ---
 
 Debug issue: $ARGUMENTS

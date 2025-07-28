@@ -5,6 +5,7 @@ contextflow:
   prev: ["align-doc"]
   workflow-complete: true
   requires-subagent: true
+  research-driven: true
 ---
 
 # Comando `/verify-doc` - Workflow Step 3 (Final)

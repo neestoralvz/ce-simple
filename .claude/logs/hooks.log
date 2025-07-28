@@ -1,0 +1,9 @@
+[2025-07-28 14:18:37] [test-hook-system] [INFO] Starting hook system verification
+[2025-07-28 14:18:37] [test-hook-system] [ERROR] Hook system verification failed: 1 tests failed
+[2025-07-28 14:19:14] [verify-notebook-state] [INFO] Starting MCP IDE notebook state verification
+[2025-07-28 14:38:19] [verify-notebook-state] [INFO] Starting MCP IDE notebook state verification
+[2025-07-28 14:38:19] [verify-notebook-state] [INFO] Found        1 notebook-related processes
+[2025-07-28 14:38:19] [verify-notebook-state] [INFO] MCP IDE notebook state verification completed successfully
+[2025-07-28 14:38:19] [verify-notebook-state] [SUCCESS] Notebook state verification passed - proceeding with code execution
+[2025-07-28 14:49:31] [test-hook-system] [INFO] Starting hook system verification
+[2025-07-28 14:49:31] [test-hook-system] [ERROR] Hook system verification failed: 1 tests failed

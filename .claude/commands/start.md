@@ -15,6 +15,7 @@ contextflow:
       - "Continuidad desde sesión anterior requerida"
     alternatives: ["meta-narrative", "explore"]
     load-context: ["handoff más reciente", "commands ecosystem"]
+  research-driven: conditional
     semantic-triggers:
       - "empezar" / "iniciar" / "comenzar"
       - "qué sigue" / "continuar" / "seguir"

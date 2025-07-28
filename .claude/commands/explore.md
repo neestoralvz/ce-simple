@@ -2,6 +2,7 @@
 contextflow:
   next: ["analyze", "design", "understand"]
   triggers: ["exploration complete", "context gathered"]
+  research-driven: false
 ---
 
 Explore codebase: $ARGUMENTS

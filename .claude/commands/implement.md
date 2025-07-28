@@ -3,6 +3,7 @@ contextflow:
   next: ["test", "review", "integrate"]
   prev: ["design", "plan"]
   triggers: ["implementation complete", "feature ready"]
+  research-driven: true
 ---
 
 Implement feature: $ARGUMENTS

@@ -5,6 +5,7 @@ contextflow:
   next: ["edit-doc", "create-doc", "align-doc"]
   requires-subagent: true
   auto-chain: false
+  research-driven: true
   communication-rules:
     - "NUNCA bash echo para comunicar con usuario"
     - "SIEMPRE Task tools → Main agent → Usuario"

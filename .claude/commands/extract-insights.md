@@ -10,6 +10,7 @@ contextflow:
       - "Detección de patterns emergentes que requieren synthesis"
     alternatives: ["process-layer", "analyze"]
     load-context: ["raw conversations pool", "existing synthesis files"]
+  research-driven: false
 ---
 
 # Comando `/extract-insights`

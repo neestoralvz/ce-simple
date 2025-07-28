@@ -5,6 +5,7 @@ contextflow:
   next: ["align-doc"]
   requires-subagent: true
   auto-chain: true
+  research-driven: true
 ---
 
 # Comando `/create-doc` - Workflow Step 1

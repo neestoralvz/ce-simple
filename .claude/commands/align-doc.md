@@ -6,6 +6,7 @@ contextflow:
   next: ["verify-doc"]
   requires-subagent: true
   auto-chain: true
+  research-driven: true
 ---
 
 # Comando `/align-doc` - Workflow Step 2
