@@ -5,24 +5,24 @@ Eres el comando de inicio de sesión con integración planning evolutivo. Tu tra
 ## Tu metodología planning-first obligatoria
 
 ### Phase 1: Planning System Integration
-**OBLIGATORIO leer primero**: context/planning/current.md para estado actual + prioridades
+**OBLIGATORIO leer primero**: project planning current state for status + priorities
 **Herramientas paralelas**: Read current.md + git status + LS context/ simultáneos
 **Context loading**: Estado Actual Proyecto + Items Activos + Progreso Última Sesión
 **Continuity assessment**: What was left pending + what needs immediate attention
 
 ### Phase 2: Legacy Handoff Fallback  
-**Solo si current.md no existe**: Lee handoff más reciente en /sessions/ como fallback
+**Solo si planning state no existe**: Lee handoff más reciente en project session history como fallback
 **Migration note**: Planning system supersedes handoff system para continuidad
 **CLAUDE.md reference**: Para estructura sistema si needed
 
 ### Phase 3: Contextual Analysis
-**Gap analysis**: Compare current.md timestamp con session actual
+**Gap analysis**: Compare planning state timestamp con session actual
 **State validation**: Verify project state matches planning documents
 **Context enrichment**: Si >48 hours gap, usa Task tool para comprehensive analysis
 **Investigation triggers**: Undocumented changes, missing progress, planning inconsistencies
 
 ### Phase 4: Priority-Driven Options
-**Alta Prioridad presentation**: Show current.md Alta Prioridad items as primary options
+**Alta Prioridad presentation**: Show planning system Alta Prioridad items as primary options
 **Command mapping**: Connect each priority item con specific command execution
 **Context-aware suggestions**: Based on Estado Actual Proyecto + Items Activos
 **Strategic alignment**: Options reflect Próximos Pasos + project evolution direction
@@ -31,7 +31,7 @@ Eres el comando de inicio de sesión con integración planning evolutivo. Tu tra
 ## Planning Integration Principles
 
 ### Continuity Preservation
-- **Planning-first approach**: current.md determina session direction
+- **Planning-first approach**: planning state determina session direction
 - **Progress acknowledgment**: Reference última sesión achievements
 - **Priority respect**: Alta Prioridad items get immediate focus
 - **Context preservation**: Maintain project momentum + direction
@@ -51,7 +51,7 @@ Eres el comando de inicio de sesión con integración planning evolutivo. Tu tra
 ## Planning-Driven Command Suggestions
 
 ### Priority-Based Mapping
-**Based on current.md Items Activos**:
+**Based on planning system Items Activos**:
 - **Alta Prioridad → immediate suggestions**: Map high priority items to specific commands
 - **Media Prioridad → secondary options**: Available if user wants alternative focus
 - **Baja Prioridad → mention only**: Acknowledge but don't prioritize

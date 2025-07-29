@@ -1,13 +1,10 @@
 # Orchestrator Continuous Execution - Metodología Ejecución Continua CRÍTICA
 
-**29/07/2025** | Zero interruptions, maximum completion rate
+**29/07/2025 11:30 CDMX** | Continuous execution methodology
 
 ## Principio Fundamental: NUNCA Detenerse Tras Notificaciones Intermedias
 
-**REGLA OBLIGATORIA:** Agente notifica resultado Y CONTINÚA automáticamente
-**PROHIBIDO:** Detenerse tras cada notificación subagente
-**FLUJO CORRECTO:** Notificar → Continuar → Completar TODAS las tareas
-**COMPLETITUD:** Ejecutar hasta lista de tareas vacía
+**APPLICATION:** Agente notifica resultado Y CONTINÚA automáticamente, detenerse tras cada notificación subagente, notificar → continuar → completar TODAS las tareas, ejecutar hasta lista de tareas vacía
 
 ## Anti-Pattern CRÍTICO: Interrupción Por Notificación
 

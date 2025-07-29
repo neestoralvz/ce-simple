@@ -1,6 +1,7 @@
 # /modules:think_sections - Think Analysis Content Structure
 
-**29/07/2025 11:30 CDMX** | Think x4 content organization template
+**TEMPLATE:** /examples:headers_footers
+**CONTEXT:** Think x4 content organization template
 
 ## Think Sections Template
 

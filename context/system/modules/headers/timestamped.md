@@ -1,6 +1,7 @@
 # /modules:header_timestamped - Standard Timestamp Header
 
-**29/07/2025 11:30 CDMX** | Timestamped header template for documentation
+**TEMPLATE:** /examples:headers_footers
+**CONTEXT:** Timestamped header template for documentation
 
 ## Header Template
 

@@ -1,110 +1,57 @@
-# /actions:expand - Content Expander
+# /actions:expand - Content Expander Dispatcher
 
-Specialist in expanding and elaborating on existing content, filling technical gaps, and creating comprehensive documentation based on established principles and requirements.
+**TEMPLATE:** /examples:headers_footers
+**CONTEXT:** Content expansion con technical completeness
 
-## Purpose
+## AUTORIDAD SUPREMA
+@context/TRUTH_SOURCE.md → @context/operational/patterns/documentation_style.md
 
-Generate detailed technical content that complements existing documentation by expanding on concepts, providing implementation details, and filling identified gaps while maintaining consistency with established project principles.
+## CORE FUNCTION
+Content expansion via gap analysis + technical generation + consistency validation
 
-## Responsibilities
+## SEMANTIC TRIGGERS
 
-**What You DO:**
-- Analyze gaps in technical implementation documentation
-- Generate detailed technical content based on established requirements
-- Create comprehensive guides and references that complement existing docs
-- Expand on concepts with practical implementation details
+### Gap Analysis Pattern
+**Triggers**: Missing technical details, implementation gaps, documentation incompleteness
+**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Execute**: Context analysis + gap identification + requirements mapping
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-**What You DON'T DO:**
-- Modify core project vision or principles
-- Change established architectural decisions
-- Add unnecessary complexity or features
-- Create new authority structures or hierarchies
+### Technical Generation Pattern
+**Triggers**: Detailed content needed, comprehensive guides required, practical implementation
+**Auto-activation**: @context/operational/patterns/documentation_style.md
+**Execute**: Research validation + content generation + best practices integration
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-## Expansion Process
+### Consistency Integration Pattern
+**Triggers**: Content alignment needed, style consistency, project principles compliance
+**Auto-activation**: @context/operational/enforcement/anti_patterns.md
+**Execute**: Consistency verification + integration validation + principle alignment
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-### Phase 1: Research and Context Analysis
-1. **Gather current information** using up-to-date research methods
-2. **Research best practices** for the specific domain or technology
-3. **Review existing documentation** to understand current state
-4. **Identify gaps** where additional technical detail would be valuable
-5. **Map requirements** for comprehensive coverage
+## EXPANSION PROCESS
+1. **Research & analysis** → current information + best practices + gap identification
+2. **Content generation** → technical details + implementation guidance + examples
+3. **Integration validation** → consistency + accuracy + principle alignment
 
-### Phase 2: Gap Identification
-**Analyze what technical content is missing:**
-- Implementation guidance and patterns
-- Configuration and setup procedures
-- Error handling and troubleshooting
-- Integration patterns and examples
-- Testing and validation approaches
-- Deployment and maintenance procedures
+## CONTENT STANDARDS
+- **Technical accuracy** → current best practices + authoritative sources + actionable guidance
+- **Consistency** → documentation style + terminology + architectural alignment
+- **Completeness** → comprehensive gaps coverage + implementation details + edge cases
 
-### Phase 3: Content Generation
-**Create detailed technical content that:**
-- Derives from established principles and requirements
-- Incorporates current best practices from research
-- Provides practical implementation guidance
-- Maintains consistency with existing documentation style
-- Includes relevant examples and use cases
+## ANTI-PATTERNS AVOIDANCE
+- DON'T modify core vision/principles
+- DON'T create new authority structures
+- DON'T add unnecessary complexity
 
-### Phase 4: Integration and Validation
-- Verify content aligns with existing project principles
-- Ensure technical accuracy through research validation
-- Maintain consistency with established documentation patterns
-- Confirm content serves its intended purpose
-
-## Content Standards
-
-### Technical Accuracy
-- Base recommendations on current best practices
-- Validate information through authoritative sources
-- Include relevant examples and implementation details
-- Provide clear, actionable guidance
-
-### Consistency
-- Follow established documentation style and structure
-- Use consistent terminology and conventions
-- Maintain alignment with existing architectural decisions
-- Ensure smooth integration with current documentation
-
-### Completeness
-- Address identified gaps comprehensively
-- Provide sufficient detail for implementation
-- Include error handling and edge cases
-- Cover relevant configuration and customization options
-
-## Anti-Patterns to Avoid
-
-### Scope Violations
-- Don't modify fundamental project vision or principles
-- Don't create new philosophical frameworks
-- Don't add features or complexity not requested
-- Don't override established architectural decisions
-
-### Quality Issues
-- Don't generate content without proper research validation
-- Don't create inconsistent or conflicting information
-- Don't provide outdated or inaccurate recommendations
-- Don't ignore established project conventions
-
-## Success Criteria
-
-**Complete expansion when:**
-- All identified technical gaps have been addressed
-- Documentation provides comprehensive implementation guidance
-- Content maintains consistency with established principles
-- Information is current, accurate, and actionable
-- No additional technical content is needed for complete coverage
-
-## Best Practices
-
-- **Research-driven:** Base all content on current, authoritative sources
-- **Principle-aligned:** Ensure all content derives from established requirements
-- **Practical focus:** Provide actionable implementation guidance
-- **Quality-focused:** Maintain high standards for accuracy and completeness
-- **Integration-minded:** Ensure smooth connection with existing documentation
+## REFERENCIAS CONDICIONALES
+**Documentation style**: @context/operational/patterns/documentation_style.md
+**Methodology protocol**: @context/operational/operations/methodology_protocol.md
+**Anti-patterns prevention**: @context/operational/enforcement/anti_patterns.md
+**Quality gates**: @context/operational/enforcement/quality_gates.md
+**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
 
 ---
-**Related Commands:**
-- Document creation → /actions:build
-- Content research → /actions:research
-- Document editing → /actions:write
+**Authority Chain**: TRUTH_SOURCE → documentation standards → content expansion
+**Token Optimization**: Reference-only + gap-focused generation
+**Compliance**: ≤80 lines + consistency maintenance + technical accuracy

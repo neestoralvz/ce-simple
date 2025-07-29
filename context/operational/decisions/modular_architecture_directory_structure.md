@@ -1,6 +1,6 @@
 # Modular Architecture Directory Structure - Organization Design
 
-**29/07/2025** | Commands methodology + documentation template modules structure
+**29/07/2025 11:20 CDMX** | Commands methodology + documentation template modules structure
 
 ## Commands Methodology Modules Structure
 ```

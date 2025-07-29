@@ -49,8 +49,9 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ## METODOLOGÍA ENFORCEMENT INTEGRADA
 
 ### Reference-Only Content Protocol
-**OBLIGATORIO**: No content duplication - only conditional references
-**ANTI-MONOLITHIC**: File size ≤80 lines enforcement
+**TEMPLATE:** /examples:enforcement_vocabulary
+**CONTEXT:** Reference-only content protocol
+**APPLICATION:** No content duplication - only conditional references, file size ≤80 lines enforcement
 **CONTEXT EFFICIENCY**: Token economy through reference system
 
 ### Authority Chain Validation
@@ -58,14 +59,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **HIERARCHICAL ENFORCEMENT**: Authority preserved through reference structure
 **VALIDATION MANDATE**: All decisions traced to specialized context ownership
 
-## REFERENCIAS CONDICIONALES AUTHORITY
-
-**Core Vision**: @context/archive/user-vision-layers/layer1/
-**Decision Framework**: @context/system/principles/authority.md + @context/operational/behaviors/authority_evolution_dynamics.md  
-**Implementation Standards**: @context/operational/patterns/simplicity.md + @context/operational/enforcement/quality_gates.md
-**Orchestration Protocol**: @context/operational/patterns/orchestrator_methodology.md + @context/operational/enforcement/core_reminders.md
-**Architecture Principles**: @context/operational/patterns/command_architecture.md + @context/operational/decisions/modular_architecture_vision.md
-**Problem Resolution**: @context/operational/enforcement/anti_patterns.md + @context/operational/enforcement/error_detection_protocol.md + @context/operational/enforcement/error_prevention_methodology.md + @context/operational/enforcement/recovery_procedures.md
+## REFERENCIAS AUTHORITY
 
 **Complete Context Authority**: @context/operational/ + @context/system/ + @context/archive/user-vision-layers/
 

@@ -4,12 +4,12 @@
 
 ### Después Cada Delegación
 **Después cada delegación** → automatic second Task tool
-**Verify alignment** context/TRUTH_SOURCE.md
-**Verify compliance** context/patterns/simplicity.md
-**Verify standards** según context apropiado
+**Verify alignment** with project authority source
+**Verify compliance** with established simplicity principles  
+**Verify standards** according to project documentation patterns
 
 ### Authority Validation Chain
-**Cross-check** findings with context/TRUTH_SOURCE.md when relevant
+**Cross-check** findings with project authority source when relevant
 **Escalate** conflicts between results and established decisions
 **Preserve** user authority over AI execution preferences
 **Challenge** outdated information vs current findings when appropriate
@@ -17,19 +17,19 @@
 ### Validation Domains
 
 #### Authority Alignment
-**Primary source**: context/TRUTH_SOURCE.md verification
+**Primary source**: Project authority document verification
 **Decision authority**: User vision vs implementation choices
 **Conflict resolution**: Escalate authority conflicts immediately
 **Vision preservation**: Ensure results align with crystallized vision
 
 #### Simplicity Compliance
-**Simplicity check**: context/patterns/simplicity.md principles
+**Simplicity check**: Project simplicity principles
 **Complexity analysis**: Results don't increase unnecessary complexity
 **Beauty validation**: Solutions feel natural and conversational
 **Over-engineering detection**: Flag solutions that violate simplicity
 
 #### Standards Validation
-**Documentation standards**: context/patterns/documentation_style.md
+**Documentation standards**: Project documentation style guides
 **Methodology compliance**: All required methodologies applied
 **Quality gates**: Results meet established quality criteria
 **Consistency check**: Results consistent with system patterns
@@ -85,5 +85,5 @@
 - **Quality standards** verified before completion
 
 ---
-**Authority Source**: context/patterns/orchestrator_methodology.md:22-27 + validation patterns
+**Authority Source**: Project orchestration methodology + validation patterns
 **Extracted from**: /roles:orchestrator, /roles:partner, system validation patterns

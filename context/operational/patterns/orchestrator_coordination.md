@@ -1,13 +1,10 @@
 # Orchestrator Coordination - Coordinación Múltiples Subagentes
 
-**29/07/2025** | Ultra-orchestration y multi-conversación architecture
+**29/07/2025 11:35 CDMX** | Orchestrator coordination patterns
 
 ## Estrategia Paralela Ultra-Orquestada
 
-**OBLIGATORIO:** Múltiples Task tools simultáneas cuando dominios independientes
-**Coordinación:** Usuario como ultra-orchestrator de N agentes paralelos
-**Estado:** Shared via context + git worktrees para isolation
-**Concurrencia:** Background processes + inter-conversation tickets
+**APPLICATION:** Múltiples Task tools simultáneas cuando dominios independientes, usuario como ultra-orchestrator de N agentes paralelos, shared via context + git worktrees para isolation, background processes + inter-conversation tickets
 
 ## Notificación Resultados Usuario
 
@@ -23,8 +20,7 @@
 ## Cambios Metodológicos Fundamentales
 
 ### Evolución Workflow
-**ANTES:** Orquestador delegaba → notificaba → esperaba confirmación → continuaba
-**AHORA:** Orquestador delega → notifica → CONTINÚA automáticamente → completa TODO
+**APPLICATION:** vs Orquestador delega → notifica → CONTINÚA automáticamente → completa TODO
 
 ### Enforcement Vocabulary Reforzamiento
 - **CONTINUAR automáticamente** (no "continuar si apruebas")

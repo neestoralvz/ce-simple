@@ -1,14 +1,12 @@
 # Behavioral Enforcement - Reforzamiento Conductual Específico
 
-**29/07/2025 10:39 CDMX** | Reforzamiento conductual enforcement vocabulary
+**29/07/2025 10:55 CDMX** | Specific behavioral reinforcement and orchestration protocols
 
 ## TodoWrite Auto-Detection DEBE
 
 ### Dependency Scanning Automático
-**OBLIGATORIO**: Cada task completion → auto-identificar archivos relacionados que requieren updates
-**Auto-add tareas** discovered during execution para file synchronization
-**Dependency-scanning** sistemático para propagation requirements
-**Concurrency analysis** automático para maximize parallel execution
+**TodoWrite auto-detection requirements:**
+Cada task completion → auto-identificar archivos relacionados que requieren updates, auto-add tareas discovered during execution para file synchronization, dependency-scanning sistemático para propagation requirements, concurrency analysis automático para maximize parallel execution
 
 ### TodoWrite Dynamic Methodology
 **SIEMPRE actualizar** todo list real-time según discoveries
@@ -19,10 +17,8 @@
 ## Orchestration Protocol SIEMPRE
 
 ### Delegation Mandatory Rules
-**Si complejidad >3 pasos especializados** → DEBE usar Task tool
-**NUNCA ejecutar** analysis complejo directamente
-**SIEMPRE delegar** via subagentes apropiados con contexto específico
-**Batch operations** para tools independientes obligatorio
+**Delegation mandatory rules:**
+Si complejidad >3 pasos especializados → usar Task tool, ejecutar analysis complejo directamente, delegar via subagentes apropiados con contexto específico, batch operations para tools independientes obligatorio
 
 ### Recognition → Delegation → Validation Flow
 **Pattern recognition** → Task tool deployment → post-validation automática  
@@ -34,7 +30,7 @@
 
 ### Pre-Execution Validation
 **¿Consulted user-vision/TRUTH_SOURCE.md** para systemic changes?
-**¿Applied research-first protocol** → Ver context/examples/bash/research_integration.sh:execute_research_protocol()?
+**¿Applied research-first protocol** para current information validation?
 **¿Identified dependent files** para propagation requirements?
 **¿Analyzed concurrency opportunities** para efficiency maximization?
 

@@ -1,106 +1,54 @@
-# /actions:compact - Content Compactor
+# /actions:compact - Content Compactor Dispatcher
 
-Specialist in systematic content compaction and information distillation while preserving essential information and user voice.
+**TEMPLATE:** /examples:headers_footers
+**CONTEXT:** Content compaction con fidelity preservation
 
-## Purpose
+## AUTORIDAD SUPREMA
+@context/TRUTH_SOURCE.md → @context/operational/operations/methodology_protocol.md
 
-Analyze conversations, documents, or content to extract essential information, eliminate redundancy, and create concise, well-structured summaries that preserve key decisions and insights.
+## CORE FUNCTION
+Content compaction via systematic distillation + user voice preservation + decision extraction
 
-## Compaction Process
+## SEMANTIC TRIGGERS
 
-### Stage 1: Identify Core Themes
-- Map dominant conversational threads and group related topics
-- Prioritize by impact and technical significance
-- Structure major themes with thematic coherence
+### Conversation Analysis Pattern
+**Triggers**: Session completion, content distillation needed, information extraction
+**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Execute**: 5-stage compaction + core themes + technical decisions + chronological structure
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-### Stage 2: Extract Key Information  
-- Preserve authentic user voice and decisions with high fidelity
-- Identify authority statements and principles
-- Capture crystallized decisions without interpretation
+### Information Distillation Pattern
+**Triggers**: Redundancy elimination, essential context preservation, signal optimization
+**Auto-activation**: @context/operational/patterns/orchestrator_methodology.md
+**Execute**: Signal vs noise optimization + fidelity preservation + authority extraction
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Stage 3: Map Technical Decisions
-- Document architectural changes and rationale
-- Track problem-solution patterns and methodology
-- Preserve decision context for future reference
+### Decision Preservation Pattern
+**Triggers**: Authority statements, technical decisions, crystallized choices
+**Auto-activation**: @context/operational/patterns/authority_framework.md
+**Execute**: High fidelity extraction + context preservation + decision mapping
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-### Stage 4: Preserve Essential Context
-- Eliminate repetitions and unnecessary confirmations
-- Maintain critical information for understanding
-- Balance completeness with conciseness
+## COMPACTION METHODOLOGY
+1. **Core themes** → dominant threads + impact prioritization
+2. **Key extraction** → user voice + authority statements + decisions
+3. **Technical mapping** → architectural changes + rationale + patterns
+4. **Context preservation** → essential information + temporal flow
+5. **Chronological structure** → decision flow + causal relationships
 
-### Stage 5: Structure Chronologically
-- Maintain temporal flow of decisions
-- Group related themes for coherence
-- Preserve causal relationships between decisions
+## QUALITY CRITERIA
+- **PRESERVE**: User quotes + technical justification + critical context + decision authority
+- **ELIMINATE**: Repetitions + unresolved explorations + redundancies + tangents
+- **FIDELITY**: High user language fidelity + no interpretation + original context
 
-## Quality Criteria
+## REFERENCIAS CONDICIONALES
+**Methodology protocol**: @context/operational/operations/methodology_protocol.md
+**Orchestration patterns**: @context/operational/patterns/orchestrator_methodology.md
+**Authority framework**: @context/operational/patterns/authority_framework.md
+**Quality gates**: @context/operational/enforcement/quality_gates.md
+**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Signal vs Noise Optimization
-
-**PRESERVE:**
-- Direct user quotes with decision authority
-- Architectural changes with technical justification
-- Problems identified and solutions implemented
-- Critical context for future decisions
-
-**ELIMINATE:**
-- Repetitive confirmations and basic acknowledgments
-- Explorations that didn't reach decisions
-- Redundancies between similar exchanges
-- Tangents that didn't affect final outcomes
-
-### Fidelity Requirements
-- Maintain high fidelity to original user language
-- Never paraphrase or interpret authority statements
-- Preserve original decision context and rationale
-
-## Output Structure
-
-### Core Themes
-Major themes with supporting context and decision points
-
-### Technical Decisions  
-Changes implemented with rationale and authority source
-
-### Key Statements
-Important user decisions with context and implications
-
-### Implementation Results
-What was built, changed, or resolved with validation
-
-### Pending Items
-Unresolved issues for future sessions with context
-
-## Integration Patterns
-
-### Input Sources
-- Session transcriptions and interaction logs
-- Context from related documents and decisions
-- Authority validation from established principles
-
-### Output Applications
-- Session summaries and handoff documents
-- Decision documentation and context preservation
-- Knowledge artifacts for future reference
-
-### Validation Methods
-- Verify original voice fidelity is maintained
-- Check that essential information is preserved
-- Validate logical flow and thematic consistency
-- Ensure output utility for future reference
-
-## Best Practices
-
-- Focus on preserving decision-making context
-- Maintain chronological flow while grouping related topics
-- Balance thoroughness with readability
-- Preserve user language patterns and terminology
-- Include sufficient context for future understanding
-
-## Success Criteria
-
-- Essential information preserved without redundancy
-- User voice and decision authority maintained
-- Logical structure enhances understanding
-- Output serves as effective reference for future work
-- Significant reduction in length without information loss
+---
+**Authority Chain**: TRUTH_SOURCE → methodology → content compaction
+**Token Optimization**: Reference-only + systematic distillation
+**Compliance**: ≤80 lines + fidelity preservation + decision extraction

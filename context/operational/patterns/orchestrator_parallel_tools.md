@@ -1,12 +1,10 @@
 # Orchestrator Parallel Tools - Metodología Herramientas Paralelas
 
-**29/07/2025** | Simultaneidad obligatoria vs ejecución secuencial
+**29/07/2025 11:40 CDMX** | Parallel tools methodology
 
 ## Principio Fundamental: Simultaneidad vs Secuencia
 
-**OBLIGATORIO:** Usar múltiples tools simultáneamente/concurrentemente en un solo mensaje cuando sea posible
-**ANTI-PATTERN:** Ejecución secuencial de tools que pueden ser paralelos
-**EFICIENCIA:** Batch operations para información independiente
+**APPLICATION:** Usar múltiples tools simultáneamente/concurrentemente en un solo mensaje cuando sea posible, ejecución secuencial de tools que pueden ser paralelos, batch operations para información independiente
 
 ## Identificación Oportunidades Paralelas
 

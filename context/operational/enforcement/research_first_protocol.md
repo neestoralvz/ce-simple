@@ -1,22 +1,20 @@
 # Research-First Protocol - Protocolo Investigación Obligatorio
 
-**29/07/2025 10:44 CDMX** | Enforcement vocabulary research-first protocol
+**29/07/2025 11:00 CDMX** | Mandatory research and temporal validation protocol
 
 ## Timestamp Validation OBLIGATORIO
-**OBLIGATORIO**: Para TODAS las investigaciones usar fecha más reciente con comando $(date)
-**SIEMPRE iniciar** toda decisión/tarea con current timestamp
-**Internet research + MCP context** integration required
+**Research-first protocol requirements:**
+Para TODAS las investigaciones usar fecha más reciente con comando $(date), iniciar toda decisión/tarea con current timestamp, Internet research + MCP context integration required
 
 ## Research Methodology Estándar
-**WebSearch + MCP context 7** simultáneamente cuando research requerido
-**NUNCA** asumir información sin validation temporal
-**Best practices 2025** must be explicitly verified
+**Research methodology standards:**
+WebSearch + MCP context 7 simultáneamente cuando research requerido, asumir información sin validation temporal, Best practices 2025 must be explicitly verified
 
 ## Temporal Validation Protocol
-→ Ver context/examples/bash/research_integration.sh:execute_research_protocol() para implementación completa
+**Implementation:** Current timestamp + codebase exploration + WebSearch + MCP integration + temporal validation
 
 **Research Integration Sequence:**
-→ Ver context/examples/bash/research_integration.sh:execute_enhanced_workflow() para secuencia completa:
+**Research Integration Sequence:**
 1. **Timestamp capture** → Current date validation
 2. **Codebase exploration** → Search existing with date context
 3. **Internet research** → WebSearch execution mandatory

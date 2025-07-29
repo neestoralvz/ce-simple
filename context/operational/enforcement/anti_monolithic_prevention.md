@@ -1,26 +1,23 @@
 # Anti-Monolithic Prevention Protocol
 
-**29/07/2025 22:25 CDMX** | Prevención acumulación monolítica sistemática
+**29/07/2025 10:45 CDMX** | Systematic file size and content duplication prevention
 
 ## Triggers Automáticos Prevención
 
 ### File Size Monitoring OBLIGATORIO
-**TRIGGER**: Archivo excede 80 lines → refactoring automático mandatory
-**DETECTION**: Pre-commit hooks + system validation continua
-**ACTION**: Modular decomposition preservando information density
-**ENFORCEMENT**: Zero tolerance policy para archivos monolíticos
+**File size exceeds 80 lines → mandatory refactoring**
+**Modular decomposition preservando information density**
+**Zero tolerance policy para archivos monolíticos**
 
 ### Content Duplication Detection CRÍTICO
-**TRIGGER**: Contenido duplicado detectado entre archivos
-**DETECTION**: Semantic analysis + quote matching + principle overlap
-**ACTION**: Consolidación con reference-only replacement
-**VALIDATION**: Authority chain preservation + information fidelity
+**Content duplication detected between files**
+**Consolidación con reference-only replacement**
+**Authority chain preservation + information fidelity**
 
 ### Authority Drift Prevention SISTEMÁTICO
-**TRIGGER**: Contenido autoritativo aparece fuera de TRUTH_SOURCE hierarchy
-**DETECTION**: Authority claims + decision content + vision statements fuera de chain
-**ACTION**: Redirect to appropriate authority file con references
-**ENFORCEMENT**: Authority hierarchy integrity maintained
+**Authority content appears outside TRUTH_SOURCE hierarchy**
+**Redirect to appropriate authority file con references**
+**Authority hierarchy integrity maintained**
 
 ## Prevention Metodología
 

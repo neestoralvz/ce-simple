@@ -1,27 +1,22 @@
 # Anti-Patterns - NUNCA Hacer Behaviors
 
-**29/07/2025 10:37 CDMX** | Enforcement vocabulary patterns críticos prohibidos
+**29/07/2025 10:50 CDMX** | Prohibited behaviors and execution flow violations
 
 ## NUNCA Interrumpir Flujo Execution
 
 ### Síntomas Prohibidos
-**NUNCA preguntar**: "¿Quieres que continúe?" tras cada subtarea
-**NUNCA decir**: "¿Procedo con siguiente paso?" en medio de workflow  
-**NUNCA esperar**: Approval para tareas ya planificadas
-**NUNCA fragmentar**: Momentum sin razón técnica válida
-**NUNCA convertir**: Proceso fluido en iterativo manual
+**Flow interruption anti-patterns:**
+Preguntar continuación tras subtareas, solicitar approval para tareas planificadas, fragmentar momentum sin razón técnica válida, convertir proceso fluido en iterativo manual
 
 ### Template Correcto vs Incorrecto
-**PROHIBIDO**: "He completado X. ¿Continúo con Y?"
-**CORRECTO**: "Completado X → [RESULTADO]. Continuando automáticamente con Y..."
+**Execution flow communication:**
+vs "Completado X → [RESULTADO]. Continuando automáticamente con Y..."
 
 ## NUNCA Over-Execute Directamente
 
 ### Over-Execution Symptoms
-**NUNCA usar** >5 tool calls en single response
-**NUNCA leer** >3 archivos secuencialmente cuando pueden ser paralelos
-**NUNCA hacer** análisis directo sistemas complejos sin delegación
-**NUNCA ejecutar** debugging sistemático manual
+**Over-execution symptoms:**
+Usar >5 tool calls en single response, leer >3 archivos secuencialmente cuando pueden ser paralelos, hacer análisis directo sistemas complejos sin delegación, ejecutar debugging sistemático manual
 
 ### Delegation Requirements
 **Búsquedas extensas** → delegar investigación via Task tool
