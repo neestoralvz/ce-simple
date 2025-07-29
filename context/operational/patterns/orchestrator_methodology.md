@@ -1,67 +1,99 @@
-# Orchestrator Methodology - Reference Index
+# Orchestrator Methodology - Complete Framework
 
-**29/07/2025 12:30 CDMX** | Orchestrator methodology reference index
+**29/07/2025 12:30 CDMX** | Complete orchestrator methodology
 
-## Core Methodology References
+## Core Principle: Intelligent Delegation + Continuous Execution
 
-### Delegation & Task Tool Protocol
-→ **context/operational/patterns/orchestrator_delegation_core.md:5-15** (definición orquestador)
-→ **context/operational/patterns/orchestrator_delegation_core.md:17-30** (Task tool methodology) 
-→ **context/operational/patterns/orchestrator_delegation_core.md:32-47** (subagente identification)
-→ **context/operational/patterns/orchestrator_delegation_core.md:49-64** (anti-patterns delegación)
+**FUNCIÓN PRINCIPAL:** Coordinación inteligente via delegación especializada + ejecución continua
+**NUNCA:** Ejecutar tareas complejas directamente O detenerse tras notificaciones intermedias  
+**SIEMPRE:** Identificar subagente especializado → delegar via Task tool → CONTINUAR automáticamente hasta completitud total
 
-### Parallel Tools & Concurrency
-→ **context/operational/patterns/orchestrator_parallel_tools.md:5-8** (simultaneidad principle)
-→ **context/operational/patterns/orchestrator_parallel_tools.md:12-18** (oportunidades paralelas)
-→ **context/operational/patterns/orchestrator_parallel_tools.md:20-25** (tools simultáneos)
-→ **context/operational/patterns/orchestrator_parallel_tools.md:29-36** (anti-patterns secuencial)
+## Delegation Framework
 
-### Continuous Execution CRÍTICO
-→ **context/operational/patterns/orchestrator_continuous_execution.md:5-9** (principio fundamental)
-→ **context/operational/patterns/orchestrator_continuous_execution.md:11-20** (anti-pattern interrupción)
-→ **context/operational/patterns/orchestrator_continuous_execution.md:22-32** (notificación transparente)
-→ **context/operational/patterns/orchestrator_continuous_execution.md:34-45** (auto-continuación)
+### When to Delegate (Task Tool Required)
+**Regla Oro:** Si tarea require >3 pasos especializados → DEBE usar Task tool
 
-### Multi-Agent Coordination
-→ **context/operational/patterns/orchestrator_coordination.md:5-9** (ultra-orchestration)
-→ **context/operational/patterns/orchestrator_coordination.md:13-18** (notificación estructura)
-→ **context/operational/patterns/orchestrator_coordination.md:22-34** (cambios methodology)
-→ **context/operational/patterns/orchestrator_coordination.md:36-47** (validación sistema)
+**Delegation triggers:**
+- **Análisis arquitectural** → Task: "Analizar arquitectura sistema X"
+- **Investigación codebase** → Task: "Investigar patrones Y en repositorio"  
+- **Implementación multi-paso** → Task: "Implementar feature Z completo"
+- **Debugging sistemático** → Task: "Depurar error W sistemáticamente"
+- **Refactoring complejo** → Task: "Refactorizar módulo Q"
 
-## Quick Access Patterns
+**Direct execution:** Solo para tareas triviales de 1-2 operaciones básicas
 
-### Task Delegation Triggers
-- **>3 pasos especializados** → DEBE usar Task tool
-- **Análisis arquitectural/investigación** → Task delegation obligatorio
-- **Multi-archivo operations** → Subagente specialization
-- **Complex debugging/refactoring** → Task tool required
+### Coordination Methodology
+**FLOW OBLIGATORIO:**
+1. **Delegar** via Task tool a subagente especializado
+2. **Recibir** resultado subagente
+3. **Notificar** progreso transparentemente
+4. **CONTINUAR** automáticamente con siguiente tarea
+5. **Repetir** hasta lista vacía
 
-### Parallel Tools Triggers  
-- **Independent file operations** → Batch execution obligatorio
-- **Research + Analysis** → Simultaneous tools required
-- **Status validation** → Combined diagnostics
-- **Multi-domain investigation** → Parallel search patterns
+## Parallel Tools Methodology
 
-### Continuous Execution Enforcement
-- **Notification template**: "Completado [X] → [RESULTADO]. Continuando automáticamente..."
-- **NUNCA pausar** tras subtareas esperando confirmación "¿Quieres que continúe?"
-- **Ejecutar automáticamente** hasta lista de tareas vacía
-- **Interruption exceptions**: Error crítico, STOP explícito, clarification required
+### Concurrency Principles
+**CRITICAL:** Usar múltiples tools simultáneamente cuando operaciones son independientes
 
-### Multi-Agent Coordination
-- **Múltiples Task tools simultáneas** cuando dominios independientes
-- **Usuario como ultra-orchestrator** de N agentes paralelos
-- **Background processes + git worktrees** para isolation
-- **Inter-conversation tickets** para coordination
+**Parallel opportunities:**
+- **Research phase:** Múltiples Grep + Read + LS operations
+- **Status validation:** Git + diagnostics + file checks
+- **Multi-file analysis:** Batch reading archivos relacionados
+- **Investigation:** Parallel search patterns diferentes
 
-## Critical Success Indicators
-- **Zero interrupciones** durante multi-task execution
-- **Batch operations** para tools independientes
-- **Continuous notification** sin pausar workflow
-- **Task completion hasta lista vacía** automático
-- **Ultra-orchestrator coordination** effective
+**Pre-execution analysis:**
+1. ¿Son operaciones independientes?
+2. ¿Pueden ejecutarse simultáneamente?
+3. ¿Información no-dependiente?
+4. ¿Batch optimiza performance?
+
+## Continuous Execution Framework
+
+### NEVER Stop After Notifications
+**PRINCIPIO FUNDAMENTAL:** NUNCA detenerse tras notificaciones intermedias
+
+**ANTI-PATTERN CRÍTICO:**
+- ❌ "He completado [SUBTAREA]. ¿Quieres que continúe con [SIGUIENTE]?"
+- ❌ "¿Procedo con siguiente paso?" 
+- ❌ Esperar approval para tareas ya planificadas
+
+**CORRECT PATTERN:**
+- ✅ "Completado [SUBTAREA] → [RESULTADO]. Continuando automáticamente con [SIGUIENTE] (progreso: X/Y)."
+
+### Template for Continuous Flow
+```
+1. Execute subtarea via Task tool
+2. Notify: "Completado: [SUBTAREA] → [RESULTADO_CLAVE]."
+3. Continue: "Continuando automáticamente con [SIGUIENTE_TAREA] (progreso: X/Y)."
+4. Repeat until ALL tasks completed
+```
+
+### Valid Stopping Conditions
+**ÚNICAMENTE detener cuando:**
+- **Error crítico:** Imposibilidad técnica de continuar
+- **Usuario solicita STOP:** Comando explícito de parada
+- **Recurso bloqueado:** Dependencia externa no disponible
+- **Clarificación requerida:** Ambigüedad que impide progreso
+
+## Anti-Patterns to Avoid
+
+### Over-Execution Symptoms
+- **Usar >5 tool calls** en single response cuando delegation apropiada
+- **Leer >3 archivos** secuencialmente cuando podrían ser paralelos
+- **Hacer edits** sin delegación previa para complex changes
+- **Sequential execution** de tools que pueden ser concurrent
+
+### Delegation Failures
+- **Búsquedas extensas:** No hacer Grep masivos → delegar investigación
+- **Análisis multi-archivo:** No leer secuencialmente → delegar análisis
+- **Implementaciones complejas:** No Edit múltiples → delegar desarrollo
+
+## Quality Enforcement
+
+**ENFORCEMENT:** Cada notificación debe incluir "Continuando automáticamente..."
+**PERSISTENCIA:** Mantener ejecución hasta lista tareas = vacía
+**EFICIENCIA:** Zero friction, maximum completion rate
+**DELEGATION MANDATORY:** Complex tasks must use Task tool for specialized handling
 
 ---
-**Complete Methodology**: Load all 4 reference modules para comprehensive understanding
-**Examples**: → context/system/examples/orchestrator_concurrent_patterns.md
-**Templates**: → context/system/examples/templates/ error handling + workflows
+**Authority Source:** Consolidated from orchestrator delegation, parallel tools, and continuous execution patterns
