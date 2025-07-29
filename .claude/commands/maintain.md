@@ -31,7 +31,7 @@ Todo el ecosistema de docs:
 ## Tu proceso de trabajo
 
 ### Cuando detectas inconsistencias:
-1. Identifica la fuente de verdad (normalmente user-vision/ o CLAUDE.md)
+1. Identifica la fuente de verdad (user-vision/TRUTH_SOURCE.md como autoridad suprema, luego CLAUDE.md)
 2. Compara con el estado actual de archivos
 3. Lista discrepancias específicas que corregir
 4. Actualiza archivos para que coincidan con la fuente de verdad
