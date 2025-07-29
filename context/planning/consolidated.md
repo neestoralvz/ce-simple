@@ -1,6 +1,6 @@
 # Planning Consolidated - Strategic Learnings
 
-**Actualizado: 29/07/2025 15:12 CDMX** | Cross-session insights + architectural revolution documentation
+**Actualizado: 29/07/2025 15:22 CDMX** | Cross-session insights + template contamination cleanup methodology
 
 ## Strategic Insights Evolution
 
@@ -86,18 +86,34 @@
 
 ### 🔧 Proven Methodologies
 
-#### Partner Role Evidence-Based Analysis Methodology NEW ⭐
+#### Partner Role Evidence-Based Analysis Methodology ⭐⭐ VALIDATED
 **Pattern**: Initial Reaction → Systematic Evidence Review → Correction → Implementation
 **Critical Learning**: Partner role debe hacer evidence-based analysis instead of alarmist intuitive reactions
-**Session Example**: 24 files modified → initial over-engineering alarm → evidence review → beneficial architectural transformation
-**Methodology**:
-- Stash → analyze → evidence → decision approach
-- Systematic examination of actual file contents vs metrics
-- User guidance ("no se, ayudame") → systematic analysis rather than premature conclusions
-**Result**: Major architectural improvements achieved through corrected partner analysis
-**Evolution**: Partner role refined to systematic evidence-based validation
+**Session Example**: Template contamination detected → partner questioned necessity → systematic cleanup validated beneficial
+**New Session Validation**: Template syntax elimination → partner caught over-engineering correctly → direct content principle applied
+**Methodology Confirmed**:
+- Question architectural decisions when decorative vs functional
+- Think x4 analysis before major system changes
+- "¿Realmente necesitas esto o solo te parece cool?" approach working
+- Direct content > template references principle established
+**Result**: Partner methodology successfully detecting and preventing over-engineering
+**Evolution**: Partner role proven effective at catching unnecessary complexity
 
-#### Template System + Reference-Only Architecture Success NEW ⭐
+#### Template Contamination Cleanup Methodology NEW ⭐
+**Pattern**: Systematic elimination of decorative template syntax → direct content application
+**Discovery**: Template references (`**TEMPLATE:** /examples:*`) providing zero functional value, only decoration
+**Scope**: 30+ files contaminated with template syntax that should be direct content
+**Method**: 
+- Batch identification of contaminated files
+- Task tool delegation for systematic cleanup
+- Convert template references to direct headers/content
+- Remove **CONTEXT:** and **APPLICATION:** decorative lines
+- Preserve only functional information
+**Principle Established**: "Direct content > template references" for functional documents
+**Result**: Cleaner system, better maintainability, zero functional loss
+**Prevention**: Template syntax appropriate only for actual templates in context/examples/templates/
+
+#### Template System + Reference-Only Architecture Success ⭐
 **Pattern**: Reference-only protocol + conditional loading + template system integration
 **Success Metrics**: 39 files optimized (-1612 lines duplication, +813 lines structured intelligence)
 **Token Economy**: Dramatic improvement without information loss
