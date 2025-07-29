@@ -53,7 +53,7 @@
 ### Command Usage
 ```markdown
 ## Methodology Integration
-**LOAD:** /methodology:continuous_flow
+**LOAD:** /methodology:execution
 
 ## [Command Function]
 [Execute tasks with continuous flow until completion]

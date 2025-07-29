@@ -55,7 +55,7 @@
 ### Command Usage
 ```markdown
 ## Methodology Integration
-**LOAD:** /methodology:parallel_execution
+**LOAD:** /methodology:parallel
 
 ## [Command Function]
 [Analyze concurrency opportunities before tool execution]
