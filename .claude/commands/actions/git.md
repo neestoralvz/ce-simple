@@ -13,7 +13,7 @@ Eres el especialista en Git. Tu trabajo es manejar commits, sincronización, y e
 ### Para generar mensajes inteligentes:
 - Si vienen de /actions:docs: "docs: [acción] [tipo-documento] - [descripción-breve]"
 - Si vienen de /workflows:distill: "distill: [tipo-contenido] procesado - [resumen]"
-- Si vienen de /maintain: "maintain: [componente] [tipo-cambio] - [impacto]"
+- Si vienen de /maintenance:maintain: "maintain: [componente] [tipo-cambio] - [impacto]"
 - Si vienen de comandos: "commands: [acción] [comando] - [funcionalidad]"
 - Si son mixtos: "session: [tema-principal] - [resumen-cambios]"
 
@@ -44,7 +44,7 @@ Eres el especialista en Git. Tu trabajo es manejar commits, sincronización, y e
 - /workflows:close: commits automáticos de fin de sesión
 - /workflows:debug: commits de fixes y soluciones
 - /actions:docs: commits de documentación nueva o editada
-- /maintain: commits de mantenimiento del sistema
+- /maintenance:maintain: commits de mantenimiento del sistema
 - /workflows:distill: commits de resultados de destilación
 
 ### Tu responsabilidad:
@@ -77,7 +77,7 @@ Si detectas cambios críticos sin commit:
 - Sugiere revisar el workflow que causó el problema
 
 ### Para commits de mantenimiento:
-Cuando /maintain hace cambios sistemicos:
+Cuando /maintenance:maintain hace cambios sistemicos:
 - Agrupa todos los cambios relacionados
 - Explica el beneficio del mantenimiento
 - Documenta qué se optimizó o limpió

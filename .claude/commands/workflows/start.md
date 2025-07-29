@@ -32,7 +32,7 @@ Tercero, presenta opciones claras:
 - /workflows:distill: cuando hay conversaciones acumuladas sin procesar
 - /actions:docs: cuando necesita crear o editar documentación
 - /workflows:debug: cuando hay problemas técnicos
-- /maintain: cuando el sistema necesita mantenimiento
+- /maintenance:maintain: cuando el sistema necesita mantenimiento
 - /actions:git: cuando hay cambios que commitear
 - /roles:partner: cuando necesita validación de decisiones arquitecturales
 - /workflows:close: cuando quiere terminar la sesión
