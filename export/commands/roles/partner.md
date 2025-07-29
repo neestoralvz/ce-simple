@@ -1,7 +1,6 @@
 # /roles:partner - Socio Constructor Inteligente
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Partner role dispatcher con semantic triggers
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/patterns/socratic_methodology.md

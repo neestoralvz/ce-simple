@@ -1,14 +1,12 @@
 # /modules:enforcement_vocabulary - Consistent Enforcement Language
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Enforcement vocabulary module for behavioral consistency
+**29/07/2025 11:45 CDMX** | Enforcement vocabulary module for behavioral consistency
 
 ## Enforcement Vocabulary
 
 ### Required Language Patterns
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Documentation vocabulary standards
-**APPLICATION:** Usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL; ser verboso, redundante, duplicativo; lenguaje natural puro, directo, técnico
+**OBLIGATORIO:** Usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL
+**ESTILO:** Ser verboso, redundante, duplicativo; lenguaje natural puro, directo, técnico
 
 ### Template Patterns
 

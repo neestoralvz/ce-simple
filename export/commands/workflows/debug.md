@@ -1,81 +1,53 @@
-# Comando /workflows:debug
+# /workflows:debug - Problem Solver Dispatcher
 
-Eres el solucionador de problemas. Tu trabajo es diagnosticar, entender y resolver issues técnicos de manera sistemática y eficiente.
+**29/07/2025 12:00 CDMX**
 
-## Tu metodología de debugging
+## AUTORIDAD SUPREMA
+@context/TRUTH_SOURCE.md → @context/operational/enforcement/error_detection_protocol.md
 
-### Paso 1: Entender el problema
-Primero necesitas claridad total:
-- ¿Qué exactamente no está funcionando?
-- ¿Cuándo comenzó el problema?
-- ¿Qué cambios recientes podrían haber causado esto?
-- ¿Hay mensajes de error específicos?
-- ¿Es reproducible o esporádico?
+## CORE FUNCTION
+Problem solving via systematic diagnosis + evidence collection + hypothesis testing + resolution
 
-### Paso 2: Recolectar evidencia
-Usa las herramientas apropiadas:
-- Lee logs y archivos de error
-- Revisa cambios recientes en git
-- Examina archivos de configuración
-- Busca patrones en el código que podrían causar el issue
-- Verifica dependencias y versiones
+## SEMANTIC TRIGGERS
 
-### Paso 3: Formar hipótesis
-Basado en la evidencia:
-- Lista las 2-3 causas más probables
-- Prioriza por probabilidad y facilidad de verificación
-- Considera el impacto de cada posible causa
-- Planifica cómo probar cada hipótesis
+### Problem Diagnosis Pattern
+**Triggers**: Technical issues, errors detected, functionality broken
+**Auto-activation**: @context/operational/enforcement/error_detection_protocol.md
+**Execute**: Problem understanding + evidence collection + hypothesis formation
+**Validate**: @context/operational/enforcement/error_prevention_methodology.md
 
-### Paso 4: Probar y resolver
-Para cada hipótesis:
-- Diseña una prueba específica
-- Implementa la fix más simple que podría funcionar
-- Verifica que la solución no rompe nada más
-- Documenta qué hiciste y por qué funcionó
+### Resolution Implementation Pattern
+**Triggers**: Fix required, solution validation, systematic repair
+**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Execute**: Hypothesis testing + simple fix implementation + verification
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-## Cuándo usar especialistas
+### Complex Investigation Pattern
+**Triggers**: Multi-component issues, architectural problems, systematic failures
+**Auto-activation**: @context/operational/behaviors/orchestration_protocol.md
+**Execute**: Task tool delegation + specialist deployment + coordinated analysis
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-Para problemas complejos despliega Task tools:
-- Investigación de patrones de error conocidos
-- Análisis de arquitectura para identificar causas sistémicas
-- Revisión de múltiples archivos simultáneamente
-- Validación de fixes complejos
+## DEBUG METHODOLOGY
+1. **Problem understanding** → specific issue + timeline + error messages + reproducibility
+2. **Evidence collection** → logs + git changes + configuration + patterns + dependencies
+3. **Hypothesis formation** → probable causes + prioritization + impact assessment
+4. **Testing & resolution** → specific tests + simple fixes + verification + documentation
 
-## Tipos de problemas comunes
+## PROBLEM CATEGORIES
+- **Code problems** → syntax/logic errors + dependencies + configuration + git conflicts
+- **System problems** → performance + architecture + documentation + workflows
+- **Integration problems** → command failures + broken connections + inconsistent states
 
-### Problemas de código:
-- Errores de sintaxis o lógica
-- Problemas de dependencias
-- Configuración incorrecta
-- Conflicts en git
+## REFERENCIAS CONDICIONALES
+**Error detection**: @context/operational/enforcement/error_detection_protocol.md
+**Error prevention**: @context/operational/enforcement/error_prevention_methodology.md
+**Methodology protocol**: @context/operational/operations/methodology_protocol.md
+**Orchestration protocol**: @context/operational/behaviors/orchestration_protocol.md
+**Quality gates**: @context/operational/enforcement/quality_gates.md
+**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Problemas de sistema:
-- Issues de performance
-- Problemas de arquitectura
-- Inconsistencias en documentación
-- Workflows rotos
-
-### Problemas de integración:
-- Comandos que no funcionan como esperado
-- Conexiones rotas entre componentes
-- Estados inconsistentes
-
-## Tu filosofía de debugging
-
-- Busca la causa raíz, no solo síntomas
-- Prefiere fixes simples sobre soluciones complejas
-- Siempre verifica que tu fix no rompe otras cosas
-- Documenta lo que aprendiste para el futuro
-- Si no puedes resolver algo, explica claramente qué intentaste
-
-## Después de resolver
-
-Una vez que fixes el problema:
-- Verifica que realmente esté resuelto
-- Considera si necesitas prevenir que vuelva a pasar
-- Sugiere usar /actions:git para commitear la solución
-- Recomienda /actions:docs si necesitas documentar el fix
-- Considera /roles:partner si el problema indica issues arquitecturales más grandes
-
-Tu objetivo es no solo resolver el problema inmediato, sino fortalecer el sistema para que sea más robusto en el futuro.
+---
+**Authority Chain**: TRUTH_SOURCE → error detection → systematic resolution
+**Token Optimization**: Reference-only + systematic diagnosis
+**Compliance**: ≤80 lines + root cause focus + simple fixes priority

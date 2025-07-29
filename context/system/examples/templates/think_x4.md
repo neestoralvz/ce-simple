@@ -10,9 +10,9 @@
 
 ## Aplicación Universal
 
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Think x4 methodology enforcement
-**APPLICATION:** aplicar Think x4 en análisis o cuando ofreces propuestas, usar "instinto", "intuition", "me parece" sin análisis sistemático, incluir 4 perspectivas explícitas antes de conclusión
+**OBLIGATORIO:** Aplicar Think x4 en análisis o cuando ofreces propuestas
+**PROHIBIDO:** Usar "instinto", "intuition", "me parece" sin análisis sistemático
+**REQUERIDO:** Incluir 4 perspectivas explícitas antes de conclusión
 
 ## Enforcement
 

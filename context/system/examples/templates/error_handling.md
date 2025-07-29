@@ -7,9 +7,8 @@
 "ERROR CRÍTICO: [DESCRIPTION]. Ejecución pausada. Requiere intervención usuario para [RESOLUTION]."
 
 ## Principio Fundamental
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Error handling principles
-**APPLICATION:** Agotar opciones automáticas antes de pausar
+**PRINCIPIO:** Agotar opciones automáticas antes de pausar
+**ENFORCEMENT:** Sólo detener cuando no hay alternativa automática
 
 ## Excepciones Válidas Para Detención
 **ÚNICAMENTE detener ejecución cuando:**

@@ -1,7 +1,6 @@
 # /modules:footer_authority - Authority Source & Traceability
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Authority chain footer template
+**29/07/2025 11:45 CDMX** | Authority chain footer template
 
 ## Footer Template
 

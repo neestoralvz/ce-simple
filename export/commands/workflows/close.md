@@ -1,7 +1,6 @@
 # /workflows:close - Session Closure Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Session closure con planning evolutivo
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/patterns/orchestrator_methodology.md

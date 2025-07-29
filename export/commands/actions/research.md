@@ -1,7 +1,6 @@
 # /actions:research - Research Specialist Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Systematic research con temporal validation
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/operations/methodology_protocol.md

@@ -1,89 +1,54 @@
-# /actions:build - Document Builder
+# /actions:build - Document Builder Dispatcher
 
-Specialist in **building documents from scratch** following project standards and best practices.
+**29/07/2025 12:00 CDMX**
 
-## Purpose
+## AUTORIDAD SUPREMA
+@context/TRUTH_SOURCE.md → @context/operational/patterns/documentation_style.md
 
-Create new documents with clear structure, appropriate style, and proper integration into existing documentation architecture.
+## CORE FUNCTION
+Document building via structured creation + standards compliance + integration optimization
 
-**Scope:**
-- ✅ Create new documents 
-- ❌ Edit existing documents → use /actions:write
-- ❌ Validate documents → use /maintenance:maintain
+## SEMANTIC TRIGGERS
 
-## Document Types
+### Document Creation Pattern
+**Triggers**: New document needed, from-scratch building, structured creation
+**Auto-activation**: @context/operational/patterns/documentation_style.md
+**Execute**: Planning + content creation + integration + quality review
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-### Technical Documentation
-- API documentation
-- Architecture guides
-- Implementation guides
-- Reference documentation
+### Technical Documentation Pattern
+**Triggers**: API docs, architecture guides, implementation references
+**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Execute**: Technical structure + best practices + integration validation
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Process Documentation  
-- Workflows and procedures
-- Methodologies and protocols
-- Guidelines and standards
+### Standards Compliance Pattern
+**Triggers**: Style consistency, formatting requirements, project conventions
+**Auto-activation**: @context/operational/enforcement/quality_gates.md
+**Execute**: Style application + consistency verification + standard alignment
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Project Documentation
-- Project vision and requirements
-- Design decisions and rationale
-- Meeting notes and decisions
+## BUILDING PROCESS
+1. **Document planning** → purpose + audience + structure + organization
+2. **Content creation** → style guidelines + clear language + logical flow
+3. **Integration** → linking + conventions + formatting + accuracy
+4. **Quality review** → completeness + technical accuracy + purpose validation
 
-### Context Documentation
-- Session summaries
-- Analysis reports
-- Research findings
+## DOCUMENT SCOPE
+- ✅ **Create new documents** from scratch
+- ❌ **Edit existing** → use /actions:write
+- ❌ **Validate documents** → use maintenance protocols
 
-## Building Process
+## BEST PRACTICES
+- **Clear structure** + **concise content** + **consistent style** + **proper linking** + **user focus**
 
-### 1. Document Planning
-- Understand the document purpose and audience
-- Identify the appropriate document type and structure
-- Plan content organization and flow
-
-### 2. Content Creation
-- Follow established style guidelines
-- Use clear, concise language
-- Structure information logically
-- Include relevant examples and details
-
-### 3. Integration
-- Link to related documents appropriately
-- Follow project naming conventions
-- Ensure consistent formatting
-- Verify information accuracy
-
-### 4. Quality Review
-- Check for completeness and clarity
-- Verify technical accuracy
-- Ensure proper formatting
-- Validate document serves its intended purpose
-
-## Best Practices
-
-- **Clear structure:** Use headings, lists, and sections effectively
-- **Concise content:** Focus on essential information
-- **Consistent style:** Follow project documentation standards
-- **Proper linking:** Connect related concepts without duplication
-- **User focus:** Write for the intended audience
-
-## Anti-Patterns to Avoid
-
-- Creating overly complex or lengthy documents
-- Duplicating information available elsewhere
-- Using inconsistent formatting or style
-- Writing without clear purpose or audience
-- Missing essential details or context
-
-## Success Criteria
-
-- Document clearly serves its intended purpose
-- Information is accurate and up-to-date
-- Style and formatting are consistent with project standards
-- Content is appropriately linked to related documentation
+## REFERENCIAS CONDICIONALES
+**Documentation style**: @context/operational/patterns/documentation_style.md
+**Methodology protocol**: @context/operational/operations/methodology_protocol.md
+**Quality gates**: @context/operational/enforcement/quality_gates.md
+**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
 
 ---
-**Related Commands:**
-- Document editing → /actions:write
-- Document validation → /maintenance:maintain
-- Research assistance → /actions:research
+**Authority Chain**: TRUTH_SOURCE → documentation standards → document building
+**Token Optimization**: Reference-only + structured creation
+**Compliance**: ≤80 lines + standards compliance + integration optimization

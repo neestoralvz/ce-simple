@@ -1,6 +1,6 @@
 # /roles:research - Research Specialist (Modular Version)
 
-**TEMPLATE:** /modules:header_timestamped
+**29/07/2025 12:00 CDMX** | Research specialist con methodology modules
 **LOAD:** /methodology:research_first + /methodology:parallel_execution + /methodology:thinkx4
 
 ## Función Core

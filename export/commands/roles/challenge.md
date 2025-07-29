@@ -1,7 +1,6 @@
 # /roles:challenge - Constructive Challenger Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Challenger role con systematic questioning
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/patterns/socratic_methodology.md

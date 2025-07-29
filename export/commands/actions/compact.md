@@ -1,7 +1,6 @@
 # /actions:compact - Content Compactor Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Content compaction con fidelity preservation
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/operations/methodology_protocol.md

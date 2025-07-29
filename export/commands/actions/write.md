@@ -1,7 +1,6 @@
 # /actions:write - Document Writer Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Document creation con project standards
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/patterns/documentation_style.md

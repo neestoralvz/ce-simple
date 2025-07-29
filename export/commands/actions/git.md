@@ -1,7 +1,6 @@
 # /actions:git - Git Repository Manager Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Git operations con intelligent analysis
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/operations/methodology_protocol.md

@@ -1,7 +1,6 @@
 # /workflows:start - Session Startup Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Session startup con planning integration
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/behaviors/orchestration_protocol.md

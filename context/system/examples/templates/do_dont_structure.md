@@ -5,8 +5,7 @@
 ```markdown
 # [COMPONENT_NAME] - [Function]
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** [Brief purpose]
+**DD/MM/YYYY HH:MM CDMX** | [Brief purpose]
 
 ## DO
 - [Clear positive behavior/action 1]

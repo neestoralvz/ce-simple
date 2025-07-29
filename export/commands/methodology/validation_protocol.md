@@ -1,7 +1,6 @@
 # /methodology:validation_protocol - Authority Alignment Verification Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Validation protocol con authority alignment
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/enforcement/quality_gates.md

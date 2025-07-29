@@ -1,7 +1,6 @@
 # /actions:recreate - Clean Slate Recreation Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Clean slate recreation con anti-bias methodology
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/enforcement/anti_monolithic_prevention.md

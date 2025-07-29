@@ -1,7 +1,6 @@
 # /workflows:maintenance - Sistema Maintenance Dispatcher
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** System maintenance con recreation integration
+**29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
 @context/TRUTH_SOURCE.md → @context/operational/enforcement/anti_monolithic_prevention.md

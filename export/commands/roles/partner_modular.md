@@ -1,6 +1,6 @@
 # /roles:partner - Socio Constructor (Modular Version)
 
-**TEMPLATE:** /modules:header_timestamped
+**29/07/2025 12:00 CDMX** | Socio constructor con methodology modules
 **LOAD:** /methodology:thinkx4 + /methodology:validation_protocol
 
 ## Función Core
