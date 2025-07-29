@@ -5,75 +5,108 @@
 **JERARQUÍA DE VERDAD**: user-vision/TRUTH_SOURCE.md → SOBRESCRIBE → Este documento
 **VALIDACIÓN OBLIGATORIA**: Alinearse con docs/maintenance/validation.md
 
-## PRINCIPIOS FUNDAMENTALES
+**MISIÓN**: "lo que quiero construir es un sistema de comandos que represente el workflow que quiero, que mejor me pueda funcionar para trabajar con Claude Code"
 
-**Socrática expansiva** + **Preservación de voz** + **Detección sistémica proactiva**
-→ Ver docs/core/principles.md para metodología completa
+## FILOSOFÍA FUNDAMENTAL
 
-**MISIÓN**: Conversación libre → Comprensión profunda → Ejecución optimizada
-**AUTORIDAD**: user-vision/ = fuente de verdad absoluta con citas exactas
+### Transformación Humana-AI
+"Una nueva forma de trabajar con inteligencia artificial que sea más humana"
+**Principio**: Conversación natural → comprensión profunda → ejecución manifestada
+
+### Evolución Orgánica  
+"Quiero que todo sea como de una manera muy orgánica"
+**Flujo**: Narrativa humana → metasistema adaptativo → realidad contextual
+
+### Simplicidad Como Belleza
+"la belleza va a estar en la simplicidad"
+**Balance**: Preservación granular + estructura minimalista
+
+## METODOLOGÍA SOCRATICA
+
+### Fase 1: Descubrimiento Sin Restricciones
+"no quiero que perdamos de vista el dialogo mayeutico que al final es la manera en la que se descubre lo que es la solicitud del usuario"
+
+**PRINCIPIO ABSOLUTO**: "La conversación socratica debe ser sin restricciones para verdadero descubrimiento"
+**LIBERACIÓN**: "La economía de tokens no debería estar en la conversación"
+
+### Fase 2: Ejecución Comandos
+"Los comandos son solo la ejecución después del descubrimiento conversacional"
+**Orden**: Conversación primera → comprensión → decisión usuario → comando
 
 ## COMANDOS INDEPENDIENTES (9)
 
 `/start` `/distill` `/docs` `/explore` `/debug` `/maintain` `/git` `/partner` `/close`
-→ Ver docs/workflows/commands.md para filosofía y coordinación completa
+→ Ver docs/workflows/commands.md para coordinación completa
 
-**Cada comando**: Instrucciones puras + Sin metadata + Propósito único + Independiente
-**Coordinación**: docs/workflows/coordination.md
+**Arquitectura**: Autocontenidos + independientes + orquestación de subagentes
+**ENFORCEMENT**: Slash commands SIEMPRE son Claude Code workflows, NUNCA bash
 
-**ENFORCEMENT CRÍTICO**: Slash commands (`/start`, `/git`, etc.) SIEMPRE son Claude Code workflows, NUNCA bash commands
-
-## ARQUITECTURA MINIMALISTA
+## ARQUITECTURA MODULAR
 
 ```
-/.claude/commands/     (9 workflows)
-/user-vision/         (autoridad suprema)  
-/docs/               (módulos técnicos)
-/handoff/            (continuidad)
+/.claude/commands/     (9 workflows puros)
+/user-vision/         (autoridad suprema - TRUTH_SOURCE.md)  
+/docs/               (módulos técnicos especializados)
+/handoff/            (continuidad sesiones)
 ```
-→ Ver docs/core/architecture.md para estructura completa
 
-**Imports condicionales**: TRUTH_SOURCE.md (siempre) + layer3/ (contextual)
+**Regeneración Sin Sesgo**: LLM lee TODO → genera limpio (docs/maintenance/update_rules.md)
 
-## FILOSOFÍA ESENCIAL
+## SISTEMA DESTILACIÓN ORGÁNICA
 
-### Conversación Primera
-"la idea por ahora no debe ser la de hacer cosas, sino la de seguir conversando"
-**Flujo**: Conversación natural → Insights → Decisiones del usuario
+### Flujo Natural
+Conversación → raw/ → Layer 1 (quotes) → Layer 2 (síntesis) → Layer 3 (docs) → TRUTH_SOURCE.md
 
-### Simplicidad Rector  
-"la belleza va a estar en la simplicidad"
-**Principio**: Menos partes móviles = Mayor confiabilidad + enfoque claro
+### Absorción Incremental
+- **Layer 1**: 6 núcleos temáticos con quotes exactos + trazabilidad
+- **Layer 2**: 6 síntesis de relaciones emergentes entre núcleos  
+- **Layer 3**: 4 documentos oficiales generados desde síntesis
+- **TRUTH_SOURCE.md**: Autoridad suprema consolidada
 
-### Evolución Orgánica
-Conversación → raw/ → /distill → Layer destilación → TRUTH_SOURCE.md → Sistema adaptación
+**Detección**: Híbrida timestamps + listas procesadas + sampling validation
 
 ## PROHIBICIONES SISTÉMICAS
 
-### Anti-Creación Archivos
-- **NUNCA** crear reportes/tracking automático
-- **SOLO** cuando usuario solicita explícitamente  
-- **PREFERIR** editar existentes vs crear nuevos
-- **RESISTIR** sesgo AI de "documentar todo"
-
 ### Anti-Over-Engineering
-- **DETECTAR** complejidad acumulativa automáticamente
-- **SIMPLIFICAR** continuamente vs crecer sin control
+- **DETECTAR** complejidad acumulativa proactivamente
+- **SIMPLIFICAR** vs crecer sin control
 - **VALIDAR** necesidad real antes de agregar
 
-## SISTEMA MODULAR
+### Anti-Creación Archivos
+- **NUNCA** crear reportes/tracking automático
+- **PREFERIR** editar existentes vs nuevos
+- **RESISTIR** sesgo AI de "documentar todo"
 
-**CLAUDE.md**: Ultra-denso (≤200 líneas) + Referencias modulares
-**docs/**: Contenido técnico especializado  
-**Regeneración**: LLM lee TODO → genera limpio sin sesgo
+### Preservación Informacional
+- **MANTENER** granularidad vs simplificación agresiva
+- **BALANCE**: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
 
-→ Ver docs/maintenance/update_rules.md para proceso completo
+## PRINCIPIOS ARQUITECTURALES
 
-## AUTORIDAD FINAL
+### Comando Universal
+"comando para inciiar cualqueir conversacion y que fucnione como comando universal"
+**Objetivo**: Punto de entrada sin restricciones
 
-**user-vision/TRUTH_SOURCE.md** = Autoridad suprema que sobrescribe todo
-**Cuando conflicto**: La visión del usuario siempre gana
-**Evolución**: Solo por conversación → destilación → cristalización
+### Orquestación Subagentes  
+"la manera principal en la que se tiene que comportar el agente principal SIEMPRE es la de ser orquestado de subagentes"
+
+### Regeneración Limpia
+"eliminar archivos y crealos desde cero bajo los lineamientos que vamos actualizando, pues si solo vamos construyendo sobre los anteriores existe demasiado sesgo"
+
+### Calidad Workflow
+"creacion, alineamiento y verificacion" para toda creación de documentos
+
+## ENFORCEMENT CRÍTICO
+
+**AUTHORITY VALIDATION**: User feedback shapes final approach, not AI recommendations
+- Challenge system works correctly by questioning decisions
+- Balance needed between simplicity and information preservation  
+- Accepts structural complexity if it preserves content density
+- Granular nuclei have value for organic growth and context efficiency
+
+**AUTORIDAD FINAL**: user-vision/TRUTH_SOURCE.md sobrescribe todo conflicto
+**EVOLUCIÓN**: Solo por conversación → destilación → cristalización orgánica
+**VALIDACIÓN**: docs/maintenance/validation.md para toda actualización
 
 ---
 

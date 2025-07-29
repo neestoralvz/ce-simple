@@ -42,37 +42,36 @@ Antes de crear cualquier contenido, auto-pregúntate:
 
 ## PROCESO DE EXPANSIÓN TÉCNICA
 
-### Fase 1: Análisis de Contexto (SOLO LECTURA)
-1. **Leer** user-vision/TRUTH_SOURCE.md (autoridad suprema)
-2. **Revisar** Layer 3 completo para contexto técnico
-3. **Analizar** `/docs/` existente para identificar gaps
-4. **Mapear** qué contenido técnico falta para implementación completa
+### Fase 1: Research Actualizado + Análisis de Contexto
+1. **Obtener fecha actual** usando `bash date` para research actualizado
+2. **Research dual por cada gap identificado**:
+   - **WebSearch**: "[topic] best practices [current_year]" para tendencias actuales
+   - **Context7 MCP**: "use context7 [specific_libraries]" para documentación oficial exacta
+3. **Leer** user-vision/TRUTH_SOURCE.md (autoridad suprema)
+4. **Revisar** Layer 3 completo para contexto técnico
+5. **Analizar** `/docs/` existente para identificar gaps
+6. **Mapear** qué contenido técnico falta para implementación completa
 
 ### Fase 2: Identificación de Gaps Técnicos
 **Estructura objetivo para complementariedad completa**:
 ```
 /docs/
-├── core/
-│   ├── principles.md ✅ (existe)
-│   ├── architecture.md ✅ (existe)
-│   └── methodology.md ❓ (analizar si gap técnico)
-├── workflows/
-│   ├── commands.md ✅ (existe)
-│   ├── coordination.md ✅ (existe)
-│   ├── command_implementation.md ❓ (posible gap técnico)
-│   └── integration_patterns.md ❓ (posible gap técnico)
-├── maintenance/
-│   ├── update_rules.md ✅ (existe)
-│   ├── validation.md ✅ (existe)
-│   ├── troubleshooting.md ❓ (posible gap técnico)
-│   └── monitoring.md ❓ (posible gap técnico)
-└── reference/ ❓ (posible directorio completo de gaps)
-    ├── api_patterns.md
-    ├── best_practices.md
-    └── examples.md
+├── core/ ✅ (completo)
+├── workflows/ ✅ (completo)  
+├── maintenance/ ✅ (completo)
+└── technical/ ❓ (NUEVO - documentos LLM guidance)
+    ├── stack_requirements.md ❓ (CREAR con research dual)
+    ├── code_organization.md ❓ (CREAR con research dual)
+    ├── implementation_patterns.md ❓ (CREAR con research dual)
+    ├── error_handling.md ❓ (CREAR con research dual)
+    ├── configuration_management.md ❓ (CREAR con research dual)
+    ├── testing_standards.md ❓ (CREAR con research dual)
+    └── deployment_patterns.md ❓ (CREAR con research dual)
 ```
 
-### Fase 3: Generación de Contenido Técnico
+**ENFOQUE ESPECÍFICO**: Crear documentos técnicos que complementen la visión del usuario con decisiones técnicas research-driven que un LLM necesita para implementar sin preguntar detalles básicos.
+
+### Fase 3: Generación de Contenido Técnico Research-Driven
 **CRITERIO**: Solo generar si:
 - Es implementación técnica derivada de principios existentes
 - No existe contenido equivalente
@@ -86,8 +85,15 @@ Antes de crear cualquier contenido, auto-pregúntate:
 ## Derivación de Principios Establecidos
 [Citas directas de TRUTH_SOURCE.md que justifican este contenido]
 
-## Implementación Técnica
-[Contenido técnico específico inferido de principios]
+## Research Actualizado ([current_date])
+### Industry Best Practices
+[Síntesis de WebSearch results para best practices actuales]
+
+### Official Implementation Standards  
+[Síntesis de Context7 MCP results para implementación exacta]
+
+## Implementación Técnica Sintetizada
+[Contenido técnico que combina research + principios establecidos]
 
 ## Referencias a Autoridad
 [Enlaces a user-vision/ que respaldan esta implementación]

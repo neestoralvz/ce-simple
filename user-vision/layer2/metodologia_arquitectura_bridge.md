@@ -28,6 +28,14 @@ La metodología socrática del usuario define directamente los principios arquit
 ### Pattern: Metodología Drives Structure
 El usuario primero establece cómo quiere trabajar (metodología), y esto determina cómo debe construirse el sistema (arquitectura).
 
+### Pattern: Challenge → Feedback → Balance
+**Nueva conexión desde 20250729:**
+- Sistema challenger cuestiona decisiones (metodología socrática)
+- "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion" (feedback usuario)
+- "Balance needed between simplicity and information preservation" (resultado arquitectural)
+
+La metodología socrática incluye no solo descubrimiento inicial sino validación continua através de cuestionamiento y feedback iterativo.
+
 ### Pattern: Human-First Design
 La arquitectura debe servir a la metodología humana, no al revés. "Una nueva forma de trabajar con inteligencia artificial que sea más humana"
 
@@ -43,11 +51,19 @@ La arquitectura debe servir a la metodología humana, no al revés. "Una nueva f
 
 ## Nuevas Conexiones Emergentes
 
-### Connection: Research-First Protocol → Temporal Validation
+### Connection: Regeneración Sin Sesgo → Separación de Responsabilidades  
 **Núcleo origen:** `metodologia_socratica.md`
 **Núcleo destino:** `arquitectura_comandos.md`
-**Relación:** 
-- "para todas las investigaciones que se hagan se debe de utilizar como fecha más reciente la que se obtenga con el comando date" 
+**Relación:**
+- "Todos los archivos es mejor que se escriban desde cero" → "separación clara de responsabilidades"
+- Metodología anti-sesgo sistémico requiere arquitectura que prevenga scope creep mediante boundaries estrictos
+
+### Connection: Preservación de Información → Arquitectura Granular
+**Núcleo origen:** `simplicidad_belleza.md` 
+**Núcleo destino:** `arquitectura_comandos.md`
+**Relación:**
+- "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion" → "arquitectura modular /docs/"
+- Balance entre simplicidad y preservación de valor requiere modularización que mantenga granularidad informacional 
 - "recuerda tener como parte de tus workflows la búsqueda en internet y el uso de mcp context7"
 - La metodología socrática requiere información actualizada, lo que se traduce arquitecturalmente en protocolos de validación temporal integrados
 
