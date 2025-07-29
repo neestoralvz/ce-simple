@@ -1,96 +1,55 @@
-# Core Reminders - Metodologías Fundamentales SIEMPRE Aplicar
+# Core Reminders - Reference Index SIEMPRE Aplicar
 
-**29/07/2025 10:35 CDMX** | Reforzamiento metodológico crítico
+**Pure Reference-Only** | Navegación rápida metodologías críticas
 
 ## Think x4 Methodology OBLIGATORIO
+→ **context/operational/enforcement/think_x4_protocol.md:3-6** (aplicación universal)
+→ **context/operational/enforcement/think_x4_protocol.md:8-13** (template estándar)
+→ **context/operational/enforcement/think_x4_protocol.md:15-20** (enforcement rules)
 
-### Aplicación Universal
-**SIEMPRE aplicar Think x4** en análisis o cuando ofreces propuestas
-**NUNCA usar** "instinto", "intuition", "me parece" sin análisis sistemático
-**DEBE incluir** 4 perspectivas explícitas antes de conclusión
-
-### Template Think x4
-**Think 1**: ¿Cuál es el objetivo/problema real?
-**Think 2**: ¿Qué alternativas/opciones existen?  
-**Think 3**: ¿Qué estructura/approach optimiza resultado?
-**Think 4**: ¿Cómo previene problemas identificados previamente?
-**Conclusión**: Based on 4-perspective analysis
-
-## Research-First Protocol OBLIGATORIO
-
-### Timestamp Validation
-**OBLIGATORIO**: Para TODAS las investigaciones usar fecha más reciente con comando $(date)
-**SIEMPRE iniciar** toda decisión/tarea con current timestamp
-**Internet research + MCP context** integration required
-
-### Research Methodology
-**WebSearch + MCP context 7** simultáneamente cuando research requerido
-**NUNCA** asumir información sin validation temporal
-**Best practices 2025** must be explicitly verified
+## Research-First Protocol OBLIGATORIO  
+→ **context/operational/enforcement/research_first_protocol.md:5-8** (timestamp validation)
+→ **context/operational/enforcement/research_first_protocol.md:10-13** (research methodology)
+→ **context/operational/enforcement/research_first_protocol.md:15-20** (temporal validation)
 
 ## Continuous Execution CRÍTICO
-
-### Anti-Interruption Protocol
-**Agente principal debe notificar** - NO detenerse tras notificaciones
-**Template OBLIGATORIO**: "Completado [SUBTAREA] → [RESULTADO]. Continuando automáticamente con [SIGUIENTE] (progreso: X/Y)."
-**NUNCA pausar** esperando confirmación tras notificaciones intermedias
-
-### Execution Flow
-**Delegar → recibir → notificar → CONTINUAR automáticamente**
-**Hasta completitud total** - solo detenerse cuando usuario indica STOP explícito
-**Zero friction** - maximum completion rate
-
-## TodoWrite Auto-Detection DEBE
-
-### Dependency Scanning
-**Cada task completion** → auto-generar tareas actualización archivos relacionados
-**OBLIGATORIO identificar** automáticamente archivos requieren sincronización  
-**Análisis concurrencia** automático para maximize throughput
-
-### Dynamic Methodology
-**Auto-add** tareas discovered during execution
-**Dependency-scanning** para file propagation requirements
-**Concurrency analysis** para parallel execution opportunities
+→ **context/operational/enforcement/continuous_execution_protocol.md:5-8** (anti-interruption protocol)
+→ **context/operational/enforcement/continuous_execution_protocol.md:10-13** (execution flow)
+→ **context/operational/enforcement/continuous_execution_protocol.md:15-19** (notification templates)
 
 ## Concurrency Analysis OBLIGATORIO
-
-### Pre-Tool Execution Analysis
-**ANTES de ejecutar cualquier tool** → DEBE analizar oportunidades concurrency
-**OBLIGATORIO preguntar**: ¿Pueden estos tools ejecutarse simultáneamente?
-**BATCH operations** para tools independientes en single message
-**ANTI-PATTERN**: Sequential execution cuando parallel posible
-
-### Concurrency Opportunities Identification
-**Independent file operations**: Diferentes archivos = parallel execution
-**Read-only operations**: Grep + Read + LS = siempre paralelos
-**Multiple searches**: Grep patterns diferentes = batch execution
-**File + analysis**: Edit + analysis cuando no overlap = simultáneos
+→ **context/operational/enforcement/concurrency_orchestration_protocol.md:1-15** (pre-tool analysis)
+→ **context/operational/enforcement/concurrency_orchestration_protocol.md:16-30** (opportunities identification)
+→ **context/operational/enforcement/concurrency_orchestration_protocol.md:31-45** (batch operations)
 
 ## Orchestration Protocol SIEMPRE
+→ **context/operational/patterns/orchestrator_methodology.md:15-25** (delegation mandatory)  
+→ **context/operational/patterns/orchestrator_methodology.md:35-45** (recognition flow)
+→ **context/operational/patterns/orchestrator_methodology.md:100-120** (validation protocol)
 
-### Delegation Mandatory
-**Si tarea require >3 pasos especializados** → DEBE usar Task tool
-**NUNCA ejecutar** trabajo directo - SIEMPRE delegar via subagentes especializados
-**Parallel tools** cuando información independiente (batch operations obligatorio)
+## TodoWrite Auto-Detection DEBE
+→ **context/operational/decisions/todowrite_methodology.md:1-20** (dependency scanning)
+→ **context/operational/decisions/todowrite_methodology.md:21-35** (dynamic methodology)
+→ **context/operational/decisions/todowrite_methodology.md:36-50** (concurrency integration)
 
-### Recognition → Delegation → Validation
-**Reconocer patrón** → Task tool con contexto específico → post-validation automática
-**Second Task tool** para verification alignment después cada delegación
-**Authority validation** con user-vision/TRUTH_SOURCE.md systematic
+## Anti-Patterns Prevention CRÍTICO
+→ **context/operational/enforcement/anti_patterns.md:1-15** (sequential execution)
+→ **context/operational/enforcement/anti_patterns.md:16-30** (over-execution symptoms)
+→ **context/operational/enforcement/anti_patterns.md:31-45** (interruption prevention)
 
-## Enforcement Referencias Condicionales
+## Quality Gates Validation
+→ **context/operational/enforcement/quality_gates.md:1-20** (systematic validation)
+→ **context/operational/enforcement/quality_gates.md:21-35** (authority alignment)
+→ **context/operational/enforcement/quality_gates.md:36-50** (completeness verification)
 
-**Si necesitas anti-patterns específicos**: → context/enforcement/anti_patterns.md
-**Si requieres behavioral reinforcement**: → context/enforcement/behavioral_enforcement.md  
-**Si necesitas semantic triggers**: → context/enforcement/triggers_semanticos.md
-**Si requieres quality validation**: → context/enforcement/quality_gates.md
-
-## Context Enforcement Complete
-@context/enforcement/
+## Authority Framework Integration
+→ **context/system/principles/authority.md:1-15** (golden authority rule)
+→ **context/user-vision/TRUTH_SOURCE.md:250-280** (decision domains)
+→ **context/system/principles/authority.md:20-35** (challenge system validation)
 
 ---
 
-## Enlaces → información complementaria
-**Si necesitas orchestrator methodology**: → context/patterns/orchestrator_methodology.md:100-150
-**Si requieres authority framework**: → context/principles/authority.md
-**Si necesitas simplicity principles**: → context/patterns/simplicity.md
+## Complete Enforcement Reference
+**@context/operational/enforcement/** → Todos los protocolos especializados
+**@context/system/principles/** → Framework autoridad y visión
+**@context/operational/patterns/** → Metodologías orquestación

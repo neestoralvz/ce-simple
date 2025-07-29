@@ -20,31 +20,31 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Research/Investigation Pattern
 **Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
 **Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
-**Execute**: Task tool → /actions:research + context/roles:research/ + context/patterns/orchestrator_methodology.md
-**Validate**: Task tool → alignment verification con context/user-vision/TRUTH_SOURCE.md
+**Execute**: Task tool → /actions:research + context/operational/patterns/orchestrator_methodology.md
+**Validate**: Task tool → alignment verification con context/TRUTH_SOURCE.md
 
 ### Documentation Pattern  
 **Semantic triggers**: Intent to capture, formalize, record + Scope single doc/system-wide + Domain technical/procedural + Output formal documentation
 **Auto-activation**: Decision made → auto-generate documentation, system change → update related docs
-**Execute**: Task tool → /actions:docs + context/templates/ + context/patterns/documentation_style.md
+**Execute**: Task tool → /actions:build + context/system/templates/ + context/operational/patterns/documentation_style.md
 **Validate**: Task tool → standards compliance verification
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
-**Auto-activation**: System-wide changes → context/user-vision/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
-**Execute**: Task tool → /roles:partner + context/user-vision/TRUTH_SOURCE.md + context/principles/authority.md
+**Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
+**Execute**: Task tool → /roles:partner + context/TRUTH_SOURCE.md + context/system/principles/authority.md
 **Validate**: Task tool → authority alignment + simplicity preservation verification
 
 ### Development/Implementation Pattern
 **Semantic triggers**: Intent to build, develop, execute + Scope multi-file operations + Domain technical implementation + Output working systems
 **Auto-activation**: Code complexity >3 pasos → Task tool delegation, quality standards → template application
-**Execute**: Task tool → comando apropiado (/actions:debug, /actions:explore, /actions:write) + context/patterns/simplicity.md
+**Execute**: Task tool → comando apropiado (/actions:debug, /actions:explore, /actions:write) + context/operational/patterns/simplicity.md
 **Validate**: Task tool → quality standards + simplicity principles verification
 
 ### Workflow/Command Pattern
 **Semantic triggers**: Intent to automate, process + Scope workflow creation + Domain procedural + Output structured commands
 **Auto-activation**: "/comando" mentioned → template loading, process automation → command structure
-**Execute**: Task tool → comando específico con /{folder}:{command} syntax + context/templates/template_command.md
+**Execute**: Task tool → comando específico con /{folder}:{command} syntax + context/system/templates/template_command.md
 **Validate**: Task tool → system coherence + autocontained principle verification
 
 ### Multi-Conversación Pattern

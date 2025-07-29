@@ -122,7 +122,7 @@
 ### Investigation-Result Recommended
 ```markdown
 ## Next Action
-- **Recommended**: /actions:docs (to document investigation findings)
+- **Recommended**: /actions:build (to document investigation findings)
 - **Recommended**: /roles:partner (for validation of analysis results)
 - **Alternative**: /workflows:debug (if issues discovered during investigation)
 ```

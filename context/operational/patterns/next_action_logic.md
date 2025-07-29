@@ -1,212 +1,66 @@
-# Next Action Logic - Workflow Automation Patterns
+# Next Action Logic - Reference Index
 
-**29/07/2025 11:55 CDMX** | Next Action automation logic for command workflow continuity
+**Pure Reference-Only** | Navegación workflow automation patterns
 
-## Next Action Logic Framework
+## Next Action Component References
 
-### Core Principles
-- **Workflow continuity**: Commands suggest logical next steps to prevent workflow breakage
-- **Context awareness**: Next actions adapt based on execution environment (orchestrator vs direct)
-- **User agency preservation**: Automatic only when clear, recommended when choice optimal
-- **System integration**: Next actions consider system state and session context
+### Core Framework & Logic Categories
+→ **context/operational/patterns/next_action_framework.md:5-12** (core principles workflow continuity)
+→ **context/operational/patterns/next_action_framework.md:16-25** (automatic progression criteria + examples)
+→ **context/operational/patterns/next_action_framework.md:29-38** (recommended progression patterns)
+→ **context/operational/patterns/next_action_framework.md:42-51** (context-aware routing logic)
 
-### Logic Categories
+### Command Category Implementation
+→ **context/operational/patterns/next_action_command_patterns.md:5-17** (roles commands next action)
+→ **context/operational/patterns/next_action_command_patterns.md:21-35** (actions commands patterns)
+→ **context/operational/patterns/next_action_command_patterns.md:39-50** (workflows commands logic)
 
-#### Automatic Progression
-**Criteria**: When conditions are clear and progression is unambiguous
-```markdown
-## Next Action
-- **Automatic**: /next:command (specific condition triggers this unambiguously)
-```
+### Methodology Integration Patterns  
+→ **context/operational/patterns/next_action_methodology_integration.md:5-17** (analysis methodologies)
+→ **context/operational/patterns/next_action_methodology_integration.md:21-32** (execution methodologies)
+→ **context/operational/patterns/next_action_methodology_integration.md:36-47** (validation methodologies)
+→ **context/operational/patterns/next_action_methodology_integration.md:51-64** (methodology chain logic)
 
-**Examples**:
-- `/actions:git` → **Automatic**: `/workflows:close` (after session changes committed)
-- `/workflows:start` → **Automatic**: User choice based on planning state
-- `/actions:docs` → **Automatic**: `/actions:git` (after content creation)
+### Context Awareness & Workflow Continuity
+→ **context/operational/patterns/next_action_context_awareness.md:5-19** (context detection logic)
+→ **context/operational/patterns/next_action_context_awareness.md:23-33** (error context handling)
+→ **context/operational/patterns/next_action_context_awareness.md:37-48** (workflow continuity validation)
+→ **context/operational/patterns/next_action_context_awareness.md:52-73** (logic evolution + pattern recognition)
 
-#### Recommended Progression  
-**Criteria**: When user choice is optimal but clear suggestion exists
-```markdown
-## Next Action
-- **Recommended**: /suggested:command (user choice optimal but clear suggestion)
-- **Alternative**: /alternative:command (viable alternative path)
-```
+## Quick Access Logic Patterns
 
-**Examples**:
-- `/roles:partner` → **Recommended**: `/actions:git` (if decision validated)
-- `/workflows:debug` → **Recommended**: `/workflows:continue` (if issue resolved)
-- `/actions:research` → **Recommended**: `/actions:docs` (to document findings)
+### Progression Decision Matrix
+- **Automatic**: Unambiguous conditions, single logical step, system state changes
+- **Recommended**: Multiple options exist, user choice valuable, context adaptation beneficial
+- **Context-Aware**: Environment-dependent routing (orchestrator vs direct execution)
 
-#### Context-Aware Routing
-**Criteria**: Next action depends on execution environment and context
-```markdown
-## Next Action
-- **Context**: Different actions based on orchestrator vs direct execution
-- **If orchestrated**: Return results to orchestrator
-- **If direct**: Suggest continuation command
-```
+### Command Category Quick Reference
+- **Roles consultation**: Return insights → user/orchestrator decision
+- **Roles execution**: Delegate → complete → /workflows:close 
+- **Actions creation**: /actions:git (automatic after changes)
+- **Actions processing**: /methodology:validation_protocol (automatic)
+- **Workflows session**: User choice (start) or cleanup (close)
+- **Workflows investigation**: /actions:build (recommended for findings)
 
-**Examples**:
-- `/roles:research` → **Context**: Return to orchestrator if delegated, /actions:docs if direct
-- `/methodology:thinkx4` → **Context**: Continue with original command or escalate if conflicts
-- `/workflows:explore` → **Context**: Route based on findings (debug/continue/document)
+### Context Detection Triggers
+- **Task tool invocation**: Orchestrator delegation → return structured results
+- **Direct user execution**: User command → suggest next productivity step
+- **Session position**: Beginning/middle/ending → appropriate workflow routing
+- **Error conditions**: Recoverable/system/authority → specialized resolution
 
-## Implementation Patterns
+### Methodology Integration Logic
+- **Analysis complete**: Return to invoking command with insights
+- **Execution enhanced**: Continue with methodology applied
+- **Validation results**: Route based on pass/fail/conflict status
+- **Methodology chains**: Sequential application for complex workflows
 
-### Command Category Next Action Patterns
-
-#### Roles Commands
-```markdown
-## Next Action Logic for Consultation Roles
-- **If analysis complete**: Return insights to user/orchestrator for decision
-- **If additional validation needed**: /roles:challenge or /roles:partner  
-- **If decision validated**: /actions:git (to commit validated changes)
-- **Context**: Always preserve user authority in decision-making
-```
-
-```markdown
-## Next Action Logic for Execution Roles  
-- **If delegation needed**: Deploy specialist via Task tool
-- **If work complete**: /workflows:close (for session documentation)
-- **If validation required**: /methodology:validation_protocol
-- **Context**: Continue execution until completion or escalation
-```
-
-#### Actions Commands
-```markdown
-## Next Action Logic for Creation Actions
-- **Automatic**: /actions:git (after content/system changes)
-- **Recommended**: /roles:partner (for validation of created content)
-- **Context**: Consider session state for appropriate continuation
-```
-
-```markdown
-## Next Action Logic for Processing Actions
-- **Automatic**: /methodology:validation_protocol (after processing completion)
-- **Recommended**: /actions:docs (to document processing results)
-- **Context**: Route based on processing outcomes and user needs
-```
-
-```markdown
-## Next Action Logic for System Actions
-- **Automatic**: /workflows:close (after session-ending system actions)
-- **Recommended**: /maintenance:validate (for system health verification)
-- **Context**: Consider system state and integration requirements
-```
-
-#### Workflows Commands
-```markdown
-## Next Action Logic for Session Management
-- **Automatic**: User choice presentation (start) or system state cleanup (close)
-- **Recommended**: Related workflow based on session outcomes
-- **Context**: Session lifecycle position determines next action logic
-```
-
-```markdown
-## Next Action Logic for Investigation/Analysis
-- **Recommended**: /actions:docs (to document findings)  
-- **Alternative**: /workflows:debug (if issues discovered)
-- **Context**: Investigation results determine appropriate continuation
-```
-
-### Methodology Next Action Integration
-
-#### Analysis Methodologies
-**Pattern**: Return to original command with analysis insights
-```markdown
-## Next Action
-- **Context**: Continue with command that invoked methodology
-- **If conflicts**: Escalate to /roles:partner for resolution
-- **If additional analysis needed**: Chain to related methodology
-```
-
-#### Execution Methodologies
-**Pattern**: Enhance execution of calling command
-```markdown
-## Next Action
-- **Context**: Continue execution with methodology applied
-- **If optimization available**: Suggest efficiency improvements
-- **If conflicts detected**: Route to conflict resolution
-```
-
-#### Validation Methodologies
-**Pattern**: Route based on validation results
-```markdown
-## Next Action
-- **If validation passed**: Continue with original workflow
-- **If validation failed**: Route to /workflows:debug or /roles:partner
-- **If authority conflict**: Escalate to user for resolution
-```
-
-## Context-Aware Logic Implementation
-
-### Orchestrator Context Detection
-```markdown
-## Context Detection Logic
-- **If Task tool invocation**: Command was delegated by orchestrator
-- **Action**: Return results to orchestrator for integration
-- **Format**: Structured results ready for orchestrator processing
-```
-
-### Direct Execution Context Detection
-```markdown
-## Context Detection Logic  
-- **If direct user invocation**: User executed command directly
-- **Action**: Suggest logical next command for continued productivity
-- **Format**: User-friendly next step recommendations
-```
-
-### Session Context Integration
-```markdown
-## Session Context Logic
-- **Session beginning**: Route to workflow initiation commands
-- **Session middle**: Route to continuation/building commands  
-- **Session ending**: Route to documentation/commit/close commands
-```
-
-### Error Context Handling
-```markdown
-## Error Context Logic
-- **Recoverable errors**: Suggest retry or alternative approach
-- **System errors**: Route to /workflows:debug for resolution
-- **Authority conflicts**: Escalate to /roles:partner or user decision
-```
-
-## Workflow Continuity Validation
-
-### Next Action Chain Testing
-**Validation criteria**:
+## Validation Criteria Framework
 - **No dead ends**: Every command has appropriate next action
-- **No infinite loops**: Next action chains eventually reach completion
-- **Context consistency**: Next actions respect execution environment
-- **User agency**: Automatic progression only when unambiguous
-
-### Integration Validation
-**System integration points**:
-- **Git integration**: Commands affecting system state route to /actions:git
-- **Documentation integration**: Commands creating content route to documentation commands
-- **Session integration**: Commands consider session lifecycle position
-- **Planning integration**: Commands integrate with planning and progress tracking
-
-## Next Action Logic Evolution
-
-### Pattern Recognition
-- Monitor next action effectiveness for workflow optimization
-- Identify common next action sequences for potential automation
-- Detect workflow friction points for logic refinement
-- Track user override patterns for logic adjustment
-
-### Logic Refinement
-- Update next action logic based on usage patterns and user feedback
-- Optimize automatic progression criteria for better user experience
-- Refine context-aware routing for improved workflow continuity
-- Enhance recommendation quality based on outcome tracking
+- **No infinite loops**: Chains eventually reach completion
+- **Context consistency**: Actions respect execution environment
+- **User agency preserved**: Automatic only when unambiguous
 
 ---
-**Authority Source**: Command workflow analysis + automation pattern design
-**Template References**: All command templates + universal_do_dont_template.md
-
-## Enlaces → Información Complementaria
-**Si necesitas command templates:** → [context/templates/commands/template_index.md](../templates/commands/template_index.md)
-**Si requieres workflow patterns:** → [context/patterns/orchestrator_methodology.md](./orchestrator_methodology.md)
-**Si buscas automation principles:** → [context/enforcement/core_reminders.md](../enforcement/core_reminders.md)
+**Complete Logic**: Load all 4 reference modules para comprehensive automation understanding
+**Command Templates**: → context/system/templates/commands/template_index.md
+**Orchestrator Integration**: → context/operational/patterns/orchestrator_methodology.md

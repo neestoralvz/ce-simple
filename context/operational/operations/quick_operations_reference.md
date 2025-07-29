@@ -7,7 +7,7 @@
 - **`/workflows:distill`** → Layer distillation: raw → núcleos → síntesis → docs oficiales
 - **`/roles:challenge`** → Challenge-protected validation (stagnation Y over-engineering)
 - **`/roles:partner`** → Constructor consultor for authority-driven simplification
-- **`/actions:docs`** → Document creation with real-time user-vision integration
+- **`/actions:build`** → Document creation with real-time user-vision integration
 - **`/actions:git`** → Git-native worktree management for parallel conversations
 
 ### Multi-Conversation Orchestration Commands
