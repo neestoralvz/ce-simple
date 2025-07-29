@@ -24,7 +24,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Research/Investigation Pattern
 **Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
 **Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
-**Execute**: Task tool → /roles:research_modular + context/operational/patterns/orchestrator_methodology.md
+**Execute**: Task tool → /roles:research + context/operational/patterns/orchestrator_methodology.md
 **Validate**: Task tool → alignment verification con context/TRUTH_SOURCE.md
 
 ### Documentation Pattern  

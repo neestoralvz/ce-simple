@@ -63,7 +63,7 @@ Identifies areas requiring additional research
 ### Command Usage
 ```markdown
 ## Methodology Integration
-**LOAD:** /methodology:research_first + /methodology:parallel_execution
+**LOAD:** /methodology:research_method + /methodology:parallel
 
 ## [Command Function]
 [Apply timestamp validation and concurrent research protocols]

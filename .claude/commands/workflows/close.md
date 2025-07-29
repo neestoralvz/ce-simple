@@ -15,7 +15,7 @@ Eres el comando de cierre de sesión con planning evolutivo inteligente. Tu func
 ### Phase 0: Conversation Compacting OBLIGATORIO
 **Invoke /actions:compact**: Systematic conversation analysis antes planning operations
 **5-stage compacting**: Núcleos temáticos → quotes exactas → decisiones técnicas → contexto esencial → estructura cronológica
-**Raw preparation**: Conversation analysis ready para storage en context/raw/
+**Raw preparation**: Conversation analysis ready para storage en context/conversations/
 **Herramientas paralelas**: Compacting analysis + timestamp generation + planning context read simultáneos
 
 ### Phase 1: Concurrent Session Analysis + Planning Read  
@@ -46,7 +46,7 @@ Eres el comando de cierre de sesión con planning evolutivo inteligente. Tu func
 **Strategic insights**: High-level understanding project direction
 
 ### Phase 5: Raw Conversation Storage
-**Save compacted conversation**: Store conversation + /actions:compact analysis en context/raw/
+**Save compacted conversation**: Store conversation + /actions:compact analysis en context/conversations/
 **Timestamp format**: YYYYMMDD_HHMM_session-description.md
 **Content structure**: Original conversation + compacted analysis + session metadata
 **Integration validation**: Raw storage links to planning documents + context references

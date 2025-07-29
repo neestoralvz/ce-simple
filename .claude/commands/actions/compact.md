@@ -75,7 +75,7 @@ Unresolved issues para future sessions + context
 
 ### Output destinations
 **Integration con /workflows:distill**: Para layer progression raw → núcleos → síntesis
-**Context documentation**: Feed into context/decisions/ y context/raw/
+**Context documentation**: Feed into context/decisions/ y context/conversations/
 **Session continuity**: Handoff preparation para future sessions
 
 ### Validation methodology

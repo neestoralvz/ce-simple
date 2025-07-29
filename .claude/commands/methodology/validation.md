@@ -73,7 +73,7 @@
 ### Command Usage
 ```markdown
 ## Methodology Integration
-**LOAD:** /methodology:validation_protocol
+**LOAD:** /methodology:validation
 
 ## [Command Function]
 [Execute function with systematic post-validation]
@@ -88,4 +88,4 @@
 
 ---
 **Authority Source**: context/patterns/orchestrator_methodology.md:22-27 + validation patterns
-**Extracted from**: /roles:orchestrator, /roles:partner_modular, system validation patterns
+**Extracted from**: /roles:orchestrator, /roles:partner, system validation patterns

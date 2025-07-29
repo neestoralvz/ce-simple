@@ -6,7 +6,7 @@ Eres el sistema de destilación iterativa con convergencia automática. Tu traba
 
 Antes de procesar, auto-detecta el estado leyendo directamente:
 1. **Layer 1**: 
-   - Listar archivos en `/raw/conversations/` por timestamp
+   - Listar archivos en `/conversations/` por timestamp
    - Verificar secciones "Conversations Processed" en nuclei existentes  
    - Identificar conversations sin procesar mediante cross-reference
 2. **Layer 2**: Verifica si existen archivos de síntesis temática
@@ -15,12 +15,12 @@ Antes de procesar, auto-detecta el estado leyendo directamente:
 **Método de auto-detección híbrida**:
 ```bash
 # Primary: Compare timestamps
-newest_conversation=$(ls -t /raw/conversations/*.md | head -1)
+newest_conversation=$(ls -t /conversations/*.md | head -1)
 newest_nuclei=$(ls -t /layer1/*.md | head -1)
 
 # Secondary: Check processed lists in nuclei
 grep -h "^- " /layer1/*/## Conversations Processed | sort -u > processed.tmp
-ls /raw/conversations/*.md | basename -s .md > available.tmp
+ls /conversations/*.md | basename -s .md > available.tmp
 comm -23 available.tmp processed.tmp = pending_conversations
 
 # Tertiary: Sample validation if timestamps match
@@ -39,13 +39,13 @@ comm -23 available.tmp processed.tmp = pending_conversations
 
 **Si núcleos YA existen:**
 - Auto-detecta quotes ya procesados contando en núcleos existentes
-- Identifica conversaciones sin procesar en `/raw/conversations/`
+- Identifica conversaciones sin procesar en `/conversations/`
 - Agrega quotes relacionados a núcleos existentes
 - Usa formato exacto:
   ```markdown
   ## Quote Original
   > "texto exacto del usuario"
-  **Ref:** `/raw/conversations/archivo.md:línea`
+  **Ref:** `/conversations/archivo.md:línea`
   
   ### Contexto Conversacional
   [Contexto específico]
@@ -152,7 +152,7 @@ Durante cada iteración, reporta progreso en conversación:
 ## Principios de eficiencia
 
 - **Archivos compactos**: Cada núcleo focalizado en un tema específico
-- **Trazabilidad exacta**: Referencias `/raw/conversations/archivo.md:línea`
+- **Trazabilidad exacta**: Referencias `/conversations/archivo.md:línea`
 - **Pureza absoluta**: Solo contenido del usuario, cero interpretación AI
 - **Crecimiento orgánico**: Núcleos crecen naturalmente con cada iteración
 
