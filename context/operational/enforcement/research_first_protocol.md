@@ -13,13 +13,10 @@
 **Best practices 2025** must be explicitly verified
 
 ## Temporal Validation Protocol
-```bash
-# Mandatory timestamp validation
-current_date=$(date +%Y-%m-%d)
-# Use current_date for all research validation
-```
+→ Ver context/examples/bash/research_integration.sh:execute_research_protocol() para implementación completa
 
 **Research Integration Sequence:**
+→ Ver context/examples/bash/research_integration.sh:execute_enhanced_workflow() para secuencia completa:
 1. **Timestamp capture** → Current date validation
 2. **Codebase exploration** → Search existing with date context
 3. **Internet research** → WebSearch execution mandatory

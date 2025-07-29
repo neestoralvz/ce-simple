@@ -38,12 +38,7 @@
 **Fundamento:** `metodologia_arquitectura_bridge.md` + `conversation_execution_flow.md`
 
 **Temporal validation workflow:**
-```bash
-# Auto-validation en todo workflow
-date_current=$(date +%Y-%m-%d)
-# Integration con mcp context7 para información actualizada
-# "para todas las investigaciones que se hagan se debe de utilizar como fecha más reciente la que se obtenga con el comando date"
-```
+→ Ver context/examples/bash/research_integration.sh:execute_research_protocol() para workflow completo de validación temporal
 
 **Enhanced 10-step workflow:**
 1. **User Solicitation** - Receive and understand request

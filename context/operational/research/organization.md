@@ -8,7 +8,7 @@ Capturar investigaciones y aprendizajes con header compacto para referencia futu
 ## Metodología Research
 
 ### Timestamp Obligatorio
-**Comando requerido:** `date` antes de cualquier investigación  
+→ Ver context/examples/bash/research_integration.sh:validate_current_date() para comando timestamp  
 **Formato header:** `**DD/MM/YYYY HH:MM CDMX** | Descripción investigación`  
 **Ubicación:** Primera línea después del título
 

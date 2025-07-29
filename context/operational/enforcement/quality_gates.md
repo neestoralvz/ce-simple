@@ -8,7 +8,7 @@
 
 ### Authority Validation
 **¿Consulted user-vision/TRUTH_SOURCE.md** para systemic changes?
-**¿Applied research-first protocol** con current $(date) timestamp validation?
+**¿Applied research-first protocol** → Ver context/examples/bash/research_integration.sh:validate_current_date()?
 **¿Verified authority hierarchy** user → CLAUDE.md → context/ → commands/?
 **¿Challenge system consideration** para architectural proposals?
 

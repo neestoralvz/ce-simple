@@ -22,12 +22,7 @@
 
 ### Git Worktrees Architecture Protocol
 **Branch-Per-Conversation Pattern:**
-```bash
-# Setup parallel conversation branches
-git worktree add ../conversation-branch-1 conversation-1
-git worktree add ../conversation-branch-2 conversation-2
-# Each conversation operates in isolated workspace
-```
+→ Ver context/examples/bash/git_worktree_management.sh:create_conversation_branch() para patrón completo
 
 **Implementation Requirements:**
 - **Independent execution** → Commands run in separate git branches
@@ -52,11 +47,7 @@ git worktree add ../conversation-branch-2 conversation-2
 - **Resource management** → Ensure background processes don't conflict
 
 **Implementation Pattern:**
-```bash
-# Background monitoring process
-nohup ./monitoring-script.sh > monitoring.log 2>&1 &
-# Process persists beyond command execution
-```
+→ Ver context/examples/bash/background_processes.sh:start_background_monitoring() para implementación completa
 
 ## Revolutionary Implementation Patterns
 

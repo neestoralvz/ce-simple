@@ -34,12 +34,7 @@ user-vision/TRUTH_SOURCE.md [SUPREME]
 ## Multi-Conversation Architecture (Operational)
 
 ### Git-Native Parallel Execution
-```bash
-# Quick setup for parallel conversations
-git worktree add ../conv-1 branch-1
-git worktree add ../conv-2 branch-2
-# User orchestrates N conversations (4+ as needed)
-```
+→ Ver context/examples/bash/git_worktree_management.sh:quick_parallel_setup() para configuración rápida
 
 **Background Intelligence:** Persistent monitoring processes coordinate conversations
 
@@ -58,11 +53,7 @@ git worktree add ../conv-2 branch-2
 - Verification: Quality + coherence confirmation
 
 ### Research Protocol (Always Execute)
-```bash
-date_current=$(date +%Y-%m-%d)
-# Use current date for ALL investigations
-# WebSearch + MCP context7 integration mandatory
-```
+→ Ver context/examples/bash/research_integration.sh:execute_research_protocol() para protocolo completo
 
 ## Balance Principles (Authority-Anchored)
 

@@ -5,6 +5,10 @@
 ## AUTORIDAD SUPREMA
 context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
+## PROJECT CONTEXT
+**Overview**: README.md - Project description, philosophy, architecture overview
+**System Purpose**: Context engineering framework para conversation-first development
+
 ## CONTEXTO CORE SIEMPRE CARGADO
 @context/TRUTH_SOURCE.md
 @context/operational/patterns/socratic_methodology.md

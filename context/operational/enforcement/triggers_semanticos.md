@@ -43,8 +43,8 @@
 **Output**: Comprehensive analysis, recommendations, insights
 
 ### Auto-Activation Criteria
-**Date-sensitive information** mentioned → validate with current $(date)
-**New domain/technology** referenced → WebSearch + MCP context 7 simultáneamente
+**Date-sensitive information** mentioned → Ver context/examples/bash/research_integration.sh:validate_current_date()
+**New domain/technology** referenced → Ver context/examples/bash/research_integration.sh:execute_research_protocol() + WebSearch + MCP context 7
 **Best practices** inquiry → research 2025 standards explicitly
 **Complex system** behavior → multi-source investigation required
 

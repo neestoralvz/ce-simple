@@ -34,7 +34,7 @@
 
 ### Pre-Execution Validation
 **¿Consulted user-vision/TRUTH_SOURCE.md** para systemic changes?
-**¿Applied research-first protocol** con current $(date) timestamp?
+**¿Applied research-first protocol** → Ver context/examples/bash/research_integration.sh:execute_research_protocol()?
 **¿Identified dependent files** para propagation requirements?
 **¿Analyzed concurrency opportunities** para efficiency maximization?
 

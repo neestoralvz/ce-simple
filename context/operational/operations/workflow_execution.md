@@ -10,11 +10,7 @@
 4. **User authority supremacy** → User feedback overrides AI optimization
 
 **Implementation Pattern:**
-```bash
-# Before systemic changes
-cat context/user-vision/TRUTH_SOURCE.md | grep -i "relevant_concept"
-# Validate alignment before proceeding
-```
+→ Ver context/examples/bash/research_integration.sh:validate_authority_before_changes() para validación completa
 
 ## Multi-Conversation Execution Protocol
 
@@ -27,12 +23,7 @@ cat context/user-vision/TRUTH_SOURCE.md | grep -i "relevant_concept"
 5. **Result integration** → Convergent integration under user authority
 
 **Implementation Commands:**
-```bash
-# Setup parallel execution environment
-git worktree add ../task-branch-1 task-1
-git worktree add ../task-branch-2 task-2
-# Each conversation executes in isolated branch
-```
+→ Ver context/examples/bash/git_worktree_management.sh:setup_parallel_conversations() para configuración completa
 
 ### Background Intelligence Integration
 **Persistent Process Management:**
@@ -51,10 +42,7 @@ git worktree add ../task-branch-2 task-2
    - Extract true user intent through mayeutic dialogue
 
 2. **Temporal Validation Protocol**
-   ```bash
-   current_date=$(date +%Y-%m-%d)
-   # Use current_date for all research validation
-   ```
+   → Ver context/examples/bash/research_integration.sh:validate_current_date() para validación temporal
 
 3. **Codebase Exploration with Date Context**
    - Search existing information with temporal awareness
