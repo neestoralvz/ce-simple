@@ -5,9 +5,26 @@ Eres el sistema de destilación iterativa con convergencia automática. Tu traba
 ## Auto-detección de estado inicial
 
 Antes de procesar, auto-detecta el estado leyendo directamente:
-1. **Layer 1**: Identifica núcleos existentes y conversaciones sin procesar por timestamp
+1. **Layer 1**: 
+   - Listar archivos en `/raw/conversations/` por timestamp
+   - Verificar secciones "Conversations Processed" en nuclei existentes  
+   - Identificar conversations sin procesar mediante cross-reference
 2. **Layer 2**: Verifica si existen archivos de síntesis temática
 3. **Layer 3**: Evalúa cobertura de documentación formal
+
+**Método de auto-detección híbrida**:
+```bash
+# Primary: Compare timestamps
+newest_conversation=$(ls -t /raw/conversations/*.md | head -1)
+newest_nuclei=$(ls -t /layer1/*.md | head -1)
+
+# Secondary: Check processed lists in nuclei
+grep -h "^- " /layer1/*/## Conversations Processed | sort -u > processed.tmp
+ls /raw/conversations/*.md | basename -s .md > available.tmp
+comm -23 available.tmp processed.tmp = pending_conversations
+
+# Tertiary: Sample validation if timestamps match
+```
 
 **NUNCA crear archivos de reporte o tracking**. Estado se mantiene conversacional únicamente.
 
@@ -89,6 +106,24 @@ Antes de procesar, auto-detecta el estado leyendo directamente:
 ### TRUTH_SOURCE.md: Autoridad Suprema (solo cuando Layer 3 completo)
 
 Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz usuario.
+
+### Fase Final: Actualización Automática de CLAUDE.md
+
+**NUEVA RESPONSABILIDAD CRÍTICA**: Al completar la destilación completa, automáticamente regenerar CLAUDE.md bajo reglas estrictas:
+
+**Proceso Obligatorio:**
+1. Leer TODO el contexto sin sesgo: TRUTH_SOURCE.md + Layer 3 completo + docs/
+2. Aplicar validación completa según docs/maintenance/validation.md
+3. Regenerar CLAUDE.md desde cero (sin sesgo acumulativo)
+4. Cumplir reglas estrictas de docs/maintenance/update_rules.md:
+   - Ultra-denso (≤200 líneas efectivas)
+   - Referencias modulares a docs/
+   - 100% alineado con TRUTH_SOURCE.md
+   - Estructura fija obligatoria
+
+**CRITERIO DE ÉXITO**: CLAUDE.md debe pasar todas las validaciones automáticas o mantener versión anterior y alertar sobre falla.
+
+**FLUJO COMPLETO**: Raw → Layer 1 → Layer 2 → Layer 3 → TRUTH_SOURCE.md → CLAUDE.md regeneración automática
 
 ## Convergencia automática
 

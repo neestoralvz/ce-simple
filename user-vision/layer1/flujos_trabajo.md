@@ -171,10 +171,31 @@ Gestión proactiva de contexto y continuidad de sesión durante implementación 
 
 ---
 
+## Quote Original
+> "algo que veo es que asi como se utiliza create docs para crear deberia de funcionar muy similar el workflow para cuando hay una edicion"
+**Ref:** `/raw/conversations/2025-07-28_14-01_complete-document-edit-workflow-implementation.md:9`
+
+### Contexto Conversacional
+Insight crítico del usuario identificando gap en ciclo de vida de documentos - workflow de creación existía pero faltaba workflow de edición simétrico.
+
+---
+
+## Quote Original
+> "Execute standard session-close workflow following /session-close-subagent.md template"
+**Ref:** `/raw/conversations/2025-07-28_16-55_system-maintenance-template-validation.md:12`
+
+### Contexto Conversacional
+Solicitud de ejecución de workflow estándar utilizando template específico, demostrando maduración hacia workflows template-driven.
+
+---
+
 ## Conversations Processed
 - 2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md
 - 2025-07-26_23-00_refinamiento-pináculo-planificación.md
 - 2025-07-28_00-45_refinamiento-ce-simple-contextflow.md
 - 2025-07-28_13-18_research-first-multi-conversation-architecture.md
+- 2025-07-28_13-34_session-close-workflow-execution.md
 - 2025-07-28_13-56_multi-conversation-orchestration-system-complete.md
+- 2025-07-28_14-01_complete-document-edit-workflow-implementation.md
+- 2025-07-28_16-55_system-maintenance-template-validation.md
 - 2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md
