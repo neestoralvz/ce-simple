@@ -33,7 +33,7 @@ Systematic session analysis using Think x4 methodology + conversation compacting
 ### Phase 0: Compacting Obligation
 **SIEMPRE invoke /actions:compact**: Systematic conversation analysis before planning operations
 - 5-stage compacting: Núcleos temáticos → quotes exactas → decisiones técnicas → contexto esencial → estructura cronológica
-- Raw preparation: Conversation analysis ready for storage en context/raw/
+- Raw preparation: Conversation analysis ready for storage en context/conversations/
 - Parallel operations: Compacting analysis + timestamp generation + planning context read simultáneos
 
 ### Output Integration

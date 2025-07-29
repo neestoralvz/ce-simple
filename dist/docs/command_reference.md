@@ -2,160 +2,47 @@
 
 Complete reference for all available commands in the system.
 
-## Workflows (Major Operations)
+## Command Categories
 
-### /workflows:start
-Begin any session with planning integration and priority-driven options.
-- Reads project state and planning documents
-- Presents priority-based next steps
-- Provides seamless continuity from previous sessions
+This reference is organized by command type for easier navigation:
 
-### /workflows:close
-End session with comprehensive handoff preparation.
-- Captures session progress and decisions
-- Updates planning documents
-- Prepares handoff for next session
+### **@commands/workflows.md**
+Major operations for complex tasks:
+- `/workflows:start` - Session initialization with planning
+- `/workflows:close` - Session completion with handoff
+- `/workflows:explore` - Codebase analysis
+- `/workflows:debug` - Problem resolution
+- `/workflows:distill` - Information processing
+- `/workflows:maintenance` - System optimization
 
-### /workflows:explore
-Comprehensive codebase understanding and analysis.
-- Multi-file analysis and pattern recognition
-- Architecture investigation
-- System behavior mapping
+### **@commands/actions.md**
+Specific task execution:
+- `/actions:research` - Comprehensive investigation
+- `/actions:write` - Content creation
+- `/actions:build` - Documentation generation
+- `/actions:git` - Repository operations
+- `/actions:compact` - Information consolidation
+- `/actions:expand` - Content elaboration
+- `/actions:recreate` - Clean reconstruction
 
-### /workflows:debug
-Systematic problem diagnosis and resolution.
-- Root cause analysis
-- Solution validation
-- Fix implementation
+### **@commands/roles.md**
+Consultation and validation:
+- `/roles:orchestrator` - Main coordination
+- `/roles:partner` - Strategic consultation
+- `/roles:challenge` - Anti-pattern validation
+- `/roles:research` - Specialized research
 
-### /workflows:distill
-Process and synthesize information from conversations or documents.
-- Content analysis and summarization
-- Pattern extraction
-- Structured output generation
+### **@commands/methodology.md**
+Systematic approaches:
+- `/methodology:thinkx4` - Multi-perspective analysis
+- `/methodology:parallel_execution` - Concurrent operations
+- `/methodology:continuous_flow` - Uninterrupted execution
+- `/methodology:research_first` - Research protocols
+- `/methodology:validation_protocol` - Quality validation
 
-### /workflows:maintenance
-System health and optimization operations.
-- Performance monitoring
-- Cleanup operations
-- System optimization
+### **@commands/usage_patterns.md**
+Common workflows and customization guidance
 
-## Actions (Specific Tasks)
+---
 
-### /actions:research
-Comprehensive research using concurrent web searches and validation.
-- Current information gathering with timestamp validation
-- Multi-source concurrent research
-- Think x4 analysis methodology
-
-### /actions:write
-Content creation with quality standards.
-- Template-based writing
-- Style guide compliance
-- Multi-format output
-
-### /actions:build
-System building and documentation generation.
-- Automated documentation creation
-- Template application
-- Quality validation
-
-### /actions:git
-Git operations with best practices enforcement.
-- Intelligent commit message generation
-- Branch management
-- Repository optimization
-
-### /actions:compact
-Information consolidation and optimization.
-- Content compression without information loss
-- Structure optimization
-- Redundancy elimination
-
-### /actions:expand
-Detailed elaboration and enhancement.
-- Content expansion with maintained quality
-- Context enrichment
-- Detail augmentation
-
-### /actions:recreate
-Clean slate reconstruction following updated guidelines.
-- Bias elimination through recreation
-- Updated standard application
-- Fresh perspective implementation
-
-## Roles (Consultation/Validation)
-
-### /roles:orchestrator
-Main coordination role with intelligent delegation.
-- Pattern recognition and task routing
-- Continuous execution management
-- Multi-agent coordination
-
-### /roles:partner
-Strategic consultation and decision validation.
-- Architecture discussion partner
-- Decision impact analysis
-- Strategic alignment validation
-
-### /roles:challenge
-System validation against over-engineering and anti-patterns.
-- Challenge system decisions
-- Identify potential issues
-- Suggest alternatives
-
-### /roles:research
-Specialized research agent with advanced methodologies.
-- Concurrent information gathering
-- Multi-source validation
-- Structured research output
-
-## Methodology Commands
-
-### /methodology:thinkx4
-Apply systematic 4-perspective analysis.
-
-### /methodology:parallel_execution
-Optimize operations for concurrent execution.
-
-### /methodology:continuous_flow
-Ensure uninterrupted execution until completion.
-
-### /methodology:research_first
-Apply research-first protocols with temporal validation.
-
-### /methodology:validation_protocol
-Systematic validation against project standards.
-
-## Maintenance
-
-### /maintenance:maintain
-System health monitoring and optimization.
-- Performance analysis
-- Structure optimization
-- Quality maintenance
-
-## Usage Patterns
-
-### Basic Session Flow
-1. `/workflows:start` - Begin with context and priorities
-2. Use appropriate commands based on priorities
-3. `/workflows:close` - End with handoff preparation
-
-### Research-Heavy Tasks
-1. `/actions:research` - Gather current information
-2. `/roles:partner` - Validate findings and decisions
-3. `/actions:build` - Create documentation or implementation
-
-### System Maintenance
-1. `/maintenance:maintain` - Check system health
-2. `/roles:challenge` - Validate against anti-patterns
-3. `/actions:recreate` - Rebuild components if needed
-
-## Customization
-
-All commands can be customized by:
-- Modifying context references in command files
-- Adjusting templates and patterns
-- Updating validation criteria
-- Adding project-specific triggers
+**Quick Start**: Begin with workflows.md for major operations, then explore specific categories based on your needs.

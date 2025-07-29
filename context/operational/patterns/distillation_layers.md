@@ -12,14 +12,14 @@ Specialized processing for Layer 1, 2, and 3 distillation with convergence optim
 
 **Si núcleos YA existen**: 
 - Auto-detect processed quotes counting in existing núcleos
-- Identify unprocessed conversations in `/raw/conversations/`
+- Identify unprocessed conversations in `/conversations/`
 - Add related quotes to existing núcleos with exact format
 
 ### Quote Processing Format
 ```
 ## Quote Original
 > "texto exacto del usuario"
-**Ref:** `/raw/conversations/archivo.md:línea`
+**Ref:** `/conversations/archivo.md:línea`
 
 ### Contexto Conversacional
 [Contexto específico]

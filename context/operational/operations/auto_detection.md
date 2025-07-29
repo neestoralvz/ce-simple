@@ -10,14 +10,14 @@ Hybrid auto-detection methodology for conversation processing state without file
 ### Hybrid Detection Strategy
 **Primary detection**: Compare timestamps
 ```
-newest_conversation=$(ls -t /raw/conversations/*.md | head -1)
+newest_conversation=$(ls -t /conversations/*.md | head -1)
 newest_nuclei=$(ls -t /layer1/*.md | head -1)
 ```
 
 **Secondary detection**: Check processed lists in núcleos
 ```
 grep -h "^- " /layer1/*/## Conversations Processed | sort -u > processed.tmp
-ls /raw/conversations/*.md | basename -s .md > available.tmp
+ls /conversations/*.md | basename -s .md > available.tmp
 comm -23 available.tmp processed.tmp = pending_conversations
 ```
 
@@ -68,5 +68,5 @@ comm -23 available.tmp processed.tmp = pending_conversations
 
 ---
 **Integration:** Referenced by /workflows:distill orchestrator for state management
-**Dependencies:** Raw conversations directory, existing núcleos structure
+**Dependencies:** Conversations directory, existing núcleos structure
 **Output:** State assessment without persistent tracking file creation

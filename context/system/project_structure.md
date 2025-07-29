@@ -40,7 +40,7 @@ context/project_structure.md: Este archivo - conocimiento arquitectural
 context/decisions/: Decisiones arquitecturales cristalizadas
 context/roles:research/: Investigation results, domain-specific analyses
 context/examples/: Usage patterns, concurrent patterns
-context/raw/: Conversaciones raw para destilación futura
+context/conversations/: Conversaciones para destilación futura
 
 ## Context loading patterns
 

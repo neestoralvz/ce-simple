@@ -43,7 +43,7 @@ Fuente central única para módulos verdad usuario. Sistema DEBE consultar conte
 **DEBE incluir:** Fecha validation con comando date  
 **Uso:** Background intelligence para comandos
 
-### context/raw/
+### context/conversations/
 **Contenido:** 71 conversaciones originales usuario  
 **FUNDAMENTAL:** Fuente verdad absoluta sin interpretación AI  
 **Trazabilidad:** Referencias exactas conversaciones específicas

@@ -50,7 +50,7 @@ class CommandExporter:
             r'CDMX.*?\|': '',
             
             # Make references more generic
-            r'context/conversations/': 'context/sessions/',
+            r'context/conversations/': 'context/conversations/',
             r'/handoff/': '/sessions/',
         }
     

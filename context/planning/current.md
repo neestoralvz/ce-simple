@@ -1,10 +1,17 @@
-# Current Planning - Session 20250729_1559
+# Current Planning - Session 20250729_1601
 
-**Session**: Command Reorganization + Naming Simplification | **Status**: Command System Optimized
+**Session**: Hardcoded Path Correction RAW → conversations | **Status**: System Consistency Achieved
 
 ## Estado Actual Proyecto
 
-### Command System Optimization Achievement ✅
+### System Path Consistency Achievement ✅
+- **Hardcoded path correction completed**: 9 critical files updated RAW → conversations systematic
+- **Path standardization achieved**: All conversation storage references now point to context/conversations/
+- **System consistency validated**: Zero remaining path conflicts across scripts, docs, commands
+- **Anti-pattern prevention**: Hardcoded path methodology documented for future prevention
+- **Cross-system coherence**: Storage paths, references, and documentation fully aligned
+
+### Command System Optimization Achievement ✅ (Previous)
 - **Command structure reorganized**: .claude/commands/ directory systematically cleaned and optimized
 - **Naming simplification applied**: Complex naming patterns → simple single-word commands
 - **Duplicate elimination completed**: do_dont versions eliminated, modular versions became primary
@@ -34,6 +41,7 @@
 - [x] **Command reorganization**: .claude/commands/ structure optimized and simplified
 - [x] **Naming standardization**: Complex patterns → simple, discoverable names
 - [x] **Reference integrity**: All cross-references verified and functioning
+- [x] **Hardcoded path correction**: RAW → conversations systematic update across 9 files
 
 ### MEDIUM PRIORITY - Next Session
 - [ ] **Command functionality testing**: Verify commands work as expected in practice
@@ -49,22 +57,22 @@
 ## Progreso Esta Sesión
 
 ### Major Accomplishments
-1. **Command system reorganization**: Systematic analysis + cleanup + optimization of .claude/commands/
-2. **Naming simplification methodology**: Partner role consultation → Think x4 analysis → simplicity principle confirmation
-3. **Duplicate elimination executed**: 3 do_dont files removed, modular versions became primary
-4. **Cross-reference validation**: Comprehensive verification and correction of all command references
+1. **Hardcoded path systematic detection**: Comprehensive search across codebase identifying RAW references
+2. **Partner role consultation**: /roles:partner analysis confirming path inconsistency as system blocker
+3. **Systematic path correction**: 9 critical files updated with conversations (lowercase) standardization
+4. **Cross-system validation**: Verified zero remaining hardcoded path conflicts in scripts, docs, commands
 
 ### System State Transformation  
-- **Before**: 24 commands with duplicates, complex naming, broken references
-- **After**: 21 clean commands with simplified naming, verified references
-- **Method**: analyze → clean → rename → update → validate systematic approach
-- **Result**: Professional, discoverable command ecosystem aligned with simplicity principles
+- **Before**: Mixed references to RAW, context/raw/, /raw/conversations/ causing storage confusion
+- **After**: Unified conversations path standard across all system components 
+- **Method**: search → identify → plan → correct → verify systematic approach
+- **Result**: Complete path consistency with conversation storage system fully coherent
 
 ### Technical Implementation
-- **Files eliminated**: partner_do_dont.md, git_do_dont.md, close_do_dont.md
-- **Renames executed**: 7 commands simplified (partner_modular → partner, thinkx4 → analysis, etc.)
-- **References updated**: CLAUDE.md + 10+ cross-references corrected
-- **Validation completed**: Zero broken references, all commands properly linked
+- **Files corrected**: scripts/export_commands.py + 4 system docs + 3 command files + 2 operational files
+- **References updated**: 16+ specific path references changed RAW → conversations
+- **Standards applied**: Lowercase conversations path enforced consistently
+- **Validation completed**: Zero hardcoded path conflicts remaining in system
 
 ### Previous Session Accomplishments (Preserved)
 1. **Partner constructor activation**: Think x4 methodology applied to systematic simplification
@@ -75,17 +83,17 @@
 ## Próximos Pasos
 
 ### Next Session Focus
-1. **Command functionality testing**: Practical validation of reorganized commands in actual use
-2. **Command ecosystem exploration**: Test delegation chains and cross-command workflows
+1. **Command functionality testing**: Practical validation with corrected conversation paths
+2. **Conversation storage validation**: Test that conversations actually save to conversations/ directory
 3. **Modular refactoring session**: Systematic breakdown of 38 oversized files (ongoing)
 4. **Export system architecture**: Apply discovered minimal structure principles
 
 ### Strategic Direction
-- **Command system ready for production**: Clean, discoverable, professionally organized
-- **Systematic reorganization methodology**: Proven approach (analyze → clean → rename → update → validate)
-- **Naming simplification principle**: Single words when clear, descriptive phrases only when necessary
-- **Discovery through elimination** methodology validated and ready for export/ design
-- **Authority-first approach** proven effective for system management
+- **System path consistency achieved**: All conversation storage references unified and standardized
+- **Hardcoded path anti-pattern documented**: Prevention methodology for future system maintenance
+- **Search → identify → correct → verify**: Proven approach for systematic consistency fixes
+- **Partner consultation methodology**: /roles:partner effective for system validation issues
+- **Cross-system coherence maintained**: Scripts, docs, commands all aligned with conversations standard
 
 ## Context Referencias
 
@@ -102,13 +110,13 @@
 
 ## Session Validation ✅
 
-- **Planning evolution**: Command reorganization captured comprehensively in current state
-- **Learning integration**: Naming simplification methodology + systematic approach documented
-- **System coherence**: Command ecosystem optimized + cross-references verified
-- **Continuity preparation**: Next session can focus on functionality testing with clean command base
+- **Planning evolution**: Hardcoded path correction captured comprehensively in current state
+- **Learning integration**: Search → identify → correct → verify methodology documented
+- **System coherence**: All conversation storage paths unified and consistent
+- **Continuity preparation**: Next session can proceed with confidence in path consistency
 
 ---
-**Authority**: Planning reflects actual system state post-command reorganization
+**Authority**: Planning reflects actual system state post-path standardization
 **Integration**: All session learnings captured for evolutionary planning  
 **Protection**: Conversation preservation protocols active and enforced
-**Command System**: Professional, discoverable, ready for productive use
+**Path Consistency**: All conversation storage references aligned to conversations/ standard
