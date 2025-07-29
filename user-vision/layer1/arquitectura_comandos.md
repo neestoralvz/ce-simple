@@ -50,6 +50,29 @@ Estableciendo árbol de decisiones como metadata universal para optimización de
 **Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:15`
 
 ### Contexto Conversacional
+Restricción arquitectónica para mantener autocontención de comandos.
+
+---
+
+## Quote Original
+> "CLAUDE.md debe ser dispatcher mínimo"
+**Ref:** `/raw/conversations/2025-07-28_00-45_refinamiento-ce-simple-contextflow.md:34`
+
+### Contexto Conversacional
+Durante análisis de sobrecarga arquitectónica en CE-Simple, el usuario identificó que CLAUDE.md trata de cumplir múltiples funciones simultáneamente (contexto, instrucciones, conocimiento, sistema de comandos) y debe evolucionar hacia separación clara entre navegación vs conocimiento.
+
+---
+
+## Quote Original
+> "Comandos como árboles de decisiones interconectados"
+**Ref:** `/raw/conversations/2025-07-28_00-45_refinamiento-ce-simple-contextflow.md:36`
+
+### Contexto Conversacional
+Implementación orgánica del grafo conceptual dinámico ContextFlow donde cada comando es repositorio completo de conocimiento, eliminando dependencias externas y habilitando auto-contención.
+
+---
+
+### Contexto Conversacional
 Definiendo límites arquitecturales estrictos para independencia de comandos.
 
 ---
