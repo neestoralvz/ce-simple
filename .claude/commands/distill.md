@@ -35,6 +35,13 @@ Antes de procesar, auto-detecta el estado leyendo directamente:
   ---
   ```
 
+- **Mantener tracking de completitud**: Al final de cada núcleo, agregar/actualizar:
+  ```markdown
+  ## Conversations Processed
+  - archivo1.md
+  - archivo2.md
+  ```
+
 ### Layer 2: Concentración en Insights Ultra-Densos (solo cuando Layer 1 >80%)
 
 **OBJETIVO CRÍTICO**: Fusionar múltiples quotes en insights concentrados y poderosos
@@ -93,9 +100,10 @@ Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz u
 
 **Completion message:** "Destilación completa - Todo el corpus conversacional procesado y sintetizado"
 
-**Auto-detección de completitud:**
-- Identifica conversaciones por timestamp más reciente que último procesamiento
-- Detecta si quedan archivos raw/ sin revisar
+**Auto-detección híbrida de completitud:**
+- **Primary**: Compare timestamps de conversations vs nuclei updates
+- **Secondary**: Verificar listas "Conversations Processed" en nuclei footers
+- **Tertiary**: Sampling validation de 2-3 conversations recientes si timestamp indica completitud
 - Reporta progreso temporal: "Procesando hasta 20250729, 3 conversaciones pendientes"
 
 ## Progreso conversacional únicamente

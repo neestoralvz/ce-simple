@@ -139,3 +139,13 @@ Análisis crítico de arquitectura de capas donde identificas problemas estructu
 Problema sistémico identificado: inversión conceptual en densidad de layers. Layer1 = quotes dispersos (materia prima), Layer3+ = conocimiento ultra-denso. @-imports deben cargar contenido concentrado, no quotes raw.
 
 ---
+
+## Conversations Processed
+- 2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md
+- 2025-07-28_00-45_refinamiento-ce-simple-contextflow.md
+- 2025-07-28_12-50_git-integration-anti-bias-implementation.md
+- 2025-07-28_13-18_research-first-multi-conversation-architecture.md
+- 2025-07-28_13-32_sistema-preparacion-monitoreo-claude-code.md
+- 2025-07-28_15-30_comando-universal-sesgo-ceo.md
+- 2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md
+- 20250729_2100_balanced-layer-reorganization-session.md

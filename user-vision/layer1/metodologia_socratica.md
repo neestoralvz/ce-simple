@@ -123,3 +123,13 @@ Establecimiento del principio fundamental de aprendizaje sistemático: user feed
 
 ### Contexto Conversacional
 Crítica constructiva sobre integración de herramientas de research en workflows, estableciendo WebSearch + MCP Context7 como requirements.
+
+---
+
+## Conversations Processed
+- 2025-01-28_refinamiento-contextflow-arquitectura.md
+- 2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md
+- 2025-07-28_13-18_research-first-multi-conversation-architecture.md
+- 2025-07-28_13-35_dialogo-mayeutico-intent-detection-implementation.md
+- 2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md
+- 20250729_2100_balanced-layer-reorganization-session.md

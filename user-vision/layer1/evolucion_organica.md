@@ -87,3 +87,11 @@ Evolución orgánica del sistema basada en aprendizaje tanto de éxitos como de 
 
 ### Contexto Conversacional
 Evolución arquitectural hacia capacidades multi-conversación implementadas via git worktrees, transformación fundamental del sistema.
+
+---
+
+## Conversations Processed
+- 2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md
+- 2025-07-28_13-20_research-first-multi-conversation-architecture.md
+- 2025-07-28_15-30_comando-universal-sesgo-ceo.md
+- 2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md
