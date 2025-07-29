@@ -1,7 +1,6 @@
 # Decisión: Metodología Compactación Conversaciones
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Conversation compacting methodology
+**29/07/2025 10:30 CDMX** | Conversation compacting methodology
 
 ## Proceso Compactación Identificado
 
@@ -48,9 +47,9 @@
 - Tangents que no afectaron resultado final
 
 ### Fidelidad User Voice
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** User voice fidelity requirements
-**APPLICATION:** Mantener 95%+ fidelidad quotes usuario originales, parafrasear o interpretar declaraciones de autoridad, preservar context decisional y rationale original
+**OBLIGATORIO:** Mantener 95%+ fidelidad quotes usuario originales
+**PROHIBIDO:** Parafrasear o interpretar declaraciones de autoridad
+**REQUERIDO:** Preservar context decisional y rationale original
 
 ## Aplicación Futura
 

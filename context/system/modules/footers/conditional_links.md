@@ -1,7 +1,6 @@
 # /modules:footer_conditional - Conditional Reference Links
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Conditional reference footer template
+**29/07/2025 11:45 CDMX** | Conditional reference footer template
 
 ## Footer Template
 

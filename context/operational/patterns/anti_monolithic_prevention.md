@@ -5,21 +5,18 @@
 ## Triggers Automáticos Prevención
 
 ### File Size Monitoring OBLIGATORIO
-**TEMPLATE:** /examples:workflow_actions
-**CONTEXT:** File size exceeds 80 lines → mandatory refactoring
-**APPLICATION:** Modular decomposition preservando information density
+**TRIGGER:** File size exceeds 80 lines → mandatory refactoring
+**ACCIÓN:** Modular decomposition preservando information density
 **ENFORCEMENT:** Zero tolerance policy para archivos monolíticos
 
 ### Content Duplication Detection CRÍTICO
-**TEMPLATE:** /examples:workflow_actions
-**CONTEXT:** Content duplication detected between files
-**APPLICATION:** Consolidación con reference-only replacement
+**TRIGGER:** Content duplication detected between files
+**ACCIÓN:** Consolidación con reference-only replacement
 **VALIDATION:** Authority chain preservation + information fidelity
 
 ### Authority Drift Prevention SISTEMÁTICO
-**TEMPLATE:** /examples:workflow_actions
-**CONTEXT:** Authority content appears outside TRUTH_SOURCE hierarchy
-**APPLICATION:** Redirect to appropriate authority file con references
+**TRIGGER:** Authority content appears outside TRUTH_SOURCE hierarchy
+**ACCIÓN:** Redirect to appropriate authority file con references
 **ENFORCEMENT:** Authority hierarchy integrity maintained
 
 ## Prevention Metodología

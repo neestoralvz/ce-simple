@@ -1,89 +1,52 @@
-# /methodology:validation_protocol - Authority Alignment Verification
+# /methodology:validation_protocol - Authority Alignment Verification Dispatcher
 
-## Post-Validation Sistemática
+**TEMPLATE:** /examples:headers_footers
+**CONTEXT:** Validation protocol con authority alignment
 
-### Después Cada Delegación
-**Después cada delegación** → automatic second Task tool
-**Verify alignment** with project authority source
-**Verify compliance** with established simplicity principles  
-**Verify standards** according to project documentation patterns
+## AUTORIDAD SUPREMA
+@context/TRUTH_SOURCE.md → @context/operational/enforcement/quality_gates.md
 
-### Authority Validation Chain
-**Cross-check** findings with project authority source when relevant
-**Escalate** conflicts between results and established decisions
-**Preserve** user authority over AI execution preferences
-**Challenge** outdated information vs current findings when appropriate
+## CORE FUNCTION
+Validation sistemática via authority alignment + simplicity compliance + standards verification
 
-### Validation Domains
+## SEMANTIC TRIGGERS
 
-#### Authority Alignment
-**Primary source**: Project authority document verification
-**Decision authority**: User vision vs implementation choices
-**Conflict resolution**: Escalate authority conflicts immediately
-**Vision preservation**: Ensure results align with crystallized vision
+### Post-Delegation Validation Pattern
+**Triggers**: Task completion, delegation results, verification needed
+**Auto-activation**: @context/operational/enforcement/quality_gates.md
+**Execute**: Authority alignment + simplicity compliance + standards verification
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-#### Simplicity Compliance
-**Simplicity check**: Project simplicity principles
-**Complexity analysis**: Results don't increase unnecessary complexity
-**Beauty validation**: Solutions feel natural and conversational
-**Over-engineering detection**: Flag solutions that violate simplicity
+### Authority Conflict Pattern
+**Triggers**: Authority misalignment, vision conflicts, decision contradictions
+**Auto-activation**: @context/operational/patterns/authority_framework.md
+**Execute**: Conflict detection + escalation protocols + resolution verification
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-#### Standards Validation
-**Documentation standards**: Project documentation style guides
-**Methodology compliance**: All required methodologies applied
-**Quality gates**: Results meet established quality criteria
-**Consistency check**: Results consistent with system patterns
+### Standards Compliance Pattern
+**Triggers**: Quality gates verification, methodology application, consistency checks
+**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Execute**: Documentation standards + methodology compliance + quality assessment
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-#### Context Integration
-**Context coherence**: Results fit within established context structure
-**Reference accuracy**: All context references valid and current
-**Integration seamless**: Results integrate smoothly with existing system
-**Dependencies satisfied**: All contextual dependencies addressed
+## VALIDATION METHODOLOGY
+1. **Authority alignment** → TRUTH_SOURCE verification + user vision compliance
+2. **Simplicity compliance** → complexity analysis + over-engineering detection
+3. **Standards verification** → documentation + methodology + quality gates
+4. **Context integration** → coherence + reference accuracy + seamless integration
 
-## Validation Templates
+## VALIDATION DOMAINS
+- **Authority alignment** → project authority + decision authority + vision preservation
+- **Simplicity compliance** → complexity analysis + natural feel + over-engineering detection
+- **Standards validation** → documentation + methodology + quality gates + consistency
 
-### Authority Validation Template
-```markdown
-### Authority Validation Results
-**TRUTH_SOURCE alignment**: [VERIFIED/CONFLICT_DETECTED]
-**User vision compliance**: [ALIGNED/REQUIRES_REVIEW]
-**Decision authority**: [PRESERVED/ESCALATION_NEEDED]
-```
-
-### Simplicity Validation Template
-```markdown
-### Simplicity Validation Results
-**Complexity assessment**: [SIMPLIFIED/MAINTAINED/INCREASED]
-**Natural feel**: [CONVERSATIONAL/ACCEPTABLE/BUREAUCRATIC]
-**Over-engineering check**: [CLEAN/WARNING_FLAGS/VIOLATION]
-```
-
-### Standards Validation Template
-```markdown
-### Standards Validation Results
-**Documentation compliance**: [STANDARDS_MET/CORRECTIONS_NEEDED]
-**Methodology application**: [COMPLETE/PARTIAL/MISSING]
-**Quality gates**: [PASSED/REVIEW_REQUIRED/FAILED]
-```
-
-## Integration Pattern
-
-### Command Usage
-```markdown
-## Methodology Integration
-**LOAD:** /methodology:validation_protocol
-
-## [Command Function]
-[Execute function with systematic post-validation]
-[Apply validation templates for authority/simplicity/standards]
-```
-
-### Enforcement Criteria
-- **Automatic validation** after all delegations
-- **Second Task tool** deployment for verification
-- **Authority conflicts** escalated immediately
-- **Quality standards** verified before completion
+## REFERENCIAS CONDICIONALES
+**Quality gates**: @context/operational/enforcement/quality_gates.md
+**Authority framework**: @context/operational/patterns/authority_framework.md
+**Methodology protocol**: @context/operational/operations/methodology_protocol.md
+**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
 
 ---
-**Authority Source**: Project orchestration methodology + validation patterns
-**Extracted from**: /roles:orchestrator, /roles:partner, system validation patterns
+**Authority Chain**: TRUTH_SOURCE → quality gates → validation execution
+**Token Optimization**: Reference-only + systematic verification
+**Compliance**: ≤80 lines + authority alignment + quality validation

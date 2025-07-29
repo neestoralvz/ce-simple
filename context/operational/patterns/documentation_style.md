@@ -1,14 +1,12 @@
 # Documentation Style - Estilo LLM Optimizado
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Documentation style guide for LLMs
+**29/07/2025 11:30 CDMX** | Documentation style guide for LLMs
 
 ## Principios Fundamentales
 
 ### Vocabulario Reforzamiento
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Documentation vocabulary standards
-**APPLICATION:** Usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL; ser verboso, redundante, duplicativo; lenguaje natural puro, directo, técnico
+**OBLIGATORIO:** Usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL
+**ESTILO:** Ser verboso, redundante, duplicativo; lenguaje natural puro, directo, técnico
 
 ### Header Compacto Obligatorio
 **Formato:** `**DD/MM/YYYY HH:MM CDMX | Actualizado: DD/MM/YYYY HH:MM CDMX** | Propósito`
@@ -45,9 +43,7 @@
 ## Anti-Pattern Crítico: Codeboxes
 
 ### NUNCA Usar Codeboxes
-**TEMPLATE:** /examples:behavioral_patterns
-**CONTEXT:** Codeboxes usage
-**APPLICATION:** vs Texto directo, listas numeradas, referencias inline
+**ANTI-PATTERN:** Codeboxes vs texto directo, listas numeradas, referencias inline
 **RATIONALE**: Visual bloat sin valor añadido - contenido debe ser autoexplicativo
 
 ### Reemplazos Codeboxes

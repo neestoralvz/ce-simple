@@ -1,7 +1,6 @@
 # Decisión: Metodología Ejecución Continua Obligatoria
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Continuous execution methodology decision
+**29/07/2025 10:15 CDMX** | Continuous execution methodology decision
 
 ## Problema Original
 
@@ -17,18 +16,16 @@ Usuario identificó comportamiento incorrecto del agente principal:
 ## Corrección Implementada
 
 ### Cambio Metodológico Fundamental
-**TEMPLATE:** /examples:behavioral_patterns
-**CONTEXT:** Continuous execution methodology
-**APPLICATION:** vs Orquestador delega → notifica → CONTINÚA automáticamente → completa TODO
+**NUEVO COMPORTAMIENTO:** Orquestador delega → notifica → CONTINÚA automáticamente → completa TODO
+**PROHIBIDO:** Pausar tras notificaciones esperando confirmación
 
 ### Template Correcto Implementado
 1. "Completado [SUBTAREA] → [RESULTADO_BREVE].
 2. Continuando automáticamente con [SIGUIENTE_TAREA]..."
 
 ### Anti-Pattern Eliminado
-**TEMPLATE:** /examples:behavioral_patterns
-**CONTEXT:** Anti-interruption protocol
-**APPLICATION:** vs Notificar progreso Y continuar automáticamente
+**ANTI-PATTERN:** Notificar progreso y pausar esperando confirmación
+**CORRECTO:** Notificar progreso Y continuar automáticamente
 
 ## Enforcement Sistémico
 

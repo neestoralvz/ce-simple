@@ -49,9 +49,8 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ## METODOLOGÍA ENFORCEMENT INTEGRADA
 
 ### Reference-Only Content Protocol
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Reference-only content protocol
-**APPLICATION:** No content duplication - only conditional references, file size ≤80 lines enforcement
+**OBLIGATORIO**: No content duplication - only conditional references
+**ANTI-MONOLITHIC**: File size ≤80 lines enforcement
 **CONTEXT EFFICIENCY**: Token economy through reference system
 
 ### Authority Chain Validation

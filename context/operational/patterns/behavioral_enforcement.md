@@ -5,9 +5,10 @@
 ## TodoWrite Auto-Detection DEBE
 
 ### Dependency Scanning Automático
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** TodoWrite auto-detection requirements
-**APPLICATION:** Cada task completion → auto-identificar archivos relacionados que requieren updates, auto-add tareas discovered during execution para file synchronization, dependency-scanning sistemático para propagation requirements, concurrency analysis automático para maximize parallel execution
+**CADA TASK COMPLETION:** Auto-identificar archivos relacionados que requieren updates
+**AUTO-ADD TAREAS:** Discovered during execution para file synchronization
+**SISTEMÁTICO:** Dependency-scanning para propagation requirements
+**AUTOMÁTICO:** Concurrency analysis para maximize parallel execution
 
 ### TodoWrite Dynamic Methodology
 **SIEMPRE actualizar** todo list real-time según discoveries
@@ -18,9 +19,10 @@
 ## Orchestration Protocol SIEMPRE
 
 ### Delegation Mandatory Rules
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Delegation mandatory rules
-**APPLICATION:** Si complejidad >3 pasos especializados → usar Task tool, ejecutar analysis complejo directamente, delegar via subagentes apropiados con contexto específico, batch operations para tools independientes obligatorio
+**SI COMPLEJIDAD >3 pasos especializados:** Usar Task tool obligatorio
+**PROHIBIDO:** Ejecutar analysis complejo directamente
+**OBLIGATORIO:** Delegar via subagentes apropiados con contexto específico
+**REQUERIDO:** Batch operations para tools independientes
 
 ### Recognition → Delegation → Validation Flow
 **Pattern recognition** → Task tool deployment → post-validation automática  

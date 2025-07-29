@@ -1,7 +1,6 @@
 # Project Structure - Arquitectura Sistema
 
-**TEMPLATE:** /examples:headers_footers
-**CONTEXT:** Conocimiento arquitectural navegación
+**29/07/2025 11:00 CDMX** | Conocimiento arquitectural navegación
 
 ## Jerarquía autoridad
 
@@ -54,10 +53,8 @@ Validation: context/decisions/ + domain-specific patterns
 
 ### Loading efficiency
 Just-in-time: Solo módulos relevantes para situación específica
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Loading efficiency
-**APPLICATION:** preventive loading, cargar context/ completo innecesariamente
-Dynamic references: Via CLAUDE.md decision logic según pattern recognition
+**ANTI-PATTERN:** Preventive loading, cargar context/ completo innecesariamente
+**CORRECTO:** Dynamic references via CLAUDE.md decision logic según pattern recognition
 
 ## Git worktrees multi-conversación
 

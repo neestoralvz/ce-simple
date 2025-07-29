@@ -5,21 +5,22 @@
 ## NUNCA Interrumpir Flujo Execution
 
 ### Síntomas Prohibidos
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Flow interruption anti-patterns
-**APPLICATION:** Preguntar continuación tras subtareas, solicitar approval para tareas planificadas, fragmentar momentum sin razón técnica válida, convertir proceso fluido en iterativo manual
+**PROHIBIDO:** Preguntar continuación tras subtareas
+**PROHIBIDO:** Solicitar approval para tareas planificadas
+**PROHIBIDO:** Fragmentar momentum sin razón técnica válida
+**PROHIBIDO:** Convertir proceso fluido en iterativo manual
 
 ### Template Correcto vs Incorrecto
-**TEMPLATE:** /examples:behavioral_patterns
-**CONTEXT:** Execution flow communication
-**APPLICATION:** vs "Completado X → [RESULTADO]. Continuando automáticamente con Y..."
+**INCORRECTO:** "Completado X. ¿Continuar con Y?"
+**CORRECTO:** "Completado X → [RESULTADO]. Continuando automáticamente con Y..."
 
 ## NUNCA Over-Execute Directamente
 
 ### Over-Execution Symptoms
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Over-execution symptoms
-**APPLICATION:** Usar >5 tool calls en single response, leer >3 archivos secuencialmente cuando pueden ser paralelos, hacer análisis directo sistemas complejos sin delegación, ejecutar debugging sistemático manual
+**PROHIBIDO:** Usar >5 tool calls en single response
+**PROHIBIDO:** Leer >3 archivos secuencialmente cuando pueden ser paralelos
+**PROHIBIDO:** Hacer análisis directo sistemas complejos sin delegación
+**PROHIBIDO:** Ejecutar debugging sistemático manual
 
 ### Delegation Requirements
 **Búsquedas extensas** → delegar investigación via Task tool

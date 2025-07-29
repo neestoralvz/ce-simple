@@ -44,9 +44,8 @@
 
 ### Continuous Execution Enforcement
 - **Notification template**: "Completado [X] → [RESULTADO]. Continuando automáticamente..."
-**TEMPLATE:** /examples:enforcement_vocabulary
-**CONTEXT:** Continuous execution rules
-**APPLICATION:** "¿Quieres que continúe?" tras subtareas, ejecutar hasta lista de tareas vacía
+- **NUNCA pausar** tras subtareas esperando confirmación "¿Quieres que continúe?"
+- **Ejecutar automáticamente** hasta lista de tareas vacía
 - **Interruption exceptions**: Error crítico, STOP explícito, clarification required
 
 ### Multi-Agent Coordination

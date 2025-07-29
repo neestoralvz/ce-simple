@@ -1,90 +1,51 @@
-# Comando /workflows:start
+# /workflows:start - Session Startup Dispatcher
 
-Eres el comando de inicio de sesión con integración planning evolutivo. Tu trabajo es retomar la continuidad desde /workflows:close + orientar al usuario hacia próximos pasos priorizados.
+**TEMPLATE:** /examples:headers_footers
+**CONTEXT:** Session startup con planning integration
 
-## Tu metodología planning-first obligatoria
+## AUTORIDAD SUPREMA
+@context/TRUTH_SOURCE.md → @context/operational/behaviors/orchestration_protocol.md
 
-### Phase 1: Planning System Integration
-**OBLIGATORIO leer primero**: project planning current state for status + priorities
-**Herramientas paralelas**: Read current.md + git status + LS context/ simultáneos
-**Context loading**: Estado Actual Proyecto + Items Activos + Progreso Última Sesión
-**Continuity assessment**: What was left pending + what needs immediate attention
+## CORE FUNCTION
+Session startup via planning integration + continuity preservation + priority-driven options
 
-### Phase 2: Legacy Handoff Fallback  
-**Solo si planning state no existe**: Lee handoff más reciente en project session history como fallback
-**Migration note**: Planning system supersedes handoff system para continuidad
-**CLAUDE.md reference**: Para estructura sistema si needed
+## SEMANTIC TRIGGERS
 
-### Phase 3: Contextual Analysis
-**Gap analysis**: Compare planning state timestamp con session actual
-**State validation**: Verify project state matches planning documents
-**Context enrichment**: Si >48 hours gap, usa Task tool para comprehensive analysis
-**Investigation triggers**: Undocumented changes, missing progress, planning inconsistencies
+### Planning Integration Pattern
+**Triggers**: Session start, continuity needed, planning state loading
+**Auto-activation**: @context/operational/behaviors/orchestration_protocol.md
+**Execute**: Planning state read + context loading + continuity assessment + gap analysis
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Phase 4: Priority-Driven Options
-**Alta Prioridad presentation**: Show planning system Alta Prioridad items as primary options
-**Command mapping**: Connect each priority item con specific command execution
-**Context-aware suggestions**: Based on Estado Actual Proyecto + Items Activos
-**Strategic alignment**: Options reflect Próximos Pasos + project evolution direction
-**Clear next steps**: 3-5 specific actions usuario can take immediately
+### Priority-Driven Options Pattern
+**Triggers**: User needs direction, next steps unclear, priority alignment
+**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Execute**: Alta prioridad presentation + command mapping + strategic alignment
+**Validate**: @context/operational/enforcement/quality_gates.md
 
-## Planning Integration Principles
+### Context Analysis Pattern
+**Triggers**: Gap detection, state validation, missing progress
+**Auto-activation**: @context/operational/patterns/orchestrator_methodology.md
+**Execute**: Task tool deployment + comprehensive analysis + context enrichment
+**Validate**: @context/operational/enforcement/behavioral_enforcement.md
 
-### Continuity Preservation
-- **Planning-first approach**: planning state determina session direction
-- **Progress acknowledgment**: Reference última sesión achievements
-- **Priority respect**: Alta Prioridad items get immediate focus
-- **Context preservation**: Maintain project momentum + direction
+## STARTUP METHODOLOGY
+1. **Planning integration** → current state + items activos + progreso última sesión
+2. **Continuity assessment** → gap analysis + state validation + context enrichment
+3. **Priority presentation** → alta prioridad mapping + command suggestions + clear next steps
 
-### User Experience Optimization  
-- **Immediate productivity**: User knows exactly where they left off
-- **Zero context loss**: Seamless transition from /workflows:close
-- **Clear priorities**: No ambiguity about what needs attention
-- **Progress visibility**: Show what was accomplished + what's next
+## PLANNING-DRIVEN SUGGESTIONS
+- **Alta prioridad** → immediate command mapping + specific actions
+- **Media prioridad** → secondary options + alternative focus
+- **Context-aware** → Estado actual + próximos pasos + strategic alignment
 
-### Technical Excellence
-- **Herramientas paralelas**: Multiple planning documents read simultaneously
-- **Task tool deployment**: For complex analysis cuando needed
-- **Authority preservation**: user-vision/ remains source of truth
-- **Parallel specialist deployment**: When needed, deploy concurrently
+## REFERENCIAS CONDICIONALES
+**Orchestration protocol**: @context/operational/behaviors/orchestration_protocol.md
+**Methodology protocol**: @context/operational/operations/methodology_protocol.md
+**Quality gates**: @context/operational/enforcement/quality_gates.md
+**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
 
-## Planning-Driven Command Suggestions
-
-### Priority-Based Mapping
-**Based on planning system Items Activos**:
-- **Alta Prioridad → immediate suggestions**: Map high priority items to specific commands
-- **Media Prioridad → secondary options**: Available if user wants alternative focus
-- **Baja Prioridad → mention only**: Acknowledge but don't prioritize
-
-### Command Categories Integration
-**Workflows** (major operations):
-- /workflows:explore: Codebase understanding required for priorities
-- /workflows:distill: Conversation processing needed
-- /workflows:debug: Technical issues blocking progress
-- /workflows:close: Session completion
-
-**Actions** (specific tasks):
-- /actions:docs: Documentation creation/editing needed
-- /actions:git: Changes need committing
-
-**Roles** (consultation/validation):
-- /roles:partner: Decision validation needed
-- /roles:challenge: Validate against over-engineering
-
-**Maintenance**:
-- /maintenance:maintain: System maintenance required
-
-### Presentation Strategy
-**Primary focus**: Show 2-3 Alta Prioridad options with clear command mapping
-**Secondary mention**: Reference other priorities as "also available"
-**Context explanation**: Brief reasoning why each priority matters now
-**Progress connection**: How each option builds on última sesión achievements
-
-## Success Criteria
-
-**Perfect continuity**: User immediately knows where project stands + what to do next
-**Priority clarity**: High priority items get immediate attention
-**Progress momentum**: Build on previous session achievements
-**Planning evolution**: Each session advances project systematically
-
-Tu objetivo es continuidad perfecta desde /workflows:close con prioridades claras basadas en planning evolutivo.
+---
+**Authority Chain**: TRUTH_SOURCE → orchestration → session startup
+**Token Optimization**: Reference-only + planning integration
+**Compliance**: ≤80 lines + priority-driven + continuity preservation
