@@ -5,29 +5,7 @@
 ## Process Management Functions
 
 ### Background System Monitoring
-```bash
-start_background_monitoring() {
-    echo "Starting background monitoring system..."
-    
-    local monitor_log="/tmp/background_monitor.log"
-    local pid_file="/tmp/background_monitor.pid"
-    
-    # Background monitoring function
-    background_monitor() {
-        while true; do
-            local timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-            
-            # System status monitoring
-            echo "[$timestamp] System Status Check" >> "$monitor_log"
-            echo "  - Git status: $(git status --porcelain | wc -l) files changed" >> "$monitor_log"
-            echo "  - Working directory: $(pwd)" >> "$monitor_log"
-            echo "  - Current branch: $(git branch --show-current 2>/dev/null)" >> "$monitor_log"
-            
-            # Inter-conversation state monitoring
-            if [[ -d "shared_state" ]]; then
-                echo "  - Shared state directory: EXISTS" >> "$monitor_log"
-                echo "  - Tickets pending: $(wc -l < shared_state/tickets.md 2>/dev/null || echo 0)" >> "$monitor_log"
-            fi
+→ Ver context/examples/bash/background_processes.sh:start_background_monitoring() para implementación completa del sistema
             
             # Sleep for monitoring interval
             sleep 60

@@ -5,29 +5,10 @@
 ## Core Configuration Functions
 
 ### Basic Branch Creation
-```bash
-create_conversation_branch() {
-    local timestamp=$(date +%Y%m%d_%H%M)
-    local conversation_id="${1:-default}"
-    local branch_name="conversation-${conversation_id}-${timestamp}"
-    
-    echo "Creating conversation branch: $branch_name"
-    git worktree add "../${branch_name}" -b "$branch_name"
-    
-    return 0
-}
-```
+→ Ver context/examples/bash/git_worktree_management.sh:create_conversation_branch() para implementación completa
 
 ### Parallel Environment Setup
-```bash
-setup_parallel_conversations() {
-    local task_count="${1:-2}"
-    
-    echo "Setting up $task_count parallel conversation branches"
-    
-    for i in $(seq 1 "$task_count"); do
-        local branch_name="task-branch-$i"
-        echo "Creating branch: $branch_name"
+→ Ver context/examples/bash/git_worktree_management.sh:setup_parallel_conversations() para configuración completa
         git worktree add "../$branch_name" "task-$i"
     done
     
