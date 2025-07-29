@@ -51,3 +51,21 @@ Estableciendo principio de clean slate recreation para evitar sesgo acumulativo.
 
 ### Contexto Conversacional
 Comando universal donde defines principio de no-repetición y referenciación como optimización.
+
+---
+
+## Quote Original
+> "Por supuesto que la belleza va a estar en la simplicidad. Exacto"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:40`
+
+### Contexto Conversacional
+Confirmación de que la belleza emerge de la simplicidad como principio core.
+
+---
+
+## Quote Original
+> "otro de los principios que deberíamos de tener es el mantenerlo simple"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:77`
+
+### Contexto Conversacional
+Estableciendo la simplicidad como principio foundacional para el diseño del sistema.

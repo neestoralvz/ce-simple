@@ -51,3 +51,12 @@ Estableciendo árbol de decisiones como metadata universal para optimización de
 
 ### Contexto Conversacional
 Definiendo límites arquitecturales estrictos para independencia de comandos.
+
+---
+
+## Quote Original
+> "lo que quiero construir es un sistema de comandos que represente el workflow que quiero, que mejor me pueda funcionar para trabajar con Claude Code"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:19`
+
+### Contexto Conversacional
+Visión inicial del sistema de comandos como representación del workflow deseado para Claude Code.

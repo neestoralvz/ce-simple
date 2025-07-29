@@ -51,3 +51,39 @@ Transformación arquitectural donde defines la división de responsabilidades: u
 
 ### Contexto Conversacional
 Estableciendo como máxima del proyecto que el usuario proporciona visión, no instrucciones de implementación.
+
+---
+
+## Quote Original
+> "el primer paso el contarte una historia. El contarte una historia que creo que yo me imagino que es lo que yo quiero. Contarte una historia, como pensar en contar un cuento, que esa historia la podamos hacer realidad"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:25`
+
+### Contexto Conversacional
+Estableciendo el enfoque narrativo como punto de partida para la construcción del sistema.
+
+---
+
+## Quote Original
+> "yo quiero que durante todo este proceso tú siempre te mantengas proactivo, que propongas, que sugieras, que recomiendes, que desafíes, que hagas preguntas, que incentives la creatividad"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:31`
+
+### Contexto Conversacional
+Definiendo la metodología interactiva y proactiva esperada en el proceso conversacional.
+
+---
+
+## Quote Original
+> "Una nueva forma de trabajar con inteligencia artificial que sea más humana"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:31`
+
+### Contexto Conversacional
+Misión central del sistema: crear una interacción más humana con IA.
+
+---
+
+## Quote Original
+> "Quiero que el sistema se sienta como una conversación natural, que de esa conversación natural salga el resultado"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:40`
+
+### Contexto Conversacional
+Estableciendo la conversación natural como paradigma de interfaz del sistema.

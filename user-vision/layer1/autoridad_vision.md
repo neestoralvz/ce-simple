@@ -42,3 +42,48 @@ Factorización CLAUDE.md donde estableces user_vision/ como fuente de verdad aut
 
 ### Contexto Conversacional
 Transformación arquitectural donde solicitas documentación explícita de tu visión, ideología y metodología.
+
+---
+
+## Quote Original
+> "debería de trabajar solamente desde mi visión, estructurar este tipo de entrevistas y de ahí procesarlas"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:19`
+
+### Contexto Conversacional
+Estableciendo la visión del usuario como única fuente de verdad para el sistema.
+
+---
+
+## Quote Original
+> "lo más importante también es conservar mi visión, lo que yo estoy diciendo, lo que yo quiero"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:19`
+
+### Contexto Conversacional
+Énfasis en la preservación de la voz del usuario como principio core.
+
+---
+
+## Quote Original
+> "las cosas que para mí son muy importantes es no producir sesgo en ti"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:34`
+
+### Contexto Conversacional
+Definiendo la importancia de mantener la voz del usuario pura sin contaminación de AI.
+
+---
+
+## Quote Original
+> "si yo no pongo también esa parte de mí, entonces esa simplicidad se reduce a otra cosa que no me gusta"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:40`
+
+### Contexto Conversacional
+La esencia del usuario es requerida para mantener una simplicidad significativa.
+
+---
+
+## Quote Original
+> "lo más importante es que te asegures de tener toda la conversación, todo lo que he dicho"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:80`
+
+### Contexto Conversacional
+Preservación completa de la voz del usuario como primera prioridad.

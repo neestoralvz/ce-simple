@@ -42,3 +42,21 @@ Transformación arquitectural donde estableces que el sistema debe evolucionar b
 
 ### Contexto Conversacional
 Comando universal donde defines adaptación dinámica basada en estado actual del sistema.
+
+---
+
+## Quote Original
+> "si logramos consolidar esa parte y la vamos a hacer creciendo, no importa que el resto de las cosas se borre o tengamos que reconstruir cada vez porque eres capaz de hacerlo"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:19`
+
+### Contexto Conversacional
+El sistema debe crecer orgánicamente desde la visión preservada, permitiendo reconstrucción cuando sea necesario.
+
+---
+
+## Quote Original
+> "las búsquedas funcionen como estas narrativas en crudo, donde las búsquedas se vuelven otra fuente de la información"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:74`
+
+### Contexto Conversacional
+Las búsquedas web se integran como fuente de crecimiento orgánico del conocimiento.

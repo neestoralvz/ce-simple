@@ -42,3 +42,30 @@ Transformación arquitectural donde estableces que la regeneración desde cero p
 
 ### Contexto Conversacional
 Estableciendo auto-evolución del sistema como método de mantenimiento y actualización continua.
+
+---
+
+## Quote Original
+> "yo lo pienso realmente como pipeline de procesamiento que convierta conversaciones en estructura"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:46`
+
+### Contexto Conversacional
+Concepto core del workflow: pipeline de conversación a estructura como fundamento del sistema.
+
+---
+
+## Quote Original
+> "yo no soy como tal el que va a hacer la programación, sino tú"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:49`
+
+### Contexto Conversacional
+Definición clara de roles en el workflow: usuario aporta visión, AI ejecuta implementación.
+
+---
+
+## Quote Original
+> "el workflow que quiero que sigamos siempre es, yo te doy mi solicitud, tú exploras en tu codebase para ver si tienes algo de información, haces una búsqueda en internet"
+**Ref:** `/raw/conversations/2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md:55`
+
+### Contexto Conversacional
+Definición del workflow de 10 pasos comenzando con solicitud → exploración → búsqueda.
