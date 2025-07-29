@@ -50,11 +50,12 @@
 - [x] **Hardcoded path correction**: RAW → conversations systematic update across 9 files
 - [x] **Modular refactoring - simplicity tension balance**: 4 specialized modules created (≤80 lines)
 - [x] **Modular refactoring - metodologia socratica**: Quote collections + synthesis organization
+- [x] **Modular refactoring - flujos trabajo**: Quote collections + synthesis organization
 - [x] **Planning modularization**: dependency_layers.md + semantic_planning.md created
 
 ### MEDIUM PRIORITY - Next Session
 - [ ] **Command functionality testing**: Verify commands work as expected in practice
-- [ ] **Modular refactoring**: 35 files >80 lines need breakdown into ≤80 line modules (3 completed: simplicity_tension_balance, metodologia_socratica, planning)
+- [ ] **Modular refactoring**: 34 files >80 lines need breakdown into ≤80 line modules (4 completed: simplicity_tension_balance, metodologia_socratica, planning, flujos_trabajo)
 - [ ] **Template optimization**: Review consolidated templates for further DRY opportunities
 - [ ] **Export system design**: Apply discovered 4-folder structure to export/ planning
 
