@@ -135,11 +135,41 @@ Refinamiento temporal para research protocol, estableciendo comando `date` como 
 
 ---
 
+## Quote Original
+> "Transform /become-orchestrator from pseudo-code to pure LLM instructions"
+**Ref:** `/raw/conversations/2025-07-28_14-44_command-simplification-specialist.md:15`
+
+### Contexto Conversacional
+Solicitud de transformación arquitectural donde defines que los comandos deben ser instrucciones puras para LLM en lugar de pseudo-código, mejorando interpretabilidad directa.
+
+---
+
+## Quote Original
+> "neutral, agnostic language without bias-inducing adjectives"
+**Ref:** `/raw/conversations/2025-07-28_12-50_git-integration-anti-bias-implementation.md:23`
+
+### Contexto Conversacional
+Implementación anti-sesgo donde estableces comunicación neutral como requirement para preservar metodología mayéutica sin influencias externas.
+
+---
+
+## Quote Original
+> "debes de siempre tomar en cuenta que estamos utilizando claude code"
+**Ref:** `/raw/conversations/2025-07-28_13-32_sistema-preparacion-monitoreo-claude-code.md:19`
+
+### Contexto Conversacional
+Correción mid-session crítica que redirige toda implementación hacia capacidades específicas de Claude Code CLI, manteniendo contexto metodológico correcto.
+
+---
+
 ## Conversations Processed
 - 2025-01-28_refinamiento-contextflow-arquitectura.md
 - 2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md
+- 2025-07-28_12-50_git-integration-anti-bias-implementation.md
 - 2025-07-28_13-18_research-first-multi-conversation-architecture.md
 - 2025-07-28_13-20_research-first-multi-conversation-architecture.md
+- 2025-07-28_13-32_sistema-preparacion-monitoreo-claude-code.md
 - 2025-07-28_13-35_dialogo-mayeutico-intent-detection-implementation.md
+- 2025-07-28_14-44_command-simplification-specialist.md
 - 2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md
 - 20250729_2100_balanced-layer-reorganization-session.md
