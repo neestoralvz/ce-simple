@@ -96,7 +96,7 @@
 
 ---
 ## Enlaces → Información Complementaria
-**Si necesitas dependency layers:** → context/planning/dependency_layers.md:15-45
+**Si necesitas dependency layers:** → context/operational/patterns/dependency_layers.md:15-45
 **Si requieres command implementation:** → .claude/commands/planning/intent.md
 **Si buscas semantic triggers:** → context/TRUTH_SOURCE.md:22-35
 

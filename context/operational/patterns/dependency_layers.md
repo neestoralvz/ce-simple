@@ -96,7 +96,7 @@ Core Logic → Commands → Configuration → Packaging → Distribution
 ## Enlaces → Información Complementaria
 **Si necesitas command implementation:** → .claude/commands/planning/
 **Si requieres semantic triggers:** → context/TRUTH_SOURCE.md:22-50
-**Si buscas project templates:** → context/planning/project_templates.md
+**Si buscas semantic planning:** → context/operational/patterns/semantic_planning.md
 
 ---
 **Authority Source:** Partner construction analysis + user dependency insight
