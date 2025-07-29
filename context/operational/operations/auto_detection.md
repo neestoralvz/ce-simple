@@ -26,7 +26,7 @@ comm -23 available.tmp processed.tmp = pending_conversations
 ## Layer Detection Logic
 
 ### Layer 1 State
-**Detection criteria**: All conversations in raw/ reviewed by timestamp
+**Detection criteria**: All conversations in conversations/ reviewed by timestamp
 - Cross-reference conversation timestamps with núcleos updates
 - Verify "Conversations Processed" lists in núcleos footers
 - Sample validation for recent conversations when timestamps indicate completeness
@@ -46,7 +46,7 @@ comm -23 available.tmp processed.tmp = pending_conversations
 ## Convergence Detection
 
 ### Completion Criteria by Layer
-**Layer 1 complete**: All raw/ conversations timestamp-verified + processed lists complete
+**Layer 1 complete**: All conversations/ conversations timestamp-verified + processed lists complete
 **Layer 2 complete**: All núcleos relationships synthesized + concentration quality validated
 **Layer 3 complete**: Ultra-dense documentation complete + @-imports ready
 **TRUTH_SOURCE complete**: Supreme authority integrates all layers

@@ -53,7 +53,7 @@ context/
 │   └── templates/
 └── archive/
 user-vision/
-├── raw/
+├── conversations/
 └── processed/
 planning/
 sessions/
