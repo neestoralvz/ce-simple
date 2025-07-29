@@ -21,6 +21,8 @@
 **Cada comando**: Instrucciones puras + Sin metadata + Propósito único + Independiente
 **Coordinación**: docs/workflows/coordination.md
 
+**ENFORCEMENT CRÍTICO**: Slash commands (`/start`, `/git`, etc.) SIEMPRE son Claude Code workflows, NUNCA bash commands
+
 ## ARQUITECTURA MINIMALISTA
 
 ```

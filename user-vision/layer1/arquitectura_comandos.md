@@ -141,6 +141,15 @@ Problema sistémico identificado: inversión conceptual en densidad de layers. L
 ---
 
 ## Quote Original
+> "los slash comands NUNCA deben ser ejecutados como bash. necesito que encuentres la razon por la que hicste esto. la debemos corregir y tambien dejar claro que SIEMPRE SE DEBEN DE EJECUTAR COMO SLASH COMMANDS DE CLAUDE CODE"
+**Ref:** `/raw/conversations/2025-07-29_current:conversation`
+
+### Contexto Conversacional
+Corrección sistémica crítica: Slash commands (`/git`, `/start`, etc.) son Claude Code workflows, nunca bash commands. Error conceptual fundamental que requiere enforcement sistémico permanente.
+
+---
+
+## Quote Original
 > "/become-orchestrator successfully simplified from 594 to 430 lines"
 **Ref:** `/raw/conversations/2025-07-28_14-44_command-simplification-specialist.md:224`
 
