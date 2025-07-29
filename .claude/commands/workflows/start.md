@@ -1,40 +1,90 @@
 # Comando /workflows:start
 
-Eres el comando de inicio de sesión. Tu trabajo es preparar el contexto y orientar al usuario sobre qué hacer a continuación.
+Eres el comando de inicio de sesión con integración planning evolutivo. Tu trabajo es retomar la continuidad desde /workflows:close + orientar al usuario hacia próximos pasos priorizados.
 
-## Lo que debes hacer siempre
+## Tu metodología planning-first obligatoria
 
-Primero, revisa el estado del proyecto:
-- Usa git status para ver cambios pendientes
-- Lee el handoff más reciente si existe en /handoff/
-- Revisa CLAUDE.md para recordar la estructura del sistema
+### Phase 1: Planning System Integration
+**OBLIGATORIO leer primero**: context/planning/current.md para estado actual + prioridades
+**Herramientas paralelas**: Read current.md + git status + LS context/ simultáneos
+**Context loading**: Estado Actual Proyecto + Items Activos + Progreso Última Sesión
+**Continuity assessment**: What was left pending + what needs immediate attention
 
-Segundo, evalúa si necesitas cargar contexto adicional:
-- Si hay más de 48 horas desde el último handoff, usa el Task tool para desplegar un especialista que analice el estado del proyecto
-- Si detectas cambios importantes sin documentar, investiga qué pasó
-- Si el usuario parece perdido, carga el contexto necesario para orientarlo
+### Phase 2: Legacy Handoff Fallback  
+**Solo si current.md no existe**: Lee handoff más reciente en /handoff/ como fallback
+**Migration note**: Planning system supersedes handoff system para continuidad
+**CLAUDE.md reference**: Para estructura sistema si needed
 
-Tercero, presenta opciones claras:
-- Muestra 3-5 opciones específicas basadas en el estado actual del proyecto
-- Prioriza según lo que realmente necesita el proyecto ahora
-- Conecta cada opción con el comando correspondiente (/workflows:explore, /workflows:distill, /actions:docs, etc.)
+### Phase 3: Contextual Analysis
+**Gap analysis**: Compare current.md timestamp con session actual
+**State validation**: Verify project state matches planning documents
+**Context enrichment**: Si >48 hours gap, usa Task tool para comprehensive analysis
+**Investigation triggers**: Undocumented changes, missing progress, planning inconsistencies
 
-## Principios importantes
+### Phase 4: Priority-Driven Options
+**Alta Prioridad presentation**: Show current.md Alta Prioridad items as primary options
+**Command mapping**: Connect each priority item con specific command execution
+**Context-aware suggestions**: Based on Estado Actual Proyecto + Items Activos
+**Strategic alignment**: Options reflect Próximos Pasos + project evolution direction
+**Clear next steps**: 3-5 specific actions usuario can take immediately
 
-- Nunca uses echo para comunicarte con el usuario
-- Siempre usa Task tools cuando necesites análisis complejo
-- Mantén la voz del usuario como fuente de verdad
-- Si despliegas especialistas, hazlo en paralelo en el mismo mensaje
+## Planning Integration Principles
 
-## Cuándo sugerir cada comando
+### Continuity Preservation
+- **Planning-first approach**: current.md determina session direction
+- **Progress acknowledgment**: Reference última sesión achievements
+- **Priority respect**: Alta Prioridad items get immediate focus
+- **Context preservation**: Maintain project momentum + direction
 
-- /workflows:explore: cuando el usuario necesita entender el codebase
-- /workflows:distill: cuando hay conversaciones acumuladas sin procesar
-- /actions:docs: cuando necesita crear o editar documentación
-- /workflows:debug: cuando hay problemas técnicos
-- /maintenance:maintain: cuando el sistema necesita mantenimiento
-- /actions:git: cuando hay cambios que commitear
-- /roles:partner: cuando necesita validación de decisiones arquitecturales
-- /workflows:close: cuando quiere terminar la sesión
+### User Experience Optimization  
+- **Immediate productivity**: User knows exactly where they left off
+- **Zero context loss**: Seamless transition from /workflows:close
+- **Clear priorities**: No ambiguity about what needs attention
+- **Progress visibility**: Show what was accomplished + what's next
 
-Tu objetivo es que el usuario sepa exactamente qué hacer sin perderse en opciones innecesarias.
+### Technical Excellence
+- **Herramientas paralelas**: Multiple planning documents read simultaneously
+- **Task tool deployment**: For complex analysis cuando needed
+- **Authority preservation**: user-vision/ remains source of truth
+- **Parallel specialist deployment**: When needed, deploy concurrently
+
+## Planning-Driven Command Suggestions
+
+### Priority-Based Mapping
+**Based on current.md Items Activos**:
+- **Alta Prioridad → immediate suggestions**: Map high priority items to specific commands
+- **Media Prioridad → secondary options**: Available if user wants alternative focus
+- **Baja Prioridad → mention only**: Acknowledge but don't prioritize
+
+### Command Categories Integration
+**Workflows** (major operations):
+- /workflows:explore: Codebase understanding required for priorities
+- /workflows:distill: Conversation processing needed
+- /workflows:debug: Technical issues blocking progress
+- /workflows:close: Session completion
+
+**Actions** (specific tasks):
+- /actions:docs: Documentation creation/editing needed
+- /actions:git: Changes need committing
+
+**Roles** (consultation/validation):
+- /roles:partner: Decision validation needed
+- /roles:challenge: Validate against over-engineering
+
+**Maintenance**:
+- /maintenance:maintain: System maintenance required
+
+### Presentation Strategy
+**Primary focus**: Show 2-3 Alta Prioridad options with clear command mapping
+**Secondary mention**: Reference other priorities as "also available"
+**Context explanation**: Brief reasoning why each priority matters now
+**Progress connection**: How each option builds on última sesión achievements
+
+## Success Criteria
+
+**Perfect continuity**: User immediately knows where project stands + what to do next
+**Priority clarity**: High priority items get immediate attention
+**Progress momentum**: Build on previous session achievements
+**Planning evolution**: Each session advances project systematically
+
+Tu objetivo es continuidad perfecta desde /workflows:close con prioridades claras basadas en planning evolutivo.
