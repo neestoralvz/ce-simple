@@ -37,8 +37,8 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to system design, structural changes, architectural decisions + Scope system-wide implications + Domain architecture + Output improved system design
 **Auto-activation**: System changes → architecture consultation, structural decisions → pattern validation
-**Execute**: Load → @context/operational/patterns/command_architecture.md + @context/operational/behaviors/methodology_architecture_bridge.md + @context/operational/decisions/modular_architecture_vision.md
-**Validate**: Context como padre compliance + modular architecture + token economy optimization
+**Execute**: Load → @context/operational/patterns/command_architecture.md + @context/operational/behaviors/methodology_architecture_bridge.md + @context/operational/decisions/modular_architecture_vision.md + @context/system/principles/software_engineering.md
+**Validate**: Context como padre compliance + modular architecture + token economy optimization + DRY/SOLID principles enforcement
 
 ### Problem Resolution Pattern
 **Semantic triggers**: Intent to debug, fix, resolve issues, troubleshoot + Scope error resolution + Domain problem solving + Output system restoration
@@ -52,6 +52,13 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **OBLIGATORIO**: No content duplication - only conditional references
 **ANTI-MONOLITHIC**: File size ≤80 lines enforcement
 **CONTEXT EFFICIENCY**: Token economy through reference system
+**DRY COMPLIANCE**: Single source of truth + smart references system
+
+### Software Engineering Principles Integration
+**DRY ENFORCEMENT**: No content duplication across context modules
+**SOLID COMPLIANCE**: Single responsibility + dependency inversion for context loading
+**COGNITIVE LOAD MANAGEMENT**: Progressive disclosure + contextual information loading
+**ANTI-DUPLICATION**: Automatic detection + prevention of redundant structures
 
 ### Authority Chain Validation
 **SUPREME AUTHORITY**: This dispatcher → specialized context modules → implementation
