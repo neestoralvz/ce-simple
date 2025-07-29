@@ -63,6 +63,14 @@
 - Monitor AI inference accumulation
 - Validate user voice fidelity metrics
 
+### Conversation Preservation Authority Protocol
+**Mandatory Protection Integration:**
+- Conversations cannot be eliminated unless fully processed
+- Processing criteria: insights extracted to operational/ or user-vision-layers/
+- Elimination authority: USER ONLY after explicit processing verification
+- Partner enforcement: Challenge system MUST activate on archive operations
+**Authority Source:** `context/archive/conversations_processed/20250729_1549_context-cleanup-conversation-preservation_COMPACTED.md:75-83`
+
 ## Authority Hierarchy Evolution
 
 ### Living Document Dynamics
