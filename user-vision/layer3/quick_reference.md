@@ -28,6 +28,22 @@
 
 ## Revolutionary Key Principles Quick Reference
 
+### Authority Hierarchy (Updated)
+- **user-vision/TRUTH_SOURCE.md** = Autoridad suprema con supremacía sistémica
+- **Challenge system**: Protege contra stagnation Y over-engineering, pero user authority prevalece
+- **Balance principle**: "Simplification without information loss" + granularidad preservation
+
+### Growth Patterns (Crystallized)
+- **Organic evolution**: "Quiero que todo sea como de una manera muy orgánica"
+- **Metrics-driven**: "lo que mas importa es poder medir la eficiencia de los arboles de decisiones"
+- **Convergence capability**: "Corpus conversacional procesado: 100%" con authority preservation
+- **Regenerative**: "no importa que el resto de las cosas se borre o tengamos que reconstruir cada vez"
+
+### Methodology Evolution
+- **Unrestricted Socratic**: "La conversación socratica debe ser sin restricciones para verdadero descubrimiento"
+- **Multi-conversation parallel**: "pueden ser más de 4 conversaciones" + ultra-orchestration
+- **Balance crystallized**: Sistema equilibra simplificación con preservación de densidad informacional
+
 ### Methodology Principles (Next-Generation)
 1. **Multi-Phase**: Socratic Discovery → Research-First Protocol → Parallel Execution → Convergent Integration
 2. **Research-First**: "para todas las investigaciones que se hagan se debe de utilizar como fecha más reciente la que se obtenga con el comando date"

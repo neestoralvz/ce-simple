@@ -25,15 +25,15 @@ Este documento es dispatcher mínimo hacia sistema modular completo. Su función
 **Capability**: Git worktrees + Background processes + Inter-conversation tickets
 → Ver docs/core/architecture.md para git-native infrastructure
 
-## COMANDOS INDEPENDIENTES (9 Workflows)
+## COMANDOS REVOLUCIONARIOS (9 Workflows)
 
-**Filosofía**: Autocontenidos + Instrucciones puras + Coordinación por artefactos + Orquestación por usuario
+**Filosofía**: Autocontenidos + Instrucciones puras + Coordinación por artefactos + Ultra-orquestación del usuario
 **Estructura**: `.claude/commands/` contiene workflows especializados independientes
 
 ### Comandos Core
 - `/start` - Universal orchestrator entry con multi-conversation assessment
-- `/distill` - Layer progression: raw → núcleos → síntesis → docs oficiales
-- `/challenge` - Validation contra stagnation y over-engineering
+- `/distill` - Layer progression: raw → núcleos → síntesis → docs oficiales + CLAUDE.md auto-regeneración
+- `/challenge` - Validation contra stagnation y over-engineering con authority preservation
 - `/partner` - Consultor constructor con authority-driven simplification
 
 ### Comandos Operacionales  
@@ -44,6 +44,24 @@ Este documento es dispatcher mínimo hacia sistema modular completo. Su función
 - `/close` - Session capture con multi-conversation convergence
 
 → Ver docs/workflows/commands.md para filosofía + docs/workflows/coordination.md para interacción
+
+## METODOLOGÍA MULTI-DIMENSIONAL
+
+### Phase 1: Socratic Discovery Sin Restricciones
+**Fundamento**: "no debe ser la de hacer cosas, sino la de seguir conversando"
+**Protocol**: Diálogo mayéutico completo antes de cualquier ejecución
+
+### Phase 2: Research-First Con Temporal Validation  
+**Requirement**: "para todas las investigaciones que se hagan se debe de utilizar como fecha más reciente la que se obtenga con el comando date"
+**Integration**: MCP context + Internet research + fecha validation
+
+### Phase 3: Multi-Conversación Parallel Execution
+**Revolutionary**: "hay que tomar en cuenta que solo el agente principal es capaz de orquestar, entonces al iniciar conversaciones paralelas simultáneas concurrentes, el usuario es capaz de hacer esto"
+**Architecture**: Git worktrees + Background monitoring + Ticket communication
+
+### Phase 4: Convergent Integration Via User Ultra-Orchestration
+**Role Evolution**: Usuario trasciende de vision-provider a ultra-orchestrator de N agentes paralelos
+→ Ver docs/core/methodology.md para workflow completo
 
 ## ARQUITECTURA MINIMALISTA
 
@@ -65,24 +83,6 @@ Este documento es dispatcher mínimo hacia sistema modular completo. Su función
 **Breakthrough**: "listo, ya se estan ejecutando" - Persistent processes functioning
 **Capability**: Monitoring continuo + Inter-conversation communication + Status synchronization
 → Ver docs/workflows/integration_patterns.md para coordination mechanisms
-
-## METODOLOGÍA MULTI-DIMENSIONAL
-
-### Phase 1: Socratic Discovery Sin Restricciones
-**Fundamento**: "no debe ser la de hacer cosas, sino la de seguir conversando"
-**Protocol**: Diálogo mayéutico completo antes de cualquier ejecución
-
-### Phase 2: Research-First Con Temporal Validation  
-**Requirement**: "para todas las investigaciones que se hagan se debe de utilizar como fecha más reciente la que se obtenga con el comando date"
-**Integration**: MCP context + Internet research + fecha validation
-
-### Phase 3: Multi-Conversation Parallel Execution
-**Revolutionary**: "hay que tomar en cuenta que solo el agente principal es capaz de orquestar, entonces al iniciar conversaciones paralelas simultáneas concurrentes, el usuario es capaz de hacer esto"
-**Architecture**: Git worktrees + Background monitoring + Ticket communication
-
-### Phase 4: Convergent Integration Via User Ultra-Orchestration
-**Role Evolution**: Usuario trasciende de vision-provider a ultra-orchestrator de N agentes paralelos
-→ Ver docs/core/methodology.md para workflow completo
 
 ## SISTEMA DE DESTILACIÓN AUTOMÁTICA
 
