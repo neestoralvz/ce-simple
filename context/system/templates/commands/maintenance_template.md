@@ -48,6 +48,8 @@
 - Perform maintenance without proper system backup or safety measures
 - Skip validation of maintenance operation results
 - Ignore system dependencies when making changes
+- Eliminate archive/conversations/ without processing verification
+- Delete conversation content without user confirmation
 - Compromise system stability for performance gains
 
 ### Content Management (archive, organize)
@@ -58,12 +60,16 @@
 - Maintain content relationships and linking integrity
 - Preserve content traceability and historical context
 - Apply consistent organization standards
+- Verify conversation processing status before elimination
+- Obtain user confirmation for archive operations
 
 **DON'T Pattern**:
 - Reorganize content without preserving existing references and links
 - Archive content without proper metadata and accessibility
 - Break content relationships during organization activities
 - Apply inconsistent organization standards across similar content
+- Eliminate conversations without processing verification
+- Delete archive content without user authority
 
 ### Configuration Management (update, configure)
 **Purpose**: Manage system configuration, settings, and environmental consistency

@@ -19,25 +19,25 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Authority/Decision Pattern  
 **Semantic triggers**: Intent to resolve conflicts, make decisions, validate authority + Scope authority boundaries + Domain decision framework + Output conflict resolution
 **Auto-activation**: Authority conflicts → decision framework loading, systemic changes → authority validation mandatory
-**Execute**: Load → @context/system/principles/authority.md + @context/operational/behaviors/authority_evolution_dynamics.md + @context/operational/enforcement/behavioral_enforcement.md
+**Execute**: Load → @context/operational/patterns/authority_framework.md + @context/operational/patterns/authority_framework.md + @context/operational/enforcement/behavioral_enforcement.md
 **Validate**: Golden authority rule compliance + user domain preserved
 
 ### Implementation/Development Pattern
 **Semantic triggers**: Intent to build, develop, execute + Scope technical implementation + Domain development workflow + Output working systems
 **Auto-activation**: Technical complexity detected → simplicity patterns loading, quality standards → enforcement protocols
-**Execute**: Load → @context/operational/patterns/simplicity.md + @context/operational/operations/methodology_protocol.md + @context/operational/enforcement/quality_gates.md
+**Execute**: Load → @context/operational/patterns/simplicity_principles.md + @context/operational/operations/methodology_protocol.md + @context/operational/enforcement/quality_gates.md
 **Validate**: Simplicity principles + file size protocols (≤80 lines) + anti-monolithic enforcement
 
 ### Orchestration/Coordination Pattern
 **Semantic triggers**: Intent to coordinate, manage multi-agent, delegate tasks + Scope orchestration workflow + Domain coordination + Output systematic delegation
 **Auto-activation**: Multi-step tasks detected → orchestration loading, delegation required → methodology protocols
-**Execute**: Load → @context/operational/patterns/orchestrator_methodology.md + @context/operational/enforcement/core_reminders.md + @context/operational/behaviors/orchestration_protocol.md
+**Execute**: Load → @context/operational/patterns/orchestrator_methodology.md + @context/operational/enforcement/behavioral_enforcement.md + @context/operational/behaviors/orchestration_protocol.md
 **Validate**: Delegation mandatory compliance + continuous execution + parallel tools enforcement
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to system design, structural changes, architectural decisions + Scope system-wide implications + Domain architecture + Output improved system design
 **Auto-activation**: System changes → architecture consultation, structural decisions → pattern validation
-**Execute**: Load → @context/operational/patterns/command_architecture.md + @context/operational/behaviors/methodology_architecture_bridge.md + @context/operational/decisions/modular_architecture_vision.md + @context/system/principles/software_engineering.md
+**Execute**: Load → @context/operational/patterns/command_architecture.md + @context/operational/behaviors/methodology_architecture_bridge.md + @context/operational/patterns/command_architecture.md + @context/operational/patterns/authority_framework.md
 **Validate**: Context como padre compliance + modular architecture + token economy optimization + DRY/SOLID principles enforcement
 
 ### Problem Resolution Pattern
@@ -64,6 +64,15 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **SUPREME AUTHORITY**: This dispatcher → specialized context modules → implementation
 **HIERARCHICAL ENFORCEMENT**: Authority preserved through reference structure
 **VALIDATION MANDATE**: All decisions traced to specialized context ownership
+
+### Conversation Preservation Protocol
+**MANDATORY PROTECTION**: Conversations cannot be eliminated unless fully processed
+**Processing Criteria**: 
+- Key insights extracted to operational/ or user-vision-layers/
+- Architectural decisions documented in system/
+- User confirmation of processing completeness
+**ELIMINATION AUTHORITY**: USER ONLY after explicit processing verification
+**PARTNER ENFORCEMENT**: Challenge system MUST activate on archive operations
 
 ## REFERENCIAS AUTHORITY
 

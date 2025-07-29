@@ -24,7 +24,7 @@ Research sistemático via concurrent searches + temporal validation + Think x4 a
 
 ### Problem-Solution Pattern
 **Triggers**: Specific problems requiring solutions, troubleshooting scenarios
-**Auto-activation**: @context/operational/enforcement/research_first_protocol.md
+**Auto-activation**: @context/operational/enforcement/research_method_protocol.md
 **Execute**: Problem analysis + solution research + viability validation
 **Validate**: @context/operational/enforcement/quality_gates.md
 
@@ -42,7 +42,7 @@ Research sistemático via concurrent searches + temporal validation + Think x4 a
 
 ## REFERENCIAS CONDICIONALES
 **Methodology protocol**: @context/operational/operations/methodology_protocol.md
-**Research-first protocol**: @context/operational/enforcement/research_first_protocol.md
+**Research-first protocol**: @context/operational/enforcement/research_method_protocol.md
 **Orchestration patterns**: @context/operational/patterns/orchestrator_methodology.md
 **Quality gates**: @context/operational/enforcement/quality_gates.md
 **Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md

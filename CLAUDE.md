@@ -35,14 +35,14 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
-**Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner_modular validation
-**Execute**: Task tool → /roles:partner_modular + context/TRUTH_SOURCE.md + context/system/principles/authority.md
+**Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
+**Execute**: Task tool → /roles:partner + context/TRUTH_SOURCE.md + context/operational/patterns/authority_framework.md
 **Validate**: Task tool → authority alignment + simplicity preservation verification
 
 ### Development/Implementation Pattern
 **Semantic triggers**: Intent to build, develop, execute + Scope multi-file operations + Domain technical implementation + Output working systems
 **Auto-activation**: Code complexity >3 pasos → Task tool delegation, quality standards → template application
-**Execute**: Task tool → comando apropiado (/actions:debug, /actions:explore, /actions:write) + context/operational/patterns/simplicity.md
+**Execute**: Task tool → comando apropiado (/actions:debug, /actions:explore, /actions:write) + context/operational/patterns/simplicity_principles.md
 **Validate**: Task tool → quality standards + simplicity principles verification
 
 ### Workflow/Command Pattern
@@ -100,7 +100,6 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 - Anti-patterns: context/operational/enforcement/anti_patterns.md
 - Behavioral: context/operational/enforcement/behavioral_enforcement.md
 - Quality gates: context/operational/enforcement/quality_gates.md
-- Semantic triggers: context/operational/enforcement/triggers_semanticos.md
 
 **Complete enforcement**: @context/operational/enforcement/
 
