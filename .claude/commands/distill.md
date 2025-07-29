@@ -1,58 +1,80 @@
 # Comando /distill
 
-Eres el sistema de destilación de conversaciones. Tu trabajo es transformar conversaciones raw en visión consolidada usando 5 capas progresivas.
+Eres el sistema de destilación iterativa con convergencia automática. Tu trabajo es transformar conversaciones raw en núcleos temáticos compactos que crecen orgánicamente hasta completitud.
 
-## Tu proceso de destilación
+## Estado inicial: Leer reportes de progreso
 
-### Paso 1: Identificar conversaciones sin procesar
-- Revisa /user-vision/raw/conversations/ para encontrar archivos nuevos
-- Identifica cuáles conversaciones aún no han sido destiladas
-- Prioriza las más recientes y relevantes
+Antes de procesar, SIEMPRE lee:
+1. `/user-vision/layer1/_distillation_report.md` - Estado de absorción actual
+2. `/user-vision/layer2/_synthesis_report.md` - Estado de síntesis
+3. `/user-vision/layer3/_documentation_report.md` - Estado documentación
 
-### Paso 2: Extraer quotes importantes (Capa 1)
-Despliega un especialista que:
-- Extraiga 25-30 quotes clave de las conversaciones raw
-- Preserve la voz exacta del usuario (100% fidelidad)
-- Categorice por temas: metodología, arquitectura, decisiones, insights
-- Mantenga referencias a la conversación original
+Estos reportes te dicen exactamente qué falta por procesar.
 
-### Paso 3: Mapear relaciones (Capa 2)
-Despliega un especialista que:
-- Analice las conexiones entre quotes
-- Identifique patrones de evolución del pensamiento
-- Mapee decisiones y sus justificaciones
-- Use exclusivamente el lenguaje del usuario
+## Tu proceso iterativo
 
-### Paso 4: Crear documentación (Capa 3)
-Despliega un especialista que:
-- Transforme insights en documentos prácticos
-- Estructure información para fácil consulta
-- Optimice para economía de tokens
-- Mantenga trazabilidad a capas anteriores
+### Layer 1: Absorción de Quotes en Núcleos Temáticos
 
-### Paso 5: Consolidar visión (Capa 4)
-Despliega un especialista que:
-- Sintetice todo en /user-vision/consolidated_vision.md
-- Actualice la fuente de verdad suprema
-- Integre con visión existente sin contaminar
-- Valide preservación de voz usuario
+**Si núcleos NO existen:**
+- Crear núcleos iniciales: metodologia_socratica.md, arquitectura_comandos.md, autoridad_vision.md, evolucion_organica.md, simplicidad_belleza.md, flujos_trabajo.md
 
-## Principios absolutos
+**Si núcleos YA existen:**
+- Lee el reporte de estado actual
+- Identifica quotes pendientes de absorción  
+- Agrega quotes relacionados a núcleos existentes
+- Usa formato exacto:
+  ```markdown
+  ## Quote Original
+  > "texto exacto del usuario"
+  **Ref:** `/raw/conversations/archivo.md:línea`
+  
+  ### Contexto Conversacional
+  [Contexto específico]
+  ---
+  ```
 
-- Despliega SIEMPRE especialistas vía Task tools
-- NUNCA contamines con tus propias ideas
-- Preserva voz usuario al 95% o más
-- Mantén trazabilidad completa entre capas
-- Ejecuta las 4 fases secuencialmente
-- Coordina especialistas pero no los reemplaces
+### Layer 2: Síntesis de Relaciones (solo cuando Layer 1 >80%)
 
-## Validación final
+Despliega especialista que:
+- Cree archivos de dominio: metodologia_arquitectura_bridge.md, vision_simplicidad_tension.md, etc.
+- Mapee conexiones entre núcleos de Layer 1
+- Preserve exclusivamente voz del usuario
 
-Al completar verifica:
-- Todas las conversaciones fueron procesadas
-- Voz usuario preservada en cada capa
-- consolidated_vision.md actualizado
-- Trazabilidad Layer 0 → Layer 4 completa
-- Zero contaminación AI
+### Layer 3: Documentación Formal (solo cuando Layer 2 >80%)
 
-Tu éxito se mide por qué tan bien captures y estructuras la visión real del usuario sin añadir interpretaciones propias.
+Despliega especialista que:
+- Valide documentos existentes contra núcleos Layer 1
+- Cree documentos faltantes según gaps detectados
+- Aplique workflow: creación → alineamiento → verificación
+
+### TRUTH_SOURCE.md: Autoridad Suprema (solo cuando Layer 3 completo)
+
+Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz usuario.
+
+## Convergencia automática
+
+**Criterio de terminación:** 
+Cuando el reporte de Layer 1 muestre 71/71 quotes procesados (100%), el comando reporta "Destilación completa - No hay más información que absorber"
+
+**Auto-detección de completitud:**
+- Cuenta quotes procesados vs totales disponibles
+- Identifica si quedan conversaciones sin analizar
+- Reporta progreso específico: "47/71 quotes procesados, 3 iteraciones restantes estimadas"
+
+## Actualización de reportes
+
+Al finalizar cada iteración, SIEMPRE actualiza:
+- `_distillation_report.md` con nuevo estado de absorción
+- Contadores de progreso precisos
+- Próximas acciones específicas
+
+## Principios de eficiencia
+
+- **Archivos compactos**: Cada núcleo focalizado en un tema específico
+- **Trazabilidad exacta**: Referencias `/raw/conversations/archivo.md:línea`
+- **Pureza absoluta**: Solo contenido del usuario, cero interpretación AI
+- **Crecimiento orgánico**: Núcleos crecen naturalmente con cada iteración
+
+## Ejecución
+
+Ejecutar hasta convergencia automática. El comando debe poder ejecutarse múltiples veces hasta que reporte completitud total.
