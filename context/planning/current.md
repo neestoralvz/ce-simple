@@ -49,10 +49,12 @@
 - [x] **Reference integrity**: All cross-references verified and functioning
 - [x] **Hardcoded path correction**: RAW → conversations systematic update across 9 files
 - [x] **Modular refactoring - simplicity tension balance**: 4 specialized modules created (≤80 lines)
+- [x] **Modular refactoring - metodologia socratica**: Quote collections + synthesis organization
+- [x] **Planning modularization**: dependency_layers.md + semantic_planning.md created
 
 ### MEDIUM PRIORITY - Next Session
 - [ ] **Command functionality testing**: Verify commands work as expected in practice
-- [ ] **Modular refactoring**: 37 files >80 lines need breakdown into ≤80 line modules (1 completed: simplicity_tension_balance)
+- [ ] **Modular refactoring**: 35 files >80 lines need breakdown into ≤80 line modules (3 completed: simplicity_tension_balance, metodologia_socratica, planning)
 - [ ] **Template optimization**: Review consolidated templates for further DRY opportunities
 - [ ] **Export system design**: Apply discovered 4-folder structure to export/ planning
 
@@ -68,7 +70,8 @@
 2. **Partner role consultation**: /roles:partner analysis confirming path inconsistency as system blocker
 3. **Systematic path correction**: 9 critical files updated with conversations (lowercase) standardization
 4. **Cross-system validation**: Verified zero remaining hardcoded path conflicts in scripts, docs, commands
-5. **Modular refactoring execution**: Simplicity tension balance → 4 specialized modules (≤80 lines each)
+5. **Modular refactoring execution**: Multiple frameworks → 8+ specialized modules (≤80 lines each)
+6. **Quote organization system**: metodologia_socratica → thematic quote collections + synthesis
 
 ### System State Transformation  
 - **Before**: Mixed references to RAW, context/raw/, /raw/conversations/ causing storage confusion
@@ -80,8 +83,9 @@
 - **Path correction**: scripts/export_commands.py + 4 system docs + 3 command files + 2 operational files
 - **References updated**: 16+ specific path references changed RAW → conversations
 - **Standards applied**: Lowercase conversations path enforced consistently
-- **Modular refactoring**: simplicity_tension_balance.md → 4 specialized modules with reference-only architecture
-- **DRY compliance**: Zero content duplication across tension balance components
+- **Modular refactoring**: simplicity_tension_balance.md → 4 specialized modules + metodologia_socratica → quote collections
+- **Reference-only architecture**: Multiple frameworks applied with smart cross-linking systems  
+- **DRY compliance**: Zero content duplication across all modularized components
 - **Validation completed**: Zero hardcoded path conflicts + modular framework operational
 
 ### Previous Session Accomplishments (Preserved)
