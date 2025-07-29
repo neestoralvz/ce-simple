@@ -24,3 +24,21 @@ Sistema de destilación donde estableces que la narrativa humana es el mecanismo
 
 ### Contexto Conversacional
 Fundacional donde defines la visión de interacción humana-AI más natural.
+
+---
+
+## Quote Original
+> "sobre la cantidad de comandos creo uque es algo que el mismo sistema y lo que hagamos nos ira pidiendo. aqui creo que lo que mas importa es poder medir la eficiencia de los arboles de decisiones"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:25`
+
+### Contexto Conversacional
+Transformación arquitectural donde estableces que el sistema debe evolucionar basado en métricas de eficiencia, no planificación rígida.
+
+---
+
+## Quote Original
+> "Si, algo asi como start, aunque realmente las opciones que vienen tendran que estar cambiando constantemente de acuerdo a los comandos que tengamos disponibles"
+**Ref:** `/raw/conversations/2025-07-28_15-30_comando-universal-sesgo-ceo.md:29`
+
+### Contexto Conversacional
+Comando universal donde defines adaptación dinámica basada en estado actual del sistema.

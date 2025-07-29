@@ -24,3 +24,21 @@ Refinamiento de planificación donde defines la jerarquía de información desde
 
 ### Contexto Conversacional
 Comando universal donde estableces que la autoridad implícita no debe ser mencionada explícitamente.
+
+---
+
+## Quote Original
+> "creo que deberia haber una carpeta user_vision y ahi este la vision destilada del usuario obtenida de las conversaciones que hemos ido guardando"
+**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-truth-source.md:40`
+
+### Contexto Conversacional
+Factorización CLAUDE.md donde estableces user_vision/ como fuente de verdad autoritativa del sistema.
+
+---
+
+## Quote Original
+> "muchas cosas de las que hemos hablado empiezan a definir la vision, la ideologia, los conceptos, la metodologia de lo que queiro, no se si eso lo vas a documentar en algun lado"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:33`
+
+### Contexto Conversacional
+Transformación arquitectural donde solicitas documentación explícita de tu visión, ideología y metodología.

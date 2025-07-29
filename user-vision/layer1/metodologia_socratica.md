@@ -33,3 +33,21 @@ Definiendo que la economía de tokens debe separarse de la fase de descubrimient
 
 ### Contexto Conversacional
 Estableciendo la separación clara entre fase de descubrimiento y fase de ejecución.
+
+---
+
+## Quote Original
+> "recuerda que yo no te debo de decir como hacer las cosas, yo debo de darte la vision y los comentarios qye veo pero tu eres quien debe de decidir como hacerlo, quien debe de poner en marcha todo su conocimiento y lo que debe hacer, utilizar el think x 4, y hacerlo de manera excelente"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:13`
+
+### Contexto Conversacional
+Transformación arquitectural donde defines la división de responsabilidades: usuario aporta visión, agente decide implementación con think x4.
+
+---
+
+## Quote Original
+> "no te ovy a decir como hacer las cosas, tu debes de decidirlo de acuero a mi vision y lo que te digo, enteinde esto como una de las maximas de este proyecto"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:30`
+
+### Contexto Conversacional
+Estableciendo como máxima del proyecto que el usuario proporciona visión, no instrucciones de implementación.

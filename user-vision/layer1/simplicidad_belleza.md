@@ -24,3 +24,30 @@ Sistema de destilación por capas donde defines que la simplificación debe ser 
 
 ### Contexto Conversacional
 Análisis de over-engineering donde estableces que el sistema debe prevenir automáticamente la complejidad excesiva.
+
+---
+
+## Quote Original
+> "Tambien deberiamos de empezar a habalr sobre el tamano de los archvios para mantenernos apegados a los lineamientos y la economia de tokens y eficiena de contexto"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:18`
+
+### Contexto Conversacional
+Transformación arquitectural donde estableces token economy como principio arquitectural fundamental.
+
+---
+
+## Quote Original
+> "es importante eliminar archivos y crealos desde cero bajo los lineamientos que vamos actualizando, pues si solo vamos construyendo sobre los anteriores existe demasiado sesgo por la informacion que ya esta"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:21`
+
+### Contexto Conversacional
+Estableciendo principio de clean slate recreation para evitar sesgo acumulativo.
+
+---
+
+## Quote Original
+> "y tambien con esta idea de que no debemos de repetir contenido en ningun documento, solo se debe de referenciar"
+**Ref:** `/raw/conversations/2025-07-28_15-30_comando-universal-sesgo-ceo.md:17`
+
+### Contexto Conversacional
+Comando universal donde defines principio de no-repetición y referenciación como optimización.

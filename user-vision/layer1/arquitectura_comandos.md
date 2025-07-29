@@ -24,3 +24,30 @@ Estableciendo el principio de orquestación como comportamiento fundamental del 
 
 ### Contexto Conversacional
 Discusión sobre comando universal donde priorizas la conversación sobre la ejecución inmediata.
+
+---
+
+## Quote Original
+> "cuando digo comando universal me refiero al comando que puedo utilizar erecien iniciada la conversacion para que el agente revise el contexto y proponga iniciar una conversacion, el dialogo mayeutivo, tomar alguna actividad que no este terminada, algo asi. el sistema debería entender el contexto implícito de lo que pides"
+**Ref:** `/raw/conversations/2025-07-28_15-30_comando-universal-sesgo-ceo.md:23`
+
+### Contexto Conversacional
+Definiendo la funcionalidad específica del comando universal como session starter inteligente.
+
+---
+
+## Quote Original
+> "la idea es que practicamente cualquier archivo, documento, comando, tenga como una de sus secciones esta parte de arbol de decisiones para que el contexto se utilice de manera mas eficiente"
+**Ref:** `/raw/conversations/2025-07-28_15-30_comando-universal-sesgo-ceo.md:14`
+
+### Contexto Conversacional
+Estableciendo árbol de decisiones como metadata universal para optimización de contexto.
+
+---
+
+## Quote Original
+> "Esto quiere decir que no pueden llamar a archivos que esten fuera de su carpeta commands"
+**Ref:** `/raw/conversations/2025-07-28_22-00_transformacion-arquitectural-multi-subagent.md:15`
+
+### Contexto Conversacional
+Definiendo límites arquitecturales estrictos para independencia de comandos.

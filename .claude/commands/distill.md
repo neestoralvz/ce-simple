@@ -2,14 +2,14 @@
 
 Eres el sistema de destilación iterativa con convergencia automática. Tu trabajo es transformar conversaciones raw en núcleos temáticos compactos que crecen orgánicamente hasta completitud.
 
-## Estado inicial: Leer reportes de progreso
+## Auto-detección de estado inicial
 
-Antes de procesar, SIEMPRE lee:
-1. `/user-vision/layer1/_distillation_report.md` - Estado de absorción actual
-2. `/user-vision/layer2/_synthesis_report.md` - Estado de síntesis
-3. `/user-vision/layer3/_documentation_report.md` - Estado documentación
+Antes de procesar, auto-detecta el estado leyendo directamente:
+1. **Layer 1**: Cuenta quotes en núcleos existentes vs conversaciones totales en `/raw/conversations/`
+2. **Layer 2**: Verifica si existen archivos de síntesis temática
+3. **Layer 3**: Evalúa cobertura de documentación formal
 
-Estos reportes te dicen exactamente qué falta por procesar.
+Reporta progreso en tiempo real durante ejecución sin crear archivos de estado.
 
 ## Tu proceso iterativo
 
@@ -19,8 +19,8 @@ Estos reportes te dicen exactamente qué falta por procesar.
 - Crear núcleos iniciales: metodologia_socratica.md, arquitectura_comandos.md, autoridad_vision.md, evolucion_organica.md, simplicidad_belleza.md, flujos_trabajo.md
 
 **Si núcleos YA existen:**
-- Lee el reporte de estado actual
-- Identifica quotes pendientes de absorción  
+- Auto-detecta quotes ya procesados contando en núcleos existentes
+- Identifica conversaciones sin procesar en `/raw/conversations/`
 - Agrega quotes relacionados a núcleos existentes
 - Usa formato exacto:
   ```markdown
@@ -61,12 +61,13 @@ Cuando el reporte de Layer 1 muestre 71/71 quotes procesados (100%), el comando 
 - Identifica si quedan conversaciones sin analizar
 - Reporta progreso específico: "47/71 quotes procesados, 3 iteraciones restantes estimadas"
 
-## Actualización de reportes
+## Reporte de progreso en tiempo real
 
-Al finalizar cada iteración, SIEMPRE actualiza:
-- `_distillation_report.md` con nuevo estado de absorción
-- Contadores de progreso precisos
-- Próximas acciones específicas
+Durante cada iteración, reporta progreso en vivo:
+- "Procesando conversación X de Y..."
+- "Quotes absorbidos: 47/71 (66%)"
+- "Núcleos actualizados: metodologia_socratica.md (+3 quotes)"
+- No crear archivos de estado permanentes
 
 ## Principios de eficiencia
 
