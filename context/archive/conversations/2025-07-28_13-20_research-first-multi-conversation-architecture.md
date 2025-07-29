@@ -40,6 +40,7 @@ WebSearch: "multi-agent coordination patterns ${current_date}"
 MCP Context7: Analyze existing system for integration opportunities
 Technical Spike: Validate architecture compatibility
 ```
+→ **Script Reference**: Ver context/examples/bash/research_integration.sh:execute_research_protocol() para implementación sistemática
 
 ### 2. Multi-Conversation Orchestration System
 

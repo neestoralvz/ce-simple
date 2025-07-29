@@ -5,29 +5,11 @@
 ## Process Lifecycle Control
 
 ### Process Startup Management
-```bash
-# Start all background processes for multi-conversation coordination
-start_all_background_processes() {
-    echo "Starting complete background process suite..."
-    
-    # Start monitoring first
-    start_background_monitoring
-    sleep 2
-    
-    # Start coordination
-    start_conversation_coordinator
-    sleep 2
-    
-    # Start communication daemon
-    start_communication_daemon
-    sleep 2
-    
-    echo "All background processes started"
-    check_background_status
-    
-    return 0
-}
-```
+→ Ver context/examples/bash/background_processes.sh para funciones completas:
+- start_background_monitoring()
+- start_conversation_coordinator() 
+- start_communication_daemon()
+- stop_all_background_processes()
 
 ### Process Health Monitoring
 ```bash
