@@ -231,7 +231,7 @@ Commit Strategy Executed:
 
 ### Legacy Architecture Elimination
 **591 files removed** representing complete cleanup of distributed complexity:
-- `/docs/core/` hierarchy (105+ files): Consolidated into centralized commands
+- `/actions:docs/core/` hierarchy (105+ files): Consolidated into centralized commands
 - `/export/commands/` structure (200+ files): Migrated to self-contained ecosystem  
 - `/planning/projects/` scatter (50+ files): Organized into structured handoff system
 - `/rules/` distribution (25+ files): Unified in CLAUDE.md governance

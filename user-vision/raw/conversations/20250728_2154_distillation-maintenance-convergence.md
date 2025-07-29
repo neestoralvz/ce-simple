@@ -1,15 +1,15 @@
 # Conversación: Distillation Maintenance + Complete Convergence
 
 **Date:** 2025-07-28 21:54  
-**Session Type:** Sistema `/distill` execution con convergencia automática completa  
-**Commands Used:** `/distill`, `/close`  
+**Session Type:** Sistema `/workflows:distill` execution con convergencia automática completa  
+**Commands Used:** `/workflows:distill`, `/workflows:close`  
 
 ## Conversation Flow
 
 ### Session Start: Distill Command Execution
 **Context:** Sistema con balance crystallization completada, required maintenance validation de convergencia
 
-**User:** `/distill`
+**User:** `/workflows:distill`
 
 **System Response:** Deployed TodoWrite tool para systematic task breakdown:
 1. Auto-detect state: check raw conversations vs processed nuclei  
@@ -77,7 +77,7 @@ Procesando conversación más reciente (20250729_2100)...
 - ✅ REGENERACIÓN SIN SESGO CONFIRMADA
 
 ### Session Close: Complete System Validation
-**User:** `/close`
+**User:** `/workflows:close`
 
 **System response:** Comprehensive session analysis + handoff creation + dashboard update
 

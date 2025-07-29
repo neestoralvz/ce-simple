@@ -181,7 +181,7 @@ Evolución hacia dual monitoring systems con requerimiento de visualización. Us
 ---
 
 ## Quote Original
-> "Background processing sin comando explícito /distill"
+> "Background processing sin comando explícito /workflows:distill"
 **Ref:** `/raw/conversations/20250728_1941_auto-distillation-continuation.md:53`
 
 ### Contexto Conversacional

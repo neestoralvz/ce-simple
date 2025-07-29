@@ -36,7 +36,7 @@ The system began with a comprehensive analysis of the existing hooks infrastruct
 
 **Discovered Components**:
 - `.claude/hooks/orchestration-progress-reporter.sh` - 47 lines, executable
-- `.claude/hooks/orchestrator-interface.sh` - 65 lines, executable  
+- `.claude/hooks/roles:orchestrator-interface.sh` - 65 lines, executable  
 - `.claude/settings.toml` - Existing configuration requiring hooks integration
 - Health daemon system operational at PID 37803
 
@@ -67,7 +67,7 @@ timeout = 30
 [hooks.orchestration]
 enabled = true
 progress_reporter = ".claude/hooks/orchestration-progress-reporter.sh"
-interface = ".claude/hooks/orchestrator-interface.sh"
+interface = ".claude/hooks/roles:orchestrator-interface.sh"
 update_interval = 5
 ```
 

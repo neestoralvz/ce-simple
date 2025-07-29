@@ -95,7 +95,7 @@ Usuario + Claude → Inmediato (esta conversación como test case) para validar 
 **Ref:** `/raw/conversations/2025-07-28_13-18_research-first-multi-conversation-architecture.md:14`
 
 ### Contexto Conversacional
-Usuario presenta screenshot de 4 conversaciones paralelas ejecutando diferentes prioridades identificadas por `/start`, estableciendo la estrategia de paralelización como optimización de velocidad.
+Usuario presenta screenshot de 4 conversaciones paralelas ejecutando diferentes prioridades identificadas por `/workflows:start`, estableciendo la estrategia de paralelización como optimización de velocidad.
 
 ---
 
@@ -388,7 +388,7 @@ Definición del flujo de proceso claro para el sistema de destilación orgánica
 ---
 
 ## Quote Original
-> "Continue Layer 1 quote absorption via `/distill` (72% remaining)"
+> "Continue Layer 1 quote absorption via `/workflows:distill` (72% remaining)"
 **Ref:** `/raw/conversations/20250729_1510_session-analysis-close.md:50`
 
 ### Contexto Conversacional

@@ -1,7 +1,7 @@
 # Sesión: Destilación Convergence Validada + Balance Información/Simplicidad
 
 **Timestamp**: 2025-07-28 21:23  
-**Comando inicial**: `/distill`  
+**Comando inicial**: `/workflows:distill`  
 **Duración**: Session completa  
 **Estado**: ✅ CONVERGENCIA TOTAL ALCANZADA  
 
@@ -81,7 +81,7 @@
 ## Próximos Pasos Recomendados
 
 ### Inmediato (Próxima Sesión)
-1. **Continue Layer 1 completion**: `/distill` para procesar 8 conversaciones restantes → 100%
+1. **Continue Layer 1 completion**: `/workflows:distill` para procesar 8 conversaciones restantes → 100%
 2. **Test system stability**: Add nueva conversación real → verify processing automático
 3. **Monitor regeneration**: Verify CLAUDE.md preserves alineación after new inputs
 

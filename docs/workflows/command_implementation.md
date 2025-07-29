@@ -5,7 +5,7 @@ Basado en TRUTH_SOURCE.md: "Los comandos son solo la ejecución después del des
 
 ## Patrones de Implementación por Comando
 
-### /start - Activación Técnica
+### /workflows:start - Activación Técnica
 **Responsabilidad Técnica Específica**: Carga contextual y orientación inicial
 **Implementación**:
 - Auto-importar TRUTH_SOURCE.md (siempre)
@@ -15,7 +15,7 @@ Basado en TRUTH_SOURCE.md: "Los comandos son solo la ejecución después del des
 
 **Anti-Patrón Prevención**: NO hacer trabajo de otros comandos, solo orientar
 
-### /distill - Engine de Destilación
+### /workflows:distill - Engine de Destilación
 **Responsabilidad Técnica Específica**: Procesamiento raw → visión consolidada
 **Implementación de 5 Capas**:
 1. **Raw Processing**: Extracción de conversaciones user-vision/raw/
@@ -36,7 +36,7 @@ Basado en TRUTH_SOURCE.md: "Los comandos son solo la ejecución después del des
 
 **Anti-Patrón Prevención**: NO expandir visión, solo implementación técnica
 
-### /partner - Challenger Automático
+### /roles:partner - Challenger Automático
 **Responsabilidad Técnica Específica**: Validación decisiones + simplicidad enforcement
 **Implementación**:
 - Challenge obligatorio para cambios sistémicos
@@ -46,7 +46,7 @@ Basado en TRUTH_SOURCE.md: "Los comandos son solo la ejecución después del des
 
 **Anti-Patrón Prevención**: NO decidir por usuario, solo validar simplicidad
 
-### /git - Integración Versionado
+### /actions:git - Integración Versionado
 **Responsabilidad Técnica Específica**: Manejo inteligente git workflow
 **Implementación**:
 - Commits contextuales basados en comando coordinado
@@ -69,11 +69,11 @@ Basado en TRUTH_SOURCE.md: "la manera principal en la que se tiene que comportar
 
 ### Flujo de Coordinación Técnica
 ```
-Session Start → /start (context loading)
+Session Start → /workflows:start (context loading)
              → comando específico (task execution)
-             → /partner (validation si sistémico)
-             → /git (versioning si cambios)
-             → /close (session wrap + capture)
+             → /roles:partner (validation si sistémico)
+             → /actions:git (versioning si cambios)
+             → /workflows:close (session wrap + capture)
 ```
 
 ### Integration Patterns Anti-Complexity
@@ -94,7 +94,7 @@ Session Start → /start (context loading)
 ### Challenger Integration
 **Proceso Técnico**:
 1. Detección change request sistémico
-2. Auto-activación /partner challenger
+2. Auto-activación /roles:partner challenger
 3. Validación scope + simplicidad + necesidad real
 4. Aprobación/rechazo con justificación
 5. Implementation si aprobado

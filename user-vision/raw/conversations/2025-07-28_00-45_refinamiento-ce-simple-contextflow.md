@@ -50,7 +50,7 @@ La conversación culminó con la implementación concreta del comando `/session-
 - **Documentos impactados**: 
   - `/Users/nalve/ce-simple/CLAUDE.md` - Requerirá refactor como dispatcher
   - `/.claude/commands/*.md` - Comandos necesitarán ser más auto-contenidos
-  - `/docs/context/` - Estructura de documentación puede requerir ajustes
+  - `/actions:docs/context/` - Estructura de documentación puede requerir ajustes
 - **Planes afectados**: Plan Maestro CE-Simple necesita actualización con nueva arquitectura
 
 ---

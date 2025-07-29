@@ -1,0 +1,95 @@
+# Context Organization - Arquitectura Sistema Modular
+
+**Actualizado: 29/07/2025 09:10 CDMX** | Organización sistema context
+
+## Propósito
+Fuente central única para módulos verdad usuario. Sistema DEBE consultar context/ dinámicamente vs hardcoded assumptions.
+
+## Principios SOLID Aplicados
+
+**Single Responsibility:** Cada módulo una función específica contexto  
+**Open/Closed:** Extensible sin modificar existentes  
+**Liskov Substitution:** Módulos intercambiables por tipo  
+**Interface Segregation:** Interfaces específicas, no monolíticas  
+**Dependency Inversion:** Comandos dependen abstracciones context/
+
+## Estructura Organizacional
+
+### context/principles/
+**Contenido:** Fundamentos inmutables usuario  
+**Módulos:** vision.md, authority.md, methodology.md  
+**Uso:** Base todos comandos, raramente cambia  
+**OBLIGATORIO:** Consulta automática .claude/commands/
+
+### context/patterns/
+**Contenido:** Patrones comportamiento identificados  
+**Módulos:** simplicity.md, documentation_style.md, orchestrator_methodology.md  
+**Uso:** Personalización ejecución comandos  
+**ESENCIAL:** Aplicación automática según tipo comando
+
+### context/templates/
+**Contenido:** Templates estructura para creación módulos  
+**Módulos:** template_command.md, template_context_module.md, template_decision.md, template_research.md  
+**Uso:** Scaffolding automatizado nuevos módulos  
+**APLICACIÓN:** Generación consistente documentación
+
+### context/decisions/
+**Contenido:** Decisiones arquitecturales cristalizadas  
+**Módulos:** architecture.md, validation.md  
+**Uso:** Referencia comandos constructores
+
+### context/roles:research/
+**Contenido:** Investigaciones técnicas validadas temporalmente  
+**DEBE incluir:** Fecha validation con comando date  
+**Uso:** Background intelligence para comandos
+
+### context/raw/
+**Contenido:** 71 conversaciones originales usuario  
+**FUNDAMENTAL:** Fuente verdad absoluta sin interpretación AI  
+**Trazabilidad:** Referencias exactas conversaciones específicas
+
+## Interacción context/ → .claude/commands/
+
+### .claude/commands/ Estructura
+1. workflows/    (start, distill, close, explore, debug)
+2. actions/      (docs, git)
+3. roles/        (partner, challenge)
+4. validations/  (maintenance patterns)
+5. maintenance/  (system operations)
+
+### CLAUDE.md Como Dispatcher
+**FUNCIÓN:** Consulta context/ dinámicamente  
+**NUNCA:** Hardcode information  
+**SIEMPRE:** Reference context/ modules real-time
+
+## Fórmulas Combinación Automática
+
+### Comandos Core
+1. /roles:partner = principles/vision + patterns/simplicity + patterns/orchestrator_methodology
+2. /roles:challenge = principles/authority + decisions/validation + patterns/documentation_style
+3. /actions:distill = decisions/architecture + patterns/simplicity + research/[temporal_validation]
+
+### Comandos Workflows
+1. /workflows:start = principles/ (todos) + decisions/architecture + patterns/orchestrator_methodology
+2. /workflows:close = patterns/simplicity + decisions/validation + research/[current_session]
+
+## Reglas Organización Actual
+
+**Nuevos módulos:** SOLO desde conversaciones RAW usuario  
+**Format OBLIGATORIO:** Header compacto + contenido estructurado según documentation_style.md  
+**Pureza ESENCIAL:** Zero interpretación AI, preservar voz usuario  
+**Regeneración:** Regla 10% - cambios mayores = escribir desde cero
+
+## Auto-Consulta Comandos
+
+Comandos ejecutables DEBEN consultar context/ mediante:
+1. **Lectura automática** módulos específicos según fórmula
+2. **Carga dinámica** sin overhead manual  
+3. **Aplicación contexto** real-time vs batch
+4. **Economía tokens** - solo carga necesario
+
+---
+## Enlaces → Información Complementaria
+**Si necesitas principios:** → context/principles/vision.md:1-25  
+**Si requieres patterns:** → context/patterns/simplicity.md:15-40  
+**Si necesitas validation:** → context/decisions/validation.md:20-45

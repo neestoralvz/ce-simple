@@ -2,7 +2,7 @@
 
 ## Estado General del Proyecto
 
-**DECISIÓN ARQUITECTURAL CRÍTICA PENDIENTE**: Sistema destilación operacional pero en punto de bifurcación. **Status**: Tensión identificada entre simplicidad (KISS) vs modularización (SOLID/DRY) para auto-context injection. **Análisis /partner completo**: Think x4 reveló arquitectura global/context-flow puede ser over-engineering. **Usuario**: "siento que esto nos va a complicar" - instinto simplicidad activado. **Ready**: Para decisión inmediata - implementar destilación secuencial exhaustiva (simple) vs arquitectura modular (compleja).
+**DECISIÓN ARQUITECTURAL CRÍTICA PENDIENTE**: Sistema destilación operacional pero en punto de bifurcación. **Status**: Tensión identificada entre simplicidad (KISS) vs modularización (SOLID/DRY) para auto-context injection. **Análisis /roles:partner completo**: Think x4 reveló arquitectura global/context-flow puede ser over-engineering. **Usuario**: "siento que esto nos va a complicar" - instinto simplicidad activado. **Ready**: Para decisión inmediata - implementar destilación secuencial exhaustiva (simple) vs arquitectura modular (compleja).
 
 ## Items Completados Esta Sesión
 
@@ -21,7 +21,7 @@
 
 ### Media Prioridad
 - [ ] **Auto-context injection implementation**: Una vez definida arquitectura, implementar inteligencia contextual [handoff: 20250728_2229]
-- [ ] **Modificar /distill command**: Adaptar para flujo secuencial exhaustivo según decisión [handoff: 20250728_2229]
+- [ ] **Modificar /workflows:distill command**: Adaptar para flujo secuencial exhaustivo según decisión [handoff: 20250728_2229]
 - [ ] **Test sistema con conversación pendiente**: Validar funcionamiento una vez implementado [handoff: 20250728_2229]
 
 ### Baja Prioridad  
@@ -37,7 +37,7 @@
 2. **Si KISS**: Implementar destilación secuencial exhaustiva inmediatamente
 3. **Si Modular**: Definir estructura global/context-flow primero
 
-**Recomendación /partner**: Opción KISS - terminar destilación secuencial que ya empezamos
+**Recomendación /roles:partner**: Opción KISS - terminar destilación secuencial que ya empezamos
 - Evitar over-engineering con arquitecturas complejas
 - Sistema actual funciona, solo necesita optimización
 - Auto-context injection puede ser simple sin modularización
@@ -68,12 +68,12 @@
 **TRANSFORMACIÓN ARQUITECTURAL FUNDAMENTAL**:
 - De monolítico → **Arquitectura modular** con separación clara de responsabilidades
 - De deriva constante → **Sistema auto-mantenido** con validaciones automáticas
-- De expansión caótica → **Flujo controlado** /distill → /expand con protecciones absolutas
+- De expansión caótica → **Flujo controlado** /workflows:distill → /expand con protecciones absolutas
 - De complejidad acumulativa → **Simplicidad preservada** sistemáticamente
 
 **SISTEMA MODULAR REVOLUCIONARIO**:
 - **CLAUDE.md ultra-denso**: 77 líneas vs 200 límite, máxima eficiencia
-- **Modularización /docs/**: 8 módulos especializados sin duplicación
+- **Modularización /actions:docs/**: 8 módulos especializados sin duplicación
 - **Comando /expand seguro**: Expansión técnica con protecciones absolutas user-vision/
 - **Framework validación**: 6 validaciones críticas previenen deriva perpetuamente
 
@@ -84,7 +84,7 @@
 - **Anti-complejidad**: Sistema detecta y previene over-engineering automáticamente
 
 **FLUJO REVOLUCIONARIO OPERACIONAL**:
-- **Conversación → /distill**: Preservación voz + regeneración CLAUDE.md automática
+- **Conversación → /workflows:distill**: Preservación voz + regeneración CLAUDE.md automática
 - **/expand → expansión técnica**: Contenido implementacional sin tocar visión  
 - **Validación continua**: Framework asegura alineación perpetua con principios
 

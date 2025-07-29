@@ -163,7 +163,7 @@ REQUIRED BEHAVIOR: Deploy Analysis Specialist via Task tool
 **Context**: Template system validation and testing after 65% factorization optimization
 
 **Specified Elements to Capture**:
-1. Session start with /start command and system analysis
+1. Session start with /workflows:start command and system analysis
 2. Template system validation testing (create-doc workflow)
 3. Behavioral enforcement testing and critical gap discovery
 4. Worktree cleanup and git state reconciliation

@@ -6,12 +6,12 @@
 
 ## Executive Summary
 
-Achieved balanced reorganization of user-vision structure after `/partner` challenge correctly identified that initial aggressive simplification would lose valuable granular information. User feedback shaped final solution that preserves information density while improving thematic organization.
+Achieved balanced reorganization of user-vision structure after `/roles:partner` challenge correctly identified that initial aggressive simplification would lose valuable granular information. User feedback shaped final solution that preserves information density while improving thematic organization.
 
 ## Major Accomplishments
 
 ### 1. Challenge System Validation ✅
-- `/partner` command functioned as intended, questioning over-simplification
+- `/roles:partner` command functioned as intended, questioning over-simplification
 - User provided clear feedback: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
 - System course-corrected based on user preferences, demonstrating proper authority hierarchy
 
@@ -41,9 +41,9 @@ Removed report files that violated no-repetition principle:
 
 ### 5. Command System Updates ✅
 Updated commands to work with new structure:
-- `/distill` - Now processes Layer 2 synthesis and Layer 3 regeneration
-- `/challenge` - References updated for new authority hierarchy
-- `/docs` - Updated to reference TRUTH_SOURCE vs consolidated_vision
+- `/workflows:distill` - Now processes Layer 2 synthesis and Layer 3 regeneration
+- `/roles:challenge` - References updated for new authority hierarchy
+- `/actions:docs` - Updated to reference TRUTH_SOURCE vs consolidated_vision
 - `/maintain` - Clarified authority hierarchy with TRUTH_SOURCE supremacy
 
 ## Current System State
@@ -52,7 +52,7 @@ Updated commands to work with new structure:
 - 6 thematic nuclei active and growing
 - ~52/183 quotes processed (28.42% complete)
 - Full granularity preserved with exact trazabilidad
-- Ready for continued `/distill` iterations
+- Ready for continued `/workflows:distill` iterations
 
 ### Layer 2 Status  
 - Complete thematic architecture implemented
@@ -134,4 +134,4 @@ Clean working directory. All structural changes committed. Ready for continued d
 
 ---
 
-**Handoff Quality:** Complete context preserved. Next session can immediately continue `/distill` iterations or test full system integration.
+**Handoff Quality:** Complete context preserved. Next session can immediately continue `/workflows:distill` iterations or test full system integration.

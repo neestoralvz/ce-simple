@@ -1,6 +1,6 @@
 # Session Close - Destilación Convergencia Total + Post-Validation
 **Timestamp**: 20250728_2128  
-**Command**: `/distill` → `/close`  
+**Command**: `/workflows:distill` → `/workflows:close`  
 **Tipo**: Convergencia total + validación sistémica  
 **Estado**: **CONVERGENCIA COMPLETADA - Sistema estable**
 

@@ -2,12 +2,12 @@
 
 **Date:** 2025-07-28 21:28  
 **Session Type:** Destilación automática completa  
-**Commands Used:** `/distill`
+**Commands Used:** `/workflows:distill`
 
 ## Conversation Flow
 
 ### Session Start: Automatic Distillation
-**User:** "/distill is running…"
+**User:** "/workflows:distill is running…"
 
 **System Response:** Deployed comprehensive distillation with convergence detection
 - Auto-detected state: 63 conversaciones totales, 55 procesadas previamente  
@@ -34,7 +34,7 @@ Procesando hasta 20250729, 8 conversaciones pendientes.
 **Key quotes absorbed:**
 - "Values granular information preservation over aggressive simplification"
 - "Layer 1 → Layer 2 → Layer 3 → TRUTH_SOURCE"  
-- "Continue Layer 1 quote absorption via `/distill` (72% remaining)"
+- "Continue Layer 1 quote absorption via `/workflows:distill` (72% remaining)"
 - "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
 - "Challenge system worked correctly by questioning decisions"
 - "User feedback shapes final approach, not challenger recommendations"
@@ -107,14 +107,14 @@ Procesando hasta 20250729, 8 conversaciones pendientes.
 - CLAUDE.md: Auto-regenerado sin sesgo, integrando principios validados
 
 ### Session Close Command
-**User:** "/close is running…"
+**User:** "/workflows:close is running…"
 
 **System Response:** Initiated systematic session closure with handoff management
 
 ## Key Insights from Session
 
 ### Challenge System Experimental Validation
-The `/distill` process revealed that the challenge system had provided perfect experimental validation of core principles:
+The `/workflows:distill` process revealed that the challenge system had provided perfect experimental validation of core principles:
 - Challenger appropriately questioned architectural decisions
 - User authority correctly shaped final approach
 - Balance found between simplicity and information preservation  

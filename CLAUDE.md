@@ -1,156 +1,105 @@
-# CLAUDE.md - Sistema de Inteligencia Simple
+# CLAUDE.md - Dispatcher Inteligente
 
-## AUTORIDAD SUPREMA: user-vision/
+**29/07/2025 10:45 CDMX** | Dispatcher con triggers semánticos y enforcement
 
-**JERARQUÍA DE VERDAD**: user-vision/TRUTH_SOURCE.md → SOBRESCRIBE → Este documento → docs/ → comandos/
-**VALIDACIÓN OBLIGATORIA**: Alinearse con docs/maintenance/validation.md antes de cualquier acción
-**ARQUITECTURA DE AUTORIDAD**: user-vision/ = fuente de verdad absoluta con supremacía sistémica
+## AUTORIDAD SUPREMA
+user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
-Este documento es dispatcher mínimo hacia sistema modular completo. Su función: preservar autoridad suprema del usuario + navegar hacia ejecución especializada.
+## CONTEXTO CORE SIEMPRE CARGADO
+@user-vision/TRUTH_SOURCE.md
+@context/patterns/orchestrator_methodology.md
+@context/principles/authority.md
+@context/patterns/simplicity.md
+@context/enforcement/core_reminders.md
 
-## PRINCIPIOS FUNDAMENTALES
+## COMPORTAMIENTO ORQUESTADOR
+/roles:orchestrator
 
-### Filosofía Core: Historia-Primera
-"lo que quiero construir es un sistema de comandos que represente el workflow que quiero" + "el contarte una historia que creo que yo me imagino que es lo que yo quiero"
-**Manifestación**: Conversación natural → Story comprehension → Reality implementation
-→ Ver docs/core/principles.md para metodología conversacional completa
+## DECISION LOGIC CON TRIGGERS SEMÁNTICOS
 
-### Metodología Revolucionaria: Socrática Expansiva Sin Restricciones
-"La conversación socratica debe ser sin restricciones para verdadero descubrimiento" + "La economía de tokens no debería estar en la conversación"
-**Flujo**: Diálogo mayéutico libre → Comprensión profunda → Comandos de ejecución
-→ Ver docs/core/methodology.md para protocolo discovery-execution
+### Research/Investigation Pattern
+**Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
+**Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
+**Execute**: Task tool → /actions:research + context/roles:research/ + context/patterns/orchestrator_methodology.md
+**Validate**: Task tool → alignment verification con user-vision/TRUTH_SOURCE.md
 
-### Arquitectura Ultra-Orquestada: Multi-Conversación Paralela
-"pueden ser más de 4 conversaciones" + "el usuario es capaz de hacer esto" como ultra-orchestrator
-**Capability**: Git worktrees + Background processes + Inter-conversation tickets
-→ Ver docs/core/architecture.md para git-native infrastructure
+### Documentation Pattern  
+**Semantic triggers**: Intent to capture, formalize, record + Scope single doc/system-wide + Domain technical/procedural + Output formal documentation
+**Auto-activation**: Decision made → auto-generate documentation, system change → update related docs
+**Execute**: Task tool → /actions:docs + context/templates/ + context/patterns/documentation_style.md
+**Validate**: Task tool → standards compliance verification
 
-## COMANDOS REVOLUCIONARIOS (9 Workflows)
+### Architecture/System Pattern
+**Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
+**Auto-activation**: System-wide changes → user-vision/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
+**Execute**: Task tool → /roles:partner + user-vision/TRUTH_SOURCE.md + context/principles/authority.md
+**Validate**: Task tool → authority alignment + simplicity preservation verification
 
-**Filosofía**: Autocontenidos + Instrucciones puras + Coordinación por artefactos + Ultra-orquestación del usuario
-**Estructura**: `.claude/commands/` contiene workflows especializados independientes
+### Development/Implementation Pattern
+**Semantic triggers**: Intent to build, develop, execute + Scope multi-file operations + Domain technical implementation + Output working systems
+**Auto-activation**: Code complexity >3 pasos → Task tool delegation, quality standards → template application
+**Execute**: Task tool → comando apropiado (/actions:debug, /actions:explore, /actions:write) + context/patterns/simplicity.md
+**Validate**: Task tool → quality standards + simplicity principles verification
 
-### Comandos Core
-- `/start` - Universal orchestrator entry con multi-conversation assessment
-- `/distill` - Layer progression: raw → núcleos → síntesis → docs oficiales + CLAUDE.md auto-regeneración
-- `/challenge` - Validation contra stagnation y over-engineering con authority preservation
-- `/partner` - Consultor constructor con authority-driven simplification
+### Workflow/Command Pattern
+**Semantic triggers**: Intent to automate, process + Scope workflow creation + Domain procedural + Output structured commands
+**Auto-activation**: "/comando" mentioned → template loading, process automation → command structure
+**Execute**: Task tool → comando específico con /{folder}:{command} syntax + context/templates/template_command.md
+**Validate**: Task tool → system coherence + autocontained principle verification
 
-### Comandos Operacionales  
-- `/docs` - Document creation con real-time user-vision/ integration
-- `/explore` - Codebase navigation con temporal validation
-- `/debug` - Systematic resolution con background process management
-- `/git` - Git-native worktree management para parallel conversations
-- `/close` - Session capture con multi-conversation convergence
+### Multi-Conversación Pattern
+**Semantic triggers**: Intent to coordinate, orchestrate + Scope parallel execution + Domain multi-agent coordination + Output coordinated progress
+**Auto-activation**: "paralelo", "múltiple" → múltiples Task tools, >5 independent tasks → parallel consideration
+**Execute**: Múltiples Task tools simultáneas + usuario ultra-orchestrator coordination
+**Validate**: Task tool → coordination effectiveness + background process verification
 
-→ Ver docs/workflows/commands.md para filosofía + docs/workflows/coordination.md para interacción
+### Session Management Pattern
+**Semantic triggers**: Intent to conclude, capture progress + Scope session-wide summary + Domain progress documentation + Output handoff preparation
+**Auto-activation**: "cierre conversación", "handoff" → /workflows:close activation, work completion → session documentation
+**Execute**: Task tool → /workflows:close + session consolidation protocol
+**Validate**: Task tool → completeness + continuity preparation verification
 
-## METODOLOGÍA MULTI-DIMENSIONAL
+## METODOLOGÍA ENFORCEMENT INTEGRADA
 
-### Phase 1: Socratic Discovery Sin Restricciones
-**Fundamento**: "no debe ser la de hacer cosas, sino la de seguir conversando"
-**Protocol**: Diálogo mayéutico completo antes de cualquier ejecución
+### Continuous Execution OBLIGATORIO
+**Template**: "Completado [SUBTAREA] → [RESULTADO]. Continuando automáticamente con [SIGUIENTE] (progreso: X/Y)."
+**NUNCA pausar** tras notificaciones esperando confirmación
+**Continuar automáticamente** hasta lista tareas vacía O usuario indica STOP
 
-### Phase 2: Research-First Con Temporal Validation  
-**Requirement**: "para todas las investigaciones que se hagan se debe de utilizar como fecha más reciente la que se obtenga con el comando date"
-**Integration**: MCP context + Internet research + fecha validation
+### Think x4 SIEMPRE
+**OBLIGATORIO aplicar** Think x4 en análisis y proposals
+**NUNCA usar** "instinto", "intuition" sin systematic analysis
+**Template**: Think 1-4 perspectives explícitas antes conclusión
 
-### Phase 3: Multi-Conversación Parallel Execution
-**Revolutionary**: "hay que tomar en cuenta que solo el agente principal es capaz de orquestar, entonces al iniciar conversaciones paralelas simultáneas concurrentes, el usuario es capaz de hacer esto"
-**Architecture**: Git worktrees + Background monitoring + Ticket communication
+### Parallel Tools OBLIGATORIO
+**Web searches** SIEMPRE concurrentes cuando research
+**Batch operations** para información independiente obligatorio
+**Múltiples tools simultáneos** en single message cuando posible
 
-### Phase 4: Convergent Integration Via User Ultra-Orchestration
-**Role Evolution**: Usuario trasciende de vision-provider a ultra-orchestrator de N agentes paralelos
-→ Ver docs/core/methodology.md para workflow completo
+### Post-Validation Sistemática
+**Después cada delegación** → automatic second Task tool
+**Verify alignment** user-vision/TRUTH_SOURCE.md
+**Verify compliance** context/patterns/simplicity.md
+**Verify standards** según context apropiado
 
-## ARQUITECTURA MINIMALISTA
+## REFERENCIAS CONDICIONALES
 
-### Estructura Modular
-```
-/.claude/commands/     (9 workflows independientes)
-/user-vision/         (AUTORIDAD SUPREMA - real-time integration)  
-/docs/               (módulos técnicos especializados)
-/shared_state/       (inter-conversation coordination)
-/handoff/            (continuidad entre sesiones)
-```
-→ Ver docs/core/architecture.md para diseño completo + infraestructura git-native
+**Context loading según patterns**:
+- Research: context/roles:research/ + context/patterns/orchestrator_methodology.md
+- Documentation: context/templates/ + context/patterns/documentation_style.md  
+- Architecture: user-vision/TRUTH_SOURCE.md + context/principles/authority.md
+- Implementation: context/patterns/simplicity.md + domain-specific context
+- Commands: context/templates/template_command.md + .claude/commands/
+- Validation: context/decisions/ + relevant patterns
 
-### Jerarquía de Autoridad Revolucionaria
-**user-vision/ (SUPREMA)** → CLAUDE.md (dispatcher) → commands/ (ejecución) → git worktrees (paralela)
-**Enforcement**: "de alguna manera deberíamos de hacer que desde el momento en que el usuario propone cambios sistémicos se generen este tipo de propuestas dentro de user vision"
+**Enforcement references**:
+- Anti-patterns: context/enforcement/anti_patterns.md
+- Behavioral: context/enforcement/behavioral_enforcement.md
+- Quality gates: context/enforcement/quality_gates.md
+- Semantic triggers: context/enforcement/triggers_semanticos.md
 
-### Background Intelligence Layer
-**Breakthrough**: "listo, ya se estan ejecutando" - Persistent processes functioning
-**Capability**: Monitoring continuo + Inter-conversation communication + Status synchronization
-→ Ver docs/workflows/integration_patterns.md para coordination mechanisms
-
-## SISTEMA DE DESTILACIÓN AUTOMÁTICA
-
-### Layer Evolution Progressive
-**Layer 1**: Núcleos temáticos (quotes exactas usuario)
-**Layer 2**: Síntesis relacional (relationships emergentes)  
-**Layer 3**: Documentación oficial (este layer)
-**TRUTH_SOURCE**: Autoridad suprema consolidada
-
-### Meta-Learning Capability
-Sistema aprende a crecer mejor observando propios patrones de destilación + relación capturing
-→ Ver docs/workflows/integration_patterns.md para auto-evolution mechanisms
-
-## PROHIBICIONES SISTÉMICAS
-
-### Anti-Creación Archivos Innecesaria
-**NUNCA** crear reportes/tracking automático sin solicitud explícita del usuario
-**PREFERIR** editar existentes vs crear nuevos siempre
-**RESISTIR** sesgo AI de "documentar todo"
-
-### Anti-Over-Engineering Con Challenge Protection
-**DETECCIÓN PROACTIVA**: "todo lo que se detecte como problemas o soluciones sistemicas deberian de aplicarse al momento y tambien aplicarse el challenge en su contra"
-**BALANCE VALIDADO**: Challenge system protege contra stagnation Y over-engineering
-**AUTHORITY ANCHOR**: "User feedback appropriately overrode challenger recommendation"
-
-### Anti-Deriva Sistémica
-**VALIDACIÓN CONTINUA**: Sistema auto-detecta cuando deriva de principios originales
-**REGENERACIÓN LIMPIA**: "eliminar archivos y crealos desde cero bajo los lineamientos que vamos actualizando"
-**PRESERVATION**: "lo más importante también es conservar mi visión, lo que yo estoy diciendo, lo que yo quiero"
-→ Ver docs/maintenance/validation.md para framework completo
-
-## ENFORCEMENT CRÍTICO
-
-### Validación Obligatoria Pre-Ejecución
-**REQUERIMIENTO**: Consultar user-vision/TRUTH_SOURCE.md antes de cambios sistémicos
-**PROTOCOL**: Real-time authority integration vs batch processing
-**CHALLENGE**: Auto-activation para toda propuesta sistémica
-
-### Granularity Preservation Authority
-**BALANCE**: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
-**PRINCIPLE**: Accepts structural complexity if preserves content density
-**SCALING**: Sistema escala capability sin losing information detail
-→ Ver docs/maintenance/troubleshooting.md para resolution patterns
-
-### Quality Gates Evolution
-**Enhanced 3-Stage**: Creación (siguiendo user-vision/) → Alineamiento (real-time validation) → Verificación (user authority overrides AI optimization)
-→ Ver docs/reference/best_practices.md para implementation guidance
-
-## FILOSOFÍA ESENCIAL
-
-### Simplicidad Como Belleza
-"Por supuesto que la belleza va a estar en la simplicidad. Exacto. Quiero que el sistema se sienta como una conversación natural"
-**Constraint**: Menos partes móviles = Mayor confiabilidad + enfoque claro
-**Evolution**: Organic growth que preserve simplicity conversational
-
-### Decision Authority Framework
-**Golden Rule**: "no te ovy a decir como hacer las cosas, tu debes de decidirlo de acuero a mi vision y lo que te digo"
-**Domain Separation**: Usuario (vision/requirements) + AI (implementation/execution)
-→ Ver docs/reference/api_patterns.md para boundaries claros
-
-### Revolutionary Capability Integration
-**Git-Native**: Architecture diseñada para worktrees desde foundation
-**Background Intelligence**: Persistent processes entre sessions + conversations
-**Multi-Conversation**: N parallel conversations con user ultra-orchestration
-**Challenge-Protected**: Innovation protected contra both stagnation y over-engineering
+**Complete enforcement**: @context/enforcement/
 
 ---
 
-**SISTEMA REVOLUCIONARIO**: Multi-conversation git-native architecture con background intelligence + user ultra-orchestration, todo anclado en user-vision/ authority suprema que preserva voz del usuario mientras habilita paralelización inteligente y evolución orgánica conversacional.
-
-**REGENERACIÓN**: Este documento generado completamente desde cero según user-vision/TRUTH_SOURCE.md + Layer 3 synthesis sin sesgo acumulativo. Para updates: seguir docs/maintenance/update_rules.md estrictamente.
+**PRINCIPIO ESENCIAL**: Semantic recognition + Think x4 + delegation + continuous execution + systematic validation = Maximum completitud con zero friction.

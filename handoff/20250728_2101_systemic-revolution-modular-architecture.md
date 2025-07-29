@@ -24,7 +24,7 @@ Sesión revolucionaria donde implementamos solución sistémica completa al prob
 
 ### 3. Arquitectura Modular Implementada
 ```
-/docs/
+/actions:docs/
 ├── core/
 │   ├── principles.md (principios fundamentales + separación responsabilidades)
 │   └── architecture.md (estructura minimalista del sistema)
@@ -40,7 +40,7 @@ Sesión revolucionaria donde implementamos solución sistémica completa al prob
 - **Responsabilidad ultra-específica**: SOLO expansión técnica implementacional
 - **Protecciones absolutas**: No puede tocar visión del usuario
 - **Challenger integrado**: Auto-validación antes de cualquier expansión
-- **Flujo seguro**: `/distill` → `/expand` → expansión técnica controlada
+- **Flujo seguro**: `/workflows:distill` → `/expand` → expansión técnica controlada
 
 ### 5. Framework de Validación Ampliado
 - **6 validaciones críticas** incluyendo separación de responsabilidades
@@ -51,11 +51,11 @@ Sesión revolucionaria donde implementamos solución sistémica completa al prob
 ## Flujo Revolucionario Implementado
 
 ```
-Conversación → /distill → CLAUDE.md regeneración automática
+Conversación → /workflows:distill → CLAUDE.md regeneración automática
                     ↓
-              /expand → Expansión técnica segura → /docs/ complementario
+              /expand → Expansión técnica segura → /actions:docs/ complementario
                     ↓
-              /git → Cristalización cambios sistémicos
+              /actions:git → Cristalización cambios sistémicos
 ```
 
 ## Commits Realizados
@@ -73,35 +73,35 @@ Conversación → /distill → CLAUDE.md regeneración automática
 ## Items Resueltos de Handoffs Anteriores
 
 - [x] **Problema sistémico CLAUDE.md deriva**: RESUELTO PARA SIEMPRE con regeneración automática
-- [x] **Necesidad modularización**: IMPLEMENTADO completamente con /docs/
+- [x] **Necesidad modularización**: IMPLEMENTADO completamente con /actions:docs/
 - [x] **Prevención complejidad acumulativa**: AUTOMATIZADO con validaciones
 - [x] **Separación responsabilidades**: ELEVADO a principio sistémico
 
 ## Nuevos Items Identificados
 
 ### Próxima Fase: Expansión Técnica Complementaria
-- [ ] **Ejecutar `/expand`**: Generar contenido técnico faltante en /docs/
+- [ ] **Ejecutar `/expand`**: Generar contenido técnico faltante en /actions:docs/
 - [ ] **Test validaciones**: Verificar framework previene deriva efectivamente  
-- [ ] **Validar flujo completo**: `/distill` → `/expand` → validación automática
+- [ ] **Validar flujo completo**: `/workflows:distill` → `/expand` → validación automática
 
 ## Decisiones Arquitecturales Cristalizadas
 
 1. **Comando independiente vs expansión**: Decidido crear `/expand` separado para mantener responsabilidades claras
 2. **Principio sistémico**: "Separación Clara de Responsabilidades" permanentemente integrado
 3. **Protecciones user-vision/**: Absolutas e inviolables para `/expand`
-4. **Regeneración CLAUDE.md**: Automática al final de `/distill`, no manual
+4. **Regeneración CLAUDE.md**: Automática al final de `/workflows:distill`, no manual
 
 ## Contexto para Próxima Sesión
 
 ### Estado del Sistema
 - **CLAUDE.md**: Ultra-denso y modular, listo para testing
-- **Arquitectura /docs/**: Base sólida implementada, lista para expansión técnica
+- **Arquitectura /actions:docs/**: Base sólida implementada, lista para expansión técnica
 - **Comando /expand**: Creado con protecciones, listo para ejecución
 - **Validaciones**: Framework completo, listo para enforcement
 
 ### Próximos Pasos Recomendados
 1. **Ejecutar `/expand`** para completar contenido técnico faltante
-2. **Testing del flujo completo** `/distill` → `/expand` 
+2. **Testing del flujo completo** `/workflows:distill` → `/expand` 
 3. **Validación práctica** de que protecciones funcionan
 
 ## Referencias Críticas

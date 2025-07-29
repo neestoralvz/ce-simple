@@ -248,7 +248,7 @@ Decisión cristalizada: feedback del usuario debe generar mejoras sistémicas co
 **Ref:** `/raw/conversations/2025-07-28_16-20_research-protocol-systematic-correction.md:10`
 
 ### Contexto Conversacional
-Usuario identifica uso inapropiado de WebSearch en comando `/start` - comandos de activación no deben requerir research.
+Usuario identifica uso inapropiado de WebSearch en comando `/workflows:start` - comandos de activación no deben requerir research.
 
 ---
 

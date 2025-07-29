@@ -190,19 +190,19 @@ detect_user_intent() {
     
     case "$user_input" in
         *"conversar"*|*"hablar"*|*"discutir"*)
-            echo "/start"
+            echo "/workflows:start"
             ;;
         *"destilar"*|*"consolidar"*|*"cristalizar"*)
-            echo "/distill"
+            echo "/workflows:distill"
             ;;
         *"expandir"*|*"complementar"*|*"completar"*)
             echo "/expand"
             ;;
         *"problema"*|*"debug"*|*"arreglar"*)
-            echo "/debug"
+            echo "/workflows:debug"
             ;;
         *)
-            echo "/start"  # Default to conversation
+            echo "/workflows:start"  # Default to conversation
             ;;
     esac
 }

@@ -104,7 +104,7 @@ USER_VISION_NO_LIMIT=true    # Preserve complete voice
 ```bash
 # Always use absolute paths in scripts
 PROJECT_ROOT="/Users/nalve/ce-simple"
-DOCS_PATH="$PROJECT_ROOT/docs"
+DOCS_PATH="$PROJECT_ROOT/actions:docs"
 COMMANDS_PATH="$PROJECT_ROOT/.claude/commands"
 USER_VISION_PATH="$PROJECT_ROOT/user-vision"
 
@@ -119,7 +119,7 @@ validate_project_path() {
 
 # Safe directory operations
 create_docs_structure() {
-    local base_path="$PROJECT_ROOT/docs"
+    local base_path="$PROJECT_ROOT/actions:docs"
     mkdir -p "$base_path"/{core,workflows,maintenance,technical}
 }
 ```
@@ -170,7 +170,7 @@ check_system_dependencies() {
 # Internal dependency pattern
 source_internal_utilities() {
     # Only source from within project
-    local util_file="$PROJECT_ROOT/docs/technical/common_utils.sh"
+    local util_file="$PROJECT_ROOT/actions:docs/technical/common_utils.sh"
     [[ -f "$util_file" ]] && source "$util_file"
 }
 ```

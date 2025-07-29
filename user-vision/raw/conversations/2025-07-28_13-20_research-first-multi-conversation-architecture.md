@@ -45,7 +45,7 @@ Technical Spike: Validate architecture compatibility
 
 **Architecture Designed**:
 ```
-/.claude/commands/start-concurrent-worktrees.md
+/.claude/commands/workflows:start-concurrent-worktrees.md
 ├── Primary conversation (master branch)
 ├── Parallel worktrees (feature branches)  
 ├── Document-based state sync (coordination-state.json)
@@ -54,7 +54,7 @@ Technical Spike: Validate architecture compatibility
 ```
 
 **Core Components Created**:
-- **`/start-concurrent-worktrees.md`** - Multi-conversation orchestration command
+- **`/workflows:start-concurrent-worktrees.md`** - Multi-conversation orchestration command
 - **`coordination-state-template.md`** - Shared state synchronization framework
 - **Document sync protocols** - Real-time state sharing between conversations
 - **Git worktree automation** - Seamless parallel conversation management
@@ -246,7 +246,7 @@ Multi-Subagent Intelligence Dispatcher + Research-First Protocol
 - **Systematic learning**: Success and error patterns applied system-wide
 
 ### Production-Ready Capabilities:
-- **`/start-concurrent-worktrees`**: Deploy multiple parallel conversations
+- **`/workflows:start-concurrent-worktrees`**: Deploy multiple parallel conversations
 - **Research-informed implementations**: WebSearch + MCP Context7 validation before execution
 - **Document-based synchronization**: Real-time state sharing between conversations
 - **Voice preservation scaling**: User truth maintained across parallel contexts

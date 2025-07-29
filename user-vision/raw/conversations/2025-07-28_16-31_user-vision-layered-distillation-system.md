@@ -17,7 +17,7 @@ Codebase and user instructions are shown below. Be sure to adhere to these instr
 
 [Context continues with CLAUDE.md and system reminders...]
 
-**Claude**: [Executed /start command with multi-specialist deployment for system analysis]
+**Claude**: [Executed /workflows:start command with multi-specialist deployment for system analysis]
 
 ### Critical Contamination Discovery
 After deploying clean slate regeneration system:

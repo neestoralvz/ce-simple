@@ -37,7 +37,7 @@ Basado en TRUTH_SOURCE.md: "seria maravilloso tener una instancia de claude code
 
 **Implementación Técnica**:
 - Background daemon monitoring user-vision/raw/
-- Auto-trigger /distill cuando accumulation threshold
+- Auto-trigger /workflows:distill cuando accumulation threshold
 - Continuous health monitoring del sistema
 - Proactive simplicity enforcement
 
@@ -96,7 +96,7 @@ Basado en TRUTH_SOURCE.md: "conseguir que se de la convergencia automatica cuand
 ### Challenge Integration Pattern
 **Technical Workflow**:
 1. **Detection**: Systemic change proposal identified
-2. **Auto-Challenge**: /partner activation automática
+2. **Auto-Challenge**: /roles:partner activation automática
 3. **Evaluation**: Balance checker execution
 4. **User Override**: Authority preservation if user insists
 5. **Implementation**: Controlled change execution

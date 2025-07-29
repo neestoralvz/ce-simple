@@ -6,12 +6,12 @@
 
 ## Executive Summary
 
-Resolved critical flaw in `/distill` command completitud detection by identifying invalid metrics and implementing sophisticated hybrid detection system. Session began with user questioning metric validity ("como es que se esta calculando el layer 1? me parece que es una medida que no funciona"), leading to comprehensive analysis and systematic solution.
+Resolved critical flaw in `/workflows:distill` command completitud detection by identifying invalid metrics and implementing sophisticated hybrid detection system. Session began with user questioning metric validity ("como es que se esta calculando el layer 1? me parece que es una medida que no funciona"), leading to comprehensive analysis and systematic solution.
 
 ## Major Accomplishments
 
 ### 1. Problem Identification ✅
-**Critical Issue Discovered:** Sistema `/distill` usaba métricas fundamentalmente inválidas
+**Critical Issue Discovered:** Sistema `/workflows:distill` usaba métricas fundamentalmente inválidas
 - Original metric: 82/12,129 quotes (0.7%) basado en line count total
 - **Reality:** Raw conversations mezclan voz auténtica con interpretaciones AI
 - **Result:** Impossible completitud detection, false progress reporting
@@ -31,7 +31,7 @@ Resolved critical flaw in `/distill` command completitud detection by identifyin
 
 ### 4. Infrastructure Updates Completed ✅
 **Command Updates:**
-- `/distill` command completely overhauled with hybrid detection logic
+- `/workflows:distill` command completely overhauled with hybrid detection logic
 - Auto-detection scripts documented with bash implementation examples
 - Invalid metrics sections removed and replaced with valid approach
 
@@ -100,7 +100,7 @@ pending = available - processed
 ## Next Session Priorities
 
 ### Alta Prioridad
-- [ ] **Test hybrid system:** Execute `/distill` to validate new detection method works
+- [ ] **Test hybrid system:** Execute `/workflows:distill` to validate new detection method works
 - [ ] **Process pending conversations:** 41 identified conversations need processing
 - [ ] **Validate completitud accuracy:** Ensure cross-reference system prevents all false positives
 
@@ -112,7 +112,7 @@ pending = available - processed
 ## Context for Next Session
 
 **Foundation solid:** Hybrid detection system implemented and ready for testing
-**Clear priority:** Test the new system by running `/distill` to validate it works correctly
+**Clear priority:** Test the new system by running `/workflows:distill` to validate it works correctly
 **Known pending work:** 41 conversations identified and ready for processing
 **Methodology established:** Think x 4 systematic analysis now standard requirement
 
@@ -130,7 +130,7 @@ pending = available - processed
 - Establishes methodology foundation for future analytical work
 
 **Commands enhanced:**
-- `/distill` now has robust completitud detection
+- `/workflows:distill` now has robust completitud detection
 - Nuclei infrastructure ready for systematic processing
 - Cross-reference validation prevents future metric issues
 

@@ -100,7 +100,7 @@ Pues es que antes de pedirte que consolides algo, a mí me parece que lo más im
 
 ### 3. Arquitectura Dual
 - **`/narratives/`**: Sistema orgánico (conversaciones → destilación)
-- **`/docs/context/`**: Documentación oficial (mejores prácticas)
+- **`/actions:docs/context/`**: Documentación oficial (mejores prácticas)
 
 ### 4. Principios Fundamentales
 - **Simplicidad**: Un comando `/meta-narrative` vs múltiples comandos

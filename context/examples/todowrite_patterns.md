@@ -1,0 +1,44 @@
+# TodoWrite Patterns - Ejemplos Metodología Auto-Actualización
+
+**29/07/2025 09:20 CDMX | Actualizado: 29/07/2025 09:20 CDMX** | Ejemplos concretos TodoWrite con auto-detección dependencias
+
+## Pattern: Auto-Addition Algorithm
+1. Modify file X →
+2. Scan for references to X →
+3. Auto-add "Update referencing files: [list]" →
+4. Scan X content for outbound references →
+5. Auto-add "Validate referenced files still align: [list]"
+
+## Pattern: Phase Execution Flow
+User request → Initial tasks → Auto-scan dependencies → Auto-add propagation tasks
+
+## Pattern: Dependency Detection Examples
+
+### Pattern: Configuration Changes
+1. Modificar: /Users/nalve/ce-simple/.claude/commands/
+2. → Auto-add task: "Actualizar CLAUDE.md con nuevos comandos"
+
+### Pattern: Context Changes  
+1. Modificar: context/
+2. → Auto-add task: "Revisar cross-references en documentación"
+
+### Pattern: Authority Changes
+1. Modificar: user-vision/
+2. → Auto-add task: "Validar system alignment con nueva autoridad"
+
+## Pattern: Auto-Detection Triggers Complete
+
+### Pattern: API Changes → Client Updates
+Edit API → auto-add "sync client code using API"
+
+### Pattern: Config Changes → Documentation  
+Modificar config → auto-add "actualizar documentation referencing config"
+
+### Pattern: Feature Changes → README
+Add feature → auto-add "Update README.md with new functionality"
+
+---
+
+## Enlaces → Información Complementaria  
+**Si necesitas metodología:** → context/decisions/todowrite_methodology.md:25-45
+**Si requieres implementation:** → docs/workflows/todowrite_integration.md

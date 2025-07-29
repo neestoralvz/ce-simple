@@ -6,12 +6,12 @@
 
 ## Resumen Ejecutivo
 
-Sesión iniciada con `/partner` challenge que cuestionó reorganización excesiva. Usuario rechazó simplificación agresiva, generando rebalance que elimina metadata reports manteniendo información granular. Redefinición completa de Layer 2 de monolítico a temático, regeneración Layer 3 como documentación oficial derivada de síntesis vs archivos heredados.
+Sesión iniciada con `/roles:partner` challenge que cuestionó reorganización excesiva. Usuario rechazó simplificación agresiva, generando rebalance que elimina metadata reports manteniendo información granular. Redefinición completa de Layer 2 de monolítico a temático, regeneración Layer 3 como documentación oficial derivada de síntesis vs archivos heredados.
 
 ## Logros Principales Esta Sesión
 
 ### ✅ Challenge System Validation
-- **Inicio con `/partner`**: Sistema cuestionó reorganización inicial apropiadamente
+- **Inicio con `/roles:partner`**: Sistema cuestionó reorganización inicial apropiadamente
 - **User feedback crítico**: Rechazo a simplificación agresiva preservó granularidad
 - **Balance emergente**: Entre simplificación y preservación de información
 
@@ -45,9 +45,9 @@ Sesión iniciada con `/partner` challenge que cuestionó reorganización excesiv
 
 ### ✅ Command System Updates
 **Comandos actualizados con nueva estructura:**
-- `/distill` - Referencias a Layer 2 temático y Layer 3 regenerado
-- `/challenge` - Integración con flujo de reorganización
-- `/docs` - Workflow con documentación oficial regenerada
+- `/workflows:distill` - Referencias a Layer 2 temático y Layer 3 regenerado
+- `/roles:challenge` - Integración con flujo de reorganización
+- `/actions:docs` - Workflow con documentación oficial regenerada
 - `/maintain` - Consistencia con nueva arquitectura layer
 
 ## Contexto Necesario Próxima Sesión
@@ -64,7 +64,7 @@ Sesión iniciada con `/partner` challenge que cuestionó reorganización excesiv
 
 ### Items Completados de Handoffs Anteriores
 
-- [x] **Challenge system validation**: `/partner` funcionó apropiadamente cuestionando simplificación
+- [x] **Challenge system validation**: `/roles:partner` funcionó apropiadamente cuestionando simplificación
 - [x] **Balance between simplification/granularity**: Usuario rechazó agresividad, generó balance
 - [x] **Reorganización Layer 2**: De monolítico a temático completado
 - [x] **Regeneración Layer 3**: Documentación oficial desde síntesis vs herencia
@@ -72,7 +72,7 @@ Sesión iniciada con `/partner` challenge que cuestionó reorganización excesiv
 ## Nuevos Items Pendientes Identificados
 
 ### Alta Prioridad
-- **Continuar Layer 1 absorption**: 72% quotes restantes por procesar vía `/distill`
+- **Continuar Layer 1 absorption**: 72% quotes restantes por procesar vía `/workflows:distill`
 - **Validar flujo completo**: Probar Layer 1 → Layer 2 → Layer 3 → TRUTH_SOURCE
 - **Testing command coordination**: Validar comandos con nueva estructura
 
@@ -89,7 +89,7 @@ Sesión iniciada con `/partner` challenge que cuestionó reorganización excesiv
 ## Próximos Pasos Sugeridos
 
 ### Inmediato (Próxima ejecución)
-1. **Continuar `/distill`**: Absorber 72% quotes restantes en Layer 1 nuclei
+1. **Continuar `/workflows:distill`**: Absorber 72% quotes restantes en Layer 1 nuclei
 2. **Test distillation flow**: Ejecutar flujo completo para validar reorganización
 3. **Command coordination testing**: Probar comandos en nueva estructura
 
@@ -128,7 +128,7 @@ Sesión iniciada con `/partner` challenge que cuestionó reorganización excesiv
 ## Evolución Observada
 
 ### Challenge System Functioning
-**`/partner` appropriately challenged reorganization:**
+**`/roles:partner` appropriately challenged reorganization:**
 - Sistema detectó potencial over-simplificación
 - User feedback generó course correction responsable
 - Balance emergente mejor que propuesta inicial

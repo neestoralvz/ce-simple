@@ -2,7 +2,7 @@
 
 **Timestamp**: 20250728_2126  
 **Tipo de Sesión**: Destilación automática completa con convergencia total  
-**Comando Principal**: `/distill` (ejecución completa convergencia automática)
+**Comando Principal**: `/workflows:distill` (ejecución completa convergencia automática)
 
 ## Resumen Ejecutivo
 
@@ -109,7 +109,7 @@ El sistema challenger proporcionó validación experimental perfecta:
 
 ## Referencias de Conversación
 
-- **Conversation source**: Full `/distill` execution with auto-convergence
+- **Conversation source**: Full `/workflows:distill` execution with auto-convergence
 - **Key validation**: Challenge system experimental testing (20250729)
 - **Crystallization**: User authority over AI optimization definitively established
 - **Auto-regeneration**: CLAUDE.md regenerated without bias successfully

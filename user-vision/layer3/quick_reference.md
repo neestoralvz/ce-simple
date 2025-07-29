@@ -6,18 +6,18 @@
 ## Revolutionary Command Quick Reference
 
 ### Core Commands (Enhanced)
-- **`/start`** - Universal ultra-orchestrator entry point with multi-conversation assessment  
-- **`/distill`** - Layer distillation: raw → núcleos → síntesis temática → docs oficiales
-- **`/challenge`** - Challenge-protected validation against both stagnation y over-engineering
-- **`/partner`** - Consultor constructor for authority-driven simplification
-- **`/docs`** - Document creation with real-time user-vision/ integration
-- **`/git`** - Git-native worktree management for parallel conversations
+- **`/workflows:start`** - Universal ultra-orchestrator entry point with multi-conversation assessment  
+- **`/workflows:distill`** - Layer distillation: raw → núcleos → síntesis temática → docs oficiales
+- **`/roles:challenge`** - Challenge-protected validation against both stagnation y over-engineering
+- **`/roles:partner`** - Consultor constructor for authority-driven simplification
+- **`/actions:docs`** - Document creation with real-time user-vision/ integration
+- **`/actions:git`** - Git-native worktree management for parallel conversations
 
 ### Revolutionary Workflow Commands  
-- **`/explore`** - Codebase navigation with temporal validation
-- **`/debug`** - Systematic resolution with background process management
+- **`/workflows:explore`** - Codebase navigation with temporal validation
+- **`/workflows:debug`** - Systematic resolution with background process management
 - **`/maintain`** - System maintenance including git worktree coordination
-- **`/close`** - Session capture with multi-conversation convergence support
+- **`/workflows:close`** - Session capture with multi-conversation convergence support
 
 ### Multi-Conversation Orchestration
 **New capability:** Usuario as ultra-orchestrator of N parallel conversations

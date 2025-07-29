@@ -8,7 +8,7 @@
 /user-vision/raw/conversations/ (CONVERSACIONES RAW)
 /user-vision/                   (FUENTE DE VERDAD USUARIO)
 /handoff/                       (CONTINUIDAD ENTRE SESIONES)
-/docs/                          (MÓDULOS TÉCNICOS ESPECIALIZADOS)
+/actions:docs/                          (MÓDULOS TÉCNICOS ESPECIALIZADOS)
 ```
 
 ### Jerarquía de Autoridad
@@ -51,7 +51,7 @@ docs/                           (MÓDULOS TÉCNICOS)
 
 ## Diseño Modular
 
-### /docs/ como Complemento Técnico
+### /actions:docs/ como Complemento Técnico
 - **docs/core/**: Principios fundamentales inmutables
 - **docs/workflows/**: Documentación detallada de comandos
 - **docs/maintenance/**: Reglas y validaciones del sistema
@@ -71,24 +71,24 @@ docs/                           (MÓDULOS TÉCNICOS)
 ### Captura de Conversaciones
 ```
 Conversación → user-vision/raw/conversations/ 
-           → /distill → Layer 1, 2, 3
+           → /workflows:distill → Layer 1, 2, 3
            → TRUTH_SOURCE.md actualización
            → CLAUDE.md regeneración automática
 ```
 
 ### Coordinación Entre Comandos
 ```
-/start → orienta y carga contexto
+/workflows:start → orienta y carga contexto
 otros comandos → ejecutan tareas específicas  
-/git → integra con todos para commits inteligentes
-/partner → valida decisiones arquitecturales
-/close → captura conversación y commit cambios
+/actions:git → integra con todos para commits inteligentes
+/roles:partner → valida decisiones arquitecturales
+/workflows:close → captura conversación y commit cambios
 ```
 
 ### Evolución del Sistema
 ```
 Conversación natural → raw/ storage
-                   → /distill processing  
+                   → /workflows:distill processing  
                    → Layer distillation
                    → TRUTH_SOURCE.md crystallization
                    → System adaptation

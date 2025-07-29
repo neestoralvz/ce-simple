@@ -1,8 +1,8 @@
 # Conversación: Distillation Maintenance + Complete Convergence
 
 **Date:** 2025-07-28 21:54 (Ciudad de México)  
-**Session Type:** Sistema `/distill` execution with maintenance convergence  
-**Commands Used:** `/distill` (complete automatic convergence)  
+**Session Type:** Sistema `/workflows:distill` execution with maintenance convergence  
+**Commands Used:** `/workflows:distill` (complete automatic convergence)  
 
 ## Resumen Ejecutivo
 

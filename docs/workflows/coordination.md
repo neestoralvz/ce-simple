@@ -11,39 +11,39 @@ El sistema opera bajo un modelo de orquestación donde el agente principal coord
 
 ### Coordinación Secuencial
 ```
-/start → /explore → /debug → /git → /close
+/workflows:start → /workflows:explore → /workflows:debug → /actions:git → /workflows:close
 ```
 **Caso de uso**: Resolver un problema específico del codebase
 **Flujo**: Inicializar → Investigar → Solucionar → Versionar → Cerrar
 
 ### Coordinación Paralela
 ```
-/partner (validador continuo) + /maintain (monitor de salud)
+/roles:partner (validador continuo) + /maintain (monitor de salud)
 ```
 **Caso de uso**: Validación y mantenimiento durante cualquier operación
 **Flujo**: Ejecución simultánea de validación y monitoreo
 
 ### Coordinación Condicional
 ```
-IF (cambios sistémicos) THEN /distill → CLAUDE.md update
-IF (documentación requerida) THEN /docs
-IF (decisión arquitectural) THEN /partner validation
+IF (cambios sistémicos) THEN /workflows:distill → CLAUDE.md update
+IF (documentación requerida) THEN /actions:docs
+IF (decisión arquitectural) THEN /roles:partner validation
 ```
 
 ## Integraciones Específicas
 
-### /git como Integrador Universal
+### /actions:git como Integrador Universal
 **Coordina con**: TODOS los comandos
 **Responsabilidad**: Commits inteligentes contextualizados
-**Patrón**: Cualquier comando puede activar /git para versionar cambios
+**Patrón**: Cualquier comando puede activar /actions:git para versionar cambios
 
-### /partner como Validator Continuo  
+### /roles:partner como Validator Continuo  
 **Coordina con**: TODOS los comandos
 **Responsabilidad**: Validación de decisiones arquitecturales
 **Patrón**: Puede interrumpir cualquier flujo para validar simplicity/alignment
 
-### /distill como Sistema Evolutivo
-**Coordina con**: /close (captura) → procesamiento batch
+### /workflows:distill como Sistema Evolutivo
+**Coordina con**: /workflows:close (captura) → procesamiento batch
 **Responsabilidad**: Evolución orgánica del sistema  
 **Patrón**: Procesa conversaciones acumuladas → actualiza CLAUDE.md
 
@@ -56,55 +56,55 @@ IF (decisión arquitectural) THEN /partner validation
 
 ### Comunicación Explícita
 Los comandos se coordinan a través de:
-- **Referencias directas**: "Necesito que /git maneje este commit"
+- **Referencias directas**: "Necesito que /actions:git maneje este commit"
 - **Estado compartido**: user-vision/ como fuente de verdad común
 - **Handoff files**: Transferencia de contexto entre comandos
 
 ### Comunicación Implícita
-- **Patrones establecidos**: /start siempre al inicio, /close siempre al final
-- **Triggers automáticos**: Cambios sistémicos → /distill automático
-- **Validaciones de fondo**: /partner validando decisiones continuamente
+- **Patrones establecidos**: /workflows:start siempre al inicio, /workflows:close siempre al final
+- **Triggers automáticos**: Cambios sistémicos → /workflows:distill automático
+- **Validaciones de fondo**: /roles:partner validando decisiones continuamente
 
 ## Casos de Uso Comunes
 
 ### Desarrollo de Nueva Funcionalidad
 ```
-/start → context loading
-/partner → architectural validation  
-/explore → codebase understanding
-/docs → documentation creation
-/debug → testing and refinement
-/git → version control
-/close → session capture
+/workflows:start → context loading
+/roles:partner → architectural validation  
+/workflows:explore → codebase understanding
+/actions:docs → documentation creation
+/workflows:debug → testing and refinement
+/actions:git → version control
+/workflows:close → session capture
 ```
 
 ### Resolución de Bug
 ```
-/start → problem identification
-/explore → bug investigation  
-/debug → solution implementation
-/git → fix commit
+/workflows:start → problem identification
+/workflows:explore → bug investigation  
+/workflows:debug → solution implementation
+/actions:git → fix commit
 /maintain → system health check
-/close → resolution documentation
+/workflows:close → resolution documentation
 ```
 
 ### Evolución del Sistema
 ```
-Conversaciones acumuladas → /distill → processing
+Conversaciones acumuladas → /workflows:distill → processing
 TRUTH_SOURCE.md → updated authority
 CLAUDE.md → auto-regeneration
 /maintain → consistency validation
-/git → evolutionary commit
+/actions:git → evolutionary commit
 ```
 
 ### Planificación Arquitectural
 ```
-/start → context preparation
-/partner → continuous validation
+/workflows:start → context preparation
+/roles:partner → continuous validation
 User conversation → natural planning
-/docs → decision documentation  
-/git → architectural commit
-/close → planning capture
+/actions:docs → decision documentation  
+/actions:git → architectural commit
+/workflows:close → planning capture
 ```
 
 ## Principios de Coordinación
@@ -130,7 +130,7 @@ Los comandos NO deben requerir otros comandos para funcionar básicamente.
 No crear sistemas de coordinación que requieran configuración compleja o metadata.
 
 ### Avoid: Estado Compartido Mutable
-user-vision/ es readonly para comandos. Solo el usuario y /distill pueden modificarlo.
+user-vision/ es readonly para comandos. Solo el usuario y /workflows:distill pueden modificarlo.
 
 ### Avoid: Over-Orchestration  
 No sobre-orquestar. Permitir que la coordinación emerja naturalmente del uso.

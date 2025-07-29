@@ -41,7 +41,7 @@ ce-simple/
 
 ### Directorios Clave
 
-#### `/docs/context/insights/`
+#### `/actions:docs/context/insights/`
 Aquí se almacenan todos los insights capturados de usuarios:
 - `frontend-requirements.md` - Requisitos de interfaz
 - `api-architecture.md` - Arquitectura de APIs
@@ -88,13 +88,13 @@ Comandos personalizados para facilitar el flujo de trabajo:
    - Consolida la información en archivos existentes o crea nuevos según corresponda
 
 ### Para Consultar Información Existente
-1. **Navega a `/docs/context/insights/`**
+1. **Navega a `/actions:docs/context/insights/`**
 2. **Busca el archivo relevante por tema**
 3. **Consulta criterios de éxito y restricciones**
 4. **Úsalo como referencia para desarrollo**
 
 ### Para Desarrolladores
-1. **Antes de implementar:** Consulta insights relevantes en `/docs/context/insights/`
+1. **Antes de implementar:** Consulta insights relevantes en `/actions:docs/context/insights/`
 2. **Durante desarrollo:** Valida que tu implementación cumple los criterios de éxito
 3. **Al finalizar:** Actualiza insights si descubres nuevos requisitos
 

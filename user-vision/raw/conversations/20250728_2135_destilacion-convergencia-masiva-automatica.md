@@ -2,14 +2,14 @@
 
 **Date:** 2025-07-28 21:35 (Ciudad de México)  
 **Session Type:** Auto-distillation with massive batch processing  
-**Commands Used:** `/distill`  
+**Commands Used:** `/workflows:distill`  
 
 ## Conversation Flow
 
 ### Session Start: System Auto-Detection
 **Context:** Sistema de destilación con auto-detección para identificar estado y conversaciones pendientes
 
-**User:** /distill
+**User:** /workflows:distill
 
 **System Response:** Deployed TodoWrite tool para planning systematic task breakdown:
 1. Auto-detect current system state (Layer 1, 2, 3)

@@ -1,18 +1,18 @@
 # Conversación: Partner Analysis - Arquitectura Destilación vs Simplicidad
 
 **Timestamp**: 2025-07-28 22:29 (Mexico City)  
-**Comandos**: /partner → /close  
+**Comandos**: /roles:partner → /workflows:close  
 **Tema central**: Análisis arquitectural profundo sobre evolución del sistema de destilación
 
 ## Conversación Completa
 
-### Inicio - Comando /partner
+### Inicio - Comando /roles:partner
 
 **Usuario**: me gustaria saber como funciona el comando de destilacion
 
-**Assistant**: Perfecto, vamos a entender el `/distill` desde adentro. Como tu socio constructor, me interesa ver si este comando realmente está funcionando como lo imaginaste o si se ha vuelto más complejo de lo necesario.
+**Assistant**: Perfecto, vamos a entender el `/workflows:distill` desde adentro. Como tu socio constructor, me interesa ver si este comando realmente está funcionando como lo imaginaste o si se ha vuelto más complejo de lo necesario.
 
-[Lee .claude/commands/distill.md]
+[Lee .claude/commands/workflows:distill.md]
 
 Interesante, veo que tienes un sistema bastante sofisticado funcionando. Como tu socio constructor, aquí están mis observaciones directas:
 
@@ -93,7 +93,7 @@ user-vision/
 ### **Paso 4: Control de Archivo Simple**
 **En lugar de timestamps y híbridos:**
 - Cada archivo en `/raw/conversations/` tiene status: `[PROCESSED]` o `[PENDING]` al inicio
-- `/partner` revisa lista y pregunta: "¿Qué quieres capturar de esta conversación?"
+- `/roles:partner` revisa lista y pregunta: "¿Qué quieres capturar de esta conversación?"
 - Tú decides qué vale la pena vs qué se archiva sin procesar
 
 ### **Paso 5: Test de Valor Real**
@@ -127,7 +127,7 @@ user-vision/
 - Crear `decisions.md` con solo esos insights críticos
 - Crear `current_session.md` para esta conversación
 
-### **Paso 3: Simplificación del /distill**
+### **Paso 3: Simplificación del /workflows:distill**
 - Modificar el comando para usar la nueva estructura simple
 - En lugar de 4 layers → solo: raw → decisions.md → TRUTH_SOURCE.md
 - Control manual simple: "¿Qué insights de esta conversación quieres guardar?"
@@ -172,7 +172,7 @@ El problema fundamental: estamos construyendo un sistema de gestión de conocimi
 - Extensión de memoria = capturar solo lo que el usuario considera valioso, cuando lo considera valioso
 
 ## **ULTRATHINK**
-**Insight profundo**: El valor real no está en layers ni completitud - está en acceso rápido a decisiones pasadas cuando las necesita. Por eso sigue usando /distill: funciona para capturar valor, pero con overhead innecesario.
+**Insight profundo**: El valor real no está en layers ni completitud - está en acceso rápido a decisiones pasadas cuando las necesita. Por eso sigue usando /workflows:distill: funciona para capturar valor, pero con overhead innecesario.
 
 **La esencia funcional real**:
 1. Usuario decide qué conversaciones revisar (control manual)
@@ -232,7 +232,7 @@ El usuario dice "no lo sé, piénsalo más" - esto significa que mis análisis a
 ¿Qué estoy perdiendo? El usuario:
 - Quiere automatización (no manual)
 - Pero el sistema actual automático es complejo
-- Y sigue usando /distill repetitivamente
+- Y sigue usando /workflows:distill repetitivamente
 - Dice "no sé" cuando propongo soluciones
 
 **Insight**: Tal vez el problema no es el CÓMO del sistema, sino el POR QUÉ. ¿Para qué sirve realmente la destilación en su workflow?
@@ -270,10 +270,10 @@ La destilación es INFRAESTRUCTURA CRÍTICA que alimenta todo el ecosistema. No 
 
 ## **THINK HARD (Round 3)**
 ¿Cómo debería funcionar esta integración inteligente?
-- `/partner` debería conocer tus patrones de decisión pasados
-- `/challenge` debería saber qué has validado antes
-- `/docs` debería usar tu vocabulario y estilo
-- `/git` debería entender tus workflows preferidos
+- `/roles:partner` debería conocer tus patrones de decisión pasados
+- `/roles:challenge` debería saber qué has validado antes
+- `/actions:docs` debería usar tu vocabulario y estilo
+- `/actions:git` debería entender tus workflows preferidos
 
 La destilación debería ser el **cerebro compartido** entre comandos.
 
@@ -292,7 +292,7 @@ El problema actual: la destilación captura bien pero no **distribuye** bien. Lo
 
 **La pregunta real**: ¿Cómo hacer que la destilación no solo capture insights, sino que los **active proactivamente** cuando son relevantes?
 
-**Ejemplo**: Cuando usas `/partner`, automáticamente debería consultar tus patrones de simplicidad vs complejidad para darte advice personalizado basado en tu historial real.
+**Ejemplo**: Cuando usas `/roles:partner`, automáticamente debería consultar tus patrones de simplicidad vs complejidad para darte advice personalizado basado en tu historial real.
 
 ¿Esto está en la dirección correcta del problema que quieres resolver?
 
@@ -321,16 +321,16 @@ El usuario dice "ayúdame" - necesito ir más allá del análisis y ofrecer solu
 
 ### **Problema actual**: Comandos aislados
 ```
-/partner → ejecuta sin contexto histórico
-/challenge → no sabe qué has validado antes  
-/docs → no conoce tu estilo/vocabulario
+/roles:partner → ejecuta sin contexto histórico
+/roles:challenge → no sabe qué has validado antes  
+/actions:docs → no conoce tu estilo/vocabulario
 ```
 
 ### **Solución: Auto-Context Injection**
 ```
-/partner → auto-consulta user-vision/simplicidad_belleza.md para advice personalizado
-/challenge → auto-consulta user-vision/autoridad_vision.md para validaciones pasadas
-/docs → auto-consulta user-vision/metodologia_socratica.md para tone/style
+/roles:partner → auto-consulta user-vision/simplicidad_belleza.md para advice personalizado
+/roles:challenge → auto-consulta user-vision/autoridad_vision.md para validaciones pasadas
+/actions:docs → auto-consulta user-vision/metodologia_socratica.md para tone/style
 ```
 
 ### **Implementación concreta**:
@@ -381,7 +381,7 @@ si esto suena a lo que quiero
 ## **El Flujo Perfecto:**
 
 ### **Orden Cronológico Automático**
-- `/distill` va automáticamente a la conversación MÁS ANTIGUA sin procesar
+- `/workflows:distill` va automáticamente a la conversación MÁS ANTIGUA sin procesar
 - Garantiza procesamiento temporal correcto (contexto histórico preservado)
 
 ### **Exhaustión Completa por Conversación**
@@ -403,7 +403,7 @@ si esto suena a lo que quiero
 
 ## **La implementación sería:**
 ```
-/distill → 
+/workflows:distill → 
 1. ls -t raw/conversations/ | tail -1 (más antigua)
 2. Extraer insights hasta agotamiento
 3. mv archivo a raw/processed/
@@ -619,7 +619,7 @@ El sistema actual ya funciona. ¿Por qué lo estoy complicando?
 
 [Clarificación sobre estructura]
 
-### Conclusión y Activación /close
+### Conclusión y Activación /workflows:close
 
 **Usuario**: entonces, cual es el plan?
 
@@ -675,8 +675,8 @@ El sistema actual ya funciona. ¿Por qué lo estoy complicando?
 
 [Análisis final think x4 sobre complejidad vs simplicidad]
 
-**Usuario**: Activa /close
+**Usuario**: Activa /workflows:close
 
 ## Fin de Conversación - Transición a Cierre
 
-[Se activa comando /close para procesar la sesión completa]
+[Se activa comando /workflows:close para procesar la sesión completa]

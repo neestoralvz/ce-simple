@@ -2,7 +2,7 @@
 
 **Date:** 2025-07-28 21:35 (Ciudad de México)  
 **Session Type:** Destilación automática masiva con convergencia total  
-**Command Used:** `/distill`  
+**Command Used:** `/workflows:distill`  
 **Duration:** ~45 minutos  
 **Status:** CONVERGENCIA MASIVA COMPLETADA
 

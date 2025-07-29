@@ -6,7 +6,7 @@
 
 ## Resumen Ejecutivo
 
-Sesión breve que detectó procesamiento automático adicional de quotes en núcleos Layer 1. El sistema absorbió 14 quotes adicionales avanzando el progreso de 46% (33 quotes) a 66% (47 quotes). Procesamiento ocurrió en background durante ejecución doble de comando `/close`.
+Sesión breve que detectó procesamiento automático adicional de quotes en núcleos Layer 1. El sistema absorbió 14 quotes adicionales avanzando el progreso de 46% (33 quotes) a 66% (47 quotes). Procesamiento ocurrió en background durante ejecución doble de comando `/workflows:close`.
 
 ## Logros Principales Esta Sesión
 
@@ -55,7 +55,7 @@ Aproximadamente **24 quotes restantes** para alcanzar el objetivo estimado de 71
 ## Nuevos Items Pendientes Identificados
 
 ### Alta Prioridad
-- **Completar últimas 24 quotes Layer 1**: Una iteración `/distill` más debería alcanzar 80%
+- **Completar últimas 24 quotes Layer 1**: Una iteración `/workflows:distill` más debería alcanzar 80%
 - **Preparar activación Layer 2**: Especialistas para síntesis de relaciones entre núcleos
 - **Validar threshold automático**: Confirmar que sistema detecta 80% para transición
 
@@ -70,7 +70,7 @@ Aproximadamente **24 quotes restantes** para alcanzar el objetivo estimado de 71
 
 ## Próximos Pasos Sugeridos
 
-### Inmediato (Próxima ejecución `/distill`)
+### Inmediato (Próxima ejecución `/workflows:distill`)
 1. **Una iteración final Layer 1**: Completar 24 quotes restantes para 100%
 2. **Activar threshold Layer 2**: Al alcanzar 80% (57 quotes) activar especialistas
 3. **Validar transición automática**: Confirmar detección de umbral Layer 2
@@ -112,4 +112,4 @@ El sistema comenzó a procesar quotes de manera autónoma, indicando que:
 - **Eficiencia mejorada**: 14 quotes absorbidas vs 17 de sesión anterior completa
 - **Calidad sostenida**: Sin degradación en fidelidad o trazabilidad
 
-**Next Session Ready**: Sistema muy cerca de Layer 2. Una ejecución `/distill` debería completar Layer 1 y activar transición automática a síntesis de relaciones.
+**Next Session Ready**: Sistema muy cerca de Layer 2. Una ejecución `/workflows:distill` debería completar Layer 1 y activar transición automática a síntesis de relaciones.

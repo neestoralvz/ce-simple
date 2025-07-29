@@ -2,7 +2,7 @@
 
 **Date:** 2025-07-29 21:00  
 **Session Type:** Structural reorganization + Challenge system validation  
-**Commands Used:** `/partner`, `/challenge`, manual implementation  
+**Commands Used:** `/roles:partner`, `/roles:challenge`, manual implementation  
 
 ## Conversation Flow
 
@@ -36,7 +36,7 @@
 **Opción recomendada**: 
 - Solo `TRUTH_SOURCE.md` + `raw/conversations/`
 - Eliminar layers, reportes, núcleos fragmentados
-- `/distill` simplificado: agregar nuevos insights únicos directamente al TRUTH_SOURCE
+- `/workflows:distill` simplificado: agregar nuevos insights únicos directamente al TRUTH_SOURCE
 
 ### 🎯 Pregunta Central
 **¿Esta reorganización resuelve un problema real tuyo o crea complejidad para solucionar un problema que no existía?**
@@ -72,8 +72,8 @@
 - Removed `_distillation_report.md`
 - Removed `_synthesis_report.md` 
 - Removed `_documentation_report.md`
-- Updated `/distill` command to use auto-detection instead of reports
-- Updated `/docs` and `/maintain` commands to reference TRUTH_SOURCE correctly
+- Updated `/workflows:distill` command to use auto-detection instead of reports
+- Updated `/actions:docs` and `/maintain` commands to reference TRUTH_SOURCE correctly
 
 ### User Insight: Layer 2 and 3 Problems
 **User:** "no veo realmente como es que funciona el layer 2, no veo como se sigue capturando de manera tematica las relaciones que se van encontrando en la layer 1. ademas layer 3 ya deberian de ser documetnacion oficial de cierto tipo, pero solo con el contenido de las layer anteriores y la conversacion con el usuario"
@@ -130,7 +130,7 @@
    - `quick_reference.md` - Practical synthesis of all layers
 
 ### Implementation Phase 4: Command Updates
-**Updated `/distill` command process:**
+**Updated `/workflows:distill` command process:**
 ```markdown
 ### Layer 2: Síntesis Temática de Relaciones (solo cuando Layer 1 >80%)
 
@@ -155,9 +155,9 @@
 **User:** "hay que modificar tambien otros comandos que pudieran hacer referencia a los reportes que existian antes"
 
 **Research and fixes:**
-- Found and updated `/docs.md`: `consolidated_vision` → `TRUTH_SOURCE`
+- Found and updated `/actions:docs.md`: `consolidated_vision` → `TRUTH_SOURCE`
 - Found and updated `/maintain.md`: Authority hierarchy clarification
-- Found and updated `/distill.md`: "reporte de Layer 1" → "auto-detección"
+- Found and updated `/workflows:distill.md`: "reporte de Layer 1" → "auto-detección"
 
 ### Final Validation
 **System structure achieved:**
@@ -186,7 +186,7 @@ user-vision/
 ## Key Insights from Session
 
 ### Challenge System Validation
-- `/partner` command functioned correctly by challenging over-engineering
+- `/roles:partner` command functioned correctly by challenging over-engineering
 - User feedback appropriately overrode challenger recommendation
 - System demonstrated ability to course-correct based on user preferences
 - Balance between simplicity and information preservation achieved

@@ -2,12 +2,12 @@
 
 **Date:** 2025-07-28 20:55  
 **Session Type:** Critical system correction + Think x 4 methodology enforcement  
-**Commands Used:** `/distill` analysis, manual implementation, systematic debugging  
+**Commands Used:** `/workflows:distill` analysis, manual implementation, systematic debugging  
 
 ## Conversation Flow
 
 ### Session Start: Metrics Validity Challenge
-**Context:** Sistema `/distill` reportaba progreso con métricas aparentemente válidas  
+**Context:** Sistema `/workflows:distill` reportaba progreso con métricas aparentemente válidas  
 
 **User:** "como es que se esta calculando el layer 1? me parece que es una medida que no funciona"
 
@@ -56,7 +56,7 @@
 
 ### Implementation Phase: Hybrid System
 **System Components Implemented:**
-1. **Updated `/distill` command** with hybrid detection logic documented
+1. **Updated `/workflows:distill` command** with hybrid detection logic documented
 2. **Infrastructure update**: "Conversations Processed" sections added to all Layer 1 nuclei
 3. **Auto-detection scripts** documented with bash implementation examples
 4. **Cross-reference validation** system to prevent false positives/negatives

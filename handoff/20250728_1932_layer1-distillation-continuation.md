@@ -1,12 +1,12 @@
 # Sesión Handoff: Layer 1 Distillation Continuation
 
 **Timestamp**: 20250728_1932  
-**Tipo**: Ejecución técnica sistemática /distill  
+**Tipo**: Ejecución técnica sistemática /workflows:distill  
 **Duración**: Sesión enfocada en avance iterativo Layer 1  
 
 ## Resumen Ejecutivo
 
-Ejecución sistemática del comando `/distill` que avanzó el procesamiento Layer 1 de 23% (16 quotes) a 46% (33 quotes). Se absorbieron 17 quotes adicionales en los 6 núcleos temáticos existentes, expandiendo cada núcleo con contenido relevante encontrado en conversaciones recientes.
+Ejecución sistemática del comando `/workflows:distill` que avanzó el procesamiento Layer 1 de 23% (16 quotes) a 46% (33 quotes). Se absorbieron 17 quotes adicionales en los 6 núcleos temáticos existentes, expandiendo cada núcleo con contenido relevante encontrado en conversaciones recientes.
 
 ## Logros Principales Esta Sesión
 
@@ -29,7 +29,7 @@ Ejecución sistemática del comando `/distill` que avanzó el procesamiento Laye
 ### ✅ Progreso Hacia Layer 2
 - **Estado actual**: 33/71 quotes procesados (46%)
 - **Umbral Layer 2**: Requiere 80% para transición
-- **Iteraciones restantes**: 2-3 ejecuciones `/distill` estimadas
+- **Iteraciones restantes**: 2-3 ejecuciones `/workflows:distill` estimadas
 
 ### ✅ Documentación Actualizada
 - Reporte de destilación actualizado con progreso específico
@@ -75,7 +75,7 @@ Aproximadamente 38 quotes restantes distribuidas en las ~40 conversaciones resta
 
 ## Próximos Pasos Sugeridos
 
-### Inmediato (Próxima ejecución `/distill`)
+### Inmediato (Próxima ejecución `/workflows:distill`)
 1. **Continuar procesamiento sistemático**: Leer próximo batch de conversaciones
 2. **Absorber quotes en núcleos apropiados**: Mantener distribución balanceada
 3. **Actualizar progreso**: Tracking preciso hacia objetivo 80% Layer 2
@@ -113,4 +113,4 @@ El sistema de destilación está funcionando exactamente como fue diseñado:
 - **Preservación perfecta**: Voz usuario mantenida sin interpretación
 - **Convergencia automática**: Sistema reporta progreso y estima iteraciones restantes
 
-**Next Session Ready**: Dashboard consolidado permite inicio inmediato con `/distill` para continuar hacia 80% Layer 1.
+**Next Session Ready**: Dashboard consolidado permite inicio inmediato con `/workflows:distill` para continuar hacia 80% Layer 1.

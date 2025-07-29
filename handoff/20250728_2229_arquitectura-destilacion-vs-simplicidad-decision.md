@@ -1,18 +1,18 @@
 # Handoff: Decisión Arquitectural - Destilación vs Simplicidad
 
 **Timestamp**: 20250728_2229  
-**Sesión**: Análisis /partner sobre arquitectura del sistema de destilación  
+**Sesión**: Análisis /roles:partner sobre arquitectura del sistema de destilación  
 **Estado**: Punto de decisión crítica pendiente
 
 ## Resumen Ejecutivo
 
-Sesión de análisis arquitectural profundo usando comando /partner para evaluar la evolución del sistema de destilación hacia auto-context injection. Se identificó tensión fundamental entre simplicidad (KISS) y modularización (SOLID/DRY), llegando a punto de decisión crítica.
+Sesión de análisis arquitectural profundo usando comando /roles:partner para evaluar la evolución del sistema de destilación hacia auto-context injection. Se identificó tensión fundamental entre simplicidad (KISS) y modularización (SOLID/DRY), llegando a punto de decisión crítica.
 
 ## Contexto de la Sesión
 
 ### Problema Original Identificado
 - Sistema de destilación actual funciona pero es complejo (4 layers + detección híbrida)
-- Usuario sigue usando `/distill` repetitivamente porque funciona, pero con overhead
+- Usuario sigue usando `/workflows:distill` repetitivamente porque funciona, pero con overhead
 - Necesidad de alimentar inteligencia a los 9 comandos del ecosistema
 
 ### Evolución del Análisis (Think x4 Aplicado)
@@ -70,12 +70,12 @@ Sesión de análisis arquitectural profundo usando comando /partner para evaluar
 
 ### Media Prioridad  
 - [ ] Auto-context injection una vez definida arquitectura
-- [ ] Modificación de `.claude/commands/distill.md` para flujo secuencial
+- [ ] Modificación de `.claude/commands/workflows:distill.md` para flujo secuencial
 - [ ] Test del sistema con primera conversación pendiente
 
 ## Próxima Sesión Sugerida
 
-**Recomendación del /partner**: Opción A (KISS)
+**Recomendación del /roles:partner**: Opción A (KISS)
 - Terminar la destilación secuencial que ya empezamos
 - Implementar auto-context injection de manera simple
 - Evitar over-engineering con arquitecturas complejas

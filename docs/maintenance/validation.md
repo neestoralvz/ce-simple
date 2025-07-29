@@ -91,7 +91,7 @@ Garantizar que toda actualización de CLAUDE.md mantiene **100% fidelidad** a la
 - [ ] **No agrega interdependencias complejas**: Mantiene independencia modular
 
 **VALIDACIÓN DE COMANDOS REFERENCIADOS**:
-- [ ] **Cada comando mantiene responsabilidad única**: /distill, /expand, /partner, etc.
+- [ ] **Cada comando mantiene responsabilidad única**: /workflows:distill, /expand, /roles:partner, etc.
 - [ ] **Enforcement de separación**: Referencias a challenger automático para validar scope
 - [ ] **Coordinación sin conflicto**: Comandos se combinan sin invasión de responsabilidades
 

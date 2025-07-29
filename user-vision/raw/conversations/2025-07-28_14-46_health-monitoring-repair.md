@@ -7,7 +7,7 @@
 
 ## SESSION OPENING
 
-### `/start` Execution and Discovery
+### `/workflows:start` Execution and Discovery
 
 **System**: Initiated session with project analysis revealing critical health monitoring issues:
 

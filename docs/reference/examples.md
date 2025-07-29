@@ -7,7 +7,7 @@ Basado en TRUTH_SOURCE.md: "el contarte una historia que creo que yo me imagino 
 
 ### ❌ Implementación Incorrecta (Scope Creep)
 ```markdown
-# Comando /debug - Resolución Sistémica ERRÓNEO
+# Comando /workflows:debug - Resolución Sistémica ERRÓNEO
 
 Eres el debugger del sistema. Tu trabajo es:
 
@@ -18,14 +18,14 @@ Eres el debugger del sistema. Tu trabajo es:
 - Y también hacer commits de los fixes
 - Plus, monitorear que el sistema se mantenga healthy
 
-Coordínate con /git para commits y /docs para updates...
+Coordínate con /actions:git para commits y /actions:docs para updates...
 ```
 
 **Problema**: Multiple responsabilidades mezcladas, viola principio única responsabilidad.
 
 ### ✅ Implementación Correcta (Responsabilidad Única)
 ```markdown
-# Comando /debug - Resolución Sistemática
+# Comando /workflows:debug - Resolución Sistemática
 
 Eres el debugger especializado con responsabilidad única inequívoca: **diagnosticar y resolver problemas técnicos específicos**.
 
@@ -36,16 +36,16 @@ Eres el debugger especializado con responsabilidad única inequívoca: **diagnos
 - Validar que fix resuelve problema original
 
 ## LO QUE NO HACES (Anti-Scope Creep)
-- No actualizas documentación (eso es /docs)
-- No haces commits (eso es /git)  
-- No validas arquitectura general (eso es /partner)
+- No actualizas documentación (eso es /actions:docs)
+- No haces commits (eso es /actions:git)  
+- No validas arquitectura general (eso es /roles:partner)
 - No monitoreas sistema health (eso es /maintain)
 
 ## COORDINACIÓN SIN INVASIÓN
 Coordinas con otros comandos pero respetas sus responsabilidades:
-- CON /explore: Para investigación codebase
-- CON /git: Para commit del fix implementado
-- CON /docs: Si fix requiere documentación update
+- CON /workflows:explore: Para investigación codebase
+- CON /actions:git: Para commit del fix implementado
+- CON /actions:docs: Si fix requiere documentación update
 
 **ENFORCEMENT**: Si te piden hacer algo fuera de debugging técnico, redirect al comando correspondiente.
 ```
@@ -60,7 +60,7 @@ Coordinas con otros comandos pero respetas sus responsabilidades:
 Perfecto, voy a agregar metadata YAML a todos los comandos para mejor organización:
 
 ```yaml
-# /.claude/commands/start.md
+# /.claude/commands/workflows:start.md
 ---
 name: start
 category: session
@@ -108,15 +108,15 @@ ALTERNATIVA: Si organización es concern, mejor modularizar docs/ existente vs c
 
 ### ❌ Duplicación Content (Anti-Pattern)
 ```markdown
-# /docs/core/principles.md
+# /actions:docs/core/principles.md
 ## Metodología Socrática
 La metodología socrática implica conversación libre sin restricciones. El usuario debe poder explorar sus ideas sin limitaciones de token economy. Este enfoque permite descubrimiento genuino...
 
-# /docs/workflows/methodology.md  
+# /actions:docs/workflows/methodology.md  
 ## Implementación Socrática
 La metodología socrática requiere conversación libre sin restricciones para permitir descubrimiento real. No debe haber limitaciones de token economy durante fase discovery...
 
-# /docs/reference/best_practices.md
+# /actions:docs/reference/best_practices.md
 ## Best Practice: Metodología
 Para implementar correctamente, usar metodología socrática con conversación libre sin restricciones de token economy...
 ```
@@ -125,19 +125,19 @@ Para implementar correctamente, usar metodología socrática con conversación l
 
 ### ✅ Reference-Only System (Correcto)
 ```markdown
-# /docs/core/methodology.md (AUTHORITATIVE SOURCE)
+# /actions:docs/core/methodology.md (AUTHORITATIVE SOURCE)
 ## Metodología Socrática Técnica Implementacional
 [Full detailed technical implementation content here...]
 
-# /docs/core/principles.md (REFERENCES ONLY)
+# /actions:docs/core/principles.md (REFERENCES ONLY)
 ## Metodología Socrática
 Ver docs/core/methodology.md para implementación técnica completa de conversación libre → comprensión → ejecución optimizada.
 
-# /docs/workflows/commands.md (REFERENCES ONLY)  
+# /actions:docs/workflows/commands.md (REFERENCES ONLY)  
 ## Coordinación Metodológica
 Los comandos implementan metodología socrática - ver docs/core/methodology.md para patrones técnicos específicos.
 
-# /docs/reference/best_practices.md (REFERENCES ONLY)
+# /actions:docs/reference/best_practices.md (REFERENCES ONLY)
 ## Best Practice: Metodología
 Implementar usando patrones en docs/core/methodology.md, especialmente conversation-first development pattern.
 ```
@@ -211,7 +211,7 @@ Continuando donde dejamos: expansión técnica implementacional complementaria p
 ```markdown
 Voy a crear un framework completo para manejar todos los casos posibles:
 
-/docs/frameworks/
+/actions:docs/frameworks/
 ├── command_framework.md
 ├── validation_framework.md  
 ├── orchestration_framework.md
@@ -247,13 +247,13 @@ Sistema crece por usage real, no por anticipación teórica.
 
 ### ❌ Complex Dependencies (Anti-Pattern)
 ```markdown  
-# Comando /git
+# Comando /actions:git
 Tu trabajo es git operations, pero también necesitas:
-- Llamar a /validate antes de cada commit
-- Coordinar con /docs para updates
-- Requiere /partner approval para changes
+- Llamar a /validations:validate antes de cada commit
+- Coordinar con /actions:docs para updates
+- Requiere /roles:partner approval para changes
 - Depend on /maintain para health check
-- Trigger /distill después de commits importantes
+- Trigger /workflows:distill después de commits importantes
 
 No puedes hacer commits sin pasar por toda esta cadena...
 ```
@@ -262,7 +262,7 @@ No puedes hacer commits sin pasar por toda esta cadena...
 
 ### ✅ Organic Coordination (Correcto)
 ```markdown
-# Comando /git - Workflow Git Integrado
+# Comando /actions:git - Workflow Git Integrado
 
 ## RESPONSABILIDAD ÚNICA
 Manejo inteligente de git operations: commits, branches, merges.
@@ -272,13 +272,13 @@ Puedes ejecutar git operations independientemente. No requieres otros comandos p
 
 ## COORDINACIÓN ORGÁNICA (No Dependency)
 PUEDES coordinarte con otros comandos cuando makes sense:
-- CON /partner: Si detected cambio sistémico, offer validation
-- CON /docs: Si committing docs/, offer to trigger documentation update  
+- CON /roles:partner: Si detected cambio sistémico, offer validation
+- CON /actions:docs: Si committing docs/, offer to trigger documentation update  
 - CON /maintain: Si detected health issues, offer to coordinate fix
 
 ## PATTERN: OFFER, NO REQUIRE
-"Detecté cambio en docs/. ¿Quieres que coordine con /docs para validation?"
-NO: "No puedo hacer commit hasta que /docs valide."
+"Detecté cambio en docs/. ¿Quieres que coordine con /actions:docs para validation?"
+NO: "No puedo hacer commit hasta que /actions:docs valide."
 
 INDEPENDENCE PRESERVADA + COORDINATION AVAILABLE = Simplicidad + Flexibilidad
 ```

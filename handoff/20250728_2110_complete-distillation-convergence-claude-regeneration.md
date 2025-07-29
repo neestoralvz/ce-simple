@@ -1,7 +1,7 @@
 # Handoff: Complete Distillation Convergence + CLAUDE.md Regeneration
 
 **Timestamp**: 2025-07-28 21:10  
-**Comando principal**: `/distill`  
+**Comando principal**: `/workflows:distill`  
 **Resultado**: Convergencia total de destilación + regeneración automática CLAUDE.md sin sesgo
 
 ## Resumen Ejecutivo

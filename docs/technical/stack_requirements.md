@@ -186,8 +186,8 @@ References: user-vision/TRUTH_SOURCE.md"
 #### Path Safety
 ```bash
 # Always use absolute paths in scripts
-SAFE_PATH="/Users/nalve/ce-simple/docs"
-UNSAFE_PATH="./docs"  # AVOID: relative paths
+SAFE_PATH="/Users/nalve/ce-simple/actions:docs"
+UNSAFE_PATH="./actions:docs"  # AVOID: relative paths
 
 # Validate paths before use
 validate_path() {

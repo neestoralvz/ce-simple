@@ -34,20 +34,20 @@ Los comandos mantienen independencia pero se coordinan inteligentemente según c
 
 ## Matrix de Interacciones
 
-### /start → Other Commands
+### /workflows:start → Other Commands
 - **Función:** Orchestration entry point
 - **Conecta con:** Cualquier comando según contexto detectado
 - **Criterio:** "las opciones que vienen tendran que estar cambiando constantemente de acuerdo a los comandos que tengamos disponibles"
 
-### /distill → /docs → /git
+### /workflows:distill → /actions:docs → /actions:git
 - **Chain pattern:** Destilación → Documentación → Versionado
 - **Trigger:** Nuevas conversaciones raw requieren procesamiento completo
 
-### /challenge → Any Command
+### /roles:challenge → Any Command
 - **Relationship:** Validation overlay para cualquier comando
 - **Activation:** Post-ejecución para validar alineación con visión
 
-### /partner → Decision Points
+### /roles:partner → Decision Points
 - **Function:** Consultation agent para decisiones arquitecturales
 - **Trigger:** Cuando hay tensiones vision ↔ simplicidad
 

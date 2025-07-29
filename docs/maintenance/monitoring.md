@@ -65,7 +65,7 @@ while true; do
     
     if [ $new_conversations -gt 5 ]; then
         echo "$(date): Triggering auto-distillation ($new_conversations new conversations)"
-        # Trigger /distill command
+        # Trigger /workflows:distill command
     fi
     
     # Update timestamp

@@ -71,7 +71,7 @@
 
 ### 6. FLUJO DE ACTUALIZACIÓN AUTOMÁTICA
 
-**CUANDO SE EJECUTA**: Automáticamente al final de `/distill`
+**CUANDO SE EJECUTA**: Automáticamente al final de `/workflows:distill`
 
 **PROCESO OBLIGATORIO**:
 1. LLM lee contexto completo (TRUTH_SOURCE.md + Layer 3 + docs/)
@@ -93,12 +93,12 @@
 
 **DETECCIÓN AUTOMÁTICA**: Sistema debe detectar cuando CLAUDE.md deriva de principios originales
 
-### 8. COORDINACIÓN CON COMANDO /distill
+### 8. COORDINACIÓN CON COMANDO /workflows:distill
 
-**INTEGRACIÓN OBLIGATORIA**: `/distill` DEBE culminar con actualización de CLAUDE.md
+**INTEGRACIÓN OBLIGATORIA**: `/workflows:distill` DEBE culminar con actualización de CLAUDE.md
 
 **FLUJO INTEGRADO**:
-- `/distill` realiza destilación Layer 1 → Layer 2 → Layer 3
+- `/workflows:distill` realiza destilación Layer 1 → Layer 2 → Layer 3
 - **NUEVA FASE FINAL**: Layer 3 → CLAUDE.md regeneración automática
 - Validación completa contra TRUTH_SOURCE.md
 - Commit solo si pasa todas las validaciones

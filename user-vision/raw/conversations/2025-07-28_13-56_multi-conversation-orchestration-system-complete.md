@@ -9,7 +9,7 @@
 
 ## CONTEXTO INICIAL
 
-**Session iniciada con `/start` command** - Research-First Protocol activo con WebSearch + MCP Context7 integration. Sistema ya contaba con:
+**Session iniciada con `/workflows:start` command** - Research-First Protocol activo con WebSearch + MCP Context7 integration. Sistema ya contaba con:
 - Multi-Subagent Intelligence Dispatcher operacional
 - Research-first methodology con date validation  
 - Background health monitoring system running
@@ -23,16 +23,16 @@
 
 ### **13:25 - Sistema Iniciado**
 
-**[SYSTEM]**: Comando `/start` ejecutado con research-first protocol.
+**[SYSTEM]**: Comando `/workflows:start` ejecutado con research-first protocol.
 
 **User**: y como voy a iniciar las conversaciones paralelas?
 
 **[CLAUDE]**: Para iniciar conversaciones paralelas tienes **3 opciones** según tu sistema:
 
-## **Opción 1: Setup Completo** `/start-concurrent-worktrees`
+## **Opción 1: Setup Completo** `/workflows:start-concurrent-worktrees`
 ```bash
 # Crea git worktrees + documento coordinación + templates
-/start-concurrent-worktrees
+/workflows:start-concurrent-worktrees
 ```
 
 ## **Opción 2: Setup Manual** (Inmediato)
@@ -268,7 +268,7 @@ CREATE TABLE conversation_registry (
 - Research-first protocol enhanced existing workflows
 
 ### **NEW COMMAND CREATED** ✅
-- **`/start-concurrent-worktrees`**: Multi-conversation orchestration via git worktrees
+- **`/workflows:start-concurrent-worktrees`**: Multi-conversation orchestration via git worktrees
 - Integrated with research-first protocol requirements
 - Document-based coordination system
 - Git worktree management for N parallel conversations

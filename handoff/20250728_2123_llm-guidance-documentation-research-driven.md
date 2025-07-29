@@ -2,7 +2,7 @@
 
 **Timestamp**: 20250728_2123  
 **Tipo de Sesión**: Técnica/Implementation  
-**Comando Principal**: /partner → investigación → implementación directa
+**Comando Principal**: /roles:partner → investigación → implementación directa
 
 ## Resumen Ejecutivo
 

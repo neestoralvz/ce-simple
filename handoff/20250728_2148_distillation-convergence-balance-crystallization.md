@@ -2,7 +2,7 @@
 
 **Date:** 2025-07-28 21:48 (Ciudad de México)
 **Session Type:** Complete distillation convergence with balance principle crystallization
-**Commands Used:** `/distill`
+**Commands Used:** `/workflows:distill`
 
 ## Session Overview
 

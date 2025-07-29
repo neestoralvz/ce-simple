@@ -92,7 +92,7 @@ Phase 4: Convergent Integration (User ultra-orchestration)
 ### Discovery Workflow Evolution
 **Fundamento:** `conversation_execution_flow.md` + `evolucion_autoridad_dynamics.md`
 
-1. **Universal Command Entry**: `/start` detecta contexto y propone ramificación
+1. **Universal Command Entry**: `/workflows:start` detecta contexto y propone ramificación
 2. **Socratic Exploration**: Sin restricciones, enfoque en comprensión máxima
 3. **Research-First Protocol**: Temporal validation + información actualizada
 4. **Multi-Conversation Planning**: Identificación de paralelización optimal

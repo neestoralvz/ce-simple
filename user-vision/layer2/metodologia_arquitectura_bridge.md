@@ -62,7 +62,7 @@ La arquitectura debe servir a la metodología humana, no al revés. "Una nueva f
 **Núcleo origen:** `simplicidad_belleza.md` 
 **Núcleo destino:** `arquitectura_comandos.md`
 **Relación:**
-- "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion" → "arquitectura modular /docs/"
+- "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion" → "arquitectura modular /actions:docs/"
 - Balance entre simplicidad y preservación de valor requiere modularización que mantenga granularidad informacional 
 - "recuerda tener como parte de tus workflows la búsqueda en internet y el uso de mcp context7"
 - La metodología socrática requiere información actualizada, lo que se traduce arquitecturalmente en protocolos de validación temporal integrados

@@ -48,7 +48,7 @@ As you answer the user's questions, you can use the following context:
 **Changes Applied**: None (no modifications during session)  
 **Git Commit**: Pending changes from previous sessions included  
 **Handoff Generated**: Standard continuation handoff created  
-**Next Session Setup**: Ready for `/start` workflow
+**Next Session Setup**: Ready for `/workflows:start` workflow
 
 ## Command Changes Applied
 **None** - No command modifications detected or requested during this session.
@@ -63,4 +63,4 @@ As you answer the user's questions, you can use the following context:
 ---
 **Generated**: 2025-07-28 13:21 MX  
 **Workflow**: /session-close execution  
-**Next Action**: Standard `/start` workflow available
+**Next Action**: Standard `/workflows:start` workflow available

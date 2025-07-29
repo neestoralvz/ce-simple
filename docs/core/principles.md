@@ -74,9 +74,9 @@ Este principio arquitectural previene:
 
 ### Ejemplos de Separación Correcta
 ```
-/distill   → SOLO preservación de voz usuario + regeneración CLAUDE.md
-/partner   → SOLO validación de simplicidad y decisiones arquitecturales  
-/git       → SOLO manejo de versionado y commits
+/workflows:distill   → SOLO preservación de voz usuario + regeneración CLAUDE.md
+/roles:partner   → SOLO validación de simplicidad y decisiones arquitecturales  
+/actions:git       → SOLO manejo de versionado y commits
 /maintain  → SOLO salud sistémica y consistencia
 /expand    → SOLO expansión técnica implementacional (sin tocar visión)
 ```

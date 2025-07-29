@@ -1,8 +1,8 @@
 # Sesión: Detección Sistémica Proactiva + Densificación de Layers
 
 **Timestamp**: 20250728_2023  
-**Duración**: Sesión completa desde comando /distill hasta /close  
-**Comandos principales**: /distill, /challenge, detección sistémica proactiva
+**Duración**: Sesión completa desde comando /workflows:distill hasta /workflows:close  
+**Comandos principales**: /workflows:distill, /roles:challenge, detección sistémica proactiva
 
 ## Resumen Ejecutivo
 
@@ -24,8 +24,8 @@ Sesión revolucionaria que implementó **detección sistémica proactiva inmedia
 
 ### 2. Sesgo de Creación de Archivos ELIMINADO
 - **Prohibiciones sistémicas** agregadas a CLAUDE.md
-- **Comando /distill** actualizado: PROHIBIDO crear archivos de reporte
-- **Comando /challenge** corregido: análisis conversacional únicamente
+- **Comando /workflows:distill** actualizado: PROHIBIDO crear archivos de reporte
+- **Comando /roles:challenge** corregido: análisis conversacional únicamente
 - **Anti-patrón establecido**: Resistir tendencia automática de "documentar todo"
 
 ### 3. Sistema de Densidad Creciente CORREGIDO
@@ -48,7 +48,7 @@ Sesión revolucionaria que implementó **detección sistémica proactiva inmedia
 ### Detección Proactiva
 - **User quote absorción**: "todo lo que se detecte como problemas o soluciones sistemicas deberian de aplicarse al momento y tambien aplicarse el challenge en su contra"
 - **Implementación**: Triggers expandidos + challenge obligatorio para balance
-- **Impacto**: Sistema ahora responde inmediatamente a propuestas sistémicas vs esperar /distill manual
+- **Impacto**: Sistema ahora responde inmediatamente a propuestas sistémicas vs esperar /workflows:distill manual
 
 ### Densidad Invertida
 - **User insight**: "no deberiamos de estar llamando a archivos de layer 1 si se supone que van a ser menos densos en contenido"
@@ -77,8 +77,8 @@ Sesión revolucionaria que implementó **detección sistémica proactiva inmedia
 
 ### Documentación
 - **CLAUDE.md**: Actualizado con prohibiciones sistémicas y @-imports correctos
-- **Comando /distill**: Rediseñado hacia concentración ultra-densa
-- **Comando /challenge**: Corregido a análisis conversacional
+- **Comando /workflows:distill**: Rediseñado hacia concentración ultra-densa
+- **Comando /roles:challenge**: Corregido a análisis conversacional
 - **Nuclei**: Absorción orgánica continua
 
 ## Items Completados de Handoffs Anteriores
@@ -107,7 +107,7 @@ Sesión revolucionaria que implementó **detección sistémica proactiva inmedia
 ## Próximos Pasos Sugeridos
 
 ### Inmediato (Próxima Sesión)
-1. **Continuar /distill**: Procesar archivos de alta densidad restantes
+1. **Continuar /workflows:distill**: Procesar archivos de alta densidad restantes
 2. **Probar detección sistémica**: Usar trigger phrases para validar funcionamiento
 3. **Ejecutar Layer 2**: Concentrar quotes existentes en insights poderosos
 
@@ -121,7 +121,7 @@ Sesión revolucionaria que implementó **detección sistémica proactiva inmedia
 **Conversación actual**: Captura completa de detección sistémica + densificación  
 **CLAUDE.md**: Prohibiciones sistémicas, detección proactiva, @-imports correctos  
 **Layer1 nuclei**: Todos actualizados con quotes foundacionales críticos  
-**Comando /distill**: Proceso rediseñado hacia concentración ultra-densa
+**Comando /workflows:distill**: Proceso rediseñado hacia concentración ultra-densa
 
 ## Insights para Continuidad
 

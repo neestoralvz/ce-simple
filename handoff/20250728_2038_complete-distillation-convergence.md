@@ -6,7 +6,7 @@
 
 ## Resumen Ejecutivo
 
-**LOGRO MAYOR**: Sistema de destilación completó AUTO-CONVERGENCIA total del corpus conversacional. Ejecutión completa de `/distill` procesó 80+ quotes desde 58 conversaciones, completando los 4 layers del sistema de inteligencia.
+**LOGRO MAYOR**: Sistema de destilación completó AUTO-CONVERGENCIA total del corpus conversacional. Ejecutión completa de `/workflows:distill` procesó 80+ quotes desde 58 conversaciones, completando los 4 layers del sistema de inteligencia.
 
 **TRANSFORMACIÓN REVOLUCIONARIA**: El sistema evolucionó de destilación manual a **metodología auto-convergente completa** con:
 - Layer 1: 80+ quotes absorbidos en 6 núcleos temáticos 
@@ -67,7 +67,7 @@
 
 ### Alta Prioridad
 - **Validar autoridad user-vision/**: Confirmar que CLAUDE.md dispatcher respeta supremacía
-- **Testing auto-convergencia**: Validar metodología `/distill` en futuras conversaciones
+- **Testing auto-convergencia**: Validar metodología `/workflows:distill` en futuras conversaciones
 - **Implementar insights revolucionarios**: Multi-conversación git-native, background intelligence
 
 ### Media Prioridad  

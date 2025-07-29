@@ -57,7 +57,7 @@ Complete system validation including:
 
 #### 5. Session Continuity Protocol
 **Status**: ✅ ACTIVE
-- `/start` command auto-loading handoff data
+- `/workflows:start` command auto-loading handoff data
 - `/session-close` capturing and committing changes
 - Git integration functioning properly
 - Context preservation working as designed

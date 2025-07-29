@@ -28,68 +28,68 @@ Los comandos son autocontenidos entre ellos y solo pueden conectarse con otros c
 
 ## Los 9 Comandos Independientes
 
-### `/start` - Activación de Sesión
+### `/workflows:start` - Activación de Sesión
 **Propósito**: Activación de sesión con carga de contexto
 **Responsabilidad**: Orientar y preparar el contexto para la conversación
 **Coordina con**: Todos los comandos (punto de entrada)
 
-### `/distill` - Destilación Completa  
+### `/workflows:distill` - Destilación Completa  
 **Propósito**: Destilación completa de 5 capas: Raw → Visión Consolidada
 **Responsabilidad**: Procesar conversaciones raw hacia insights cristalizados
-**Coordina con**: `/close` para captura, todos los comandos para evolución
+**Coordina con**: `/workflows:close` para captura, todos los comandos para evolución
 
 **NUEVA FUNCIONALIDAD**: Culmina con actualización automática de CLAUDE.md bajo reglas estrictas
 
-### `/docs` - Workflow de Documentos
+### `/actions:docs` - Workflow de Documentos
 **Propósito**: Workflow de creación y edición de documentos  
 **Responsabilidad**: Manejo inteligente de documentación del sistema
-**Coordina con**: `/maintain` para consistencia, `/git` para commits
+**Coordina con**: `/maintain` para consistencia, `/actions:git` para commits
 
-### `/explore` - Navegación del Codebase
+### `/workflows:explore` - Navegación del Codebase
 **Propósito**: Navegación y comprensión del codebase
 **Responsabilidad**: Investigación y análisis de código existente
-**Coordina con**: `/debug` para resolución, `/docs` para documentación
+**Coordina con**: `/workflows:debug` para resolución, `/actions:docs` para documentación
 
-### `/debug` - Resolución Sistemática
+### `/workflows:debug` - Resolución Sistemática
 **Propósito**: Resolución sistemática de problemas
 **Responsabilidad**: Diagnóstico y solución de issues técnicos  
-**Coordina con**: `/explore` para investigación, `/git` para fixes
+**Coordina con**: `/workflows:explore` para investigación, `/actions:git` para fixes
 
 ### `/maintain` - Mantenimiento del Sistema
 **Propósito**: Mantenimiento del sistema (CLAUDE.md + comandos + docs)
 **Responsabilidad**: Asegurar consistencia del ecosistema completo
 **Coordina con**: Todos los comandos para salud sistémica
 
-### `/git` - Workflow Git Integrado
+### `/actions:git` - Workflow Git Integrado
 **Propósito**: Workflow Git integrado con otros comandos  
 **Responsabilidad**: Manejo inteligente de versionado y commits
 **Coordina con**: Todos los comandos para commits contextuales
 
-### `/partner` - Socio Constructor
+### `/roles:partner` - Socio Constructor
 **Propósito**: Agente socio constructor para enfoque y simplicidad
 **Responsabilidad**: Validar decisiones arquitecturales y mantener simplicidad
 **Coordina con**: Todos los comandos como validator de decisiones
 
-### `/close` - Captura y Commit
+### `/workflows:close` - Captura y Commit
 **Propósito**: Captura de conversación y commit de cambios
 **Responsabilidad**: Cerrar sesión preservando insights y cambios
-**Coordina con**: `/git` para commits, `/distill` para procesamiento futuro  
+**Coordina con**: `/actions:git` para commits, `/workflows:distill` para procesamiento futuro  
 
 ## Coordinación Entre Comandos
 
 ### Flujo Principal
 ```
-/start → orienta y carga contexto
+/workflows:start → orienta y carga contexto
 otros comandos → ejecutan tareas específicas
-/close → captura conversación y commit cambios
+/workflows:close → captura conversación y commit cambios
 ```
 
 ### Integraciones Clave
 ```  
-/git → se integra con todos para commits inteligentes
-/partner → valida decisiones arquitecturales en cualquier momento
+/actions:git → se integra con todos para commits inteligentes
+/roles:partner → valida decisiones arquitecturales en cualquier momento
 /maintain → asegura consistencia del ecosistema completo
-/distill → actualiza CLAUDE.md automáticamente al final
+/workflows:distill → actualiza CLAUDE.md automáticamente al final
 ```
 
 ### Orquestación de Subagentes
@@ -119,7 +119,7 @@ Los comandos evolucionan a través del proceso de conversación → destilación
 
 ### Enforcement de Separación de Responsabilidades
 - **Validación en diseño**: Todo nuevo comando debe pasar test de responsabilidad única
-- **Challenger automático**: /partner debe validar que comandos mantengan su scope original
+- **Challenger automático**: /roles:partner debe validar que comandos mantengan su scope original
 - **Revisión periódica**: Comandos existentes deben ser evaluados bajo principio de separación
 - **Rechazo de expansión**: "Solo una funcionalidad más" debe ser rechazado automáticamente
 

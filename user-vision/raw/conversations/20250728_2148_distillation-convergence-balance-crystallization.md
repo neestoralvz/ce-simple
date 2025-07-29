@@ -2,12 +2,12 @@
 
 **Date:** 2025-07-28 21:48 (Ciudad de México)
 **Session Type:** Complete distillation auto-convergence with balance crystallization
-**Commands Used:** `/distill`
+**Commands Used:** `/workflows:distill`
 
 ## Conversation Flow
 
 ### Session Start: Distillation Command Execution
-**User:** /distill
+**User:** /workflows:distill
 
 **System Response:** Deployed TodoWrite tool for systematic distillation planning:
 1. Auto-detect current distillation state across all layers

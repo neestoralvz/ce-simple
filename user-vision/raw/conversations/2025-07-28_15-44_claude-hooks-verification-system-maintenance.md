@@ -1,6 +1,6 @@
 # Conversation: Claude Code Hooks Verification & System Maintenance
 **Date**: 2025-07-28 15:44  
-**Context**: /start workflow execution with hook system validation  
+**Context**: /workflows:start workflow execution with hook system validation  
 **Category**: System maintenance + infrastructure validation  
 **Duration**: Complete system verification and git synchronization  
 
@@ -110,7 +110,7 @@ git push origin master
 2. **"Proceed."**
    - Context: User approval to continue with system maintenance operations
    - Intent: Authorization to execute comprehensive system optimization
-   - Action: Full /start workflow executed with all pending tasks completed
+   - Action: Full /workflows:start workflow executed with all pending tasks completed
 
 ### User Decisions Crystallized
 - **System Verification Priority**: User requested confirmation of hook system operational status
