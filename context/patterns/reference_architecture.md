@@ -40,8 +40,8 @@
 **Usage:** Command execution with context integration
 **Implementation:** Semantic trigger patterns
 **Examples:**
-- `Task tool → /actions:research + context/patterns/orchestrator_methodology.md`
-- `Task tool → /roles:partner + context/user-vision/TRUTH_SOURCE.md`
+- `Task tool → /roles:research_modular + context/patterns/orchestrator_methodology.md`
+- `Task tool → /roles:partner_modular + context/user-vision/TRUTH_SOURCE.md`
 
 ## Implementation Patterns
 

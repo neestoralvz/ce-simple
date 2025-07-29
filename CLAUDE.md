@@ -24,7 +24,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Research/Investigation Pattern
 **Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
 **Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
-**Execute**: Task tool → /actions:research + context/operational/patterns/orchestrator_methodology.md
+**Execute**: Task tool → /roles:research_modular + context/operational/patterns/orchestrator_methodology.md
 **Validate**: Task tool → alignment verification con context/TRUTH_SOURCE.md
 
 ### Documentation Pattern  
@@ -35,8 +35,8 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
-**Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
-**Execute**: Task tool → /roles:partner + context/TRUTH_SOURCE.md + context/system/principles/authority.md
+**Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner_modular validation
+**Execute**: Task tool → /roles:partner_modular + context/TRUTH_SOURCE.md + context/system/principles/authority.md
 **Validate**: Task tool → authority alignment + simplicity preservation verification
 
 ### Development/Implementation Pattern

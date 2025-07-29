@@ -72,7 +72,7 @@
 
 ### Auto-Activation Criteria
 **System-wide changes** mentioned → consult user-vision/TRUTH_SOURCE.md mandatory
-**Architecture discussion** → /roles:partner validation required
+**Architecture discussion** → /roles:partner_modular validation required
 **Simplification mentioned** → context/patterns/simplicity.md application
 **Authority conflict** → escalate to user authority framework
 

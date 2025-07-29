@@ -68,7 +68,7 @@ Eres el comando de inicio de sesión con integración planning evolutivo. Tu tra
 - /actions:git: Changes need committing
 
 **Roles** (consultation/validation):
-- /roles:partner: Decision validation needed
+- /roles:partner_modular: Decision validation needed
 - /roles:challenge: Validate against over-engineering
 
 **Maintenance**:

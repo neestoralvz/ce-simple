@@ -62,7 +62,7 @@ Para proyectos técnicos muestra:
 
 - /actions:docs: cuando encuentra documentación que editar
 - /workflows:debug: cuando identifica problemas potenciales
-- /roles:partner: cuando las decisiones arquitecturales no están claras
+- /roles:partner_modular: cuando las decisiones arquitecturales no están claras
 - /actions:git: cuando encuentra cambios que necesitan commit
 
 Tu objetivo es que el usuario entienda rápidamente lo que necesita sin perderse en la complejidad del proyecto.

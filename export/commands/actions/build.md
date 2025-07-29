@@ -1,76 +1,89 @@
-# Comando /actions:build
+# /actions:build - Document Builder
 
-Especialista en **construcción de documentos desde cero**. Enfoque exclusivo en crear nuevos documentos siguiendo estándares del sistema.
+Specialist in **building documents from scratch** following project standards and best practices.
 
-## Core Purpose
+## Purpose
 
-**Building documents:** Crear documentos nuevos preservando voz del usuario y manteniendo arquitectura de referencias.
+Create new documents with clear structure, appropriate style, and proper integration into existing documentation architecture.
 
-**SCOPE LIMITS:**
-- ✅ Crear documentos nuevos 
-- ❌ Editar documentos existentes → delegar a /actions:write
-- ❌ Validar documentos → delegar a /maintenance:maintain
+**Scope:**
+- ✅ Create new documents 
+- ❌ Edit existing documents → use /actions:write
+- ❌ Validate documents → use /maintenance:maintain
 
-## Document Types Expertise
+## Document Types
 
 ### Technical Documentation
-**Templates:** @context/templates/
-**Style guide:** @context/patterns/documentation_style.md
-**Examples:** Architecture guides, implementation docs
+- API documentation
+- Architecture guides
+- Implementation guides
+- Reference documentation
 
 ### Process Documentation  
-**Framework:** @context/patterns/workflow_architecture.md
-**References:** Workflows, methodologies, protocols
-**Authority:** @context/TRUTH_SOURCE.md
+- Workflows and procedures
+- Methodologies and protocols
+- Guidelines and standards
 
-### Vision Documentation
-**Source:** @context/
-**Voice preservation:** Maintain exact user language patterns
-**Integration:** Connect with existing vision hierarchy
+### Project Documentation
+- Project vision and requirements
+- Design decisions and rationale
+- Meeting notes and decisions
 
 ### Context Documentation
-**Purpose:** Handoffs, insights, analysis
-**Structure:** Reference-only principles
-**Links:** Smart dependencies to context/
+- Session summaries
+- Analysis reports
+- Research findings
 
-## Building Workflow
+## Building Process
 
-### 1. Document Type Analysis
-```
-User request → Classify document type → Load appropriate templates
-```
+### 1. Document Planning
+- Understand the document purpose and audience
+- Identify the appropriate document type and structure
+- Plan content organization and flow
 
-### 2. Context Integration
-**Authority check:** @context/TRUTH_SOURCE.md alignment
-**Style consistency:** Match existing documentation patterns  
-**Reference architecture:** Link, don't duplicate content
+### 2. Content Creation
+- Follow established style guidelines
+- Use clear, concise language
+- Structure information logically
+- Include relevant examples and details
 
-### 3. Document Construction
-**Voice preservation:** Use user language patterns from @context/
-**Template application:** Apply @context/templates/ structure
-**Reference linking:** Connect to related documents via @references
+### 3. Integration
+- Link to related documents appropriately
+- Follow project naming conventions
+- Ensure consistent formatting
+- Verify information accuracy
 
-### 4. Quality Standards
-**Compliance:** ≤80 lines per document when possible
-**Trazabilidad:** Include source references
-**Integration:** Verify fits system architecture
+### 4. Quality Review
+- Check for completeness and clarity
+- Verify technical accuracy
+- Ensure proper formatting
+- Validate document serves its intended purpose
 
-## Anti-Patterns Prevention
+## Best Practices
 
-- **Scope creep:** No editing existing docs (use /actions:write)
-- **Validation overlap:** No document validation (use /maintenance:maintain)  
-- **Content duplication:** Use references, not content copying
-- **Voice contamination:** Preserve exact user language patterns
+- **Clear structure:** Use headings, lists, and sections effectively
+- **Concise content:** Focus on essential information
+- **Consistent style:** Follow project documentation standards
+- **Proper linking:** Connect related concepts without duplication
+- **User focus:** Write for the intended audience
 
-## Success Metrics
+## Anti-Patterns to Avoid
 
-**Document serves purpose:** Clear objective achieved
-**System integration:** Fits existing architecture
-**Voice fidelity:** User language patterns preserved
-**Reference compliance:** Links properly to context/
+- Creating overly complex or lengthy documents
+- Duplicating information available elsewhere
+- Using inconsistent formatting or style
+- Writing without clear purpose or audience
+- Missing essential details or context
+
+## Success Criteria
+
+- Document clearly serves its intended purpose
+- Information is accurate and up-to-date
+- Style and formatting are consistent with project standards
+- Content is appropriately linked to related documentation
 
 ---
-**Delegation Rules:**
+**Related Commands:**
 - Document editing → /actions:write
 - Document validation → /maintenance:maintain
-- Complex analysis → Task tool integration
+- Research assistance → /actions:research

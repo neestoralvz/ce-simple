@@ -90,7 +90,7 @@
 **Regular validation** via /maintain systematic health checks
 **Template updates** propagation según documentation_style.md changes
 **Decision review** periodic alignment con user-vision/TRUTH_SOURCE.md
-**Simplicity enforcement** via /roles:partner + /roles:challenge systematic review
+**Simplicity enforcement** via /roles:partner_modular + /roles:challenge systematic review
 
 ---
 

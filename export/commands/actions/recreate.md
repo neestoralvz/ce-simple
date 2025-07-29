@@ -1,107 +1,107 @@
-# /actions:recreate - Clean Slate Recreation Para Prevenir Sesgos
+# /actions:recreate - Clean Slate Recreation
 
-## Propósito Command
-**Input:** Archivo/sistema desalineado con lineamientos actualizados  
-**Output:** Recreación limpia desde cero siguiendo guidelines actuales
-**Authority:** context/TRUTH_SOURCE.md + context/patterns/simplicity.md
+Specialist in recreating documents and components from scratch to eliminate accumulated complexity and ensure alignment with current standards.
 
-## Filosofía Ejecución
-**DEBE ser:** Clean slate recreation sin contamination de información previa
-**SIEMPRE produce:** Archivo completamente alineado con lineamientos actuales
-**NUNCA requiere:** Construcción incremental sobre versiones anteriores sesgadas
+## Purpose
 
-## Protocol Execution
+Provide clean slate recreation of documents, configurations, or components that have accumulated complexity or drifted from current standards, ensuring fresh alignment without legacy bias.
 
-### Phase 1: Desalineación Detection
-**Trigger:** Archivo no sigue lineamientos actualizados del sistema
-**Process:** 
-- Analizar archivo actual vs context/TRUTH_SOURCE.md
-- Identificar divergencias específicas con context/patterns/simplicity.md
-- Detectar sesgo acumulativo de información obsoleta
-- Validar necesidad clean slate vs edit incremental
-**Validation:** Sesgo detectado > threshold || structural misalignment identificado
+## When to Use
 
-### Phase 2: Context Fresh Loading
-**Input:** Lineamientos actuales del sistema (TRUTH_SOURCE + patterns)
-**Process:**
-- Load context/TRUTH_SOURCE.md para supreme authority
-- Reference context/patterns/simplicity.md para recreation guidelines
-- Apply context/enforcement/core_reminders.md metodologías
-- Clear mental model del archivo anterior (bias prevention)
-**Output:** Context limpio con guidelines actuales únicamente
+- **Standard drift**: Document no longer follows current project conventions
+- **Accumulated complexity**: Incremental changes have introduced unnecessary complexity  
+- **Structural misalignment**: Core structure doesn't match current architecture
+- **Legacy contamination**: Old approaches or patterns need complete refresh
+- **Optimization opportunity**: Starting fresh would be more efficient than incremental fixes
 
-### Phase 3: Clean Slate Recreation
-**Trigger:** Context fresh loaded + archivo original eliminado conceptualmente
-**Process:**
-- **ELIMINAR** archivo existente (conceptual clean slate)
-- **RECREAR** desde cero usando ÚNICAMENTE lineamientos actuales
-- **APLICAR** Think x4 para optimal structure según guidelines
-- **VALIDAR** alignment completo con TRUTH_SOURCE.md
-**Validation:** Archivo nuevo 100% aligned + zero contamination anterior
+## Recreation Process
 
-### Phase 4: Integration Verification
-**Input:** Archivo recreado limpiamente
-**Process:**
-- Verificar coherencia con ecosystem actual
-- Validar references no apuntan a información obsoleta
-- Confirmar autocontained principle maintained
-- Test integration con comandos relacionados
-**Output:** Sistema completamente coherent post-recreation
+### Phase 1: Assessment and Planning
+1. **Analyze current state** - identify specific issues with existing version
+2. **Review current standards** - understand what the recreated version should achieve
+3. **Validate recreation need** - confirm clean slate is better than incremental fixes
+4. **Plan approach** - outline structure and key requirements for new version
+
+### Phase 2: Context Loading
+1. **Load current guidelines** - review established standards and patterns
+2. **Understand requirements** - clarify what the component should accomplish
+3. **Identify best practices** - apply current best practices and methodologies
+4. **Clear mental model** - avoid contamination from previous version
+
+### Phase 3: Clean Slate Creation
+1. **Start fresh** - create new version without referencing old implementation
+2. **Apply current standards** - use only current guidelines and best practices
+3. **Build systematically** - construct with proper structure and organization
+4. **Validate alignment** - ensure complete alignment with current standards
+
+### Phase 4: Integration and Verification
+1. **Test integration** - verify compatibility with related components
+2. **Validate functionality** - confirm all requirements are met
+3. **Check consistency** - ensure alignment with project ecosystem
+4. **Document changes** - capture what was improved and why
+
+## Anti-Bias Methodology
+
+### Clean Slate Principles
+- **Fresh perspective**: Approach the problem without preconceptions from old version
+- **Current standards only**: Use only up-to-date guidelines and best practices
+- **Optimal structure**: Design the best possible structure for current requirements
+- **Zero legacy contamination**: Avoid copying patterns or decisions from old version
+
+### Contamination Prevention
+- **Don't reference old version** during creation process
+- **Focus on requirements** rather than historical implementation
+- **Apply systematic analysis** to determine optimal approach
+- **Validate against current standards** rather than comparing to old version
+
+## Quality Assurance
+
+### Structural Analysis
+**Think 1**: What function should this component serve according to current standards?
+**Think 2**: What is the optimal structure for current requirements?
+**Think 3**: How can we prevent contamination from previous versions?
+**Think 4**: How do we validate complete alignment with updated guidelines?
+
+### Validation Criteria
+- **Complete alignment**: 100% compliance with current standards
+- **Optimal structure**: Best possible organization for requirements
+- **Zero legacy issues**: No contamination from previous versions
+- **Integration success**: Works seamlessly with current ecosystem
 
 ## Integration Points
-**Coordinates with:**
-- /actions:docs → Para documentación que requiere recreation
-- /roles:orchestrator → Para delegation recreation multi-archivo  
-- /workflows:start → Para detection desalinaación en session start
 
-**Authority chain:** context/TRUTH_SOURCE.md → context/patterns/simplicity.md → recreation limpia
+### Related Commands
+- **Documentation work**: /actions:write for documentation that needs recreation
+- **Content analysis**: /actions:research for understanding current best practices
+- **Quality validation**: /maintenance:maintain for post-recreation verification
 
-## Error Handling
-**Si archivo crítico:** → Backup conceptual + user confirmation antes recreation
-**OBLIGATORIO verificar:** TRUTH_SOURCE.md authority suprema maintained
-**Fallback mode:** Edit incremental si recreation imposible técnicamente
+### Authority Chain
+Current project standards → Best practices research → Clean recreation → Integration validation
 
-## Metodología Anti-Sesgo
+## Success Indicators
 
-### Principio Clean Slate Absolute
-> "es importante eliminar archivos y crealos desde cero bajo los lineamientos que vamos actualizando, pues si solo vamos construyendo sobre los anteriores existe demasiado sesgo por la informacion que ya esta"
+### Immediate Success
+- Component follows all current standards and conventions
+- Structure is optimal for current requirements
+- No legacy complexity or outdated patterns remain
+- Integration with ecosystem is seamless
 
-### Contamination Prevention Protocol
-**NUNCA leer** archivo anterior durante recreation process
-**ÚNICAMENTE usar** lineamientos actuales como source
-**MENTAL MODEL** debe ser tabula rasa para información nueva
-**BIAS DETECTION** sistemático post-recreation
+### Long-term Success
+- Component remains maintainable and extensible
+- Standards compliance prevents future drift
+- Clean architecture supports project evolution
+- No regression in functionality or capability
 
-### Think x4 Para Recreation
-**Think 1:** ¿Qué function/purpose debe cumplir archivo según guidelines actuales?
-**Think 2:** ¿Cuál es optimal structure según TRUTH_SOURCE + simplicity patterns?
-**Think 3:** ¿Cómo prevenir contamination de versiones anteriores sesgadas?
-**Think 4:** ¿Cómo validar 100% alignment con lineamientos actualizados?
+## Best Practices
 
-## State Management
-**Persists:** User vision y lineamientos actuales únicamente
-**Clears:** Toda información de archivo anterior (mental contamination prevention)
-**Handoff to:** Archivo recreado limpio + integration verification
-
-## Usage Examples
-1. /actions:recreate context/patterns/obsolete_pattern.md
-   → Detecta desalineación → Elimina conceptualmente → Recrea desde cero con TRUTH_SOURCE
-
-2. /actions:recreate .claude/commands/legacy_command.md  
-   → Identifica sesgo acumulativo → Clean slate recreation → Comando aligned 100%
-
-3. /actions:recreate context/decisions/outdated_framework.md
-   → Authority validation → Recreation completa → Integration verification
-
-## Detection Triggers Automáticos
-**File divergence** > 30% from current guidelines
-**Metadata obsoleto** detectado in headers/references  
-**Structural misalignment** con simplicity principles
-**Sesgo acumulativo** por edits incrementales repetidos
-**Authority conflicts** con TRUTH_SOURCE.md supremacy
+- **Thorough analysis**: Understand exactly why recreation is needed
+- **Standards focus**: Base all decisions on current best practices
+- **Systematic approach**: Use methodical process to ensure quality
+- **Complete validation**: Verify all aspects before considering complete
+- **Documentation**: Capture rationale and improvements made
 
 ---
-## Enlaces → Información Complementaria
-**Si necesitas authority validation:** → context/TRUTH_SOURCE.md:93-94
-**Si requieres simplicity guidelines:** → context/patterns/simplicity.md:40-50  
-**Si authority conflict:** → context/principles/authority.md:15-25
+**Related Commands:**
+- Document editing → /actions:write
+- Standards research → /actions:research
+- Quality validation → /maintenance:maintain

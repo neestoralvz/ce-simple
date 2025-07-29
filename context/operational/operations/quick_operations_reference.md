@@ -6,7 +6,7 @@
 - **`/workflows:start`** → Universal ultra-orchestrator entry with multi-conversation assessment  
 - **`/workflows:distill`** → Layer distillation: raw → núcleos → síntesis → docs oficiales
 - **`/roles:challenge`** → Challenge-protected validation (stagnation Y over-engineering)
-- **`/roles:partner`** → Constructor consultor for authority-driven simplification
+- **`/roles:partner_modular`** → Constructor consultor for authority-driven simplification
 - **`/actions:build`** → Document creation with real-time user-vision integration
 - **`/actions:git`** → Git-native worktree management for parallel conversations
 

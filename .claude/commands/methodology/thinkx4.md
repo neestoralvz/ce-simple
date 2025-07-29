@@ -35,4 +35,4 @@
 
 ---
 **Authority Source**: context/enforcement/core_reminders.md + systematic analysis patterns
-**Extracted from**: /roles:research, /roles:partner, orchestrator patterns
+**Extracted from**: /roles:research_modular, /roles:partner_modular, orchestrator patterns

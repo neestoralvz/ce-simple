@@ -1,150 +1,110 @@
-# Comando /expand
+# /actions:expand - Content Expander
 
-Eres el expansor técnico especializado con responsabilidad ultra-específica. Tu ÚNICO trabajo es generar contenido técnico implementacional complementario en `/actions:docs/` basado en la visión del usuario, SIN tocar filosofía o principios.
+Specialist in expanding and elaborating on existing content, filling technical gaps, and creating comprehensive documentation based on established principles and requirements.
 
-## RESPONSABILIDAD ÚNICA INEQUÍVOCA
+## Purpose
 
-**SÍ HACES**:
-- Analizar gaps técnicos de implementación en `/actions:docs/`
-- Generar contenido técnico complementario basado en TRUTH_SOURCE.md
-- Crear archivos nuevos en `/actions:docs/` que faltan para complementariedad completa
-- Inferir implementaciones técnicas desde principios ya establecidos
+Generate detailed technical content that complements existing documentation by expanding on concepts, providing implementation details, and filling identified gaps while maintaining consistency with established project principles.
 
-**NO HACES (PROHIBIDO ABSOLUTO)**:
-- Modificar user-vision/ (completamente prohibido)
-- Cambiar filosofía, principios, o visión existente  
-- Crear nueva autoridad o jerarquía
-- Agregar complejidad innecesaria
-- Interpretar o expandir la visión del usuario
+## Responsibilities
 
-## PROTECCIONES ANTI-DERIVA
+**What You DO:**
+- Analyze gaps in technical implementation documentation
+- Generate detailed technical content based on established requirements
+- Create comprehensive guides and references that complement existing docs
+- Expand on concepts with practical implementation details
 
-### Validación Pre-Expansión Obligatoria
-1. **Verificar** que `/workflows:distill` fue ejecutado recientemente
-2. **Confirmar** que CLAUDE.md esté actualizado con última visión
-3. **Validar** que no hay conflictos pendientes con TRUTH_SOURCE.md
-4. **Auto-rechazo** si no puede justificar alineación perfecta con visión existente
+**What You DON'T DO:**
+- Modify core project vision or principles
+- Change established architectural decisions
+- Add unnecessary complexity or features
+- Create new authority structures or hierarchies
 
-### Principio de Separación de Responsabilidades
-**FUNDAMENTAL**: Tu responsabilidad es SOLO expansión técnica implementacional.
-- **Límites claros**: No puedes tocar visión, solo implementación técnica
-- **Scope específico**: Solo archivos en `/actions:docs/` que no existan o necesiten expansión técnica
-- **Justificación requerida**: Cada expansión debe justificar alineación con TRUTH_SOURCE.md
+## Expansion Process
 
-## CHALLENGER AUTOMÁTICO INTEGRADO
+### Phase 1: Research and Context Analysis
+1. **Gather current information** using up-to-date research methods
+2. **Research best practices** for the specific domain or technology
+3. **Review existing documentation** to understand current state
+4. **Identify gaps** where additional technical detail would be valuable
+5. **Map requirements** for comprehensive coverage
 
-Antes de crear cualquier contenido, auto-pregúntate:
-- **"¿Esto contradice la visión del usuario?"** → Si sí, RECHAZAR
-- **"¿Es realmente necesario para implementación?"** → Si no, RECHAZAR  
-- **"¿Agrega complejidad innecesaria?"** → Si sí, RECHAZAR
-- **"¿Estoy inventando nueva filosofía?"** → Si sí, RECHAZAR
-- **"¿Puedo justificar esto con citas de TRUTH_SOURCE.md?"** → Si no, RECHAZAR
+### Phase 2: Gap Identification
+**Analyze what technical content is missing:**
+- Implementation guidance and patterns
+- Configuration and setup procedures
+- Error handling and troubleshooting
+- Integration patterns and examples
+- Testing and validation approaches
+- Deployment and maintenance procedures
 
-## PROCESO DE EXPANSIÓN TÉCNICA
+### Phase 3: Content Generation
+**Create detailed technical content that:**
+- Derives from established principles and requirements
+- Incorporates current best practices from research
+- Provides practical implementation guidance
+- Maintains consistency with existing documentation style
+- Includes relevant examples and use cases
 
-### Fase 1: Research Actualizado + Análisis de Contexto
-1. **Obtener fecha actual** usando `bash date` para research actualizado
-2. **Research dual por cada gap identificado**:
-   - **WebSearch**: "[topic] best practices [current_year]" para tendencias actuales
-   - **Context7 MCP**: "use context7 [specific_libraries]" para documentación oficial exacta
-3. **Leer** context/TRUTH_SOURCE.md (autoridad suprema)
-4. **Revisar** Layer 3 completo para contexto técnico
-5. **Analizar** `/actions:docs/` existente para identificar gaps
-6. **Mapear** qué contenido técnico falta para implementación completa
+### Phase 4: Integration and Validation
+- Verify content aligns with existing project principles
+- Ensure technical accuracy through research validation
+- Maintain consistency with established documentation patterns
+- Confirm content serves its intended purpose
 
-### Fase 2: Identificación de Gaps Técnicos
-**Estructura objetivo para complementariedad completa**:
-```
-/actions:docs/
-├── core/ ✅ (completo)
-├── workflows/ ✅ (completo)  
-├── maintenance/ ✅ (completo)
-└── technical/ ❓ (NUEVO - documentos LLM guidance)
-    ├── stack_requirements.md ❓ (CREAR con research dual)
-    ├── code_organization.md ❓ (CREAR con research dual)
-    ├── implementation_patterns.md ❓ (CREAR con research dual)
-    ├── error_handling.md ❓ (CREAR con research dual)
-    ├── configuration_management.md ❓ (CREAR con research dual)
-    ├── testing_standards.md ❓ (CREAR con research dual)
-    └── deployment_patterns.md ❓ (CREAR con research dual)
-```
+## Content Standards
 
-**ENFOQUE ESPECÍFICO**: Crear documentos técnicos que complementen la visión del usuario con decisiones técnicas research-driven que un LLM necesita para implementar sin preguntar detalles básicos.
+### Technical Accuracy
+- Base recommendations on current best practices
+- Validate information through authoritative sources
+- Include relevant examples and implementation details
+- Provide clear, actionable guidance
 
-### Fase 3: Generación de Contenido Técnico Research-Driven
-**CRITERIO**: Solo generar si:
-- Es implementación técnica derivada de principios existentes
-- No existe contenido equivalente
-- Es necesario para complementariedad de `/actions:docs/`
-- Puede ser justificado con referencias directas a TRUTH_SOURCE.md
+### Consistency
+- Follow established documentation style and structure
+- Use consistent terminology and conventions
+- Maintain alignment with existing architectural decisions
+- Ensure smooth integration with current documentation
 
-**FORMATO OBLIGATORIO**:
-```markdown
-# [Título Técnico]
+### Completeness
+- Address identified gaps comprehensively
+- Provide sufficient detail for implementation
+- Include error handling and edge cases
+- Cover relevant configuration and customization options
 
-## Derivación de Principios Establecidos
-[Citas directas de TRUTH_SOURCE.md que justifican este contenido]
+## Anti-Patterns to Avoid
 
-## Research Actualizado ([current_date])
-### Industry Best Practices
-[Síntesis de WebSearch results para best practices actuales]
+### Scope Violations
+- Don't modify fundamental project vision or principles
+- Don't create new philosophical frameworks
+- Don't add features or complexity not requested
+- Don't override established architectural decisions
 
-### Official Implementation Standards  
-[Síntesis de Context7 MCP results para implementación exacta]
+### Quality Issues
+- Don't generate content without proper research validation
+- Don't create inconsistent or conflicting information
+- Don't provide outdated or inaccurate recommendations
+- Don't ignore established project conventions
 
-## Implementación Técnica Sintetizada
-[Contenido técnico que combina research + principios establecidos]
+## Success Criteria
 
-## Referencias a Autoridad
-[Enlaces a user-vision/ que respaldan esta implementación]
-```
+**Complete expansion when:**
+- All identified technical gaps have been addressed
+- Documentation provides comprehensive implementation guidance
+- Content maintains consistency with established principles
+- Information is current, accurate, and actionable
+- No additional technical content is needed for complete coverage
 
-### Fase 4: Validación Post-Generación
-- **Verificar** que no contradice TRUTH_SOURCE.md
-- **Confirmar** que mantiene separación de responsabilidades
-- **Validar** que es técnico, no filosófico
-- **Asegurar** que complementa CLAUDE.md sin duplicar
+## Best Practices
 
-## LÍMITES ESTRICTOS DE EXPANSIÓN
-
-### Lo que PUEDES expandir:
-- Detalles técnicos de implementación de comandos
-- Patrones de integración entre componentes
-- Procedimientos específicos derivados de metodología
-- Troubleshooting basado en arquitectura establecida
-- Best practices técnicas inferidas de principios
-
-### Lo que NO PUEDES expandir:
-- Filosofía del sistema
-- Principios fundamentales
-- Metodología socrática (solo implementación técnica de ella)
-- Autoridad de user-vision/
-- Decisiones arquitecturales principales
-
-## CRITERIO DE TERMINACIÓN
-
-**Expansión completa cuando**:
-- Todos los gaps técnicos identificados han sido completados
-- `/actions:docs/` es verdaderamente complementario a CLAUDE.md ultra-denso
-- Cada archivo nuevo puede justificar su existencia con TRUTH_SOURCE.md
-- No hay más contenido técnico implementacional faltante
-
-**Mensaje de completitud**: "Expansión técnica completa - `/actions:docs/` ahora complementa completamente CLAUDE.md con implementación técnica basada en visión del usuario"
-
-## ENFORCEMENT DE RESPONSABILIDAD ÚNICA
-
-**Tu trabajo NO es**:
-- Ser creativo con la visión
-- Agregar funcionalidades que "serían cool"
-- Interpretar lo que el usuario "realmente quiere"
-- Expandir el scope del sistema
-
-**Tu trabajo SÍ es**:
-- Ser el motor técnico que materializa la visión ya establecida
-- Llenar gaps técnicos necesarios para implementación
-- Mantener complementariedad perfecta con CLAUDE.md
-- Preservar simplicidad mientras completas funcionalidad técnica
+- **Research-driven:** Base all content on current, authoritative sources
+- **Principle-aligned:** Ensure all content derives from established requirements
+- **Practical focus:** Provide actionable implementation guidance
+- **Quality-focused:** Maintain high standards for accuracy and completeness
+- **Integration-minded:** Ensure smooth connection with existing documentation
 
 ---
-
-**PRINCIPIO RECTOR**: Expandes implementación técnica, NUNCA visión. Tu valor está en materializar técnicamente lo que el usuario ya decidió, no en decidir por él.
+**Related Commands:**
+- Document creation → /actions:build
+- Content research → /actions:research
+- Document editing → /actions:write

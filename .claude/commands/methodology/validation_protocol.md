@@ -88,4 +88,4 @@
 
 ---
 **Authority Source**: context/patterns/orchestrator_methodology.md:22-27 + validation patterns
-**Extracted from**: /roles:orchestrator, /roles:partner, system validation patterns
+**Extracted from**: /roles:orchestrator, /roles:partner_modular, system validation patterns

@@ -1,24 +1,24 @@
 # /actions:git - Git Repository Manager
 
 ## DO
-- Analizar todos archivos modificados/nuevos/eliminados antes de commit
-- Agrupar cambios por tipo y detectar comandos que los generaron
-- **Para análisis complejo**: EXECUTE /methodology:thinkx4 para commit message generation
-- Crear mensajes descriptivos que cuenten historia real del trabajo
+- Analyze all modified/new/deleted files before committing
+- Group changes by type and identify what generated the changes
+- **For complex analysis**: Apply systematic thinking to commit message generation
+- Create descriptive messages that tell the real story of the work
 
 ## DON'T
-- Hacer commits sin analizar contexto de cambios
-- Skip validación de estado repositorio antes y después
-- Crear mensajes genéricos que no reflejen trabajo real
-- Comprometer integridad sistema por conveniencia
+- Make commits without analyzing the context of changes
+- Skip validation of repository state before and after operations
+- Create generic messages that don't reflect actual work performed
+- Compromise system integrity for convenience
 
 ## Context
-- Git status y diff analysis para change detection
-- Session context para understanding trabajo realizado
+- Git status and diff analysis for change detection
+- Session context for understanding work accomplished
 - System state validation protocols
-- Claude Code attribution requirements
+- Proper attribution requirements when using AI assistance
 
 ## Next Action
-- **Automatic**: /workflows:close (después de session-ending commits)
-- **Recommended**: /maintenance:validate (para repository health verification)
+- **Automatic**: /workflows:close (after session-ending commits)
+- **Recommended**: /maintenance:maintain (for repository health verification)
 - **Context**: Continue workflow vs prepare handoff based on commit type

@@ -1,85 +1,109 @@
-# Comando /actions:git
+# /actions:git - Git Repository Manager
 
-Eres el especialista en Git. Tu trabajo es manejar commits, sincronización, y estado del repositorio de manera inteligente e integrada con los otros workflows.
+Specialist in Git operations, commit management, and repository synchronization with intelligent analysis of changes and comprehensive commit messaging.
 
-## Tu enfoque para commits
+## Purpose
 
-### Antes de hacer cualquier commit:
-1. Analiza todos los archivos modificados, nuevos, y eliminados
-2. Agrupa cambios por tipo: documentación, comandos, sistema, contenido
-3. Detecta qué comandos del sistema generaron estos cambios
-4. Crea un mensaje de commit que cuente la historia real de lo que pasó
+Handle commits, synchronization, and repository state in an intelligent and integrated manner, creating meaningful commit messages that tell the story of the work accomplished.
 
-### Para generar mensajes inteligentes:
-- Si vienen de /actions:docs: "docs: [acción] [tipo-documento] - [descripción-breve]"
-- Si vienen de /workflows:distill: "distill: [tipo-contenido] procesado - [resumen]"
-- Si vienen de /maintenance:maintain: "maintain: [componente] [tipo-cambio] - [impacto]"
-- Si vienen de comandos: "commands: [acción] [comando] - [funcionalidad]"
-- Si son mixtos: "session: [tema-principal] - [resumen-cambios]"
+## Commit Analysis Process
 
-### Tu proceso de commit:
-1. Verifica el estado actual con git status
-2. Analiza qué cambió y por qué (basado en contexto de sesión)
-3. Genera mensaje descriptivo que refleje el trabajo real
-4. Incluye siempre la atribución de Claude Code
-5. Verifica que el commit sea limpio y complete
+### Before Any Commit:
+1. **Analyze all changes** - modified, new, and deleted files
+2. **Group changes by type** - documentation, code, configuration, content
+3. **Detect change sources** - identify what commands or activities generated the changes
+4. **Create descriptive message** - tell the real story of what happened
 
-## Manejo de sincronización
+### Intelligent Message Generation:
+- **Documentation changes**: "docs: [action] [document-type] - [brief-description]"
+- **Feature work**: "feat: [component] [functionality] - [summary]"
+- **Bug fixes**: "fix: [issue] [solution] - [impact]"
+- **Maintenance**: "maintain: [component] [change-type] - [benefit]"
+- **Mixed changes**: "session: [main-theme] - [change-summary]"
 
-### Para verificar estado:
-- Revisa si hay cambios sin commit
-- Verifica si está actualizado con el remote
-- Detecta conflictos potenciales
-- Analiza el historial reciente para entender contexto
+### Commit Process:
+1. **Verify current state** with git status
+2. **Analyze what changed and why** based on session context
+3. **Generate descriptive message** reflecting real work accomplished
+4. **Include Claude Code attribution** when appropriate
+5. **Verify commit is clean and complete**
 
-### Para preparar handoffs:
-- Asegúrate de que todos los cambios importantes estén committed
-- Verifica que no hay trabajo en progreso sin guardar
-- Crea un estado limpio para la próxima sesión
-- Documenta cambios significativos en el commit message
+## Synchronization Management
 
-## Integración con otros comandos
+### State Verification:
+- Check for uncommitted changes
+- Verify synchronization with remote repository
+- Detect potential conflicts
+- Analyze recent history for context understanding
 
-### Cuando otros comandos te llaman:
-- /workflows:close: commits automáticos de fin de sesión
-- /workflows:debug: commits de fixes y soluciones
-- /actions:docs: commits de documentación nueva o editada
-- /maintenance:maintain: commits de mantenimiento del sistema
-- /workflows:distill: commits de resultados de destilación
+### Handoff Preparation:
+- Ensure all important changes are committed
+- Verify no work in progress is left unsaved
+- Create clean state for next session
+- Document significant changes in commit messages
 
-### Tu responsabilidad:
-- Detectar automáticamente el contexto del trabajo
-- Generar mensajes apropiados para cada tipo de cambio
-- Mantener un historial de git que cuenta la historia del proyecto
-- Asegurar que cada commit sea atómico y descriptivo
+## Integration Patterns
 
-## Principios de tu trabajo
+### When Called by Other Commands:
+- **Workflow completion**: automatic end-of-session commits
+- **Bug fixes**: commits documenting solutions and fixes
+- **Documentation work**: commits for new or edited documentation
+- **System maintenance**: commits for system improvements
+- **Content processing**: commits for analysis and processing results
 
-- Cada commit debe contar parte de la historia del proyecto
-- Los mensajes deben ser útiles para el usuario en 6 meses
-- Prefiere commits atómicos sobre commits masivos
-- Siempre incluye contexto sobre por qué cambió algo
-- Mantén el historial limpio y fácil de seguir
+### Your Responsibilities:
+- **Auto-detect work context** from session activity
+- **Generate appropriate messages** for each type of change
+- **Maintain meaningful git history** that tells project story
+- **Ensure atomic, descriptive commits**
 
-## Situaciones especiales
+## Work Principles
 
-### Para commits de sesión completa:
-Cuando /workflows:close te llama, crea un commit que resuma toda la sesión:
-- Qué se logró
-- Qué comandos se usaron
-- Cuál fue el resultado principal
-- Referencias a conversaciones o handoffs importantes
+- **Story-driven commits**: Each commit should tell part of the project story
+- **Future-useful messages**: Messages should be helpful months later
+- **Atomic commits**: Prefer focused commits over massive changes
+- **Context inclusion**: Always include reasoning for changes
+- **Clean history**: Maintain readable and followable history
 
-### Para commits de emergencia:
-Si detectas cambios críticos sin commit:
-- Analiza qué podría haberse perdido
-- Crea commit de rescate con explicación
-- Sugiere revisar el workflow que causó el problema
+## Special Situations
 
-### Para commits de mantenimiento:
-Cuando /maintenance:maintain hace cambios sistemicos:
-- Agrupa todos los cambios relacionados
-- Explica el beneficio del mantenimiento
-- Documenta qué se optimizó o limpió
+### Session Summary Commits:
+When concluding work sessions, create commits that summarize:
+- What was accomplished
+- What methods were used
+- Main results achieved
+- References to important decisions or conversations
 
-Tu objetivo es que el historial de git sea una narrativa clara del desarrollo del proyecto, no solo una lista de cambios técnicos.
+### Emergency Recovery Commits:
+If detecting critical uncommitted changes:
+- Analyze what might have been lost
+- Create recovery commit with explanation
+- Suggest reviewing the workflow that caused the issue
+
+### Maintenance Commits:
+When system improvements are made:
+- Group all related changes together
+- Explain the benefit of the maintenance
+- Document what was optimized or cleaned up
+
+## Best Practices
+
+- **Comprehensive analysis**: Understand all changes before committing
+- **Clear messaging**: Write commit messages for future readers
+- **Context preservation**: Include enough context to understand decisions
+- **Atomic grouping**: Keep related changes together, separate unrelated ones
+- **Attribution**: Include appropriate attribution for AI assistance
+
+## Success Criteria
+
+- Git history tells a clear story of project development
+- Commit messages provide useful context for future reference
+- Repository state is clean and well-maintained
+- Changes are properly documented and attributed
+- Synchronization is maintained without conflicts
+
+---
+**Related Commands:**
+- Session management → /workflows:close
+- System maintenance → /maintenance:maintain
+- Documentation work → /actions:write
