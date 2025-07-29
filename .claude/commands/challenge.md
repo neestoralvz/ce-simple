@@ -47,31 +47,26 @@ El subagente debe evaluar:
 - ¿O es una solución buscando un problema?
 - ¿Hay evidencia de que se necesita?
 
-## Formato de reporte
+## Análisis conversacional directo
 
-```markdown
-## Challenge Report - [Tema analizado]
+**PROHIBIDO**: Crear archivos de reporte o documentación
 
-### ✅ Alineado con Visión
+Presenta análisis directamente en conversación con estructura:
+
+**✅ Alineado con Visión**
 - [Elementos que sí reflejan la visión del usuario]
-- [Decisiones que mantienen simplicidad]
 
-### ⚠️ Puntos de Fricción  
+**⚠️ Puntos de Fricción**  
 - [Decisiones que podrían alejarte del objetivo]
-- [Complejidad que no agrega valor claro]
 
-### 🔥 Alertas Críticas
+**🔥 Alertas Críticas**
 - [Over-engineering detectado]
-- [Sesgos de AI encontrados]
-- [Violaciones a principios establecidos]
 
-### 💡 Alternativas Más Simples
+**💡 Alternativas Más Simples**
 - [Propuestas concretas de simplificación]
-- [Formas de lograr 80% del beneficio con 20% del trabajo]
 
-### 🎯 Pregunta Central
+**🎯 Pregunta Central**
 [La pregunta clave que el usuario debe responderse]
-```
 
 ## Cuestionamiento inteligente
 
