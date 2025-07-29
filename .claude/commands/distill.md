@@ -9,7 +9,7 @@ Antes de procesar, auto-detecta el estado leyendo directamente:
 2. **Layer 2**: Verifica si existen archivos de síntesis temática
 3. **Layer 3**: Evalúa cobertura de documentación formal
 
-Reporta progreso en tiempo real durante ejecución sin crear archivos de estado.
+**NUNCA crear archivos de reporte o tracking**. Estado se mantiene conversacional únicamente.
 
 ## Tu proceso iterativo
 
@@ -92,13 +92,13 @@ Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz u
 - Identifica si quedan conversaciones sin analizar
 - Reporta progreso específico: "47/71 quotes procesados, 3 iteraciones restantes estimadas"
 
-## Reporte de progreso en tiempo real
+## Progreso conversacional únicamente
 
-Durante cada iteración, reporta progreso en vivo:
+Durante cada iteración, reporta progreso en conversación:
 - "Procesando conversación X de Y..."
 - "Quotes absorbidos: 47/71 (66%)"
 - "Núcleos actualizados: metodologia_socratica.md (+3 quotes)"
-- No crear archivos de estado permanentes
+- **PROHIBIDO**: Crear archivos de reporte, tracking, o estado permanente
 
 ## Principios de eficiencia
 
