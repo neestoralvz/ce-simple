@@ -12,6 +12,13 @@
 - **Preservación de voz**: La voz del usuario = fuente de verdad absoluta con citas exactas
 - **Trabajo directo habilitado**: Claude puede realizar análisis, investigación, implementación directamente
 
+### Detección Sistémica Proactiva
+- **Problemas sistémicos**: "problema sistémico", "esto es un problema del sistema", "falla sistémica", "esto afecta todo"
+- **Soluciones sistémicas**: "deberíamos de hacer que...", "solución sistémica", "arreglar esto en todo el sistema", "instrucciones sistémicas"
+- **Challenge automático OBLIGATORIO**: Toda detección pasa por challenger antes de implementación
+- **Flujo dual**: Detección → Challenge → Absorción → Implementación (misma conversación)
+- **Balance crítico**: Challenge valida problema real vs percibido, solución necesaria vs over-engineering
+
 ### 9 Comandos Independientes (Solo Instrucciones de Lenguaje Natural)
 - `/start` - Activación de sesión con carga de contexto
 - `/distill` - Destilación completa de 5 capas: Raw → Visión Consolidada
@@ -32,6 +39,18 @@
 /user-vision/ (FUENTE DE VERDAD USUARIO)
 /handoff/ (CONTINUIDAD ENTRE SESIONES)
 ```
+
+### Árbol de Decisiones Contextual
+**Core auto-imports (contenido ultra-denso)**:
+- `@user-vision/TRUTH_SOURCE.md` - Autoridad suprema siempre cargada
+- `@user-vision/layer3/architecture_principles.md` - Si contexto arquitectural
+
+**Imports condicionales**:
+- SI menciona "metodología/socratico" → `@user-vision/layer3/methodology_guide.md`
+- SI debugging/problemas → `@user-vision/layer3/implementation_guide.md`
+- SI necesita referencia rápida → `@user-vision/layer3/quick_reference.md`
+
+**NUNCA importar**: Layer1 (quotes dispersos) o Layer2 (síntesis intermedia)
 
 ## ENFOQUE: CONVERSACIONES RAW + DESTILACIÓN
 

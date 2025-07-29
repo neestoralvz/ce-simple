@@ -5,11 +5,13 @@ Eres el sistema de destilación iterativa con convergencia automática. Tu traba
 ## Auto-detección de estado inicial
 
 Antes de procesar, auto-detecta el estado leyendo directamente:
-1. **Layer 1**: Cuenta quotes en núcleos existentes vs conversaciones totales en `/raw/conversations/`
+1. **Layer 1**: Identifica núcleos existentes y conversaciones sin procesar por timestamp
 2. **Layer 2**: Verifica si existen archivos de síntesis temática
 3. **Layer 3**: Evalúa cobertura de documentación formal
 
 **NUNCA crear archivos de reporte o tracking**. Estado se mantiene conversacional únicamente.
+
+**NOTA CRÍTICA**: No usar métricas de completitud basadas en conteo de quotes - conversaciones raw mezclan voz auténtica con interpretaciones AI.
 
 ## Tu proceso iterativo
 
@@ -33,45 +35,49 @@ Antes de procesar, auto-detecta el estado leyendo directamente:
   ---
   ```
 
-### Layer 2: Síntesis Temática de Relaciones (solo cuando Layer 1 >80%)
+### Layer 2: Concentración en Insights Ultra-Densos (solo cuando Layer 1 >80%)
 
-**Si archivos de síntesis NO existen:**
-- Crear 6 archivos temáticos: metodologia_arquitectura_bridge.md, vision_simplicidad_tension.md, comandos_orquestacion_matrix.md, evolucion_autoridad_dynamics.md, conversation_execution_flow.md, growth_patterns_synthesis.md
+**OBJETIVO CRÍTICO**: Fusionar múltiples quotes en insights concentrados y poderosos
 
-**Si archivos YA existen:**
-- Analizar relaciones emergentes entre núcleos Layer 1
-- Expandir síntesis con nuevas conexiones identificadas
-- Preservar exclusivamente voz del usuario con trazabilidad
+**Proceso de Concentración:**
+- Tomar 10+ quotes relacionados de Layer 1
+- Extraer el insight CORE que conecta todos
+- Crear declaración densa que concentre máximo valor
+- Eliminar redundancia y dispersión
 
-**Formato de síntesis:**
+**Formato de concentración:**
 ```markdown
-# Síntesis: [Relación Core]
+# Insight Concentrado: [Principio Core]
 
-## Conexiones Identificadas
-**Núcleo origen:** `núcleo.md`
-**Núcleo destino:** `núcleo.md` 
-**Relación:** [Descripción con quotes exactos]
+## Síntesis Ultra-Densa
+[UN párrafo que concentra 10+ quotes en insight poderoso]
 
-## Patrones Emergentes
-[Patterns identificados entre núcleos]
+## Evidence Base (Layer 1 sources)
+[Solo referencias, no repetir contenido]
 
-## Implicaciones
-[Consecuencias de las relaciones]
+## Implicaciones Ejecutables
+[Consecuencias directas y actionables]
 ```
 
-### Layer 3: Documentación Oficial (solo cuando Layer 2 completo)
+**CRITERIO**: Cada archivo Layer 2 debe concentrar 10x más valor que suma de sus quotes fuente
 
-**Regenerar documentación oficial desde síntesis:**
-- methodology_guide.md (desde núcleos metodológicos + síntesis flow)
-- architecture_principles.md (desde núcleos arquitecturales + síntesis relaciones)
-- implementation_guide.md (desde síntesis execution + patterns)
-- quick_reference.md (síntesis práctica de todos los layers)
+### Layer 3: Documentación ULTRA-DENSA Ejecutable (solo cuando Layer 2 completo)
 
-**Proceso:**
-1. Analizar síntesis Layer 2 para extraer principios oficiales
-2. Generar documentación que refleje la visión destilada
-3. Aplicar workflow: creación → alineamiento → verificación
-4. Mantener trazabilidad a layers anteriores
+**OBJETIVO MÁXIMO**: Documentación que concentra máximo valor por línea - cada palabra cuenta
+
+**Meta-concentración desde Layer 2:**
+- methodology_guide.md (fusión de insights metodológicos concentrados)
+- architecture_principles.md (síntesis arquitectural ultra-densa)
+- implementation_guide.md (guía ejecutable concentrada)
+- quick_reference.md (máxima densidad práctica)
+
+**Criterio de Densidad:**
+- Cada línea = máximo value/token ratio
+- Eliminar todo lo redundante o disperso
+- Conocimiento ejecutable inmediato
+- 100% signal, 0% noise
+
+**Uso en @-imports**: Layer 3 es ideal para contexto automático - máximo valor, mínimo tokens
 
 ### TRUTH_SOURCE.md: Autoridad Suprema (solo cuando Layer 3 completo)
 
@@ -80,7 +86,7 @@ Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz u
 ## Convergencia automática
 
 **Criterio de terminación por Layer:**
-- **Layer 1**: Cuando auto-detección muestre 100% quotes procesados en núcleos
+- **Layer 1**: Cuando todas las conversaciones en raw/ hayan sido revisadas por timestamp
 - **Layer 2**: Cuando todas las relaciones entre núcleos estén sintetizadas en archivos temáticos  
 - **Layer 3**: Cuando documentación oficial refleje completamente la síntesis
 - **TRUTH_SOURCE**: Cuando autoridad suprema integre todos los layers
@@ -88,16 +94,16 @@ Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz u
 **Completion message:** "Destilación completa - Todo el corpus conversacional procesado y sintetizado"
 
 **Auto-detección de completitud:**
-- Cuenta quotes procesados vs totales disponibles
-- Identifica si quedan conversaciones sin analizar
-- Reporta progreso específico: "47/71 quotes procesados, 3 iteraciones restantes estimadas"
+- Identifica conversaciones por timestamp más reciente que último procesamiento
+- Detecta si quedan archivos raw/ sin revisar
+- Reporta progreso temporal: "Procesando hasta 20250729, 3 conversaciones pendientes"
 
 ## Progreso conversacional únicamente
 
 Durante cada iteración, reporta progreso en conversación:
-- "Procesando conversación X de Y..."
-- "Quotes absorbidos: 47/71 (66%)"
-- "Núcleos actualizados: metodologia_socratica.md (+3 quotes)"
+- "Procesando conversación [timestamp]..."
+- "Núcleos actualizados: metodologia_socratica.md (+3 insights)"
+- "Revisando hasta: 20250729 (2 conversaciones pendientes)"
 - **PROHIBIDO**: Crear archivos de reporte, tracking, o estado permanente
 
 ## Principios de eficiencia

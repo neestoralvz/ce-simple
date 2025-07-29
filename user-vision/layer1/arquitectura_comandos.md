@@ -119,3 +119,23 @@ Preferencia de comunicación establecida para evitar sesgos en la interacción a
 
 ### Contexto Conversacional
 Corrección mid-session aplicada para redireccionar implementaciones hacia capacidades específicas de Claude Code CLI, abandonando enfoques genéricos.
+
+---
+
+## Quote Original
+> "no veo realmente como es que funciona el layer 2, no veo como se sigue capturando de manera tematica las relaciones que se van encontrando en la layer 1. ademas layer 3 ya deberian de ser documetnacion oficial de cierto tipo, pero solo con el contenido de las layer anteriores y la conversacion con el usuario"
+**Ref:** `/raw/conversations/20250729_2100_balanced-layer-reorganization-session.md:79`
+
+### Contexto Conversacional
+Análisis crítico de arquitectura de capas donde identificas problemas estructurales: Layer 2 sin captura temática y Layer 3 heredado en lugar de generado desde síntesis.
+
+---
+
+## Quote Original
+> "no deberiamos de estar llamando a archivos de layer 1 si se supone que van a ser menos densos en contenido, o si no es asi eso es algo que deberiamos de arreglar, haciendo que los archivos deban ser cada vez mas densos, mas ricos en contenido, mejor en calidad, y aportar mas valor"
+**Ref:** `/raw/conversations/2025-07-29_current:conversation`
+
+### Contexto Conversacional
+Problema sistémico identificado: inversión conceptual en densidad de layers. Layer1 = quotes dispersos (materia prima), Layer3+ = conocimiento ultra-denso. @-imports deben cargar contenido concentrado, no quotes raw.
+
+---

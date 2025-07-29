@@ -49,3 +49,60 @@ Las restricciones de simplicidad liberan creatividad y enfoque, no la limitan
 2. **Intelligent Defaults**: Complejidad manejada automáticamente cuando posible  
 3. **Graceful Degradation**: Sistema funciona en múltiples niveles de sofisticación
 4. **Human-Centric Complexity**: Complejidad justificada solo si sirve al humano
+
+---
+
+## Nuevas Tensiones Emergentes
+
+### New Tension: User-Vision Authority vs CLAUDE.md Dispatcher
+**Núcleo origen:** `autoridad_vision.md` ↔ `simplicidad_belleza.md`
+
+**Tensión:**
+- "creo que deberia haber una carpeta user_vision y ahi este la vision destilada del usuario obtenida de las conversaciones que hemos ido guardando"
+- VS "CLAUDE.md debe ser dispatcher mínimo"
+
+**Resolución emergente:** 
+- user-vision/ se convierte en fuente de verdad suprema mientras CLAUDE.md evoluciona hacia navegador minimalista
+- "de alguna manera deberíamos de hacer que desde el momento en que el usuario propone cambios sistémicos se generen este tipo de propuestas dentro de user vision para que sea más rápido ese camino"
+
+### New Tension: Multi-Conversation Orchestration vs Command Independence
+**Núcleo origen:** `flujos_trabajo.md` ↔ `simplicidad_belleza.md`
+
+**Tensión:**
+- "decidí que era mejor iniciar cada una de estas prioridades en conversaciones simultáneas para agilizar la rapidez"
+- VS "los comandos son autocontenidos entre ellos y solo pueden conectarse con otros comandos"
+
+**Resolución emergente:**
+- Independencia mantenida a nivel de comando individual
+- Coordinación elevada a nivel de usuario como ultra-orchestrator
+- "hay que tomar en cuenta que solo el agente principal es capaz de orquestar, entonces al iniciar conversaciones paralelas simultáneas concurrentes, el usuario es capaz de hacer esto"
+
+### New Tension: Layer Granularity vs Information Preservation  
+**Núcleo origen:** `simplicidad_belleza.md` ↔ `autoridad_vision.md`
+
+**Tensión:**
+- Challenger suggestion: "¿No sería más eficiente consolidar todos estos elementos en un solo documento de síntesis?"
+- VS User response: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
+
+**Resolución emergente:**
+- Granularidad preservada para contexto eficiente
+- "creo que si podriamos quitar esos reportes sin perder la granularidad"
+- Simplificación balanceada, no agresiva
+
+## Nuevas Dinámicas de Resolución
+
+### Pattern: Simplicity Through Intelligent Structure
+Sistema organiza complejidad inherente de manera que se presente simple al usuario, no reduce funcionalidad.
+
+### Pattern: Authority-Driven Simplification  
+Simplificación guiada por user feedback directo, no por principios abstractos de elegancia.
+
+### Pattern: Multi-Scale Complexity Management
+Sistema funciona simple para uso básico, pero preserva granularidad para análisis profundo cuando requerido.
+
+## Nuevas Implicaciones
+
+1. **Authority-First Architecture**: user-vision/ arquitecturalmente superior a dispatcher CLAUDE.md
+2. **Granular Simplicity**: Simplificar presentación manteniendo granularidad de información
+3. **User-Validated Optimization**: Optimizaciones validadas por feedback directo del usuario, no métricas abstractas
+4. **Multi-Conversation Simplicity**: Complejidad de orquestación paralela abstraída del usuario individual
