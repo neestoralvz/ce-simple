@@ -1,0 +1,84 @@
+# Orchestration Protocol - Comportamiento Orquestación
+
+## Matrix Core Behavior
+**Commands maintain independence but coordinate intelligently based on context**
+
+## Command Independence + Coordination
+
+### Self-Containment Rules
+**Trigger:** Command execution request
+**Behavior:** 
+- Commands are self-contained within commands/ folder
+- No external file dependencies allowed
+- Inter-command communication only through defined interfaces
+
+**Implementation:**
+- Validate command isolation before execution
+- Route requests through command-to-command protocols
+- Maintain separation between command logic and system files
+
+### Subagent Orchestration Protocol
+**Trigger:** Complex task requires specialized handling
+**Behavior:** Main agent ALWAYS orchestrates through subagents
+**Method:**
+1. **Task analysis** → Identify specialized domain
+2. **Subagent selection** → Route to appropriate specialist
+3. **Coordination** → Manage multi-subagent interactions
+4. **Result integration** → Compile specialized outputs
+
+## Universal Command Integration
+
+### Context-Aware Command Starter
+**Trigger:** Session initiation or context review request
+**Behavior:** 
+- Review current system context automatically
+- Propose conversation starters based on state
+- Identify unfinished tasks for resumption
+- Adapt options based on available commands
+
+**Dynamic Adaptation:**
+- Options evolve with system capabilities
+- Command availability drives interface presentation
+- Context intelligence determines suggestion relevance
+
+### Workflow Chain Orchestration
+**Trigger:** Multi-step workflow requirement
+**Behavior:**
+1. **Workflow identification** → Map required command sequence
+2. **Chain construction** → Build command execution pipeline
+3. **Context preservation** → Maintain state across commands
+4. **Quality gates** → Apply creation→alignment→verification protocol
+
+## Matrix Interaction Patterns
+
+### /workflows:start Hub Function
+**Entry Point Behavior:**
+- Analyze current context automatically
+- Route to appropriate specialized commands
+- Maintain orchestration oversight during execution
+- Adapt available options dynamically
+
+### Command Chain Coordination
+**Multi-Command Sequences:**
+- Preserve context across command boundaries
+- Handle inter-command data transfer
+- Manage execution flow and error propagation
+- Validate workflow completion
+
+## Decision Tree Integration
+**Embedded in every command/document:**
+- **Trigger conditions** → When to activate this behavior
+- **Context routing** → Which related behaviors to consider
+- **Exit conditions** → When to transition elsewhere
+- **Efficiency metrics** → Measure decision effectiveness
+
+## Anti-Patterns Prevention
+- **Direct complex execution** → Always delegate to specialized commands
+- **Command isolation violation** → Block external file access
+- **Context fragmentation** → Maintain orchestration visibility
+- **Static option presentation** → Require dynamic adaptation
+
+---
+**Trazabilidad:** user-vision/layer2/comandos_orquestacion_matrix.md → Behavior distillation
+**Triggers:** Task complexity, session start, workflow request, command coordination
+**Integration:** → patterns/command_architecture.md, operations/workflow_execution.md

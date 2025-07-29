@@ -3,14 +3,14 @@
 **29/07/2025 10:45 CDMX** | Dispatcher con triggers semánticos y enforcement
 
 ## AUTORIDAD SUPREMA
-context/user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ## CONTEXTO CORE SIEMPRE CARGADO
-@context/user-vision/TRUTH_SOURCE.md
-@context/patterns/orchestrator_methodology.md
-@context/principles/authority.md
-@context/patterns/simplicity.md
-@context/enforcement/core_reminders.md
+@context/TRUTH_SOURCE.md
+@context/operational/patterns/socratic_methodology.md
+@context/operational/patterns/authority_framework.md
+@context/operational/patterns/simplicity_principles.md
+@context/operational/behaviors/orchestration_protocol.md
 
 ## COMPORTAMIENTO ORQUESTADOR
 /roles:orchestrator
@@ -78,27 +78,27 @@ context/user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ### Post-Validation Sistemática
 **Después cada delegación** → automatic second Task tool
-**Verify alignment** context/user-vision/TRUTH_SOURCE.md
-**Verify compliance** context/patterns/simplicity.md
+**Verify alignment** context/TRUTH_SOURCE.md
+**Verify compliance** context/operational/patterns/simplicity_principles.md
 **Verify standards** según context apropiado
 
 ## REFERENCIAS CONDICIONALES
 
 **Context loading según patterns**:
-- Research: context/roles:research/ + context/patterns/orchestrator_methodology.md
-- Documentation: context/templates/ + context/patterns/documentation_style.md  
-- Architecture: context/user-vision/TRUTH_SOURCE.md + context/principles/authority.md
-- Implementation: context/patterns/simplicity.md + domain-specific context
-- Commands: context/templates/template_command.md + .claude/commands/
-- Validation: context/decisions/ + relevant patterns
+- Research: context/operational/behaviors/discovery_execution_flow.md + context/operational/operations/methodology_protocol.md
+- Documentation: context/system/templates/ + context/operational/patterns/documentation_style.md  
+- Architecture: context/TRUTH_SOURCE.md + context/operational/patterns/authority_framework.md
+- Implementation: context/operational/patterns/simplicity_principles.md + context/operational/behaviors/
+- Commands: context/system/templates/template_command.md + context/operational/operations/workflow_execution.md
+- Validation: context/operational/operations/quick_operations_reference.md + context/operational/behaviors/
 
 **Enforcement references**:
-- Anti-patterns: context/enforcement/anti_patterns.md
-- Behavioral: context/enforcement/behavioral_enforcement.md
-- Quality gates: context/enforcement/quality_gates.md
-- Semantic triggers: context/enforcement/triggers_semanticos.md
+- Anti-patterns: context/operational/enforcement/anti_patterns.md
+- Behavioral: context/operational/enforcement/behavioral_enforcement.md
+- Quality gates: context/operational/enforcement/quality_gates.md
+- Semantic triggers: context/operational/enforcement/triggers_semanticos.md
 
-**Complete enforcement**: @context/enforcement/
+**Complete enforcement**: @context/operational/enforcement/
 
 ---
 
