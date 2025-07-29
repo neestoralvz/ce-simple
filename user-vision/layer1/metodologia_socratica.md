@@ -87,3 +87,21 @@ Misión central del sistema: crear una interacción más humana con IA.
 
 ### Contexto Conversacional
 Estableciendo la conversación natural como paradigma de interfaz del sistema.
+
+---
+
+## Quote Original
+> "recuerda también que con mis comentarios y propuestas debes de siempre intentar hacer cambios sistemáticos para que de ahora en adelante se hagan de esa manera, ya sea para aciertos o para errores"
+**Ref:** `/raw/conversations/2025-07-28_13-18_research-first-multi-conversation-architecture.md:34`
+
+### Contexto Conversacional
+Establecimiento del principio fundamental de aprendizaje sistemático: user feedback → cambios permanentes en todo el sistema.
+
+---
+
+## Quote Original
+> "recuerda tener como parte de tus workflows la búsqueda en internet y el uso de mcp context7, o veo que se utilicen lo suficiente en ninguno de los workflows o acciones que te veo ejecutar"
+**Ref:** `/raw/conversations/2025-07-28_13-18_research-first-multi-conversation-architecture.md:37`
+
+### Contexto Conversacional
+Crítica constructiva sobre integración de herramientas de research en workflows, estableciendo WebSearch + MCP Context7 como requirements.

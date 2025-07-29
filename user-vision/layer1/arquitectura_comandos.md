@@ -83,3 +83,39 @@ Definiendo límites arquitecturales estrictos para independencia de comandos.
 
 ### Contexto Conversacional
 Visión inicial del sistema de comandos como representación del workflow deseado para Claude Code.
+
+---
+
+## Quote Original
+> "no se si esta sea la manera, no creo que pueda haber realmente comunicación entre los agentes, quizás si llevaran un documento que fueran actualizando y eso fuera la manera de comunicarse entre ellos"
+**Ref:** `/raw/conversations/2025-07-28_13-18_research-first-multi-conversation-architecture.md:24`
+
+### Contexto Conversacional
+Evolución conceptual hacia document-based coordination como solución para comunicación inter-agente, refinando concepto inicial de multi-conversación.
+
+---
+
+## Quote Original
+> "git integration anti-bias implementation"
+**Ref:** `/raw/conversations/2025-07-28_12-50_git-integration-anti-bias-implementation.md:22`
+
+### Contexto Conversacional
+Especificación de tema de sesión para integración de git workflow con enforceement de comunicación neutral.
+
+---
+
+## Quote Original
+> "neutral, agnostic language without bias-inducing adjectives"
+**Ref:** `/raw/conversations/2025-07-28_12-50_git-integration-anti-bias-implementation.md:23`
+
+### Contexto Conversacional
+Preferencia de comunicación establecida para evitar sesgos en la interacción agente-usuario.
+
+---
+
+## Quote Original
+> "debes de siempre tomar en cuenta que estamos utilizando claude code"
+**Ref:** `/raw/conversations/2025-07-28_13-32_sistema-preparacion-monitoreo-claude-code.md:19`
+
+### Contexto Conversacional
+Corrección mid-session aplicada para redireccionar implementaciones hacia capacidades específicas de Claude Code CLI, abandonando enfoques genéricos.

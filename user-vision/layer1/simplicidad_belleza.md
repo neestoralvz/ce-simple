@@ -69,3 +69,41 @@ Confirmación de que la belleza emerge de la simplicidad como principio core.
 
 ### Contexto Conversacional
 Estableciendo la simplicidad como principio foundacional para el diseño del sistema.
+
+---
+
+## Quote Original
+> "Mantengamos CE-Simple enfocado en su propósito original: captura y destilación simple"
+**Ref:** `/raw/conversations/2025-07-28_05-29_refinamiento-ce-simple-contextflow.md:178`
+
+### Contexto Conversacional
+Decisión arquitectónica de mantener separación de concerns: CE-Simple para captura/destilación vs ContextFlow como sistema conversacional avanzado independiente.
+
+---
+
+## Quote Original
+> "CE-Simple mantiene simplicidad"
+**Ref:** `/raw/conversations/2025-07-28_05-29_refinamiento-ce-simple-contextflow.md:19`
+
+### Contexto Conversacional
+Captura + destilación básica, no super-prompting, como core value del sistema.
+
+---
+
+## Quote Original
+> "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
+**Ref:** `/raw/conversations/20250729_2100_balanced-layer-reorganization-session.md:46`
+
+### Contexto Conversacional
+Rechazo a simplificación agresiva propuesta por challenger, estableciendo que la preservación de información granular tiene valor sobre consolidación extrema.
+
+---
+
+## Quote Original
+> "creo que si podriamos quitar esos reportes sin perder la granularidad"
+**Ref:** `/raw/conversations/20250729_2100_balanced-layer-reorganization-session.md:62`
+
+### Contexto Conversacional
+Definición de simplificación balanceada: eliminar metadata sin valor pero preservar información temática granular que aporta contexto y eficiencia.
+
+---
