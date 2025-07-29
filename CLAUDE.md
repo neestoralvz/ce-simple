@@ -111,7 +111,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **Variables**: Load path configuration from organization authority
 
 **Storage Variables**:
-- CONVERSATION_STORAGE: "conversations" (session outputs)
+- CONVERSATION_STORAGE: "archive/conversations_processed" (processed conversations only)
 - CONTEXT_OPERATIONAL: "context/operational" (living patterns)
 - CONTEXT_ARCHIVE: "context/archive" (processed content)
 - CONTEXT_SYSTEM: "context/system" (configuration)
