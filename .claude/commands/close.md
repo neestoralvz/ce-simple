@@ -28,10 +28,13 @@ Genera un documento en /handoff/ que incluya:
 
 ### Paso 4: Procesar para narrativa
 Salva la conversación completa en /user-vision/raw/conversations/ con:
-- Timestamp claro en el nombre del archivo
-- Tema principal identificable
+- Timestamp formato YYYYMMDD_HHMM usando Ciudad de México: `TZ="America/Mexico_City" date +"%Y%m%d_%H%M"`
+- Tema principal identificable en el nombre
 - Contenido completo sin editar
 - Metadata mínima necesaria
+- Ejemplo: `20250728_1909_descripcion-sesion.md`
+
+IMPORTANTE: Usa el mismo timestamp para handoff y conversación raw.
 
 ### Paso 5: Commit inteligente
 Usa /git para:
