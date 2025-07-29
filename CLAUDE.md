@@ -103,6 +103,22 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 **Complete enforcement**: @context/operational/enforcement/
 
+## SISTEMA CONFIGURACIÓN
+
+### Semantic File Organization
+**Authority**: @context/system/SEMANTIC_ORGANIZATION.md
+**Behavior**: All file operations respect semantic storage definitions
+**Variables**: Load path configuration from organization authority
+
+**Storage Variables**:
+- CONVERSATION_STORAGE: "conversations" (session outputs)
+- CONTEXT_OPERATIONAL: "context/operational" (living patterns)
+- CONTEXT_ARCHIVE: "context/archive" (processed content)
+- CONTEXT_SYSTEM: "context/system" (configuration)
+- PLANNING_ACTIVE: "context/planning" (current work)
+
+**Conditional Routing**: All system operations consult semantic organization rules for correct file placement
+
 ---
 
 **PRINCIPIO ESENCIAL**: Semantic recognition + Think x4 + delegation + continuous execution + systematic validation = Maximum completitud con zero friction.

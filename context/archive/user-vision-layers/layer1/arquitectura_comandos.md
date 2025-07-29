@@ -374,6 +374,42 @@ Elevación de separación de responsabilidades a principio sistémico fundamenta
 
 ---
 
+## Quote Original
+> "creo que tengo algunos comandos en la carpeta de export que podriamos utilizar para mejorar lso ocoamndos que tenemos en .claude, que opinas de ello?"
+**Ref:** `context/archive/conversations_processed/20250729_1619_massive-compliance-restoration-architectural-transformation.md:11`
+
+### Contexto Conversacional
+User recognition de que export/ commands podían mejorar .claude/ commands, leading to massive architectural crisis discovery y systematic restoration.
+
+---
+
+## Quote Original
+> "100% broken @context/ references (36 total)"
+**Ref:** `context/archive/conversations_processed/20250729_1619_massive-compliance-restoration-architectural-transformation.md:48`
+
+### Contexto Conversacional
+Architectural crisis recognition donde complete reference architecture breakdown was discovered. Sistema completamente roto a nivel arquitectural requiring systematic repair.
+
+---
+
+## Quote Original
+> "Phase-based approach proven: Manageable transformation at scale"
+**Ref:** `context/archive/conversations_processed/20250729_1619_massive-compliance-restoration-architectural-transformation.md:106`
+
+### Contexto Conversacional
+Methodology validation through systematic approach: Phase 1 (repair) → Phase 2A (easy) → Phase 2B (medium) → Phase 2C (complex). Proven approach for massive architectural transformations.
+
+---
+
+## Quote Original
+> "planning/ = QUÉ hacer vs operational/patterns/ = CÓMO hacer"
+**Ref:** `context/archive/conversations_processed/20250729_1637_architectural-organization-optimization.md:26`
+
+### Contexto Conversacional
+Architectural organization principle clarified: file placement based on purpose vs topic similarity. Clear separation between plans específicos and metodologías reusables.
+
+---
+
 ## Conversations Processed
 - 2025-07-26_22-56_sistema-destilacion-narrativas-fundacional.md
 - 2025-01-28_refinamiento-contextflow-arquitectura.md
@@ -420,3 +456,6 @@ Elevación de separación de responsabilidades a principio sistémico fundamenta
 - 20250728_2101_systemic-revolution-modular-architecture.md
 - 20250729_2100_balanced-layer-reorganization-session.md
 - 20250729_1510_session-analysis-close.md
+- 20250729_1619_massive-compliance-restoration-architectural-transformation.md [ARCHIVED]
+- 20250729_1626_planning-system-implementation-complete.md [ARCHIVED]
+- 20250729_1637_architectural-organization-optimization.md [ARCHIVED]

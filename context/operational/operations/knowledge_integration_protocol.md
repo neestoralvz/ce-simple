@@ -76,8 +76,16 @@ Transform conversation insights into permanent system knowledge through systemat
 1. **Knowledge extraction** → Distill insights from session
 2. **Classification** → Determine appropriate integration pathway
 3. **Document creation/update** → Apply to target location
-4. **Cross-reference update** → Maintain link integrity
-5. **Authority validation** → Confirm user voice preservation
+4. **Conversation archival** → Store processed conversation in context/archive/conversations_processed/
+5. **Cross-reference update** → Maintain link integrity
+6. **Authority validation** → Confirm user voice preservation
+
+## Conversation Storage Protocol
+
+### Direct Archive Storage
+**Rationale**: Complete knowledge distillation eliminates need for intermediate conversations/ storage
+**Target**: context/archive/conversations_processed/[timestamp]_[session-description].md
+**Format**: Processed conversation with knowledge integration summary + archive status
 
 ---
 **Integration Point**: Called by /workflows:close after Think x4 session analysis
