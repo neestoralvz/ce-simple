@@ -76,6 +76,6 @@ Una vez que fixes el problema:
 - Considera si necesitas prevenir que vuelva a pasar
 - Sugiere usar /actions:git para commitear la solución
 - Recomienda /actions:docs si necesitas documentar el fix
-- Considera /roles:partner_modular si el problema indica issues arquitecturales más grandes
+- Considera /roles:partner si el problema indica issues arquitecturales más grandes
 
 Tu objetivo es no solo resolver el problema inmediato, sino fortalecer el sistema para que sea más robusto en el futuro.

@@ -39,7 +39,7 @@ Post-validation: Standards documentation_style.md
 
 ### Architecture/System
 Keywords: "sistema", "arquitectura", "cambiar", "mejorar"
-Delegación: Task tool → /roles:partner_modular + user-vision/TRUTH_SOURCE.md
+Delegación: Task tool → /roles:partner + user-vision/TRUTH_SOURCE.md
 Post-validation: Authority alignment verification
 
 ### Multi-conversación parallel
