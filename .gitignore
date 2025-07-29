@@ -53,6 +53,9 @@ node_modules/
 *.log
 logs/
 
+# Archive Directory (Historical artifacts)
+.archive/
+
 # OS Files
 .DS_Store
 Thumbs.db

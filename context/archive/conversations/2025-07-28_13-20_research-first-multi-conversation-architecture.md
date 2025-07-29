@@ -78,6 +78,7 @@ Technical Spike: Validate architecture compatibility
 4. Technical validation: Architecture compatibility assessment
 5. User voice separation: Research findings vs user decisions
 ```
+→ **Script Reference**: Ver context/examples/bash/research_integration.sh:execute_enhanced_workflow() para checklist sistemático
 
 ### 4. Command System Evolution (SYSTEMATIC IMPROVEMENTS)
 
