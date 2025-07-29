@@ -69,3 +69,23 @@ Definición clara de roles en el workflow: usuario aporta visión, AI ejecuta im
 
 ### Contexto Conversacional
 Definición del workflow de 10 pasos comenzando con solicitud → exploración → búsqueda.
+
+---
+
+## Quote Original
+> "Captura conversacional superior a Super Whisper"
+**Ref:** `/raw/conversations/2025-07-28_00-45_refinamiento-ce-simple-contextflow.md:35`
+
+### Contexto Conversacional
+Sesiones delimitadas proporcionan mejor trazabilidad, menos ruido contextual, control más granular sobre qué se captura vs sistemas de transcripción automática.
+
+---
+
+## Quote Original
+> "Probar `/session-close` en conversación actual"
+**Ref:** `/raw/conversations/2025-07-28_00-45_refinamiento-ce-simple-contextflow.md:42`
+
+### Contexto Conversacional
+Usuario + Claude → Inmediato (esta conversación como test case) para validar nuevo approach de captura conversacional.
+
+---
