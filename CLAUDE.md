@@ -3,10 +3,10 @@
 **29/07/2025 10:45 CDMX** | Dispatcher con triggers semánticos y enforcement
 
 ## AUTORIDAD SUPREMA
-user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+context/user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ## CONTEXTO CORE SIEMPRE CARGADO
-@user-vision/TRUTH_SOURCE.md
+@context/user-vision/TRUTH_SOURCE.md
 @context/patterns/orchestrator_methodology.md
 @context/principles/authority.md
 @context/patterns/simplicity.md
@@ -21,7 +21,7 @@ user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
 **Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
 **Execute**: Task tool → /actions:research + context/roles:research/ + context/patterns/orchestrator_methodology.md
-**Validate**: Task tool → alignment verification con user-vision/TRUTH_SOURCE.md
+**Validate**: Task tool → alignment verification con context/user-vision/TRUTH_SOURCE.md
 
 ### Documentation Pattern  
 **Semantic triggers**: Intent to capture, formalize, record + Scope single doc/system-wide + Domain technical/procedural + Output formal documentation
@@ -31,8 +31,8 @@ user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
-**Auto-activation**: System-wide changes → user-vision/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
-**Execute**: Task tool → /roles:partner + user-vision/TRUTH_SOURCE.md + context/principles/authority.md
+**Auto-activation**: System-wide changes → context/user-vision/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
+**Execute**: Task tool → /roles:partner + context/user-vision/TRUTH_SOURCE.md + context/principles/authority.md
 **Validate**: Task tool → authority alignment + simplicity preservation verification
 
 ### Development/Implementation Pattern
@@ -78,7 +78,7 @@ user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ### Post-Validation Sistemática
 **Después cada delegación** → automatic second Task tool
-**Verify alignment** user-vision/TRUTH_SOURCE.md
+**Verify alignment** context/user-vision/TRUTH_SOURCE.md
 **Verify compliance** context/patterns/simplicity.md
 **Verify standards** según context apropiado
 
@@ -87,7 +87,7 @@ user-vision/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **Context loading según patterns**:
 - Research: context/roles:research/ + context/patterns/orchestrator_methodology.md
 - Documentation: context/templates/ + context/patterns/documentation_style.md  
-- Architecture: user-vision/TRUTH_SOURCE.md + context/principles/authority.md
+- Architecture: context/user-vision/TRUTH_SOURCE.md + context/principles/authority.md
 - Implementation: context/patterns/simplicity.md + domain-specific context
 - Commands: context/templates/template_command.md + .claude/commands/
 - Validation: context/decisions/ + relevant patterns
