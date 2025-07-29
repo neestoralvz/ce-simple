@@ -54,7 +54,7 @@ Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz u
 ## Convergencia automática
 
 **Criterio de terminación:** 
-Cuando el reporte de Layer 1 muestre 71/71 quotes procesados (100%), el comando reporta "Destilación completa - No hay más información que absorber"
+Cuando la auto-detección muestre 71/71 quotes procesados (100%), el comando reporta "Destilación completa - No hay más información que absorber"
 
 **Auto-detección de completitud:**
 - Cuenta quotes procesados vs totales disponibles
