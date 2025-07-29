@@ -33,19 +33,45 @@ Reporta progreso en tiempo real durante ejecución sin crear archivos de estado.
   ---
   ```
 
-### Layer 2: Síntesis de Relaciones (solo cuando Layer 1 >80%)
+### Layer 2: Síntesis Temática de Relaciones (solo cuando Layer 1 >80%)
 
-Despliega especialista que:
-- Cree archivos de dominio: metodologia_arquitectura_bridge.md, vision_simplicidad_tension.md, etc.
-- Mapee conexiones entre núcleos de Layer 1
-- Preserve exclusivamente voz del usuario
+**Si archivos de síntesis NO existen:**
+- Crear 6 archivos temáticos: metodologia_arquitectura_bridge.md, vision_simplicidad_tension.md, comandos_orquestacion_matrix.md, evolucion_autoridad_dynamics.md, conversation_execution_flow.md, growth_patterns_synthesis.md
 
-### Layer 3: Documentación Formal (solo cuando Layer 2 >80%)
+**Si archivos YA existen:**
+- Analizar relaciones emergentes entre núcleos Layer 1
+- Expandir síntesis con nuevas conexiones identificadas
+- Preservar exclusivamente voz del usuario con trazabilidad
 
-Despliega especialista que:
-- Valide documentos existentes contra núcleos Layer 1
-- Cree documentos faltantes según gaps detectados
-- Aplique workflow: creación → alineamiento → verificación
+**Formato de síntesis:**
+```markdown
+# Síntesis: [Relación Core]
+
+## Conexiones Identificadas
+**Núcleo origen:** `núcleo.md`
+**Núcleo destino:** `núcleo.md` 
+**Relación:** [Descripción con quotes exactos]
+
+## Patrones Emergentes
+[Patterns identificados entre núcleos]
+
+## Implicaciones
+[Consecuencias de las relaciones]
+```
+
+### Layer 3: Documentación Oficial (solo cuando Layer 2 completo)
+
+**Regenerar documentación oficial desde síntesis:**
+- methodology_guide.md (desde núcleos metodológicos + síntesis flow)
+- architecture_principles.md (desde núcleos arquitecturales + síntesis relaciones)
+- implementation_guide.md (desde síntesis execution + patterns)
+- quick_reference.md (síntesis práctica de todos los layers)
+
+**Proceso:**
+1. Analizar síntesis Layer 2 para extraer principios oficiales
+2. Generar documentación que refleje la visión destilada
+3. Aplicar workflow: creación → alineamiento → verificación
+4. Mantener trazabilidad a layers anteriores
 
 ### TRUTH_SOURCE.md: Autoridad Suprema (solo cuando Layer 3 completo)
 
@@ -53,8 +79,13 @@ Actualizar con síntesis de todos los layers, manteniendo 100% fidelidad a voz u
 
 ## Convergencia automática
 
-**Criterio de terminación:** 
-Cuando la auto-detección muestre 71/71 quotes procesados (100%), el comando reporta "Destilación completa - No hay más información que absorber"
+**Criterio de terminación por Layer:**
+- **Layer 1**: Cuando auto-detección muestre 100% quotes procesados en núcleos
+- **Layer 2**: Cuando todas las relaciones entre núcleos estén sintetizadas en archivos temáticos  
+- **Layer 3**: Cuando documentación oficial refleje completamente la síntesis
+- **TRUTH_SOURCE**: Cuando autoridad suprema integre todos los layers
+
+**Completion message:** "Destilación completa - Todo el corpus conversacional procesado y sintetizado"
 
 **Auto-detección de completitud:**
 - Cuenta quotes procesados vs totales disponibles

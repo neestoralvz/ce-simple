@@ -61,6 +61,21 @@
 - **Trazabilidad completa**: Cada insight rastreable a conversación original
 - **user-vision/ como autoridad**: Cuando hay conflicto, la visión del usuario gana
 
+## PROHIBICIONES SISTÉMICAS
+
+### Anti-Creación de Archivos
+- **NUNCA** crear archivos de reporte, tracking, o documentación automática
+- **NUNCA** crear archivos "de sistema" sin solicitud explícita del usuario
+- **Comandos actualizan** archivos existentes, NO crean nuevos
+- **Información fluye** por conversación o archivos ya establecidos
+- **Sesgo de AI**: Resistir tendencia automática de "documentar todo"
+
+### Criterio de Creación
+- **SOLO crear** cuando usuario solicita explícitamente nuevo archivo
+- **PREFERIR** editar archivos existentes sobre crear nuevos
+- **MANTENER** flujo conversacional sobre documentación extra
+- **VALIDAR** necesidad real antes de cualquier creación
+
 ## EVOLUCIÓN ORGÁNICA
 
 El sistema crece por:
