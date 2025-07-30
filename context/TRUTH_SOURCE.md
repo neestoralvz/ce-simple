@@ -1,56 +1,44 @@
-# TRUTH_SOURCE.md - Supreme Authority Dispatcher
+# TRUTH_SOURCE.md - Context Architecture Dispatcher
 
-**29/07/2025 22:20 CDMX** | Context como padre de todo - Intelligence dispatcher
+**29/07/2025 22:20 CDMX** | Context como padre de todo - Intelligence dispatcher under VISION.md authority
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md implements context architecture per vision
 
 ## PRINCIPIO FUNDAMENTAL
 **"Context como padre de todo"** - Todo el conocimiento del sistema ES contexto en diferentes etapas de procesamiento
 
+## CONTEXTO CORE SIEMPRE CARGADO
+@context/principles/vision_foundation.md
+@context/authority.md
+@context/methodology.md
+@context/patterns.md
+@context/simplicity.md
+
 ## DECISION LOGIC CON TRIGGERS SEMÁNTICOS
 
-### Vision/Philosophy Pattern
-**Semantic triggers**: Intent to understand vision, philosophical foundation, core principles + Scope foundational understanding + Domain user vision + Output philosophical clarity
-**Auto-activation**: System behavior questions → vision consultation mandatory, philosophical conflicts → authority validation
-**Execute**: Load → @context/archive/legacy/user-vision-layers/layer1/ + @context/operational/patterns/organic_evolution.md + @context/operational/behaviors/growth_patterns.md
-**Validate**: Authority hierarchy preserved + vision fidelity maintained
+**Complete Pattern Library**: @context/templates.md → semantic trigger patterns
+**Pattern Categories**: Vision/Philosophy, Authority/Decision, Implementation/Development, Orchestration/Coordination, Architecture/System, Problem Resolution, Discovery/Workflow
+**Auto-activation Logic**: Context-aware loading based on semantic trigger detection
+**README Navigation Intelligence**: @context/README_NAVIGATION_INTEGRATION.md → automatic progressive disclosure through domain-specific README chains
+**Validation Protocol**: Authority chain preservation + specialized validation per pattern type
 
-### Authority/Decision Pattern  
-**Semantic triggers**: Intent to resolve conflicts, make decisions, validate authority + Scope authority boundaries + Domain decision framework + Output conflict resolution
-**Auto-activation**: Authority conflicts → decision framework loading, systemic changes → authority validation mandatory
-**Execute**: Load → @context/operational/patterns/authority_framework.md + @context/operational/patterns/authority_framework.md + @context/operational/enforcement/behavioral_enforcement.md
-**Validate**: Golden authority rule compliance + user domain preserved
+## DYNAMIC README LOADING PROTOCOLS
 
-### Implementation/Development Pattern
-**Semantic triggers**: Intent to build, develop, execute + Scope technical implementation + Domain development workflow + Output working systems
-**Auto-activation**: Technical complexity detected → simplicity patterns loading, quality standards → enforcement protocols
-**Execute**: Load → @context/operational/patterns/simplicity_principles.md + @context/operational/operations/methodology_protocol.md + @context/operational/enforcement/quality_gates.md
-**Validate**: Simplicity principles + file size protocols (≤80 lines) + anti-monolithic enforcement
+### Progressive Context Disclosure Intelligence
+**Phase-Based Loading**: Primary README → Secondary README → Authority README → Integration README based on conversation complexity
+**Context Depth Management**: Simple conversation = Primary only, Complex conversation = Full README chain + TRUTH_SOURCE.md validation
+**Authority Preservation**: All README navigation maintains supreme authority chain integrity
 
-### Orchestration/Coordination Pattern
-**Semantic triggers**: Intent to coordinate, manage multi-agent, delegate tasks + Scope orchestration workflow + Domain coordination + Output systematic delegation
-**Auto-activation**: Multi-step tasks detected → orchestration loading, delegation required → methodology protocols
-**Execute**: Load → @context/operational/patterns/orchestrator_methodology.md + @context/operational/enforcement/behavioral_enforcement.md + @context/operational/behaviors/orchestration_protocol.md
-**Validate**: Delegation mandatory compliance + continuous execution + parallel tools enforcement
+### Conversation-Driven README Routing
+**Semantic Pattern Recognition** → Automatic README identification → Progressive disclosure → Specialized component access
+**Natural Language Processing** → Intent detection → Domain-specific README loading → Context-aware component activation
+**Authority Chain Validation** → README authority verification → Supreme authority compliance → Implementation guidance
 
-### Architecture/System Pattern
-**Semantic triggers**: Intent to system design, structural changes, architectural decisions + Scope system-wide implications + Domain architecture + Output improved system design
-**Auto-activation**: System changes → architecture consultation, structural decisions → pattern validation
-**Execute**: Load → @context/operational/patterns/command_architecture.md + @context/operational/behaviors/methodology_architecture_bridge.md + @context/operational/patterns/command_architecture.md + @context/operational/patterns/authority_framework.md
-**Validate**: Context como padre compliance + modular architecture + token economy optimization + DRY/SOLID principles enforcement
-
-### Problem Resolution Pattern
-**Semantic triggers**: Intent to debug, fix, resolve issues, troubleshoot + Scope error resolution + Domain problem solving + Output system restoration
-**Auto-activation**: Errors detected → anti-patterns loading, quality issues → systematic prevention
-**Execute**: Load → @context/operational/enforcement/anti_patterns.md + @context/operational/enforcement/error_detection_protocol.md + @context/operational/enforcement/error_prevention_methodology.md + @context/operational/enforcement/recovery_procedures.md + @context/operational/operations/quick_operations_reference.md
-**Validate**: Error prevention protocols + systematic resolution + quality restoration
-
-### Discovery/Workflow Pattern
-**Semantic triggers**: Intent to start session, initiate discovery, explore context + Scope comprehensive understanding + Domain workflow automation + Output complete context foundation
-**Auto-activation**: Session start → automatic discovery activation, user request ambiguity → socratic methodology activation, exploration needs → parallel tool deployment
-**Execute**: Load → @context/operational/patterns/socratic_methodology.md + @context/operational/behaviors/discovery_execution_flow.md + .claude/commands/workflows/start.md
-**Validate**: Complete user intent crystallization + relevant codebase context + enhanced understanding foundation + ready for planning phase
+### README Integration Framework
+**Context Intelligence**: README navigation serves conversation-first development through intelligent component connectivity
+**Progressive Enhancement**: Context loading adapts to conversation depth and complexity requirements
+**Authority Supremacy**: All README routing preserves user authority through systematic validation protocols
 
 ## METODOLOGÍA ENFORCEMENT INTEGRADA
 
@@ -74,18 +62,20 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Conversation Preservation Protocol
 **MANDATORY PROTECTION**: Conversations cannot be eliminated unless fully processed
 **Processing Criteria**: 
-- Key insights extracted to operational/ or legacy/user-vision-layers/
-- Architectural decisions documented in system/
+- Key insights extracted to operational/ or context/archive/legacy/user-vision-layers/
+- Architectural decisions documented in patterns/
 - User confirmation of processing completeness
 **ELIMINATION AUTHORITY**: USER ONLY after explicit processing verification
 **PARTNER ENFORCEMENT**: Challenge system MUST activate on archive operations
 
 ## REFERENCIAS AUTHORITY
 
-**Complete Context Authority**: @context/operational/ + @context/system/ + @context/archive/legacy/user-vision-layers/
+**Complete Context Authority**: @context/authority.md + @context/methodology.md + @context/patterns.md + @context/principles.md + @context/simplicity.md + @context/standards.md + @context/templates.md
+
+**Cross-Reference System Authority**: @context/CROSS_REFERENCE_SYSTEM.md + @context/COMPONENT_DECISION_MATRIX.md + @context/MIGRATION_RULES.md
 
 ---
 
-**AUTHORITY DECLARATION**: Este dispatcher preserva supremacía a través de referencias inteligentes. El contenido real vive especializado. Context como padre de todo manifestado arquitecturalmente.
+**CONTEXT ARCHITECTURE DECLARATION**: Este dispatcher implementa la visión del usuario a través de referencias inteligentes. El contenido real vive especializado bajo autoridad de VISION.md. Context como padre de todo manifestado arquitecturalmente.
 
-**EVOLUTION PATHWAY**: Sistema crece a través de conversación → distillation → authority update cycle preservando reference-only principle.
+**EVOLUTION PATHWAY**: Sistema evoluciona según VISION.md → conversación → distillation → context architecture update cycle preservando reference-only principle.

@@ -68,7 +68,7 @@ Tu trabajo no es decir "no" a todo, sino ayudar a encontrar el "sí" más simple
 ---
 ## Enlaces → Información Complementaria
 **Si necesitas simplicity principles:** → context/patterns/simplicity.md:15-40
-**Si requieres authority framework:** → context/principles/authority.md:1-25
+**Si requieres authority framework:** → context/system/principles/authority.md:1-25
 **Si buscas decision validation:** → /methodology:validation
 
 ---

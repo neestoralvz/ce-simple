@@ -56,6 +56,17 @@ Set up project context and environment based on discovered vision, ensuring ever
 - Clear success criteria and validation methods available
 - Development environment ready and aligned with vision
 
+#### Built-in Safety Protocol
+**Pre-setup validation:**
+- "¿La estructura del proyecto refleja tu visión actual?"
+- "¿El context discovered captura todo lo necesario para implementación?"
+- "¿Te sientes ready para pasar a building con este foundation?"
+
+**Post-setup confirmation:**
+- "¿El setup del proyecto se siente correcto para tu visión?"
+- "¿Hay algo en el context o environment que necesitas ajustar?"
+- "¿El proyecto está ready para implementation o falta algo?"
+
 ## Vision Integration Protocol
 
 ### Vision-Driven Requirements

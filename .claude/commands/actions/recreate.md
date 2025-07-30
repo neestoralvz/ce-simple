@@ -76,4 +76,4 @@ Clean slate recreation to prevent bias accumulation and ensure complete alignmen
 ## Enlaces → Información Complementaria
 **Si necesitas authority validation:** → context/user-vision/TRUTH_SOURCE.md:93-94
 **Si requieres simplicity guidelines:** → context/patterns/simplicity.md:40-50  
-**Si authority conflict:** → context/principles/authority.md:15-25
+**Si authority conflict:** → context/system/principles/authority.md:15-25

@@ -22,6 +22,17 @@
 
 ### Phase 3: Batch Recreation Coordination → /modules:maintenance_protocols
 
+#### Built-in Safety Protocol
+**Pre-execution validation:**
+- "¿Confirmas batch recreation de estos archivos identificados para maintenance?"
+- "¿Los cambios propuestos se alinean con tu visión actual?"
+- "¿Prefieres proceder con recreation automático o revisar cada archivo individual?"
+
+**Post-execution rollback:**
+- "¿El resultado del maintenance se siente correcto?"
+- "¿Los archivos recreados mantienen la funcionalidad esperada?"
+- "¿Todo se ve bien o necesitas ajustar algo?"
+
 ### Phase 4: Integration Verification
 **Input:** Batch recreation completed + system state updated
 **Process:**

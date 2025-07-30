@@ -33,6 +33,17 @@ Execute actual implementation after vision discovery is complete and project con
 - Establish quality gates that ensure vision alignment
 - Plan validation methods for each implementation phase
 
+#### Built-in Safety Protocol
+**Pre-implementation validation:**
+- "¿La strategy de implementación refleja tu visión completamente?"
+- "¿Los componentes identificados son los correctos para tu objetivo?"
+- "¿Prefieres proceder con esta approach o ajustar algo antes de construir?"
+
+**During major build phases:**
+- "¿La implementación actual se siente alineada con tu visión?"
+- "¿Los cambios que vemos van en la dirección correcta?"
+- "¿Necesitas pausar para ajustar approach o continuamos?"
+
 ## Vision-Aligned Implementation Protocol
 
 ### Continuous Vision Alignment

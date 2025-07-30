@@ -45,9 +45,10 @@ La arquitectura implementa **"Context como padre de todo"**:
 
 1. **Natural Conversation**: User conversa naturally con Claude Code
 2. **Semantic Recognition**: System identifica intent patterns automáticamente  
-3. **Context Loading**: Intelligent dispatcher loads relevant specialized modules
-4. **Continuous Execution**: Tasks execute until completion sin friction
-5. **Organic Growth**: Knowledge distills into specialized context modules
+3. **README Navigation**: Automatic progressive disclosure through domain-specific README chains
+4. **Context Loading**: Intelligent dispatcher loads relevant specialized modules
+5. **Continuous Execution**: Tasks execute until completion sin friction
+6. **Organic Growth**: Knowledge distills into specialized context modules
 
 ## Usage
 
@@ -62,12 +63,45 @@ La arquitectura implementa **"Context como padre de todo"**:
 
 ## Context Structure
 
-- `context/TRUTH_SOURCE.md` - Supreme authority dispatcher
+- `context/TRUTH_SOURCE.md` - Supreme authority dispatcher with README navigation intelligence
+- `context/README_NAVIGATION_INTEGRATION.md` - Semantic trigger → README routing authority
+- `context/CROSS_REFERENCE_SYSTEM.md` - Master navigation index & integration hub
+- `context/COMPONENT_DECISION_MATRIX.md` - Integration pathways authority
+- `context/MIGRATION_RULES.md` - Reference templates & evolution protocols
+- `context/*/README.md` - Domain-specific navigation hubs with progressive disclosure
 - `context/operational/` - Patterns, behaviors, enforcement protocols
 - `context/system/` - Templates, principles, foundational structures  
 - `archive/conversations_processed/` - Historical conversations y distillation layers
 
-Sistema maintains **reference-only principle** - content lives in specialized modules, referenced conditionally based on semantic triggers.
+Sistema maintains **reference-only principle** - content lives in specialized modules, referenced conditionally based on semantic triggers and README navigation chains.
+
+## README Navigation Integration
+
+### Progressive Context Disclosure Examples
+
+**Research Query**: "How does command creation work?"
+```
+Natural Conversation → Research Pattern → Primary: claude_code/methodology/README.md
+Complex Investigation → Full Chain: + research/ + vision/ + architecture/standards/
+```
+
+**Architecture Discussion**: "We need to simplify the folder structure"
+```
+Natural Conversation → Architecture Pattern → Primary: architecture/README.md  
+System-wide Impact → Full Chain: + vision/ + principles/ + workflows/ + TRUTH_SOURCE.md
+```
+
+**Documentation Task**: "Document the new workflow pattern"
+```
+Natural Conversation → Documentation Pattern → Primary: architecture/templates/README.md
+Standards Required → Full Chain: + command-creation/ + standards/ + CROSS_REFERENCE_SYSTEM.md
+```
+
+### Conversation-Driven Intelligence
+- **Simple conversations** load minimal context (Primary README only)
+- **Complex discussions** access progressive context disclosure (Full README chains)
+- **System-wide changes** trigger authority validation (TRUTH_SOURCE.md + supreme authority)
+- **Natural flow preserved** - README navigation enhances rather than interrupts dialogue
 
 ## Evolution Pathway
 
