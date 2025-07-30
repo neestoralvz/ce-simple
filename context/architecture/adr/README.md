@@ -50,7 +50,7 @@ Reference to user vision/authority source
 
 ## CROSS-REFERENCES
 - **Authority validation**: @context/authority.md decision hierarchy
-- **Vision alignment**: @context/principles.md foundation check
+- **Vision alignment**: @context/vision/vision_foundation.md foundation check
 - **Implementation impact**: @context/methodology.md process integration
 
 ---
