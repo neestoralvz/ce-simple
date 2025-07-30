@@ -3,7 +3,7 @@
 **29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
-@context/TRUTH_SOURCE.md → @context/operational/operations/methodology_protocol.md
+@context/TRUTH_SOURCE.md → @context/methodology.md
 
 ## CORE FUNCTION
 Research sistemático via concurrent searches + temporal validation + Think x4 analysis
