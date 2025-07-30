@@ -1,0 +1,12 @@
+273 /Users/nalve/ce-simple/context/architecture/templates/README_evolution_protocol.md
+270 /Users/nalve/ce-simple/context/data/validation/enforcement_compliance_metrics.md
+247 /Users/nalve/ce-simple/context/architecture/critical_violations_action_plan.md
+244 /Users/nalve/ce-simple/context/architecture/templates/README_maintenance_system_overview.md
+233 /Users/nalve/ce-simple/context/architecture/adr/ADR-016-hybrid-orchestration-execution-protocol.md
+232 /Users/nalve/ce-simple/context/archive/legacy/user-vision-layers/layer3/implementation_guide.md
+220 /Users/nalve/ce-simple/context/archive/session_20250729_command_templates_system.md
+217 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/quote_based_fragmentation_templates.md
+216 /Users/nalve/ce-simple/context/archive/legacy/claude_versions/CLAUDE_ORIGINAL_BACKUP.md
+215 /Users/nalve/ce-simple/context/archive/conversations_processed/20250729_1646_task-tool-methodology-knowledge-integration_SESSION_ARCHIVE.md
+212 /Users/nalve/ce-simple/context/architecture/adr/ADR-019-handoffs-system-implementation.md
+200 /Users/nalve/ce-simple/context/architecture/standards/standards_evolution_framework.md

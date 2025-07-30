@@ -1,0 +1,2 @@
+Backup started: Wed Jul 30 15:35:10 CST 2025
+Backup directory: /Users/nalve/ce-simple/context/archive/emergency_backups_20250730_153510

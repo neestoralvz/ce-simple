@@ -1,0 +1,14 @@
+# Structure Analysis: architecture/ux/placement-guide/placement-methodology/analysis-question-framework.md (92 lines)
+## Main Sections (7 found):
+## AUTORIDAD SUPREMA
+## SYSTEMATIC ANALYSIS QUESTION FRAMEWORK
+## INTEGRATION REFERENCES
+## Subsections (4 found):
+### **Domain Analysis Questions**
+### **Authority Analysis Questions**
+### **Scope Analysis Questions**
+### **Implementation Analysis Questions**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 8

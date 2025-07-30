@@ -51,6 +51,7 @@ context/vision/vision_foundation.md → @context/architecture/core/truth-source.
 - **Quality Assurance**: Compliance validation and reference integrity verification
 
 ### **Integration References**
+- **Interactive Placement**: → @interactive-placement-guide.md (detailed placement guidance)
 - **Cross-Integration**: ←→ @COMPONENT_DECISION_MATRIX.md (detailed integration pathways)
 - **Reference System**: ←→ @CROSS_REFERENCE_SYSTEM.md (bidirectional reference implementation)
 - **Standards Integration**: ←→ @standards.md (placement compliance requirements)

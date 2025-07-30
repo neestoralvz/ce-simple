@@ -1,0 +1,5 @@
+118 /Users/nalve/ce-simple/context/handoffs/PHASE_5_ORCHESTRATION_PROTOCOLS_SYSTEMATIZATION.md
+117 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/universal_do_dont_template.md
+117 /Users/nalve/ce-simple/context/architecture/ux/placement-guide/placement-validation/validation-effectiveness-metrics.md
+117 /Users/nalve/ce-simple/context/architecture/ux/placement-guide/placement-validation/quality-standards-compliance.md
+117 /Users/nalve/ce-simple/context/architecture/ux/placement-guide/placement-validation/continuous-improvement-protocols.md

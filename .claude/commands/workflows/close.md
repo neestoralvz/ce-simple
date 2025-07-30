@@ -9,6 +9,12 @@
 Knowledge distillation engine: Conversation → System Evolution mediante Think x4 + knowledge integration
 
 ## SEMANTIC TRIGGERS
+### Session Management Pattern
+**Triggers**: Session management template per session authority
+**Auto-activation**: @context/data/conversations/README.md + @context/archive/README.md + @context/vision/README.md
+**Execute**: Per CLAUDE.md semantic pattern
+**Validate**: Context authority compliance
+
 
 ### Knowledge Distillation Pattern
 **Triggers**: Session insights, pattern discoveries, methodology learnings

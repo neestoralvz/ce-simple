@@ -9,6 +9,12 @@
 Research sistemático via concurrent searches + temporal validation + Think x4 analysis
 
 ## SEMANTIC TRIGGERS
+### Research Investigation Pattern
+**Triggers**: Research specialist template per methodology authority
+**Auto-activation**: @context/architecture/claude_code/methodology/README.md + @context/architecture/core/methodology.md + @context/vision/README.md
+**Execute**: Per CLAUDE.md semantic pattern
+**Validate**: Context authority compliance
+
 
 ### Technical Research Pattern
 **Triggers**: New technologies, implementation approaches, best practices investigation

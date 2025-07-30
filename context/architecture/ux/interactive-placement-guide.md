@@ -51,9 +51,9 @@ Placement Wizard Flow:
 - **System Integration**: ← @flowchart-system-integration.md (system coordination)
 
 ### **Decision Pathways**
-- **Content-Specific**: → @placement-guide/[content-type]-pathway.md
-- **Process Steps**: → @placement-guide/[step]-[process].md
-- **Validation Support**: → @placement-guide/integration-validation.md
+- **Analysis & Authority**: → @placement-guide/placement-methodology/README.md
+- **Scope & Execution**: → @placement-guide/placement-execution/README.md
+- **Validation & Quality**: → @placement-guide/placement-validation/README.md
 
 ### **Integration References**
 - **Authority Framework**: ←→ @../../authority.md (placement authority)
