@@ -2,6 +2,14 @@
 
 **29/07/2025 11:30 CDMX** | Documentation style guide for LLMs
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Chain Compliance
+**OBLIGATORIO**: All documentation DEBE align with TRUTH_SOURCE.md authority
+**Authority hierarchy**: TRUTH_SOURCE.md → CLAUDE.md → context/ → implementation
+**User voice preservation**: 95%+ fidelity required, NUNCA paraphrase authority statements
+
 ## Principios Fundamentales
 
 ### Vocabulario Reforzamiento

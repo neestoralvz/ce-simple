@@ -2,6 +2,14 @@
 
 **29/07/2025 11:45 CDMX** | Patterns command architecture operativa
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: Authority validation with TRUTH_SOURCE.md for systemic changes
+**SIEMPRE**: Apply user vision authority over AI optimization preferences
+**Challenge system**: Architectural decisions require validation protocol
+
 ## Independence Principle
 > "Algo que veo que estas haciendo y que es uno mas de los principios que dbeemos de respetar es el que los comandos son autocontenidos entre ellos y solo pueden conectarse con otros comandos" [L1:4]
 

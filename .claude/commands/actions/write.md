@@ -1,5 +1,7 @@
 # Comando /write
 
+**LOAD:** /methodology:execution + /methodology:validation
+
 **29/07/2025 09:00 CDMX | Actualizado: 29/07/2025 09:00 CDMX** | Acción escritura documentación
 
 ## Función Core

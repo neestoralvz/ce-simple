@@ -2,6 +2,10 @@
 
 Detected user architectural and communication preferences.
 
+## MASTER AUTHORITY REFERENCE
+**Complete collection**: @simplicidad_belleza_quotes.md → All detailed user authority with context
+**This module**: Reference-only hub for operational integration
+
 ## Preferencias Arquitecturales Usuario
 
 **De conversación actual:**
@@ -29,5 +33,10 @@ Detected user architectural and communication preferences.
 **Benefit:** Zero redundancy + maximum context efficiency
 
 ---
+
+## Detailed Content Access
+**Complete architectural authority**: @simplicidad_belleza_quotes.md:28-41 (all structural decisions)
+**Communication preferences**: @architectural_decisions_quotes.md:48-56 (naming and structure)
+**Balance criteria**: @balance_criteria_quotes.md:19-28 (granularity value decisions)
 
 **User-centric**: System adapts to user's natural communication patterns and architectural preferences.

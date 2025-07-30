@@ -124,7 +124,7 @@
 - **Methodology documentation**: dependency_layers.md (universal patterns) + semantic_planning.md (dispatcher strategy)
 - **Command structure creation**: .claude/commands/planning/ directory with 5 specialized commands
 - **Semantic dispatcher**: /intent command with project type detection + confidence thresholds
-- **Self-application tracking**: context/operational/ce_simple_tracking.md (project-specific state)
+- **Self-application tracking**: context/planning/ce_simple_tracking.md (project-specific state)
 - **File organization correction**: Moved ce_simple_layers.md from planning/ → operational/ (proper separation)
 - **Planning integration**: Commands reference universal methodology + project-specific tracking
 - **Validation methodology**: Self-application proves planning system works for complex projects

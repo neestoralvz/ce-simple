@@ -31,13 +31,13 @@ Systematic session analysis using Think x4 methodology + conversation compacting
 ## Conversation Compacting Integration
 
 ### Phase 0: Compacting Obligation
-**SIEMPRE invoke /actions:compact**: Systematic conversation analysis before planning operations
+**SIEMPRE use compact specialist**: Systematic conversation analysis before planning operations via Task tool delegation
 - 5-stage compacting: Núcleos temáticos → quotes exactas → decisiones técnicas → contexto esencial → estructura cronológica
-- Raw preparation: Conversation analysis ready for storage en context/conversations/
+- Conversation preparation: Analysis ready for storage in ${CONVERSATION_STORAGE}/
 - Parallel operations: Compacting analysis + timestamp generation + planning context read simultáneos
 
 ### Output Integration
-**Compacting results integration**: Build session analysis on /actions:compact results
+**Compacting results integration**: Build session analysis on compact specialist Task tool results
 - Comprehensive conversation review based on compacted insights
 - Impact assessment utilizing compacted decision structure
 - Planning context derived from essential context analysis
@@ -46,7 +46,7 @@ Systematic session analysis using Think x4 methodology + conversation compacting
 
 ### Concurrent Information Gathering
 **Parallel tools OBLIGATORIO**: Bash timestamp + Read planning + LS context simultáneos
-**Session analysis building**: /actions:compact foundation + comprehensive review
+**Session analysis building**: compact specialist foundation + comprehensive review via Task tool delegation
 **Planning context preparation**: Current state + consolidated insights + archive patterns
 
 ### Analysis Output Structure
@@ -56,6 +56,6 @@ Systematic session analysis using Think x4 methodology + conversation compacting
 - **Information preservation** (Think 4 + compacting validation)
 
 ---
-**Integration:** Referenced by /workflows:close orchestrator
-**Dependencies:** /actions:compact (OBLIGATORIO invocation before execution)
+**Integration:** Referenced by session closure orchestrator via Task tool delegation
+**Dependencies:** compact specialist (OBLIGATORIO Task tool invocation before execution)
 **Output:** Structured session analysis ready for planning operations integration

@@ -13,7 +13,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Vision/Philosophy Pattern
 **Semantic triggers**: Intent to understand vision, philosophical foundation, core principles + Scope foundational understanding + Domain user vision + Output philosophical clarity
 **Auto-activation**: System behavior questions → vision consultation mandatory, philosophical conflicts → authority validation
-**Execute**: Load → @context/archive/user-vision-layers/layer1/ + @context/operational/patterns/organic_evolution.md + @context/operational/behaviors/growth_patterns.md
+**Execute**: Load → @context/archive/legacy/user-vision-layers/layer1/ + @context/operational/patterns/organic_evolution.md + @context/operational/behaviors/growth_patterns.md
 **Validate**: Authority hierarchy preserved + vision fidelity maintained
 
 ### Authority/Decision Pattern  
@@ -46,6 +46,12 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **Execute**: Load → @context/operational/enforcement/anti_patterns.md + @context/operational/enforcement/error_detection_protocol.md + @context/operational/enforcement/error_prevention_methodology.md + @context/operational/enforcement/recovery_procedures.md + @context/operational/operations/quick_operations_reference.md
 **Validate**: Error prevention protocols + systematic resolution + quality restoration
 
+### Discovery/Workflow Pattern
+**Semantic triggers**: Intent to start session, initiate discovery, explore context + Scope comprehensive understanding + Domain workflow automation + Output complete context foundation
+**Auto-activation**: Session start → automatic discovery activation, user request ambiguity → socratic methodology activation, exploration needs → parallel tool deployment
+**Execute**: Load → @context/operational/patterns/socratic_methodology.md + @context/operational/behaviors/discovery_execution_flow.md + .claude/commands/workflows/start.md
+**Validate**: Complete user intent crystallization + relevant codebase context + enhanced understanding foundation + ready for planning phase
+
 ## METODOLOGÍA ENFORCEMENT INTEGRADA
 
 ### Reference-Only Content Protocol
@@ -68,7 +74,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Conversation Preservation Protocol
 **MANDATORY PROTECTION**: Conversations cannot be eliminated unless fully processed
 **Processing Criteria**: 
-- Key insights extracted to operational/ or user-vision-layers/
+- Key insights extracted to operational/ or legacy/user-vision-layers/
 - Architectural decisions documented in system/
 - User confirmation of processing completeness
 **ELIMINATION AUTHORITY**: USER ONLY after explicit processing verification
@@ -76,7 +82,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ## REFERENCIAS AUTHORITY
 
-**Complete Context Authority**: @context/operational/ + @context/system/ + @context/archive/user-vision-layers/
+**Complete Context Authority**: @context/operational/ + @context/system/ + @context/archive/legacy/user-vision-layers/
 
 ---
 

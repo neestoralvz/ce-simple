@@ -22,9 +22,10 @@
 **Behavior:** Main agent ALWAYS orchestrates through subagents
 **Method:**
 1. **Task analysis** → Identify specialized domain
-2. **Subagent selection** → Route to appropriate specialist
-3. **Coordination** → Manage multi-subagent interactions
-4. **Result integration** → Compile specialized outputs
+2. **Template selection** → @context/operational/patterns/task_tool_methodology.md
+3. **Deployment** → Use appropriate specialist template with context loading
+4. **Coordination** → Manage multi-subagent interactions via proper Task tool syntax
+5. **Result integration** → Compile specialized outputs + post-validation
 
 ## Universal Command Integration
 
@@ -51,12 +52,12 @@
 
 ## Matrix Interaction Patterns
 
-### /workflows:start Hub Function
+### Universal Entry Hub Function
 **Entry Point Behavior:**
 - Analyze current context automatically
-- Route to appropriate specialized commands
+- Route to appropriate specialized commands via Task tool delegation
 - Maintain orchestration oversight during execution
-- Adapt available options dynamically
+- Adapt available options dynamically based on Task tool specialization patterns
 
 ### Command Chain Coordination
 **Multi-Command Sequences:**
@@ -73,7 +74,8 @@
 - **Efficiency metrics** → Measure decision effectiveness
 
 ## Anti-Patterns Prevention
-- **Direct complex execution** → Always delegate to specialized commands
+- **Direct complex execution** → Always delegate via @context/operational/patterns/task_tool_methodology.md
+- **Broken Task tool syntax** → Use templates from @context/system/templates/task_tool_templates.md
 - **Command isolation violation** → Block external file access
 - **Context fragmentation** → Maintain orchestration visibility
 - **Static option presentation** → Require dynamic adaptation
@@ -81,4 +83,4 @@
 ---
 **Trazabilidad:** user-vision/layer2/comandos_orquestacion_matrix.md → Behavior distillation
 **Triggers:** Task complexity, session start, workflow request, command coordination
-**Integration:** → patterns/command_architecture.md, operations/workflow_execution.md
+**Integration:** → patterns/command_architecture.md, patterns/task_tool_methodology.md, operations/workflow_execution.md

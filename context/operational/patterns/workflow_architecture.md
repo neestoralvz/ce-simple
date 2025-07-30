@@ -1,5 +1,15 @@
 # Workflow Architecture - Arquitectura Flujos Operativa
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: Workflow architecture DEBE respect TRUTH_SOURCE.md authority chain
+**SIEMPRE**: Creation → Alignment → Verification workflow preserves user vision
+**Think x4**: Systematic analysis required for architectural decisions
+**Parallel tools**: Concurrent operations maximize workflow efficiency
+**Continuous execution**: Workflows complete without artificial interruptions
+
 ## Core Workflow Objective
 > "lo que quiero construir es un sistema de comandos que represente el workflow que quiero, que mejor me pueda funcionar para trabajar con Claude Code" [L1:4]
 

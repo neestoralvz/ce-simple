@@ -35,7 +35,7 @@ context/system/            → Templates y foundational structures
 ```
 
 La arquitectura implementa **"Context como padre de todo"**:
-- Raw conversations = unprocessed context
+- Session conversations = unprocessed context
 - Distilled documents = processed context  
 - Commands = executable context
 - Templates = reusable context patterns
@@ -65,7 +65,7 @@ La arquitectura implementa **"Context como padre de todo"**:
 - `context/TRUTH_SOURCE.md` - Supreme authority dispatcher
 - `context/operational/` - Patterns, behaviors, enforcement protocols
 - `context/system/` - Templates, principles, foundational structures  
-- `context/archive/` - Historical conversations y distillation layers
+- `archive/conversations_processed/` - Historical conversations y distillation layers
 
 Sistema maintains **reference-only principle** - content lives in specialized modules, referenced conditionally based on semantic triggers.
 

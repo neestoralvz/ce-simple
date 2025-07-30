@@ -2,14 +2,14 @@
 
 **29/07/2025 16:30 CDMX** | Known system issues and workarounds
 
-## CRITICAL ANTI-PATTERN: Claude Code Hardcoded "raw" Path
+## CRITICAL ANTI-PATTERN: Claude Code Semantic Organization Non-Compliance
 
 ### **PROBLEM IDENTIFIED** 
-Claude Code internamente crea archivos de conversación en `context/raw/` independientemente de configuración del proyecto.
+Claude Code internamente ignora semantic organization variables y crea archivos fuera de ${CONVERSATION_STORAGE}.
 
 ### **MANIFESTATION**
-- Comando `/workflows:close` crea archivo en `context/raw/`
-- Carpeta `raw/` se recrea automáticamente aunque se elimine
+- Comando `/workflows:close` no respeta ${CONVERSATION_STORAGE} variable
+- Sistema ignora SEMANTIC_ORGANIZATION.md configuration
 - Comportamiento **NO configurable** en archivos accesibles
 
 ### **ROOT CAUSE INVESTIGATION**
@@ -32,10 +32,11 @@ Claude Code internamente crea archivos de conversación en `context/raw/` indepe
 #### **Immediate Response** (Post-close cleanup)
 ```bash
 # After each /workflows:close execution:
+# Check for semantic organization violations
 if [ -d "context/raw" ]; then
-    mv context/raw/* context/conversations/ 2>/dev/null
+    mv context/raw/* ${CONVERSATION_STORAGE}/ 2>/dev/null
     rmdir context/raw
-    echo "✅ Raw cleanup completed"
+    echo "✅ Semantic organization compliance restored"
 fi
 ```
 
@@ -48,9 +49,9 @@ fi
 while inotifywait -q -e create context/; do
     if [ -d "context/raw" ]; then
         sleep 1  # Allow file write completion
-        mv context/raw/* context/conversations/ 2>/dev/null
+        mv context/raw/* ${CONVERSATION_STORAGE}/ 2>/dev/null
         rmdir context/raw
-        echo "$(date): Auto-moved files from raw/ to conversations/"
+        echo "$(date): Auto-restored semantic organization compliance"
     fi
 done
 ```
@@ -58,7 +59,7 @@ done
 ### **USER EDUCATION**
 
 **EXPECTATION SETTING:**
-> "After using `/workflows:close`, manually move any files from `context/raw/` to `context/conversations/` and remove the raw directory. This is a known limitation of Claude Code's internal behavior."
+> "System should automatically respect semantic organization. Any violation indicates SEMANTIC_ORGANIZATION.md is not being properly consulted."
 
 **PREVENTION:** 
 > Currently **NOT PREVENTABLE** - requires post-execution cleanup
@@ -70,6 +71,6 @@ done
 
 ---
 
-**STATUS**: UNRESOLVED - Requires vendor fix or configuration option
+**STATUS**: REQUIRES SEMANTIC ORGANIZATION IMPLEMENTATION - Variables not being respected
 **TRACKING**: Monitor future Claude Code releases for path configuration options
 **IMPACT LEVEL**: MEDIUM - Manageable with workaround, but creates friction

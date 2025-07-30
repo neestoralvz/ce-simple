@@ -67,29 +67,10 @@ Initialize construction layers and dependency management for specified project t
 ## Output Format
 
 ### Successful Initialization
-```
-✅ Project initialized: [project-type]
+## Core Function
+Initialize project with dependency-based construction layers and set current focus to Layer 1
 
-📋 Construction Layers Defined:
-Layer 1: [Foundation description] 🔄 ACTIVE
-Layer 2: [Second layer] ⏳ PENDING  
-Layer 3: [Third layer] ⏳ PENDING
-Layer 4: [Final layer] ⏳ PENDING
-
-🎯 Current Focus: Layer 1 - [Foundation description]
-📋 Next: Work within Layer 1. Use /planning:gate when ready to advance.
-```
-
-### Error States
-- **Missing project type:** Show available templates + usage example
-- **Invalid project type:** Suggest closest match + show supported types  
-- **Already initialized:** Show current state + ask if user wants to reinitialize
-
-## Templates Reference
-
-**Template loading:** → context/planning/project_templates/[type].md
-**Dependency reference:** → context/planning/dependency_layers.md
-**Authority source:** → context/TRUTH_SOURCE.md planning patterns
+**Features**: Project type detection + layer template loading + state persistence + integration with planning commands
 
 ---
 **Authority:** Planning initialization methodology + dependency layers framework

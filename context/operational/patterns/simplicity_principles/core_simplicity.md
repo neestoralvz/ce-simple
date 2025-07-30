@@ -2,6 +2,10 @@
 
 Fundamental simplicity as user beauty pattern.
 
+## MASTER AUTHORITY REFERENCE
+**Complete collection**: @simplicidad_belleza_quotes.md → All detailed user authority with context
+**This module**: Reference-only hub for operational integration
+
 ## Simplicidad Como Belleza Core
 
 > "Por supuesto que la belleza va a estar en la simplicidad. Exacto. Quiero que el sistema se sienta como una conversación natural, que de esa conversación natural salga el resultado"
@@ -26,5 +30,10 @@ Fundamental simplicity as user beauty pattern.
 > "Algo que veo que estas haciendo y que es uno mas de los principios que dbeemos de respetar es el que los comandos son autocontenidos entre ellos y solo pueden conectarse con otros comandos"
 
 ---
+
+## Detailed Content Access
+**All user quotes**: @simplicidad_belleza_quotes.md:8-28 (complete philosophy collection)
+**Architecture integration**: @architectural_decisions_quotes.md:6-17 (structural vision)
+**Balance authority**: @balance_criteria_quotes.md:6-18 (preservation decisions)
 
 **Foundation**: Natural conversation leads to results through essential simplicity preservation.

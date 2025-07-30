@@ -10,7 +10,7 @@ Este archivo define la organización semántica de TODOS los archivos del sistem
 ### Core Storage Variables
 ```yaml
 # Primary storage locations
-CONVERSATION_STORAGE: "archive/conversations_processed"  # Processed conversation archives only
+CONVERSATION_STORAGE: "context/archive/conversations_processed"  # Processed conversation archives only
 CONTEXT_OPERATIONAL: "context/operational"     # Living system patterns & behaviors  
 CONTEXT_ARCHIVE: "context/archive"            # Historical preservation & processed content
 CONTEXT_SYSTEM: "context/system"              # System configuration & templates

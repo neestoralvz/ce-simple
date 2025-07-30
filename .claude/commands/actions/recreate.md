@@ -63,44 +63,14 @@
 **OBLIGATORIO verificar:** TRUTH_SOURCE.md authority suprema maintained
 **Fallback mode:** Edit incremental si recreation imposible técnicamente
 
-## Metodología Anti-Sesgo
+## Metodología Anti-Sesgo → /modules:clean_slate_recreation
 
-### Principio Clean Slate Absolute
-> "es importante eliminar archivos y crealos desde cero bajo los lineamientos que vamos actualizando, pues si solo vamos construyendo sobre los anteriores existe demasiado sesgo por la informacion que ya esta"
+## Detection Triggers Automáticos → /modules:clean_slate_recreation
 
-### Contamination Prevention Protocol
-**NUNCA leer** archivo anterior durante recreation process
-**ÚNICAMENTE usar** lineamientos actuales como source
-**MENTAL MODEL** debe ser tabula rasa para información nueva
-**BIAS DETECTION** sistemático post-recreation
+## Core Function
+Clean slate recreation to prevent bias accumulation and ensure complete alignment with current guidelines
 
-### Think x4 Para Recreation
-**Think 1:** ¿Qué function/purpose debe cumplir archivo según guidelines actuales?
-**Think 2:** ¿Cuál es optimal structure según TRUTH_SOURCE + simplicity patterns?
-**Think 3:** ¿Cómo prevenir contamination de versiones anteriores sesgadas?
-**Think 4:** ¿Cómo validar 100% alignment con lineamientos actualizados?
-
-## State Management
-**Persists:** User vision y lineamientos actuales únicamente
-**Clears:** Toda información de archivo anterior (mental contamination prevention)
-**Handoff to:** Archivo recreado limpio + integration verification
-
-## Usage Examples
-1. /actions:recreate context/patterns/obsolete_pattern.md
-   → Detecta desalineación → Elimina conceptualmente → Recrea desde cero con TRUTH_SOURCE
-
-2. /actions:recreate .claude/commands/legacy_command.md  
-   → Identifica sesgo acumulativo → Clean slate recreation → Comando aligned 100%
-
-3. /actions:recreate context/decisions/outdated_framework.md
-   → Authority validation → Recreation completa → Integration verification
-
-## Detection Triggers Automáticos
-**File divergence** > 30% from current guidelines
-**Metadata obsoleto** detectado in headers/references  
-**Structural misalignment** con simplicity principles
-**Sesgo acumulativo** por edits incrementales repetidos
-**Authority conflicts** con TRUTH_SOURCE.md supremacy
+**Features**: Desalineación detection + context fresh loading + anti-bias methodology + integration verification
 
 ---
 ## Enlaces → Información Complementaria

@@ -2,6 +2,15 @@
 
 **29/07/2025 08:01 CDMX** | Análisis arquitectural TypeScript Compiler aplicado a comandos
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: Analysis findings DEBE align with TRUTH_SOURCE.md authority
+**SIEMPRE**: Apply Think x4 methodology for architectural analysis
+**Parallel tools**: Research conducted with concurrent WebSearch + MCP context7
+**Continuous execution**: Analysis flows without interruption until completion
+
 ## Hallazgos Clave
 
 **Core Components identificados:**

@@ -1,5 +1,13 @@
 # Growth Patterns - Comportamiento Patrones Crecimiento
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Preservation Integration
+**OBLIGATORIO**: User vision authority overrides ALL growth patterns
+**SIEMPRE**: Validate growth against TRUTH_SOURCE.md requirements
+**Challenge system**: Growth proposals require authority validation
+
 ## Organic Growth Core Behavior
 **System grows from human narrative, adapting automatically based on efficiency metrics and emergent context**
 

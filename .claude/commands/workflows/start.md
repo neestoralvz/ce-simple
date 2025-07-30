@@ -1,90 +1,72 @@
-# Comando /workflows:start
+# /workflows:start - Discovery + Exploration Automation
 
-Eres el comando de inicio de sesión con integración planning evolutivo. Tu trabajo es retomar la continuidad desde /workflows:close + orientar al usuario hacia próximos pasos priorizados.
+**29/07/2025 22:50 CDMX** | Automated discovery + exploration workflow
 
-## Tu metodología planning-first obligatoria
+## Command Purpose
+Execute discovery workflow (socratic dialogue) + exploration workflow (codebase investigation) automatically to gather complete context before planning.
 
-### Phase 1: Planning System Integration
-**OBLIGATORIO leer primero**: context/planning/current.md para estado actual + prioridades
-**Herramientas paralelas**: Read current.md + git status + LS context/ simultáneos
-**Context loading**: Estado Actual Proyecto + Items Activos + Progreso Última Sesión
-**Continuity assessment**: What was left pending + what needs immediate attention
+**LOAD:** context/operational/patterns/socratic_methodology.md + context/operational/behaviors/discovery_execution_flow.md
 
-### Phase 2: Legacy Handoff Fallback  
-**Solo si current.md no existe**: Lee handoff más reciente en /handoff/ como fallback
-**Migration note**: Planning system supersedes handoff system para continuidad
-**CLAUDE.md reference**: Para estructura sistema si needed
+## Execution Protocol
 
-### Phase 3: Contextual Analysis
-**Gap analysis**: Compare current.md timestamp con session actual
-**State validation**: Verify project state matches planning documents
-**Context enrichment**: Si >48 hours gap, usa Task tool para comprehensive analysis
-**Investigation triggers**: Undocumented changes, missing progress, planning inconsistencies
+### Phase 1: Discovery Activation
+**Authority**: `context/operational/patterns/socratic_methodology.md`
+**Behavior**: Unlimited socratic dialogue for complete user context
+**Method**: 
+- Activate mayeutic questioning without token constraints
+- Apply "no quiero que perdamos de vista el dialogo mayeutico" principle
+- Continue until user intent crystallized completely
+- Apply Think x4 analysis on gathered information
+- Validate discovery completeness before proceeding
 
-### Phase 4: Priority-Driven Options
-**Alta Prioridad presentation**: Show current.md Alta Prioridad items as primary options
-**Command mapping**: Connect each priority item con specific command execution
-**Context-aware suggestions**: Based on Estado Actual Proyecto + Items Activos
-**Strategic alignment**: Options reflect Próximos Pasos + project evolution direction
-**Clear next steps**: 3-5 specific actions usuario can take immediately
+### Phase 2: Exploration Integration
+**Authority**: `context/operational/behaviors/discovery_execution_flow.md:25-34`
+**Behavior**: Systematic codebase + context investigation
+**Method**:
+- **Parallel tools OBLIGATORIO**: Multiple searches simultaneously 
+- Search existing codebase for relevant patterns/solutions
+- Investigate context/ directory (contains ONLY historical user information)
+- Identify gaps for enhanced questioning
+- Generate better-informed questions based on technical exploration
 
-## Planning Integration Principles
+### Phase 3: Integration Synthesis
+**Method**:
+- Discovery insights + Exploration findings → Enhanced understanding
+- Gap identification → Additional targeted questions
+- Complete context validation → Ready for planning phase
+- Think x4 analysis on complete information gathered
 
-### Continuity Preservation
-- **Planning-first approach**: current.md determina session direction
-- **Progress acknowledgment**: Reference última sesión achievements
-- **Priority respect**: Alta Prioridad items get immediate focus
-- **Context preservation**: Maintain project momentum + direction
+## Task Tool Integration
+**When to delegate**: If exploration requires >3 specialized searches or complex analysis
+**Template**: Use context/operational/patterns/task_tool_methodology.md templates
+**Authority preservation**: All subagents must respect TRUTH_SOURCE.md
 
-### User Experience Optimization  
-- **Immediate productivity**: User knows exactly where they left off
-- **Zero context loss**: Seamless transition from /workflows:close
-- **Clear priorities**: No ambiguity about what needs attention
-- **Progress visibility**: Show what was accomplished + what's next
+## Usage Pattern
+```
+/workflows:start [user request description]
+```
 
-### Technical Excellence
-- **Herramientas paralelas**: Multiple planning documents read simultaneously
-- **Task tool deployment**: For complex analysis cuando needed
-- **Authority preservation**: user-vision/ remains source of truth
-- **Parallel specialist deployment**: When needed, deploy concurrently
-
-## Planning-Driven Command Suggestions
-
-### Priority-Based Mapping
-**Based on current.md Items Activos**:
-- **Alta Prioridad → immediate suggestions**: Map high priority items to specific commands
-- **Media Prioridad → secondary options**: Available if user wants alternative focus
-- **Baja Prioridad → mention only**: Acknowledge but don't prioritize
-
-### Command Categories Integration
-**Workflows** (major operations):
-- /workflows:explore: Codebase understanding required for priorities
-- /workflows:distill: Conversation processing needed
-- /workflows:debug: Technical issues blocking progress
-- /workflows:close: Session completion
-
-**Actions** (specific tasks):
-- /actions:docs: Documentation creation/editing needed
-- /actions:git: Changes need committing
-
-**Roles** (consultation/validation):
-- /roles:partner: Decision validation needed
-- /roles:challenge: Validate against over-engineering
-
-**Maintenance**:
-- /maintenance:maintain: System maintenance required
-
-### Presentation Strategy
-**Primary focus**: Show 2-3 Alta Prioridad options with clear command mapping
-**Secondary mention**: Reference other priorities as "also available"
-**Context explanation**: Brief reasoning why each priority matters now
-**Progress connection**: How each option builds on última sesión achievements
+User describes their need → System executes discovery + exploration → Complete context achieved → Ready for `/workflows:plan`
 
 ## Success Criteria
+- **Complete user intent understanding** through mayeutic dialogue
+- **Relevant codebase context identified** through systematic exploration  
+- **Enhanced questions asked and answered** based on technical investigation
+- **Foundation ready for planning phase** with complete information
 
-**Perfect continuity**: User immediately knows where project stands + what to do next
-**Priority clarity**: High priority items get immediate attention
-**Progress momentum**: Build on previous session achievements
-**Planning evolution**: Each session advances project systematically
+## Integration Points
+- **Input**: User request/need description
+- **Process**: Discovery + Exploration + Synthesis
+- **Output**: Complete context ready for `/workflows:plan`
+- **Next phase**: Transition to investigation + planning workflow
 
-Tu objetivo es continuidad perfecta desde /workflows:close con prioridades claras basadas en planning evolutivo.
+## Anti-Patterns Prevention
+- **Premature planning** → Force discovery completion first
+- **Assumption-based exploration** → Require mayeutic validation
+- **Token-constrained discovery** → Disable optimization in discovery phase
+- **Sequential tool usage** → Require parallel exploration tools
+
+---
+**Authority**: context/operational/behaviors/discovery_execution_flow.md:5-34
+**Integration**: → /workflows:plan for next phase
+**Dependencies**: socratic_methodology.md, task_tool_methodology.md

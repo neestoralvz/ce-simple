@@ -1,8 +1,8 @@
 #!/bin/bash
-# fix-raw-conversations.sh - Workaround for Claude Code hardcoded raw/ behavior
+# fix-raw-conversations.sh - Workaround for Claude Code semantic organization non-compliance
 # 
-# PROBLEM: Claude Code creates conversation files in context/raw/ instead of context/conversations/
-# SOLUTION: This script moves files and removes the problematic directory
+# PROBLEM: Claude Code ignores SEMANTIC_ORGANIZATION.md variables
+# SOLUTION: This script restores semantic organization compliance
 #
 # Usage: ./scripts/fix-raw-conversations.sh
 
@@ -10,15 +10,17 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+# Source semantic organization configuration
+# In a proper implementation, these would be read from SEMANTIC_ORGANIZATION.md
 RAW_DIR="$PROJECT_ROOT/context/raw"
-CONVERSATIONS_DIR="$PROJECT_ROOT/context/conversations"
+CONVERSATIONS_DIR="$PROJECT_ROOT/context/archive/conversations_processed"  # ${CONVERSATION_STORAGE}
 
-echo "🔧 Fix Raw Conversations - Claude Code Workaround"
+echo "🔧 Semantic Organization Compliance Restoration"
 echo "================================================="
 
 # Check if raw directory exists
 if [ ! -d "$RAW_DIR" ]; then
-    echo "✅ No raw/ directory found - system is clean"
+    echo "✅ No violations found - semantic organization is working"
     exit 0
 fi
 

@@ -2,6 +2,15 @@
 
 **29/07/2025 07:58 CDMX** | Sesión /roles:partner - Arquitectura ecosistema comandos
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: Ecosystem design DEBE preserve TRUTH_SOURCE.md authority hierarchy
+**SIEMPRE**: Partner conversations validate against user vision supremacy
+**Think x4**: Systematic analysis applied to architectural decisions
+**Continuous execution**: Design sessions flow without artificial interruptions
+
 ## Contexto
 Conversación iniciada por usuario sobre sistema de destilación complejo → Evolución hacia ecosistema modular con fórmulas dinámicas.
 

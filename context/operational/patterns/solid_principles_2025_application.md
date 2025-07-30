@@ -2,6 +2,15 @@
 
 **29/07/2025 08:02 CDMX** | SOLID principles aplicados a ecosistema comandos modular
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: SOLID application DEBE preserve TRUTH_SOURCE.md authority hierarchy
+**SIEMPRE**: Apply Think x4 methodology for architectural principle analysis
+**Parallel tools**: Research conducted with concurrent validation + verification
+**Continuous execution**: Analysis flows until architectural clarity achieved
+
 ## Hallazgos Clave
 
 **SOLID sigue siendo fundamental para 2025:**

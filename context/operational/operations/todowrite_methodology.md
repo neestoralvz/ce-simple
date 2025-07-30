@@ -2,6 +2,15 @@
 
 **29/07/2025 09:22 CDMX | Actualizado: 29/07/2025 09:22 CDMX** | Metodología TodoWrite con auto-mantenimiento, dependencias automáticas y análisis concurrencia
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: TodoWrite methodology DEBE preserve TRUTH_SOURCE.md authority
+**Think x4**: SIEMPRE apply systematic analysis for task prioritization
+**Parallel tools**: Concurrent task execution maximizes throughput
+**Continuous execution**: Task completion flows without artificial pauses
+
 ## Principios Fundamentales
 
 ### Auto-Actualización Obligatoria

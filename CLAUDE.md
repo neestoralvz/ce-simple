@@ -3,14 +3,14 @@
 **29/07/2025 10:45 CDMX** | Dispatcher con triggers semánticos y enforcement
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+VISION.md → drives all system evolution → everything adapts to vision
 
 ## PROJECT CONTEXT
 **Overview**: README.md - Project description, philosophy, architecture overview
-**System Purpose**: Context engineering framework para conversation-first development
+**System Purpose**: Context engineering framework para conversation-first development with vision-driven evolution
 
 ## CONTEXTO CORE SIEMPRE CARGADO
-@context/TRUTH_SOURCE.md
+@VISION.md
 @context/operational/patterns/socratic_methodology.md
 @context/operational/patterns/authority_framework.md
 @context/operational/patterns/simplicity_principles.md
@@ -24,44 +24,44 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ### Research/Investigation Pattern
 **Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
 **Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
-**Execute**: Task tool → /roles:research + context/operational/patterns/orchestrator_methodology.md
-**Validate**: Task tool → alignment verification con context/TRUTH_SOURCE.md
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Research specialist template
+**Validate**: @context/operational/patterns/task_tool_methodology.md → Post-delegation validation protocol
 
 ### Documentation Pattern  
 **Semantic triggers**: Intent to capture, formalize, record + Scope single doc/system-wide + Domain technical/procedural + Output formal documentation
 **Auto-activation**: Decision made → auto-generate documentation, system change → update related docs
-**Execute**: Task tool → /actions:build + context/system/templates/ + context/operational/patterns/documentation_style.md
-**Validate**: Task tool → standards compliance verification
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Documentation builder template
+**Validate**: @context/operational/patterns/task_tool_methodology.md → Standards compliance validation
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
 **Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
-**Execute**: Task tool → /roles:partner + context/TRUTH_SOURCE.md + context/operational/patterns/authority_framework.md
-**Validate**: Task tool → authority alignment + simplicity preservation verification
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Partner validation template
+**Validate**: @context/operational/patterns/task_tool_methodology.md → Authority alignment verification
 
 ### Development/Implementation Pattern
 **Semantic triggers**: Intent to build, develop, execute + Scope multi-file operations + Domain technical implementation + Output working systems
 **Auto-activation**: Code complexity >3 pasos → Task tool delegation, quality standards → template application
-**Execute**: Task tool → comando apropiado (/actions:debug, /actions:explore, /actions:write) + context/operational/patterns/simplicity_principles.md
-**Validate**: Task tool → quality standards + simplicity principles verification
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Implementation template
+**Validate**: @context/operational/patterns/task_tool_methodology.md → Quality gates validation
 
 ### Workflow/Command Pattern
 **Semantic triggers**: Intent to automate, process + Scope workflow creation + Domain procedural + Output structured commands
 **Auto-activation**: "/comando" mentioned → template loading, process automation → command structure
-**Execute**: Task tool → comando específico con /{folder}:{command} syntax + context/system/templates/template_command.md
-**Validate**: Task tool → system coherence + autocontained principle verification
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Generic delegation template
+**Validate**: @context/operational/patterns/task_tool_methodology.md → System coherence validation
 
 ### Multi-Conversación Pattern
 **Semantic triggers**: Intent to coordinate, orchestrate + Scope parallel execution + Domain multi-agent coordination + Output coordinated progress
 **Auto-activation**: "paralelo", "múltiple" → múltiples Task tools, >5 independent tasks → parallel consideration
-**Execute**: Múltiples Task tools simultáneas + usuario ultra-orchestrator coordination
-**Validate**: Task tool → coordination effectiveness + background process verification
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Multiple concurrent templates
+**Validate**: @context/operational/patterns/task_tool_methodology.md → Coordination effectiveness validation
 
 ### Session Management Pattern
 **Semantic triggers**: Intent to conclude, capture progress + Scope session-wide summary + Domain progress documentation + Output handoff preparation
 **Auto-activation**: "cierre conversación", "handoff" → /workflows:close activation, work completion → session documentation
-**Execute**: Task tool → /workflows:close + session consolidation protocol
-**Validate**: Task tool → completeness + continuity preparation verification
+**Execute**: @context/operational/patterns/task_tool_methodology.md → Session management template
+**Validate**: @context/operational/patterns/task_tool_methodology.md → Completeness validation
 
 ## METODOLOGÍA ENFORCEMENT INTEGRADA
 
@@ -81,7 +81,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **Múltiples tools simultáneos** en single message cuando posible
 
 ### Post-Validation Sistemática
-**Después cada delegación** → automatic second Task tool
+**Después cada delegación** → @context/operational/patterns/task_tool_methodology.md → Post-delegation validation
 **Verify alignment** context/TRUTH_SOURCE.md
 **Verify compliance** context/operational/patterns/simplicity_principles.md
 **Verify standards** según context apropiado

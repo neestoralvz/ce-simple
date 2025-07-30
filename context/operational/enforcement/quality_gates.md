@@ -71,6 +71,8 @@
 **¿Prevented sequential execution** de tools que pueden ser parallel?
 **¿Avoided authority violations** como hardcoding vs referencing?
 **¿Prevented friction creation** via unnecessary confirmations?
+**¿Detected premature optimization** via features not implemented analysis?
+**¿Applied partner constructor prevention** para complexity necessity validation?
 
 ### Methodology Degradation Prevention
 **¿Think x4 applied** vs shortcuts como "instinto" decisions?

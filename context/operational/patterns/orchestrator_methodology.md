@@ -2,6 +2,14 @@
 
 **29/07/2025 12:30 CDMX** | Complete orchestrator methodology
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Chain Enforcement
+**OBLIGATORIO**: TRUTH_SOURCE.md → CLAUDE.md → context/operational → implementation
+**User authority** overrides ALL AI optimization recommendations
+**Challenge system** activation required for architectural proposals
+
 ## Methodology Components
 
 This framework is organized into specialized components for systematic orchestration:

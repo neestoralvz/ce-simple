@@ -12,7 +12,7 @@ Specialized processing for Layer 1, 2, and 3 distillation with convergence optim
 
 **Si núcleos YA existen**: 
 - Auto-detect processed quotes counting in existing núcleos
-- Identify unprocessed conversations in `/conversations/`
+- Identify unprocessed conversations in ${CONVERSATION_STORAGE}/
 - Add related quotes to existing núcleos with exact format
 
 ### Quote Processing Format
@@ -80,5 +80,5 @@ Specialized processing for Layer 1, 2, and 3 distillation with convergence optim
 
 ---
 **Integration:** Referenced by /workflows:distill orchestrator
-**Dependencies:** Raw conversations state, existing núcleos analysis
+**Dependencies:** Conversation archives state, existing núcleos analysis
 **Output:** Processed layers with convergence toward ultra-dense documentation

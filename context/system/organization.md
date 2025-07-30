@@ -43,9 +43,9 @@ Fuente central única para módulos verdad usuario. Sistema DEBE consultar conte
 **DEBE incluir:** Fecha validation con comando date  
 **Uso:** Background intelligence para comandos
 
-### context/conversations/
-**Contenido:** 71 conversaciones originales usuario  
-**FUNDAMENTAL:** Fuente verdad absoluta sin interpretación AI  
+### ${CONVERSATION_STORAGE}/
+**Contenido:** Conversaciones procesadas y archivadas usuario  
+**FUNDAMENTAL:** Fuente verdad procesada sin interpretación AI  
 **Trazabilidad:** Referencias exactas conversaciones específicas
 
 ## Interacción context/ → .claude/commands/
@@ -75,7 +75,7 @@ Fuente central única para módulos verdad usuario. Sistema DEBE consultar conte
 
 ## Reglas Organización Actual
 
-**Nuevos módulos:** SOLO desde conversaciones RAW usuario  
+**Nuevos módulos:** SOLO desde conversaciones de archivo usuario  
 **Format OBLIGATORIO:** Header compacto + contenido estructurado según documentation_style.md  
 **Pureza ESENCIAL:** Zero interpretación AI, preservar voz usuario  
 **Regeneración:** Regla 10% - cambios mayores = escribir desde cero

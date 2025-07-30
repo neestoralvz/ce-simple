@@ -2,6 +2,14 @@
 
 **29/07/2025 11:00 CDMX** | Mandatory research and temporal validation protocol
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Chain Enforcement
+**OBLIGATORIO**: Research decisions DEBE align with TRUTH_SOURCE.md authority
+**Think x4**: SIEMPRE apply systematic analysis for research protocols
+**Parallel tools**: WebSearch + MCP context7 SIEMPRE concurrentes
+
 ## Timestamp Validation OBLIGATORIO
 **Research-first protocol requirements:**
 Para TODAS las investigaciones usar fecha más reciente con comando $(date), iniciar toda decisión/tarea con current timestamp, Internet research + MCP context integration required

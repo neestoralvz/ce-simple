@@ -1,20 +1,23 @@
 # Quick Operations Reference - Referencia Rápida Operativa
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
 ## Core Operations Commands (Ultra-Dense)
 
-### Revolutionary Command Set
-- **`/workflows:start`** → Universal ultra-orchestrator entry with multi-conversation assessment  
-- **`/workflows:distill`** → Layer distillation: raw → núcleos → síntesis → docs oficiales
-- **`/roles:challenge`** → Challenge-protected validation (stagnation Y over-engineering)
-- **`/roles:partner_modular`** → Constructor consultor for authority-driven simplification
-- **`/actions:build`** → Document creation with real-time user-vision integration
-- **`/actions:git`** → Git-native worktree management for parallel conversations
+### Core Operation Patterns (via Task Tool Delegation)
+- **Universal Orchestration** → Multi-conversation assessment via specialized Task tool delegation
+- **Layer Distillation** → ${CONVERSATION_STORAGE} → núcleos → síntesis → docs via documentation specialist
+- **Challenge Validation** → Authority-protected validation via partner validation pattern
+- **Modular Construction** → Authority-driven simplification via architecture analysis pattern
+- **Document Creation** → Real-time user-vision integration via documentation builder pattern
+- **Git Management** → Worktree management via implementation specialist pattern
 
-### Multi-Conversation Orchestration Commands
-- **`/workflows:explore`** → Codebase navigation + temporal validation
-- **`/workflows:debug`** → Systematic resolution + background process management
-- **`/maintain`** → System maintenance + git worktree coordination
-- **`/workflows:close`** → Session capture + multi-conversation convergence
+### Multi-Conversation Orchestration Patterns  
+- **Codebase Navigation** → Temporal validation via research specialist pattern
+- **Debug Resolution** → Systematic resolution via implementation specialist pattern
+- **System Maintenance** → Git worktree coordination via maintenance protocols
+- **Session Convergence** → Multi-conversation capture via session analysis patterns
 
 ## Authority Hierarchy (Ultra-Condensed)
 

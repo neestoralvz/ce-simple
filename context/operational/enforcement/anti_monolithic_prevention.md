@@ -2,6 +2,14 @@
 
 **29/07/2025 10:45 CDMX** | Systematic file size and content duplication prevention
 
+## AUTORIDAD SUPREMA
+context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+
+## Authority Chain Preservation
+**OBLIGATORIO**: Modular decomposition DEBE preserve TRUTH_SOURCE.md authority hierarchy
+**SIEMPRE**: Reference-only content protocol maintains authority integrity
+**Quality gates**: Creation → Alignment → Verification for all decomposition
+
 ## Triggers Automáticos Prevención
 
 ### File Size Monitoring OBLIGATORIO

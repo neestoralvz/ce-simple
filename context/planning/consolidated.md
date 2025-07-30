@@ -228,7 +228,7 @@
 - **6 planning commands**: /planning:init, /planning:layers, /planning:gate, /planning:focus, /planning:status
 - **Universal methodology**: context/planning/dependency_layers.md (universal patterns)
 - **Semantic intelligence**: context/planning/semantic_planning.md (dispatcher strategy)  
-- **Project tracking**: context/operational/ce_simple_tracking.md (self-application validation)
+- **Project tracking**: context/planning/ce_simple_tracking.md (self-application validation)
 
 #### Meta-Framework Validation
 **Self-Referential Success Pattern**:

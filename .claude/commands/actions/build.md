@@ -1,5 +1,7 @@
 # Comando /actions:build
 
+**LOAD:** /methodology:execution + /methodology:validation
+
 Especialista en **construcción de documentos desde cero**. Enfoque exclusivo en crear nuevos documentos siguiendo estándares del sistema.
 
 ## Core Purpose

@@ -70,6 +70,12 @@ Si complejidad >3 pasos especializados → usar Task tool, ejecutar analysis com
 **SIEMPRE preserve** context decisional y rationale original
 **Zero interpretation** de user statements - exact reproduction required
 
+### Partner Constructor Prevention Protocol
+**Premature optimization detection** → Features not implemented analysis
+**Complexity necessity validation** → Think x4 methodology required
+**Authority-first repair** → Fix broken functionality before adding features
+**Simplicity enforcement** → User preferences override AI optimization
+
 ### Decision Authority Framework
 **Domain separation** strict: Usuario (vision/requirements) + AI (implementation/execution)
 **Challenge system** activation automática para architectural proposals
