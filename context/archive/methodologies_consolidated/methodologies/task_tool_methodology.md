@@ -3,10 +3,10 @@
 **29/07/2025 17:30 CDMX** | Modular methodology with compliant file structure
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Authority Framework Integration
-**OBLIGATORIO**: All subagents DEBE respect TRUTH_SOURCE.md supremacy
+**OBLIGATORIO**: All subagents DEBE respect @context/architecture/core/truth-source.md supremacy
 **Delegation protocol**: Task tool deployment requires authority validation
 **Quality gates**: Post-delegation verification SIEMPRE mandatory
 
@@ -21,11 +21,11 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 **Content**: Role-based templates, trigger conditions, integration patterns
 
 ### Template Library
-**Authority**: @context/system/templates/task_tool_templates.md
+**Authority**: @context/architecture/templates/task_tool_templates.md
 **Content**: Ready-to-use templates, specialized prompts, implementation examples
 
 ### Revolutionary Methodology Templates
-**Authority**: @context/system/templates/revolutionary_methodology_templates.md  
+**Authority**: @context/architecture/templates/revolutionary_methodology_templates.md  
 **Content**: Advanced templates for breakthrough methodologies (quote-based fragmentation, architectural transformation mastery, ultra-orchestration, knowledge integration evolution)
 
 ## Integration Framework

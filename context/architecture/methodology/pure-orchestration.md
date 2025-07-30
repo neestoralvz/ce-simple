@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Pure AI agent orchestration mastery
 
 ## AUTORIDAD SUPREMA
-↑ @context/methodology.md → L4-Pure Orchestration implementation per core methodology authority
+↑ @context/architecture/core/methodology.md → L4-Pure Orchestration implementation per core methodology authority
 
 ## PURE AI AGENT ORCHESTRATION FRAMEWORK
 

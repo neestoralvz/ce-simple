@@ -3,7 +3,7 @@
 **30/07/2025 04:30 CDMX** | Comprehensive standards consolidation under user authority
 
 ## AUTORIDAD SUPREMA
-VISION.md → supreme user authority → TRUTH_SOURCE.md → STANDARDS.md enforces comprehensive compliance
+VISION.md → supreme user authority → @context/architecture/core/truth-source.md → STANDARDS.md enforces comprehensive compliance
 
 ## PRINCIPIO FUNDAMENTAL
 **"User standards authority preservation through comprehensive enforcement architecture"** - All system standards serve user vision while maintaining complete functionality.
@@ -45,14 +45,14 @@ VISION.md → supreme user authority → TRUTH_SOURCE.md → STANDARDS.md enforc
 ### Guardian-Partner Role System
 **Guardian Enforcement**: Standards violations → STOP execution immediately (file size, authority breaches, vision deviations)
 **Partner Constructor**: Complexity challenges → "¿Hay manera más simple?" through Socratic questioning
-**Authority Chain**: VISION.md → TRUTH_SOURCE.md → STANDARDS.md → specialized standards
+**Authority Chain**: VISION.md → @context/architecture/core/truth-source.md → STANDARDS.md → specialized standards
 **Quality Gates**: Pre-execution → Mid-execution → Post-execution validation
 
 ### Methodology Integration Framework
 **Think x4 SIEMPRE**: Systematic analysis required for all standards decisions
 **Research-First Protocol**: WebSearch + MCP context7 simultaneous for technical validation
 **Continuous Execution**: Standards enforcement never interrupts workflow momentum
-**Authority Validation**: All standards decisions validated against TRUTH_SOURCE.md
+**Authority Validation**: All standards decisions validated against @context/architecture/core/truth-source.md
 
 ---
 

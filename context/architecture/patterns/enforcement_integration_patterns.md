@@ -110,7 +110,7 @@ Context Loading Intelligence:
 ├── SIMPLE: Core context only (patterns.md hub)
 ├── MODERATE: Core + specialized enforcement patterns
 ├── COMPLEX: Full enforcement integration + authority validation
-└── SYSTEM-WIDE: Complete pattern ecosystem + TRUTH_SOURCE.md
+└── SYSTEM-WIDE: Complete pattern ecosystem + @context/architecture/core/truth-source.md
 ```
 
 ### Smart Context Activation
@@ -128,7 +128,7 @@ Progressive Loading Enforcement:
 **Pattern**: All enforcement patterns preserve supreme authority chain
 **Integration Validation**:
 - **Vision alignment** → All patterns serve user vision supremacy
-- **Authority traceability** → Clear path to TRUTH_SOURCE.md
+- **Authority traceability** → Clear path to @context/architecture/core/truth-source.md
 - **Cross-pattern consistency** → Enforcement patterns complement existing patterns
 - **Evolution compatibility** → Organic growth support maintained
 

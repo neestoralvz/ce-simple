@@ -3,7 +3,7 @@
 **30/07/2025 18:45 CDMX** | Sistema orgánico que se adapta preservando autoridad absoluta del usuario
 
 ## AUTORIDAD SUPREMA
-context/methodology.md → organic-evolution-dynamics.md implements organic system adaptation per user vision
+@context/architecture/core/methodology.md → organic-evolution-dynamics.md implements organic system adaptation per user vision
 
 ## PRINCIPIO FUNDAMENTAL
 **"Quiero que todo sea como de una manera muy orgánica... Un metasistema que se pueda adaptar a muchas cosas"** - System evolves to serve discovered needs while preserving user authority supremacy.
@@ -44,11 +44,11 @@ context/methodology.md → organic-evolution-dynamics.md implements organic syst
 
 ## INTEGRATION REFERENCES
 
-### ← context/methodology.md
+### ← @context/architecture/core/methodology.md
 **Authority Source**: Main methodology hub delegates organic evolution authority
 **Protocol**: Evolution dynamics serve complete methodology architecture
 
-### ←→ context/authority.md
+### ←→ @context/architecture/core/authority.md
 **Connection**: Evolution protocols respect user authority supremacy
 **Protocol**: All organic changes preserve complete user authority chain
 

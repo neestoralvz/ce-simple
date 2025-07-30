@@ -28,7 +28,7 @@ Set, check, or change current layer focus for development work.
 ## Integration Points
 
 ### Project State Tracking
-**Current focus storage:** Update context/planning/current.md with focus changes
+**Current focus storage:** Update context/architecture/core/methodology.md with focus changes
 **Progress preservation:** Maintain work item tracking across focus changes
 **History logging:** Record focus change rationale and timing
 

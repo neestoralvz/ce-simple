@@ -63,11 +63,11 @@ VISION.md → supreme user authority → vision/ implements vision discovery and
 **Connection**: Vision-driven UX architecture and conversation-first design implementation
 **Protocol**: User experience patterns must manifest discovered vision through natural interaction
 
-### ←→ context/methodology.md
+### ←→ @context/architecture/core/methodology.md
 **Connection**: Vision discovery methodologies and systematic crystallization protocols
 **Protocol**: Methodology evolution serves vision discovery and implementation optimization
 
-### ←→ context/authority.md
+### ←→ @context/architecture/core/authority.md
 **Connection**: Authority framework enforcement of vision supremacy and preservation
 **Protocol**: Vision authority drives all system decision-making and evolution validation
 

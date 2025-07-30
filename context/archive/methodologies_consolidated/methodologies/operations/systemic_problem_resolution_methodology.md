@@ -136,5 +136,5 @@
 
 ## Enlaces → información complementaria
 **Si necesitas script execution**: → scripts/eliminate_codeboxes.py
-**Si requieres enforcement**: → context/enforcement/core_reminders.md
-**Si necesitas quality gates**: → context/enforcement/quality_gates.md
+**Si requieres enforcement**: → context/architecture/core/methodology.md
+**Si necesitas quality gates**: → context/architecture/core/quality_gates.md

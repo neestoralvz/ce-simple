@@ -3,7 +3,7 @@
 **30/07/2025 23:00 CDMX** | User preference for simple, discrete communication
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → communication_simplicity_vision.md implements communication preference vision
+@context/vision/vision_foundation.md → supreme user authority → communication_simplicity_vision.md implements communication preference vision
 
 ## CORE COMMUNICATION VISION
 
@@ -72,8 +72,8 @@ context/principles/vision_foundation.md → supreme user authority → communica
 ---
 
 **INTEGRATION REFERENCES**
-**Vision Foundation**: ← context/principles/vision_foundation.md (supreme authority)
-**Simplicity Principles**: ←→ context/simplicity.md (simplicity authority integration)
+**Vision Foundation**: ← @context/vision/vision_foundation.md (supreme authority)
+**Simplicity Principles**: ←→ @context/vision/simplicity.md (simplicity authority integration)
 **Standards System**: ←→ standards_system_vision.md (standards communication)
 **Guardian Vision**: ←→ guardian_enforcement_vision.md (enforcement communication)
 

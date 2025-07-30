@@ -51,7 +51,7 @@
 ### Information Density Over Structure Optimization
 - **Content Preservation**: All principles content preserved during distribution
 - **Reference Integrity**: Bidirectional linking maintained through structural changes
-- **Authority Chain**: TRUTH_SOURCE.md hierarchy preserved through all reorganizations
+- **Authority Chain**: @context/architecture/core/truth-source.md hierarchy preserved through all reorganizations
 
 ---
 

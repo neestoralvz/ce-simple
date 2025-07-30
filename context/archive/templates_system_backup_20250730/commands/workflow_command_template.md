@@ -85,7 +85,7 @@
 ### For Session Management
 ```markdown
 ## Context
-- context/planning/current.md (for session state)
+- context/architecture/core/methodology.md (for session state)
 - Previous session handoffs and documentation
 - System state and configuration requirements
 - Integration with git and documentation systems
@@ -145,4 +145,4 @@
 
 ---
 **Authority Source**: Workflow command analysis + process coordination patterns
-**Template References**: context/templates/universal_do_dont_template.md
+**Template References**: context/architecture/templates/README.mduniversal_do_dont_template.md

@@ -3,7 +3,7 @@
 **29/07/2025 16:30 CDMX**
 
 ## AUTORIDAD SUPREMA
-@context/TRUTH_SOURCE.md → @context/architecture/claude_code/orchestration_protocols.md
+@context/architecture/core/truth-source.md → @context/architecture/claude_code/orchestration_protocols.md
 
 ## CORE FUNCTION
 Knowledge distillation engine: Conversation → System Evolution mediante Think x4 + knowledge integration

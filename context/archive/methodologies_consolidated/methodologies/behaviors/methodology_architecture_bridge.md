@@ -1,10 +1,10 @@
 # Methodology Architecture Bridge - Comportamiento Puente Metodológico
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Authority Framework Integration
-**OBLIGATORIO**: Methodology-architecture bridge DEBE preserve TRUTH_SOURCE.md supremacy
+**OBLIGATORIO**: Methodology-architecture bridge DEBE preserve @context/architecture/core/truth-source.md supremacy
 **SIEMPRE**: Human methodology drives system architecture, not reverse
 **Think x4**: Apply systematic analysis to methodology-architecture alignment
 **Parallel tools**: Concurrent bridge validation maximizes effectiveness

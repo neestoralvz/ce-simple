@@ -23,7 +23,7 @@ As resources accumulate organically, structure may evolve to include:
 
 ## Integration Points
 
-### → TRUTH_SOURCE.md
+### → @context/architecture/core/truth-source.md
 **Connection**: All external resources validated against user vision before integration
 **Protocol**: External knowledge informs but never overrides user authority
 
@@ -86,5 +86,5 @@ Structure will evolve organically based on actual resource accumulation:
 
 ---
 
-**Authority Chain**: VISION.md → TRUTH_SOURCE.md → resources/ component → filtered external knowledge → vision-aligned integration
+**Authority Chain**: VISION.md → @context/architecture/core/truth-source.md → resources/ component → filtered external knowledge → vision-aligned integration
 **Evolution Protocol**: External discovery → Vision compatibility assessment → Filtered integration → Organic structure evolution

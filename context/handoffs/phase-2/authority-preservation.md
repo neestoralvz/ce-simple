@@ -12,8 +12,8 @@ PHASE_2_TEMPLATE_SYSTEM_COMPLIANCE_HANDOFF.md → authority-preservation.md impl
 #### **Supreme Authority Chain Validation**:
 ```
 Template Authority Hierarchy:
-├─ context/principles/vision_foundation.md (Supreme User Authority)
-├─ context/TRUTH_SOURCE.md (Context Architecture Authority)
+├─ @context/vision/vision_foundation.md (Supreme User Authority)
+├─ @context/architecture/core/truth-source.md (Context Architecture Authority)
 ├─ context/architecture/templates/README.md (Template System Authority)
 ├─ Specialized Modules (Domain-Specific Authority)
 └─ Individual Templates (Implementation Authority)
@@ -37,7 +37,7 @@ Authority Preservation Requirements:
 **Date Location** | [Purpose description]
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → TRUTH_SOURCE.md → templates/README.md → [module].md implements [domain] per template system authority
+@context/vision/vision_foundation.md → @context/architecture/core/truth-source.md → templates/README.md → [module].md implements [domain] per template system authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"[Domain principle]"** - [Core purpose maintaining authority]

@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Revolutionary patterns and 2025 orchestration evolution
 
 ## AUTORIDAD SUPREMA
-↑ @context/methodology.md → Revolutionary Patterns implementation per core methodology authority
+↑ @context/architecture/core/methodology.md → Revolutionary Patterns implementation per core methodology authority
 
 ## REVOLUTIONARY METHODOLOGY PATTERNS
 

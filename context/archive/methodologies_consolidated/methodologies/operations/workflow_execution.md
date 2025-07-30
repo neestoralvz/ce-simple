@@ -4,7 +4,7 @@
 
 ### User-Vision Authority Consultation
 **Mandatory Before Any Systemic Change:**
-1. **TRUTH_SOURCE.md review** → Authority validation required
+1. **@context/architecture/core/truth-source.md review** → Authority validation required
 2. **Real-time integration** → Auto-generate user-vision proposals
 3. **Challenge protection** → Apply challenge system systematically
 4. **User authority supremacy** → User feedback overrides AI optimization
@@ -86,7 +86,7 @@
 - Apply current standards and guidelines
 
 **Alignment Phase:**
-- Validate against context/TRUTH_SOURCE.md
+- Validate against @context/architecture/core/truth-source.md
 - Confirm authority hierarchy compliance
 - Check methodology adherence
 

@@ -3,7 +3,7 @@
 **30/07/2025 17:30 CDMX** | Architectural transformation from executor to pure AI agent orchestrator
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → ADR-003 implements architectural transformation per user vision
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → ADR-003 implements architectural transformation per user vision
 
 ## Status
 **ACCEPTED** - User explicit authority demanding pure orchestrator role

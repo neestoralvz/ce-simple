@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | L2-MODULAR extraction handoff for critical file size violations in UX flowchart system
 
 ## AUTORIDAD SUPREMA
-@context/MIGRATION_RULES.md → L2-MODULAR protocol → @context/standards.md enforcement → Complete remediation per user vision authority
+@context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md → L2-MODULAR protocol → @context/architecture/standards/README.md enforcement → Complete remediation per user vision authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Critical system remediation with zero functionality loss and 95%+ authority preservation"** - Emergency file size violations require immediate L2-MODULAR extraction while preserving complete UX flowchart system functionality and user vision supremacy.

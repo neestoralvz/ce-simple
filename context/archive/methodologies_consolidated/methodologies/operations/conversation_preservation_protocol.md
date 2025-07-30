@@ -7,12 +7,12 @@
 **Critical Error Learning Cycle**:
 - **Error**: Partner eliminated archive/conversations/ without processing verification
 - **Recognition**: User identified unprocessed conversations lost
-- **Response**: Systematic protocol establishment in TRUTH_SOURCE.md supreme authority
+- **Response**: Systematic protocol establishment in @context/architecture/core/truth-source.md supreme authority
 - **Integration**: Multi-layer enforcement (anti-patterns + templates + behavioral validation)
 
 ## Protocol Components Established
 
-### TRUTH_SOURCE.md Authority
+### @context/architecture/core/truth-source.md Authority
 **Conversation preservation as supreme mandate**
 **Authority Integration**: Supreme source update + multi-layer enforcement
 **Hierarchical Enforcement**: Authority preserved through reference structure

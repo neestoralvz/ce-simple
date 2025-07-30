@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Behavioral enforcement and quality gates authority
 
 ## AUTORIDAD SUPREMA
-↑ @context/standards.md → Enforcement standards implementation per system standards authority
+↑ @context/architecture/standards/README.md → Enforcement standards implementation per system standards authority
 
 ## BEHAVIORAL ENFORCEMENT PROTOCOLS
 

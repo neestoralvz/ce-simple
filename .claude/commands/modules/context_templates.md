@@ -2,7 +2,7 @@
 
 ## Basic Context File Templates
 
-### TRUTH_SOURCE.md Template
+### @context/architecture/core/truth-source.md Template
 ```markdown
 # Project Context - Authority Source
 

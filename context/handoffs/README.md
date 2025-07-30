@@ -3,7 +3,7 @@
 **30/07/2025 17:50 CDMX** | Complete handoff documentation for systematic remediation with simultaneity analysis
 
 ## AUTORIDAD SUPREMA
-@context/TRUTH_SOURCE.md → @context/methodology.md → handoffs/ implements systematic task transfer per orquestación protocols
+@context/architecture/core/truth-source.md → @context/architecture/core/methodology.md → handoffs/ implements systematic task transfer per orquestación protocols
 
 ## PRINCIPIO FUNDAMENTAL
 **"Complete handoff documentation enables seamless parallel task execution"** - Every critical system remediation task documented with complete execution guidance preserving user authority supremacy and optimized for simultaneous conversation execution.

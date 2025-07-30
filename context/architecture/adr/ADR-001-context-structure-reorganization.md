@@ -46,7 +46,7 @@ System had fragmented structure with research/ and patterns/ as top-level direct
 
 ### Migration Success Metrics:
 - ✅ Directory elimination: research/ removed, patterns/ migrated
-- ✅ Reference integrity: TRUTH_SOURCE.md shows 3 architecture/patterns references
+- ✅ Reference integrity: @context/architecture/core/truth-source.md shows 3 architecture/patterns references
 - ✅ Command updates: CLAUDE.md semantic triggers updated
 - ✅ Functionality preservation: patterns.md accessible at new location
 - ✅ Authority compliance: user vision supremacy maintained throughout
@@ -69,6 +69,6 @@ This ADR establishes precedent for future structural reorganizations:
 ---
 
 **Integration References**: 
-- Applied: context/MIGRATION_RULES.md protocols
-- Updated: context/CROSS_REFERENCE_SYSTEM.md patterns  
-- Validated: context/TRUTH_SOURCE.md authority chain
+- Applied: context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md protocols
+- Updated: context/architecture/reference/README.md patterns  
+- Validated: @context/architecture/core/truth-source.md authority chain

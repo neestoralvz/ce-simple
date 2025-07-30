@@ -151,4 +151,4 @@
 
 ---
 **Authority Source**: Maintenance command analysis + system management patterns
-**Template References**: context/templates/universal_do_dont_template.md
+**Template References**: context/architecture/templates/README.mduniversal_do_dont_template.md

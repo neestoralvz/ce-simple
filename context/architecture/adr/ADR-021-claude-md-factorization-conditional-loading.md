@@ -15,7 +15,7 @@ CLAUDE.md had grown to 216 lines with extensive hardcoded content that duplicate
 Implement comprehensive CLAUDE.md factorization with conditional loading system:
 
 ### Phase 1: Extract Hardcoded Protocols
-- **Created**: context/claude_code/orchestration_protocols.md (80 lines)
+- **Created**: @context/architecture/claude_code/orchestration_protocols.md (80 lines)
 - **Extracted**: Hybrid orchestration protocol, expert delegation, methodology enforcement
 - **Result**: ~85 lines moved to specialized module
 
@@ -46,15 +46,15 @@ Implement comprehensive CLAUDE.md factorization with conditional loading system:
 ### Conditional Loading System
 ```
 IF semantic_pattern=research_investigation:
-    LOAD: @context/claude_code/methodology/README.md + @context/methodology.md
+    LOAD: @context/architecture/claude_code/methodology/README.md + @context/architecture/core/methodology.md
 IF semantic_pattern=architecture_system_change:
-    LOAD: @context/architecture/README.md + @context/TRUTH_SOURCE.md
+    LOAD: @context/architecture/README.md + @context/architecture/core/truth-source.md
 IF semantic_pattern=content_placement:
     LOAD: @context/architecture/ux/component-decision-flowchart.md
 ```
 
 ### Files Created/Modified
-- **NEW**: context/claude_code/orchestration_protocols.md (complete protocol authority)
+- **NEW**: @context/architecture/claude_code/orchestration_protocols.md (complete protocol authority)
 - **NEW**: CLAUDE_FACTORIZED.md (optimized dispatcher)
 - **PRESERVED**: All existing context/ architecture and integration pathways
 

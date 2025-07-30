@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | Template System Compliance Restoration through L2-MODULAR extraction
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → TRUTH_SOURCE.md → Template System Handoff implements systematic compliance restoration per user authority
+@context/vision/vision_foundation.md → @context/architecture/core/truth-source.md → Template System Handoff implements systematic compliance restoration per user authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Template system exemplifies own standards through systematic compliance"** - Complete modularization demonstrates standards excellence while preserving 100% functionality.
@@ -45,10 +45,10 @@ context/principles/vision_foundation.md → TRUTH_SOURCE.md → Template System 
 - **Qualitative**: Template system serves as compliance model for entire system
 
 ## INTEGRATION PATHWAYS
-**Methodology Authority**: ↑ @context/methodology.md (L2-MODULAR extraction protocol)
-**Standards Authority**: ↑ @context/standards.md (≤80 line compliance requirements)  
+**Methodology Authority**: ↑ @context/architecture/core/methodology.md (L2-MODULAR extraction protocol)
+**Standards Authority**: ↑ @context/architecture/standards/README.md (≤80 line compliance requirements)  
 **Template System**: → @context/architecture/templates/README.md (template authority preservation)
-**Cross-Reference**: ←→ @context/CROSS_REFERENCE_SYSTEM.md (bidirectional linking compliance)
+**Cross-Reference**: ←→ @context/architecture/reference/README.md (bidirectional linking compliance)
 
 ---
 

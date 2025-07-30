@@ -71,7 +71,7 @@ Unresolved issues para future sessions + context
 ### Input sources
 **Conversación raw**: Session transcriptions, interaction logs
 **Context integration**: Previous conversations, related decisions
-**Authority validation**: Cross-reference con user-vision/TRUTH_SOURCE.md
+**Authority validation**: Cross-reference con user-vision/@context/architecture/core/truth-source.md
 
 ### Output destinations
 **Integration con /workflows:distill**: Para layer progression raw → núcleos → síntesis

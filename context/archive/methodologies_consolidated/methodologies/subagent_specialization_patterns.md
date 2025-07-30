@@ -3,10 +3,10 @@
 **29/07/2025 17:30 CDMX** | Role-based delegation patterns
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Authority Delegation Framework
-**OBLIGATORIO**: All subagents DEBE acknowledge TRUTH_SOURCE.md supremacy
+**OBLIGATORIO**: All subagents DEBE acknowledge @context/architecture/core/truth-source.md supremacy
 **Delegation protocol**: Specialized agents preserve user vision authority
 **Think x4**: SIEMPRE apply systematic analysis in delegation patterns
 
@@ -27,7 +27,7 @@ Task(
 ```
 Task(
   description: "Authority validation",
-  prompt: "Act as partner validation specialist. Load context from context/TRUTH_SOURCE.md and context/operational/patterns/authority_framework.md. Challenge architectural decisions using socratic methodology. Verify alignment with user vision and simplicity principles.",
+  prompt: "Act as partner validation specialist. Load context from @context/architecture/core/truth-source.md and context/operational/patterns/authority_framework.md. Challenge architectural decisions using socratic methodology. Verify alignment with user vision and simplicity principles.",
   subagent_type: "general-purpose"
 )
 ```
@@ -38,7 +38,7 @@ Task(
 ```
 Task(
   description: "Documentation creation",
-  prompt: "Act as documentation specialist. Load context from context/system/templates/ and context/operational/patterns/documentation_style.md. Create formal documentation following established templates and standards.",
+  prompt: "Act as documentation specialist. Load context from context/architecture/templates/ and context/operational/patterns/documentation_style.md. Create formal documentation following established templates and standards.",
   subagent_type: "general-purpose"
 )
 ```
@@ -60,7 +60,7 @@ Task(
 ```
 Task(
   description: "Guardian enforcement",
-  prompt: "Act as Guardian enforcer. Load context from context/TRUTH_SOURCE.md and context/system/standards/notification_formatting_standards.md. Execute binary compliance validation with zero tolerance. Use 'no mercy' enforcement for violations. Report COMPLIANT or VIOLATION only.",
+  prompt: "Act as Guardian enforcer. Load context from @context/architecture/core/truth-source.md and context/architecture/standards/notification_formatting_standards.md. Execute binary compliance validation with zero tolerance. Use 'no mercy' enforcement for violations. Report COMPLIANT or VIOLATION only.",
   subagent_type: "general-purpose"
 )
 ```

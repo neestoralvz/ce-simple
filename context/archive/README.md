@@ -3,7 +3,7 @@
 **30/07/2025 16:30 CDMX** | Conversation processing and historical reference system
 
 ## AUTORIDAD SUPREMA
-TRUTH_SOURCE.md → archive/ implements conversation preservation and knowledge extraction protocols
+@context/architecture/core/truth-source.md → archive/ implements conversation preservation and knowledge extraction protocols
 
 ## ARCHIVE PURPOSE
 **Historical Intelligence Repository** - Processed conversations, extracted insights, and legacy component preservation for system learning and evolution continuity.
@@ -38,10 +38,10 @@ TRUTH_SOURCE.md → archive/ implements conversation preservation and knowledge 
 ### Archive→Active Content Relationships
 **EXTRACTION PATHWAYS**:
 - Vision discoveries → context/vision/
-- Methodological insights → context/methodology.md updates
-- Pattern recognition → context/patterns/
-- Authority clarifications → context/authority.md updates
-- Standards evolution → context/standards.md updates
+- Methodological insights → @context/architecture/core/methodology.md updates
+- Pattern recognition → context/architecture/patterns/
+- Authority clarifications → @context/architecture/core/authority.md updates
+- Standards evolution → @context/architecture/standards/README.md updates
 
 ## NAVIGATION GUIDANCE
 
@@ -68,19 +68,19 @@ TRUTH_SOURCE.md → archive/ implements conversation preservation and knowledge 
 
 ## INTEGRATION REFERENCES
 
-### → context/TRUTH_SOURCE.md
+### → @context/architecture/core/truth-source.md
 **Connection**: Archive processing validates against supreme authority context
 **Protocol**: All archived insights must trace to current authority framework
 
-### → context/methodology.md
+### → @context/architecture/core/methodology.md
 **Connection**: Historical methodology evolution informs current protocol optimization
 **Protocol**: Archived methodological insights feed into continuous methodology improvement
 
-### → context/patterns/
+### → context/architecture/patterns/
 **Connection**: Processed conversations provide pattern recognition for working methodologies
 **Protocol**: Archive analysis contributes to pattern validation and anti-pattern identification
 
-### → context/authority.md
+### → @context/architecture/core/authority.md
 **Connection**: Historical authority decisions inform current authority framework evolution
 **Protocol**: Archive preserves user authority evolution while maintaining supremacy consistency
 

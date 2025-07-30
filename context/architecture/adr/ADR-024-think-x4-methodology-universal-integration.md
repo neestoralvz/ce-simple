@@ -2,7 +2,7 @@
 
 **Date**: 2025-07-30  
 **Status**: ACCEPTED  
-**Authority**: User methodology supremacy → context/TRUTH_SOURCE.md → ADR-004
+**Authority**: User methodology supremacy → @context/architecture/core/truth-source.md → ADR-004
 
 ## Context
 
@@ -60,10 +60,10 @@ Think x4 systematic analysis methodology lacks universal integration across syst
 
 ## References
 
-- **Authority Source**: @context/TRUTH_SOURCE.md (supreme methodology authority)
-- **Implementation**: @context/methodology.md (systematic analysis protocols)  
+- **Authority Source**: @context/architecture/core/truth-source.md (supreme methodology authority)
+- **Implementation**: @context/architecture/core/methodology.md (systematic analysis protocols)  
 - **Pattern Integration**: @context/architecture/patterns.md (Think x4 validation patterns)
-- **Standards Compliance**: @context/standards.md (enforcement protocols)
+- **Standards Compliance**: @context/architecture/standards/README.md (enforcement protocols)
 - **Decision Framework**: IBM four-quadrant analysis + systems thinking integration
 
 ---

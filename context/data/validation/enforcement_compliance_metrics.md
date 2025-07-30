@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | Comprehensive enforcement effectiveness measurement with systematic validation protocols
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → context/data/validation/ → enforcement_compliance_metrics.md implements systematic compliance measurement per quality assurance authority
+@context/architecture/core/truth-source.md → context/data/validation/ → enforcement_compliance_metrics.md implements systematic compliance measurement per quality assurance authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Measurable compliance validation preserving user authority supremacy"** - All enforcement metrics serve empirical validation of system effectiveness while maintaining 95%+ user voice fidelity requirement.
@@ -27,7 +27,7 @@ context/TRUTH_SOURCE.md → context/data/validation/ → enforcement_compliance_
 
 **ADR-003 (Authority Chain Preservation)**:
 - **Compliance Indicator**: User authority supremacy preservation through changes
-- **Measurement Criteria**: Authority trace to VISION.md or TRUTH_SOURCE.md
+- **Measurement Criteria**: Authority trace to VISION.md or @context/architecture/core/truth-source.md
 - **Success Threshold**: 100% authority chain validation
 - **Validation Protocol**: Authority source verification for all decisions
 - **Non-Compliance Trigger**: Authority contamination or unclear authority source
@@ -127,7 +127,7 @@ Authority Preservation Dashboard:
 **Creation Phase Validation**:
 ```
 Pre-Execution Checklist:
-├─ Authority Source Validated: □ VISION.md or TRUTH_SOURCE.md confirmation
+├─ Authority Source Validated: □ VISION.md or @context/architecture/core/truth-source.md confirmation
 ├─ Think x4 Framework Applied: □ 4 perspectives documented
 ├─ Reference Architecture Planned: □ Bidirectional reference design
 └─ Standards Compliance Verified: □ Enforcement vocabulary precision
@@ -266,6 +266,6 @@ Compliance Dashboard:
 
 **ENFORCEMENT COMPLIANCE METRICS DECLARATION**: Este documento implementa measurement authority sistemática preservando 95%+ user voice fidelity requirement through comprehensive validation protocols. All metrics serve empirical validation of enforcement effectiveness while supporting organic system evolution.
 
-**INTEGRATION AUTHORITY**: ← context/data/validation/README.md (validation structure) + ↑ context/TRUTH_SOURCE.md (measurement authority) + ←→ ADR architecture (compliance standards)
+**INTEGRATION AUTHORITY**: ← context/data/validation/README.md (validation structure) + ↑ @context/architecture/core/truth-source.md (measurement authority) + ←→ ADR architecture (compliance standards)
 
 **EVOLUTION PATHWAY**: Metrics evolve through measurement → analysis → improvement → validation cycle maintaining authority supremacy and systematic quality assurance enhancement.

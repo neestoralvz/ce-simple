@@ -44,7 +44,7 @@ Partner role intervention → Over-engineering discovery → Systematic eliminat
 ### Error Prevention Patterns
 - **Export directory preservation** → Main product vs intermediate files distinction
 - **Reference-only architecture** → Content duplication elimination
-- **Authority chain maintenance** → TRUTH_SOURCE.md supremacy preserved
+- **Authority chain maintenance** → @context/architecture/core/truth-source.md supremacy preserved
 - **Empirical validation** → Evidence over assumption-based decisions
 
 ## System State Post-Cleanup
@@ -53,7 +53,7 @@ Partner role intervention → Over-engineering discovery → Systematic eliminat
 - **Anti-monolithic compliance**: File size ≤80 lines maintained
 - **Reference-only architecture**: No content duplication 
 - **Context efficiency**: Token economy through smart references
-- **Authority preservation**: TRUTH_SOURCE.md dispatch system intact
+- **Authority preservation**: @context/architecture/core/truth-source.md dispatch system intact
 
 ### Functional Verification
 - **All commands operational** after elimination

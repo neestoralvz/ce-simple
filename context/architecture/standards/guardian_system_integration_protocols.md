@@ -3,7 +3,7 @@
 **30/07/2025 17:00 CDMX** | Revolutionary Guardian-Partner system integration with continuous compliance
 
 ## AUTORIDAD SUPREMA
-context/standards.md → guardian_system_integration_protocols.md implements enhanced binary enforcement per research-validated QA patterns
+@context/architecture/standards/README.md → guardian_system_integration_protocols.md implements enhanced binary enforcement per research-validated QA patterns
 
 ## PRINCIPIO FUNDAMENTAL
 **"Binary enforcement with intelligent dialogue fallback creates revolutionary quality assurance"** - Guardian binary enforcement + Partner Constructor dialogue + continuous monitoring = next-generation standards compliance.
@@ -50,7 +50,7 @@ Guardian System:
 ### **Entry Points**
 - **Standards System**: ← @../standards.md (guardian integration authority)
 - **Standards Evolution**: ← @standards_evolution_framework.md (evolution protocols)
-- **System Integration**: ← @../../TRUTH_SOURCE.md (guardian validation)
+- **System Integration**: ← @../../@context/architecture/core/truth-source.md (guardian validation)
 
 ### **Guardian Pathways**
 - **Binary Enforcement**: → @guardian-integration/binary-enforcement.md

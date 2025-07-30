@@ -34,7 +34,7 @@ PHASE_2_TEMPLATE_SYSTEM_COMPLIANCE_HANDOFF.md → reference-architecture.md impl
 ### Evolution Management: @templates/evolution/
 
 ## INTEGRATION REFERENCES
-**Standards Authority**: ↑ context/standards.md (compliance requirements)
+**Standards Authority**: ↑ @context/architecture/standards/README.md (compliance requirements)
 **Cross-Reference**: ←→ CROSS_REFERENCE_SYSTEM.md (bidirectional linking)
 ```
 

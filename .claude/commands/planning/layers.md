@@ -24,7 +24,7 @@ Display project construction layers, current status, and dependency relationship
 ## Context Integration
 
 ### Project State Loading
-**Source:** context/planning/current.md project tracking
+**Source:** context/architecture/core/methodology.md project tracking
 **Fallback:** If no project initialized, suggest `/planning:init`
 **Authority:** Reference to project template for layer definitions
 

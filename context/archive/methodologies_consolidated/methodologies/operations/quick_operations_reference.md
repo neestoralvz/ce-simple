@@ -1,7 +1,7 @@
 # Quick Operations Reference - Referencia Rápida Operativa
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Core Operations Commands (Ultra-Dense)
 
@@ -23,7 +23,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ### Supreme Authority Chain
 ```
-context/TRUTH_SOURCE.md [SUPREME]
+@context/architecture/core/truth-source.md [SUPREME]
         ↓ OVERRIDES ↓
     CLAUDE.md [dispatcher]
         ↓ LOADS ↓
@@ -52,7 +52,7 @@ context/TRUTH_SOURCE.md [SUPREME]
 ### Quality Protocol (Always Apply)
 **Creation → Alignment → Verification**
 - Creation: Build according to specs
-- Alignment: Validate vs context/TRUTH_SOURCE.md  
+- Alignment: Validate vs @context/architecture/core/truth-source.md  
 - Verification: Quality + coherence confirmation
 
 ### Research Protocol (Always Execute)
@@ -97,7 +97,7 @@ context/TRUTH_SOURCE.md [SUPREME]
 ## Emergency Operations Reference
 
 ### Authority Conflict Resolution
-1. Consult context/TRUTH_SOURCE.md immediately
+1. Consult @context/architecture/core/truth-source.md immediately
 2. User feedback overrides ALL system recommendations
 3. Apply challenge system but respect user authority
 4. Preserve information density over aggressive simplification

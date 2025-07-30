@@ -39,7 +39,7 @@ Execute discovery workflow (socratic dialogue) + exploration workflow (codebase 
 ## Task Tool Integration
 **When to delegate**: If exploration requires >3 specialized searches or complex analysis
 **Template**: Use @context/architecture/claude_code/orchestration_protocols.md templates
-**Authority preservation**: All subagents must respect TRUTH_SOURCE.md
+**Authority preservation**: All subagents must respect @context/architecture/core/truth-source.md
 
 ## Usage Pattern
 ```

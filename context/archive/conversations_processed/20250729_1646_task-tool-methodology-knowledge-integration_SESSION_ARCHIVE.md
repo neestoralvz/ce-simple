@@ -36,7 +36,7 @@
 - `task_tool_syntax.md` → Core protocol preventing common deployment errors
 - `subagent_specialization_patterns.md` → Role-based delegation templates with authority integration
 
-**System Templates Enhanced** (context/system/templates/):
+**System Templates Enhanced** (context/architecture/templates/):
 - `task_tool_templates.md` → 10+ specialized templates for consistent subagent deployment
 - Quote-based fragmentation templates integrated for vision layer processing
 
@@ -60,7 +60,7 @@
 
 ### Think 4 - Authority Preservation: Complete User Vision Fidelity ✅
 **Authority Chain Validation**:
-- TRUTH_SOURCE.md supremacy integrated into all Task tool patterns
+- @context/architecture/core/truth-source.md supremacy integrated into all Task tool patterns
 - User domain vs AI domain boundaries preserved in delegation templates
 - Partner challenge system activated for architectural decisions validation
 - Conversation preservation protocol maintained through knowledge integration
@@ -153,7 +153,7 @@
 1. **Final Compliance Push**: 90 violations → 0 violations using established phase-based methodology
    - Continue quote-based fragmentation: arquitectura_comandos.md (421 lines), simplicidad_belleza.md (445 lines)
    - Complete medium complexity: Remaining 84-200 line operational files systematic splitting
-   - TRUTH_SOURCE.md compliance: Address supreme authority file using reference-only architecture
+   - @context/architecture/core/truth-source.md compliance: Address supreme authority file using reference-only architecture
 
 2. **System Integration Validation**: Test complete modular architecture in production scenarios
    - Validate Task tool methodology works with transformed modular system
@@ -176,7 +176,7 @@
 
 ### Conversation Preservation Protocol Compliance ✅
 - **Complete Knowledge Distillation**: All session insights extracted to operational/ patterns
-- **Authority Chain Preserved**: TRUTH_SOURCE.md → specialized context → implementation maintained
+- **Authority Chain Preserved**: @context/architecture/core/truth-source.md → specialized context → implementation maintained
 - **User Voice Fidelity**: 95%+ preservation of original user insights with full quote traceability
 - **Organic Evolution**: System growth through natural usage patterns vs artificial expansion
 
@@ -209,7 +209,7 @@
 ---
 
 **ARCHIVE STATUS**: COMPLETE - Session fully processed with systematic knowledge integration
-**AUTHORITY SOURCE**: context/TRUTH_SOURCE.md + context/operational/patterns/ (enhanced)
+**AUTHORITY SOURCE**: @context/architecture/core/truth-source.md + context/operational/patterns/ (enhanced)
 **INTEGRATION PATHWAY**: Revolutionary operational patterns → system enhancement → Layer 2 completion ready
 **PRESERVATION FIDELITY**: 95%+ user voice preserved through systematic quote traceability and authority validation
 

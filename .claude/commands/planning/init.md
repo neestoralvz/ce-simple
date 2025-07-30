@@ -55,7 +55,7 @@ Initialize construction layers and dependency management for specified project t
 ## Integration Points
 
 ### Context Planning Update
-**File creation:** Update context/planning/current.md with project initialization
+**File creation:** Update context/architecture/core/methodology.md with project initialization
 **Project tracking:** Record project type and initial state
 **Authority chain:** Reference appropriate project template documentation
 

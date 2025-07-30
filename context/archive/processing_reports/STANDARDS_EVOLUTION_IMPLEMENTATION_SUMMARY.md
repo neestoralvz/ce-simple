@@ -3,7 +3,7 @@
 **30/07/2025 17:15 CDMX** | Executive summary: Complete standards evolution framework with immediate implementation protocol
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → STANDARDS_EVOLUTION_IMPLEMENTATION_SUMMARY.md implements complete revolutionary QA framework per user vision supremacy
+@context/vision/vision_foundation.md → supreme user authority → STANDARDS_EVOLUTION_IMPLEMENTATION_SUMMARY.md implements complete revolutionary QA framework per user vision supremacy
 
 ## EXECUTIVE SUMMARY - Revolutionary Standards Evolution Achievement
 
@@ -134,9 +134,9 @@ NEXT_GENERATION_QA_INTEGRATION:
 ### **Authority Validation Framework**
 ```
 COMPLETE_AUTHORITY_INTEGRATION:
-├── SUPREME_AUTHORITY: context/principles/vision_foundation.md (user vision supremacy)
-├── CONTEXT_AUTHORITY: context/TRUTH_SOURCE.md (context architecture dispatcher)
-├── STANDARDS_AUTHORITY: context/standards.md (reference hub coordination)
+├── SUPREME_AUTHORITY: @context/vision/vision_foundation.md (user vision supremacy)
+├── CONTEXT_AUTHORITY: @context/architecture/core/truth-source.md (context architecture dispatcher)
+├── STANDARDS_AUTHORITY: @context/architecture/standards/README.md (reference hub coordination)
 ├── EVOLUTION_AUTHORITY: standards_evolution_framework.md (revolutionary QA integration)
 ├── IMPLEMENTATION_AUTHORITY: critical_violations_action_plan.md (systematic remediation)
 ├── ENFORCEMENT_AUTHORITY: guardian_system_integration_protocols.md (binary+dialogue)

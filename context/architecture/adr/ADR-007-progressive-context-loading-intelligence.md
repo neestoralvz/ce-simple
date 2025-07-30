@@ -25,7 +25,7 @@ User vision: "conversation natural que de esa conversación natural salga el res
 IF conversation_complexity = simple: PRIMARY README only
 IF conversation_complexity = moderate: PRIMARY + SECONDARY README  
 IF conversation_complexity = complex: PRIMARY + SECONDARY + AUTHORITY README
-IF conversation_complexity = system-wide: Complete README chain + TRUTH_SOURCE.md
+IF conversation_complexity = system-wide: Complete README chain + @context/architecture/core/truth-source.md
 ```
 
 ### Authority Preservation:
@@ -55,7 +55,7 @@ IF conversation_complexity = system-wide: Complete README chain + TRUTH_SOURCE.m
 ## Implementation Evidence
 
 ### Integration Points:
-- ✅ **Semantic Triggers**: @TRUTH_SOURCE.md dispatcher integration
+- ✅ **Semantic Triggers**: @context/architecture/core/truth-source.md dispatcher integration
 - ✅ **README Navigation**: @README_NAVIGATION_INTEGRATION.md protocol compliance
 - ✅ **Progressive Disclosure**: Conversation complexity → context depth mapping
 - ✅ **Authority Chain**: Supreme authority validation through README routing
@@ -69,6 +69,6 @@ IF conversation_complexity = system-wide: Complete README chain + TRUTH_SOURCE.m
 ---
 
 **Integration References**:
-- Implements: @context/README_NAVIGATION_INTEGRATION.md progressive disclosure
-- Integrates: @context/TRUTH_SOURCE.md semantic trigger dispatch
-- Validates: @context/methodology.md conversation-first protocols
+- Implements: @context/architecture/README.md progressive disclosure
+- Integrates: @context/architecture/core/truth-source.md semantic trigger dispatch
+- Validates: @context/architecture/core/methodology.md conversation-first protocols

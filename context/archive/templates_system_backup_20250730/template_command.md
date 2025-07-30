@@ -50,4 +50,4 @@
 ## Enlaces → Información Complementaria
 **Si falla comando:** → context/maintenance/troubleshooting.md:[líneas]
 **Si necesitas coordinación:** → docs/workflows/coordination.md:[líneas]
-**Si authority conflict:** → context/TRUTH_SOURCE.md:[líneas]
+**Si authority conflict:** → @context/architecture/core/truth-source.md:[líneas]

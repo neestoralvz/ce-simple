@@ -3,7 +3,7 @@
 **30/07/2025 15:45 CDMX** | Template evolution and quality management system
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → architecture/templates/ → template maintenance protocols
+@context/architecture/core/truth-source.md → architecture/templates/ → template maintenance protocols
 
 ## TEMPLATE EVOLUTION FRAMEWORK
 
@@ -54,7 +54,7 @@ context/TRUTH_SOURCE.md → architecture/templates/ → template maintenance pro
 ## QUALITY STANDARD UPDATE PROTOCOL
 
 ### Standards Integration Process
-1. **Standards Change Detection** → Monitor changes in context/standards.md
+1. **Standards Change Detection** → Monitor changes in @context/architecture/standards/README.md
 2. **Template Impact Assessment** → Evaluate which templates need updates
 3. **Priority Classification** → Classify updates as critical, important, or enhancement
 4. **Template Modification** → Update templates to reflect new standards
@@ -111,7 +111,7 @@ context/TRUTH_SOURCE.md → architecture/templates/ → template maintenance pro
 
 ### Template Authority Hierarchy
 **VISION.md** → Supreme authority over template purpose and philosophy
-**TRUTH_SOURCE.md** → Context architecture authority affecting template structure
+**@context/architecture/core/truth-source.md** → Context architecture authority affecting template structure
 **standards.md** → Quality and compliance standards for template content
 **architecture/templates/** → Template implementation and maintenance authority
 

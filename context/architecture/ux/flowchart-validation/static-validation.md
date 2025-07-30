@@ -32,9 +32,9 @@ Static Testing Protocol:
 Test Case Categories:
 ├── Content Classification Testing
 │   ├── Vision/Philosophy content → context/vision/ routing validation
-│   ├── Authority/Permission content → context/authority.md routing validation  
+│   ├── Authority/Permission content → @context/architecture/core/authority.md routing validation  
 │   ├── Technical Implementation → context/patterns.md routing validation
-│   └── Standards/Compliance → context/standards.md routing validation
+│   └── Standards/Compliance → @context/architecture/standards/README.md routing validation
 ├── Authority Validation Testing
 │   ├── User authority content → VISION authority chain validation
 │   ├── System authority content → TRUTH_SOURCE validation

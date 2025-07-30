@@ -11,35 +11,35 @@
   - **Purpose**: /roles: commands (partner, challenge, orchestrator)
   - **Template última edición**: 29/07/2025
   - **Pattern**: Consultation/execution roles with behavioral boundaries
-  - **Link**: [context/templates/commands/role_command_template.md](./role_command_template.md)
+  - **Link**: [context/architecture/templates/README.mdcommands/role_command_template.md](./role_command_template.md)
 
 #### Actions Templates
 - **action_command_template.md** → Template for direct execution commands
   - **Purpose**: /actions: commands (docs, git, research, write, compact)
   - **Template última edición**: 29/07/2025
   - **Pattern**: Creation/processing/system actions with execution boundaries
-  - **Link**: [context/templates/commands/action_command_template.md](./action_command_template.md)
+  - **Link**: [context/architecture/templates/README.mdcommands/action_command_template.md](./action_command_template.md)
 
 #### Workflows Templates
 - **workflow_command_template.md** → Template for process and sequence commands
   - **Purpose**: /workflows: commands (start, close, explore, debug, distill)
   - **Template última edición**: 29/07/2025
   - **Pattern**: Session/investigation/processing workflows with coordination boundaries
-  - **Link**: [context/templates/commands/workflow_command_template.md](./workflow_command_template.md)
+  - **Link**: [context/architecture/templates/README.mdcommands/workflow_command_template.md](./workflow_command_template.md)
 
 #### Methodology Templates
 - **methodology_template.md** → Template for reusable behavioral patterns
   - **Purpose**: /methodology: modules (thinkx4, parallel_execution, continuous_flow)
   - **Template última edición**: 29/07/2025
   - **Pattern**: Analysis/execution/validation methodologies with integration patterns
-  - **Link**: [context/templates/commands/methodology_template.md](./methodology_template.md)
+  - **Link**: [context/architecture/templates/README.mdcommands/methodology_template.md](./methodology_template.md)
 
 #### Maintenance Templates
 - **maintenance_template.md** → Template for system management commands
   - **Purpose**: /maintenance: commands (maintain, cleanup, organize)
   - **Template última edición**: 29/07/2025
   - **Pattern**: System health/content/configuration management with safety boundaries
-  - **Link**: [context/templates/commands/maintenance_template.md](./maintenance_template.md)
+  - **Link**: [context/architecture/templates/README.mdcommands/maintenance_template.md](./maintenance_template.md)
 
 ### Universal Foundation Templates
 
@@ -48,7 +48,7 @@
   - **Purpose**: Foundation DO/DON'T structure for commands, documentation, methodology
   - **Template última edición**: 29/07/2025
   - **Pattern**: System-wide behavioral consistency with Next Action automation
-  - **Link**: [context/templates/universal_do_dont_template.md](../universal_do_dont_template.md)
+  - **Link**: [context/architecture/templates/README.mduniversal_do_dont_template.md](../universal_do_dont_template.md)
 
 ## Template Usage Guide
 
@@ -136,6 +136,6 @@
 **Template References**: All command category templates + universal_do_dont_template.md
 
 ## Enlaces → Información Complementaria
-**Si necesitas template universal:** → [context/templates/universal_do_dont_template.md](../universal_do_dont_template.md)
+**Si necesitas template universal:** → [context/architecture/templates/README.mduniversal_do_dont_template.md](../universal_do_dont_template.md)
 **Si requieres command examples:** → [.claude/commands/](../../../.claude/commands/)
-**Si buscas documentation standards:** → [context/patterns/documentation_style.md](../../patterns/documentation_style.md)
+**Si buscas documentation standards:** → [context/architecture/patterns/enforcement_integration_patterns.md](../../patterns/documentation_style.md)

@@ -48,6 +48,6 @@
 - Document methodology application
 
 ---
-**Trazabilidad:** context/enforcement/core_reminders.md → Think x4 module factorization
+**Trazabilidad:** context/architecture/core/methodology.md → Think x4 module factorization
 **Usage:** Apply to ALL analysis and proposal tasks
 **Integration:** → All analytical workflows and decision protocols

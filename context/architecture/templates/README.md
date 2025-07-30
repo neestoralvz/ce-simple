@@ -3,7 +3,7 @@
 **30/07/2025 00:45 CDMX** | Unified template library with reference-only architecture
 
 ## AUTORIDAD SUPREMA
-VISION.md → supreme user authority → TRUTH_SOURCE.md → templates.md implements template architecture
+VISION.md → supreme user authority → @context/architecture/core/truth-source.md → templates.md implements template architecture
 
 ## CORE TEMPLATE COLLECTIONS
 
@@ -61,11 +61,11 @@ subagent_type: general-purpose
 ## INTEGRATION FRAMEWORK
 
 ### Authority & Quality Framework
-**Authority Chain**: All templates respect TRUTH_SOURCE.md supremacy + user domain preservation + mandatory validation + guardian enforcement
+**Authority Chain**: All templates respect @context/architecture/core/truth-source.md supremacy + user domain preservation + mandatory validation + guardian enforcement
 **Quality Gates**: ≤80 lines compliance + reference-only architecture + complete functionality + Think x4 systematic analysis
 
 ---
 
 **TEMPLATE ARCHITECTURE DECLARATION**: Unified template library preserving complete functionality while eliminating architectural fragmentation through consolidated real content.
 
-**INTEGRATION PATHWAY**: TRUTH_SOURCE.md → templates.md → direct template usage → operational deployment
+**INTEGRATION PATHWAY**: @context/architecture/core/truth-source.md → templates.md → direct template usage → operational deployment

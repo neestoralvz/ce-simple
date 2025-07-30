@@ -43,4 +43,4 @@
 ## Enlaces → Información Complementaria
 **Si necesitas implementación:** → [decision_file.md]:[líneas]
 **Si requieres context histórico:** → [related_research.md]:[líneas]
-**Si validación falla:** → context/patterns/documentation_style.md:17-21
+**Si validación falla:** → context/architecture/patterns/enforcement_integration_patterns.md:17-21

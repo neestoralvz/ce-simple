@@ -3,7 +3,7 @@
 **30/07/2025 17:45 CDMX** | Validated orchestration patterns for pure AI agent coordination
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → methodology.md → pure-orchestrator-patterns.md implements validated orchestration patterns
+@context/vision/vision_foundation.md → supreme user authority → methodology.md → pure-orchestrator-patterns.md implements validated orchestration patterns
 
 ## PATTERN VALIDATION AUTHORITY
 

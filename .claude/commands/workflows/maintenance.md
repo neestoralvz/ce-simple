@@ -6,8 +6,8 @@
 
 ## Propósito Command
 **Input:** Proyecto completo o archivos específicos requiriendo maintenance
-**Output:** Sistema alineado con TRUTH_SOURCE.md via recreation + batch processing
-**Authority:** context/user-vision/TRUTH_SOURCE.md + /actions:recreate integration
+**Output:** Sistema alineado con @context/architecture/core/truth-source.md via recreation + batch processing
+**Authority:** @context/architecture/core/truth-source.md + /actions:recreate integration
 
 ## Filosofía Ejecución
 **DEBE ser:** Maintenance proactivo con detection automático de drift
@@ -57,11 +57,11 @@
 ## Usage Examples
 ```bash
 /workflows:maintenance                    # Full system health scan + batch recreation
-/workflows:maintenance context/patterns/  # Targeted directory maintenance  
+/workflows:maintenance context/architecture/patterns/  # Targeted directory maintenance  
 /workflows:maintenance --threshold 20     # Aggressive alignment maintenance
 ```
 
-**Success Criteria**: All files aligned con TRUTH_SOURCE.md + references integrity maintained + system coherence verified
+**Success Criteria**: All files aligned con @context/architecture/core/truth-source.md + references integrity maintained + system coherence verified
 
 ## Core Function
 Systematic maintenance via batch recreation with automated drift detection and priority-based processing

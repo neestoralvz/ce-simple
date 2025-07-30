@@ -3,7 +3,7 @@
 **30/07/2025 16:15 CDMX** | Systematic evolution framework for README architecture
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → README evolution serves organic system growth
+@context/vision/vision_foundation.md → supreme user authority → README evolution serves organic system growth
 
 ## PRINCIPIO FUNDAMENTAL
 **"Organic growth through empirical validation"** - README system evolves based on actual usage patterns and demonstrated needs, not theoretical design.
@@ -17,7 +17,7 @@ context/principles/vision_foundation.md → supreme user authority → README ev
 New Component README Creation Workflow:
 1. **Component Analysis** → Analyze component type using COMPONENT_DECISION_MATRIX.md
 2. **Template Selection** → Select appropriate template using template_selection_guide.md
-3. **Authority Integration** → Establish authority chain per TRUTH_SOURCE.md requirements
+3. **Authority Integration** → Establish authority chain per @context/architecture/core/truth-source.md requirements
 4. **Cross-Reference Design** → Plan bidirectional references using CROSS_REFERENCE_SYSTEM.md
 5. **Navigation Integration** → Integrate into appropriate README hubs
 6. **Quality Validation** → Validate against quality standards checklist
@@ -73,7 +73,7 @@ README Modification Classification:
 │   ├─ Impact: Minimal - existing references remain valid
 │   └─ Validation: Quality standards compliance check
 ├─ **Structure Changes** → Section reorganization or addition
-│   ├─ Authority: TRUTH_SOURCE.md validation required
+│   ├─ Authority: @context/architecture/core/truth-source.md validation required
 │   ├─ Impact: Moderate - cross-references may need updates
 │   └─ Validation: Navigation pathway testing required
 ├─ **Authority Chain Updates** → Authority relationships modification
@@ -160,7 +160,7 @@ Navigation Evolution Management:
 #### **Authority Relationship Adaptation**
 ```markdown
 Authority Chain Evolution Process:
-1. **Authority Change Detection** → Monitor TRUTH_SOURCE.md and authority.md changes
+1. **Authority Change Detection** → Monitor @context/architecture/core/truth-source.md and authority.md changes
 2. **Impact Assessment** → Analyze impact on README authority declarations
 3. **Migration Planning** → Plan README updates to reflect authority changes
 4. **Staged Implementation** → Update READMEs systematically to preserve integrity

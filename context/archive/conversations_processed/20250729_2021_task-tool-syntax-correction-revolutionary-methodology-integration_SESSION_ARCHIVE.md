@@ -1,11 +1,11 @@
 # Task Tool Syntax Correction & Revolutionary Methodology Integration
 
 **20250729_2021** | Knowledge Distillation Engine: /workflows:close execution
-**Authority Source**: context/TRUTH_SOURCE.md → Revolutionary methodology integration
+**Authority Source**: @context/architecture/core/truth-source.md → Revolutionary methodology integration
 **Session Type**: Architectural transformation mastery + Real-time methodology validation
 
 ## AUTORIDAD SUPREMA PRESERVED
-All integrations maintain: context/TRUTH_SOURCE.md → specialized patterns → implementation hierarchy
+All integrations maintain: @context/architecture/core/truth-source.md → specialized patterns → implementation hierarchy
 
 ## SESSION ACHIEVEMENTS COMPACTED
 
@@ -35,7 +35,7 @@ All integrations maintain: context/TRUTH_SOURCE.md → specialized patterns → 
 **Authority**: Information density preservation over structural simplification
 **Implementation**: Quote-based fragmentation enables preservation + organization
 
-> "TRUTH_SOURCE.md → sobrescribe → todo lo demás"
+> "@context/architecture/core/truth-source.md → sobrescribe → todo lo demás"
 **Authority**: Supreme authority chain hierarchy
 **Implementation**: All subagent patterns enforce TRUTH_SOURCE supremacy
 
@@ -91,7 +91,7 @@ All integrations maintain: context/TRUTH_SOURCE.md → specialized patterns → 
 
 ## TRAZABILIDAD & AUTHORITY CHAIN
 
-**Session Authority**: TRUTH_SOURCE.md → Think x4 analysis → Knowledge integration → System evolution
+**Session Authority**: @context/architecture/core/truth-source.md → Think x4 analysis → Knowledge integration → System evolution
 **User Voice Preservation**: 95%+ fidelity through systematic quote collection and traceability
 **Integration Validation**: Revolutionary patterns successfully integrated with authority preservation
 **Evolution Evidence**: User application validates conversation-to-architecture transformation effectiveness

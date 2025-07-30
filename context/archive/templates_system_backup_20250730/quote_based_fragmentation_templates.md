@@ -13,7 +13,7 @@ Task(
 CONTEXT LOADING:
 - Load: context/operational/patterns/quote_based_fragmentation_innovation.md
 - Load: context/operational/patterns/authority_framework.md  
-- Load: context/TRUTH_SOURCE.md (MANDATORY)
+- Load: @context/architecture/core/truth-source.md (MANDATORY)
 
 ROLE SPECIFICATIONS:
 - Execute quote-based fragmentation while preserving user voice integrity
@@ -178,7 +178,7 @@ Task(
 CONTEXT LOADING:
 - Load: context/operational/patterns/quote_based_fragmentation_innovation.md
 - Load: context/operational/patterns/architectural_transformation_mastery.md
-- Load: context/system/templates/quote_based_fragmentation_templates.md
+- Load: context/architecture/templates/quote_based_fragmentation_templates.md
 
 ROLE SPECIFICATIONS:
 - Coordinate complete quote-based fragmentation workflow

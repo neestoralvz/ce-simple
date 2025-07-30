@@ -28,7 +28,7 @@ Authority Conflict Resolution:
 └── Authority Chain Breaks
     ├── Scenario: Authority traceability broken or unclear
     ├── Resolution: Authority reconstruction from supreme sources
-    ├── Protocol: TRUTH_SOURCE.md validation and chain rebuilding
+    ├── Protocol: @context/architecture/core/truth-source.md validation and chain rebuilding
     └── Validation: Complete authority traceability verification
 ```
 
@@ -98,7 +98,7 @@ Emergency Resolution Framework:
 ├── Authority Unavailable Scenarios
 │   ├── Activation: Authority source unclear or inaccessible
 │   ├── Protocol: Conservative placement with authority research planning
-│   ├── Authority: TRUTH_SOURCE.md consultation as fallback
+│   ├── Authority: @context/architecture/core/truth-source.md consultation as fallback
 │   └── Follow-up: Authority clarification and placement validation
 └── Rollback Required Scenarios
     ├── Activation: Placement decision needs immediate reversal

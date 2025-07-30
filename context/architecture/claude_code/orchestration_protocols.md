@@ -3,7 +3,7 @@
 **30/07/2025 17:15 CDMX** | Comprehensive orchestration protocols extracted from CLAUDE.md
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → context/methodology.md → orchestration_protocols.md implements L4-Pure Orchestration per user vision
+@context/vision/vision_foundation.md → @context/architecture/core/methodology.md → orchestration_protocols.md implements L4-Pure Orchestration per user vision
 
 ## PROTOCOLO HÍBRIDO DE ORQUESTACIÓN INTELIGENTE
 
@@ -126,18 +126,18 @@ subagent_type: general-purpose
 **PRIORIZA Task tools** sobre herramientas directas - USA herramientas directas SOLO para coordinación orquestal
 
 ### Post-Validation Sistemática
-**EJECUTA después cada delegación** → @context/methodology.md → Post-delegation validation
-**VERIFICA OBLIGATORIAMENTE alignment** context/TRUTH_SOURCE.md
-**VALIDA SIEMPRE compliance** context/simplicity.md
+**EJECUTA después cada delegación** → @context/architecture/core/methodology.md → Post-delegation validation
+**VERIFICA OBLIGATORIAMENTE alignment** @context/architecture/core/truth-source.md
+**VALIDA SIEMPRE compliance** @context/vision/simplicity.md
 **CONFIRMA OBLIGATORIO standards** según context apropiado
 
 ## INTEGRATION REFERENCES
 
-### ←→ context/patterns/command_orchestration_patterns.md
+### ←→ context/architecture/patterns/command_orchestration_patterns.md
 **Connection**: Matrix coordination authority and command independence architecture
 **Protocol**: Orchestration protocols implement command coordination while preserving independence
 
-### ← context/methodology.md
+### ← @context/architecture/core/methodology.md
 **Authority Source**: L4-Pure Orchestration methodology and expert delegation frameworks
 **Protocol**: Orchestration protocols serve complete methodology authority
 

@@ -105,8 +105,8 @@
 [Document content here]
 
 ---
-**Authority Source**: context/TRUTH_SOURCE.md + system validation requirements
-**Trazabilidad**: context/TRUTH_SOURCE.md [L1:43]
+**Authority Source**: @context/architecture/core/truth-source.md + system validation requirements
+**Trazabilidad**: @context/architecture/core/truth-source.md [L1:43]
 **References**: 
 - Quality gates: context/operational/enforcement/quality_gates.md
 - Validation patterns: context/validation/methodology_integration_test.md
@@ -127,6 +127,6 @@
 ```
 
 ---
-**Authority Source**: context/system/modules/headers/timestamped.md + context/system/modules/footers/authority_chain.md
+**Authority Source**: context/architecture/modules/headers/timestamped.md + context/architecture/modules/footers/authority_chain.md
 **Extracted from**: Header and footer patterns across context/ documentation
 **Consolidation Date**: 29/07/2025 - Template deduplication initiative

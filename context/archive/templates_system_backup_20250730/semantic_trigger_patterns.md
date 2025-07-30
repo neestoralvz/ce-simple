@@ -1,6 +1,6 @@
 # Semantic Trigger Patterns - Decision Logic Library
 
-**29/07/2025 22:20 CDMX** | Complete pattern definitions from TRUTH_SOURCE.md authority
+**29/07/2025 22:20 CDMX** | Complete pattern definitions from @context/architecture/core/truth-source.md authority
 
 ## Vision/Philosophy Pattern
 **Semantic triggers**: Intent to understand vision, philosophical foundation, core principles + Scope foundational understanding + Domain user vision + Output philosophical clarity
@@ -45,6 +45,6 @@
 **Validate**: Complete user intent crystallization + relevant codebase context + enhanced understanding foundation + ready for planning phase
 
 ---
-**Authority Source**: TRUTH_SOURCE.md extraction preserving complete semantic decision logic
-**Integration**: Referenced by TRUTH_SOURCE.md for pattern-based context loading
+**Authority Source**: @context/architecture/core/truth-source.md extraction preserving complete semantic decision logic
+**Integration**: Referenced by @context/architecture/core/truth-source.md for pattern-based context loading
 **Validation**: Complete functional equivalence with original decision logic patterns

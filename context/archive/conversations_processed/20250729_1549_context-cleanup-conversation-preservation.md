@@ -28,7 +28,7 @@ User: "creo que eliminaste todas las conversaciones que aun no eran procesadas"
 → Systematic protocol development initiation
 
 ### Authority Integration
-- **TRUTH_SOURCE.md** updated with Conversation Preservation Protocol
+- **@context/architecture/core/truth-source.md** updated with Conversation Preservation Protocol
 - **Anti-patterns** enhanced with archive elimination prevention
 - **Templates** updated with conversation protection requirements
 - **Behavioral enforcement** validation gates integrated
@@ -44,13 +44,13 @@ rm -rf /Users/nalve/ce-simple/context/planning (restored later)
 rm -rf /Users/nalve/ce-simple/context/raw (restored later)
 
 # Consolidations
-mv context/examples/templates/* context/system/templates/
+mv context/examples/templates/* context/architecture/templates/
 mv context/modules/workflows/* context/operational/
-mv context/patterns/* context/system/principles/
+mv context/architecture/patterns/* context/architecture/principles/
 ```
 
 ### Authority Integration Implementation
-- **TRUTH_SOURCE.md Authority Section Added**:
+- **@context/architecture/core/truth-source.md Authority Section Added**:
   - Conversation Preservation Protocol
   - Processing criteria definition
   - User-only elimination authority
@@ -69,7 +69,7 @@ mv context/patterns/* context/system/principles/
 ## Conversation Preservation Protocol Established
 
 ### Supreme Authority Integration
-**TRUTH_SOURCE.md Addition**:
+**@context/architecture/core/truth-source.md Addition**:
 ```markdown
 ### Conversation Preservation Protocol
 **MANDATORY PROTECTION**: Conversations cannot be eliminated unless fully processed

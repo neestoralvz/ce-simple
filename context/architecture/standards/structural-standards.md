@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | File size and structural integrity enforcement
 
 ## AUTORIDAD SUPREMA
-↑ @context/standards.md → Structural standards implementation per system standards authority
+↑ @context/architecture/standards/README.md → Structural standards implementation per system standards authority
 
 ## MONOLITHIC PREVENTION STANDARDS
 

@@ -3,7 +3,7 @@
 **30/07/2025 11:15 CDMX** | Empirically validated working patterns
 
 ## AUTORIDAD SUPREMA
-VISION.md → TRUTH_SOURCE.md → working patterns implementation
+VISION.md → @context/architecture/core/truth-source.md → working patterns implementation
 
 ## EMPIRICALLY VALIDATED WORKING PATTERNS
 
@@ -32,10 +32,10 @@ VISION.md → TRUTH_SOURCE.md → working patterns implementation
 - Zero redundancy + maximum context efficiency
 
 ### Authority Chain Validation Pattern
-**Authority Hierarchy**: VISION.md → TRUTH_SOURCE.md → implementation
+**Authority Hierarchy**: VISION.md → @context/architecture/core/truth-source.md → implementation
 **Success Evidence**: User authority supremacy preserved during system evolution
 **Validation Protocol**:
-1. TRUTH_SOURCE.md review → Authority validation
+1. @context/architecture/core/truth-source.md review → Authority validation
 2. User boundary respect → Stay within AI domain
 3. Implementation proposal → Present options, not decisions
 4. Authority confirmation → Wait for user direction

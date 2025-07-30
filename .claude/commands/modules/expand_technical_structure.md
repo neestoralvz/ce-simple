@@ -21,7 +21,7 @@ Standardized technical documentation structure for `/actions:docs/` expansion
 # [Título Técnico]
 
 ## Derivación de Principios Establecidos
-[Citas directas de TRUTH_SOURCE.md que justifican este contenido]
+[Citas directas de @context/architecture/core/truth-source.md que justifican este contenido]
 
 ## Research Actualizado ([current_date])
 ### Industry Best Practices

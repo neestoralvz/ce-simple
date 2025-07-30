@@ -58,7 +58,7 @@
 **Connection**: Organic evolution implements vision discovery and crystallization protocols
 **Protocol**: Evolution patterns serve vision manifestation through narrative-driven growth
 
-### ←→ @context/authority.md
+### ←→ @context/architecture/core/authority.md
 **Connection**: Organic growth preserves user authority supremacy through evolution protocols
 
 ### ← @context/architecture/patterns.md

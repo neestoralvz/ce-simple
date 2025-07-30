@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | Guardian System deployment for automated compliance monitoring and enforcement
 
 ## AUTORIDAD SUPREMA
-@context/standards.md → Guardian-Partner ecosystem → @context/authority.md → Automated compliance preservation
+@context/architecture/standards/README.md → Guardian-Partner ecosystem → @context/architecture/core/authority.md → Automated compliance preservation
 
 ## PRINCIPIO FUNDAMENTAL
 **"Binary enforcement with constructive dialogue preservation"** - Zero tolerance compliance enforcement through Guardian system while maintaining conversation-first development and user authority supremacy.

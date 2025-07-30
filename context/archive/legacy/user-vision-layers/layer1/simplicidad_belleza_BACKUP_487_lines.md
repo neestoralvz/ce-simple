@@ -235,7 +235,7 @@ Preferencia por ejecución directa y simple versus complicaciones de orquestaci�
 
 ## Quote Original
 > "necesitamos factorizar claude.md"
-**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-truth-source.md:12`
+**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-@context/architecture/core/truth-source.md:12`
 
 ### Contexto Conversacional
 Solicitud directa de factorización donde usuario identifica que CLAUDE.md se ha sobrecargado y debe ser simplificado a su esencia.
@@ -244,7 +244,7 @@ Solicitud directa de factorización donde usuario identifica que CLAUDE.md se ha
 
 ## Quote Original
 > "50-80 lineas maximo"
-**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-truth-source.md:25`
+**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-@context/architecture/core/truth-source.md:25`
 
 ### Contexto Conversacional
 Límite cuantitativo específico para CLAUDE.md - parámetro concreto que define simplicidad como restricción numérica.
@@ -253,7 +253,7 @@ Límite cuantitativo específico para CLAUDE.md - parámetro concreto que define
 
 ## Quote Original
 > "el arbol de decision principal hecho con condicionantes para que desde ahi se vaya enlazando con todo lo demas"
-**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-truth-source.md:26`
+**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-@context/architecture/core/truth-source.md:26`
 
 ### Contexto Conversacional
 Visión de simplicidad estructural: CLAUDE.md como árbol de decisiones puro que referencia, no contiene información detallada.
@@ -262,7 +262,7 @@ Visión de simplicidad estructural: CLAUDE.md como árbol de decisiones puro que
 
 ## Quote Original
 > "lo visualizo como un mapa de decisiones con instrucciones de que llamar cuando, todo de manera semantica"
-**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-truth-source.md:27`
+**Ref:** `/raw/conversations/2025-07-28_16-14_claude-md-factorization-@context/architecture/core/truth-source.md:27`
 
 ### Contexto Conversacional
 Metafóra de simplicidad: mapa de decisiones semántico que guía sin contener - simplicidad como navegación inteligente.
@@ -419,7 +419,7 @@ Usuario cuestiona métricas inválidas que generan falsa sensación de progreso 
 - 2025-07-28_15-30_comando-universal-sesgo-ceo.md
 - 2025-07-28_15-38_research-protocol-optimization-systematic-changes.md
 - 2025-07-28_15-44_claude-hooks-verification-system-maintenance.md
-- 2025-07-28_16-14_claude-md-factorization-truth-source.md
+- 2025-07-28_16-14_claude-md-factorization-@context/architecture/core/truth-source.md
 - 2025-07-28_16-20_research-protocol-systematic-correction.md
 - 2025-07-28_16-31_user-vision-layered-distillation-system.md
 - 2025-07-28_16-40_command-ecosystem-factorization.md

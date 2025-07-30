@@ -80,7 +80,7 @@
 
 - **Current Planning**: Updated with command reorganization progress + next session priorities
 - **Consolidated Learning**: Command reorganization methodology + naming principles captured
-- **Authority Chain**: No changes to TRUTH_SOURCE.md required (command-level changes only)
+- **Authority Chain**: No changes to @context/architecture/core/truth-source.md required (command-level changes only)
 
 ## Raw Conversation Preservation
 

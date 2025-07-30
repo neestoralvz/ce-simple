@@ -3,7 +3,7 @@
 **30/07/2025 23:00 CDMX** | Systematic quality enforcement workflow vision
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → standards_system_vision.md implements quality workflow vision
+@context/vision/vision_foundation.md → supreme user authority → standards_system_vision.md implements quality workflow vision
 
 ## CORE STANDARDS SYSTEM VISION
 
@@ -22,7 +22,7 @@ context/principles/vision_foundation.md → supreme user authority → standards
 
 ### Standards + Guardian Integration Vision
 **Complete Enforcement Framework**: Partner (challenges/constructs) + Guardian (enforces/validates) + Standards (systematic quality)
-**Authority Integration**: Direct TRUTH_SOURCE.md compliance through systematic workflows
+**Authority Integration**: Direct @context/architecture/core/truth-source.md compliance through systematic workflows
 **Operational Excellence**: Binary enforcement through systematic quality processes
 
 ## QUALITY WORKFLOW ARCHITECTURE VISION
@@ -80,9 +80,9 @@ context/principles/vision_foundation.md → supreme user authority → standards
 ---
 
 **INTEGRATION REFERENCES**
-**Vision Foundation**: ← context/principles/vision_foundation.md (supreme authority)
+**Vision Foundation**: ← @context/vision/vision_foundation.md (supreme authority)
 **Guardian Vision**: ←→ guardian_enforcement_vision.md (enforcement integration)
-**Standards Implementation**: → context/standards.md (operational standards)
-**Quality Framework**: → context/methodology.md (systematic quality protocols)
+**Standards Implementation**: → @context/architecture/standards/README.md (operational standards)
+**Quality Framework**: → @context/architecture/core/methodology.md (systematic quality protocols)
 
 **STANDARDS SYSTEM VISION DECLARATION**: This vision implements user authority for systematic quality enforcement through dedicated workflows while preserving organic evolution and user vision supremacy.

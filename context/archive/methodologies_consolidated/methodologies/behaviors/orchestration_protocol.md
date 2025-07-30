@@ -83,7 +83,7 @@
 ### Guardian Activation Triggers
 **Auto-activation conditions**:
 - File size violations detected (>80 lines)
-- Authority chain breaches (TRUTH_SOURCE.md supremacy)
+- Authority chain breaches (@context/architecture/core/truth-source.md supremacy)
 - Vision modification attempts (user domain preservation)
 - Standards non-compliance (system integrity)
 - Architectural deviation (vision alignment validation)
@@ -91,11 +91,11 @@
 ### Enforcement Coordination
 **Workflow**: Detection → Guardian enforcement → Partner construction → Validation
 **Authority**: Guardian stops violations, Partner proposes solutions
-**Integration**: @context/system/standards/notification_formatting_standards.md
+**Integration**: @context/architecture/standards/notification_formatting_standards.md
 
 ## Anti-Patterns Prevention
 - **Direct complex execution** → Always delegate via @context/operational/patterns/task_tool_methodology.md
-- **Broken Task tool syntax** → Use templates from @context/system/templates/task_tool_templates.md
+- **Broken Task tool syntax** → Use templates from @context/architecture/templates/task_tool_templates.md
 - **Command isolation violation** → Block external file access
 - **Context fragmentation** → Maintain orchestration visibility
 - **Static option presentation** → Require dynamic adaptation

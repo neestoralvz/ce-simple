@@ -3,7 +3,7 @@
 **30/07/2025 16:30 CDMX** | Next-generation standards enforcement with Guardian system integration
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → TRUTH_SOURCE.md → standards.md → STANDARDS_EVOLUTION_FRAMEWORK.md implements revolutionary QA integration per user vision supremacy
+@context/vision/vision_foundation.md → @context/architecture/core/truth-source.md → standards.md → STANDARDS_EVOLUTION_FRAMEWORK.md implements revolutionary QA integration per user vision supremacy
 
 ## PRINCIPIO FUNDAMENTAL
 **"Binary enforcement + empirical validation + authority preservation = revolutionary quality assurance"** - Modern QA integration preserving complete user authority through systematic enforcement evolution.
@@ -117,7 +117,7 @@ ENHANCED QUALITY GATES PROTOCOL:
 
 ### **Pre-Execution Quality Gates**
 **OBLIGATORIO validations before content creation**:
-- **Authority Source Verification**: Content traces to user vision or TRUTH_SOURCE.md
+- **Authority Source Verification**: Content traces to user vision or @context/architecture/core/truth-source.md
 - **Cognitive Load Assessment**: Projected file size + complexity impact analysis  
 - **Content Duplication Detection**: Zero tolerance verification against existing content
 - **Reference Architecture Planning**: Modular structure design for compliance assurance
@@ -196,6 +196,6 @@ class ComplianceMonitor:
 
 **STANDARDS_EVOLUTION_DECLARATION**: This revolutionary framework integrates modern QA patterns with user authority preservation, creating next-generation standards enforcement through systematic Guardian-Partner integration, empirical validation, and continuous compliance monitoring.
 
-**INTEGRATION AUTHORITY**: ↑ context/standards.md (reference hub) + ←→ Guardian system + Research-validated QA patterns
+**INTEGRATION AUTHORITY**: ↑ @context/architecture/standards/README.md (reference hub) + ←→ Guardian system + Research-validated QA patterns
 
 **EVOLUTION PATHWAY**: Modern QA frameworks → Guardian-Partner integration → empirical validation → continuous compliance → revolutionary quality assurance supremacy

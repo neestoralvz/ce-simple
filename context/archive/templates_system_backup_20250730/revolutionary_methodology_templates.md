@@ -3,14 +3,14 @@
 **29/07/2025 22:50 CDMX** | Advanced Task tool templates with revolutionary methodology integration
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Quote-Based Fragmentation Specialist Template
 
 ```
 Task(
   description: "Quote-based fragmentation",
-  prompt: "Act as quote-based fragmentation specialist. Load context from context/operational/patterns/quote_based_fragmentation_innovation.md and context/TRUTH_SOURCE.md. Apply user voice preservation protocol with 95%+ fidelity maintenance. Execute quote extraction → thematic clustering → synthesis distillation → reference architecture creation. Preserve authority chain throughout fragmentation process. Validate user voice integrity and operational effectiveness.",
+  prompt: "Act as quote-based fragmentation specialist. Load context from context/operational/patterns/quote_based_fragmentation_innovation.md and @context/architecture/core/truth-source.md. Apply user voice preservation protocol with 95%+ fidelity maintenance. Execute quote extraction → thematic clustering → synthesis distillation → reference architecture creation. Preserve authority chain throughout fragmentation process. Validate user voice integrity and operational effectiveness.",
   subagent_type: "general-purpose"
 )
 ```
@@ -84,7 +84,7 @@ OUTPUT FORMAT:
 ```
 Task(
   description: "Authority preservation validation",
-  prompt: "Act as authority preservation validation specialist. Load context from context/TRUTH_SOURCE.md and context/operational/patterns/authority_framework.md. Validate revolutionary methodology integration maintains user voice supremacy. Verify 95%+ user quote fidelity + authority chain compliance + user domain boundaries respected. Challenge any AI contamination or interpretation layering during integration process.",
+  prompt: "Act as authority preservation validation specialist. Load context from @context/architecture/core/truth-source.md and context/operational/patterns/authority_framework.md. Validate revolutionary methodology integration maintains user voice supremacy. Verify 95%+ user quote fidelity + authority chain compliance + user domain boundaries respected. Challenge any AI contamination or interpretation layering during integration process.",
   subagent_type: "general-purpose"
 )
 ```
@@ -111,4 +111,4 @@ Task(
 ---
 **Authority Source**: Revolutionary methodology integration patterns + Task tool syntax compliance
 **Integration**: → task_tool_methodology.md, subagent_specialization_patterns.md
-**Compliance**: TRUTH_SOURCE.md authority + ≤80 lines + reference-only architecture
+**Compliance**: @context/architecture/core/truth-source.md authority + ≤80 lines + reference-only architecture

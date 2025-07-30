@@ -5,7 +5,7 @@
 ## AUTORIDAD SUPREMA
 User explicit authority: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
 
-**Authority Chain**: VISION.md → architecture/core/truth-source.md → simplicity.md → operational implementation
+**Authority Chain**: VISION.md → architecture/core/@context/architecture/core/truth-source.md → simplicity.md → operational implementation
 **Supreme Principle**: Information density preservation overrides structural optimization per user explicit authority
 
 ## SIMPLICITY SYSTEM ARCHITECTURE
@@ -60,7 +60,7 @@ User explicit authority: "no estoy de acuerdo, creo que de esa manera se pierde 
 ## SIMPLICITY INTELLIGENCE
 
 ### **Entry Points**
-- **Supreme Authority**: ← @architecture/core/truth-source.md (simplicity authority validation)
+- **Supreme Authority**: ← @architecture/core/@context/architecture/core/truth-source.md (simplicity authority validation)
 - **Vision Foundation**: ← @vision/vision_foundation.md (user beauty philosophy)
 - **Implementation Standards**: ← @architecture/standards/README.md (simplicity compliance requirements)
 

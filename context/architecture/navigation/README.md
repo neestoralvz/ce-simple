@@ -8,7 +8,7 @@ Complete navigation intelligence for context system including quick start guides
 ## NAVIGATION INTELLIGENCE
 
 ### Quick Start Navigation Protocols
-**"I need to understand the system"**: TRUTH_SOURCE.md → vision_foundation.md pathway
+**"I need to understand the system"**: @context/architecture/core/truth-source.md → vision_foundation.md pathway
 **"I want to implement something"**: methodology.md → templates.md → standards.md workflow
 **"I need architectural decisions"**: authority.md → architecture/ → decision validation
 **"I want patterns and examples"**: architecture/patterns/ → templates.md → implementation guidance
@@ -16,17 +16,17 @@ Complete navigation intelligence for context system including quick start guides
 ### Authority Hierarchy Implementation
 ```
 VISION.md (supreme user authority) → context/vision/vision_foundation.md → 
-context/TRUTH_SOURCE.md (architecture dispatcher) → Core Components → 
+@context/architecture/core/truth-source.md (architecture dispatcher) → Core Components → 
 Specialized Directories → Implementation
 ```
 
 ### Context Loading Intelligence
-**Core Always Loaded**: vision_foundation.md, TRUTH_SOURCE.md, authority.md, methodology.md, simplicity.md
+**Core Always Loaded**: vision_foundation.md, @context/architecture/core/truth-source.md, authority.md, methodology.md, simplicity.md
 **Conditional Loading**: Based on semantic triggers and task patterns per CLAUDE.md dispatcher
 **Reference-Only Architecture**: Zero content duplication with smart references preserving token economy
 
 ### Navigation Pathways Protocol
-**Vision Discovery**: User conversation → vision_foundation.md → TRUTH_SOURCE.md → context → implementation
+**Vision Discovery**: User conversation → vision_foundation.md → @context/architecture/core/truth-source.md → context → implementation
 **Implementation Workflow**: Requirements → methodology.md → patterns → templates.md → standards.md → execution
 **Architecture Decisions**: Structural need → authority.md → architecture/ → decision validation → implementation  
 **Research Protocol**: Investigation → methodology.md research-first protocol → findings integration
@@ -49,8 +49,8 @@ All `.claude/commands/` reference context system for authority, methodology, and
 **Connection**: Navigation intelligence extracted from main README per L2-MODULAR methodology
 **Protocol**: README maintains reference-only navigation hub pointing to specialized navigation intelligence
 
-### ←→ context/TRUTH_SOURCE.md  
-**Connection**: Navigation serves TRUTH_SOURCE.md dispatcher functionality through pathway implementation
+### ←→ @context/architecture/core/truth-source.md  
+**Connection**: Navigation serves @context/architecture/core/truth-source.md dispatcher functionality through pathway implementation
 **Protocol**: Navigation intelligence supports semantic trigger routing and context loading protocols
 
 ---

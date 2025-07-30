@@ -53,8 +53,8 @@ Analysis revealed CRÍTICAS discrepancias:
 ### Quality Enhancement CRÍTICO:
 - **Think x4 integration**: Systematic 4-perspective analysis mandatory
 - **Pattern recognition**: Semantic triggers for context extraction, reorganization, authority detection
-- **Validation systematic**: Post-phase validation with TRUTH_SOURCE.md alignment
-- **Standards compliance**: Full integration with context/standards.md
+- **Validation systematic**: Post-phase validation with @context/architecture/core/truth-source.md alignment
+- **Standards compliance**: Full integration with @context/architecture/standards/README.md
 
 ### Neutral:
 - **Command complexity**: Enhanced functionality requires learning
@@ -74,8 +74,8 @@ Analysis revealed CRÍTICAS discrepancias:
 
 ### Authority Chain Verification CRÍTICO:
 ```
-context/principles/vision_foundation.md → supreme user authority → 
-TRUTH_SOURCE.md → context engineering implementation →
+@context/vision/vision_foundation.md → supreme user authority → 
+@context/architecture/core/truth-source.md → context engineering implementation →
 CLAUDE.md PROTOCOLO OBLIGATORIO UNIVERSAL → 
 refined context command with full enforcement
 ```
@@ -112,5 +112,5 @@ This ADR establishes precedent for command refinement methodology:
 **Integration References MANDATORIO**: 
 - Applied: CLAUDE.md PROTOCOLO OBLIGATORIO UNIVERSAL compliance
 - Updated: context command with full enforcement integration
-- Validated: TRUTH_SOURCE.md authority chain preservation
+- Validated: @context/architecture/core/truth-source.md authority chain preservation
 - Corrected: CLAUDE.md pattern references architectural accuracy

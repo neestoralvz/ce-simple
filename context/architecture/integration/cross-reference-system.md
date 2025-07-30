@@ -3,7 +3,7 @@
 **30/07/2025 21:35 CDMX** | Bidirectional linking navigation and authority preservation system
 
 ## AUTORIDAD SUPREMA
-TRUTH_SOURCE.md → CROSS_REFERENCE_SYSTEM.md implements reference-only architecture per user vision
+@context/architecture/core/truth-source.md → CROSS_REFERENCE_SYSTEM.md implements reference-only architecture per user vision
 
 ## PRINCIPIO FUNDAMENTAL
 **"Zero content duplication + Bidirectional authority preservation + Smart reference loading"** - Every reference maintains authority chain and enables intelligent context loading.
@@ -17,7 +17,7 @@ TRUTH_SOURCE.md → CROSS_REFERENCE_SYSTEM.md implements reference-only architec
 
 ## INTEGRATION SYNTHESIS AUTHORITY
 **Cross-Component Synthesis**: → architecture/reference/README.md (authority-simplicity-evolution framework)
-**Operational Integration**: → architecture/reference/README.md (CLAUDE.md + TRUTH_SOURCE.md coordination)
+**Operational Integration**: → architecture/reference/README.md (CLAUDE.md + @context/architecture/core/truth-source.md coordination)
 **Authority-Driven Integration**: → architecture/reference/README.md (user feedback integration protocols)
 
 ## REFERENCE EXECUTION PROTOCOL
@@ -37,7 +37,7 @@ TRUTH_SOURCE.md → CROSS_REFERENCE_SYSTEM.md implements reference-only architec
 ## REFERENCE INTELLIGENCE
 
 ### **Entry Points**
-- **System Architecture**: ← @TRUTH_SOURCE.md (reference architecture authority)
+- **System Architecture**: ← @context/architecture/core/truth-source.md (reference architecture authority)
 - **Component Integration**: ← @COMPONENT_DECISION_MATRIX.md (integration pathways)
 - **Migration Protocols**: ← @MIGRATION_RULES.md (reference migration protocols)
 

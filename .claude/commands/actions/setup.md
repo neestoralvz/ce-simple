@@ -34,15 +34,15 @@ sessions/
 
 ### Phase 2: Core Context Files Generation
 
-**context/TRUTH_SOURCE.md** - Project Authority Dispatcher:
+**@context/architecture/core/truth-source.md** - Project Authority Dispatcher:
 ```markdown
-# TRUTH_SOURCE.md - Project Authority Dispatcher
+# @context/architecture/core/truth-source.md - Project Authority Dispatcher
 
 **PROJECT**: [Detect project name from directory/README.md]
 **PURPOSE**: [Extract from README.md or prompt user]
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## PROJECT VISION
 [To be filled during project evolution]

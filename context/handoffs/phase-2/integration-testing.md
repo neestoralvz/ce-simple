@@ -41,7 +41,7 @@ System Integration Validation:
 │   ├─ Test CLAUDE.md semantic trigger integration
 │   ├─ Validate COMPONENT_DECISION_MATRIX.md connectivity
 │   ├─ Confirm CROSS_REFERENCE_SYSTEM.md compliance
-│   └─ Verify context/standards.md authority preservation
+│   └─ Verify @context/architecture/standards/README.md authority preservation
 └─ Authority Chain Integration Testing
     ├─ Test complete authority chain: user → template system → modules
     ├─ Validate authority preservation through all integration points

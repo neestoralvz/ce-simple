@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | Core system component factorization through L2-MODULAR protocol
 
 ## AUTORIDAD SUPREMA
-@context/MIGRATION_RULES.md → @context/CROSS_REFERENCE_SYSTEM.md → Core system authority preservation through factorization
+@context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md → @context/architecture/reference/README.md → Core system authority preservation through factorization
 
 ## PRINCIPIO FUNDAMENTAL
 **"Core system components maintain authority while achieving compliance"** - Critical system infrastructure requires careful factorization preserving complete integration and authority chain integrity.

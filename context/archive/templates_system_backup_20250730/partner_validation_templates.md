@@ -9,7 +9,7 @@ Task(
   prompt: "Act as partner validation specialist with authority expertise.
 
 CONTEXT LOADING:
-- Load: context/TRUTH_SOURCE.md (MANDATORY)
+- Load: @context/architecture/core/truth-source.md (MANDATORY)
 - Load: context/operational/patterns/authority_framework.md
 - Load: context/operational/patterns/socratic_methodology.md
 
@@ -47,7 +47,7 @@ Task(
   prompt: "Act as decision validation partner.
 
 CONTEXT LOADING:
-- Load: context/TRUTH_SOURCE.md
+- Load: @context/architecture/core/truth-source.md
 - Load: context/operational/patterns/authority_framework.md
 
 ROLE SPECIFICATIONS:

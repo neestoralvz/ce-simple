@@ -25,7 +25,7 @@ Analiza ÚNICAMENTE la conversación actual (no historial previo) y extrae conte
 ## Estructura de Documentación:
 - `/context/architecture/` - Solo nuevas decisiones arquitecturales
 - `/context/data/` - Solo nueva información empresarial/mercado
-- `/context/claude_code/` - Solo nuevas metodologías o insights de sesión
+- `/@context/architecture/claude_code/` - Solo nuevas metodologías o insights de sesión
 - `/context/handoffs/` - Solo si hay transferencia real de conocimiento
 
 ## Proceso Optimizado con Performance Constraints:

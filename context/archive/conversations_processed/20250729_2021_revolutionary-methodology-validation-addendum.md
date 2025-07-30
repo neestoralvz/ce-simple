@@ -1,7 +1,7 @@
 # Revolutionary Methodology Validation Addendum
 
 **20250729_2021** | /workflows:close duplicate execution optimization
-**Authority Source**: context/TRUTH_SOURCE.md → Continued validation evidence
+**Authority Source**: @context/architecture/core/truth-source.md → Continued validation evidence
 **Session Type**: Post-closure methodology adoption validation
 
 ## DUPLICATE EXECUTION DETECTED - OPTIMIZED
@@ -27,7 +27,7 @@
 ### Operational Success Metrics
 - **≤80 Line Compliance**: Maintained across all updated files through intelligent modularization
 - **Information Density Preservation**: @simplicidad_belleza_quotes.md enables organization without loss
-- **Authority Chain Integrity**: TRUTH_SOURCE.md → specialized patterns → user implementation
+- **Authority Chain Integrity**: @context/architecture/core/truth-source.md → specialized patterns → user implementation
 - **Reference Architecture**: Cross-reference system functioning seamlessly
 
 ## SYSTEM STATUS CONFIRMATION

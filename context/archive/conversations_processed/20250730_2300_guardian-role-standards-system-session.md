@@ -12,13 +12,13 @@
 
 ### 2. Complete Enforcement Framework Established  
 **Architecture**: Partner (challenges/constructs) + Guardian (enforces/validates) + Standards (systematic quality)
-**Authority**: Direct TRUTH_SOURCE.md compliance with zero tolerance for vision violations
+**Authority**: Direct @context/architecture/core/truth-source.md compliance with zero tolerance for vision violations
 **Operational**: Binary enforcement (COMPLIANT/VIOLATION) with immediate correction requirements
 
 ### 3. Standards System Infrastructure
 **Framework**: Systematic quality enforcement workflows designed but strategically postponed
 **Foundation**: Guardian + Standards integration architecture established
-**Planning**: Pending tasks properly stored in context/planning/pending_tasks.md
+**Planning**: Pending tasks properly stored in context/architecture/core/methodology.mdpending_tasks.md
 
 ### 4. User-Centric Communication Evolution
 **Feedback Integration**: YAML/JavaScript syntax → discrete emojis + simple symbols
@@ -46,7 +46,7 @@
 - ✅ **Research**: Investigation specialist
 
 ### Quality Enforcement Infrastructure
-- ✅ Guardian role operational with TRUTH_SOURCE.md authority
+- ✅ Guardian role operational with @context/architecture/core/truth-source.md authority
 - ✅ Notification formatting standards aligned with user preferences
 - ✅ Standards system framework designed and ready for implementation
 - ✅ Task prioritization methodology matured (strategic postponement)

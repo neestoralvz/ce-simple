@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Core documentation and style authority
 
 ## AUTORIDAD SUPREMA
-↑ @context/standards.md → Documentation standards implementation per system standards authority
+↑ @context/architecture/standards/README.md → Documentation standards implementation per system standards authority
 
 ## LLM-OPTIMIZED DOCUMENTATION STYLE
 

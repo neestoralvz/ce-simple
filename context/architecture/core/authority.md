@@ -3,7 +3,7 @@
 **29/07/2025 22:45 CDMX** | Consolidated authority navigation with preserved user voice
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 **Core Authority Declaration:**
 > "System evolves organically while preserving absolute authority of user vision"
@@ -25,7 +25,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 - **Authority Validation**: All AI decisions traceable to user authority sources
 
 ### **Authority Hierarchy Evolution**
-- **Authority Chain Definition**: VISION.md → TRUTH_SOURCE.md → specialized context → implementation
+- **Authority Chain Definition**: VISION.md → @context/architecture/core/truth-source.md → specialized context → implementation
 - **Supremacy Preservation**: Core vision essence maintained throughout system evolution
 - **Organic Evolution**: Authority framework adapts while preserving absolute user authority
 - **Hierarchy Integrity**: Complete traceability to supreme authority sources maintained
@@ -60,7 +60,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 ## AUTHORITY INTELLIGENCE
 
 ### **Entry Points**
-- **Supreme Authority**: ← @TRUTH_SOURCE.md (context dispatcher authority)
+- **Supreme Authority**: ← @context/architecture/core/truth-source.md (context dispatcher authority)
 - **Vision Foundation**: ← @principles/vision_foundation.md (supreme user authority)
 - **System Evolution**: ← All system components requiring authority validation
 

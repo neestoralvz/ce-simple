@@ -3,7 +3,7 @@
 **30/07/2025 17:00 CDMX** | Comprehensive quality assurance and monitoring system for README architecture
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → README quality serves system excellence per vision foundation authority
+@context/vision/vision_foundation.md → supreme user authority → README quality serves system excellence per vision foundation authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Empirical quality measurement with authority preservation"** - All quality monitoring maintains user authority supremacy while providing objective system health assessment.

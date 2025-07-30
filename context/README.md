@@ -3,7 +3,7 @@
 **30/07/2025 22:30 CDMX** | Single entry point for complete context architecture
 
 ## AUTORIDAD SUPREMA
-vision/vision_foundation.md → supreme user authority → architecture/core/truth-source.md → context/ system serves vision discovery
+vision/vision_foundation.md → supreme user authority → architecture/core/@context/architecture/core/truth-source.md → context/ system serves vision discovery
 
 ## PRINCIPIO FUNDAMENTAL
 **"Context como padre de todo"** - Complete knowledge system organized for conversation-first development with vision-driven evolution
@@ -11,7 +11,7 @@ vision/vision_foundation.md → supreme user authority → architecture/core/tru
 ## SYSTEM ARCHITECTURE
 
 ### **CORE SYSTEM** (architecture/core/)
-- **`truth-source.md`** - Central dispatcher with semantic triggers and decision logic  
+- **`@context/architecture/core/truth-source.md`** - Central dispatcher with semantic triggers and decision logic  
 - **`authority.md`** - Complete authority framework with user domain boundaries
 - **`methodology.md`** - Comprehensive methodology consolidation with Think x4 protocol
 
@@ -45,7 +45,7 @@ vision/vision_foundation.md → supreme user authority → architecture/core/tru
 ## ENTRY PATHWAYS
 
 ### "I need to understand the system"
-**START**: `vision/vision_foundation.md` → `architecture/core/truth-source.md` → navigate based on needs
+**START**: `vision/vision_foundation.md` → `architecture/core/@context/architecture/core/truth-source.md` → navigate based on needs
 
 ### "I want to implement something"  
 **START**: `architecture/core/methodology.md` → `architecture/templates/README.md` → `architecture/standards/README.md`
@@ -54,7 +54,7 @@ vision/vision_foundation.md → supreme user authority → architecture/core/tru
 **START**: `architecture/core/authority.md` → `architecture/integration/component-decision-matrix.md` → domain-specific guidance
 
 ### "I want to understand architecture"
-**START**: `architecture/core/truth-source.md` → `architecture/patterns.md` → specialized architecture components
+**START**: `architecture/core/@context/architecture/core/truth-source.md` → `architecture/patterns.md` → specialized architecture components
 
 ## SYSTEM INTEGRATION
 **CLAUDE.md**: Context system serves as intelligence backend for semantic triggers and decision logic

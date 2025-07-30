@@ -3,7 +3,7 @@
 **30/07/2025 18:45 CDMX** | Revolutionary architectural transformation through systematic L2-MODULAR extraction at massive scale
 
 ## AUTORIDAD SUPREMA
-context/methodology.md → L2-MODULAR extraction → ADR-023 documents revolutionary reorganization mastery per empirical validation
+@context/architecture/core/methodology.md → L2-MODULAR extraction → ADR-023 documents revolutionary reorganization mastery per empirical validation
 
 ## STATUS
 **APPROVED** - Successfully implemented with revolutionary empirical validation

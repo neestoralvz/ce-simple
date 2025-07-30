@@ -2,7 +2,7 @@
 
 **Date**: 30/07/2025  
 **Status**: Immediate Action Required  
-**Authority**: Standards enforcement → TRUTH_SOURCE.md → comprehensive quality restoration  
+**Authority**: Standards enforcement → @context/architecture/core/truth-source.md → comprehensive quality restoration  
 **Criticality**: HIGH - Multiple 80-line standard violations detected
 
 ## CONTEXT
@@ -12,11 +12,11 @@ Systematic audit reveals widespread 80-line standard violations across context s
 
 ### CRITICAL Violations (>200 lines)
 1. **context/patterns.md**: 263 lines (229% over limit)
-2. **context/authority.md**: 261 lines (226% over limit) 
-3. **context/simplicity.md**: 313 lines (291% over limit)
-4. **context/COMPONENT_DECISION_MATRIX.md**: 354 lines (343% over limit)
-5. **context/CROSS_REFERENCE_SYSTEM.md**: 350 lines (338% over limit)
-6. **context/MIGRATION_RULES.md**: 379 lines (374% over limit)
+2. **@context/architecture/core/authority.md**: 261 lines (226% over limit) 
+3. **@context/vision/simplicity.md**: 313 lines (291% over limit)
+4. **context/architecture/ux/component-decision-flowchart.md**: 354 lines (343% over limit)
+5. **context/architecture/reference/README.md**: 350 lines (338% over limit)
+6. **context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md**: 379 lines (374% over limit)
 
 ### HIGH Priority Violations (UX Architecture)
 1. **flowchart-validation-protocol.md**: 546 lines (583% over limit)
@@ -114,7 +114,7 @@ Multiple template files 200-400 lines exceed cognitive load thresholds
 **← MIGRATION_RULES.md**: Modular extraction protocols  
 **← authority.md**: User authority preservation requirements
 **← simplicity.md**: Information density vs optimization balance
-**← TRUTH_SOURCE.md**: Supreme context architecture authority
+**← @context/architecture/core/truth-source.md**: Supreme context architecture authority
 
 ## IMPLEMENTATION RESPONSIBILITY
 **Guardian Role Activation**: Zero tolerance enforcement of standards compliance

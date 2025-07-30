@@ -8,7 +8,7 @@ Dynamic planning document management with creation→alignment→verification pr
 ## Planning Operations Dinámicas
 
 ### Phase 2: Planning State Management
-**Read current state**: context/planning/current.md assessment
+**Read current state**: context/architecture/core/methodology.md assessment
 **Update operations**: Add items, mark progress, update priorities directly to current.md
 **Consolidation logic**: Merge related items, remove duplicates, reorganize priorities
 **Depurar systematically**: Archive completed sections, clean obsolete items
@@ -39,7 +39,7 @@ Dynamic planning document management with creation→alignment→verification pr
 
 ### Archive Decision Logic
 **Archive triggers**: Major milestone completed, planning cycle finished, significant project phase completion
-**Archive format application**: Date-stamped completed plans moved to context/planning/archive/
+**Archive format application**: Date-stamped completed plans moved to context/architecture/core/methodology.mdarchive/
 **Current.md cleanup execution**: Reset relevant sections for next planning cycle initiation
 **Consolidated updates preservation**: Extract completed insights to consolidated.md before archiving
 

@@ -67,5 +67,5 @@
 - **Exception handling** preserves momentum when possible
 
 ---
-**Authority Source**: context/patterns/orchestrator_methodology.md:100-129 + continuous execution patterns
+**Authority Source**: context/architecture/patterns/command_orchestration_patterns.md:100-129 + continuous execution patterns
 **Extracted from**: /roles:orchestrator, /workflows:close, delegation patterns

@@ -434,7 +434,7 @@ Workflow utiliza sistema modular implementado - sesión de optimización técnic
 - 2025-07-28_15-30_comando-universal-sesgo-ceo.md
 - 2025-07-28_15-38_research-protocol-optimization-systematic-changes.md
 - 2025-07-28_15-44_claude-hooks-verification-system-maintenance.md
-- 2025-07-28_16-14_claude-md-factorization-truth-source.md
+- 2025-07-28_16-14_claude-md-factorization-@context/architecture/core/truth-source.md
 - 2025-07-28_16-20_research-protocol-systematic-correction.md
 - 2025-07-28_16-31_user-vision-layered-distillation-system.md
 - 2025-07-28_16-40_command-ecosystem-factorization.md

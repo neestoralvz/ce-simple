@@ -34,5 +34,5 @@
 - **No intuitive decisions** without documented analysis
 
 ---
-**Authority Source**: context/enforcement/core_reminders.md + systematic analysis patterns
+**Authority Source**: context/architecture/core/methodology.md + systematic analysis patterns
 **Extracted from**: /roles:research, /roles:partner, orchestrator patterns

@@ -3,7 +3,7 @@
 **30/07/2025 17:15 CDMX** | Complete README maintenance and evolution ecosystem
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → README maintenance system serves organic evolution
+@context/vision/vision_foundation.md → supreme user authority → README maintenance system serves organic evolution
 
 ## COMPREHENSIVE MAINTENANCE ECOSYSTEM
 

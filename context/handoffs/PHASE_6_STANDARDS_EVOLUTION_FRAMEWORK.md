@@ -3,7 +3,7 @@
 **30/07/2025 17:40 CDMX** | Standards evolution framework systematization and integration
 
 ## AUTORIDAD SUPREMA
-@context/standards_evolution_framework.md → @context/standards.md → Complete standards evolution systematization per user vision authority
+context/architecture/standards/README.md → @context/architecture/standards/README.md → Complete standards evolution systematization per user vision authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Standards must evolve organically while maintaining user authority supremacy"** - Systematize standards evolution framework enabling organic growth and adaptation while preserving complete user authority and vision alignment throughout system evolution.
@@ -13,9 +13,9 @@
 ### **Primary Framework Consolidation**
 ```
 STANDARDS_EVOLUTION_CONSOLIDATION:
-├── context/standards_evolution_framework.md: 200 lines (evolution methodology)
-├── context/standards.md: 123 lines (current standards authority)
-├── context/guardian_system_integration_protocols.md: 319 lines (enforcement integration)
+├── context/architecture/standards/README.md: 200 lines (evolution methodology)
+├── @context/architecture/standards/README.md: 123 lines (current standards authority)
+├── context/architecture/standards/README.md: 319 lines (enforcement integration)
 ├── Multiple ADR files: Standards decision documentation
 └── Archive standards: Historical evolution patterns
 ```

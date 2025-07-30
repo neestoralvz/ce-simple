@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Specialized operational methodology patterns
 
 ## AUTORIDAD SUPREMA
-↑ @context/methodology.md → L2-Operational implementation per core methodology authority
+↑ @context/architecture/core/methodology.md → L2-Operational implementation per core methodology authority
 
 ## RESEARCH-FIRST PROTOCOL
 
@@ -30,7 +30,7 @@
 **Conversation-level branching, experimental control, granular change management, user ultra-orchestrator coordination**
 
 ### Quality Gates
-**Creation → Alignment → Verification protocol with context/TRUTH_SOURCE.md validation**
+**Creation → Alignment → Verification protocol with @context/architecture/core/truth-source.md validation**
 
 ---
 

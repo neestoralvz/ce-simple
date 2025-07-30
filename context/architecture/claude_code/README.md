@@ -42,7 +42,7 @@ Specialized integration layer for Claude Code CLI capabilities, methodologies, a
 
 ## Integration Points
 
-### ↑ TRUTH_SOURCE.md
+### ↑ @context/architecture/core/truth-source.md
 **Authority Source**: Supreme authority context drives all Claude Code methodologies
 **Connection**: All Claude Code methodologies validate against supreme authority context
 **Protocol**: Claude Code optimizations must preserve user vision and authority hierarchy
@@ -87,5 +87,5 @@ Specialized integration layer for Claude Code CLI capabilities, methodologies, a
 
 ---
 
-**Authority Chain**: VISION.md → TRUTH_SOURCE.md → claude_code/ component → specialized implementations
+**Authority Chain**: VISION.md → @context/architecture/core/truth-source.md → claude_code/ component → specialized implementations
 **Evolution Protocol**: Empirical discovery → pattern documentation → methodology integration → command optimization

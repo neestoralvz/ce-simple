@@ -3,7 +3,7 @@
 **30/07/2025 01:00 CDMX** | System-wide templates and behavioral patterns
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Universal Behavioral Foundation
 
@@ -81,4 +81,4 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ---
 **Authority**: System-wide template infrastructure with behavioral consistency
-**Integration**: → context/templates.md, orchestration_protocol.md, authority_framework.md
+**Integration**: → context/architecture/templates/README.md, orchestration_protocol.md, authority_framework.md

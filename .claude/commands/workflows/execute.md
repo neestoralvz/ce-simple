@@ -5,12 +5,12 @@
 ## Command Purpose
 Execute TDD workflow (recursive validation until success) with Git WorkTree integration for safe experimentation and systematic implementation.
 
-**LOAD:** @context/methodology.md
+**LOAD:** @context/architecture/core/methodology.md
 
 ## Execution Protocol
 
 ### Phase 1: Objective Establishment
-**Authority**: @context/methodology.md
+**Authority**: @context/architecture/core/methodology.md
 **Behavior**: Clear goal definition + success criteria establishment
 **Method**:
 - **Objective establishment**: Define clear, measurable goal from planning phase
@@ -19,7 +19,7 @@ Execute TDD workflow (recursive validation until success) with Git WorkTree inte
 - **Recursive strategy**: Define failure handling and retry methodology
 
 ### Phase 2: Git WorkTree Integration
-**Authority**: @context/methodology.md
+**Authority**: @context/architecture/core/methodology.md
 **Behavior**: Safe experimentation with disposable branches
 **Method**:
 - **Conversation-level branching**: Each conversation starts in Git WorkTree
@@ -55,6 +55,6 @@ TDD workflow execution with Git WorkTree integration and recursive validation un
 **Usage**: `/workflows:execute` (requires completed `/workflows:plan` with success criteria)
 
 ---
-**Authority**: @context/methodology.md
+**Authority**: @context/architecture/core/methodology.md
 **Integration**: `/workflows:start` → `/workflows:plan` → `/workflows:execute`
 **Dependencies**: Git WorkTree, task_tool_methodology.md, simplicity_principles.md

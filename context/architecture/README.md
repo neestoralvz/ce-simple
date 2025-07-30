@@ -3,7 +3,7 @@
 **30/07/2025 15:45 CDMX** | Architecture authority hub
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → architecture/ implements structural vision
+@context/architecture/core/truth-source.md → architecture/ implements structural vision
 
 ## PURPOSE
 Central hub for all architectural decisions, patterns, and structural guidance following user vision of "hacerlo lo que tiene que ser" - structure follows discovered function.
@@ -13,17 +13,17 @@ Central hub for all architectural decisions, patterns, and structural guidance f
 ### `/adr/` - Architecture Decision Records
 **Purpose**: Formal architectural decisions with context and rationale
 **Content**: Decision documentation following ADR format
-**Cross-reference**: @context/authority.md for decision validation
+**Cross-reference**: @context/architecture/core/authority.md for decision validation
 
 ### `/standards/` - Architecture Standards  
 **Purpose**: Technical standards and structural requirements
 **Content**: Coding standards, design patterns, quality gates
-**Cross-reference**: @context/standards.md for enforcement
+**Cross-reference**: @context/architecture/standards/README.md for enforcement
 
 ### `/templates/` - Architecture Templates
 **Purpose**: Reusable architectural patterns and structures
 **Content**: Component templates, pattern definitions
-**Cross-reference**: @context/templates.md for template authority
+**Cross-reference**: context/architecture/templates/README.md for template authority
 
 ### `/ux/` - User Experience Architecture
 **Purpose**: Conversation-first design and interaction patterns
@@ -33,7 +33,7 @@ Central hub for all architectural decisions, patterns, and structural guidance f
 ### `/workflows/` - Process Architecture
 **Purpose**: Workflow patterns and process definitions
 **Content**: Process flows, integration patterns, orchestration
-**Cross-reference**: @context/methodology.md workflow authority
+**Cross-reference**: @context/architecture/core/methodology.md workflow authority
 
 ## NAMING CONVENTIONS
 - **English naming** for all files and directories
@@ -48,7 +48,7 @@ Central hub for all architectural decisions, patterns, and structural guidance f
 - **Design rationale** behind architectural choices
 
 ## AUTHORITY CHAIN
-TRUTH_SOURCE.md → architecture/ → specialized subdirectories → implementation
+@context/architecture/core/truth-source.md → architecture/ → specialized subdirectories → implementation
 
 ---
 **INTEGRATION**: Architecture serves discovered user vision through structural intelligence

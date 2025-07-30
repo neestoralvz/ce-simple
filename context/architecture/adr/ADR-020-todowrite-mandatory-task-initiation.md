@@ -36,7 +36,7 @@ Line 83: "DESPLIEGA TodoWrite OBLIGATORIO como primer paso + [operational instru
 ```
 
 ### Authority Chain Validation:
-- **Supreme Authority**: User explicit mandate → TRUTH_SOURCE.md → CLAUDE.md implementation
+- **Supreme Authority**: User explicit mandate → @context/architecture/core/truth-source.md → CLAUDE.md implementation
 - **Methodology Integration**: Aligns with L4-Pure Orchestration methodology framework
 - **Standards Compliance**: Maintains OBLIGATORIO/MANDATORIO enforcement language consistency
 
@@ -63,10 +63,10 @@ Line 83: "DESPLIEGA TodoWrite OBLIGATORIO como primer paso + [operational instru
 
 ## Authority References
 - **User Authority**: Direct operational mandate conversation 30/07/2025
-- **TRUTH_SOURCE.md**: Context architecture dispatcher validation  
+- **@context/architecture/core/truth-source.md**: Context architecture dispatcher validation  
 - **methodology.md**: L4-Pure Orchestration methodology integration
 - **CLAUDE.md**: Operational protocol implementation
 
 ---
 
-**ADR AUTHORITY**: User explicit mandate → systematic operational enhancement → authority-compliant implementation per TRUTH_SOURCE.md validation protocols.
+**ADR AUTHORITY**: User explicit mandate → systematic operational enhancement → authority-compliant implementation per @context/architecture/core/truth-source.md validation protocols.

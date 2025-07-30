@@ -47,10 +47,10 @@ How to measure experience quality
 ```
 
 ## CROSS-REFERENCES
-- **Simplicity principles**: @context/simplicity.md user-friendly design
+- **Simplicity principles**: @context/vision/simplicity.md user-friendly design
 - **Workflow integration**: @architecture/workflows/ process experience
-- **Authority respect**: @context/authority.md user control maintenance
-- **Methodology alignment**: @context/methodology.md execution experience
+- **Authority respect**: @context/architecture/core/authority.md user control maintenance
+- **Methodology alignment**: @context/architecture/core/methodology.md execution experience
 
 ---
 **EXPERIENCE AUTHORITY**: User experience serves vision of natural, simple, effective interaction

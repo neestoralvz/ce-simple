@@ -69,5 +69,5 @@
 - **Web research concurrent** with MCP context integration
 
 ---
-**Authority Source**: context/patterns/orchestrator_methodology.md + context/enforcement/core_reminders.md
+**Authority Source**: context/architecture/patterns/command_orchestration_patterns.md + context/architecture/core/methodology.md
 **Extracted from**: /roles:research, /roles:orchestrator, /workflows:close patterns

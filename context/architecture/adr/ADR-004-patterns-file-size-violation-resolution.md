@@ -2,7 +2,7 @@
 
 **Date**: 30/07/2025  
 **Status**: Immediate Action Required  
-**Authority**: Standards violation → TRUTH_SOURCE.md → architectural decision  
+**Authority**: Standards violation → @context/architecture/core/truth-source.md → architectural decision  
 **Criticality**: CRITICAL - 80-line standard violation
 
 ## CONTEXT

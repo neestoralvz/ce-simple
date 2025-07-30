@@ -3,7 +3,7 @@
 **29/07/2025 19:45 CDMX** | Validated methodology for large-scale archive processing with insight preservation
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Core Archive Processing Pattern
 

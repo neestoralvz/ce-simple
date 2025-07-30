@@ -17,7 +17,7 @@ User Vision Content? → context/vision/
   ├── Vision Evolution → vision/ directory
   └── Vision Crystallization → vision-specific components
 
-Authority Content? → context/authority.md
+Authority Content? → @context/architecture/core/authority.md
   ├── User Authority → authority supremacy principles
   ├── Domain Boundaries → user-AI separation
   └── Authority Chain → hierarchy validation
@@ -27,7 +27,7 @@ Technical Content? → context/patterns.md or context/architecture/
   ├── Architecture Decisions → architecture/adr/
   └── UX/Conversation → architecture/ux/
 
-Standards Content? → context/standards.md
+Standards Content? → @context/architecture/standards/README.md
   ├── Documentation Standards → standards/documentation-standards.md
   ├── Enforcement Standards → standards/enforcement-standards.md
   └── Technical Standards → standards/technical-standards.md
@@ -59,7 +59,7 @@ User Authority Content?
   └── Continue to placement logic if aligned
 
 System Authority Content?
-  ├── Load @context/TRUTH_SOURCE.md for validation
+  ├── Load @context/architecture/core/truth-source.md for validation
   ├── Verify authority chain clarity
   ├── Check hierarchy integrity → ERROR if unclear
   └── Continue with validated authority
@@ -90,7 +90,7 @@ Cross-Component Scope?
 System-Wide Scope?
   ├── Place at context/ root level for system authority
   ├── Create comprehensive bidirectional references
-  ├── Update TRUTH_SOURCE.md and core components
+  ├── Update @context/architecture/core/truth-source.md and core components
   └── Validate system-wide integration and authority chain
 ```
 

@@ -17,7 +17,7 @@ Quantitative validation of system quality, user authority preservation, and stan
 **Connection**: Pattern effectiveness measurement and empirical validation support
 **Protocol**: Validation metrics provide empirical evidence for pattern success and quality assurance
 
-### ↑ TRUTH_SOURCE.md
+### ↑ @context/architecture/core/truth-source.md
 **Authority Source**: Supreme authority validation drives all quality measurement criteria
 **Protocol**: All validation metrics serve user vision preservation and authority compliance
 

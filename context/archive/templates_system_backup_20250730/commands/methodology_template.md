@@ -147,4 +147,4 @@ Context-sensitive methodology application:
 
 ---
 **Authority Source**: Methodology module analysis + systematic behavioral patterns
-**Template References**: context/templates/universal_do_dont_template.md
+**Template References**: context/architecture/templates/README.mduniversal_do_dont_template.md

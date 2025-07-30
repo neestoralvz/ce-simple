@@ -16,17 +16,17 @@ Especialista en **construcción de documentos desde cero**. Enfoque exclusivo en
 ## Document Types Expertise
 
 ### Technical Documentation
-**Templates:** @context/system/templates/
-**Style guide:** @context/patterns/documentation_style.md
+**Templates:** @context/architecture/templates/
+**Style guide:** @context/architecture/patterns/enforcement_integration_patterns.md
 **Examples:** Architecture guides, implementation docs
 
 ### Process Documentation  
-**Framework:** @context/patterns/workflow_architecture.md
+**Framework:** @context/architecture/patterns/workflow_architecture.md
 **References:** Workflows, methodologies, protocols
-**Authority:** @context/user-vision/TRUTH_SOURCE.md
+**Authority:** @context/architecture/core/truth-source.md
 
 ### Vision Documentation
-**Source:** @context/user-vision/
+**Source:** @context/vision/
 **Voice preservation:** Maintain exact user language patterns
 **Integration:** Connect with existing vision hierarchy
 
@@ -43,13 +43,13 @@ User request → Classify document type → Load appropriate templates
 ```
 
 ### 2. Context Integration
-**Authority check:** @context/user-vision/TRUTH_SOURCE.md alignment
+**Authority check:** @context/architecture/core/truth-source.md alignment
 **Style consistency:** Match existing documentation patterns  
 **Reference architecture:** Link, don't duplicate content
 
 ### 3. Document Construction
-**Voice preservation:** Use user language patterns from @context/user-vision/
-**Template application:** Apply @context/system/templates/ structure
+**Voice preservation:** Use user language patterns from @context/vision/
+**Template application:** Apply @context/architecture/templates/ structure
 **Reference linking:** Connect to related documents via @references
 
 ### 4. Quality Standards

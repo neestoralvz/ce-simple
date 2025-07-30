@@ -42,7 +42,7 @@ Layer 4: [Distribution] ⏳ PENDING
 📋 Project: ce-simple (Context Engineering Framework)
 
 Layer 1: Context Maturation ✅ COMPLETED
-├─ TRUTH_SOURCE.md authority established
+├─ @context/architecture/core/truth-source.md authority established
 ├─ Methodology protocols crystallized  
 ├─ Authority hierarchy defined
 └─ Gate: Context stable + protocols proven ✅

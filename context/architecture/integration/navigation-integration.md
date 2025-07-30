@@ -3,7 +3,7 @@
 **30/07/2025 15:45 CDMX** | Semantic trigger navigation with automatic context loading
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → README_NAVIGATION_INTEGRATION.md implements conversation-first navigation through intelligent README routing
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → README_NAVIGATION_INTEGRATION.md implements conversation-first navigation through intelligent README routing
 
 ## PRINCIPIO FUNDAMENTAL
 **"Natural conversation triggers automatic context loading through README navigation"** - Conversation patterns automatically load specialized README components for progressive context disclosure while preserving conversation flow.
@@ -58,7 +58,7 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 
 ### **Entry Points**
 - **CLAUDE.md Integration**: ← @CLAUDE.md (semantic trigger activation)
-- **TRUTH_SOURCE.md**: ← @TRUTH_SOURCE.md (context dispatcher authority)
+- **@context/architecture/core/truth-source.md**: ← @context/architecture/core/truth-source.md (context dispatcher authority)
 - **Architecture Integration**: ← @architecture/ (README chain validation)
 
 ### **Navigation Pathways**

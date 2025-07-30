@@ -3,7 +3,7 @@
 **29/07/2025 19:45 CDMX** | Legacy archive complete processing + over-engineering prevention validation
 
 ## Session Overview
-User requested comprehensive review of all files after legacy archive processing, then activated partner constructor role to evaluate impact on TRUTH_SOURCE.md.
+User requested comprehensive review of all files after legacy archive processing, then activated partner constructor role to evaluate impact on @context/architecture/core/truth-source.md.
 
 ## Key Insights Extracted to Operational Context
 
@@ -20,7 +20,7 @@ User requested comprehensive review of all files after legacy archive processing
 ### Authority Repair Protocol
 **Integrated to**: context/operational/operations/knowledge_integration_protocol.md:81
 **Innovation**: Authority-first repair (fix broken functionality before adding features)
-**Validation**: TRUTH_SOURCE.md references repaired without adding complexity
+**Validation**: @context/architecture/core/truth-source.md references repaired without adding complexity
 
 ## System Evolution Achievements
 
@@ -47,7 +47,7 @@ User requested comprehensive review of all files after legacy archive processing
 ### User Voice Fidelity Maintained
 - Archive processing preserves original user quotes with conversation traceability
 - Partner constructor approach respects user simplicity preferences
-- Authority hierarchy validated: TRUTH_SOURCE.md → operational patterns → implementation
+- Authority hierarchy validated: @context/architecture/core/truth-source.md → operational patterns → implementation
 
 ### Vision Alignment Confirmed  
 - Archive methodology serves user organization needs without information loss

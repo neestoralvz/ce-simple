@@ -14,7 +14,7 @@
 ```
 VISION_OPERATIONALIZATION_TARGET:
 ├── context/vision/README.md: 208 lines (vision coordination hub)
-├── context/principles/vision_foundation.md: Core vision principles
+├── @context/vision/vision_foundation.md: Core vision principles
 ├── Multiple vision/ components: Vision discovery, crystallization, evolution
 ├── CLAUDE.md semantic triggers: Vision-driven automation integration
 └── System-wide vision validation: Automated vision compliance protocols

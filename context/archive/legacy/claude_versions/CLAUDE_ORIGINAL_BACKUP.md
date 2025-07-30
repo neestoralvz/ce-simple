@@ -43,18 +43,18 @@ PROTOCOLO HÍBRIDO DE ORQUESTACIÓN INTELIGENTE (Ver ADR-016):
 15. VALIDA cumplimiento estándares profesionales en AMBOS niveles protocolo SIEMPRE
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md context architecture → CLAUDE.md implements vision through intelligent dispatch
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md context architecture → CLAUDE.md implements vision through intelligent dispatch
 
 ## PROJECT CONTEXT
 **Overview**: README.md - Project description, philosophy, architecture overview
 **System Purpose**: Context engineering framework para conversation-first development with vision-driven evolution
 
 ## CONTEXTO CORE SIEMPRE CARGADO
-@context/principles/vision_foundation.md
-@context/TRUTH_SOURCE.md
-@context/methodology.md
-@context/authority.md
-@context/simplicity.md
+@context/vision/vision_foundation.md
+@context/architecture/core/truth-source.md
+@context/architecture/core/methodology.md
+@context/architecture/core/authority.md
+@context/vision/simplicity.md
 
 ## COMPORTAMIENTO ORQUESTADOR PURO
 **ROL FUNDAMENTAL**: Director de orquesta puro - NUNCA ejecuta, SOLO coordina subagentes especializados
@@ -99,65 +99,65 @@ subagent_type: general-purpose
 ### Research/Investigation Pattern
 **Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
 **Auto-activation OBLIGATORIA**: Date-sensitive info → $(date) validation, new domain → EJECUTA WebSearch + MCP context7 SIMULTÁNEAMENTE
-**README Navigation**: @context/claude_code/methodology/README.md → @context/methodology.md → @context/vision/README.md → @context/architecture/standards/README.md
-**EJECUTA**: @context/methodology.md → Research specialist template
-**VALIDA OBLIGATORIO**: @context/methodology.md → Post-delegation validation protocol
+**README Navigation**: @context/architecture/claude_code/methodology/README.md → @context/architecture/core/methodology.md → @context/vision/README.md → @context/architecture/standards/README.md
+**EJECUTA**: @context/architecture/core/methodology.md → Research specialist template
+**VALIDA OBLIGATORIO**: @context/architecture/core/methodology.md → Post-delegation validation protocol
 
 ### Documentation Pattern  
 **Semantic triggers**: Intent to capture, formalize, record + Scope single doc/system-wide + Domain technical/procedural + Output formal documentation
 **Auto-activation MANDATORIA**: Decision made → GENERA automáticamente documentation, system change → ACTUALIZA related docs
-**README Navigation**: @context/architecture/templates/README.md → @context/claude_code/command-creation/README.md → @context/architecture/standards/README.md → @context/CROSS_REFERENCE_SYSTEM.md
-**EJECUTA**: @context/methodology.md → Documentation builder template
-**VALIDA MANDATORIO**: @context/methodology.md → Standards compliance validation
+**README Navigation**: @context/architecture/templates/README.md → @context/architecture/claude_code/command-creation/README.md → @context/architecture/standards/README.md → @context/architecture/reference/README.md
+**EJECUTA**: @context/architecture/core/methodology.md → Documentation builder template
+**VALIDA MANDATORIO**: @context/architecture/core/methodology.md → Standards compliance validation
 
 ### Architecture/System Pattern
 **Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
-**Auto-activation CRÍTICA**: System-wide changes → context/TRUTH_SOURCE.md consultation OBLIGATORIA, architecture discussion → EJECUTA /roles:partner validation
+**Auto-activation CRÍTICA**: System-wide changes → @context/architecture/core/truth-source.md consultation OBLIGATORIA, architecture discussion → EJECUTA /roles:partner validation
 **README Navigation**: @context/architecture/README.md → @context/vision/README.md → @context/principles/README.md → @context/architecture/workflows/README.md
-**EJECUTA**: @context/methodology.md → Partner validation template
-**VALIDA CRÍTICO**: @context/methodology.md → Authority alignment verification
+**EJECUTA**: @context/architecture/core/methodology.md → Partner validation template
+**VALIDA CRÍTICO**: @context/architecture/core/methodology.md → Authority alignment verification
 
 ### Development/Implementation Pattern
 **Semantic triggers**: Intent to build, develop, execute + Scope multi-file operations + Domain technical implementation + Output working systems
 **Auto-activation AUTOMÁTICA**: Code complexity >3 pasos → DESPLIEGA Task tool delegation, quality standards → APLICA template application
-**README Navigation**: @context/claude_code/methodology/README.md → @context/claude_code/orchestration/README.md → @context/architecture/patterns/README.md → @context/data/validation/README.md
-**EJECUTA**: @context/methodology.md → Implementation template
-**VALIDA ESENCIAL**: @context/methodology.md → Quality gates validation
+**README Navigation**: @context/architecture/claude_code/methodology/README.md → @context/architecture/claude_code/orchestration/README.md → @context/architecture/patterns/README.md → @context/data/validation/README.md
+**EJECUTA**: @context/architecture/core/methodology.md → Implementation template
+**VALIDA ESENCIAL**: @context/architecture/core/methodology.md → Quality gates validation
 
 ### Workflow/Command Pattern
 **Semantic triggers**: Intent to automate, process + Scope workflow creation + Domain procedural + Output structured commands
 **Auto-activation INMEDIATA**: "/comando" mentioned → CARGA template loading, process automation → ESTRUCTURA command
-**README Navigation**: @context/claude_code/command-creation/README.md → @context/architecture/workflows/README.md → @context/architecture/templates/README.md → @context/claude_code/orchestration/README.md
-**EJECUTA**: @context/methodology.md → Generic delegation template
-**VALIDA SISTEMÁTICO**: @context/methodology.md → System coherence validation
+**README Navigation**: @context/architecture/claude_code/command-creation/README.md → @context/architecture/workflows/README.md → @context/architecture/templates/README.md → @context/architecture/claude_code/orchestration/README.md
+**EJECUTA**: @context/architecture/core/methodology.md → Generic delegation template
+**VALIDA SISTEMÁTICO**: @context/architecture/core/methodology.md → System coherence validation
 
 ### Multi-Conversación Pattern
 **Semantic triggers**: Intent to coordinate, orchestrate + Scope parallel execution + Domain multi-agent coordination + Output coordinated progress
 **Auto-activation INSTANTÁNEA**: "paralelo", "múltiple" → DESPLIEGA múltiples Task tools, >5 independent tasks → CONSIDERA parallel
-**README Navigation**: @context/claude_code/orchestration/README.md → @context/data/performance/README.md → @context/methodology.md → @context/architecture/workflows/README.md
-**EJECUTA**: @context/methodology.md → Multiple concurrent templates
-**VALIDA COORDINACIÓN**: @context/methodology.md → Coordination effectiveness validation
+**README Navigation**: @context/architecture/claude_code/orchestration/README.md → @context/data/performance/README.md → @context/architecture/core/methodology.md → @context/architecture/workflows/README.md
+**EJECUTA**: @context/architecture/core/methodology.md → Multiple concurrent templates
+**VALIDA COORDINACIÓN**: @context/architecture/core/methodology.md → Coordination effectiveness validation
 
 ### Session Management Pattern
 **Semantic triggers**: Intent to conclude, capture progress + Scope session-wide summary + Domain progress documentation + Output handoff preparation
 **Auto-activation FINAL**: "cierre conversación", "handoff" → ACTIVA /workflows:close, work completion → DOCUMENTA session
 **README Navigation**: @context/data/conversations/README.md → @context/archive/README.md → @context/vision/README.md → @context/architecture/workflows/README.md
-**EJECUTA**: @context/methodology.md → Session management template
-**VALIDA COMPLETITUD**: @context/methodology.md → Completeness validation
+**EJECUTA**: @context/architecture/core/methodology.md → Session management template
+**VALIDA COMPLETITUD**: @context/architecture/core/methodology.md → Completeness validation
 
 ### Content Placement Pattern
 **Semantic triggers**: Intent to place, organize, structure content + Scope content organization + Domain system architecture + Output systematic placement
 **Auto-activation SISTEMÁTICA**: Content creation → CLASIFICA placement-quick-reference.md, complex placement → ASISTE interactive-placement-guide.md, comprehensive analysis → ANALIZA component-decision-flowchart.md
-**README Navigation**: @context/architecture/ux/README.md → @context/COMPONENT_DECISION_MATRIX.md → @context/CROSS_REFERENCE_SYSTEM.md → @context/architecture/ux/flowchart-system-integration.md
+**README Navigation**: @context/architecture/ux/README.md → @context/architecture/ux/component-decision-flowchart.md → @context/architecture/reference/README.md → @context/architecture/ux/flowchart-system-integration.md
 **EJECUTA**: @context/architecture/ux/component-decision-flowchart.md → Systematic placement template
-**VALIDA INTEGRACIÓN**: @context/COMPONENT_DECISION_MATRIX.md → Integration pathway verification
+**VALIDA INTEGRACIÓN**: @context/architecture/ux/component-decision-flowchart.md → Integration pathway verification
 
 ### Error/Problem Resolution Pattern
 **Semantic triggers**: Intent to fix, debug, resolve + Scope error identification/resolution + Domain problem-solving/troubleshooting + Output comprehensive solution
 **Auto-activation CRÍTICA**: Error detected → DOCUMENTA problema inmediatamente, system failure → EXPLORA codebase para contexto, unknown error → BUSCA WebSearch + MCP context7 OBLIGATORIO
-**README Navigation**: @context/methodology.md → @context/architecture/patterns/README.md → @context/data/validation/README.md → @context/standards.md
-**EJECUTA**: @context/methodology.md → Problem resolution specialist template
-**VALIDA CRÍTICO**: @context/methodology.md → Root cause elimination + integral solution verification
+**README Navigation**: @context/architecture/core/methodology.md → @context/architecture/patterns/README.md → @context/data/validation/README.md → @context/architecture/standards/README.md
+**EJECUTA**: @context/architecture/core/methodology.md → Problem resolution specialist template
+**VALIDA CRÍTICO**: @context/architecture/core/methodology.md → Root cause elimination + integral solution verification
 
 ## METODOLOGÍA ENFORCEMENT INTEGRADA
 
@@ -181,36 +181,36 @@ subagent_type: general-purpose
 **PRIORIZA Task tools** sobre herramientas directas - USA herramientas directas SOLO para coordinación orquestal
 
 ### Post-Validation Sistemática
-**EJECUTA después cada delegación** → @context/methodology.md → Post-delegation validation
-**VERIFICA OBLIGATORIAMENTE alignment** context/TRUTH_SOURCE.md
-**VALIDA SIEMPRE compliance** context/simplicity.md
+**EJECUTA después cada delegación** → @context/architecture/core/methodology.md → Post-delegation validation
+**VERIFICA OBLIGATORIAMENTE alignment** @context/architecture/core/truth-source.md
+**VALIDA SIEMPRE compliance** @context/vision/simplicity.md
 **CONFIRMA OBLIGATORIO standards** según context apropiado
 
 ## REFERENCIAS CONDICIONALES
 
 **Context loading según patterns**:
-- Research: context/methodology.md + context/architecture/patterns.md
-- Documentation: context/templates.md + context/standards.md  
-- Architecture: context/TRUTH_SOURCE.md + context/authority.md
-- Implementation: context/simplicity.md + context/architecture/patterns.md
-- Commands: context/templates.md + context/methodology.md
-- Validation: context/methodology.md + context/standards.md
+- Research: @context/architecture/core/methodology.md + context/architecture/patterns.md
+- Documentation: context/architecture/templates/README.md + @context/architecture/standards/README.md  
+- Architecture: @context/architecture/core/truth-source.md + @context/architecture/core/authority.md
+- Implementation: @context/vision/simplicity.md + context/architecture/patterns.md
+- Commands: context/architecture/templates/README.md + @context/architecture/core/methodology.md
+- Validation: @context/architecture/core/methodology.md + @context/architecture/standards/README.md
 - Content Placement: architecture/ux/placement-quick-reference.md + COMPONENT_DECISION_MATRIX.md
 - Complex Placement: architecture/ux/interactive-placement-guide.md + CROSS_REFERENCE_SYSTEM.md
 - System Architecture: COMPONENT_DECISION_MATRIX.md + CROSS_REFERENCE_SYSTEM.md
-- Error/Problem Resolution: context/methodology.md + context/architecture/patterns.md + context/standards.md
+- Error/Problem Resolution: @context/architecture/core/methodology.md + context/architecture/patterns.md + @context/architecture/standards/README.md
 
 **Enforcement references**:
-- Anti-patterns: context/standards.md
-- Behavioral: context/standards.md
-- Quality gates: context/standards.md
+- Anti-patterns: @context/architecture/standards/README.md
+- Behavioral: @context/architecture/standards/README.md
+- Quality gates: @context/architecture/standards/README.md
 
-**Complete enforcement**: @context/standards.md
+**Complete enforcement**: @context/architecture/standards/README.md
 
-**Cross-reference system**: @context/CROSS_REFERENCE_SYSTEM.md
-**Integration pathways**: @context/COMPONENT_DECISION_MATRIX.md  
-**Reference templates**: @context/MIGRATION_RULES.md
-**README navigation**: @context/README_NAVIGATION_INTEGRATION.md
+**Cross-reference system**: @context/architecture/reference/README.md
+**Integration pathways**: @context/architecture/ux/component-decision-flowchart.md  
+**Reference templates**: @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+**README navigation**: @context/architecture/README.md
 
 ---
 

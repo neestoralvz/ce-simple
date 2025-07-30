@@ -59,8 +59,8 @@ Define user experience architecture following core vision: "conversation natural
 **Exclusions:**
 - Technical implementation (goes to @architecture/standards/)
 - Command-specific UX (stays in commands/)
-- Content formatting (goes to @context/standards.md)
-- **Authority definitions (stays in @context/authority.md)**
+- Content formatting (goes to @context/architecture/standards/README.md)
+- **Authority definitions (stays in @context/architecture/core/authority.md)**
 - **Technical patterns (stays in @context/architecture/patterns.md)**
 
 ## NAMING CONVENTIONS
@@ -76,11 +76,11 @@ Examples:
 **Connection**: Vision-driven UX architecture serves discovered user vision through natural interaction
 **Protocol**: UX patterns must manifest vision discoveries through conversation-first design
 
-### ←→ @context/methodology.md
+### ←→ @context/architecture/core/methodology.md
 **Connection**: Socratic discovery and conversation methodology integration
 **Protocol**: UX patterns implement methodology through natural conversation flows
 
-### ↑ @context/authority.md
+### ↑ @context/architecture/core/authority.md
 **Authority Source**: User-centric behaviors and authority validation drive UX decisions
 **Protocol**: All UX architecture serves user authority supremacy and vision preservation
 

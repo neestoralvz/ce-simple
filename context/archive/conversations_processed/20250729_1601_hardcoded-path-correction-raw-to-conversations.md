@@ -23,8 +23,8 @@ Partner role consultation identified hardcoded path inconsistencies causing conv
 ### 3. Systematic Correction Execution
 **Files corrected (9 total)**:
 - scripts/export_commands.py (path mapping)
-- context/system/organization.md (directory description)  
-- context/system/project_structure.md (structure documentation)
+- context/architecture/organization.md (directory description)  
+- context/architecture/project_structure.md (structure documentation)
 - context/operational/behaviors/session_analysis.md (storage path)
 - context/operational/operations/auto_detection.md (3 references)
 - context/operational/patterns/distillation_layers.md (2 references)

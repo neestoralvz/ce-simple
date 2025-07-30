@@ -40,7 +40,7 @@
 **Solution Pattern**: Authority audit → Chain reconstruction → Reference validation → Traceability verification
 **Implementation**:
 - Systematic audit of all components for authority chain references
-- Reconstruct broken authority pathways to TRUTH_SOURCE.md
+- Reconstruct broken authority pathways to @context/architecture/core/truth-source.md
 - Implement standardized authority reference format in all components
 - Validate complete traceability from implementation to supreme user authority
 

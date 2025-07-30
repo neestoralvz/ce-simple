@@ -3,7 +3,7 @@
 **30/07/2025 17:30 CDMX** | L0-EMERGENCY mass modular extraction for 81 critical file size violations
 
 ## AUTORIDAD SUPREMA
-@context/critical_violations_action_plan.md → @context/MIGRATION_RULES.md → L0-EMERGENCY protocol → Complete mass remediation per Guardian binary enforcement
+context/architecture/adr/ADR-025-systematic-quality-violations-action-plan.md → @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md → L0-EMERGENCY protocol → Complete mass remediation per Guardian binary enforcement
 
 ## PRINCIPIO FUNDAMENTAL
 **"Mass systematic remediation with zero tolerance and complete authority preservation"** - Emergency intervention for 81 files violating 80-line limit requiring immediate L0-EMERGENCY modular extraction while preserving 100% user authority and information density.

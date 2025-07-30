@@ -14,7 +14,7 @@ Applied empirical elimination methodology following user authority: "no estoy de
 - Redundant content and broken reference chains
 
 **New Structure**:
-- Single context/methodology.md reference hub (80 lines)
+- Single @context/architecture/core/methodology.md reference hub (80 lines)
 - 7 specialized methodology modules in context/methodology/
 - Complete reference-only architecture following simplicity.md pattern
 
@@ -53,7 +53,7 @@ Applied empirical elimination methodology following user authority: "no estoy de
 ✅ All user workflow specifications - Preserved in workflow_systems.md
 
 ### Reference Integration Completed
-✅ TRUTH_SOURCE.md updated to reference context/methodology.md
+✅ @context/architecture/core/truth-source.md updated to reference @context/architecture/core/methodology.md
 ✅ Cross-references updated throughout methodology modules
 ✅ Integration pathways preserved with other context components
 
@@ -67,7 +67,7 @@ Applied empirical elimination methodology following user authority: "no estoy de
 ### System Integration Maintained
 - **Functionality**: Zero methodology functionality loss
 - **References**: All methodology references updated to new structure
-- **Authority Chain**: User vision → TRUTH_SOURCE.md → methodology.md → specialized modules
+- **Authority Chain**: User vision → @context/architecture/core/truth-source.md → methodology.md → specialized modules
 
 ### Compliance with Simplicity Principles
 - **File Size**: Main methodology.md = 80 lines (compliant)
@@ -96,6 +96,6 @@ Applied empirical elimination methodology following user authority: "no estoy de
 
 **CONSOLIDATION DECLARATION**: Complete methodology consolidation achieved with zero information loss, following user explicit authority for information density preservation over structural optimization.
 
-**AUTHORITY CHAIN**: VISION.md → TRUTH_SOURCE.md → methodology.md → specialized modules preserves complete user methodology authority through reference architecture.
+**AUTHORITY CHAIN**: VISION.md → @context/architecture/core/truth-source.md → methodology.md → specialized modules preserves complete user methodology authority through reference architecture.
 
 **EVOLUTION CAPABILITY**: Consolidated methodology framework enables system evolution while maintaining authority supremacy and information density per user requirements.

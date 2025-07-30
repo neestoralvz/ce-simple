@@ -3,7 +3,7 @@
 **30/07/2025 23:45 CDMX** | Cognitive load optimization with systematic enforcement clarity
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → ADR-006 implements enforcement vocabulary standards per cognitive balance authority
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → ADR-006 implements enforcement vocabulary standards per cognitive balance authority
 
 ## Status
 **ACCEPTED** - User standards authority with cognitive load balance optimization
@@ -103,9 +103,9 @@ Documentation standards require: "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGAT
 - **Professional standards**: Research-backed cognitive load management
 
 ## Integration References MANDATORIO
-- **Applied**: @context/standards.md comprehensive enforcement architecture
+- **Applied**: @context/architecture/standards/README.md comprehensive enforcement architecture
 - **Enhanced**: @standards/documentation_standards.md + enforcement_standards.md
-- **Validated**: TRUTH_SOURCE.md authority chain preservation + cognitive optimization
+- **Validated**: @context/architecture/core/truth-source.md authority chain preservation + cognitive optimization
 - **Measured**: Cognitive load metrics + enforcement effectiveness tracking
 
 ---

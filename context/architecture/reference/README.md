@@ -9,7 +9,7 @@ Complete reference architecture implementation including syntax standards, bidir
 
 ### Reference Syntax Standards Implementation
 **Line-Specific References**: `→ file.md:15-25` format for precise cross-references
-**Authority Chain References**: `← @TRUTH_SOURCE.md` format for authority traceability  
+**Authority Chain References**: `← @context/architecture/core/truth-source.md` format for authority traceability  
 **Conditional Loading**: `IF semantic_pattern=X: LOAD @context/Y` for intelligent context loading
 **Cross-Component**: `←→ file.md` for bidirectional relationships
 
@@ -28,7 +28,7 @@ Complete reference architecture implementation including syntax standards, bidir
 ### Authority Preservation Mechanisms
 **Authority Chain Validation**: Complete traceability to supreme authority sources
 **Conflict Resolution**: Authority hierarchy enforcement during reference conflicts
-**Drift Prevention**: Regular validation against TRUTH_SOURCE.md authority
+**Drift Prevention**: Regular validation against @context/architecture/core/truth-source.md authority
 **Integrity Maintenance**: Systematic validation of reference accuracy and authority alignment
 
 ## INTEGRATION SYNTHESIS INTELLIGENCE
@@ -41,7 +41,7 @@ Complete reference architecture implementation including syntax standards, bidir
 
 ### Operational Integration Intelligence
 **CLAUDE.md Integration**: Principles → semantic triggers → intelligent dispatch through systematic routing
-**TRUTH_SOURCE.md Coordination**: Components → context architecture → implementation through authority preservation
+**@context/architecture/core/truth-source.md Coordination**: Components → context architecture → implementation through authority preservation
 **Multi-Scale Complexity**: Simple interface for basic usage + granular access for deep analysis when required
 **Pattern Recognition**: Sistema organiza complejidad inherente presenting simple interface without reducing functionality
 
@@ -63,15 +63,15 @@ Complete reference architecture implementation including syntax standards, bidir
 
 ## INTEGRATION REFERENCES
 
-### ← context/CROSS_REFERENCE_SYSTEM.md
+### ← context/architecture/reference/README.md
 **Connection**: Reference architecture intelligence extracted per L2-MODULAR methodology
 **Protocol**: CROSS_REFERENCE_SYSTEM.md maintains reference-only hub pointing to specialized reference implementation
 
-### ←→ context/COMPONENT_DECISION_MATRIX.md
+### ←→ context/architecture/ux/component-decision-flowchart.md
 **Connection**: Integration pathways authority and reference architecture coordination
 **Protocol**: Bidirectional reference integration supporting component decision matrix functionality
 
-### ←→ context/MIGRATION_RULES.md
+### ←→ context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
 **Connection**: Reference migration protocols and systematic evolution support
 **Protocol**: Reference architecture supports migration through consistent linking and authority preservation
 

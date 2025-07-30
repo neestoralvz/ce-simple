@@ -1,33 +1,33 @@
-# TRUTH_SOURCE.md - Context Architecture Dispatcher
+# @context/architecture/core/truth-source.md - Context Architecture Dispatcher
 
 **29/07/2025 22:20 CDMX** | Context como padre de todo - Intelligence dispatcher under VISION.md authority
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md implements context architecture per vision
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md implements context architecture per vision
 
 ## PRINCIPIO FUNDAMENTAL
 **"Context como padre de todo"** - Todo el conocimiento del sistema ES contexto en diferentes etapas de procesamiento
 
 ## CONTEXTO CORE SIEMPRE CARGADO
 @context/vision/vision_foundation.md
-@context/authority.md
-@context/methodology.md
+@context/architecture/core/authority.md
+@context/architecture/core/methodology.md
 @context/architecture/patterns.md
-@context/simplicity.md
+@context/vision/simplicity.md
 
 ## DECISION LOGIC CON TRIGGERS SEMÁNTICOS
 
-**Complete Pattern Library**: @context/templates.md → semantic trigger patterns
+**Complete Pattern Library**: context/architecture/templates/README.md → semantic trigger patterns
 **Pattern Categories**: Vision/Philosophy, Authority/Decision, Implementation/Development, Orchestration/Coordination, Architecture/System, Problem Resolution, Discovery/Workflow
 **Auto-activation Logic**: Context-aware loading based on semantic trigger detection
-**README Navigation Intelligence**: @context/README_NAVIGATION_INTEGRATION.md → automatic progressive disclosure through domain-specific README chains
+**README Navigation Intelligence**: @context/architecture/README.md → automatic progressive disclosure through domain-specific README chains
 **Validation Protocol**: Authority chain preservation + specialized validation per pattern type
 
 ## DYNAMIC README LOADING PROTOCOLS
 
 ### Progressive Context Disclosure Intelligence
 **Phase-Based Loading**: Primary README → Secondary README → Authority README → Integration README based on conversation complexity
-**Context Depth Management**: Simple conversation = Primary only, Complex conversation = Full README chain + TRUTH_SOURCE.md validation
+**Context Depth Management**: Simple conversation = Primary only, Complex conversation = Full README chain + @context/architecture/core/truth-source.md validation
 **Authority Preservation**: All README navigation maintains supreme authority chain integrity
 
 ### Conversation-Driven README Routing
@@ -70,9 +70,9 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 
 ## REFERENCIAS AUTHORITY
 
-**Complete Context Authority**: @context/authority.md + @context/methodology.md + @context/architecture/patterns.md + @context/vision/README.md + @context/simplicity.md + @context/standards.md + @context/templates.md
+**Complete Context Authority**: @context/architecture/core/authority.md + @context/architecture/core/methodology.md + @context/architecture/patterns.md + @context/vision/README.md + @context/vision/simplicity.md + @context/architecture/standards/README.md + context/architecture/templates/README.md
 
-**Cross-Reference System Authority**: @context/CROSS_REFERENCE_SYSTEM.md + @context/COMPONENT_DECISION_MATRIX.md + @context/MIGRATION_RULES.md
+**Cross-Reference System Authority**: @context/architecture/reference/README.md + @context/architecture/ux/component-decision-flowchart.md + @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
 
 ---
 

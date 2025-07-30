@@ -3,7 +3,7 @@
 **30/07/2025 12:15 CDMX** | Systematic migration navigation with authority preservation
 
 ## AUTORIDAD SUPREMA
-TRUTH_SOURCE.md → MIGRATION_RULES.md implements systematic evolution per user vision
+@context/architecture/core/truth-source.md → MIGRATION_RULES.md implements systematic evolution per user vision
 
 ## PRINCIPIO FUNDAMENTAL
 **"Preserve user authority + Systematic evolution + Zero information loss"** - All system evolution preserves user voice while enabling systematic improvement through evidence-based migration.
@@ -57,7 +57,7 @@ TRUTH_SOURCE.md → MIGRATION_RULES.md implements systematic evolution per user 
 ## MIGRATION INTELLIGENCE
 
 ### **Entry Points**
-- **System Evolution**: ← @TRUTH_SOURCE.md (context dispatcher authority)
+- **System Evolution**: ← @context/architecture/core/truth-source.md (context dispatcher authority)
 - **Architecture Changes**: ← @architecture/ (architectural decision migration)
 - **Standards Evolution**: ← @standards.md (compliance migration protocols)
 

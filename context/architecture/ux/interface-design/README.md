@@ -48,8 +48,8 @@ User control and override capabilities
 
 ## CROSS-REFERENCES
 - **Semantic triggers**: @CLAUDE.md decision logic integration
-- **User authority**: @context/authority.md interface control patterns
-- **Standards compliance**: @context/standards.md visual formatting
+- **User authority**: @context/architecture/core/authority.md interface control patterns
+- **Standards compliance**: @context/architecture/standards/README.md visual formatting
 - **Conversation integration**: @architecture/ux/conversation-patterns/ dialogue flows
 
 ---

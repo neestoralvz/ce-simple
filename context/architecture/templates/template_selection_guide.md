@@ -68,7 +68,7 @@
 - Provides reference value for current system operation
 
 ### Integration Hub Template
-**Best for**: TRUTH_SOURCE.md, CLAUDE.md, components with 6+ cross-references
+**Best for**: @context/architecture/core/truth-source.md, CLAUDE.md, components with 6+ cross-references
 **Characteristics**:
 - Coordinates multiple component interactions
 - Manages complex information flows
@@ -95,7 +95,7 @@
 
 **Authority Chain Variations**:
 - Direct VISION.md authority: `VISION.md → component.md`
-- Through TRUTH_SOURCE: `VISION.md → TRUTH_SOURCE.md → component.md`
+- Through TRUTH_SOURCE: `VISION.md → @context/architecture/core/truth-source.md → component.md`
 - Directory authority: `parent_authority → directory/ → subdirectory/`
 - Integration authority: `multiple_sources → integration_hub → coordination`
 

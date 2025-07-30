@@ -47,8 +47,8 @@ User vision validation points
 ```
 
 ## CROSS-REFERENCES
-- **Discovery methodology**: @context/methodology.md socratic protocol
-- **Authority preservation**: @context/authority.md user-centric behaviors
+- **Discovery methodology**: @context/architecture/core/methodology.md socratic protocol
+- **Authority preservation**: @context/architecture/core/authority.md user-centric behaviors
 - **Interface integration**: @architecture/ux/interface-design/ semantic triggers
 
 ---

@@ -3,13 +3,13 @@
 **[DATE] [TIMEZONE]** | [Component status and purpose]
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → [parent_component]/ → [current_component] implements [specific_authority]
+@context/architecture/core/truth-source.md → [parent_component]/ → [current_component] implements [specific_authority]
 
 ## CORE [COMPONENT TYPE] AUTHORITY
 
 > "[Key user quote that defines this component's core purpose]"
 
-**Authority Chain**: VISION.md → TRUTH_SOURCE.md → [component].md → operational implementation
+**Authority Chain**: VISION.md → @context/architecture/core/truth-source.md → [component].md → operational implementation
 **Supreme Principle**: [Core principle that governs this component]
 
 ## L1-CORE [COMPONENT] FOUNDATION

@@ -78,12 +78,12 @@ Identifies areas requiring additional research
 
 ### Context Loading Research
 **Always load** context/roles:research/ for previous findings
-**Reference** context/patterns/orchestrator_methodology.md for methodology
-**Apply** context/patterns/simplicity.md principles to research approach
+**Reference** context/architecture/patterns/command_orchestration_patterns.md for methodology
+**Apply** context/vision/simplicity.md principles to research approach
 **Document** findings in context/roles:research/ for future reference
 
 ### Validation con Authority
-**Cross-check** findings with user-vision/TRUTH_SOURCE.md when relevant
+**Cross-check** findings with user-vision/@context/architecture/core/truth-source.md when relevant
 **Escalate** conflicts between research and established decisions
 **Preserve** user authority over AI research preferences
 **Challenge** outdated information vs current findings

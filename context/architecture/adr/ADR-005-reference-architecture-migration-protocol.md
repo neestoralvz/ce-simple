@@ -2,7 +2,7 @@
 
 **Date**: 2025-07-30  
 **Status**: ACCEPTED  
-**Authority**: User simplicity supremacy → context/TRUTH_SOURCE.md → ADR-005
+**Authority**: User simplicity supremacy → @context/architecture/core/truth-source.md → ADR-005
 
 ## Context
 
@@ -59,10 +59,10 @@ System requires transition from monolithic content duplication to reference-only
 
 ## References
 
-- **Authority Source**: @context/TRUTH_SOURCE.md (supreme architecture authority)
-- **Migration Protocol**: @context/MIGRATION_RULES.md (systematic migration authority)  
-- **Reference System**: @context/CROSS_REFERENCE_SYSTEM.md (bidirectional linking)
-- **Integration Matrix**: @context/COMPONENT_DECISION_MATRIX.md (pathway optimization)
+- **Authority Source**: @context/architecture/core/truth-source.md (supreme architecture authority)
+- **Migration Protocol**: @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md (systematic migration authority)  
+- **Reference System**: @context/architecture/reference/README.md (bidirectional linking)
+- **Integration Matrix**: @context/architecture/ux/component-decision-flowchart.md (pathway optimization)
 - **Technical Standards**: TOGAF ADM migration planning + OAIS preservation frameworks
 
 ---

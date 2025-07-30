@@ -14,11 +14,11 @@ context/architecture/ux/component-decision-flowchart.md → placement-quick-refe
 | Content Type | Authority | Location | Integration |
 |--------------|-----------|----------|-------------|
 | **User Vision** | User | context/vision/ | → All affected components |
-| **Authority Rules** | User | context/authority.md | ← All authority-dependent |
+| **Authority Rules** | User | @context/architecture/core/authority.md | ← All authority-dependent |
 | **Technical Patterns** | System | context/architecture/patterns.md | ← Implementation users |
 | **Tool Patterns** | System | context/architecture/claude_code/ | ← Tool users |
-| **Standards/Rules** | System | context/standards.md | → Specialized modules |
-| **Templates** | System | context/templates.md | ← Template users |
+| **Standards/Rules** | System | @context/architecture/standards/README.md | → Specialized modules |
+| **Templates** | System | context/architecture/templates/README.md | ← Template users |
 | **Data/Metrics** | System | context/data/ | ← Data consumers |
 | **UX/Conversation** | System | context/architecture/ux/ | ← UX implementers |
 
@@ -26,12 +26,12 @@ context/architecture/ux/component-decision-flowchart.md → placement-quick-refe
 
 #### **Semantic Triggers (Keyword-Based Classification)**
 - **User Vision**: "vision", "philosophy", "user wants", "vision discovery" → context/vision/
-- **Authority**: "authority", "permission", "user authority", "supremacy" → context/authority.md
+- **Authority**: "authority", "permission", "user authority", "supremacy" → @context/architecture/core/authority.md
 - **Technical**: "pattern", "implementation", "code", "technical" → context/architecture/patterns.md
-- **Standards**: "standard", "compliance", "quality", "enforcement" → context/standards.md
+- **Standards**: "standard", "compliance", "quality", "enforcement" → @context/architecture/standards/README.md
 
 #### **Authority Validation (Rapid Authority Chain)**
-- **Supreme Authority**: VISION.md → TRUTH_SOURCE.md → component authority
+- **Supreme Authority**: VISION.md → @context/architecture/core/truth-source.md → component authority
 - **User Authority**: User vision overrides all technical recommendations
 - **Authority Traceability**: Complete path from user authority to implementation
 - **Conflict Resolution**: User authority supremacy in all conflicts

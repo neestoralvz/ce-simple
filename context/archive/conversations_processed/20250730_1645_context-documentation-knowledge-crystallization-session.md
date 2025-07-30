@@ -19,7 +19,7 @@
 **ADR-001**: CLAUDE.md dispatcher reinforcement vocabulary optimization
 **ADR-004**: Critical patterns file size violation resolution protocol
 **ADR-005**: Systematic quality violations comprehensive action plan
-**Authority**: All decisions trace to user vision through TRUTH_SOURCE.md validation
+**Authority**: All decisions trace to user vision through @context/architecture/core/truth-source.md validation
 
 ### 4. Critical Quality Violation Resolution ✅
 **Immediate Resolution**: patterns.md successfully transformed to reference-only architecture (248 lines → ~80 lines)
@@ -106,7 +106,7 @@
 - ✅ **Guardian Role**: Operational with "no mercy" vision enforcement
 - ✅ **Partner Integration**: Constructive challenging through socratic methodology
 - ✅ **Standards System**: Systematic quality enforcement framework active
-- ✅ **Authority Chain**: Complete TRUTH_SOURCE.md → specialized components validation
+- ✅ **Authority Chain**: Complete @context/architecture/core/truth-source.md → specialized components validation
 
 ## EVOLUTION PATHWAY ESTABLISHED
 

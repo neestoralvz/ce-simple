@@ -3,7 +3,7 @@
 **30/07/2025 23:00 CDMX** | COMPLIANT/VIOLATION assessment vision
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → binary_enforcement_philosophy.md implements binary validation vision
+@context/vision/vision_foundation.md → supreme user authority → binary_enforcement_philosophy.md implements binary validation vision
 
 ## CORE BINARY PHILOSOPHY
 
@@ -65,7 +65,7 @@ context/principles/vision_foundation.md → supreme user authority → binary_en
 **Guardian binary function**: Vision enforcer with binary compliance validation  
 **Standards binary validation**: Implementation alignment through binary compliance
 **Quality gates**: Pre/mid/post-execution binary checkpoints
-**Authority source**: Direct TRUTH_SOURCE.md compliance
+**Authority source**: Direct @context/architecture/core/truth-source.md compliance
 
 ## VISION PROTECTION THROUGH BINARY CLARITY
 
@@ -84,7 +84,7 @@ context/principles/vision_foundation.md → supreme user authority → binary_en
 **Integration**: Binary enforcement + Constructive challenge = Complete vision serving
 
 ### Binary Assessment Protocol
-1. **Load authority** from TRUTH_SOURCE.md
+1. **Load authority** from @context/architecture/core/truth-source.md
 2. **Assess compliance** against vision requirements  
 3. **Report binary result**: COMPLIANT or VIOLATION only
 4. **Require immediate correction** for violations
@@ -98,9 +98,9 @@ context/principles/vision_foundation.md → supreme user authority → binary_en
 ---
 
 **INTEGRATION REFERENCES**
-**Vision Foundation**: ← context/principles/vision_foundation.md (supreme authority)
+**Vision Foundation**: ← @context/vision/vision_foundation.md (supreme authority)
 **Guardian Vision**: ←→ guardian_enforcement_vision.md (enforcement implementation)
 **Standards Vision**: ←→ standards_system_vision.md (quality binary validation)
-**Authority Framework**: ←→ context/authority.md (binary authority enforcement)
+**Authority Framework**: ←→ @context/architecture/core/authority.md (binary authority enforcement)
 
 **BINARY PHILOSOPHY DECLARATION**: This vision implements user authority for binary compliance assessment that eliminates ambiguity and prevents vision compromise through clear, immediate enforcement protocols.

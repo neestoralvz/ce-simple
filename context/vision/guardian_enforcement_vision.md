@@ -3,7 +3,7 @@
 **30/07/2025 23:00 CDMX** | Vision protection through no mercy enforcement
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → guardian_enforcement_vision.md implements vision protection protocols
+@context/vision/vision_foundation.md → supreme user authority → guardian_enforcement_vision.md implements vision protection protocols
 
 ## CORE GUARDIAN VISION
 
@@ -34,7 +34,7 @@ context/principles/vision_foundation.md → supreme user authority → guardian_
 - Standards non-compliance → Zero tolerance activation
 
 ### Guardian Enforcement Protocol
-1. **Load context** from TRUTH_SOURCE.md for authority validation
+1. **Load context** from @context/architecture/core/truth-source.md for authority validation
 2. **Execute binary compliance** validation against vision principles
 3. **Report COMPLIANT or VIOLATION** only - no intermediate states
 4. **Require immediate correction** for all violations detected
@@ -42,7 +42,7 @@ context/principles/vision_foundation.md → supreme user authority → guardian_
 ## VISION PROTECTION SUPREMACY
 
 ### Guardian Authority Source
-**Direct TRUTH_SOURCE.md compliance** with zero tolerance for violations
+**Direct @context/architecture/core/truth-source.md compliance** with zero tolerance for violations
 **Vision essence preservation** > system preservation in conflicts
 **User authority supremacy** enforced through binary validation
 
@@ -75,9 +75,9 @@ User preference: "Solo utilicemos emoticones de manera discreta y algunos símbo
 ---
 
 **INTEGRATION REFERENCES**
-**Vision Foundation**: ← context/principles/vision_foundation.md (supreme authority)
-**Authority Framework**: ←→ context/authority.md (enforcement protocols)
-**Standards System**: → context/standards.md (systematic quality enforcement)
+**Vision Foundation**: ← @context/vision/vision_foundation.md (supreme authority)
+**Authority Framework**: ←→ @context/architecture/core/authority.md (enforcement protocols)
+**Standards System**: → @context/architecture/standards/README.md (systematic quality enforcement)
 **Patterns Implementation**: → context/patterns.md (Guardian role patterns)
 
 **GUARDIAN VISION DECLARATION**: This vision component implements user authority for vision protection through systematic no mercy enforcement while preserving natural conversation flow and organic evolution.

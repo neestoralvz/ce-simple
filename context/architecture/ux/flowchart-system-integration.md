@@ -3,7 +3,7 @@
 **30/07/2025 14:00 CDMX** | System integration navigation for flowchart architecture
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → COMPONENT_DECISION_MATRIX.md + CROSS_REFERENCE_SYSTEM.md → flowchart-system-integration.md implements complete integration per system architecture authority
+@context/architecture/core/truth-source.md → COMPONENT_DECISION_MATRIX.md + CROSS_REFERENCE_SYSTEM.md → flowchart-system-integration.md implements complete integration per system architecture authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Flowchart system integrates seamlessly preserving all existing functionality while adding decision acceleration"** - Complete integration without disruption, enhancement without replacement.

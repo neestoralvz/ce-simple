@@ -5,10 +5,10 @@
 **29/07/2025 09:00 CDMX | Actualizado: 29/07/2025 09:00 CDMX** | Acción escritura documentación
 
 ## Función Core
-Crear documentación siguiendo estilo LLM-optimizado definido en context/patterns/documentation_style.md
+Crear documentación siguiendo estilo LLM-optimizado definido en context/architecture/patterns/enforcement_integration_patterns.md
 
 ## Context Import Automático
-**DEBE consultar:** → context/patterns/documentation_style.md
+**DEBE consultar:** → context/architecture/patterns/enforcement_integration_patterns.md
 **DEBE usar:** Templates apropiados según tipo documento
 **OBLIGATORIO:** Aplicar regla regeneración 10%
 
@@ -29,5 +29,5 @@ Crear documentación siguiendo estilo LLM-optimizado definido en context/pattern
 
 ---
 ## Enlaces → Información Complementaria  
-**Si necesitas estilo:** → context/patterns/documentation_style.md:1-50
+**Si necesitas estilo:** → context/architecture/patterns/enforcement_integration_patterns.md:1-50
 **Si requieres estructura:** → context/organization.md:15-40

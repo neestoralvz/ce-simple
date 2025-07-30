@@ -69,17 +69,17 @@
 ### For Consultation Roles
 ```markdown
 ## Context
-- context/TRUTH_SOURCE.md (for authority alignment)
-- context/system/principles/[relevant_principles].md
-- context/patterns/[expertise_domain].md
+- @context/architecture/core/truth-source.md (for authority alignment)
+- context/architecture/principles/[relevant_principles].md
+- context/architecture/patterns/[expertise_domain].md
 - Previous consultation results in context/decisions/
 ```
 
 ### For Execution Roles  
 ```markdown
 ## Context
-- context/patterns/orchestrator_methodology.md
-- context/enforcement/core_reminders.md
+- context/architecture/patterns/command_orchestration_patterns.md
+- context/architecture/core/methodology.md
 - .claude/commands/methodology/ (for execution patterns)
 - context/decisions/ (for system behavior)
 ```
@@ -114,4 +114,4 @@
 
 ---
 **Authority Source**: Role command analysis + behavioral consultation patterns
-**Template References**: context/templates/universal_do_dont_template.md
+**Template References**: context/architecture/templates/README.mduniversal_do_dont_template.md

@@ -3,7 +3,7 @@
 **29/07/2025 17:10 CDMX** | Modular template library for consistent subagent deployment
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Template Specialization Architecture
 
@@ -66,7 +66,7 @@ Advanced methodology templates for breakthrough implementations:
 ## Integration Framework
 
 ### Authority Framework Integration
-- All templates respect TRUTH_SOURCE.md supremacy
+- All templates respect @context/architecture/core/truth-source.md supremacy
 - User domain authority preserved throughout deployment
 - Authority chain validation: TRUTH_SOURCE → specialized context → subagent
 

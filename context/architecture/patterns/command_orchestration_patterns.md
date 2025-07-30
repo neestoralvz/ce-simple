@@ -63,7 +63,7 @@
 **Connection**: Command orchestration implements multi-conversation coordination
 **Protocol**: Patterns serve orchestration methodology through Task tool specialization
 
-### ←→ @context/methodology.md
+### ←→ @context/architecture/core/methodology.md
 **Connection**: Orchestration serves systematic methodology through specialized delegation
 **Protocol**: Patterns implement continuous execution and Think x4 through coordination
 

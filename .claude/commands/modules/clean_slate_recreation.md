@@ -5,17 +5,17 @@
 ### Phase 1: Desalineación Detection
 **Trigger:** Archivo no sigue lineamientos actualizados del sistema
 **Process:** 
-- Analizar archivo actual vs context/TRUTH_SOURCE.md
-- Identificar divergencias específicas con context/patterns/simplicity.md
+- Analizar archivo actual vs @context/architecture/core/truth-source.md
+- Identificar divergencias específicas con context/vision/simplicity.md
 - Detectar sesgo acumulativo de información obsoleta
 - Validar necesidad clean slate vs edit incremental
 **Validation:** Sesgo detectado > threshold || structural misalignment identificado
 
 ### Phase 2: Context Fresh Loading
 **Process:**
-- Load context/TRUTH_SOURCE.md para supreme authority
-- Reference context/patterns/simplicity.md para recreation guidelines
-- Apply context/enforcement/core_reminders.md metodologías
+- Load @context/architecture/core/truth-source.md para supreme authority
+- Reference context/vision/simplicity.md para recreation guidelines
+- Apply context/architecture/core/methodology.md metodologías
 - Clear mental model del archivo anterior (bias prevention)
 **Output:** Context limpio con guidelines actuales únicamente
 
@@ -24,7 +24,7 @@
 - **ELIMINAR** archivo existente (conceptual clean slate)
 - **RECREAR** desde cero usando ÚNICAMENTE lineamientos actuales
 - **APLICAR** Think x4 para optimal structure según guidelines
-- **VALIDAR** alignment completo con TRUTH_SOURCE.md
+- **VALIDAR** alignment completo con @context/architecture/core/truth-source.md
 **Validation:** Archivo nuevo 100% aligned + zero contamination anterior
 
 ### Phase 4: Integration Verification
@@ -57,6 +57,6 @@
 **Metadata obsoleto** detectado in headers/references  
 **Structural misalignment** con simplicity principles
 **Sesgo acumulativo** por edits incrementales repetidos
-**Authority conflicts** con TRUTH_SOURCE.md supremacy
+**Authority conflicts** con @context/architecture/core/truth-source.md supremacy
 
 **Usage**: Clean slate recreation to prevent bias accumulation and ensure guidelines alignment

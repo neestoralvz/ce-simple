@@ -3,7 +3,7 @@
 **30/07/2025 16:30 CDMX** | Comprehensive README system problem resolution
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → README troubleshooting serves system reliability
+@context/vision/vision_foundation.md → supreme user authority → README troubleshooting serves system reliability
 
 ## PRINCIPIO FUNDAMENTAL
 **"Systematic issue resolution with authority preservation"** - All troubleshooting maintains user authority supremacy while restoring system functionality.

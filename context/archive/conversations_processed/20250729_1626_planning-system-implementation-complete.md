@@ -27,8 +27,8 @@
 ### Technical Implementation Achieved
 
 #### Documentation Created
-- **context/planning/dependency_layers.md**: Universal construction patterns + anti-spontaneous development
-- **context/planning/semantic_planning.md**: Natural language intent recognition + command routing  
+- **context/architecture/core/methodology.mddependency_layers.md**: Universal construction patterns + anti-spontaneous development
+- **context/architecture/core/methodology.mdsemantic_planning.md**: Natural language intent recognition + command routing  
 - **context/operational/ce_simple_tracking.md**: Project-specific layer tracking (moved from planning/)
 
 #### Commands Implemented
@@ -60,7 +60,7 @@
 **Universal methodology**: Proven patterns applicable beyond ce-simple
 
 #### Methodology Integration
-**Authority preservation**: Planning respects TRUTH_SOURCE.md hierarchy
+**Authority preservation**: Planning respects @context/architecture/core/truth-source.md hierarchy
 **Reference architecture**: All commands follow ≤80 line + reference-only patterns  
 **User domain integrity**: Semantic recognition preserves natural language expression
 **Continuous execution**: Planning operations maintain workflow until completion
@@ -68,13 +68,13 @@
 ## Context Integration
 
 ### Planning State Updated
-- **context/planning/current.md**: Session achievements captured + next steps defined
-- **context/planning/consolidated.md**: Major breakthrough documented for future reference
+- **context/architecture/core/methodology.md**: Session achievements captured + next steps defined
+- **context/architecture/core/methodology.mdconsolidated.md**: Major breakthrough documented for future reference
 - **context/operational/ce_simple_tracking.md**: Project-specific tracking established
 
 ### Authority Chain Maintained
-- **Supreme authority**: TRUTH_SOURCE.md hierarchy respected
-- **Planning authority**: Universal methodology in context/planning/
+- **Supreme authority**: @context/architecture/core/truth-source.md hierarchy respected
+- **Planning authority**: Universal methodology in context/architecture/core/methodology.md
 - **Project tracking**: Specific implementation in context/operational/
 - **Command authority**: Self-contained commands in .claude/commands/planning/
 

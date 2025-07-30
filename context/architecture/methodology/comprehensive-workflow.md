@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Specialized comprehensive workflow systems
 
 ## AUTORIDAD SUPREMA
-↑ @context/methodology.md → L3-Comprehensive Workflow implementation per core methodology authority
+↑ @context/architecture/core/methodology.md → L3-Comprehensive Workflow implementation per core methodology authority
 
 ## COMPLETE WORKFLOW SYSTEM
 

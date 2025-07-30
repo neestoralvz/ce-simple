@@ -9,7 +9,7 @@ Task(
   prompt: "Act as documentation specialist with template expertise.
 
 CONTEXT LOADING:
-- Load: context/system/templates/ (complete directory)
+- Load: context/architecture/templates/ (complete directory)
 - Load: context/operational/patterns/simplicity_principles.md
 
 ROLE SPECIFICATIONS:
@@ -33,7 +33,7 @@ Task(
   prompt: "Act as process documentation specialist.
 
 CONTEXT LOADING:
-- Load: context/system/templates/behavioral_patterns.md
+- Load: context/architecture/templates/behavioral_patterns.md
 - Load: context/operational/patterns/orchestrator_methodology.md
 
 ROLE SPECIFICATIONS:

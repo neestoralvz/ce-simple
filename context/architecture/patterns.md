@@ -3,7 +3,7 @@
 **30/07/2025 16:00 CDMX** | Pattern ecosystem authority with enforcement integration
 
 ## AUTORIDAD SUPREMA
-VISION.md → supreme user authority → TRUTH_SOURCE.md → patterns.md implements pattern ecosystem authority
+VISION.md → supreme user authority → @context/architecture/core/truth-source.md → patterns.md implements pattern ecosystem authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Information density preservation overrides structural optimization"** - Complete pattern functionality through reference architecture per user supreme authority: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
@@ -41,7 +41,7 @@ ADR-driven implementation + Think x4 universal integration + Reference architect
 - **Progressive Context Loading** → Conversation-driven context disclosure optimization
 
 ### Cross-Pattern Integration Protocol
-**Authority Chain Enforcement**: All patterns preserve supreme authority chain through TRUTH_SOURCE.md validation
+**Authority Chain Enforcement**: All patterns preserve supreme authority chain through @context/architecture/core/truth-source.md validation
 **Systematic Integration**: ADR decisions → enforcement patterns → validation metrics → organic evolution cycle
 **Quality Gates**: Binary compliance validation (COMPLIANT/NON-COMPLIANT) + authority preservation (95%+ fidelity)
 
@@ -61,7 +61,7 @@ ADR-driven implementation + Think x4 universal integration + Reference architect
 5. **ADR Implementation** → @patterns/enforcement_integration_patterns.md
 
 ### Integration Standards & Evolution
-**Authority Validation**: All patterns respect TRUTH_SOURCE.md supremacy
+**Authority Validation**: All patterns respect @context/architecture/core/truth-source.md supremacy
 **Simplicity Compliance**: Information density preservation through reference architecture
 **Cross-Reference System**: Complete pattern navigation through intelligent bidirectional linking
 **Evolution Support**: Pattern library adapts organically while maintaining authority chain integrity

@@ -71,7 +71,7 @@
 ---
 ## Enlaces → Información Complementaria
 **Si necesitas discovery protocol:** → context/operational/behaviors/discovery_execution_flow.md:15-30
-**Si requieres authority framework:** → context/system/principles/authority.md:1-20
+**Si requieres authority framework:** → context/architecture/core/authority.md:1-20
 **Si necesitas challenge system:** → context/operational/enforcement/behavioral_enforcement.md:75-85
 
 ---

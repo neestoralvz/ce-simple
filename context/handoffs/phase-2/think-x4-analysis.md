@@ -18,7 +18,7 @@ PHASE_2_TEMPLATE_SYSTEM_COMPLIANCE_HANDOFF.md → think-x4-analysis.md implement
 
 **Impact**: Template system violates own standards, creates cognitive overload, contradicts user simplicity authority
 **Root Cause**: Over-consolidation without modular architecture planning
-**Authority**: User standards authority through context/standards.md requires ≤80 lines compliance
+**Authority**: User standards authority through @context/architecture/standards/README.md requires ≤80 lines compliance
 
 ### Think 2: Systematic Modularization Strategy  
 **Approach**: Reference hub + specialized modules maintaining complete functionality
@@ -27,7 +27,7 @@ PHASE_2_TEMPLATE_SYSTEM_COMPLIANCE_HANDOFF.md → think-x4-analysis.md implement
 **Quality**: Template system demonstrates own standards through compliance excellence
 
 ### Think 3: Authority Preservation Protocol
-**Chain**: TRUTH_SOURCE.md → templates.md → specialized template modules
+**Chain**: @context/architecture/core/truth-source.md → templates.md → specialized template modules
 **Validation**: User authority supremacy maintained through modularization process
 **Reference**: Bidirectional links preserve template system integrity and navigation
 **Evolution**: Modular architecture enables organic growth per user vision
@@ -40,5 +40,5 @@ PHASE_2_TEMPLATE_SYSTEM_COMPLIANCE_HANDOFF.md → think-x4-analysis.md implement
 
 ## INTEGRATION REFERENCES
 **Authority Source**: ↑ PHASE_2_TEMPLATE_SYSTEM_COMPLIANCE_HANDOFF.md (handoff authority)
-**Methodology**: ↑ context/methodology.md (Think x4 framework)
+**Methodology**: ↑ @context/architecture/core/methodology.md (Think x4 framework)
 **Implementation**: → handoff-objectives.md (systematic objectives)

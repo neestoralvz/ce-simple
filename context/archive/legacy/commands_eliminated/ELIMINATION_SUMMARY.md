@@ -28,7 +28,7 @@
 
 ### 2. Context System Updates
 - `context/operational/operations/quick_operations_reference.md`: Command reference updates
-- `context/patterns/reference_architecture.md`: Example routing updates
+- `context/architecture/patterns/reference_architecture.md`: Example routing updates
 - `context/operational/enforcement/triggers_semanticos.md`: Semantic trigger updates
 - `context/operational/enforcement/behavioral_enforcement.md`: Enforcement reference updates
 

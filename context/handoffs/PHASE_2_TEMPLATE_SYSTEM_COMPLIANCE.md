@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | Template system compliance restoration through systematic modularization
 
 ## AUTORIDAD SUPREMA
-@context/architecture/templates/README.md → @context/standards.md enforcement → Template compliance exemplar creation
+@context/architecture/templates/README.md → @context/architecture/standards/README.md enforcement → Template compliance exemplar creation
 
 ## PRINCIPIO FUNDAMENTAL
 **"Template system demonstrates its own standards through compliance excellence"** - Transform from standards violator to compliance exemplar while preserving complete functionality.

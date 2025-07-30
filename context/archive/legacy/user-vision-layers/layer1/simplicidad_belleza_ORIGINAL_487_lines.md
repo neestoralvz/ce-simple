@@ -3,7 +3,7 @@
 **30/07/2025 18:30 CDMX** | User vision authority hub with modular quote preservation
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → simplicidad_belleza_HUB.md implements user beauty philosophy through systematic modular quote preservation
+@context/vision/vision_foundation.md → supreme user authority → simplicidad_belleza_HUB.md implements user beauty philosophy through systematic modular quote preservation
 
 ## PRINCIPIO FUNDAMENTAL
 **"Por supuesto que la belleza va a estar en la simplicidad. Exacto"** - Core user aesthetic philosophy preserved through specialized quote modules.
@@ -47,11 +47,11 @@ context/principles/vision_foundation.md → supreme user authority → simplicid
 
 ## INTEGRATION REFERENCES
 
-### ←→ context/simplicity.md
+### ←→ @context/vision/simplicity.md
 **Connection**: Hub feeds specialized simplicity quotes to consolidated simplicity authority
 **Protocol**: Modular quotes serve comprehensive simplicity framework
 
-### ← context/principles/vision_foundation.md
+### ← @context/vision/vision_foundation.md
 **Authority Source**: Supreme user authority drives all simplicity quote preservation
 **Protocol**: Hub preserves complete user vision through modular quote architecture
 

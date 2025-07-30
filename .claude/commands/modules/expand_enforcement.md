@@ -19,7 +19,7 @@
 **Expansion complete when**:
 - All identified technical gaps completed
 - `/actions:docs/` truly complements ultra-dense CLAUDE.md
-- Each new file justified with TRUTH_SOURCE.md references
+- Each new file justified with @context/architecture/core/truth-source.md references
 - No missing implementational technical content
 
 **Completion message**: "Technical expansion complete - `/actions:docs/` now fully complements CLAUDE.md with user vision-based technical implementation"

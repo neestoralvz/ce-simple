@@ -76,5 +76,5 @@ Identifies areas requiring additional research
 - **Best practices verification** explicit and current
 
 ---
-**Authority Source**: context/enforcement/core_reminders.md:19-29 + research patterns
+**Authority Source**: context/architecture/core/methodology.md:19-29 + research patterns
 **Extracted from**: /roles:research, investigation patterns, WebSearch protocols

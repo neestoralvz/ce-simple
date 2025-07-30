@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Enforcement and reinforcement vocabulary methodology
 
 ## AUTORIDAD SUPREMA
-↑ @context/methodology.md → Enforcement Integration implementation per core methodology authority
+↑ @context/architecture/core/methodology.md → Enforcement Integration implementation per core methodology authority
 
 ## REINFORCEMENT VOCABULARY METHODOLOGY
 
@@ -31,7 +31,7 @@
 **OBLIGATORIO**: Web searches SIEMPRE concurrentes, batch operations para información independiente, múltiples tools simultáneos cuando posible
 
 ### Post-Validation Sistemática
-**FUNDAMENTAL**: Después cada delegación → verify alignment context/TRUTH_SOURCE.md + verify compliance simplicity principles + verify standards según context apropiado
+**FUNDAMENTAL**: Después cada delegación → verify alignment @context/architecture/core/truth-source.md + verify compliance simplicity principles + verify standards según context apropiado
 
 ---
 

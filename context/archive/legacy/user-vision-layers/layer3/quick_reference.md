@@ -29,7 +29,7 @@
 ## Revolutionary Key Principles Quick Reference
 
 ### Authority Hierarchy (Updated)
-- **user-vision/TRUTH_SOURCE.md** = Autoridad suprema con supremacía sistémica
+- **user-vision/@context/architecture/core/truth-source.md** = Autoridad suprema con supremacía sistémica
 - **Challenge system**: Protege contra stagnation Y over-engineering, pero user authority prevalece
 - **Balance principle**: "Simplification without information loss" + granularidad preservation
 
@@ -105,7 +105,7 @@ Background Processes (persistent intelligence)
 ├── CLAUDE.md                           # Dispatcher mínimo
 ├── .claude/commands/                   # Git-native workflows
 ├── user-vision/ (SUPREME AUTHORITY)    # Real-time integration
-│   ├── TRUTH_SOURCE.md                # Autoridad suprema
+│   ├── @context/architecture/core/truth-source.md                # Autoridad suprema
 │   ├── layer1/                        # Núcleos con quotes exactas
 │   ├── layer2/                        # Síntesis temática revolucionaria
 │   ├── layer3/                        # Docs oficiales (this layer)

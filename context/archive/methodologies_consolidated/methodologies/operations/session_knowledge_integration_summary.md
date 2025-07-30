@@ -3,7 +3,7 @@
 **29/07/2025 23:35 CDMX** | Knowledge integration execution report
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Integration Execution Report
 
@@ -18,7 +18,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 #### `/Users/nalve/ce-simple/context/operational/behaviors/orchestration_protocol.md`
 - **Integration**: Guardian activation triggers + role-based enforcement architecture
-- **Authority preservation**: TRUTH_SOURCE.md supremacy maintained
+- **Authority preservation**: @context/architecture/core/truth-source.md supremacy maintained
 - **Enhancement**: Complete enforcement coordination protocol
 
 #### `/Users/nalve/ce-simple/context/operational/patterns/subagent_specialization_patterns.md`
@@ -31,7 +31,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 - **Authority preservation**: User domain authority over execution pressure
 - **Enhancement**: Mature role coordination protocols
 
-#### `/Users/nalve/ce-simple/context/system/standards/notification_formatting_standards.md`
+#### `/Users/nalve/ce-simple/context/architecture/standards/notification_formatting_standards.md`
 - **Integration**: User-driven visual simplification validation
 - **Authority preservation**: User preference supremacy over AI optimization
 - **Enhancement**: Current standards confirmation with Guardian integration
@@ -41,7 +41,7 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 #### `/Users/nalve/ce-simple/context/operational/patterns/role_ecosystem_architecture.md`
 - **Purpose**: Complete enforcement framework documentation
 - **Content**: Guardian-Partner-Orchestrator coordination protocol
-- **Authority**: Complete role ecosystem with TRUTH_SOURCE.md supremacy
+- **Authority**: Complete role ecosystem with @context/architecture/core/truth-source.md supremacy
 - **Line count**: 79 lines (compliant)
 
 ### Authority Preservation Validation
@@ -74,5 +74,5 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 
 ---
 **Integration Protocol Compliance**: Knowledge integration protocol executed successfully
-**Authority Chain Integrity**: TRUTH_SOURCE.md → specialized context → implementation preserved
+**Authority Chain Integrity**: @context/architecture/core/truth-source.md → specialized context → implementation preserved
 **System Enhancement**: Complete enforcement architecture achieved while maintaining simplicity principles

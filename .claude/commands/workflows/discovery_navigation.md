@@ -5,7 +5,7 @@
 ## Command Purpose
 Enable users to discover system capabilities through natural conversation rather than reading documentation. System reveals functionality organically through dialogue.
 
-**LOAD:** @context/vision/vision_foundation.md + @context/methodology.md
+**LOAD:** @context/vision/vision_foundation.md + @context/architecture/core/methodology.md
 
 ## Core Philosophy
 **"El sistema se descubre a sí mismo a través de conversación natural, no de documentación"**

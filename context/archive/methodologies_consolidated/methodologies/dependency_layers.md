@@ -29,7 +29,7 @@ Core Logic → Commands → Configuration → Packaging → Distribution
 
 ### Current Layer Status
 **Layer 1: Context Maturation** ✅ COMPLETED
-- context/TRUTH_SOURCE.md stable
+- @context/architecture/core/truth-source.md stable
 - Methodology protocols established  
 - Authority hierarchy crystallized
 
@@ -95,7 +95,7 @@ Core Logic → Commands → Configuration → Packaging → Distribution
 ---
 ## Enlaces → Información Complementaria
 **Si necesitas command implementation:** → .claude/commands/planning/
-**Si requieres semantic triggers:** → context/TRUTH_SOURCE.md:22-50
+**Si requieres semantic triggers:** → @context/architecture/core/truth-source.md:22-50
 **Si buscas semantic planning:** → context/operational/patterns/semantic_planning.md
 
 ---

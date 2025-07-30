@@ -63,11 +63,11 @@
 
 ## INTEGRATION REFERENCES
 
-### ←→ @context/methodology.md
+### ←→ @context/architecture/core/methodology.md
 **Connection**: Creative tensions serve systematic methodology through balanced execution
 **Protocol**: Tension patterns implement continuous execution with planning discipline
 
-### ←→ @context/authority.md
+### ←→ @context/architecture/core/authority.md
 **Connection**: Creative tensions preserve user authority through workflow balance management
 
 ### ← @context/architecture/patterns.md

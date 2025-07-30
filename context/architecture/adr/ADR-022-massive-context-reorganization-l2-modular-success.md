@@ -3,7 +3,7 @@
 **30/07/2025 18:00 CDMX** | Major architectural transformation through systematic modularization
 
 ## AUTORIDAD SUPREMA
-context/methodology.md → L2-MODULAR extraction → ADR-022 documents revolutionary reorganization success per empirical validation
+@context/architecture/core/methodology.md → L2-MODULAR extraction → ADR-022 documents revolutionary reorganization success per empirical validation
 
 ## STATUS
 **APPROVED** - Successfully implemented with empirical validation

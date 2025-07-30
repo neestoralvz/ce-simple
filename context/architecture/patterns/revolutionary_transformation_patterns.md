@@ -67,11 +67,11 @@
 
 ## INTEGRATION REFERENCES
 
-### ←→ @context/methodology.md
+### ←→ @context/architecture/core/methodology.md
 **Connection**: Empirical elimination serves systematic methodology validation
 **Protocol**: Revolutionary transformation validates methodology through evidence-based testing
 
-### ←→ @context/simplicity.md  
+### ←→ @context/vision/simplicity.md  
 **Connection**: Evidence-based elimination implements simplicity principles
 
 ### ← @context/architecture/patterns.md

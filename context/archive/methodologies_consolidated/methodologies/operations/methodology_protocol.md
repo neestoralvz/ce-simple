@@ -56,7 +56,7 @@
 
 ### User-Vision Consultation Mandatory
 **Before any systemic changes:**
-- **TRUTH_SOURCE.md review** → Authority validation required
+- **@context/architecture/core/truth-source.md review** → Authority validation required
 - **Real-time integration** → Changes generate user-vision proposals automatically
 - **Challenge protection** → Apply challenge system against changes
 - **User authority supremacy** → User feedback overrides AI recommendations

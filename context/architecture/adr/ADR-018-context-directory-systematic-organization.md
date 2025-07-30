@@ -31,7 +31,7 @@ Implement **SYSTEMATIC CONTEXT DIRECTORY ORGANIZATION** with README hub navigati
 #### README Hub Navigation System
 **Component**: Each directory contains README.md serving as navigation hub
 **Progressive Disclosure**: README provides overview → detailed components on demand  
-**Authority Chain**: README maintains connection to supreme authority (VISION.md → TRUTH_SOURCE.md)
+**Authority Chain**: README maintains connection to supreme authority (VISION.md → @context/architecture/core/truth-source.md)
 **Cross-Integration**: README includes bidirectional references to related domains
 
 #### Semantic Trigger Integration
@@ -174,7 +174,7 @@ context/
 
 ---
 
-**Decision Makers**: User Vision Authority + TRUTH_SOURCE.md Implementation
+**Decision Makers**: User Vision Authority + @context/architecture/core/truth-source.md Implementation
 **Stakeholders**: All system users, conversation participants, architectural evolution
 **Review Date**: 2025-10-30 (quarterly evolution assessment)
 **Implementation Priority**: HIGH - Enables conversation-first development through systematic organization

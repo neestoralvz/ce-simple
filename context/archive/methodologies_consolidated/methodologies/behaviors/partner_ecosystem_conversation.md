@@ -3,10 +3,10 @@
 **29/07/2025 07:58 CDMX** | Sesión /roles:partner - Arquitectura ecosistema comandos
 
 ## AUTORIDAD SUPREMA
-context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
 
 ## Authority Framework Integration
-**OBLIGATORIO**: Ecosystem design DEBE preserve TRUTH_SOURCE.md authority hierarchy
+**OBLIGATORIO**: Ecosystem design DEBE preserve @context/architecture/core/truth-source.md authority hierarchy
 **SIEMPRE**: Partner conversations validate against user vision supremacy
 **Think x4**: Systematic analysis applied to architectural decisions
 **Continuous execution**: Design sessions flow without artificial interruptions
@@ -62,7 +62,7 @@ Investigación mostró arquitectura modular exitosa:
 **Comando /style:** Para análisis estilo escritura compacto, callable en cualquier momento
 
 **Fórmulas Dinámicas:** 
-- `/roles:partner = context/system/principles/simplicity + context/patterns/tone`
+- `/roles:partner = context/architecture/principles/simplicity + context/architecture/patterns/tone`
 - `/workflows:distill = context/decisions/architecture + executable/organization`
 - Economía tokens: solo carga contexto necesario
 

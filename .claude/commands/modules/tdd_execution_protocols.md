@@ -31,7 +31,7 @@
 ```
 Task(
   description: "Implementation execution",
-  prompt: "Act as implementation specialist. Load context from @context/simplicity.md. Execute development following quality gates and anti-pattern prevention. Apply TDD methodology with success criteria: [specific criteria]. Use Git WorkTree for safe experimentation.",
+  prompt: "Act as implementation specialist. Load context from @context/vision/simplicity.md. Execute development following quality gates and anti-pattern prevention. Apply TDD methodology with success criteria: [specific criteria]. Use Git WorkTree for safe experimentation.",
   subagent_type: "general-purpose"
 )
 ```
@@ -40,7 +40,7 @@ Task(
 ```
 Task(
   description: "TDD validation",
-  prompt: "Act as validation specialist. Load context from context/TRUTH_SOURCE.md. Test implementation against success criteria: [criteria]. Apply recursive validation protocol. Report success/failure with specific evidence.",
+  prompt: "Act as validation specialist. Load context from @context/architecture/core/truth-source.md. Test implementation against success criteria: [criteria]. Apply recursive validation protocol. Report success/failure with specific evidence.",
   subagent_type: "general-purpose"
 )
 ```

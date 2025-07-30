@@ -13,10 +13,10 @@ fi
 
 # Secondary validation
 required_files=(
-    "./context/TRUTH_SOURCE.md"
-    "./context/methodology.md"
-    "./context/authority.md"
-    "./context/simplicity.md"
+    "./@context/architecture/core/truth-source.md"
+    "./context/architecture/core/methodology.md"
+    "./context/architecture/core/authority.md"
+    "./context/vision/simplicity.md"
     "./context/architecture/claude_code/orchestration_protocols.md"
 )
 

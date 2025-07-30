@@ -168,6 +168,6 @@ User confirmed: "hazlo" - Proceed with systematic repair
 **User Voice**: Preserved through systematic quote organization + traceability
 **System Status**: 100% functional with established pathway to complete compliance
 
-**Integration**: → context/planning/current.md (comprehensive planning evolution)
+**Integration**: → context/architecture/core/methodology.md (comprehensive planning evolution)
 **Authority**: User vision maintained throughout architectural transformation
 **Continuity**: Next session ready with clear 0-violation completion pathway

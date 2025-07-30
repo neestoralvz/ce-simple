@@ -3,7 +3,7 @@
 **30/07/2025 16:00 CDMX** | Comprehensive README system maintenance protocols
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → README system maintenance authority
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → README system maintenance authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Organic system evolution while preserving authority integrity"** - README system evolves based on empirical usage patterns while maintaining complete authority chain and navigation effectiveness.
@@ -50,7 +50,7 @@ System Maintenance:
 ### **Entry Points**
 - **Template System**: ← @README.md (template system maintenance authority)
 - **Architecture System**: ← @../README.md (architecture maintenance integration)
-- **System Coordination**: ← @../../TRUTH_SOURCE.md (maintenance validation)
+- **System Coordination**: ← @../../@context/architecture/core/truth-source.md (maintenance validation)
 
 ### **Maintenance Pathways**
 - **Daily Operations**: → @system-maintenance/daily-operations.md

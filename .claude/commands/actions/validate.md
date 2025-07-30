@@ -34,4 +34,4 @@ Ejecuta validación completa del trabajo realizado siguiendo los estándares de 
 - Lista de issues encontrados con priorización
 - Plan de acciones correctivas
 - Certificación de compliance (si todo pasa)
-- Documentación en `/context/claude_code/sessions/`
+- Documentación en `/@context/architecture/claude_code/sessions/`

@@ -3,7 +3,7 @@
 **30/07/2025 13:15 CDMX** | Visual decision tree navigation for systematic content placement
 
 ## AUTORIDAD SUPREMA
-context/vision/vision_foundation.md → TRUTH_SOURCE.md → COMPONENT_DECISION_MATRIX.md → component-decision-flowchart.md implements visual decision intelligence
+context/vision/vision_foundation.md → @context/architecture/core/truth-source.md → COMPONENT_DECISION_MATRIX.md → component-decision-flowchart.md implements visual decision intelligence
 
 ## PRINCIPIO FUNDAMENTAL
 **"Visual decision tree eliminates placement paralysis while preserving systematic accuracy"** - Every content placement follows clear visual pathways with authority validation at each step.
@@ -41,7 +41,7 @@ context/vision/vision_foundation.md → TRUTH_SOURCE.md → COMPONENT_DECISION_M
 ## DECISION INTELLIGENCE
 
 ### **Entry Points** 
-- **Supreme Authority**: ← @TRUTH_SOURCE.md (visual decision authority validation)
+- **Supreme Authority**: ← @context/architecture/core/truth-source.md (visual decision authority validation)
 - **Integration Matrix**: ← @COMPONENT_DECISION_MATRIX.md (integration pathways)
 - **Content Classification**: ← All content requiring systematic placement
 

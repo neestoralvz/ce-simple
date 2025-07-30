@@ -32,7 +32,7 @@ Quantitative foundation for evidence-based system evolution. This component capt
 
 ## Integration Points
 
-### ↑ TRUTH_SOURCE.md
+### ↑ @context/architecture/core/truth-source.md
 **Authority Source**: Supreme authority context validates all metric interpretations
 **Connection**: All metrics validate system alignment with user vision
 **Protocol**: Data informs decisions but never overrides user authority
@@ -94,5 +94,5 @@ Quantitative foundation for evidence-based system evolution. This component capt
 
 ---
 
-**Authority Chain**: VISION.md → TRUTH_SOURCE.md → data/ component → empirical evidence → user-validated insights
+**Authority Chain**: VISION.md → @context/architecture/core/truth-source.md → data/ component → empirical evidence → user-validated insights
 **Evolution Protocol**: Measurement → Analysis → User Validation → Authority-Aligned Implementation

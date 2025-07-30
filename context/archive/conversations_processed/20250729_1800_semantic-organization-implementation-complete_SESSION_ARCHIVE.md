@@ -26,9 +26,9 @@
 - `context/operational/operations/quick_operations_reference.md:7` - ${CONVERSATION_STORAGE} variable implementation
 - `context/operational/behaviors/session_analysis.md:36` - "raw preparation" → semantic terminology
 - `context/operational/patterns/distillation_layers.md:15,83` - Path updates + terminology consistency
-- `context/system/organization.md:47,78` - Hardcoded references → semantic variables
-- `context/system/ANTI_PATTERNS.md` - Reframed as semantic organization compliance issue
-- `context/system/SEMANTIC_ORGANIZATION.md:13` - Path correction to match actual directory structure
+- `context/architecture/organization.md:47,78` - Hardcoded references → semantic variables
+- `context/architecture/ANTI_PATTERNS.md` - Reframed as semantic organization compliance issue
+- `context/architecture/SEMANTIC_ORGANIZATION.md:13` - Path correction to match actual directory structure
 - `scripts/fix-raw-conversations.sh` - Updated to use semantic organization variables
 - `README.md:38,68` - Documentation terminology updates
 
@@ -108,12 +108,12 @@
 - @context/operational/patterns/organic_evolution.md:86-108
 
 **Technical Implementation:**
-- @context/system/SEMANTIC_ORGANIZATION.md - Corrected configuration authority
-- @context/system/ANTI_PATTERNS.md - Updated compliance monitoring
+- @context/architecture/SEMANTIC_ORGANIZATION.md - Corrected configuration authority
+- @context/architecture/ANTI_PATTERNS.md - Updated compliance monitoring
 - @scripts/fix-raw-conversations.sh - Semantic organization compliance restoration
 
 **Authority Sources:**
-- @context/TRUTH_SOURCE.md - Supreme authority preserved
+- @context/architecture/core/truth-source.md - Supreme authority preserved
 - @context/operational/patterns/authority_framework.md - User domain respect maintained
 - @context/operational/patterns/simplicity_principles.md - Complexity elimination achieved
 

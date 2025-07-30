@@ -3,7 +3,7 @@
 **30/07/2025 09:10 CDMX** | Ultra-consolidated methodology with complete user authority preservation
 
 ## AUTORIDAD SUPREMA
-VISION.md → TRUTH_SOURCE.md → methodology.md implements complete methodology architecture per user vision
+VISION.md → @context/architecture/core/truth-source.md → methodology.md implements complete methodology architecture per user vision
 
 ## CORE METHODOLOGY AUTHORITY
 
@@ -31,7 +31,7 @@ VISION.md → TRUTH_SOURCE.md → methodology.md implements complete methodology
 ### L2-Operational Methodology
 **Research-First Protocol**: → architecture/methodology/operational-methodology.md
 **Empirical Elimination**: Evidence-based structure determination through systematic testing
-**Quality Gates**: Creation → Alignment → Verification protocol with TRUTH_SOURCE.md validation
+**Quality Gates**: Creation → Alignment → Verification protocol with @context/architecture/core/truth-source.md validation
 
 ### L3-Comprehensive Workflow Architecture  
 **Complete Workflow System**: → architecture/methodology/comprehensive-workflow.md

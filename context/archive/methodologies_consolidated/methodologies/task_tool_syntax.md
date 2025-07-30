@@ -25,11 +25,11 @@ Task(
 **Purpose**: Ensure subagent has required domain knowledge
 
 ### Context Path Specifications
-- **Authority**: `context/TRUTH_SOURCE.md`
+- **Authority**: `@context/architecture/core/truth-source.md`
 - **Methodology**: `context/operational/patterns/orchestrator_methodology.md`
 - **Validation**: `context/operational/patterns/authority_framework.md`
 - **Quality**: `context/operational/patterns/simplicity_principles.md`
-- **Templates**: `context/system/templates/`
+- **Templates**: `context/architecture/templates/`
 
 ## Error Prevention Protocol
 
@@ -52,7 +52,7 @@ Task(
 // Partner validation
 Task(
   description: "Authority validation", 
-  prompt: "Act as partner validation specialist. Load context from context/TRUTH_SOURCE.md and context/operational/patterns/authority_framework.md. Challenge architectural decisions using socratic methodology. Verify alignment with user vision and simplicity principles.",
+  prompt: "Act as partner validation specialist. Load context from @context/architecture/core/truth-source.md and context/operational/patterns/authority_framework.md. Challenge architectural decisions using socratic methodology. Verify alignment with user vision and simplicity principles.",
   subagent_type: "general-purpose"
 )
 ```
@@ -72,7 +72,7 @@ Task(
 ```
 Task(
   description: "Alignment verification",
-  prompt: "Verify previous task alignment with context/TRUTH_SOURCE.md and context/operational/patterns/simplicity_principles.md. Validate standards compliance and authority preservation.",
+  prompt: "Verify previous task alignment with @context/architecture/core/truth-source.md and context/operational/patterns/simplicity_principles.md. Validate standards compliance and authority preservation.",
   subagent_type: "general-purpose"
 )
 ```

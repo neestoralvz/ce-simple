@@ -3,7 +3,7 @@
 **30/07/2025 17:35 CDMX** | Pure orchestrator methodology consolidation and systematization
 
 ## AUTORIDAD SUPREMA
-@context/methodology.md → L4-Pure Orchestration Authority → @context/architecture/claude_code/orchestration_protocols.md → Complete orchestration systematization per user vision
+@context/architecture/core/methodology.md → L4-Pure Orchestration Authority → @context/architecture/claude_code/orchestration_protocols.md → Complete orchestration systematization per user vision
 
 ## PRINCIPIO FUNDAMENTAL
 **"Pure orchestrator methodology requires complete systematization for exponential capability multiplication"** - Consolidate all orchestration protocols into unified authority enabling "Agent principal functions EXCLUSIVELY as expert AI agent orchestrator" through systematic multi-conversation parallel execution.
@@ -13,9 +13,9 @@
 ### **Primary Consolidation Files**
 ```
 ORCHESTRATION_CONSOLIDATION_TARGET:
-├── context/claude_code/orchestration_protocols.md: 319 lines (fragmented protocols)
-├── context/methodology.md: L4-Pure Orchestration sections (164 lines total)
-├── context/patterns/command_orchestration_patterns.md: 165 lines (orchestration patterns)
+├── @context/architecture/claude_code/orchestration_protocols.md: 319 lines (fragmented protocols)
+├── @context/architecture/core/methodology.md: L4-Pure Orchestration sections (164 lines total)
+├── context/architecture/patterns/command_orchestration_patterns.md: 165 lines (orchestration patterns)
 ├── Multiple ADR files: Orchestration decision documentation
 └── Archive methodologies: Scattered orchestration intelligence
 ```

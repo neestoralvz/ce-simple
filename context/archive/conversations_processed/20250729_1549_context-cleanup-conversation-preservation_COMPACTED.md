@@ -16,7 +16,7 @@
 **Learning Trigger**: Error → systematic protocol development initiation
 
 ### 3. Conversation Preservation Protocol Authority Integration
-**Implementation**: TRUTH_SOURCE.md authority addition with multi-layer enforcement
+**Implementation**: @context/architecture/core/truth-source.md authority addition with multi-layer enforcement
 **Authority Rule**: USER ONLY elimination after processing verification
 **System Response**: Challenge system MUST activate on archive operations
 
@@ -31,12 +31,12 @@ rm -rf context/planning  # restored
 rm -rf context/raw  # restored
 
 # Successful consolidations
-mv context/examples/templates/* context/system/templates/
+mv context/examples/templates/* context/architecture/templates/
 mv context/modules/workflows/* context/operational/
 ```
 
 ### Authority Integration Changes
-1. **TRUTH_SOURCE.md**: Conversation Preservation Protocol added
+1. **@context/architecture/core/truth-source.md**: Conversation Preservation Protocol added
 2. **Anti-patterns**: Archive elimination prevention documented
 3. **Templates**: Conversation protection requirements integrated
 4. **Behavioral enforcement**: Validation gates activated
@@ -71,7 +71,7 @@ mv context/modules/workflows/* context/operational/
 - **Partner accountability**: Challenge system activation mandated
 
 ### Protocol Established (Supreme Authority Integration)
-**TRUTH_SOURCE.md Addition**:
+**@context/architecture/core/truth-source.md Addition**:
 ```markdown
 ### Conversation Preservation Protocol
 **MANDATORY PROTECTION**: Conversations cannot be eliminated unless fully processed

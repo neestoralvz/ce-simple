@@ -26,7 +26,7 @@ Transform conversation insights into permanent system knowledge through systemat
 - Simplicity principle applications from complexity discoveries
 
 **Think 4 - Authority Preservation**: ¿Se mantiene user voice durante integración?
-- Validate against context/TRUTH_SOURCE.md authority
+- Validate against @context/architecture/core/truth-source.md authority
 - Preserve user domain vs AI domain boundaries
 - Maintain conversation essence and user vision integrity
 
@@ -94,7 +94,7 @@ Transform conversation insights into permanent system knowledge through systemat
 ## Integration Execution
 
 ### Pre-Integration Validation
-1. **Authority check** → Validate against TRUTH_SOURCE.md
+1. **Authority check** → Validate against @context/architecture/core/truth-source.md
 2. **Simplicity assessment** → Ensure ≤80 lines compliance
 3. **Reference architecture** → Maintain reference-only structure
 4. **Duplication prevention** → Check for existing similar knowledge
@@ -125,5 +125,5 @@ Transform conversation insights into permanent system knowledge through systemat
 
 ---
 **Integration Point**: Called by /workflows:close after Think x4 session analysis
-**Authority Source**: context/TRUTH_SOURCE.md + session-derived insights
+**Authority Source**: @context/architecture/core/truth-source.md + session-derived insights
 **Compliance**: ≤80 lines + reference-only + authority preservation

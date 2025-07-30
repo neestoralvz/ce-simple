@@ -2,7 +2,7 @@
 
 **Date**: 30/07/2025  
 **Status**: Implemented  
-**Authority**: User vision → TRUTH_SOURCE.md → architecture decision
+**Authority**: User vision → @context/architecture/core/truth-source.md → architecture decision
 
 ## CONTEXT
 User requested conversion of CLAUDE.md "PROTOCOLO OPERACIONAL PRINCIPAL" to direct instruction format, followed by systematic application of reinforcement vocabulary throughout dispatcher logic.

@@ -3,7 +3,7 @@
 **30/07/2025 12:00 CDMX** | Systematic component relationship navigation with authority-preserved flows
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → COMPONENT_DECISION_MATRIX.md implements integration intelligence per cross-reference system authority
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → COMPONENT_DECISION_MATRIX.md implements integration intelligence per cross-reference system authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Integration pathways serve conversation-first development"** - Component relationships designed to eliminate friction in natural dialogue workflows while preserving complete authority chain integrity.
@@ -17,7 +17,7 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 - **Supremacy Preservation**: User authority overrides all technical integration decisions
 
 ### **Context Core Integration Matrix**
-- **Core Context Loading**: vision_foundation.md, TRUTH_SOURCE.md, authority.md, methodology.md, simplicity.md
+- **Core Context Loading**: vision_foundation.md, @context/architecture/core/truth-source.md, authority.md, methodology.md, simplicity.md
 - **Conditional Loading**: Context components loaded based on semantic pattern recognition
 - **Authority Preservation**: Context integration maintains authority chain integrity
 - **Progressive Disclosure**: Context loading adapts to conversation depth and complexity

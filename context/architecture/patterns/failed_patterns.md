@@ -3,7 +3,7 @@
 **30/07/2025 11:15 CDMX** | Empirically identified anti-patterns
 
 ## AUTORIDAD SUPREMA
-VISION.md → TRUTH_SOURCE.md → failed patterns prevention
+VISION.md → @context/architecture/core/truth-source.md → failed patterns prevention
 
 ## EMPIRICALLY IDENTIFIED ANTI-PATTERNS
 
@@ -100,7 +100,7 @@ VISION.md → TRUTH_SOURCE.md → failed patterns prevention
 
 ### Recovery Protocols
 1. **Immediate Stop**: Halt current approach upon failure detection
-2. **User Authority Validation**: Return to TRUTH_SOURCE.md for guidance
+2. **User Authority Validation**: Return to @context/architecture/core/truth-source.md for guidance
 3. **Clean Slate Assessment**: Determine if reconstruction needed
 4. **Empirical Testing**: Apply discovery through elimination
 5. **User Confirmation**: Validate recovery approach before proceeding

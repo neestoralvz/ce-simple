@@ -23,25 +23,25 @@ Web searches SIEMPRE concurrentes cuando research requerido
 
 ### Post-validation sistemática
 Después de cada delegación → segundo Task tool para verificación
-Validates alignment con user-vision/TRUTH_SOURCE.md
-Validates compliance con context/patterns/simplicity.md
-Validates standards según context/patterns/documentation_style.md
+Validates alignment con user-vision/@context/architecture/core/truth-source.md
+Validates compliance con context/vision/simplicity.md
+Validates standards según context/architecture/patterns/enforcement_integration_patterns.md
 
 ## Patrones reconocimiento → delegación
 
 ### Research/Investigation
 Keywords: "investigar", "buscar", "analizar", "research"
-Delegación: Task tool → /roles:research + context/roles:research/ + context/patterns/orchestrator_methodology.md
-Post-validation: Alignment con user-vision/TRUTH_SOURCE.md
+Delegación: Task tool → /roles:research + context/roles:research/ + context/architecture/patterns/command_orchestration_patterns.md
+Post-validation: Alignment con user-vision/@context/architecture/core/truth-source.md
 
 ### Documentation  
 Keywords: "documentar", "crear archivo", "escribir"
-Delegación: Task tool → /actions:docs + context/templates/ + context/patterns/documentation_style.md
+Delegación: Task tool → /actions:docs + context/architecture/templates/README.md + context/architecture/patterns/enforcement_integration_patterns.md
 Post-validation: Standards documentation_style.md
 
 ### Architecture/System
 Keywords: "sistema", "arquitectura", "cambiar", "mejorar"
-Delegación: Task tool → /roles:partner + user-vision/TRUTH_SOURCE.md
+Delegación: Task tool → /roles:partner + user-vision/@context/architecture/core/truth-source.md
 Post-validation: Authority alignment verification
 
 ### Multi-conversación parallel

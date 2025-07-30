@@ -120,10 +120,10 @@
 - Technical implementation serves user-defined project goals  
 - System evolution guided by user feedback and preferences
 - Authority hierarchy maintained throughout planning process
-- **VALIDATED**: Revolutionary methodology integration preserves TRUTH_SOURCE.md supremacy
+- **VALIDATED**: Revolutionary methodology integration preserves @context/architecture/core/truth-source.md supremacy
 
 ---
-**Authority Source**: `context/planning/ce_simple_tracking.md:1-80` + `context/planning/current.md:7-13` + Revolutionary methodology integration evidence
+**Authority Source**: `context/architecture/core/methodology.mdce_simple_tracking.md:1-80` + `context/architecture/core/methodology.md:7-13` + Revolutionary methodology integration evidence
 **Integration**: → planning_operations.md:15-25, knowledge_integration_protocol.md:35-60, revolutionary_methodology_templates.md
 **Triggers**: Planning system creation, methodology validation needs, universal template development, revolutionary methodology integration validation
 **Revolution Validated**: Real-time user application evidence proves system evolution success with authority preservation

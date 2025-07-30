@@ -3,7 +3,7 @@
 **30/07/2025 16:45 CDMX** | README system integration point management
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → README integration serves system coherence
+@context/vision/vision_foundation.md → supreme user authority → README integration serves system coherence
 
 ## PRINCIPIO FUNDAMENTAL
 **"Integration coherence with authority preservation"** - All README system integrations maintain user authority supremacy while ensuring seamless system operation.
@@ -50,7 +50,7 @@ Integration Maintenance System:
 ### **Entry Points**
 - **Template System**: ← @README.md (template integration authority)
 - **Architecture System**: ← @../README.md (architecture integration)
-- **System Coordination**: ← @../../TRUTH_SOURCE.md (integration validation)
+- **System Coordination**: ← @../../@context/architecture/core/truth-source.md (integration validation)
 
 ### **Integration Pathways**
 - **System Integration**: → @integration-maintenance/[system]-integration.md

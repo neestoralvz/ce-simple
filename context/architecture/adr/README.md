@@ -49,9 +49,9 @@ Reference to user vision/authority source
 ```
 
 ## CROSS-REFERENCES
-- **Authority validation**: @context/authority.md decision hierarchy
+- **Authority validation**: @context/architecture/core/authority.md decision hierarchy
 - **Vision alignment**: @context/vision/vision_foundation.md foundation check
-- **Implementation impact**: @context/methodology.md process integration
+- **Implementation impact**: @context/architecture/core/methodology.md process integration
 
 ---
-**AUTHORITY**: All ADRs validated against TRUTH_SOURCE.md before acceptance
+**AUTHORITY**: All ADRs validated against @context/architecture/core/truth-source.md before acceptance

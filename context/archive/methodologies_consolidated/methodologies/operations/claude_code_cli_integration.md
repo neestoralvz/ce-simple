@@ -22,7 +22,7 @@
 ### Context Loading Evolution
 **Smart Context Loading:**
 - Conditional imports based on conversation context
-- Authority-first loading (TRUTH_SOURCE.md always)
+- Authority-first loading (@context/architecture/core/truth-source.md always)
 - Modular context expansion según needs
 - Token optimization through selective loading
 

@@ -12,11 +12,11 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 ⚠️ **CUMPLIMIENTO OBLIGATORIO**: Toda acción debe seguir este protocolo SIN EXCEPCIÓN
 
 **PROTOCOLO CORE**: @context/architecture/claude_code/orchestration_protocols.md → Hybrid orchestration authority
-**METHODOLOGY AUTHORITY**: @context/methodology.md → L4-Pure Orchestration + Think x4 + Research-First
-**AUTHORITY VALIDATION**: @context/TRUTH_SOURCE.md → Context architecture dispatcher
+**METHODOLOGY AUTHORITY**: @context/architecture/core/methodology.md → L4-Pure Orchestration + Think x4 + Research-First
+**AUTHORITY VALIDATION**: @context/architecture/core/truth-source.md → Context architecture dispatcher
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → CLAUDE.md implements vision through intelligent dispatch
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → CLAUDE.md implements vision through intelligent dispatch
 
 ## PROJECT CONTEXT
 **Overview**: README.md - Project description, philosophy, architecture overview
@@ -24,25 +24,25 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 
 ## CONTEXTO CORE SIEMPRE CARGADO
 @context/vision/vision_foundation.md
-@context/TRUTH_SOURCE.md
-@context/methodology.md
-@context/authority.md
-@context/simplicity.md
+@context/architecture/core/truth-source.md
+@context/architecture/core/methodology.md
+@context/architecture/core/authority.md
+@context/vision/simplicity.md
 
 ## SEMANTIC TRIGGERS → CONDITIONAL CONTEXT LOADING
 
 ### IF semantic_pattern=research_investigation:
-**LOAD**: @context/architecture/claude_code/methodology/README.md + @context/methodology.md + @context/vision/README.md
+**LOAD**: @context/architecture/claude_code/methodology/README.md + @context/architecture/core/methodology.md + @context/vision/README.md
 **EXECUTE**: Research specialist template per methodology authority
 **VALIDATE**: Post-delegation validation protocol
 
 ### IF semantic_pattern=documentation_creation:
-**LOAD**: @context/architecture/templates/README.md + @context/standards.md + @context/CROSS_REFERENCE_SYSTEM.md
+**LOAD**: @context/architecture/templates/README.md + @context/architecture/standards/README.md + @context/architecture/reference/README.md
 **EXECUTE**: Documentation builder template per template authority
 **VALIDATE**: Standards compliance validation
 
 ### IF semantic_pattern=architecture_system_change:
-**LOAD**: @context/architecture/README.md + @context/TRUTH_SOURCE.md + @context/vision/README.md
+**LOAD**: @context/architecture/README.md + @context/architecture/core/truth-source.md + @context/vision/README.md
 **EXECUTE**: Partner validation template per architecture authority
 **VALIDATE**: Authority alignment verification → CRÍTICO
 
@@ -57,7 +57,7 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 **VALIDATE**: System coherence validation → SISTEMÁTICO
 
 ### IF semantic_pattern=multi_conversation_orchestration:
-**LOAD**: @context/architecture/claude_code/orchestration/README.md + @context/data/performance/README.md + @context/methodology.md
+**LOAD**: @context/architecture/claude_code/orchestration/README.md + @context/data/performance/README.md + @context/architecture/core/methodology.md
 **EXECUTE**: Multiple concurrent templates per orchestration authority
 **VALIDATE**: Coordination effectiveness validation → COORDINACIÓN
 
@@ -67,21 +67,21 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 **VALIDATE**: Completeness validation → COMPLETITUD
 
 ### IF semantic_pattern=content_placement:
-**LOAD**: @context/architecture/ux/component-decision-flowchart.md + @context/COMPONENT_DECISION_MATRIX.md
+**LOAD**: @context/architecture/ux/component-decision-flowchart.md + @context/architecture/ux/component-decision-flowchart.md
 **EXECUTE**: Systematic placement template per placement authority
 **VALIDATE**: Integration pathway verification → INTEGRACIÓN
 
 ### IF semantic_pattern=error_problem_resolution:
-**LOAD**: @context/methodology.md + @context/architecture/patterns/README.md + @context/standards.md
+**LOAD**: @context/architecture/core/methodology.md + @context/architecture/patterns/README.md + @context/architecture/standards/README.md
 **EXECUTE**: Problem resolution specialist template per resolution authority
 **VALIDATE**: Root cause elimination + integral solution verification → CRÍTICO
 
 ## UNIVERSAL CONTEXT REFERENCES
 
-**Cross-reference system**: @context/CROSS_REFERENCE_SYSTEM.md
-**Integration pathways**: @context/COMPONENT_DECISION_MATRIX.md  
-**Reference templates**: @context/MIGRATION_RULES.md
-**README navigation**: @context/README_NAVIGATION_INTEGRATION.md
+**Cross-reference system**: @context/architecture/reference/README.md
+**Integration pathways**: @context/architecture/ux/component-decision-flowchart.md  
+**Reference templates**: @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+**README navigation**: @context/architecture/README.md
 
 ---
 

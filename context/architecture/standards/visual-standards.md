@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | System notification and visual formatting authority
 
 ## AUTORIDAD SUPREMA
-↑ @context/standards.md → Visual standards implementation per system standards authority
+↑ @context/architecture/standards/README.md → Visual standards implementation per system standards authority
 
 ## GUARDIAN ENFORCEMENT FORMATTING
 

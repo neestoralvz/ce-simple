@@ -84,16 +84,16 @@
 ### For Creation Actions
 ```markdown
 ## Context
-- context/templates/ (for content structure)
-- context/patterns/documentation_style.md
-- context/TRUTH_SOURCE.md (for authority alignment)
+- context/architecture/templates/README.md (for content structure)
+- context/architecture/patterns/enforcement_integration_patterns.md
+- @context/architecture/core/truth-source.md (for authority alignment)
 - Related existing content for consistency
 ```
 
 ### For Processing Actions
 ```markdown
 ## Context
-- context/patterns/[relevant_methodology].md
+- context/architecture/patterns/[relevant_methodology].md
 - Source material location and format
 - Transformation requirements and criteria
 - Quality validation standards
@@ -144,4 +144,4 @@
 
 ---
 **Authority Source**: Action command analysis + execution pattern templates
-**Template References**: context/templates/universal_do_dont_template.md
+**Template References**: context/architecture/templates/README.mduniversal_do_dont_template.md

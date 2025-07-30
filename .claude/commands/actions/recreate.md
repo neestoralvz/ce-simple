@@ -5,7 +5,7 @@
 ## Propósito Command
 **Input:** Archivo/sistema desalineado con lineamientos actualizados  
 **Output:** Recreación limpia desde cero siguiendo guidelines actuales
-**Authority:** context/user-vision/TRUTH_SOURCE.md + context/patterns/simplicity.md
+**Authority:** @context/architecture/core/truth-source.md + context/vision/simplicity.md
 
 ## Filosofía Ejecución
 **DEBE ser:** Clean slate recreation sin contamination de información previa
@@ -17,8 +17,8 @@
 ### Phase 1: Desalineación Detection
 **Trigger:** Archivo no sigue lineamientos actualizados del sistema
 **Process:** 
-- Analizar archivo actual vs context/user-vision/TRUTH_SOURCE.md
-- Identificar divergencias específicas con context/patterns/simplicity.md
+- Analizar archivo actual vs @context/architecture/core/truth-source.md
+- Identificar divergencias específicas con context/vision/simplicity.md
 - Detectar sesgo acumulativo de información obsoleta
 - Validar necesidad clean slate vs edit incremental
 **Validation:** Sesgo detectado > threshold || structural misalignment identificado
@@ -26,9 +26,9 @@
 ### Phase 2: Context Fresh Loading
 **Input:** Lineamientos actuales del sistema (TRUTH_SOURCE + patterns)
 **Process:**
-- Load context/user-vision/TRUTH_SOURCE.md para supreme authority
-- Reference context/patterns/simplicity.md para recreation guidelines
-- Apply context/enforcement/core_reminders.md metodologías
+- Load @context/architecture/core/truth-source.md para supreme authority
+- Reference context/vision/simplicity.md para recreation guidelines
+- Apply context/architecture/core/methodology.md metodologías
 - Clear mental model del archivo anterior (bias prevention)
 **Output:** Context limpio con guidelines actuales únicamente
 
@@ -38,7 +38,7 @@
 - **ELIMINAR** archivo existente (conceptual clean slate)
 - **RECREAR** desde cero usando ÚNICAMENTE lineamientos actuales
 - **APLICAR** Think x4 para optimal structure según guidelines
-- **VALIDAR** alignment completo con TRUTH_SOURCE.md
+- **VALIDAR** alignment completo con @context/architecture/core/truth-source.md
 **Validation:** Archivo nuevo 100% aligned + zero contamination anterior
 
 ### Phase 4: Integration Verification
@@ -56,11 +56,11 @@
 - /roles:orchestrator → Para delegation recreation multi-archivo  
 - /workflows:start → Para detection desalinaación en session start
 
-**Authority chain:** user-vision/TRUTH_SOURCE.md → context/patterns/simplicity.md → recreation limpia
+**Authority chain:** user-vision/@context/architecture/core/truth-source.md → context/vision/simplicity.md → recreation limpia
 
 ## Error Handling
 **Si archivo crítico:** → Backup conceptual + user confirmation antes recreation
-**OBLIGATORIO verificar:** TRUTH_SOURCE.md authority suprema maintained
+**OBLIGATORIO verificar:** @context/architecture/core/truth-source.md authority suprema maintained
 **Fallback mode:** Edit incremental si recreation imposible técnicamente
 
 ## Metodología Anti-Sesgo → /modules:clean_slate_recreation
@@ -74,6 +74,6 @@ Clean slate recreation to prevent bias accumulation and ensure complete alignmen
 
 ---
 ## Enlaces → Información Complementaria
-**Si necesitas authority validation:** → context/user-vision/TRUTH_SOURCE.md:93-94
-**Si requieres simplicity guidelines:** → context/patterns/simplicity.md:40-50  
-**Si authority conflict:** → context/system/principles/authority.md:15-25
+**Si necesitas authority validation:** → @context/architecture/core/truth-source.md:93-94
+**Si requieres simplicity guidelines:** → context/vision/simplicity.md:40-50  
+**Si authority conflict:** → context/architecture/core/authority.md:15-25

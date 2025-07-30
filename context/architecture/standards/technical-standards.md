@@ -3,7 +3,7 @@
 **30/07/2025 Factorized** | Modern technical specifications and requirements
 
 ## AUTORIDAD SUPREMA
-↑ @context/standards.md → Technical standards implementation per system standards authority
+↑ @context/architecture/standards/README.md → Technical standards implementation per system standards authority
 
 ## CLI DESIGN 2025 STANDARDS
 

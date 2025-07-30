@@ -11,8 +11,8 @@
 
 ## Drift Detection Analysis Template
 **Process:**
-- Comparar cada archivo contra context/TRUTH_SOURCE.md authority
-- Detectar structural misalignment con context/patterns/simplicity.md
+- Comparar cada archivo contra @context/architecture/core/truth-source.md authority
+- Detectar structural misalignment con context/vision/simplicity.md
 - Identificar sesgo acumulativo por incremental edits
 - Evaluar authority conflicts vs supreme truth source
 - Calcular drift percentage para trigger recreation threshold
@@ -44,7 +44,7 @@
 **Action:** Recreation con updated references system
 
 ## Priority Processing Template
-**High Priority:** Authority conflicts con TRUTH_SOURCE.md
+**High Priority:** Authority conflicts con @context/architecture/core/truth-source.md
 **Medium Priority:** Structural misalignment + template violations  
 **Low Priority:** Optimization opportunities + file size concerns
 

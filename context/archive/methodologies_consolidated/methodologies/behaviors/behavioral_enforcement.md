@@ -23,13 +23,13 @@ Si complejidad >3 pasos especializados → usar Task tool, ejecutar analysis com
 ### Recognition → Delegation → Validation Flow
 **Pattern recognition** → Task tool deployment → post-validation automática  
 **Second Task tool** para alignment verification después cada major delegation
-**Authority validation** systematic con context/TRUTH_SOURCE.md
+**Authority validation** systematic con @context/architecture/core/truth-source.md
 **Quality standards** verification según context apropiado
 
 ## Quality Gates OBLIGATORIO
 
 ### Pre-Execution Validation
-**¿Consulted context/TRUTH_SOURCE.md** para systemic changes?
+**¿Consulted @context/architecture/core/truth-source.md** para systemic changes?
 **¿Applied research-first protocol** para current information validation?
 **¿Identified dependent files** para propagation requirements?
 **¿Analyzed concurrency opportunities** para efficiency maximization?
@@ -87,12 +87,12 @@ Si complejidad >3 pasos especializados → usar Task tool, ejecutar analysis com
 ### Maintenance Behavioral Patterns  
 **Regular validation** via /maintain systematic health checks
 **Template updates** propagation según documentation_style.md changes
-**Decision review** periodic alignment con context/TRUTH_SOURCE.md
+**Decision review** periodic alignment con @context/architecture/core/truth-source.md
 **Simplicity enforcement** via /roles:partner_modular + /roles:challenge systematic review
 
 ---
 
 ## Enlaces → información complementaria
-**Si necesitas core reminders**: → context/enforcement/core_reminders.md
-**Si requieres anti-patterns**: → context/enforcement/anti_patterns.md
-**Si necesitas quality validation**: → context/enforcement/quality_gates.md
+**Si necesitas core reminders**: → context/architecture/core/methodology.md
+**Si requieres anti-patterns**: → context/architecture/core/anti_patterns.md
+**Si necesitas quality validation**: → context/architecture/core/quality_gates.md

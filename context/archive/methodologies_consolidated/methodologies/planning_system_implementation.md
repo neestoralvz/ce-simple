@@ -36,9 +36,9 @@
 
 **Complete Planning Ecosystem**:
 - **6 planning commands**: /planning:init, /planning:layers, /planning:gate, /planning:focus, /planning:status
-- **Universal methodology**: context/planning/dependency_layers.md (universal patterns)
-- **Semantic intelligence**: context/planning/semantic_planning.md (dispatcher strategy)
-- **Project tracking**: context/planning/ce_simple_tracking.md (self-application validation)
+- **Universal methodology**: context/architecture/core/methodology.mddependency_layers.md (universal patterns)
+- **Semantic intelligence**: context/architecture/core/methodology.mdsemantic_planning.md (dispatcher strategy)
+- **Project tracking**: context/architecture/core/methodology.mdce_simple_tracking.md (self-application validation)
 
 ## Meta-Framework Validation
 
@@ -67,7 +67,7 @@
 ## Methodology Integration Success
 
 **Complete System Coherence**:
-- **Authority preservation**: Planning system respects TRUTH_SOURCE.md hierarchy
+- **Authority preservation**: Planning system respects @context/architecture/core/truth-source.md hierarchy
 - **Reference architecture**: Planning commands follow ≤80 line + reference-only patterns
 - **User domain integrity**: Semantic recognition preserves user intent + natural expression
 - **Continuous execution**: Planning operations maintain workflow until completion

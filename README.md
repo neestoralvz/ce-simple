@@ -28,7 +28,7 @@ CE-Simple es un **context engineering framework** que:
 ## Architecture Overview
 
 ```
-context/TRUTH_SOURCE.md     → Supreme authority dispatcher
+@context/architecture/core/truth-source.md     → Supreme authority dispatcher
 CLAUDE.md                   → Operational intelligence dispatcher  
 context/operational/        → Specialized context modules
 context/system/            → Templates y foundational structures
@@ -59,11 +59,11 @@ La arquitectura implementa **"Context como padre de todo"**:
 - `/actions:research` - Systematic investigation workflows  
 - `/workflows:close` - Session consolidation y handoff preparation
 
-**System Behavior**: Dirigido por `CLAUDE.md` dispatcher con authority chain hacia `context/TRUTH_SOURCE.md`.
+**System Behavior**: Dirigido por `CLAUDE.md` dispatcher con authority chain hacia `@context/architecture/core/truth-source.md`.
 
 ## Context Structure
 
-- `context/TRUTH_SOURCE.md` - Supreme authority dispatcher with README navigation intelligence
+- `@context/architecture/core/truth-source.md` - Supreme authority dispatcher with README navigation intelligence
 - `context/README_NAVIGATION_INTEGRATION.md` - Semantic trigger → README routing authority
 - `context/CROSS_REFERENCE_SYSTEM.md` - Master navigation index & integration hub
 - `context/COMPONENT_DECISION_MATRIX.md` - Integration pathways authority
@@ -88,7 +88,7 @@ Complex Investigation → Full Chain: + research/ + vision/ + architecture/stand
 **Architecture Discussion**: "We need to simplify the folder structure"
 ```
 Natural Conversation → Architecture Pattern → Primary: architecture/README.md  
-System-wide Impact → Full Chain: + vision/ + principles/ + workflows/ + TRUTH_SOURCE.md
+System-wide Impact → Full Chain: + vision/ + principles/ + workflows/ + @context/architecture/core/truth-source.md
 ```
 
 **Documentation Task**: "Document the new workflow pattern"
@@ -100,7 +100,7 @@ Standards Required → Full Chain: + command-creation/ + standards/ + CROSS_REFE
 ### Conversation-Driven Intelligence
 - **Simple conversations** load minimal context (Primary README only)
 - **Complex discussions** access progressive context disclosure (Full README chains)
-- **System-wide changes** trigger authority validation (TRUTH_SOURCE.md + supreme authority)
+- **System-wide changes** trigger authority validation (@context/architecture/core/truth-source.md + supreme authority)
 - **Natural flow preserved** - README navigation enhances rather than interrupts dialogue
 
 ## Evolution Pathway
