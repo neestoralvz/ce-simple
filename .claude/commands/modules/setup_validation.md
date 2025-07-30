@@ -14,10 +14,10 @@ fi
 # Secondary validation
 required_files=(
     "./context/TRUTH_SOURCE.md"
-    "./context/operational/patterns/socratic_methodology.md"
-    "./context/operational/patterns/authority_framework.md"
-    "./context/operational/patterns/simplicity_principles.md"
-    "./context/operational/behaviors/orchestration_protocol.md"
+    "./context/methodology.md"
+    "./context/authority.md"
+    "./context/simplicity.md"
+    "./context/architecture/claude_code/orchestration_protocols.md"
 )
 
 missing_files=()

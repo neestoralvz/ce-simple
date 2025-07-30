@@ -1,55 +1,68 @@
-# Context System - Navigation Hub
+# Context System - Pure Dispatcher
 
-**30/07/2025 21:30 CDMX** | Central dispatcher for complete context architecture
+**30/07/2025 22:30 CDMX** | Single entry point for complete context architecture
 
 ## AUTORIDAD SUPREMA
-context/vision/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → context/ system serves vision discovery
+vision/vision_foundation.md → supreme user authority → architecture/core/truth-source.md → context/ system serves vision discovery
 
 ## PRINCIPIO FUNDAMENTAL
 **"Context como padre de todo"** - Complete knowledge system organized for conversation-first development with vision-driven evolution
 
-## NAVIGATION INTELLIGENCE
-**Quick Start Guidance**: → architecture/navigation/README.md
-**Authority Hierarchy**: → architecture/navigation/README.md (authority chain implementation)
-**System Behavior**: → architecture/navigation/README.md (context loading protocols)
-**Navigation Pathways**: → architecture/navigation/README.md (workflow guidance)
+## SYSTEM ARCHITECTURE
 
-## CORE CONTEXT COMPONENTS
-
-### Root Authority Files
-- **`TRUTH_SOURCE.md`** - Central dispatcher with semantic triggers and decision logic
+### **CORE SYSTEM** (architecture/core/)
+- **`truth-source.md`** - Central dispatcher with semantic triggers and decision logic  
 - **`authority.md`** - Complete authority framework with user domain boundaries
 - **`methodology.md`** - Comprehensive methodology consolidation with Think x4 protocol
-- **`simplicity.md`** - User beauty philosophy with complexity balance
-- **`architecture/patterns.md`** - Working patterns and architectural guidance  
-- **`standards.md`** - System standards reference hub with enforcement
-- **`templates.md`** - Complete template authority and usage protocols
 
-### Specialized Directories
-**`/architecture/`**: Structural intelligence (ADRs, standards, UX patterns, workflows, navigation)
-**`/data/`**: Information management (conversations, performance, validation metrics)  
-**`/vision/`**: Vision evolution (discovery and crystallization documentation)
-**`/resources/`**: Support materials serving core system needs
-**`/archive/`**: Historical preservation (processed conversations, legacy systems)
+### **INTEGRATION SYSTEM** (architecture/integration/)
+- **`component-decision-matrix.md`** - Integration pathways authority hub
+- **`cross-reference-system.md`** - Reference architecture authority hub  
+- **`migration-rules.md`** - System evolution authority hub
+- **`navigation-integration.md`** - Semantic trigger navigation hub
+
+### **VISION SYSTEM** (vision/)
+- **`vision_foundation.md`** - Core vision principles and discovery philosophy
+- **`simplicity.md`** - User beauty philosophy with complexity balance
+- **`README.md`** - Vision discovery and crystallization hub
+
+### **ARCHITECTURE SYSTEM** (architecture/)
+- **`standards/README.md`** - System standards reference hub with enforcement
+- **`templates/README.md`** - Complete template authority and usage protocols
+- **`patterns.md`** - Working patterns and architectural guidance
+- **`navigation/README.md`** - Complete navigation intelligence
+- **`reference/README.md`** - Reference architecture implementation
+- **`adr/`** - Architecture decision records
+- **`ux/`** - User experience architecture  
+- **`workflows/`** - Process architecture
+
+### **SPECIALIZED DIRECTORIES**
+- **`data/`** - Information management (conversations, performance, validation metrics)
+- **`resources/`** - Support materials serving core system needs  
+- **`archive/`** - Historical preservation (processed conversations, legacy systems)
+- **`handoffs/`** - System handoff protocols and phase management
+
+## ENTRY PATHWAYS
+
+### "I need to understand the system"
+**START**: `vision/vision_foundation.md` → `architecture/core/truth-source.md` → navigate based on needs
+
+### "I want to implement something"  
+**START**: `architecture/core/methodology.md` → `architecture/templates/README.md` → `architecture/standards/README.md`
+
+### "I need to make decisions"
+**START**: `architecture/core/authority.md` → `architecture/integration/component-decision-matrix.md` → domain-specific guidance
+
+### "I want to understand architecture"
+**START**: `architecture/core/truth-source.md` → `architecture/patterns.md` → specialized architecture components
 
 ## SYSTEM INTEGRATION
 **CLAUDE.md**: Context system serves as intelligence backend for semantic triggers and decision logic
-**Commands**: All `.claude/commands/` reference context system for authority, methodology, and template guidance  
+**Commands**: All `.claude/commands/` reference context system for authority, methodology, and template guidance
 **Conversation-First**: Architecture serves natural conversation discovery rather than imposing predetermined structure
-
-## ORGANIZATION PRINCIPLES
-**Reference-Only**: Zero duplication + 80-line maximum + authority chain preservation + token economy optimization
-**User Authority**: 95%+ fidelity + vision supremacy + information density + organic evolution
-**Quality Standards**: Think x4 protocol + research-first + continuous execution + authority validation
-
-## EVOLUTION PROTOCOL
-**Adaptation Triggers**: Vision discovery → system evolution | Architecture needs → context expansion | Usage patterns → organic growth | Quality improvements → standards evolution
-**Growth Management**: Semantic placement + modular expansion + legacy preservation + vision alignment validation
 
 ---
 
-**CONTEXT SYSTEM DECLARATION**: This hub implements user vision of comprehensive context engineering for conversation-first development. Complete navigation authority through reference architecture preserving information density.
+**CONTEXT SYSTEM DECLARATION**: Pure dispatcher implementing user vision of comprehensive context engineering. All functionality organized in specialized subdirectories with single-entry navigation.
 
-**START HERE**: New users begin with TRUTH_SOURCE.md → vision/vision_foundation.md pathway for system understanding.
-
-**NAVIGATION AUTHORITY**: → architecture/navigation/README.md (complete navigation intelligence)
+**ORGANIZATION PRINCIPLE**: Only README.md in root + complete functionality through modular architecture preserving user authority supremacy.

@@ -31,7 +31,7 @@
 ```
 Task(
   description: "Implementation execution",
-  prompt: "Act as implementation specialist. Load context from context/operational/patterns/simplicity_principles.md. Execute development following quality gates and anti-pattern prevention. Apply TDD methodology with success criteria: [specific criteria]. Use Git WorkTree for safe experimentation.",
+  prompt: "Act as implementation specialist. Load context from @context/simplicity.md. Execute development following quality gates and anti-pattern prevention. Apply TDD methodology with success criteria: [specific criteria]. Use Git WorkTree for safe experimentation.",
   subagent_type: "general-purpose"
 )
 ```

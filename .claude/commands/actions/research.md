@@ -3,7 +3,7 @@
 **29/07/2025 12:00 CDMX**
 
 ## AUTORIDAD SUPREMA
-@context/TRUTH_SOURCE.md → @context/methodology.md
+@context/TRUTH_SOURCE.md → @context/architecture/core/methodology.md
 
 ## CORE FUNCTION
 Research sistemático via concurrent searches + temporal validation + Think x4 analysis
@@ -12,21 +12,21 @@ Research sistemático via concurrent searches + temporal validation + Think x4 a
 
 ### Technical Research Pattern
 **Triggers**: New technologies, implementation approaches, best practices investigation
-**Auto-activation**: @context/operational/operations/methodology_protocol.md
+**Auto-activation**: @context/architecture/core/methodology.md
 **Execute**: Concurrent searches + official docs validation + current date verification
-**Validate**: @context/operational/enforcement/quality_gates.md
+**Validate**: @context/architecture/standards/README.md
 
 ### Domain Knowledge Pattern
 **Triggers**: Unfamiliar domains, specialized knowledge, expert practices needed
-**Auto-activation**: @context/operational/patterns/orchestrator_methodology.md
+**Auto-activation**: @context/architecture/claude_code/orchestration_protocols.md
 **Execute**: Multi-source parallel research + cross-reference validation
-**Validate**: @context/operational/enforcement/behavioral_enforcement.md
+**Validate**: @context/architecture/standards/README.md
 
 ### Problem-Solution Pattern
 **Triggers**: Specific problems requiring solutions, troubleshooting scenarios
-**Auto-activation**: @context/operational/enforcement/research_method_protocol.md
+**Auto-activation**: @context/architecture/core/methodology.md
 **Execute**: Problem analysis + solution research + viability validation
-**Validate**: @context/operational/enforcement/quality_gates.md
+**Validate**: @context/architecture/standards/README.md
 
 ## RESEARCH METHODOLOGY
 1. **Scope definition** → requirements + concurrent strategy
@@ -41,11 +41,11 @@ Research sistemático via concurrent searches + temporal validation + Think x4 a
 - **Cross-validation** multiple sources + accuracy verification
 
 ## REFERENCIAS CONDICIONALES
-**Methodology protocol**: @context/operational/operations/methodology_protocol.md
-**Research-first protocol**: @context/operational/enforcement/research_method_protocol.md
-**Orchestration patterns**: @context/operational/patterns/orchestrator_methodology.md
-**Quality gates**: @context/operational/enforcement/quality_gates.md
-**Behavioral enforcement**: @context/operational/enforcement/behavioral_enforcement.md
+**Methodology protocol**: @context/architecture/core/methodology.md
+**Research-first protocol**: @context/architecture/core/methodology.md
+**Orchestration patterns**: @context/architecture/claude_code/orchestration_protocols.md
+**Quality gates**: @context/architecture/standards/README.md
+**Behavioral enforcement**: @context/architecture/standards/README.md
 
 ---
 **Authority Chain**: TRUTH_SOURCE → methodology → research execution

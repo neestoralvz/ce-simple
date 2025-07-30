@@ -70,9 +70,9 @@ context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
 - **Bias Prevention**: Authority contamination prevention and clean slate regeneration
 
 ### **Integration References**
-- **Cross-Integration**: ←→ @methodology.md (authority framework integration)
+- **Cross-Integration**: ←→ @architecture/core/methodology.md (authority framework integration)
 - **Vision Integration**: ←→ @vision/ (authority validation through vision preservation)
-- **Standards Integration**: ←→ @standards.md (authority preservation requirements)
+- **Standards Integration**: ←→ @architecture/standards/README.md (authority preservation requirements)
 
 ---
 

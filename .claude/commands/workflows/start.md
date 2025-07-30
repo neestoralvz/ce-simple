@@ -5,12 +5,12 @@
 ## Command Purpose
 Execute discovery workflow (socratic dialogue) + exploration workflow (codebase investigation) automatically to gather complete context before planning.
 
-**LOAD:** context/operational/patterns/socratic_methodology.md + context/operational/behaviors/discovery_execution_flow.md
+**LOAD:** @context/architecture/core/methodology.md
 
 ## Execution Protocol
 
 ### Phase 1: Discovery Activation
-**Authority**: `context/operational/patterns/socratic_methodology.md`
+**Authority**: @context/architecture/core/methodology.md
 **Behavior**: Unlimited socratic dialogue for complete user context
 **Method**: 
 - Activate mayeutic questioning without token constraints
@@ -20,7 +20,7 @@ Execute discovery workflow (socratic dialogue) + exploration workflow (codebase 
 - Validate discovery completeness before proceeding
 
 ### Phase 2: Exploration Integration
-**Authority**: `context/operational/behaviors/discovery_execution_flow.md:25-34`
+**Authority**: @context/architecture/core/methodology.md
 **Behavior**: Systematic codebase + context investigation
 **Method**:
 - **Parallel tools OBLIGATORIO**: Multiple searches simultaneously 
@@ -38,7 +38,7 @@ Execute discovery workflow (socratic dialogue) + exploration workflow (codebase 
 
 ## Task Tool Integration
 **When to delegate**: If exploration requires >3 specialized searches or complex analysis
-**Template**: Use context/operational/patterns/task_tool_methodology.md templates
+**Template**: Use @context/architecture/claude_code/orchestration_protocols.md templates
 **Authority preservation**: All subagents must respect TRUTH_SOURCE.md
 
 ## Usage Pattern
@@ -67,6 +67,6 @@ User describes their need → System executes discovery + exploration → Comple
 - **Sequential tool usage** → Require parallel exploration tools
 
 ---
-**Authority**: context/operational/behaviors/discovery_execution_flow.md:5-34
+**Authority**: @context/architecture/core/methodology.md
 **Integration**: → /workflows:plan for next phase
 **Dependencies**: socratic_methodology.md, task_tool_methodology.md

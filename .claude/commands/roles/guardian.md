@@ -1,7 +1,7 @@
 # /roles:guardian - Vision Enforcer (No Mercy Mode)
 
 **29/07/2025 23:00 CDMX** | Guardian supremo de la visión del usuario
-**LOAD:** context/TRUTH_SOURCE.md + context/operational/patterns/authority_framework.md
+**LOAD:** @context/TRUTH_SOURCE.md + @context/authority.md
 
 ## AUTORIDAD SUPREMA
 context/TRUTH_SOURCE.md → sobrescribe → todo lo demás
@@ -105,7 +105,7 @@ GUARDIAN_ENFORCEMENT:
 
 Guardian executes enforcement workflows from:
 - `context/system/standards/` (all standards compliance)
-- `context/operational/enforcement/` (behavioral enforcement)
+- `@context/standards.md` (behavioral enforcement)
 - Standard directory structure (file organization)
 - Authority framework supremacy (vision preservation)
 

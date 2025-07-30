@@ -67,9 +67,9 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 - **Routing Logic**: Dynamic routing implementation and conditional context loading
 
 ### **Integration References**
-- **Cross-Reference System**: ←→ @CROSS_REFERENCE_SYSTEM.md (navigation reference architecture)
-- **Component Decision Matrix**: ←→ @COMPONENT_DECISION_MATRIX.md (integration pathways)
-- **Authority Framework**: ← @authority.md (navigation authority validation)
+- **Cross-Reference System**: ←→ @architecture/integration/cross-reference-system.md (navigation reference architecture)
+- **Component Decision Matrix**: ←→ @architecture/integration/component-decision-matrix.md (integration pathways)
+- **Authority Framework**: ← @architecture/core/authority.md (navigation authority validation)
 
 ---
 

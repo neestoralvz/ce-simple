@@ -67,9 +67,9 @@ TRUTH_SOURCE.md → MIGRATION_RULES.md implements systematic evolution per user 
 - **Quality Assurance**: Pre/mid/post migration validation and testing frameworks
 
 ### **Integration References**
-- **Cross-Reference System**: ←→ @CROSS_REFERENCE_SYSTEM.md (reference migration protocols)
-- **Component Decision Matrix**: ←→ @COMPONENT_DECISION_MATRIX.md (integration migration)
-- **Authority Framework**: ← @authority.md (migration authority validation)
+- **Cross-Reference System**: ←→ @architecture/integration/cross-reference-system.md (reference migration protocols)
+- **Component Decision Matrix**: ←→ @architecture/integration/component-decision-matrix.md (integration migration)
+- **Authority Framework**: ← @architecture/core/authority.md (migration authority validation)
 
 ---
 

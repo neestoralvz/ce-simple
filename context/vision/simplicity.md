@@ -5,7 +5,7 @@
 ## AUTORIDAD SUPREMA
 User explicit authority: "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
 
-**Authority Chain**: VISION.md → TRUTH_SOURCE.md → simplicity.md → operational implementation
+**Authority Chain**: VISION.md → architecture/core/truth-source.md → simplicity.md → operational implementation
 **Supreme Principle**: Information density preservation overrides structural optimization per user explicit authority
 
 ## SIMPLICITY SYSTEM ARCHITECTURE
@@ -60,9 +60,9 @@ User explicit authority: "no estoy de acuerdo, creo que de esa manera se pierde 
 ## SIMPLICITY INTELLIGENCE
 
 ### **Entry Points**
-- **Supreme Authority**: ← @TRUTH_SOURCE.md (simplicity authority validation)
-- **Vision Foundation**: ← @principles/vision_foundation.md (user beauty philosophy)
-- **Implementation Standards**: ← @standards.md (simplicity compliance requirements)
+- **Supreme Authority**: ← @architecture/core/truth-source.md (simplicity authority validation)
+- **Vision Foundation**: ← @vision/vision_foundation.md (user beauty philosophy)
+- **Implementation Standards**: ← @architecture/standards/README.md (simplicity compliance requirements)
 
 ### **Simplicity Pathways**
 - **Philosophy Validation**: Core simplicity philosophy and user aesthetic principles validation
@@ -70,9 +70,9 @@ User explicit authority: "no estoy de acuerdo, creo que de esa manera se pierde 
 - **Evidence Validation**: Quantitative evidence analysis and empirical validation metrics
 
 ### **Integration References**
-- **Cross-Integration**: ←→ @methodology.md (simplicity principles implementation)
-- **Authority Integration**: ←→ @authority.md (simplicity validation through user authority)
-- **Standards Integration**: ←→ @standards.md (simplicity requirements enforcement)
+- **Cross-Integration**: ←→ @architecture/core/methodology.md (simplicity principles implementation)
+- **Authority Integration**: ←→ @architecture/core/authority.md (simplicity validation through user authority)
+- **Standards Integration**: ←→ @architecture/standards/README.md (simplicity requirements enforcement)
 
 ---
 

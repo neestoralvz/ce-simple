@@ -5,7 +5,7 @@
 ## Command Purpose
 Execute investigation workflow (online research + MCP integration) + planning workflow (Think x4 analysis + step-by-step design) to create actionable execution plans.
 
-**LOAD:** context/operational/behaviors/discovery_execution_flow.md:36-64
+**LOAD:** @context/architecture/core/methodology.md
 
 ## Execution Protocol
 
@@ -49,7 +49,7 @@ Execute investigation workflow (online research + MCP integration) + planning wo
 ```
 Task(
   description: "Research investigation",
-  prompt: "Act as research specialist. Load context from context/operational/patterns/orchestrator_methodology.md. Conduct systematic investigation using Think x4 methodology. Focus on [specific domain]. Provide insights and recommendations.",
+  prompt: "Act as research specialist. Load context from @context/architecture/claude_code/orchestration_protocols.md. Conduct systematic investigation using Think x4 methodology. Focus on [specific domain]. Provide insights and recommendations.",
   subagent_type: "general-purpose"
 )
 ```
@@ -88,6 +88,6 @@ Investigation + Think x4 analysis → Structured plan → Conversation division 
 - **Next phase**: Transition to `/workflows:execute` with TDD methodology
 
 ---
-**Authority**: context/operational/behaviors/discovery_execution_flow.md:36-80
+**Authority**: @context/architecture/core/methodology.md
 **Integration**: `/workflows:start` → `/workflows:plan` → `/workflows:execute`
 **Dependencies**: Think x4 methodology, task_tool_methodology.md, orchestration_protocol.md
