@@ -41,7 +41,7 @@ README Hub Integration Decision Tree:
 │   ├─ Standards-related → architecture/standards/README.md inclusion
 │   ├─ Template-related → architecture/templates/README.md inclusion
 │   └─ UX-related → architecture/ux/README.md inclusion
-├─ **Methodology Component** → context/claude_code/methodology/README.md integration
+├─ **Methodology Component** → context/architecture/claude_code/methodology/README.md integration
 │   ├─ Tool-specific → methodology/tool-name/README.md inclusion
 │   └─ General methodology → methodology/README.md inclusion
 ├─ **Data Component** → context/data/README.md integration

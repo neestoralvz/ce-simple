@@ -1,126 +1,82 @@
+---
+warning: "⚠️ LEER OBLIGATORIAMENTE ANTES DE CUALQUIER ACCIÓN"
+critical_instruction: "Este archivo DEBE ser leído completamente antes de cumplir con cualquier solicitud del usuario. Las instrucciones operacionales son obligatorias y deben seguirse en el orden establecido."
+---
+
 # CLAUDE.md - Dispatcher Inteligente
 
-**29/07/2025 10:45 CDMX** | Dispatcher con triggers semánticos y enforcement
+**30/07/2025 17:20 CDMX** | Pure dispatcher con conditional loading y reference architecture
 
-Prioriza siempre el uso de explorar el codebase antes de cualquier accion para tener claro el panorama, investigar en linea o utilizando context7 si es necesario para obtener mas informacion o resolver problemas, utilizar think x 4 antes de cualquier accion, prioriza el uso de herramientas paralelas, prioriza el despliegue de subagentes especializados para las tareas, verificar-validar-probar tu trabajo y si no tiene exito repetir el proceso de nuevo hasta alcanzar el exito y el uso de git.
+## INSTRUCCIÓN OPERACIONAL OBLIGATORIA UNIVERSAL
+
+⚠️ **CUMPLIMIENTO OBLIGATORIO**: Toda acción debe seguir este protocolo SIN EXCEPCIÓN
+
+**PROTOCOLO CORE**: @context/architecture/claude_code/orchestration_protocols.md → Hybrid orchestration authority
+**METHODOLOGY AUTHORITY**: @context/methodology.md → L4-Pure Orchestration + Think x4 + Research-First
+**AUTHORITY VALIDATION**: @context/TRUTH_SOURCE.md → Context architecture dispatcher
 
 ## AUTORIDAD SUPREMA
-context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md context architecture → CLAUDE.md implements vision through intelligent dispatch
+context/principles/vision_foundation.md → supreme user authority → TRUTH_SOURCE.md → CLAUDE.md implements vision through intelligent dispatch
 
 ## PROJECT CONTEXT
 **Overview**: README.md - Project description, philosophy, architecture overview
 **System Purpose**: Context engineering framework para conversation-first development with vision-driven evolution
 
 ## CONTEXTO CORE SIEMPRE CARGADO
-@context/principles/vision_foundation.md
+@context/vision/vision_foundation.md
 @context/TRUTH_SOURCE.md
 @context/methodology.md
 @context/authority.md
 @context/simplicity.md
 
-## COMPORTAMIENTO ORQUESTADOR
-/roles:orchestrator
+## SEMANTIC TRIGGERS → CONDITIONAL CONTEXT LOADING
 
-## DECISION LOGIC CON TRIGGERS SEMÁNTICOS
+### IF semantic_pattern=research_investigation:
+**LOAD**: @context/architecture/claude_code/methodology/README.md + @context/methodology.md + @context/vision/README.md
+**EXECUTE**: Research specialist template per methodology authority
+**VALIDATE**: Post-delegation validation protocol
 
-### Research/Investigation Pattern
-**Semantic triggers**: Intent to understand, investigate, analyze, discover + Scope multi-source/pattern analysis + Domain technical/architectural + Output insights/recommendations
-**Auto-activation**: Date-sensitive info → $(date) validation, new domain → WebSearch + MCP context 7 simultáneamente
-**README Navigation**: @context/claude_code/methodology/README.md → @context/research/README.md → @context/vision/README.md → @context/architecture/standards/README.md
-**Execute**: @context/methodology.md → Research specialist template
-**Validate**: @context/methodology.md → Post-delegation validation protocol
+### IF semantic_pattern=documentation_creation:
+**LOAD**: @context/architecture/templates/README.md + @context/standards.md + @context/CROSS_REFERENCE_SYSTEM.md
+**EXECUTE**: Documentation builder template per template authority
+**VALIDATE**: Standards compliance validation
 
-### Documentation Pattern  
-**Semantic triggers**: Intent to capture, formalize, record + Scope single doc/system-wide + Domain technical/procedural + Output formal documentation
-**Auto-activation**: Decision made → auto-generate documentation, system change → update related docs
-**README Navigation**: @context/architecture/templates/README.md → @context/claude_code/command-creation/README.md → @context/architecture/standards/README.md → @context/CROSS_REFERENCE_SYSTEM.md
-**Execute**: @context/methodology.md → Documentation builder template
-**Validate**: @context/methodology.md → Standards compliance validation
+### IF semantic_pattern=architecture_system_change:
+**LOAD**: @context/architecture/README.md + @context/TRUTH_SOURCE.md + @context/vision/README.md
+**EXECUTE**: Partner validation template per architecture authority
+**VALIDATE**: Authority alignment verification → CRÍTICO
 
-### Architecture/System Pattern
-**Semantic triggers**: Intent to change structure, improve organization + Scope system-wide implications + Domain architectural decisions + Output improved system design
-**Auto-activation**: System-wide changes → context/TRUTH_SOURCE.md consultation mandatory, architecture discussion → /roles:partner validation
-**README Navigation**: @context/architecture/README.md → @context/vision/README.md → @context/principles/README.md → @context/architecture/workflows/README.md
-**Execute**: @context/methodology.md → Partner validation template
-**Validate**: @context/methodology.md → Authority alignment verification
+### IF semantic_pattern=development_implementation:
+**LOAD**: @context/architecture/claude_code/methodology/README.md + @context/architecture/patterns.md + @context/data/validation/README.md
+**EXECUTE**: Implementation template per development authority
+**VALIDATE**: Quality gates validation → ESENCIAL
 
-### Development/Implementation Pattern
-**Semantic triggers**: Intent to build, develop, execute + Scope multi-file operations + Domain technical implementation + Output working systems
-**Auto-activation**: Code complexity >3 pasos → Task tool delegation, quality standards → template application
-**README Navigation**: @context/claude_code/methodology/README.md → @context/claude_code/orchestration/README.md → @context/patterns/README.md → @context/data/validation/README.md
-**Execute**: @context/methodology.md → Implementation template
-**Validate**: @context/methodology.md → Quality gates validation
+### IF semantic_pattern=workflow_command_creation:
+**LOAD**: @context/architecture/claude_code/command-creation/README.md + @context/architecture/templates/README.md
+**EXECUTE**: Generic delegation template per command authority
+**VALIDATE**: System coherence validation → SISTEMÁTICO
 
-### Workflow/Command Pattern
-**Semantic triggers**: Intent to automate, process + Scope workflow creation + Domain procedural + Output structured commands
-**Auto-activation**: "/comando" mentioned → template loading, process automation → command structure
-**README Navigation**: @context/claude_code/command-creation/README.md → @context/architecture/workflows/README.md → @context/architecture/templates/README.md → @context/claude_code/orchestration/README.md
-**Execute**: @context/methodology.md → Generic delegation template
-**Validate**: @context/methodology.md → System coherence validation
+### IF semantic_pattern=multi_conversation_orchestration:
+**LOAD**: @context/architecture/claude_code/orchestration/README.md + @context/data/performance/README.md + @context/methodology.md
+**EXECUTE**: Multiple concurrent templates per orchestration authority
+**VALIDATE**: Coordination effectiveness validation → COORDINACIÓN
 
-### Multi-Conversación Pattern
-**Semantic triggers**: Intent to coordinate, orchestrate + Scope parallel execution + Domain multi-agent coordination + Output coordinated progress
-**Auto-activation**: "paralelo", "múltiple" → múltiples Task tools, >5 independent tasks → parallel consideration
-**README Navigation**: @context/claude_code/orchestration/README.md → @context/data/performance/README.md → @context/methodology.md → @context/architecture/workflows/README.md
-**Execute**: @context/methodology.md → Multiple concurrent templates
-**Validate**: @context/methodology.md → Coordination effectiveness validation
+### IF semantic_pattern=session_management:
+**LOAD**: @context/data/conversations/README.md + @context/archive/README.md + @context/vision/README.md
+**EXECUTE**: Session management template per session authority
+**VALIDATE**: Completeness validation → COMPLETITUD
 
-### Session Management Pattern
-**Semantic triggers**: Intent to conclude, capture progress + Scope session-wide summary + Domain progress documentation + Output handoff preparation
-**Auto-activation**: "cierre conversación", "handoff" → /workflows:close activation, work completion → session documentation
-**README Navigation**: @context/data/conversations/README.md → @context/archive/README.md → @context/vision/README.md → @context/architecture/workflows/README.md
-**Execute**: @context/methodology.md → Session management template
-**Validate**: @context/methodology.md → Completeness validation
+### IF semantic_pattern=content_placement:
+**LOAD**: @context/architecture/ux/component-decision-flowchart.md + @context/COMPONENT_DECISION_MATRIX.md
+**EXECUTE**: Systematic placement template per placement authority
+**VALIDATE**: Integration pathway verification → INTEGRACIÓN
 
-### Content Placement Pattern
-**Semantic triggers**: Intent to place, organize, structure content + Scope content organization + Domain system architecture + Output systematic placement
-**Auto-activation**: Content creation → placement-quick-reference.md classification, complex placement → interactive-placement-guide.md assistance, comprehensive analysis → component-decision-flowchart.md
-**README Navigation**: @context/architecture/ux/README.md → @context/COMPONENT_DECISION_MATRIX.md → @context/CROSS_REFERENCE_SYSTEM.md → @context/architecture/ux/flowchart-system-integration.md
-**Execute**: @context/architecture/ux/component-decision-flowchart.md → Systematic placement template
-**Validate**: @context/COMPONENT_DECISION_MATRIX.md → Integration pathway verification
+### IF semantic_pattern=error_problem_resolution:
+**LOAD**: @context/methodology.md + @context/architecture/patterns/README.md + @context/standards.md
+**EXECUTE**: Problem resolution specialist template per resolution authority
+**VALIDATE**: Root cause elimination + integral solution verification → CRÍTICO
 
-## METODOLOGÍA ENFORCEMENT INTEGRADA
-
-### Continuous Execution OBLIGATORIO
-**Template**: "Completado [SUBTAREA] → [RESULTADO]. Continuando automáticamente con [SIGUIENTE] (progreso: X/Y)."
-**NUNCA pausar** tras notificaciones esperando confirmación
-**Continuar automáticamente** hasta lista tareas vacía O usuario indica STOP
-
-### Think x4 SIEMPRE
-**OBLIGATORIO aplicar** Think x4 en análisis y proposals
-**NUNCA usar** "instinto", "intuition" sin systematic analysis
-**Template**: Think 1-4 perspectives explícitas antes conclusión
-
-### Parallel Tools OBLIGATORIO
-**Web searches** SIEMPRE concurrentes cuando research
-**Batch operations** para información independiente obligatorio
-**Múltiples tools simultáneos** en single message cuando posible
-
-### Post-Validation Sistemática
-**Después cada delegación** → @context/methodology.md → Post-delegation validation
-**Verify alignment** context/TRUTH_SOURCE.md
-**Verify compliance** context/simplicity.md
-**Verify standards** según context apropiado
-
-## REFERENCIAS CONDICIONALES
-
-**Context loading según patterns**:
-- Research: context/methodology.md + context/patterns.md
-- Documentation: context/templates.md + context/standards.md  
-- Architecture: context/TRUTH_SOURCE.md + context/authority.md
-- Implementation: context/simplicity.md + context/patterns.md
-- Commands: context/templates.md + context/methodology.md
-- Validation: context/methodology.md + context/standards.md
-- Content Placement: architecture/ux/placement-quick-reference.md + COMPONENT_DECISION_MATRIX.md
-- Complex Placement: architecture/ux/interactive-placement-guide.md + CROSS_REFERENCE_SYSTEM.md
-- System Architecture: COMPONENT_DECISION_MATRIX.md + CROSS_REFERENCE_SYSTEM.md
-
-**Enforcement references**:
-- Anti-patterns: context/standards.md
-- Behavioral: context/standards.md
-- Quality gates: context/standards.md
-
-**Complete enforcement**: @context/standards.md
+## UNIVERSAL CONTEXT REFERENCES
 
 **Cross-reference system**: @context/CROSS_REFERENCE_SYSTEM.md
 **Integration pathways**: @context/COMPONENT_DECISION_MATRIX.md  
@@ -129,4 +85,4 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 
 ---
 
-**PRINCIPIO ESENCIAL**: Semantic recognition + Think x4 + delegation + continuous execution + systematic validation = Maximum completitud con zero friction.
+**PRINCIPIO ESENCIAL MANDATORIO**: EJECUTA Semantic recognition + LOAD conditional context + APPLY methodology authority + VALIDATE systematic = LOGRA Maximum completitud con zero friction.

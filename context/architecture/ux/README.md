@@ -61,7 +61,7 @@ Define user experience architecture following core vision: "conversation natural
 - Command-specific UX (stays in commands/)
 - Content formatting (goes to @context/standards.md)
 - **Authority definitions (stays in @context/authority.md)**
-- **Technical patterns (stays in @context/patterns.md)**
+- **Technical patterns (stays in @context/architecture/patterns.md)**
 
 ## NAMING CONVENTIONS
 Format: `[interaction-type]-[pattern-name].md`

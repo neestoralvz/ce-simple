@@ -48,7 +48,7 @@ User control points and overrides
 
 ## CROSS-REFERENCES
 - **Methodology authority**: @context/methodology.md workflow execution
-- **Orchestration patterns**: @context/patterns.md coordination systems
+- **Orchestration patterns**: @context/architecture/patterns.md coordination systems
 - **Authority preservation**: @context/authority.md user control integration
 - **Standards compliance**: @architecture/standards/ process requirements
 

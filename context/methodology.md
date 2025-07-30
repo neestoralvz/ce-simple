@@ -26,57 +26,41 @@ VISION.md → TRUTH_SOURCE.md → methodology.md implements complete methodology
 **Specialization Patterns**: Research/Partner Validation/Documentation/Architecture/Guardian/Implementation specialists
 **Guardian Integration**: Auto-activation for file size violations, authority breaches, vision modifications, standards non-compliance
 
-## L2-OPERATIONAL METHODOLOGY
+## SPECIALIZED METHODOLOGY MODULES
 
-### Research-First Protocol
-**10-Step Enhanced Research**: Request analysis → Temporal validation → Codebase exploration → Internet research → Multi-conversation assessment → Git worktree prep → Planning documentation → Quality gates → Execution → Integration convergence
-**Concurrent Tools OBLIGATORIO**: WebSearch + MCP context7 simultáneamente, batch independent searches, optimize for maximum information density
+### L2-Operational Methodology
+**Research-First Protocol**: → architecture/methodology/operational-methodology.md
+**Empirical Elimination**: Evidence-based structure determination through systematic testing
+**Quality Gates**: Creation → Alignment → Verification protocol with TRUTH_SOURCE.md validation
 
-### Empirical Elimination Innovation
-**Revolutionary Principle**: Remove components systematically while testing functionality → reveals true architectural requirements vs theoretical preservation
-**Success Evidence**: 4-8 files provide real value vs 180+ files representing overhead (5% value ratio confirmed through systematic elimination)
-**Over-Engineering Detection**: Remove → Test functionality → Measure impact → Essential/Functional/Overhead/Over-engineering classification
+### L3-Comprehensive Workflow Architecture  
+**Complete Workflow System**: → architecture/methodology/comprehensive-workflow.md
+**Revolutionary Integration**: 4-Phase Ultra-Orchestration and multi-conversation parallel execution
+**Background Intelligence**: Persistent processes and quote-based fragmentation (95%+ fidelity)
 
-### Execution Patterns
-**TDD Recursive Protocol**: Objective establishment → Success criteria → Implementation loop → Validation cycle → Recursive retry until success
-**Git WorkTree Integration**: Conversation-level branching, experimental control, granular change management, user ultra-orchestrator coordination
-**Quality Gates**: Creation → Alignment → Verification protocol with context/TRUTH_SOURCE.md validation
+### L4-Pure Orchestration Methodology
+**Pure AI Agent Orchestration**: → architecture/methodology/pure-orchestration.md
+**Expert Delegation**: ROL + CONTEXTO + INSTRUCCIONES + TAREA template OBLIGATORIO
+**Performance Multiplication**: Up to 20x improvement through intelligent coordination (validated)
 
-## L3-COMPREHENSIVE WORKFLOW ARCHITECTURE
+### Revolutionary Patterns & L5-Evolution
+**Revolutionary Methodology Patterns**: → architecture/methodology/revolutionary-patterns.md
+**2025 Orchestration Mastery**: Continuous execution flow + advanced error prevention
+**Guardian-Partner Ecosystem**: Binary enforcement + constructive dialogue integration
 
-### Complete Workflow System
-**Discovery**: Diálogo mayéutico → contexto completo → vision crystallization
-**Exploration**: Codebase investigation → Context analysis → Enhanced discovery questions  
-**Investigation**: WebSearch + MCP integration → Solution synthesis → Evidence-based suggestions
-**Planning**: Think x4 analysis → Step-by-step design → Multi-conversation division → Prompt generation
-**Multi-Conversation Execution**: Conversation breakdown → Orchestrator deployment → Subagent coordination → Power multiplication
-**Maintenance**: System/Command/Context/Implementation/CLAUDE.md/README/Reference/Directory/Project structure comprehensive
-**Closure**: Learning extraction → Context integration → System improvement → Knowledge persistence
+### Enforcement Integration
+**Reinforcement Vocabulary**: → architecture/methodology/enforcement-integration.md
+**OBLIGATORIO/MANDATORIO/CRÍTICO**: Non-negotiable execution triggers
+**Core Enforcement Protocols**: Reference-only + authority chain + continuous execution
 
-### Revolutionary Integration Patterns
-**4-Phase Ultra-Orchestration**: (1) Unrestricted Socratic Discovery, (2) Research-First Protocol, (3) Multi-Conversation Parallel Execution, (4) Convergent Integration
-**Background Intelligence**: Persistent processes maintain state between conversations via ticket system communication matrix
-**Quote-Based Fragmentation**: User voice preservation during complex splitting (95%+ fidelity through systematic organization)
-**Architectural Transformation Mastery**: Phase-based methodology for massive changes (Analysis → Authority Consolidation → Content Organization → Reference Architecture → Implementation)
-
-## METHODOLOGY ENFORCEMENT INTEGRADA
-
-**Reference-Only Content Protocol OBLIGATORIO**: No content duplication - only conditional references per DRY compliance
-**Authority Chain Validation**: User methodology authority → specialized context → implementation with hierarchical enforcement
-**Continuous Execution**: "Completado [METODOLOGÍA] → [RESULTADO]. Continuando automáticamente con [SIGUIENTE]" - NUNCA pausar esperando confirmación
-**Think x4 SIEMPRE**: 4 perspectives explícitas antes methodology conclusions - NUNCA usar "instinto" sin systematic analysis
-**Parallel Tools OBLIGATORIO**: Web searches SIEMPRE concurrentes, batch operations para información independiente, múltiples tools simultáneos cuando posible
-**Post-Validation Sistemática**: Después cada delegación → verify alignment context/TRUTH_SOURCE.md + verify compliance simplicity principles + verify standards según context apropiado
-
-## REVOLUTIONARY METHODOLOGY PATTERNS
-
-**Empirical Discovery Supremacy**: Remove → test → validate → keep/eliminate based on functionality evidence > theoretical architecture analysis
-**Ultra-Orchestration Evolution**: User evolution from vision-provider → ultra-orchestrator of N parallel conversations with exponential capability through multi-layer agent deployment
-**Granularity-Preserving Scaling**: Multi-scale complexity management - simple interface, granular backend per user authority "no estoy de acuerdo, creo que de esa manera se pierde mucha informacion"
+### Organic Evolution Dynamics
+**System Adaptation Philosophy**: → architecture/methodology/organic-evolution-dynamics.md
+**Evolution-Authority Balance**: Sistema evoluciona orgánicamente mientras preserva autoridad absoluta
+**Metrics-Driven Evolution**: "sobre la cantidad de comandos creo uque es algo que el mismo sistema y lo que hagamos nos ira pidiendo"
 
 ## INTEGRATION REFERENCES
 
-### ←→ claude_code/
+### ←→ architecture/claude_code/
 **Connection**: Claude Code-specific implementations of core methodology patterns
 **Protocol**: Specialized adaptations of Think x4, Research-First, Continuous Execution for Claude Code tools
 
@@ -84,15 +68,7 @@ VISION.md → TRUTH_SOURCE.md → methodology.md implements complete methodology
 **Connection**: Authority framework integration for methodology validation
 **Protocol**: All methodology implementation serves user authority supremacy and vision preservation
 
-### ←→ data/
-**Connection**: Performance data drives methodology optimization through empirical evidence
-**Protocol**: Evidence-based methodology refinement while preserving core principles and user authority
-
-### ←→ research/
-**Connection**: Research methodologies serve systematic knowledge integration
-**Protocol**: Research-first protocol drives concurrent investigation and evidence-based conclusions
-
-### ←→ patterns/
+### ←→ architecture/patterns/
 **Connection**: Methodology patterns validated through systematic analysis and user authority
 **Protocol**: Think x4 framework and empirical validation drive pattern development and refinement
 

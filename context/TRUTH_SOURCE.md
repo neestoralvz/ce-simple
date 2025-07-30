@@ -9,10 +9,10 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 **"Context como padre de todo"** - Todo el conocimiento del sistema ES contexto en diferentes etapas de procesamiento
 
 ## CONTEXTO CORE SIEMPRE CARGADO
-@context/principles/vision_foundation.md
+@context/vision/vision_foundation.md
 @context/authority.md
 @context/methodology.md
-@context/patterns.md
+@context/architecture/patterns.md
 @context/simplicity.md
 
 ## DECISION LOGIC CON TRIGGERS SEMÁNTICOS
@@ -63,14 +63,14 @@ context/principles/vision_foundation.md → supreme user authority → TRUTH_SOU
 **MANDATORY PROTECTION**: Conversations cannot be eliminated unless fully processed
 **Processing Criteria**: 
 - Key insights extracted to operational/ or context/archive/legacy/user-vision-layers/
-- Architectural decisions documented in patterns/
+- Architectural decisions documented in architecture/patterns/
 - User confirmation of processing completeness
 **ELIMINATION AUTHORITY**: USER ONLY after explicit processing verification
 **PARTNER ENFORCEMENT**: Challenge system MUST activate on archive operations
 
 ## REFERENCIAS AUTHORITY
 
-**Complete Context Authority**: @context/authority.md + @context/methodology.md + @context/patterns.md + @context/principles.md + @context/simplicity.md + @context/standards.md + @context/templates.md
+**Complete Context Authority**: @context/authority.md + @context/methodology.md + @context/architecture/patterns.md + @context/vision/README.md + @context/simplicity.md + @context/standards.md + @context/templates.md
 
 **Cross-Reference System Authority**: @context/CROSS_REFERENCE_SYSTEM.md + @context/COMPONENT_DECISION_MATRIX.md + @context/MIGRATION_RULES.md
 

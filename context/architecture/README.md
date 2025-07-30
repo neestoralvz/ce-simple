@@ -28,7 +28,7 @@ Central hub for all architectural decisions, patterns, and structural guidance f
 ### `/ux/` - User Experience Architecture
 **Purpose**: Conversation-first design and interaction patterns
 **Content**: UX patterns, interface design, conversation flows
-**Cross-reference**: @context/principles.md vision foundation
+**Cross-reference**: @context/vision/vision_foundation.md vision foundation
 
 ### `/workflows/` - Process Architecture
 **Purpose**: Workflow patterns and process definitions
