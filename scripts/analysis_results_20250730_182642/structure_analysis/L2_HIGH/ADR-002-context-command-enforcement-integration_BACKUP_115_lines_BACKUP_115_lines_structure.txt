@@ -1,0 +1,20 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/ADR-002-context-command-enforcement-integration_BACKUP_115_lines_BACKUP_115_lines.md (115 lines)
+## Main Sections (20 found):
+## Context
+## Decision  
+## Consequences
+## Implementation Evidence
+## Pattern Documentation SISTEMÁTICO
+## Subsections (15 found):
+### Changes Implemented OBLIGATORIO:
+### Positive ESENCIAL:
+### Quality Enhancement CRÍTICO:
+### Neutral:
+### Negative:
+### Compliance Validation OBLIGATORIO:
+### Authority Chain Verification CRÍTICO:
+### Key Insights Extracted:
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 21

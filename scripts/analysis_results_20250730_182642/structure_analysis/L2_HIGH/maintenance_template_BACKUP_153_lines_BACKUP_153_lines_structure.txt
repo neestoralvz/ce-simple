@@ -1,0 +1,26 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/maintenance_template_BACKUP_153_lines_BACKUP_153_lines.md (153 lines)
+## Main Sections (24 found):
+## Maintenance Command Structure
+## DO
+## DON'T
+## Context
+## Next Action
+## Maintenance Categories
+## Context Section Guidelines
+## Context
+## Context
+## Context
+## Subsections (9 found):
+### System Health (maintain, cleanup)
+### Content Management (archive, organize)
+### Configuration Management (update, configure)
+### For System Health
+### For Content Management
+### For Configuration Management
+### System Health Patterns
+### Content Management Patterns
+### Configuration Management Patterns
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 25

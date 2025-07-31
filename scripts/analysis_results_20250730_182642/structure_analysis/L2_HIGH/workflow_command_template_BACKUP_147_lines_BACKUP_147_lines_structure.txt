@@ -1,0 +1,26 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/workflow_command_template_BACKUP_147_lines_BACKUP_147_lines.md (147 lines)
+## Main Sections (24 found):
+## Workflow Command Structure
+## DO
+## DON'T
+## Context
+## Next Action
+## Workflow Categories
+## Context Section Guidelines
+## Context
+## Context
+## Context
+## Subsections (9 found):
+### Session Management (start, close)
+### Investigation/Analysis (explore, debug)
+### Content Processing (distill)
+### For Session Management
+### For Investigation/Analysis
+### For Content Processing
+### Process-Completion Automatic
+### Investigation-Result Recommended
+### Context-Sensitive Routing
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 25

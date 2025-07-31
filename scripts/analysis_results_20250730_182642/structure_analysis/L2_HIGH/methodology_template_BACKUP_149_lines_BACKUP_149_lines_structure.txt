@@ -1,0 +1,26 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/methodology_template_BACKUP_149_lines_BACKUP_149_lines.md (149 lines)
+## Main Sections (25 found):
+## Methodology Module Structure
+## DO
+## DON'T
+## Context
+## Integration Pattern
+## When to EXECUTE this methodology
+## Methodology Categories
+## Context Section Guidelines
+## Context
+## Context
+## Subsections (9 found):
+### Analysis Methodologies (thinkx4)
+### Execution Methodologies (parallel_execution, continuous_flow)
+### Validation Methodologies (validation_protocol, research_first)
+### For Analysis Methodologies
+### For Execution Methodologies
+### For Validation Methodologies
+### Command Integration
+### Methodology Chaining
+### Conditional Application
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 26

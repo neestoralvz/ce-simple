@@ -1,0 +1,32 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L0-EMERGENCY/flujos_trabajo_ORIGINAL_BACKUP_452_lines_BACKUP_452_lines.md (452 lines)
+## Main Sections (91 found):
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Quote Original
+## Subsections (45 found):
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+### Contexto Conversacional
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 92

@@ -1,0 +1,24 @@
+# Structure Analysis: architecture/patterns/failed_patterns.md (133 lines)
+## Main Sections (17 found):
+## AUTORIDAD SUPREMA
+## EMPIRICALLY IDENTIFIED ANTI-PATTERNS
+## DETECTION CRITERIA
+## PREVENTION METHODOLOGY
+## Subsections (13 found):
+### Monolithic File Accumulation
+### Authority Contamination Pattern
+### Complexity Creep Pattern
+### Context Fragmentation Without Authority
+### Aggressive Simplification Pattern
+### Assumption-Based Implementation
+### Hardcoded Dependency Pattern
+### Early Warning Signals
+### Critical Failure Indicators
+### Recovery Protocols
+### Guardian Integration
+### Systematic Monitoring
+### Quality Gates Integration
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 18
