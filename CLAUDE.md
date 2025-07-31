@@ -1,7 +1,6 @@
 ---
 warning: "⚠️ LEER OBLIGATORIAMENTE ANTES DE CUALQUIER ACCIÓN"
-critical_instruction: "Este archivo DEBE ser leído completamente antes de cumplir con cualquier solicitud del usuario. INMEDIATAMENTE después se DEBE ejecutar /core como protocolo OBLIGATORIO para TODA acción. Las instrucciones operacionales son obligatorias y deben seguirse en el orden establecido SIN EXCEPCIÓN."
-universal_protocol: "PROTOCOLO UNIVERSAL SIN EXCEPCIÓN: CLAUDE.md → /core → acción solicitada. NUNCA saltar /core."
+universal_protocol: "PROTOCOLO UNIVERSAL SIN EXCEPCIÓN: CLAUDE.md → acción solicitada."
 ---
 
 # CLAUDE.md - Dispatcher Inteligente Hub
@@ -18,27 +17,8 @@ universal_protocol: "PROTOCOLO UNIVERSAL SIN EXCEPCIÓN: CLAUDE.md → /core →
 
 ⚠️ **CUMPLIMIENTO OBLIGATORIO**: Toda acción debe seguir este protocolo SIN EXCEPCIÓN
 
-**PROTOCOLO CORE**: /core OBLIGATORIO → @context/architecture/orchestration.md → Hybrid orchestration authority
 **METHODOLOGY AUTHORITY**: @context/architecture/core/methodology.md → L4-Pure Orchestration + Think x4 + Research-First
-**COMANDO CORE ENFORCEMENT**: TODA acción inicia OBLIGATORIAMENTE con /core SIEMPRE
 **AUTHORITY VALIDATION**: @context/architecture/core/truth-source.md → Context architecture dispatcher
-
-### /core - SLASH COMMAND OBLIGATORIO UNIVERSAL
-**DEFINICIÓN**: Protocolo completo de orquestación inteligente con 29 pasos sistemáticos + validación de coherencia contextual ejecutado como slash command
-
-**CONTENIDO DEL COMANDO**:
-- 🌳 Workspace conversacional resiliente con git worktrees
-- 🪝 Automation layer integration con Claude Code hooks  
-- 📋 Protocolo híbrido de orquestación inteligente
-- 🔄 Matriz de decisión inteligente embedded
-- ⚡ Coordinación de subagentes especializados
-- 📖 **READ-BEFORE-EDIT OBLIGATORIO**: SIEMPRE Read tool antes de Edit/Write/MultiEdit operations
-- 🔍 **FILE LOCATION VALIDATION**: Verificar ubicación exacta antes de operaciones de archivo
-- 🔗 **REFERENCE PATTERN STANDARDIZATION**: OBLIGATORIO @context/ prefix para ALL file references
-- 🔗 **COHERENCIA CONTEXTUAL**: Validación obligatoria de enlaces condicionales y semantic triggers
-- 🏁 Finalización conversacional completa
-
-**ENFORCEMENT ABSOLUTO**: NUNCA proceder sin ejecutar /core completo. NUNCA saltar pasos. SIEMPRE protocolo de 29 pasos.
 
 ## CONTEXTO CORE SIEMPRE CARGADO
 @context/vision/vision_foundation.md
@@ -47,11 +27,11 @@ universal_protocol: "PROTOCOLO UNIVERSAL SIN EXCEPCIÓN: CLAUDE.md → /core →
 @context/architecture/core/authority.md
 @context/vision/simplicity.md
 
-## SEMANTIC TRIGGERS → CONDITIONAL CONTEXT LOADING
+## SEMANTIC TRIGGERS → MANDATORY CONDITIONAL LOADING
 
 **Semantic Triggers Authority**: → @context/architecture/claude_code/semantic-triggers/README.md
 
-**15 Semantic Patterns**: Complete conditional context loading framework with LOAD/EXECUTE/VALIDATE protocols preserving supreme authority chain integrity through intelligent pattern recognition and smart context loading based on conversation patterns.
+⚡ **CONDITIONAL LOADING OBLIGATORIO**: 15 semantic patterns with automatic context loading - NUNCA load complete context, SIEMPRE usar pattern recognition para cargar SOLO contexto necesario per conversation type.
 
 ## UNIVERSAL CONTEXT REFERENCES
 
@@ -60,18 +40,39 @@ universal_protocol: "PROTOCOLO UNIVERSAL SIN EXCEPCIÓN: CLAUDE.md → /core →
 **Reference templates**: @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
 **README navigation**: @context/architecture/README.md
 
+## GUARDIAN SYSTEM ENFORCEMENT - ZERO TOLERANCE POLICY
+
+🚫 **FILE SIZE HARD ENFORCEMENT**: AUTOMATIC STOP mechanism preventing infinite cleanup cycles
+
+### **BINARY ENFORCEMENT PROTOCOL**
+1. **PRE-EXECUTION FILE SIZE VALIDATION**: 
+   - 60 lines → WARNING: Consider modularization
+   - 70 lines → CAUTION: Approaching limit  
+   - **80+ lines → IMMEDIATE STOP + AUTO L2-MODULAR TRIGGER**
+   
+2. **AUTOMATIC L2-MODULAR EXTRACTION**: File >80 lines triggers:
+   - Hub creation (≤40 lines reference-only navigation)  
+   - Module extraction (specialized content ≤80 lines each)
+   - Bidirectional reference system implementation
+
+3. **CONDITIONAL LOADING MANDATORY**: OBLIGATORIO use semantic triggers:
+   - Load ONLY required context per conversation pattern
+   - Reference-only architecture by default
+   - Zero content duplication enforcement
+
 ## PRINCIPIO ESENCIAL MANDATORIO SIN EXCEPCIÓN
 
-1. **EJECUTA /core OBLIGATORIO** como PRIMER paso absoluto SIEMPRE
-2. **READ-BEFORE-EDIT ENFORCEMENT**: OBLIGATORIO Read tool antes de ANY Edit/Write/MultiEdit operation
+1. **READ-BEFORE-EDIT ENFORCEMENT**: OBLIGATORIO Read tool antes de ANY Edit/Write/MultiEdit operation
+2. **FILE SIZE PRE-VALIDATION**: OBLIGATORIO verificar líneas antes de crear/modificar archivos
 3. **FILE LOCATION VERIFICATION**: OBLIGATORIO validar ubicación exacta antes de operaciones archivo
 4. **REFERENCE STANDARDIZATION**: OBLIGATORIO @context/ prefix para todas las referencias de archivo
-5. **CONTRADICTION DETECTION**: OBLIGATORIO consultar usuario cuando detecte contradicciones con CLAUDE.md
-6. **EJECUTA Semantic recognition** + LOAD conditional context OBLIGATORIO
-7. **APLICA methodology authority** + VALIDATE systematic OBLIGATORIO  
-8. **LOGRA Maximum completitud** con zero friction OBLIGATORIO
+5. **CONDITIONAL LOADING OBLIGATORIO**: OBLIGATORIO usar semantic triggers para contexto
+6. **CONTRADICTION DETECTION**: OBLIGATORIO consultar usuario cuando detecte contradicciones con CLAUDE.md
+7. **EJECUTA Semantic recognition** + LOAD conditional context OBLIGATORIO
+8. **APLICA methodology authority** + VALIDATE systematic OBLIGATORIO  
+9. **LOGRA Maximum completitud** con zero friction OBLIGATORIO
 
-**ENFORCEMENT ABSOLUTO**: NUNCA bypass /core. NUNCA shortcuts. NUNCA Edit sin Read previo. NUNCA references sin @context/ prefix. SIEMPRE protocolo completo.
+**ENFORCEMENT ABSOLUTO**: NUNCA shortcuts. NUNCA archivos >80 líneas. NUNCA Edit sin Read previo. NUNCA references sin @context/ prefix. SIEMPRE protocolo completo con Guardian enforcement.
 
 ---
 
