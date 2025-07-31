@@ -8,131 +8,55 @@ context/architecture/ux/component-decision-flowchart.md → visual-decision-syst
 ## PRINCIPIO FUNDAMENTAL
 **"4-phase visual decision process eliminates placement confusion"** - Complete systematic flowchart from content classification through final validation.
 
-## PHASE 1: Content Classification
+## VISUAL DECISION SYSTEM ARCHITECTURE
 
-```
-Content Type Decision Tree:
-User Vision Content? → context/vision/
-  ├── Philosophy/Discovery → vision_foundation.md
-  ├── Vision Evolution → vision/ directory
-  └── Vision Crystallization → vision-specific components
+### **4-Phase Decision Process**
+**Module**: → visual-system/decision-core.md  
+**Content**: Complete 4-phase visual decision process - content classification, authority validation, placement logic, and quality gates  
+**Authority**: Visual decision process authority and systematic placement protocols
 
-Authority Content? → @context/architecture/core/authority.md
-  ├── User Authority → authority supremacy principles
-  ├── Domain Boundaries → user-AI separation
-  └── Authority Chain → hierarchy validation
+### **Final Validation & Success Metrics**
+**Module**: → visual-system/visual-frameworks.md  
+**Content**: Final validation frameworks, quality gates validation, decision confidence metrics, and success indicators  
+**Authority**: Visual frameworks and quality assurance authority
 
-Technical Content? → context/patterns.md or context/architecture/
-  ├── Implementation Patterns → patterns/ directory
-  ├── Architecture Decisions → architecture/adr/
-  └── UX/Conversation → architecture/ux/
+## VISUAL DECISION OVERVIEW
 
-Standards Content? → @context/architecture/standards/README.md
-  ├── Documentation Standards → standards/documentation-standards.md
-  ├── Enforcement Standards → standards/enforcement-standards.md
-  └── Technical Standards → standards/technical-standards.md
+### **4-Phase Process Authority**
+**PHASE 1**: Content Classification → Domain identification and content type routing
+**PHASE 2**: Authority Validation → User/system authority verification protocols  
+**PHASE 3**: Placement Logic → Scope analysis and placement decision tree
+**PHASE 4**: Final Validation → Quality gates and compliance verification
 
-Template Content? → context/architecture/templates/
-  ├── README Templates → templates/README_template.md
-  ├── Component Templates → templates/core_component_template.md
-  └── Specialized Templates → templates/specialized_directory_template.md
+### **Visual Decision Validation**
+**Decision Confidence Metrics**: Authority source clarity, placement logic consistency, reference architecture integrity, standards compliance verification
+**Decision Success Indicators**: Placement decision with authority validation, file size compliance through modularization, reference integrity with bidirectional consistency, system integration with authority preservation
 
-Data Content? → context/data/
-  ├── Performance Data → data/performance/
-  ├── Validation Data → data/validation/
-  └── Conversation Data → data/conversations/
+## PLACEMENT ELIMINATION PROTOCOL
 
-UX Content? → context/architecture/ux/
-  ├── Conversation Patterns → ux/conversation-patterns/
-  ├── Interface Design → ux/interface-design/
-  └── User Experience → ux/user-experience/
-```
+### **Decision Paralysis Prevention**
+**Visual Decision Tree**: Eliminates placement confusion through systematic 4-phase process
+**Authority Validation**: Clear authority chain verification at each decision point
+**Quality Assurance**: Comprehensive validation gates preventing placement errors
 
-## PHASE 2: Authority Validation
+### **Systematic Decision Intelligence**
+**Content Classification**: Domain-based routing through systematic decision trees
+**Authority Preservation**: Complete authority chain integrity throughout placement process
+**Reference Integration**: Bidirectional reference system with cross-component validation
 
-```
-Authority Source Decision Tree:
-User Authority Content?
-  ├── Load @context/vision/vision_foundation.md MANDATORY
-  ├── Validate against user vision quotes
-  ├── Check for vision conflicts → STOP if conflict detected
-  └── Continue to placement logic if aligned
+## INTEGRATION REFERENCES
 
-System Authority Content?
-  ├── Load @context/architecture/core/truth-source.md for validation
-  ├── Verify authority chain clarity
-  ├── Check hierarchy integrity → ERROR if unclear
-  └── Continue with validated authority
+### → visual-system/
+**Connection**: Complete visual decision system through specialized modules
+**Protocol**: Hub navigation to comprehensive visual decision authority
 
-Shared Authority Content?
-  ├── Load both user and system authority sources
-  ├── Design reference architecture for shared access
-  ├── Validate bidirectional authority preservation
-  └── Continue with reference-based placement
-```
+### ←→ component-decision-flowchart.md
+**Connection**: Visual decision system implements flowchart authority
+**Protocol**: Visual system serves component decision flowchart through specialized execution
 
-## PHASE 3: Placement Logic
-
-```
-Content Scope Decision Tree:
-Single Component Scope?
-  ├── Existing Component? → Edit existing file
-  ├── New Component < 80 lines? → Create new file  
-  ├── New Component > 80 lines? → Split into modules + references
-  └── Validate size compliance and authority preservation
-
-Cross-Component Scope?
-  ├── Shared Authority? → Reference architecture approach
-  ├── Primary Authority? → Primary component + secondary references
-  ├── Integration Required? → Bidirectional reference system
-  └── Validate cross-component consistency
-
-System-Wide Scope?
-  ├── Place at context/ root level for system authority
-  ├── Create comprehensive bidirectional references
-  ├── Update @context/architecture/core/truth-source.md and core components
-  └── Validate system-wide integration and authority chain
-```
-
-## PHASE 4: Final Validation
-
-```
-Quality Gates Validation:
-File Size Compliance?
-  ├── ≤80 lines? → PASS
-  ├── >80 lines? → STOP: Modularize content with reference architecture
-  └── Validate modular extraction maintains functionality
-
-Authority Chain Preservation?
-  ├── Authority traceable to supreme source? → PASS
-  ├── Authority conflicts or gaps? → STOP: Fix authority chain
-  └── Validate complete authority integrity through placement
-
-Bidirectional References?
-  ├── Forward references implemented? → Check reference accuracy
-  ├── Backward references from target components? → STOP: Add cross-references
-  └── Validate bidirectional consistency and authority preservation
-
-Standards Compliance?
-  ├── Documentation standards met? → Check format and structure
-  ├── Technical standards compliance? → Check implementation approach
-  ├── Authority standards preserved? → STOP: Apply authority compliance
-  └── Validate complete standards adherence before implementation
-```
-
-## VISUAL DECISION VALIDATION
-
-### **Decision Confidence Metrics**
-- Authority source clarity and validation confidence
-- Placement logic consistency and validation accuracy  
-- Reference architecture integrity and bidirectional consistency
-- Standards compliance verification and quality assurance
-
-### **Decision Success Indicators**
-- Placement decision made with clear authority validation
-- File size compliance achieved through appropriate modularization
-- Reference integrity established with bidirectional consistency
-- System integration validated with authority preservation
+### ←→ interactive-placement-guide.md
+**Connection**: Visual decision system enables interactive placement guidance
+**Protocol**: Decision system provides systematic foundation for interactive wizard process
 
 ---
 

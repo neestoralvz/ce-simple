@@ -7,70 +7,20 @@ placement-methodology/README.md → content-classification-protocols.md implemen
 
 ## CONTENT CLASSIFICATION FRAMEWORK
 
-### **Primary Content Type Classification**
-```
-Content Classification Protocol:
-├── User Vision/Philosophy → Vision domain identification
-│   ├── User statements about preferences or requirements
-│   ├── Philosophy or principle definitions
-│   ├── System behavior expectations
-│   └── Evolution direction guidance
-├── Authority/Permission → Authority domain identification
-│   ├── Permission or boundary definitions
-│   ├── Decision-making authority statements
-│   ├── Domain responsibility assignments
-│   └── Authority conflict resolutions
-├── Technical Implementation → Technical domain identification
-│   ├── Implementation patterns or methodologies
-│   ├── Tool usage guidelines or protocols
-│   ├── Process definitions or workflows
-│   └── Integration specifications
-├── Standards/Compliance → Standards domain identification
-│   ├── Compliance requirements or protocols
-│   ├── Quality assurance definitions
-│   ├── Validation procedures or gates
-│   └── Enforcement mechanisms
-├── Templates/Structure → Template domain identification
-│   ├── Reusable patterns or structures
-│   ├── Template definitions or formats
-│   ├── Structural guidelines
-│   └── Organization frameworks
-├── Data/Metrics → Data domain identification
-│   ├── Performance measurements
-│   ├── Validation metrics
-│   ├── Quality indicators
-│   └── Empirical evidence
-└── UX/Conversation → UX domain identification
-    ├── User experience patterns
-    ├── Conversation optimization
-    ├── Interface design guidelines
-    └── Interaction protocols
-```
+### **7 Primary Content Types**
+- **User Vision/Philosophy**: User preferences/requirements → Philosophy/principles → System behavior expectations → Evolution guidance
+- **Authority/Permission**: Permission/boundaries → Decision-making authority → Domain responsibilities → Authority conflict resolution
+- **Technical Implementation**: Implementation patterns/methodologies → Tool guidelines/protocols → Process definitions/workflows → Integration specifications
+- **Standards/Compliance**: Compliance requirements/protocols → Quality assurance → Validation procedures/gates → Enforcement mechanisms
+- **Templates/Structure**: Reusable patterns/structures → Template definitions/formats → Structural guidelines → Organization frameworks
+- **Data/Metrics**: Performance measurements → Validation metrics → Quality indicators → Empirical evidence
+- **UX/Conversation**: User experience patterns → Conversation optimization → Interface design → Interaction protocols
 
-### **Content Characteristics Analysis**
-```
-Characteristics Assessment Framework:
-├── Scope Assessment
-│   ├── Component-specific content (single component impact)
-│   ├── Cross-component content (multiple component impact)
-│   ├── System-wide content (entire system impact)
-│   └── Ambiguous scope content (unclear impact assessment)
-├── Authority Source Identification
-│   ├── User authority content (user statements, vision, preferences)
-│   ├── System authority content (technical, optimization, standards)
-│   ├── Shared authority content (collaborative, guided implementation)
-│   └── Conflicted authority content (authority ambiguity or conflict)
-├── Complexity Evaluation
-│   ├── Simple content (single concept, clear placement)
-│   ├── Moderate content (related concepts, multiple options)
-│   ├── Complex content (interconnected concepts, system implications)
-│   └── Critical content (high impact, authority implications)
-└── Integration Requirements Analysis
-    ├── Standalone content (minimal integration needs)
-    ├── Connected content (specific integration pathways)
-    ├── Hub content (multiple integration requirements)
-    └── System content (comprehensive integration needs)
-```
+### **4 Content Characteristics**
+- **Scope**: Component-specific (single impact) → Cross-component (multiple impact) → System-wide (entire system) → Ambiguous scope (unclear impact)
+- **Authority Source**: User authority (statements, vision, preferences) → System authority (technical, optimization, standards) → Shared authority (collaborative, guided) → Conflicted authority (ambiguity/conflict)
+- **Complexity**: Simple (single concept, clear placement) → Moderate (related concepts, multiple options) → Complex (interconnected, system implications) → Critical (high impact, authority implications)
+- **Integration**: Standalone (minimal integration) → Connected (specific pathways) → Hub (multiple requirements) → System (comprehensive needs)
 
 ## INTEGRATION REFERENCES
 

@@ -11,7 +11,7 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 
 ⚠️ **CUMPLIMIENTO OBLIGATORIO**: Toda acción debe seguir este protocolo SIN EXCEPCIÓN
 
-**PROTOCOLO CORE**: @context/architecture/claude_code/orchestration_protocols.md → Hybrid orchestration authority
+**PROTOCOLO CORE**: @context/architecture/orchestration.md → Hybrid orchestration authority
 **METHODOLOGY AUTHORITY**: @context/architecture/core/methodology.md → L4-Pure Orchestration + Think x4 + Research-First
 **AUTHORITY VALIDATION**: @context/architecture/core/truth-source.md → Context architecture dispatcher
 
@@ -32,12 +32,12 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 ## SEMANTIC TRIGGERS → CONDITIONAL CONTEXT LOADING
 
 ### IF semantic_pattern=research_investigation:
-**LOAD**: @context/architecture/claude_code/methodology/README.md + @context/architecture/core/methodology.md + @context/vision/README.md
+**LOAD**: @context/architecture/claude-code.md + @context/architecture/core/methodology.md + @context/vision/README.md
 **EXECUTE**: Research specialist template per methodology authority
 **VALIDATE**: Post-delegation validation protocol
 
 ### IF semantic_pattern=documentation_creation:
-**LOAD**: @context/architecture/templates/README.md + @context/architecture/standards/README.md + @context/architecture/reference/README.md
+**LOAD**: @context/architecture/templates.md + @context/architecture/standards.md + @context/architecture/reference/README.md
 **EXECUTE**: Documentation builder template per template authority
 **VALIDATE**: Standards compliance validation
 
@@ -47,17 +47,17 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 **VALIDATE**: Authority alignment verification → CRÍTICO
 
 ### IF semantic_pattern=development_implementation:
-**LOAD**: @context/architecture/claude_code/methodology/README.md + @context/architecture/patterns.md + @context/data/validation/README.md
+**LOAD**: @context/architecture/claude-code.md + @context/architecture/patterns.md + @context/data/validation/README.md
 **EXECUTE**: Implementation template per development authority
 **VALIDATE**: Quality gates validation → ESENCIAL
 
 ### IF semantic_pattern=workflow_command_creation:
-**LOAD**: @context/architecture/claude_code/command-creation/README.md + @context/architecture/templates/README.md
+**LOAD**: @context/architecture/claude-code.md + @context/architecture/templates.md
 **EXECUTE**: Generic delegation template per command authority
 **VALIDATE**: System coherence validation → SISTEMÁTICO
 
 ### IF semantic_pattern=multi_conversation_orchestration:
-**LOAD**: @context/architecture/claude_code/orchestration/README.md + @context/data/performance/README.md + @context/architecture/core/methodology.md
+**LOAD**: @context/architecture/orchestration.md + @context/data/performance/README.md + @context/architecture/core/methodology.md
 **EXECUTE**: Multiple concurrent templates per orchestration authority
 **VALIDATE**: Coordination effectiveness validation → COORDINACIÓN
 
@@ -67,12 +67,12 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 **VALIDATE**: Completeness validation → COMPLETITUD
 
 ### IF semantic_pattern=content_placement:
-**LOAD**: @context/architecture/ux/component-decision-flowchart.md + @context/architecture/ux/component-decision-flowchart.md
+**LOAD**: @context/architecture/ux-placement.md + @context/architecture/templates.md  
 **EXECUTE**: Systematic placement template per placement authority
 **VALIDATE**: Integration pathway verification → INTEGRACIÓN
 
 ### IF semantic_pattern=error_problem_resolution:
-**LOAD**: @context/architecture/core/methodology.md + @context/architecture/patterns/README.md + @context/architecture/standards/README.md
+**LOAD**: @context/architecture/core/methodology.md + @context/architecture/patterns.md + @context/architecture/standards.md
 **EXECUTE**: Problem resolution specialist template per resolution authority
 **VALIDATE**: Root cause elimination + integral solution verification → CRÍTICO
 

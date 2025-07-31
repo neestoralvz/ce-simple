@@ -5,77 +5,24 @@
 ## AUTORIDAD SUPREMA
 placement-methodology/README.md → authority-source-identification.md implements authority source validation per methodology authority
 
-## AUTHORITY SOURCE VALIDATION FRAMEWORK
+## AUTHORITY SOURCE VALIDATION
 
-### **Authority Source Categories**
-```
-Authority Source Classification:
-├── User Authority Validation
-│   ├── Direct user statements or instructions
-│   ├── User vision or philosophy expressions
-│   ├── User preference or requirement definitions
-│   └── User authority supremacy enforcement requirements
-├── System Authority Validation
-│   ├── Technical implementation authority
-│   ├── Process optimization authority
-│   ├── Standards enforcement authority
-│   └── System evolution authority
-├── Shared Authority Validation
-│   ├── User-system collaborative content
-│   ├── Implementation guided by user vision
-│   ├── System optimization within user boundaries
-│   └── Reference architecture for shared content
-└── Authority Conflict Resolution
-    ├── Authority conflict identification
-    ├── Authority supremacy determination
-    ├── Conflict resolution protocol activation
-    └── Authority chain reconstruction if needed
-```
+### **Source Categories**
+- **User Authority**: Direct statements/instructions → Vision/philosophy expressions → Preference/requirement definitions → Supremacy enforcement requirements
+- **System Authority**: Technical implementation → Process optimization → Standards enforcement → System evolution
+- **Shared Authority**: User-system collaboration → Implementation guided by user vision → System optimization within user boundaries → Reference architecture
+- **Authority Conflict Resolution**: Conflict identification → Supremacy determination → Resolution protocol activation → Chain reconstruction if needed
 
-### **Authority Source Identification Protocol**
-```
-Source Identification Process:
-├── Content Origin Analysis
-│   ├── Content source: User statement vs system generation vs hybrid
-│   ├── Authority lineage: Trace content to original authority source
-│   ├── Authority evolution: Track authority changes over time
-│   └── Authority contamination: Identify authority drift or dilution
-├── Authority Language Analysis
-│   ├── Direct authority statements: "I want", "Must be", "Required"
-│   ├── Vision language: Philosophy, principles, system behavior expectations
-│   ├── Delegation language: System authority within user boundaries
-│   └── Conflict language: Authority ambiguity or competing claims
-├── Authority Strength Assessment
-│   ├── Supreme authority: Overrides all other considerations
-│   ├── Primary authority: Major influence on system behavior
-│   ├── Secondary authority: Supporting or implementing authority
-│   └── Delegated authority: System authority within user-defined boundaries
-└── Authority Validation Requirements
-    ├── User voice fidelity: ≥95% preservation requirement
-    ├── Authority chain integrity: Complete traceability required
-    ├── Authority contamination prevention: Clean authority sources
-    └── Authority supremacy preservation: User authority overrides all
-```
+### **Source Identification Protocol**
+- **Content Origin Analysis**: Content source (User statement vs system generation vs hybrid) → Authority lineage (trace to original source) → Authority evolution (track changes) → Authority contamination (identify drift/dilution)
+- **Authority Language Analysis**: Direct statements ("I want", "Must be", "Required") → Vision language (philosophy, principles, expectations) → Delegation language (system authority within user boundaries) → Conflict language (ambiguity/competing claims)
+- **Authority Strength Assessment**: Supreme (overrides all) → Primary (major influence) → Secondary (supporting/implementing) → Delegated (system within user-defined boundaries)
+- **Validation Requirements**: User voice fidelity ≥95% → Chain integrity (complete traceability) → Contamination prevention (clean sources) → Supremacy preservation (user overrides all)
 
-### **Authority Source Documentation Protocol**
-```
-Authority Documentation Framework:
-├── Authority Source Documentation
-│   ├── Authority origin: Where did this authority come from?
-│   ├── Authority context: What circumstances established this authority?
-│   ├── Authority scope: What does this authority cover?
-│   └── Authority evolution: How has this authority changed?
-├── Authority Validation Documentation
-│   ├── Validation method: How was authority source validated?
-│   ├── Validation evidence: What evidence supports authority claim?
-│   ├── Validation confidence: How certain is authority identification?
-│   └── Validation date: When was authority source last validated?
-└── Authority Preservation Documentation
-    ├── Preservation requirements: What must be preserved?
-    ├── Preservation mechanisms: How is authority preserved?
-    ├── Preservation validation: How is preservation verified?
-    └── Preservation monitoring: How is ongoing preservation ensured?
-```
+### **Source Documentation Protocol**
+- **Source Documentation**: Authority origin → Authority context → Authority scope → Authority evolution
+- **Validation Documentation**: Validation method → Validation evidence → Validation confidence → Validation date
+- **Preservation Documentation**: Preservation requirements → Preservation mechanisms → Preservation validation → Preservation monitoring
 
 ## INTEGRATION REFERENCES
 
@@ -85,4 +32,4 @@ Authority Documentation Framework:
 
 ---
 
-**SOURCE IDENTIFICATION DECLARATION**: Authority source identification foundation for systematic authority validation and preservation through placement methodology.
+**SOURCE IDENTIFICATION DECLARATION**: Authority source identification foundation for systematic validation and preservation through placement methodology.
