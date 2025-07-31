@@ -1,0 +1,22 @@
+# Structure Analysis: architecture/templates/llm-instruction-template.md (134 lines)
+## Main Sections (15 found):
+## AUTORIDAD SUPREMA
+## TEMPLATE UNIVERSAL PARA INSTRUCCIONES LLM
+## ENFORCEMENT REQUIREMENTS CHECKLIST
+## SPECIALIZED INSTRUCTION TYPES
+## VALIDATION TESTING FRAMEWORK
+## Subsections (10 found):
+### **HEADER ENFORCEMENT OBLIGATORIO**
+### **CORE PROTOCOL STRUCTURE**
+### **CONTINUATION PROTOCOL**
+### **PRE-PUBLICATION VALIDATION**
+### **LANGUAGE STANDARDS ENFORCEMENT**
+### **ORCHESTRATION INSTRUCTION TEMPLATE**
+### **EXECUTION INSTRUCTION TEMPLATE**
+### **ANALYSIS INSTRUCTION TEMPLATE**
+### **INSTRUCTION EFFECTIVENESS TEST**
+### **DEGRADATION PREVENTION TEST**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 16

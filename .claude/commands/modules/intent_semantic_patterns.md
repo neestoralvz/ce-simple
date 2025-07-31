@@ -1,29 +1,29 @@
 # Intent Semantic Patterns Module
 
 ## Project Type Detection Template
-**API/Backend:** "API", "backend", "server", "endpoints", "microservice" → `/planning:init api-service`
-**Frontend:** "landing", "website", "frontend", "UI", "interfaz", "página" → `/planning:init web-frontend`
-**Full-Stack:** "web app", "aplicación web", "fullstack", "completa" → `/planning:init web-app`
-**CLI:** "CLI", "command line", "terminal", "script", "herramienta" → `/planning:init cli-tool`
-**Mobile:** "mobile", "app móvil", "iOS", "Android", "celular" → `/planning:init mobile-app`
+**API/Backend:** "API", "backend", "server", "endpoints", "microservice" → `p-init api-service`
+**Frontend:** "landing", "website", "frontend", "UI", "interfaz", "página" → `p-init web-frontend`
+**Full-Stack:** "web app", "aplicación web", "fullstack", "completa" → `p-init web-app`
+**CLI:** "CLI", "command line", "terminal", "script", "herramienta" → `p-init cli-tool`
+**Mobile:** "mobile", "app móvil", "iOS", "Android", "celular" → `p-init mobile-app`
 
 ## Intent Classification Template
 ### Initialization Intent
 **Keywords:** "quiero hacer", "necesito crear", "empezar", "iniciar", "nuevo proyecto"
-**Action:** Project type detection → `/planning:init [detected-type]`
+**Action:** Project type detection → `p-init [detected-type]`
 **Confidence threshold:** 80% for auto-execution
 
 ### Status/Help Intent  
 **Keywords:** "perdido", "¿qué hago?", "estado", "progreso", "help", "ayuda"
-**Action:** Route to `/planning:status` or help system
+**Action:** Route to `p-status` or help system
 
 ### Continuation Intent
 **Keywords:** "continuar", "seguir", "retomar", "donde quedé", "siguiente paso"
-**Action:** Route to `/planning:focus` + `/planning:status`
+**Action:** Route to `p-focus` + `p-status`
 
 ### Advancement Intent
 **Keywords:** "terminé", "completé", "siguiente fase", "avanzar", "listo"
-**Action:** Route to `/planning:gate` for layer validation
+**Action:** Route to `p-gate` for layer validation
 
 ## Technology Stack Hints
 **Backend tech:** "Node.js", "Python", "Django", "Express" → api-service

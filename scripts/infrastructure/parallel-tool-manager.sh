@@ -1,0 +1,173 @@
+#!/bin/bash
+# parallel-tool-manager.sh - Coordination system for parallel tool execution
+# Supports /core protocol automation layer requirements
+
+set -euo pipefail
+
+# Silent script - no user notifications (Claude Code communicates results)
+# Configuration
+MAX_PARALLEL=${MAX_PARALLEL:-3}
+TEMP_DIR=$(mktemp -d)
+LOG_FILE="$TEMP_DIR/parallel-tools.log"
+PIDS_FILE="$TEMP_DIR/pids.txt"
+
+# Cleanup function
+cleanup() {
+    if [[ -f "$PIDS_FILE" ]]; then
+        while IFS= read -r pid; do
+            if kill -0 "$pid" 2>/dev/null; then
+                kill "$pid" 2>/dev/null || true
+                wait "$pid" 2>/dev/null || true
+            fi
+        done < "$PIDS_FILE"
+    fi
+    rm -rf "$TEMP_DIR"
+}
+trap cleanup EXIT
+
+# Log function
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"
+}
+
+# Execute tool in background
+execute_tool() {
+    local tool_name="$1"
+    local tool_command="$2"
+    local tool_id="$$_$(date +%s)_$RANDOM"
+    
+    log "Starting tool: $tool_name (ID: $tool_id)"
+    
+    # Execute tool in background
+    (
+        echo "=== Tool: $tool_name (ID: $tool_id) ===" >> "$LOG_FILE"
+        eval "$tool_command" >> "$LOG_FILE" 2>&1
+        echo "$tool_id:$?:$(date +%s)" >> "$TEMP_DIR/results.txt"
+    ) &
+    
+    local pid=$!
+    echo "$pid" >> "$PIDS_FILE"
+    echo "$tool_id:$pid:$tool_name" >> "$TEMP_DIR/tool_registry.txt"
+    
+    log "Tool $tool_name started with PID $pid"
+    return 0
+}
+
+# Wait for tools to complete
+wait_for_completion() {
+    local timeout=${1:-300}  # 5 minute default timeout
+    local start_time=$(date +%s)
+    
+    log "Waiting for tool completion (timeout: ${timeout}s)"
+    
+    while [[ -f "$PIDS_FILE" ]] && [[ -s "$PIDS_FILE" ]]; do
+        local current_time=$(date +%s)
+        if (( current_time - start_time > timeout )); then
+            log "ERROR: Timeout reached, terminating remaining tools"
+            cleanup
+            return 1
+        fi
+        
+        # Check completed processes
+        local temp_pids=$(mktemp)
+        while IFS= read -r pid; do
+            if kill -0 "$pid" 2>/dev/null; then
+                echo "$pid" >> "$temp_pids"
+            else
+                wait "$pid" 2>/dev/null || true
+                log "Tool with PID $pid completed"
+            fi
+        done < "$PIDS_FILE"
+        
+        mv "$temp_pids" "$PIDS_FILE"
+        
+        if [[ ! -s "$PIDS_FILE" ]]; then
+            break
+        fi
+        
+        sleep 1
+    done
+    
+    log "All tools completed"
+    return 0
+}
+
+# Get results summary
+get_results() {
+    if [[ -f "$TEMP_DIR/results.txt" ]]; then
+        log "Tool execution results:"
+        while IFS=: read -r tool_id exit_code end_time; do
+            local tool_name="Unknown"
+            if [[ -f "$TEMP_DIR/tool_registry.txt" ]]; then
+                tool_name=$(grep "^$tool_id:" "$TEMP_DIR/tool_registry.txt" | cut -d: -f3 || echo "Unknown")
+            fi
+            
+            if [[ "$exit_code" == "0" ]]; then
+                log "✅ $tool_name (ID: $tool_id) - SUCCESS"
+            else
+                log "❌ $tool_name (ID: $tool_id) - FAILED (exit code: $exit_code)"
+            fi
+        done < "$TEMP_DIR/results.txt"
+    else
+        log "No results file found"
+    fi
+}
+
+# Main execution function
+main() {
+    local action="${1:-help}"
+    
+    case "$action" in
+        "execute")
+            shift
+            while [[ $# -gt 0 ]]; do
+                local tool_spec="$1"
+                local tool_name="${tool_spec%%:*}"
+                local tool_command="${tool_spec#*:}"
+                
+                # Wait if at max parallel limit
+                while [[ $(wc -l < "$PIDS_FILE" 2>/dev/null || echo 0) -ge $MAX_PARALLEL ]]; do
+                    sleep 0.5
+                    # Remove completed processes
+                    wait_for_completion 0 || true
+                done
+                
+                execute_tool "$tool_name" "$tool_command"
+                shift
+            done
+            
+            wait_for_completion
+            get_results
+            ;;
+        "status")
+            if [[ -f "$PIDS_FILE" ]] && [[ -s "$PIDS_FILE" ]]; then
+                local active_count=$(wc -l < "$PIDS_FILE")
+                log "Active tools: $active_count"
+                while IFS= read -r pid; do
+                    if kill -0 "$pid" 2>/dev/null; then
+                        local tool_info=$(grep ":$pid:" "$TEMP_DIR/tool_registry.txt" 2>/dev/null | cut -d: -f3 || echo "Unknown")
+                        log "  PID $pid: $tool_info"
+                    fi
+                done < "$PIDS_FILE"
+            else
+                log "No active tools"
+            fi
+            ;;
+        "help"|*)
+            echo "Usage: $0 [execute|status|help]"
+            echo ""
+            echo "execute: Run tools in parallel"
+            echo "  Format: $0 execute 'tool1:command1' 'tool2:command2' ..."
+            echo "  Example: $0 execute 'grep:grep -r pattern .' 'find:find . -name \"*.md\"'"
+            echo ""
+            echo "status: Show active tool status"
+            echo "help: Show this help"
+            echo ""
+            echo "Environment variables:"
+            echo "  MAX_PARALLEL: Maximum parallel tools (default: 3)"
+            ;;
+    esac
+}
+
+# Execute main function
+main "$@"

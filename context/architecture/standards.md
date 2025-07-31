@@ -35,6 +35,9 @@ VISION.md → supreme user authority → @context/architecture/core/truth-source
 - CLI design 2025 standards + bash scripting modernization
 - Research-first protocol OBLIGATORIO: WebSearch + MCP context7 simultaneous
 - SOLID principles application + modular architecture
+- **COMMUNICATION PROTOCOL**: Claude Code communicates results, bash scripts remain silent
+- **SILENT SCRIPTS**: No echo/printf for user notifications - only technical outputs
+- **NATURAL NOTIFICATION**: Claude interprets technical results and communicates naturally
 
 ### Claude Code Integration Authority (VALIDATED)
 **Protection System Standards**: Claude Code Hooks implementation validated per ADR-027
@@ -49,6 +52,11 @@ VISION.md → supreme user authority → @context/architecture/core/truth-source
 - Guardian enforcement formatting + partner constructor templates
 - Visual formatting para notificaciones del sistema using syntax highlighting
 - Discrete visual communication supporting natural conversation
+
+**Plan Notification Standards**: → @context/architecture/ux/plan-notification-standards.md
+- Badge format with double line breaks for ExitPlanMode boxes
+- Standardized emoji codes for priority and status indication
+- Visual hierarchy for scannable plan communications
 
 ### Structural Integrity Authority
 **Structural Standards**: → architecture/standards/structural-standards.md

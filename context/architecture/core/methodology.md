@@ -1,6 +1,6 @@
-# Methodology - Complete Methodology Authority
+# Methodology - Complete Methodology Authority Hub
 
-**30/07/2025 09:10 CDMX** | Ultra-consolidated methodology with complete user authority preservation
+**30/07/2025 09:10 CDMX** | Methodology authority hub with specialized modules
 
 ## AUTORIDAD SUPREMA
 VISION.md → @context/architecture/core/truth-source.md → methodology.md implements complete methodology architecture per user vision
@@ -13,91 +13,42 @@ VISION.md → @context/architecture/core/truth-source.md → methodology.md impl
 
 > "creo que si podriamos quitar esos reportes sin perder la granularidad"
 
-## L1-CORE METHODOLOGY FOUNDATION
+## L1-CORE METHODOLOGY MODULES
 
-### Socratic Discovery Protocol
-**Two-Phase Workflow**: (1) Unlimited conversation → true intent discovery, (2) Command execution → optimized implementation
-**Challenge Question Patterns**: "¿Qué problema real estás tratando de resolver?" / "¿Esta solución simplifica o complica?" / "¿Tu usuario futuro agradecerá esta decisión?"
-**Anti-Pattern Prevention**: Token-constrained discovery, assumption-based implementation, premature command execution
+### **Foundation Methodology Components**
+- **Socratic Discovery Protocol**: → @context/architecture/core/methodology/socratic-discovery-protocol.md
+- **Orchestration Framework**: → @context/architecture/core/methodology/orchestration-framework.md
+- **Research-to-Implementation Pipeline**: → @context/architecture/core/methodology/research-implementation-pipeline.md
+- **Evidence-Based Implementation**: → @context/architecture/core/methodology/evidence-based-implementation.md
 
-### Orchestration Framework  
-**Matrix Core Behavior**: Commands maintain independence but coordinate intelligently based on context
-**Task Tool Protocol**: description (3-5 words) + prompt (detailed with context loading) + subagent_type ("general-purpose")
-**Specialization Patterns**: Research/Partner Validation/Documentation/Architecture/Guardian/Implementation specialists
-**Guardian Integration**: Auto-activation for file size violations, authority breaches, vision modifications, standards non-compliance
+### **Evolution & Integration Components**
+- **Organic Evolution Framework**: → @context/architecture/core/methodology/organic-evolution-framework.md
+- **Component Lifecycle Management**: → @context/architecture/core/methodology/component-lifecycle-management.md
 
-### Research-to-Implementation Pipeline (VALIDATED)
-**Complete Success Pattern**: Research (WebSearch + Context7 + Think x4) → Evidence-based decision → Modular implementation → Comprehensive documentation
-**Success Metrics**: Claude Code Hooks implementation achieved 43% better performance than targets with 100% objectives met
-**Replicable Template**: Protection systems, technical integrations, systematic implementations
-**Documentation Standard**: Master document + case study + methodology updates + patterns + ADR
-
-### Evidence-Based Implementation Methodology (PROVEN)
-**3-Phase Validation Framework**: Research accuracy → Implementation success → Knowledge preservation
-**Research Prediction Accuracy**: 100% research predictions confirmed in Claude Code Hooks implementation
-**Implementation Timing**: Immediate post-research execution prevents scope creep and maintains decision momentum
-**Quality Assurance**: Quantitative metrics validation (performance, coverage, reliability) + qualitative assessment (UX, maintainability)
-**Knowledge Capital**: Comprehensive documentation multiplies implementation value through replicable patterns and organizational learning
-
-### Organic Evolution Integration Framework (ESTABLISHED)
-**Evolution Roadmap**: → @context/archive/system-evolution-roadmap.md
-**Natural Integration Protocol**: Pattern recognition → Evidence collection → User consultation → Implementation → Knowledge integration
-**Success Replication**: Apply validated methodology to Phase 2 (Git Hooks), pattern evolution, system scaling
-**Strategic Asset Management**: Each implementation multiplies capability through templates, patterns, methodology refinements
-
-### Component Lifecycle Management Framework (ADR-028)
-**Systematic Obsolescence Assessment**: 4-phase evidence-based evaluation for component continued utility vs archiving necessity
-**Archive-with-Intelligence Protocol**: Historical intelligence preservation + 95%+ authority fidelity + learning integration
-**TodoWrite-Tracked Decision Making**: Process transparency for complex architectural decisions with systematic completion tracking
-**Case Study Validation**: Handoff system archiving demonstrated zero functionality loss with complete authority preservation
-
-## SPECIALIZED METHODOLOGY MODULES
-
-### L2-Operational Methodology
-**Research-First Protocol**: → architecture/methodology/operational-methodology.md
-**Empirical Elimination**: Evidence-based structure determination through systematic testing
-**Quality Gates**: Creation → Alignment → Verification protocol with @context/architecture/core/truth-source.md validation
-
-### L3-Comprehensive Workflow Architecture  
-**Complete Workflow System**: → architecture/methodology/comprehensive-workflow.md
-**Revolutionary Integration**: 4-Phase Ultra-Orchestration and multi-conversation parallel execution
-**Background Intelligence**: Persistent processes and quote-based fragmentation (95%+ fidelity)
-
-### L4-Pure Orchestration Methodology
-**Pure AI Agent Orchestration**: → architecture/methodology/pure-orchestration.md
-**Expert Delegation**: ROL + CONTEXTO + INSTRUCCIONES + TAREA template OBLIGATORIO
-**Performance Multiplication**: Up to 20x improvement through intelligent coordination (validated)
-
-### Revolutionary Patterns & L5-Evolution
-**Revolutionary Methodology Patterns**: → architecture/methodology/revolutionary-patterns.md
-**2025 Orchestration Mastery**: Continuous execution flow + advanced error prevention
-**Guardian-Partner Ecosystem**: Binary enforcement + constructive dialogue integration
-
-### Enforcement Integration
-**Reinforcement Vocabulary**: → architecture/methodology/enforcement-integration.md
-**OBLIGATORIO/MANDATORIO/CRÍTICO**: Non-negotiable execution triggers
-**Core Enforcement Protocols**: Reference-only + authority chain + continuous execution
-
-### Organic Evolution Dynamics
-**System Adaptation Philosophy**: → architecture/methodology/organic-evolution-dynamics.md
-**Evolution-Authority Balance**: Sistema evoluciona orgánicamente mientras preserva autoridad absoluta
-**Metrics-Driven Evolution**: "sobre la cantidad de comandos creo uque es algo que el mismo sistema y lo que hagamos nos ira pidiendo"
+### **Specialized Methodology Levels**
+- **L2-Operational Methodology**: → @context/architecture/core/methodology/l2-operational-methodology.md
+- **L3-Comprehensive Workflow**: → @context/architecture/core/methodology/l3-comprehensive-workflow.md
+- **L4-Pure Orchestration**: → @context/architecture/core/methodology/l4-pure-orchestration.md
+- **L5-Revolutionary Patterns**: → @context/architecture/core/methodology/l5-revolutionary-patterns.md
+- **Enforcement Integration**: → @context/architecture/core/methodology/enforcement-integration.md
+- **Organic Evolution Dynamics**: → @context/architecture/core/methodology/organic-evolution-dynamics.md
 
 ## INTEGRATION REFERENCES
 
-### ←→ architecture/claude_code/
+### ←→ @context/architecture/claude_code/
 **Connection**: Claude Code-specific implementations of core methodology patterns
 **Protocol**: Specialized adaptations of Think x4, Research-First, Continuous Execution for Claude Code tools
 
-### ←→ authority.md
+### ←→ @context/architecture/core/authority.md
 **Connection**: Authority framework integration for methodology validation
 **Protocol**: All methodology implementation serves user authority supremacy and vision preservation
 
-### ←→ architecture/patterns/
+### ←→ @context/architecture/patterns/
 **Connection**: Methodology patterns validated through systematic analysis and user authority
 **Protocol**: Think x4 framework and empirical validation drive pattern development and refinement
 
 ---
 
-**METHODOLOGY DECLARATION**: Complete methodology authority consolidated - eliminates directory fragmentation while preserving 100% user authority and information density per user vision supremacy. Architectural simplification achieved without information loss.
+**METHODOLOGY DECLARATION**: Complete methodology authority hub preserving 100% user authority through specialized modules while achieving size compliance per L2-MODULAR extraction protocol.
+
 **EVOLUTION PATHWAY**: VISION.md → conversation → methodology discovery → complete methodology evolution cycle.

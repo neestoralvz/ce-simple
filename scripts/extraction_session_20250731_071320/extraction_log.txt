@@ -1,5 +1,0 @@
-Extraction session started: Thu Jul 31 07:13:20 CST 2025
-Context directory: /Users/nalve/ce-simple/context
-Extraction directory: /Users/nalve/ce-simple/scripts/extraction_session_20250731_071320
-Extraction mode: batch
-Extraction session completed: Thu Jul 31 07:13:20 CST 2025

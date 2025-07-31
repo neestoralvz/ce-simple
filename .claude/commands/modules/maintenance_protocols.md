@@ -16,11 +16,11 @@
 - Identificar sesgo acumulativo por incremental edits
 - Evaluar authority conflicts vs supreme truth source
 - Calcular drift percentage para trigger recreation threshold
-**Output:** Priorized list archivos requiring /actions:recreate intervention
+**Output:** Priorized list archivos requiring q-recreate intervention
 
 ## Batch Recreation Coordination Template
 **Process:**
-- Coordinate con /actions:recreate para each file requiring clean slate
+- Coordinate con q-recreate para each file requiring clean slate
 - Execute batch processing para multiple recreations simultáneas
 - Maintain references consistency durante recreation process
 - Apply Think x4 para optimal recreation sequence
@@ -37,7 +37,7 @@
 
 ### Template Compliance Monitoring
 **Rule:** Files violating modules system structure → recreation candidates
-**Action:** /actions:recreate con template compliance enforcement
+**Action:** q-recreate con template compliance enforcement
 
 ### References Integrity Validation
 **Rule:** Broken references O outdated links → systematic repair

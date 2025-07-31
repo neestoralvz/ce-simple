@@ -1,5 +1,0 @@
-118 /Users/nalve/ce-simple/context/architecture/claude_code/orchestration-modules/protocol-core.md
-117 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/universal_do_dont_template.md
-116 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/commands/role_command_template.md
-116 /Users/nalve/ce-simple/context/archive/conversations_processed/20250729_1549_context-cleanup-conversation-preservation_COMPACTED.md
-115 /Users/nalve/ce-simple/context/handoffs/handoffs-system/script-automation-integration.md

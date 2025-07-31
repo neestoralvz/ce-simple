@@ -1,0 +1,26 @@
+# Structure Analysis: archive/templates_system_backup_20250730/commands/action_command_template.md (146 lines)
+## Main Sections (24 found):
+## Action Command Structure
+## DO
+## DON'T
+## Context
+## Next Action
+## Action Categories
+## Context Section Guidelines
+## Context
+## Context
+## Context
+## Subsections (9 found):
+### Creation Actions (docs, write)
+### Processing Actions (compact, expand, research)
+### System Actions (git, maintain)
+### For Creation Actions
+### For Processing Actions
+### For System Actions
+### Completion-Triggered Automatic
+### User-Choice Recommended
+### Context-Aware Routing
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 25

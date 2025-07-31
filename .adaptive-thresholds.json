@@ -1,0 +1,5 @@
+{
+        "task_complexity": 0.65, "timeline_factor": 0.55, "domain_scope": 0.60,
+        "authority_critical": 0.85, "documentation_density": 0.45,
+        "adaptation_rate": 0.1, "learning_decay": 0.95
+    }

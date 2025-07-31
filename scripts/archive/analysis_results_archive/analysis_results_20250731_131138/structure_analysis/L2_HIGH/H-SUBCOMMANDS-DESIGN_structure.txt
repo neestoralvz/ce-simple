@@ -1,0 +1,17 @@
+# Structure Analysis: roadmap/H-SUBCOMMANDS-DESIGN.md (96 lines)
+## Main Sections (10 found):
+## OBJETIVO ESPECÍFICO
+## ESTADO ACTUAL
+## TAREAS ESPECÍFICAS
+## ENTREGABLES ESPERADOS
+## CRITERIOS DE ÉXITO
+## SIGUIENTES HANDOFFS
+## Subsections (4 found):
+### 1. Arquitectura de Subcomandos Propuesta
+### 2. Context Embedding Strategy
+### 3. Script Integration Design
+### 4. Autocontención Requirements
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 11

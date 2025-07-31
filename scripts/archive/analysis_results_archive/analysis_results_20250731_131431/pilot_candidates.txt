@@ -1,0 +1,5 @@
+120 /Users/nalve/ce-simple/context/architecture/core/llm-enforcement-principle.md
+119 /Users/nalve/ce-simple/context/architecture/patterns/work-item-density-patterns.md
+118 /Users/nalve/ce-simple/context/architecture/claude_code/orchestration-modules/protocol-core.md
+117 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/universal_do_dont_template.md
+117 /Users/nalve/ce-simple/context/architecture/patterns/command-integration-automation-patterns.md

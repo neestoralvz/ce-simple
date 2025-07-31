@@ -1,0 +1,31 @@
+# Structure Analysis: architecture/adr/ADR-029-l0-emergency-extraction-methodology.md (161 lines)
+## Main Sections (25 found):
+## Context
+## Decision
+## Implementation Evidence
+## Decision Matrix: L2-MODULAR vs L0-EMERGENCY
+## HANDOFF System Integration
+## Consequences
+## Replication Framework
+## Compliance Monitoring
+## References
+## Subsections (16 found):
+### L0-EMERGENCY Framework:
+### Emergency Criteria (Auto-Activation Triggers):
+### Methodology Protocol:
+### Extraction 1: authority.md
+### Extraction 2: simplicity.md  
+### Extraction 3: templates.md
+### Extraction 4: standards.md
+### Extraction 5: patterns.md
+### Use L2-MODULAR When:
+### Use L0-EMERGENCY When:
+### Selection Criteria Protocol:
+### Integration Pathways:
+### HANDOFF Enhancement Pattern:
+### Positive:
+### Negative:
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 26

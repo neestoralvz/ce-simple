@@ -1,0 +1,17 @@
+# Structure Analysis: handoffs/H-SCRIPTS-CLASSIFICATION.md (110 lines)
+## Main Sections (10 found):
+## OBJETIVO ESPECÍFICO
+## ESTADO ACTUAL
+## TAREAS ESPECÍFICAS
+## ENTREGABLES ESPERADOS
+## CRITERIOS DE ÉXITO
+## SIGUIENTES HANDOFFS
+## Subsections (4 found):
+### 1. Análisis de Lifecycle y Timing
+### 2. Clasificación Propuesta por Script
+### 3. Hook Integration Architecture
+### 4. Fallback Strategy Design
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 11

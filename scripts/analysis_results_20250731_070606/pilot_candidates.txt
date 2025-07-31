@@ -1,5 +1,0 @@
-118 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L2-HIGH/protocol-core_BACKUP_118_lines.md
-118 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L2-HIGH/protocol-core_BACKUP_118_lines.md
-118 /Users/nalve/ce-simple/context/architecture/claude_code/orchestration-modules/protocol-core.md
-117 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/universal_do_dont_template.md
-117 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L2-HIGH/universal_do_dont_template_BACKUP_117_lines.md

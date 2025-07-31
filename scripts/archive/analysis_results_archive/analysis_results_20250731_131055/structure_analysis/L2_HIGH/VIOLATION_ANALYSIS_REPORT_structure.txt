@@ -1,0 +1,16 @@
+# Structure Analysis: archive/scripts/temporary_results_20250731_123518/analysis_results_20250730_153445/VIOLATION_ANALYSIS_REPORT.md (86 lines)
+## Main Sections (12 found):
+## Executive Summary
+## Pilot Test Strategy
+## Implementation Sequence
+## Success Metrics
+## Files by Category
+## Subsections (7 found):
+### Violation Categories
+### L0-EMERGENCY Files
+### L1-CRITICAL Files  
+### L2-HIGH Files (First 10)
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 13

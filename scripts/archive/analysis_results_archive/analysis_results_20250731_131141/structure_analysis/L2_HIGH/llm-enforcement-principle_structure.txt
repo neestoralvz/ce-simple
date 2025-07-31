@@ -1,0 +1,25 @@
+# Structure Analysis: architecture/core/llm-enforcement-principle.md (120 lines)
+## Main Sections (18 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL DISCOVERED
+## FRAMEWORK DE ENFORCEMENT OBLIGATORIO
+## TEMPLATE UNIVERSAL PARA INSTRUCCIONES
+## VALIDATION FRAMEWORK
+## EVIDENCE BASE
+## Subsections (12 found):
+### **USER CRITICAL INSIGHT**
+### **LESSON LEARNED VALIDADO**
+### **ENFORCEMENT ABSOLUTO REQUIREMENTS**
+### **ANTI-PATTERNS PROHIBIDOS**
+### **ENFORCEMENT LANGUAGE REQUIRED**
+### **HEADER ENFORCEMENT OBLIGATORIO**
+### **DECISION MATRIX ENFORCEMENT**
+### **PRE-INSTRUCTION CHECKLIST**
+### **POST-INSTRUCTION VERIFICATION**
+### **VALIDATION CASE: core.md Evolution**
+### **SLASH COMMAND EVOLUTION CASE (ADR-028)**
+### **PRODUCTIVITY MULTIPLIER EFFECT**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 19

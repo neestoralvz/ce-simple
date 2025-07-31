@@ -27,7 +27,9 @@ System requires transition from monolithic content duplication to reference-only
 ### Reference Architecture Standards:
 - **Source of Truth**: One authoritative location per content domain
 - **Reference-Only Files**: Secondary locations contain only forward references
-- **Bidirectional Links**: ←→ symbols for peer relationships, → for delegation
+- **Authority References**: ← symbol for authority sources, ↑ symbol for upward authority chain
+- **Directional References**: → symbol for forward delegation, ←→ for bidirectional relationships
+- **Absolute Path Requirement**: @context/ prefix MANDATORY for all cross-file references
 - **Conditional Loading**: Smart context loading based on conversation patterns
 
 ### Integration Requirements:
@@ -56,6 +58,8 @@ System requires transition from monolithic content duplication to reference-only
 **Enforcement Protocol**: Guardian role OBLIGATORIO validates zero duplication compliance
 **Quality Gates**: Authority chain integrity DEBE be preserved during all migrations
 **Standards Integration**: Reference architecture FUNDAMENTAL for system evolution
+**Automated Validation**: tools/validation/reference-pattern-validator.sh OBLIGATORIO for syntax compliance
+**Crisis Resolution**: Archive quarantine protocols for broken reference containment
 
 ## References
 

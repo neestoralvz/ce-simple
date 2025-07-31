@@ -1,0 +1,25 @@
+# Structure Analysis: architecture/patterns/dynamic-path-adaptation-patterns.md (84 lines)
+## Main Sections (18 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## DYNAMIC ADAPTATION FRAMEWORK
+## ADAPTATION IMPLEMENTATION PATTERNS
+## ARCHITECTURAL VALUE METRICS
+## CONTEXT RESOLUTION PROTOCOLS
+## INTEGRATION REFERENCES
+## Subsections (11 found):
+### Context-Aware Path Resolution Protocol
+### Evidence-Based Validation
+### Variable Resolution Architecture
+### Hierarchical Context Management
+### Adaptation Benefits Quantified
+### Integration Patterns
+### Environment-Specific Adaptation
+### Path Validation Framework
+### ←→ @context/architecture/patterns/organic_evolution_patterns.md
+### ←→ @context/architecture/patterns/command_orchestration_patterns.md
+### ← @context/architecture/patterns.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 19

@@ -48,9 +48,18 @@ subagent_type: general-purpose
 **[COMPONENT] DECLARATION**: [FUNCTION] serving [AUTHORITY] through [METHOD].
 ```
 
+### Task Tool Specialization Templates
+**Research Specialist Templates**: Investigation, codebase analysis, web research with Think x4 methodology
+**Partner Validation Templates**: Authority challenge, decision validation with socratic methodology  
+**Documentation Builder Templates**: System documentation, process documentation, quote-based preservation
+**Architecture Analysis Templates**: System architecture, modular design, token economy analysis
+**Implementation Execution Templates**: Development execution, quality-first implementation, rapid prototyping
+**Revolutionary Methodology Templates**: Quote-based fragmentation, architectural transformation, ultra-orchestration
+
 ### Command & Methodology Templates
 **Command Templates**: Role/Action/Workflow/Maintenance command structures with authority validation
-**Revolutionary Methodology**: Quote-based fragmentation (95%+ fidelity), architectural transformation (phase-based), ultra-orchestration (multi-conversation), authority preservation validation
+**Behavioral Pattern Templates**: Consistent system behavior patterns and execution flows
+**Universal Template Framework**: DO/DON'T structure for all system components with behavioral standards
 
 ### Protection System Templates (VALIDATED)
 **Claude Code Hooks Templates**: → @context/architecture/templates/protection-system-templates.md

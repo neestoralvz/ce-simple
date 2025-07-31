@@ -1,2 +1,0 @@
-Validation started: Thu Jul 31 07:18:47 CST 2025
-Context directory: /Users/nalve/ce-simple/context

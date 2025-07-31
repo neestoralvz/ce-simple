@@ -1,0 +1,11 @@
+321 /Users/nalve/ce-simple/context/archive/scripts/temporary_results_20250731_123518/analysis_results_20250730_182642/VIOLATION_ANALYSIS_REPORT.md
+280 /Users/nalve/ce-simple/context/archive/scripts/temporary_results_20250731_123518/analysis_results_20250731_070606/VIOLATION_ANALYSIS_REPORT.md
+252 /Users/nalve/ce-simple/context/roadmap/archive/handoff-5-completed/HANDOFF_5_ADRS_PATTERNS_SYSTEM.md
+252 /Users/nalve/ce-simple/context/roadmap/archive/handoff-4-completed/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM.md
+246 /Users/nalve/ce-simple/context/roadmap/archive/handoff-2-completed/HANDOFF_2_L1_CRITICAL_PATTERNS_STANDARDS.md
+245 /Users/nalve/ce-simple/context/roadmap/ROADMAP_REGISTRY.md
+232 /Users/nalve/ce-simple/context/archive/legacy/user-vision-layers/layer3/implementation_guide.md
+220 /Users/nalve/ce-simple/context/archive/session_20250729_command_templates_system.md
+217 /Users/nalve/ce-simple/context/archive/templates_system_backup_20250730/quote_based_fragmentation_templates.md
+216 /Users/nalve/ce-simple/context/archive/legacy/claude_versions/CLAUDE_ORIGINAL_BACKUP.md
+215 /Users/nalve/ce-simple/context/archive/conversations_processed/20250729_1646_task-tool-methodology-knowledge-integration_SESSION_ARCHIVE.md

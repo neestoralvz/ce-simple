@@ -1,6 +1,6 @@
-# Patterns - Sistema-Managed Intelligence
+# Patterns - Sistema-Managed Intelligence Hub
 
-**30/07/2025 11:30 CDMX** | Working patterns directory for proven methodologies
+**30/07/2025 11:30 CDMX** | Working patterns authority hub with specialized modules
 
 ## AUTORIDAD SUPREMA
 context/principles.md → supreme user authority → patterns/ implements proven methodologies
@@ -8,95 +8,33 @@ context/principles.md → supreme user authority → patterns/ implements proven
 ## DIRECTORY PURPOSE
 **Sistema-Managed Intelligence Repository** - Patterns are auto-populated based on empirical success, not theoretical design. Each pattern must demonstrate measurable improvement in conversation-to-outcome efficiency.
 
-## OVERENGINEERING DETECTION PROTOCOLS
+## PATTERN SYSTEM COMPONENTS
 
-### Pattern Validation Criteria
-**WORKING PATTERN REQUIREMENTS**:
-- Demonstrates measurable efficiency gain (>20% improvement)
-- Reduces cognitive load for user during conversation
-- Proven through 3+ successful implementations
-- Self-contained with clear entry/exit conditions
+### **Pattern Validation & Detection**
+- **Overengineering Detection**: → @context/architecture/patterns/system/overengineering-detection-protocols.md
+- **Evidence-Based Structure**: → @context/architecture/patterns/system/evidence-based-structure-determination.md
+- **Pattern Lifecycle Management**: → @context/architecture/patterns/system/pattern-lifecycle-management.md
 
-**FAILED PATTERN DETECTION**:
-- Requires >3 steps to explain basic usage
-- Creates dependencies between previously independent components
-- Adds complexity without measurable user benefit
-- Theoretical elegance without practical improvement
+### **Pattern Categories & Classification**
+- **Working Pattern Categories**: → @context/architecture/patterns/system/working-pattern-categories.md
+- **Failed Pattern Archive**: → @context/architecture/patterns/system/failed-pattern-archive.md
+- **Pattern Recognition Framework**: → @context/architecture/patterns/system/pattern-recognition-framework.md
 
-### Evidence-Based Structure Determination
+### **Auto-Population & Evolution**
+- **Auto-Population Guidelines**: → @context/architecture/patterns/system/auto-population-guidelines.md
+- **Organic Growth Protocol**: → @context/architecture/patterns/system/organic-growth-protocol.md
+- **Pattern Evolution Dynamics**: → @context/architecture/patterns/system/pattern-evolution-dynamics.md
+
+### **Authority & Integration Framework**
+- **User Authority Supremacy**: → @context/architecture/patterns/system/user-authority-supremacy.md
+- **Methodology Integration**: → @context/architecture/patterns/system/methodology-integration.md
+- **System Integration Points**: → @context/architecture/patterns/system/system-integration-points.md
+
+## CORE AUTHORITY PRINCIPLES
+
 > "Discovery Through Elimination methodology validated - Evidence-based structure determination > theoretical analysis"
 
-**Pattern Lifecycle**:
-1. **Emergence** → Organic pattern detection from successful workflows
-2. **Validation** → 3+ successful repetitions with metrics
-3. **Documentation** → ≤80 lines maximum per pattern file
-4. **Integration** → Auto-activation triggers in CLAUDE.md
-5. **Evolution** → Continuous optimization based on usage data
-
-## WORKING VS FAILED PATTERN CATEGORIZATION
-
-### Working Pattern Categories
-**Orchestration Patterns**:
-- Multi-conversation parallel execution
-- Task tool delegation with context preservation
-- Authority chain validation protocols
-
-**Discovery Patterns**:
-- Socratic methodology for vision extraction
-- Research-first protocol with concurrent tools
-- Think x4 systematic analysis framework
-
-**Implementation Patterns**:
-- Continuous execution without friction pauses
-- Reference-only content architecture
-- Clean slate regeneration for bias prevention
-
-### Failed Pattern Archive
-**Anti-Patterns Library** (auto-populated):
-- Patterns that created complexity without benefit
-- Theoretical designs that failed practical implementation
-- Over-engineered solutions that reduced efficiency
-- Dependencies that violated command independence
-
-## AUTO-POPULATION GUIDELINES
-
-### Pattern Recognition Triggers
-**SUCCESS INDICATORS**:
-- User satisfaction with conversation outcome
-- Reduced iteration cycles to reach solution
-- Natural workflow emergence across conversations
-- Decreased need for user clarification
-
-**AUTOMATIC PATTERN CREATION**:
-- System detects repeated successful workflows
-- Metrics validate efficiency improvement
-- Pattern extracted and documented automatically
-- Integration triggers generated for CLAUDE.md
-
-### Organic Growth Protocol
 > "sobre la cantidad de comandos creo que es algo que el mismo sistema y lo que hagamos nos ira pidiendo"
-
-**Pattern Evolution**:
-- Patterns emerge from actual usage, not theoretical design
-- Growth triggered by demonstrated necessity
-- Quality gates prevent pattern bloat
-- User authority overrides system pattern recommendations
-
-## PATTERN AUTHORITY FRAMEWORK
-
-### User Authority Supremacy
-**Pattern Validation**:
-- User feedback overrides metrics when patterns conflict with vision
-- Authority chain: user vision → pattern validation → implementation
-- Challenge system active for pattern proposals
-- Vision preservation paramount during pattern evolution
-
-### Methodology Integration
-**Think x4 Applied to Patterns**:
-1. **Perspective 1**: Does this pattern serve user vision?
-2. **Perspective 2**: Does this pattern reduce complexity?
-3. **Perspective 3**: Does this pattern demonstrate measurable benefit?
-4. **Perspective 4**: Does this pattern maintain command independence?
 
 ## INTEGRATION REFERENCES
 
@@ -118,7 +56,7 @@ context/principles.md → supreme user authority → patterns/ implements proven
 
 ---
 
-**PATTERN DIRECTORY DECLARATION**: This directory auto-evolves based on empirical success. Patterns that don't demonstrate clear user benefit are automatically archived as anti-patterns. Sistema learns from both successes and failures to optimize conversation-to-outcome efficiency.
+**PATTERN DIRECTORY DECLARATION**: This directory auto-evolves based on empirical success through specialized modules while preserving complete functionality and user authority supremacy.
 
 **INTEGRATION**: CLAUDE.md semantic triggers → pattern recognition → automatic application
 **AUTHORITY**: User vision supremacy → pattern validation → organic growth only when demonstrated necessity

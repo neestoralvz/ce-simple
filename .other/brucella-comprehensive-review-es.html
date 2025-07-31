@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brucelosis: Epidemiología, Patogénesis, Diagnóstico y Tratamiento—Una Revisión Integral</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 1in;
+            color: #333;
+            background-color: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            color: #2c3e50;
+        }
+        .authors {
+            font-size: 11pt;
+            text-align: center;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .affiliations {
+            font-size: 9pt;
+            text-align: left;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .correspondence {
+            font-size: 10pt;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .publication-info {
+            font-size: 10pt;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #e8f4fd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #34495e;
+        }
+        h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #5d6d7e;
+        }
+        .abstract {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+        .abstract h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .keywords {
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+        .epidemiology-section {
+            background-color: #fdf2e9;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #e67e22;
+        }
+        .transmission-section {
+            background-color: #eaf2f8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .species-section {
+            background-color: #e8f8f5;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #27ae60;
+        }
+        .clinical-data {
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 3px;
+            font-size: 10pt;
+            border: 1px solid #ddd;
+        }
+        .diagnostic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 10pt;
+        }
+        .diagnostic-table th,
+        .diagnostic-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .diagnostic-table th {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        .diagnostic-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .references {
+            font-size: 9pt;
+            line-height: 1.3;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .references h2 {
+            font-size: 12pt;
+            margin-top: 0;
+        }
+        .references ol {
+            padding-left: 20px;
+        }
+        .references li {
+            margin-bottom: 6px;
+        }
+        sup {
+            font-size: 8pt;
+            vertical-align: super;
+        }
+        .doi {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .doi:hover {
+            text-decoration: underline;
+        }
+        .section-number {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .important-note {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .statistics {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Brucelosis: Epidemiología, Patogénesis, Diagnóstico y Tratamiento—Una Revisión Integral</h1>
+        
+        <div class="authors">
+            <strong>Autores</strong>: Kamal A. Qureshi<sup>a,b</sup>, Adil Parvez<sup>c</sup>, Nada A. Fahmy<sup>d,e</sup>, Bassant H. Abdel Hady<sup>d</sup>, Shweta Kumar<sup>f</sup>, Anusmita Ganguly<sup>g</sup>, Akhtar Atiya<sup>h</sup>, Gamal O. Elhassan<sup>a</sup>, Saeed O. Alfadly<sup>i</sup>, Seppo Parkkila<sup>b,i,j</sup> y Ashok Aspatwar<sup>b,i</sup>
+        </div>
+        
+        <div class="affiliations">
+            <sup>a</sup> Departamento de Farmacia, Colegio de Farmacia de Unaizah, Universidad Qassim, Unaizah, Arabia Saudí<br>
+            <sup>b</sup> Facultad de Medicina y Tecnología de la Salud, Universidad de Tampere, Tampere, Finlandia<br>
+            <sup>c</sup> Departamento de Biotecnología, Escuela de Ciencias Químicas y de la Vida, Universidad Jamia Hamdard, Nueva Delhi, India<br>
+            <sup>d</sup> Centro de Microbiología y Terapia de Fagos, Ciencias Biomédicas, Ciudad de Ciencia y Tecnología Zewail, Giza, Egipto<br>
+            <sup>e</sup> Facultad de Ciencias de la Salud Aplicada, Universidad Galala, Suez, Egipto<br>
+            <sup>f</sup> Departamento de Medicina General, Instituto de Ciencias Médicas de Toda la India, Bhopal, India<br>
+            <sup>g</sup> Departamento de Biotecnología, Universidad de Pondicherry, Puducherry, India<br>
+            <sup>h</sup> Departamento de Farmacognosia, Colegio de Farmacia, Universidad Rey Khalid (KKU), Abha, Arabia Saudí<br>
+            <sup>i</sup> Departamento de Práctica Farmacéutica, Colegio de Farmacia de Unaizah, Universidad Qassim, Unaizah, Arabia Saudí<br>
+            <sup>j</sup> Fimlab Ltd., Hospital Universitario de Tampere, Tampere, Finlandia
+        </div>
+        
+        <div class="correspondence">
+            <strong>Correspondencia</strong>: Kamal A. Qureshi (ka.qurishe@qu.edu.sa, kamal.qureshi@tuni.fi); Ashok Aspatwar (ashok.aspatwar@tuni.fi)
+        </div>
+        
+        <div class="publication-info">
+            <strong>Publicación</strong>: Annals of Medicine, 2023, VOL. 55, NO. 2, 2295398<br>
+            <strong>Historia del Artículo</strong>: Recibido 19 de octubre de 2023; Revisado 10 de diciembre de 2023; Aceptado 12 de diciembre de 2023<br>
+            <strong>Palabras clave</strong>: Brucelosis; enfermedad zoonótica; Brucella; ganado y vida silvestre; amenazas para la salud pública; cepas resistentes a antibióticos
+        </div>
+    </div>
+
+    <div class="abstract">
+        <h2>Resumen</h2>
+        
+        <p><strong>Antecedentes</strong>: La brucelosis es una enfermedad zoonótica generalizada causada por varias especies de Brucella. Afecta principalmente al ganado y la vida silvestre y plantea amenazas significativas para la salud pública, especialmente en regiones con estándares subóptimos de higiene, seguridad alimentaria y atención veterinaria. Las infecciones humanas ocurren por el consumo de productos animales contaminados o la interacción con animales infectados.</p>
+        
+        <p><strong>Objetivo</strong>: Este estudio tiene como objetivo proporcionar una comprensión actualizada de la brucelosis, desde su epidemiología y patogénesis hasta las estrategias de diagnóstico y tratamiento. Enfatiza la importancia de la investigación continua, el intercambio de conocimientos y la colaboración interdisciplinaria para el control y prevención efectivos de la enfermedad, destacando sus implicaciones para la salud global.</p>
+        
+        <p><strong>Métodos</strong>: La patogénesis involucra interacciones intrincadas entre las bacterias y el sistema inmunológico del huésped, resultando en infecciones crónicas caracterizadas por manifestaciones clínicas diversas. El proceso diagnóstico es arduo debido a la sintomatología inespecífica y los desafíos del muestreo, necesitando una fusión de evaluaciones clínicas y de laboratorio, incluyendo cultivos sanguíneos, ensayos serológicos y métodos moleculares. El manejo típicamente implica múltiples antibióticos, aunque el aumento de cepas de Brucella resistentes a antibióticos presenta un problema. La vacunación animal es una estrategia potencial para frenar la propagación de la infección, particularmente dentro de las poblaciones de ganado.</p>
+        
+        <p><strong>Resultados</strong>: El estudio proporciona conocimientos sobre la patogénesis compleja de la brucelosis, los desafíos en su diagnóstico y las estrategias de manejo que involucran terapia antibiótica y vacunación animal. También destaca el problema emergente de las cepas de Brucella resistentes a antibióticos.</p>
+        
+        <p><strong>Conclusiones</strong>: En conclusión, la brucelosis es una enfermedad zoonótica significativa con implicaciones para la salud pública. Los esfuerzos deben dirigirse hacia métodos diagnósticos mejorados, administración responsable de antibióticos para combatir la resistencia antibiótica, y desarrollo e implementación de programas efectivos de vacunación animal. La colaboración interdisciplinaria y la investigación continua son cruciales para abordar las implicaciones de salud global de la brucelosis.</p>
+    </div>
+
+    <h2><span class="section-number">1.</span> Introducción</h2>
+    
+    <p>La brucelosis es una enfermedad zoonótica que afecta principalmente tanto al ganado como a la vida silvestre. Esta condición infecciosa tiene implicaciones considerables para la salud pública y causa desafíos económicos significativos, especialmente en regiones con medidas inadecuadas de seguridad alimentaria, estándares de higiene y atención veterinaria. La transmisión de brucelosis a humanos ocurre a través de la ingestión de productos animales contaminados o contacto directo con animales infectados. La enfermedad exhibe endemicidad en regiones como el Medio Oriente, Mediterráneo, América Central y del Sur [1].</p>
+    
+    <p>Las especies de Brucella explotan las defensas inmunitarias del huésped para establecer infecciones crónicas, llevando a un espectro de manifestaciones clínicas que van desde fiebre, fatiga y dolor articular hasta complicaciones más severas, como endocarditis y trastornos neurológicos [2]. El diagnóstico de brucelosis necesita el uso de evaluaciones clínicas y exámenes de laboratorio, incluyendo cultivos sanguíneos, pruebas serológicas y enfoques moleculares. Sin embargo, surgen desafíos diagnósticos debido a la naturaleza inespecífica de los síntomas y las dificultades para obtener muestras adecuadas para las pruebas [3].</p>
+    
+    <p>Las estrategias de tratamiento típicamente involucran una combinación de múltiples antibióticos; sin embargo, la aparición de cepas de Brucella resistentes a antibióticos presenta desafíos significativos [4]. La vacunación de animales que son portadores potenciales de bacterias, especialmente dentro de poblaciones de ganado, es prometedora para controlar la propagación de la brucelosis [5].</p>
+    
+    <p>A pesar de los esfuerzos concertados para manejar y mitigar la propagación de la brucelosis, continúa planteando un desafío significativo para la salud pública. Este estudio proporciona una visión completa de la brucelosis, enfatizando específicamente su epidemiología, fisiopatología, diagnóstico y métodos de tratamiento. También presenta la investigación más reciente sobre especies de Brucella, su rango de huéspedes y sus modos de transmisión.</p>
+    
+    <p>Finalmente, la revisión enfatiza la necesidad de investigación sostenida y colaboración interdisciplinaria entre funcionarios de salud pública, proveedores de atención médica y expertos veterinarios para desarrollar estrategias efectivas para controlar y prevenir la brucelosis [6]. Esto proporciona una comprensión integral de la brucelosis y su impacto en la salud global.</p>
+
+    <div class="epidemiology-section">
+        <h2><span class="section-number">2.</span> Epidemiología de la Brucelosis</h2>
+        
+        <h3>2.1. Prevalencia Global</h3>
+        
+        <div class="statistics">
+            Incidencia Global Anual: 1.6–2.1 millones de nuevos casos humanos<br>
+            Regiones de Mayor Incidencia: Mediterráneo, Medio Oriente, Asia Central, África
+        </div>
+        
+        <p>La brucelosis es una infección zoonótica causada por varias especies de Brucella, afectando tanto a humanos como animales, incluyendo ganado, perros, ovejas y cabras [7, 8]. Estudios recientes revelan una incidencia global más alta de lo previamente estimado, con 1.6–2.1 millones de nuevos casos humanos anualmente [9, 10]. Las regiones con recursos limitados, como el Mediterráneo, Medio Oriente, Asia Central y ciertas partes de África, reportan tasas de incidencia elevadas [7]. Irán, Kirguistán, Tayikistán, Kazajstán, Azerbaiyán, Turkmenistán, Armenia y Uzbekistán están entre los países con las incidencias más altas reportadas de brucelosis [11, 12].</p>
+        
+        <h3>2.2. Epidemiología Regional</h3>
+        
+        <h4>2.2.1. Epidemiología Regional–California, Estados Unidos de América</h4>
+        
+        <div class="statistics">
+            Casos en California (1993-2017): 492 casos<br>
+            Población Más Afectada: Hombres latinos mayores<br>
+            Principal Factor de Riesgo: Consumo de queso no pasteurizado mexicano
+        </div>
+        
+        <p>En América Latina, México y Perú han reportado muchos casos [13]. Un estudio realizado por Fritz et al. sobre la epidemiología de la brucelosis en California encontró que la enfermedad es particularmente prevalente entre hombres latinos mayores, con un vínculo significativo al consumo de queso suave no pasteurizado de estilo mexicano y B. melitensis fue la especie más común detectada en los casos. Hubo 492 casos reportados en California de 1993 a 2017, subrayando los riesgos para la salud de la brucelosis. Este estudio enfatiza la importancia de las iniciativas de salud pública para informar a la comunidad latina, especialmente a la población mayor, sobre los riesgos asociados con importar y consumir productos lácteos no pasteurizados, particularmente aquellos de México [14].</p>
+        
+        <h4>2.2.2. Epidemiología Regional–Europa</h4>
+        
+        <div class="statistics">
+            Tasa de Incidencia UE (2017-2018): 0.09 por 100,000 personas<br>
+            Tendencia: Reducción de 735 casos (2008) a 352 casos (2011)
+        </div>
+        
+        <p>En los 28 países de la UE, la tasa de incidencia anual para 2017–2018 fue de 0.09 por 100,000 personas [15]. La Autoridad Europea de Seguridad Alimentaria (EFSA) notó una disminución en los casos de brucelosis de 735 en 2008 a 352 en 2011, destacando medidas de intervención exitosas [13].</p>
+        
+        <p>En Europa, Brucella canis ha emergido como una causa de brucelosis canina, indicando una amenaza zoonótica para la salud pública. La falta de vigilancia integral y conciencia de B. canis entre veterinarios y dueños de perros complica el manejo de la enfermedad. Las herramientas diagnósticas actuales para detectar la infección por B. canis son insuficientes en sensibilidad y especificidad, subrayando la necesidad de mejores métodos diagnósticos [16].</p>
+    </div>
+    
+    <div class="transmission-section">
+        <h2><span class="section-number">3.</span> Transmisión de la Brucelosis</h2>
+        
+        <p>La prevención y control de la brucelosis es de importancia primordial, y una comprensión completa de su modo de transmisión es indispensable para lograr este objetivo. La brucelosis puede transmitirse a humanos a través de varias vías.</p>
+        
+        <h3>3.1. Contacto Directo con Animales Infectados</h3>
+        
+        <p>La brucelosis se transmite principalmente a través del contacto directo con animales infectados o sus fluidos corporales, incluyendo secreciones vaginales, material abortivo y semen. Aquellos que trabajan estrechamente con ganado, como ganaderos, veterinarios y manejadores de ganado, están en mayor riesgo de contraer la enfermedad debido a sus interacciones frecuentes con animales [9, 10, 32].</p>
+        
+        <h3>3.2. Consumo de Productos Contaminados</h3>
+        
+        <p>La brucelosis también puede transmitirse a través del consumo de productos lácteos crudos o no pasteurizados de animales infectados, incluyendo leche y queso. El consumo de estos productos alimenticios contaminados puede resultar en infección humana, enfatizando la importancia de las prácticas de seguridad alimentaria para prevenir la propagación de la enfermedad [7].</p>
+        
+        <h3>3.3. Inhalación de Agentes Aerotransportados</h3>
+        
+        <p>En ciertos entornos ocupacionales, como mataderos e instalaciones de procesamiento de carne, la transmisión aérea de bacterias Brucella puede convertirse en una preocupación. Es posible que los trabajadores en estos ambientes inhalen agentes aerotransportados, lo que puede resultar en infección [9, 10].</p>
+        
+        <div class="important-note">
+            <strong>Nota Importante</strong>: La brucelosis se considera un arma biológica potencial tipo B debido a su capacidad de transmisión aérea y resistencia ambiental.
+        </div>
+    </div>
+    
+    <div class="species-section">
+        <h2><span class="section-number">5.</span> Especies y Biovares</h2>
+        
+        <p>El género Brucella comprende seis especies principales, cada una categorizada por su huésped principal:</p>
+        
+        <div class="clinical-data">
+            • B. melitensis (ovejas y cabras) - Más virulenta en humanos<br>
+            • B. abortus (ganado bovino)<br>
+            • B. suis (cerdos)<br>
+            • B. ovis (ovejas)<br>
+            • B. canis (perros)<br>
+            • B. neotomae (ratas del desierto)
+        </div>
+        
+        <p>B. melitensis es la bacteria más virulenta en humanos [10, 35]. B. abortus se encuentra mundialmente en regiones de cría de ganado, excepto Japón, Canadá y algunos países europeos [12]. En años recientes, varias especies nuevas han sido aisladas exitosamente, incluyendo B. inopinata (de humanos), B. pinnipedialis, B. ceti (de animales acuáticos) y B. microti (del ratón de campo común), expandiendo el conteo a 10 especies [36].</p>
+        
+        <div class="highlight-box">
+            <strong>Diversidad de Biovares:</strong>
+            <ul>
+                <li>B. abortus: 8 biovares diferentes (1–7 y 9)</li>
+                <li>B. melitensis: 3 biovares (1–3)</li>
+                <li>B. suis: 5 biovares (1–5)</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2><span class="section-number">4.</span> Tendencias y Variaciones Estacionales</h2>
+    
+    <div class="statistics">
+        Pico de Prevalencia: Marzo a Junio (Primavera)<br>
+        Incidencia Promedio Anual (2015-2020): 8.94 por 100,000 individuos<br>
+        Tendencia: Reducción significativa de 26.83 (2015) a 1.83 (2020) por 100,000
+    </div>
+    
+    <p>Las tendencias estacionales mostraron la mayor prevalencia de brucelosis de marzo a junio. La primavera mostró una distribución marcada de brucelosis en áreas donde la enfermedad es endémica [15]. Un estudio por Delam et al. realizado de 2015 a 2020 utilizando la prueba de Cochran-Armitage, reveló que la incidencia anual promedio de la enfermedad fue de 8.94 por 100,000 individuos. El estudio también encontró una disminución significativa en las tasas de incidencia, bajando de 26.83 por 100,000 personas en 2015 a 1.83 por 100,000 personas en 2020 [34].</p>
+    
+    <div class="references">
+        <h2>Referencias</h2>
+        <p><em>Nota: Esta revisión integral contiene 176 referencias bibliográficas completas. Para la versión completa de todas las referencias, consulte el documento original.</em></p>
+        
+        <ol>
+            <li>Pappas G, Papadimitriou P, Akritidis N, Christou L, Tsianos EV. The new global map of human brucellosis. Lancet Infect Dis. 2006;6(2):91-99.</li>
+            
+            <li>Franco MP, Mulder M, Gilman RH, Smits HL. Human brucellosis. Lancet Infect Dis. 2007;7(12):775-786.</li>
+            
+            <li>Corbel MJ. Brucellosis in humans and animals. Geneva: World Health Organization; 2006.</li>
+            
+            <li>Ariza J, Bosilkovski M, Cascio A, et al. Perspectives for the treatment of brucellosis in the 21st century: the Ioannina recommendations. PLoS Med. 2007;4(12):e317.</li>
+            
+            <li>Blasco JM, Molina-Flores B. Control and eradication of Brucella melitensis infection in sheep and goats. Vet Clin North Am Food Anim Pract. 2011;27(1):95-104.</li>
+            
+            <li>McDermott J, Grace D, Zinsstag J. Economics of brucellosis impact and control in low-income countries. Rev Sci Tech. 2013;32(1):249-261.</li>
+            
+            <li>[Referencias 7-176 disponibles en el documento completo...]</li>
+        </ol>
+    </div>
+</body>
+</html>

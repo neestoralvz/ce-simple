@@ -18,9 +18,9 @@ Layer 4: [□□□□□]   0% ⏳ PENDING   (blocked by Layer 2)
 
 ## Usage Arguments
 ```bash
-/planning:status           # Full project status dashboard
-/planning:status summary   # Condensed overview
-/planning:status health    # Focus on blockers and issues
+p-status           # Full project status dashboard
+p-status summary   # Condensed overview
+p-status health    # Focus on blockers and issues
 ```
 
 **Usage**: Standard project progress visualization templates

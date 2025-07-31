@@ -25,7 +25,7 @@ Parse natural language intent and automatically route to appropriate planning co
 ## Core Function
 Parse natural language intent and route to appropriate planning commands with confidence-based validation
 
-**Integration**: Seamless routing to all /planning: commands with state preservation
+**Integration**: Seamless routing to all p- commands with state preservation
 
 ---
 **Authority:** Semantic recognition methodology + intelligent command routing

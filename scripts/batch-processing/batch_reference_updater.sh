@@ -1,0 +1,297 @@
+#!/bin/bash
+
+# batch_reference_updater.sh - Systematic Cross-Reference Updates
+# Authority: @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+# Purpose: Batch update cross-references after L2-MODULAR extraction or file reorganization
+
+set -euo pipefail
+
+# Silent script - no user notifications (Claude Code communicates results)
+# Configuration
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+LOG_FILE="$PROJECT_ROOT/scripts/logs/batch_reference_updates_$(date +%Y%m%d_%H%M%S).log"
+BACKUP_DIR="$PROJECT_ROOT/scripts/backups/reference_updates_$(date +%Y%m%d_%H%M%S)"
+
+# Create necessary directories
+mkdir -p "$(dirname "$LOG_FILE")"
+mkdir -p "$BACKUP_DIR"
+
+# Logging function
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
+}
+
+# Error handling
+error_exit() {
+    log "ERROR: $1"
+    exit 1
+}
+
+# Banner
+log "=========================================="
+log "BATCH REFERENCE UPDATER - SYSTEMATIC CROSS-REFERENCE MAINTENANCE"
+log "Authority: ADR-005 Reference Architecture Migration Protocol"
+log "=========================================="
+
+# Validation function
+validate_reference_syntax() {
+    local file="$1"
+    local line_num="$2"
+    local reference="$3"
+    
+    # Check @context/ prefix compliance
+    if [[ "$reference" =~ @context/ ]]; then
+        # Validate file exists
+        local target_file="${reference#@}"
+        target_file="$PROJECT_ROOT/$target_file"
+        
+        if [[ ! -f "$target_file" ]]; then
+            log "WARNING: Dead reference in $file:$line_num -> $reference (file not found)"
+            echo "DEAD_REFERENCE:$file:$line_num:$reference"
+        else
+            log "VALID: $file:$line_num -> $reference"
+            echo "VALID_REFERENCE:$file:$line_num:$reference"
+        fi
+    fi
+}
+
+# Reference extraction function
+extract_references() {
+    local file="$1"
+    log "Extracting references from: $file"
+    
+    # Extract various reference patterns
+    grep -n -E "(→|←|↑|↓|←→) @?context/" "$file" 2>/dev/null | while IFS=: read -r line_num content; do
+        # Extract the reference path
+        reference=$(echo "$content" | grep -oE "@?context/[^[:space:]\)]*" | head -1)
+        if [[ -n "$reference" ]]; then
+            validate_reference_syntax "$file" "$line_num" "$reference"
+        fi
+    done
+}
+
+# Reference update function
+update_reference() {
+    local file="$1"
+    local old_ref="$2"
+    local new_ref="$3"
+    
+    # Create backup
+    cp "$file" "$BACKUP_DIR/$(basename "$file").backup"
+    
+    # Perform replacement with word boundaries
+    if sed -i.tmp "s|${old_ref}|${new_ref}|g" "$file"; then
+        rm "$file.tmp"
+        log "SUCCESS: Updated $old_ref -> $new_ref in $file"
+        return 0
+    else
+        log "ERROR: Failed to update reference in $file"
+        return 1
+    fi
+}
+
+# Batch reference analysis
+analyze_references() {
+    log "Starting systematic reference analysis..."
+    
+    local total_files=0
+    local total_references=0
+    local dead_references=0
+    local valid_references=0
+    
+    # Find all markdown files in context directory
+    while IFS= read -r -d '' file; do
+        total_files=$((total_files + 1))
+        log "Analyzing: $file"
+        
+        # Extract and validate references
+        while IFS=: read -r status filepath linenum reference; do
+            total_references=$((total_references + 1))
+            
+            case "$status" in
+                "DEAD_REFERENCE")
+                    dead_references=$((dead_references + 1))
+                    log "DEAD: $filepath:$linenum -> $reference"
+                    ;;
+                "VALID_REFERENCE")
+                    valid_references=$((valid_references + 1))
+                    ;;
+            esac
+        done < <(extract_references "$file")
+        
+    done < <(find "$PROJECT_ROOT/context" -name "*.md" -type f -print0)
+    
+    # Summary
+    log "=========================================="
+    log "REFERENCE ANALYSIS SUMMARY"
+    log "Total Files Analyzed: $total_files"
+    log "Total References Found: $total_references"
+    log "Valid References: $valid_references"
+    log "Dead References: $dead_references"
+    log "=========================================="
+    
+    if [[ $dead_references -gt 0 ]]; then
+        log "WARNING: Found $dead_references dead references requiring attention"
+        return 1
+    else
+        log "SUCCESS: All references validated successfully"
+        return 0
+    fi
+}
+
+# Update references from mapping file
+update_from_mapping() {
+    local mapping_file="$1"
+    
+    if [[ ! -f "$mapping_file" ]]; then
+        error_exit "Mapping file not found: $mapping_file"
+    fi
+    
+    log "Updating references from mapping file: $mapping_file"
+    
+    # Process mapping file (format: old_path|new_path)
+    while IFS='|' read -r old_path new_path; do
+        # Skip comments and empty lines
+        [[ "$old_path" =~ ^#.*$ ]] && continue
+        [[ -z "$old_path" ]] && continue
+        
+        log "Updating references: $old_path -> $new_path"
+        
+        # Find all files containing the old reference
+        while IFS= read -r -d '' file; do
+            if grep -q "$old_path" "$file"; then
+                update_reference "$file" "$old_path" "$new_path"
+            fi
+        done < <(find "$PROJECT_ROOT/context" -name "*.md" -type f -print0)
+        
+    done < "$mapping_file"
+}
+
+# Bidirectional reference validation
+validate_bidirectional_consistency() {
+    log "Validating bidirectional reference consistency..."
+    
+    local inconsistencies=0
+    
+    # Find all bidirectional references (←→)
+    while IFS= read -r -d '' file; do
+        while IFS=: read -r line_num content; do
+            # Extract bidirectional reference
+            reference=$(echo "$content" | grep -oE "←→ @?context/[^[:space:]\)]*" | sed 's/←→ //')
+            
+            if [[ -n "$reference" ]]; then
+                # Check if target file has reverse reference
+                target_file="${reference#@}"
+                target_file="$PROJECT_ROOT/$target_file"
+                
+                if [[ -f "$target_file" ]]; then
+                    # Check for reverse reference
+                    relative_path=$(realpath --relative-to="$PROJECT_ROOT" "$file")
+                    if ! grep -q "←→.*$relative_path" "$target_file"; then
+                        log "INCONSISTENCY: $file has ←→ $reference but reverse not found"
+                        inconsistencies=$((inconsistencies + 1))
+                    fi
+                fi
+            fi
+            
+        done < <(grep -n "←→" "$file" 2>/dev/null || true)
+        
+    done < <(find "$PROJECT_ROOT/context" -name "*.md" -type f -print0)
+    
+    if [[ $inconsistencies -gt 0 ]]; then
+        log "WARNING: Found $inconsistencies bidirectional reference inconsistencies"
+        return 1
+    else
+        log "SUCCESS: All bidirectional references are consistent"
+        return 0
+    fi
+}
+
+# Authority chain validation
+validate_authority_chains() {
+    log "Validating authority chain integrity..."
+    
+    local broken_chains=0
+    
+    # Find authority chain references (← for authority sources)
+    while IFS= read -r -d '' file; do
+        while IFS=: read -r line_num content; do
+            # Extract authority reference
+            reference=$(echo "$content" | grep -oE "← @?context/[^[:space:]\)]*" | sed 's/← //')
+            
+            if [[ -n "$reference" ]] && [[ "$reference" =~ authority|truth-source|vision ]]; then
+                # Validate authority file exists and contains authority declarations
+                target_file="${reference#@}"
+                target_file="$PROJECT_ROOT/$target_file"
+                
+                if [[ -f "$target_file" ]]; then
+                    if ! grep -q "AUTORIDAD SUPREMA\|AUTHORITY\|VISION" "$target_file"; then
+                        log "WARNING: Authority chain reference to non-authority file: $file:$line_num -> $reference"
+                        broken_chains=$((broken_chains + 1))
+                    fi
+                else
+                    log "ERROR: Broken authority chain: $file:$line_num -> $reference (file not found)"
+                    broken_chains=$((broken_chains + 1))
+                fi
+            fi
+            
+        done < <(grep -n "←" "$file" 2>/dev/null || true)
+        
+    done < <(find "$PROJECT_ROOT/context" -name "*.md" -type f -print0)
+    
+    if [[ $broken_chains -gt 0 ]]; then
+        log "ERROR: Found $broken_chains broken authority chain references"
+        return 1
+    else
+        log "SUCCESS: All authority chains validated successfully"
+        return 0
+    fi
+}
+
+# Main execution
+main() {
+    local operation="${1:-analyze}"
+    
+    case "$operation" in
+        "analyze")
+            log "Starting reference analysis..."
+            analyze_references
+            ;;
+        "update")
+            local mapping_file="${2:-}"
+            if [[ -z "$mapping_file" ]]; then
+                error_exit "Mapping file required for update operation"
+            fi
+            update_from_mapping "$mapping_file"
+            ;;
+        "validate-bidirectional")
+            validate_bidirectional_consistency
+            ;;
+        "validate-authority")
+            validate_authority_chains
+            ;;
+        "full-validation")
+            log "Running complete reference validation..."
+            analyze_references && \
+            validate_bidirectional_consistency && \
+            validate_authority_chains
+            ;;
+        *)
+            echo "Usage: $0 {analyze|update mapping_file|validate-bidirectional|validate-authority|full-validation}"
+            echo ""
+            echo "Operations:"
+            echo "  analyze               - Analyze all references and identify dead links"
+            echo "  update mapping_file   - Update references based on mapping file"
+            echo "  validate-bidirectional - Check bidirectional reference consistency"
+            echo "  validate-authority    - Validate authority chain integrity"
+            echo "  full-validation       - Run complete validation suite"
+            exit 1
+            ;;
+    esac
+}
+
+# Execute main function
+main "$@"
+
+log "Batch reference updater completed. Log: $LOG_FILE"

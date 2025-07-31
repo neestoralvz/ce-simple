@@ -1,0 +1,345 @@
+#!/bin/bash
+
+# Batch Issue Creation Script
+# Issue #13: Parallel Issue Creation Command
+# Enables efficient parallel creation of multiple GitHub issues
+
+set -euo pipefail
+
+# Silent script - no user notifications (Claude Code communicates results)
+# Configuration
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+TEMP_DIR=$(mktemp -d)
+trap 'rm -rf "$TEMP_DIR"' EXIT
+
+# Colors for output
+
+# Logging functions
+
+# Issue template validation
+validate_issue_template() {
+    local body="$1"
+    local required_sections=(
+        "## Context/Background"
+        "## Specific Requirements"
+        "## Implementation Approach"
+        "## Success Criteria"
+    )
+    
+    for section in "${required_sections[@]}"; do
+        if ! echo "$body" | grep -q "^$section"; then
+            return 1
+        fi
+    done
+    return 0
+}
+
+# Create issue template body
+create_issue_body() {
+    local context="$1"
+    local requirements="$2"
+    local approach="$3"
+    local success="$4"
+    local dependencies="${5:-}"
+    local additional="${6:-}"
+    
+    cat << EOF
+## Context/Background
+$context
+
+## Specific Requirements
+$requirements
+
+## Implementation Approach
+$approach
+
+## Success Criteria
+$success
+EOF
+
+    if [[ -n "$dependencies" ]]; then
+        echo -e "\n## Dependencies\n$dependencies"
+    fi
+    
+    if [[ -n "$additional" ]]; then
+        echo -e "\n## Additional Context\n$additional"
+    fi
+}
+
+# Parse JSON input for issues
+parse_json_input() {
+    local input_file="$1"
+    
+    if ! command -v jq &> /dev/null; then
+        log_error "jq is required for JSON parsing"
+        exit 1
+    fi
+    
+    if ! jq empty "$input_file" 2>/dev/null; then
+        log_error "Invalid JSON format in $input_file"
+        exit 1
+    fi
+    
+    jq -r '.issues[] | @json' "$input_file"
+}
+
+# Create single issue
+create_single_issue() {
+    local issue_data="$1"
+    local issue_num="$2"
+    local dry_run="${3:-false}"
+    
+    local title=$(echo "$issue_data" | jq -r '.title')
+    local context=$(echo "$issue_data" | jq -r '.context // ""')
+    local requirements=$(echo "$issue_data" | jq -r '.requirements // ""')
+    local approach=$(echo "$issue_data" | jq -r '.approach // ""')
+    local success=$(echo "$issue_data" | jq -r '.success // ""')
+    local dependencies=$(echo "$issue_data" | jq -r '.dependencies // ""')
+    local additional=$(echo "$issue_data" | jq -r '.additional // ""')
+    local labels=$(echo "$issue_data" | jq -r '.labels[]? // empty' | tr '\n' ',' | sed 's/,$//')
+    
+    # Validate required fields
+    if [[ -z "$title" || -z "$context" || -z "$requirements" || -z "$approach" || -z "$success" ]]; then
+        log_error "Issue $issue_num: Missing required fields (title, context, requirements, approach, success)"
+        return 1
+    fi
+    
+    # Create issue body
+    local body_file="$TEMP_DIR/issue_${issue_num}_body.md"
+    create_issue_body "$context" "$requirements" "$approach" "$success" "$dependencies" "$additional" > "$body_file"
+    
+    # Validate template structure
+    if ! validate_issue_template "$(cat "$body_file")"; then
+        log_error "Issue $issue_num: Template validation failed"
+        return 1
+    fi
+    
+    # Create GitHub issue
+    local gh_args=(
+        "--title" "$title"
+        "--body-file" "$body_file"
+    )
+    
+    if [[ -n "$labels" ]]; then
+        gh_args+=("--label" "$labels")
+    fi
+    
+    if [[ "$dry_run" == "true" ]]; then
+        log_info "DRY RUN: Would create issue: $title"
+        log_success "Validation passed for issue $issue_num"
+        echo "DRY_RUN_SUCCESS_$issue_num" >> "$TEMP_DIR/created_issues.txt"
+        return 0
+    fi
+    
+    log_info "Creating issue: $title"
+    
+    if gh issue create "${gh_args[@]}" > "$TEMP_DIR/issue_${issue_num}_result.txt" 2>&1; then
+        local issue_url=$(cat "$TEMP_DIR/issue_${issue_num}_result.txt")
+        log_success "Created issue $issue_num: $issue_url"
+        echo "$issue_url" >> "$TEMP_DIR/created_issues.txt"
+        return 0
+    else
+        log_error "Failed to create issue $issue_num: $title"
+        cat "$TEMP_DIR/issue_${issue_num}_result.txt"
+        return 1
+    fi
+}
+
+# Main batch creation function
+batch_create_issues() {
+    local input_file="$1"
+    local max_parallel="${2:-3}"
+    local dry_run="${3:-false}"
+    
+    log_info "Starting batch issue creation from $input_file"
+    log_info "Max parallel processes: $max_parallel"
+    
+    # Validate input file
+    if [[ ! -f "$input_file" ]]; then
+        log_error "Input file not found: $input_file"
+        exit 1
+    fi
+    
+    # Initialize counters
+    local total=0
+    local success=0
+    local failed=0
+    local pids=()
+    
+    # Count total issues
+    total=$(jq '.issues | length' "$input_file")
+    log_info "Total issues to create: $total"
+    
+    # Create issues in parallel
+    local issue_num=1
+    while IFS= read -r issue_data; do
+        # Wait if we've reached max parallel processes
+        while (( ${#pids[@]} >= max_parallel )); do
+            for i in "${!pids[@]}"; do
+                if ! kill -0 "${pids[i]}" 2>/dev/null; then
+                    wait "${pids[i]}"
+                    if [[ $? -eq 0 ]]; then
+                        ((success++))
+                    else
+                        ((failed++))
+                    fi
+                    unset "pids[i]"
+                fi
+            done
+            pids=("${pids[@]}")  # Reindex array
+            sleep 0.1
+        done
+        
+        # Start new process
+        create_single_issue "$issue_data" "$issue_num" "$dry_run" &
+        pids+=($!)
+        
+        ((issue_num++))
+    done < <(parse_json_input "$input_file")
+    
+    # Wait for remaining processes
+    for pid in "${pids[@]}"; do
+        wait "$pid"
+        if [[ $? -eq 0 ]]; then
+            ((success++))
+        else
+            ((failed++))
+        fi
+    done
+    
+    # Summary
+    log_info "Batch creation completed"
+    log_success "Successfully created: $success issues"
+    if [[ $failed -gt 0 ]]; then
+        log_error "Failed to create: $failed issues"
+    fi
+    
+    # List created issues
+    if [[ -f "$TEMP_DIR/created_issues.txt" ]]; then
+        log_info "Created issues:"
+        cat "$TEMP_DIR/created_issues.txt" | sed 's/^/  /'
+    fi
+    
+    return $(( failed > 0 ? 1 : 0 ))
+}
+
+# Generate sample input file
+generate_sample() {
+    local output_file="${1:-sample_issues.json}"
+    
+    cat > "$output_file" << 'EOF'
+{
+  "issues": [
+    {
+      "title": "Sample Issue 1: Feature Implementation",
+      "context": "Need to implement a new feature for user authentication",
+      "requirements": "- User login/logout functionality\n- Password validation\n- Session management",
+      "approach": "- Use JWT tokens for authentication\n- Implement middleware for session validation\n- Add password strength validation",
+      "success": "- Users can successfully login and logout\n- Sessions are properly managed\n- Password validation works correctly",
+      "dependencies": "Database setup (Issue #XX)",
+      "additional": "Consider implementing 2FA in future iterations",
+      "labels": ["enhancement", "authentication"]
+    },
+    {
+      "title": "Sample Issue 2: Bug Fix",
+      "context": "Users experiencing errors when uploading large files",
+      "requirements": "- Fix file upload size limit\n- Improve error messaging\n- Add progress indicator",
+      "approach": "- Increase server upload limits\n- Implement chunked upload\n- Add client-side progress tracking",
+      "success": "- Large files upload successfully\n- Users see clear error messages\n- Progress is visible during upload",
+      "labels": ["bug", "file-upload"]
+    }
+  ]
+}
+EOF
+    
+    log_success "Sample input file created: $output_file"
+    log_info "Edit this file and run: $0 $output_file"
+}
+
+# Usage information
+show_usage() {
+    cat << EOF
+Batch Issue Creation Script
+
+USAGE:
+    $0 <input_file.json> [max_parallel]
+    $0 --dry-run <input_file.json> [max_parallel]
+    $0 --sample [output_file.json]
+    $0 --help
+
+ARGUMENTS:
+    input_file.json    JSON file containing issue definitions
+    max_parallel       Maximum parallel processes (default: 3)
+
+OPTIONS:
+    --dry-run        Validate input without creating issues
+    --sample         Generate sample input file
+    --help          Show this help message
+
+EXAMPLE:
+    $0 my_issues.json 5
+    $0 --dry-run my_issues.json
+    $0 --sample
+    $0 sample_issues.json
+
+INPUT FORMAT:
+    JSON file with 'issues' array containing objects with:
+    - title (required): Issue title
+    - context (required): Context/Background section
+    - requirements (required): Specific requirements
+    - approach (required): Implementation approach
+    - success (required): Success criteria
+    - dependencies (optional): Dependencies section
+    - additional (optional): Additional context
+    - labels (optional): Array of label strings
+
+TEMPLATE VALIDATION:
+    All issues must follow the standard template structure:
+    - ## Context/Background
+    - ## Specific Requirements  
+    - ## Implementation Approach
+    - ## Success Criteria
+    - ## Dependencies (optional)
+    - ## Additional Context (optional)
+EOF
+}
+
+# Main script logic
+main() {
+    if [[ $# -eq 0 ]] || [[ "$1" == "--help" ]]; then
+        show_usage
+        exit 0
+    fi
+    
+    if [[ "$1" == "--sample" ]]; then
+        generate_sample "$2"
+        exit 0
+    fi
+    
+    if [[ "$1" == "--dry-run" ]]; then
+        if [[ $# -lt 2 ]]; then
+            log_error "Dry run requires input file"
+            show_usage
+            exit 1
+        fi
+        log_info "Running in DRY RUN mode - no issues will be created"
+        batch_create_issues "$2" "${3:-3}" "true"
+        exit $?
+    fi
+    
+    # Check GitHub CLI
+    if ! command -v gh &> /dev/null; then
+        log_error "GitHub CLI (gh) is required"
+        exit 1
+    fi
+    
+    # Check GitHub authentication
+    if ! gh auth status &> /dev/null; then
+        log_error "Please authenticate with GitHub CLI: gh auth login"
+        exit 1
+    fi
+    
+    batch_create_issues "$1" "$2"
+}
+
+main "$@"

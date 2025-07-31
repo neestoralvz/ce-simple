@@ -1,8 +1,0 @@
-Analysis started: Wed Jul 30 15:34:45 CST 2025
-Context directory: /Users/nalve/ce-simple/context
-L0-EMERGENCY:        4 files
-L1-CRITICAL:       12 files
-L2-HIGH:      126 files
-TOTAL:      142 violations
-Pilot candidates selected
-Analysis completed: Wed Jul 30 15:34:47 CST 2025

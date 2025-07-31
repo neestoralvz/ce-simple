@@ -1,0 +1,260 @@
+#!/bin/bash
+# conversation-workspace.sh - Conversation workspace management for /core protocol
+# Manages git worktree-based conversation isolation
+
+set -euo pipefail
+
+# Configuration
+WORKSPACE_BASE_DIR="./.conversation-workspaces"
+LOG_FILE="$HOME/.claude-workspace.log"
+
+# Log function
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"
+}
+
+# Create conversation workspace
+create_workspace() {
+    local timestamp="${1:-$(date +%Y%m%d_%H%M%S)}"
+    local workspace_name="conv-$timestamp"
+    local workspace_path="$WORKSPACE_BASE_DIR/$workspace_name"
+    
+    log "Creating conversation workspace: $workspace_name"
+    
+    # Ensure base directory exists
+    if [[ ! -d "$WORKSPACE_BASE_DIR" ]]; then
+        mkdir -p "$WORKSPACE_BASE_DIR"
+        log "Created workspace base directory: $WORKSPACE_BASE_DIR"
+    fi
+    
+    # Check if workspace already exists
+    if [[ -d "$workspace_path" ]]; then
+        log "Workspace already exists: $workspace_path"
+        echo "$workspace_path"
+        return 0
+    fi
+    
+    # Create git worktree
+    if git worktree add "$workspace_path" HEAD 2>/dev/null; then
+        log "✅ Git worktree created: $workspace_path"
+    else
+        log "⚠️ Git worktree creation failed, using fallback directory"
+        mkdir -p "$workspace_path"
+        
+        # Create fallback marker
+        echo "FALLBACK_WORKSPACE=true" > "$workspace_path/.workspace-info"
+        echo "CREATED=$(date -Iseconds)" >> "$workspace_path/.workspace-info"
+        echo "ORIGINAL_DIR=$(pwd)" >> "$workspace_path/.workspace-info"
+    fi
+    
+    # Set up workspace environment
+    cat > "$workspace_path/.env" << EOF
+CONVERSATION_WORKSPACE=true
+WORKSPACE_NAME=$workspace_name
+WORKSPACE_PATH=$workspace_path
+WORKSPACE_CREATED=$(date -Iseconds)
+ORIGINAL_BRANCH=$(git branch --show-current 2>/dev/null || echo "unknown")
+EOF
+    
+    log "Conversation workspace ready: $workspace_path"
+    echo "$workspace_path"
+}
+
+# Activate workspace
+activate_workspace() {
+    local workspace_path="$1"
+    
+    if [[ ! -d "$workspace_path" ]]; then
+        log "❌ Workspace does not exist: $workspace_path"
+        return 1
+    fi
+    
+    log "Activating workspace: $workspace_path"
+    
+    # Source environment
+    if [[ -f "$workspace_path/.env" ]]; then
+        source "$workspace_path/.env"
+        export CONVERSATION_WORKSPACE WORKSPACE_NAME WORKSPACE_PATH WORKSPACE_CREATED
+        log "✅ Workspace environment activated"
+    fi
+    
+    # Change to workspace directory
+    cd "$workspace_path" || {
+        log "❌ Failed to change to workspace directory"
+        return 1
+    }
+    
+    log "✅ Workspace activated: $(pwd)"
+    return 0
+}
+
+# Cleanup workspace
+cleanup_workspace() {
+    local workspace_path="$1"
+    local force="${2:-false}"
+    
+    if [[ ! -d "$workspace_path" ]]; then
+        log "Workspace does not exist: $workspace_path"
+        return 0
+    fi
+    
+    log "Cleaning up workspace: $workspace_path"
+    
+    # Check if it's a git worktree
+    if git worktree list | grep -q "$workspace_path"; then
+        # Check for uncommitted changes unless force cleanup
+        if [[ "$force" != "true" ]]; then
+            pushd "$workspace_path" > /dev/null || return 1
+            if ! git diff --quiet || ! git diff --cached --quiet; then
+                log "⚠️ Workspace has uncommitted changes, use 'force' to cleanup anyway"
+                popd > /dev/null
+                return 1
+            fi
+            popd > /dev/null
+        fi
+        
+        # Remove git worktree
+        if git worktree remove "$workspace_path" --force 2>/dev/null; then
+            log "✅ Git worktree removed: $workspace_path"
+        else
+            log "⚠️ Failed to remove git worktree, removing directory manually"
+            rm -rf "$workspace_path"
+        fi
+    else
+        # Regular directory cleanup
+        rm -rf "$workspace_path"
+        log "✅ Directory removed: $workspace_path"
+    fi
+    
+    return 0
+}
+
+# List workspaces
+list_workspaces() {
+    log "Listing conversation workspaces"
+    
+    if [[ ! -d "$WORKSPACE_BASE_DIR" ]]; then
+        echo "No workspace directory found"
+        return 0
+    fi
+    
+    echo "Conversation Workspaces:"
+    echo "======================"
+    
+    local count=0
+    for workspace in "$WORKSPACE_BASE_DIR"/conv-*; do
+        if [[ -d "$workspace" ]]; then
+            ((count++))
+            local workspace_name=$(basename "$workspace")
+            local status="unknown"
+            local created="unknown"
+            
+            # Get workspace info
+            if [[ -f "$workspace/.env" ]]; then
+                created=$(grep "WORKSPACE_CREATED=" "$workspace/.env" | cut -d= -f2)
+            fi
+            
+            # Check if it's a git worktree
+            if git worktree list | grep -q "$workspace"; then
+                status="git-worktree"
+            elif [[ -f "$workspace/.workspace-info" ]]; then
+                status="fallback"
+            else
+                status="directory"
+            fi
+            
+            echo "$count. $workspace_name"
+            echo "   Path: $workspace"
+            echo "   Status: $status"
+            echo "   Created: $created"
+            echo ""
+        fi
+    done
+    
+    if (( count == 0 )); then
+        echo "No conversation workspaces found"
+    else
+        echo "Total workspaces: $count"
+    fi
+}
+
+# Cleanup orphaned workspaces
+cleanup_orphaned() {
+    log "Cleaning up orphaned workspaces"
+    
+    # Remove orphaned git worktrees
+    git worktree prune 2>/dev/null || true
+    
+    # Check for workspaces without git worktree backing
+    if [[ -d "$WORKSPACE_BASE_DIR" ]]; then
+        for workspace in "$WORKSPACE_BASE_DIR"/conv-*; do
+            if [[ -d "$workspace" ]]; then
+                if ! git worktree list | grep -q "$workspace"; then
+                    if [[ -f "$workspace/.workspace-info" ]]; then
+                        # This is a fallback workspace, keep it
+                        continue
+                    else
+                        log "Removing orphaned workspace: $workspace"
+                        rm -rf "$workspace"
+                    fi
+                fi
+            fi
+        done
+    fi
+    
+    log "✅ Orphaned workspace cleanup completed"
+}
+
+# Main execution
+main() {
+    local action="${1:-help}"
+    
+    case "$action" in
+        "create")
+            local timestamp="${2:-}"
+            workspace_path=$(create_workspace "$timestamp")
+            echo "Workspace created: $workspace_path"
+            echo "To activate: source $workspace_path/.env && cd $workspace_path"
+            ;;
+        "activate")
+            local workspace_path="${2:-}"
+            if [[ -z "$workspace_path" ]]; then
+                echo "Usage: $0 activate <workspace_path>"
+                return 1
+            fi
+            activate_workspace "$workspace_path"
+            ;;
+        "cleanup")
+            local workspace_path="${2:-}"
+            local force="${3:-false}"
+            if [[ -z "$workspace_path" ]]; then
+                echo "Usage: $0 cleanup <workspace_path> [force]"
+                return 1
+            fi
+            cleanup_workspace "$workspace_path" "$force"
+            ;;
+        "list")
+            list_workspaces
+            ;;
+        "prune")
+            cleanup_orphaned
+            ;;
+        "help"|*)
+            echo "Usage: $0 [create|activate|cleanup|list|prune|help]"
+            echo ""
+            echo "create [timestamp]: Create new conversation workspace"
+            echo "activate <path>: Activate workspace environment"
+            echo "cleanup <path> [force]: Remove workspace (force to ignore uncommitted changes)"
+            echo "list: List all conversation workspaces"
+            echo "prune: Clean up orphaned workspaces"
+            echo "help: Show this help"
+            echo ""
+            echo "Environment variables after activation:"
+            echo "  CONVERSATION_WORKSPACE=true"
+            echo "  WORKSPACE_NAME=conv-timestamp"
+            echo "  WORKSPACE_PATH=full-path-to-workspace"
+            ;;
+    esac
+}
+
+main "$@"

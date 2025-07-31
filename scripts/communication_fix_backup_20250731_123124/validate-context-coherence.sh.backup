@@ -1,0 +1,256 @@
+#!/bin/bash
+# validate-context-coherence.sh - Context coherence validation for /core protocol step 28.5
+# Validates CLAUDE.md conditional links and semantic triggers coherence
+
+set -euo pipefail
+
+# Configuration
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+LOG_FILE="$PROJECT_ROOT/scripts/logs/context_coherence_$(date +%Y%m%d_%H%M%S).log"
+CLAUDE_MD="$PROJECT_ROOT/CLAUDE.md"
+CORE_PROTOCOL="$PROJECT_ROOT/.claude/commands/core.md"
+
+# Create log directory
+mkdir -p "$(dirname "$LOG_FILE")"
+
+# Log function
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"
+}
+
+# Banner
+log "========================================"
+log "CONTEXT COHERENCE VALIDATION"
+log "Authority: /core protocol step 28.5"
+log "========================================"
+
+# Validation results
+VALIDATION_ERRORS=0
+VALIDATION_WARNINGS=0
+
+# Check if key files exist
+validate_key_files() {
+    log "Validating key file existence..."
+    
+    local key_files=(
+        "$CLAUDE_MD"
+        "$CORE_PROTOCOL"
+        "$PROJECT_ROOT/context/architecture/core/truth-source.md"
+        "$PROJECT_ROOT/context/architecture/core/methodology.md"
+        "$PROJECT_ROOT/context/architecture/core/authority.md"
+        "$PROJECT_ROOT/context/vision/vision_foundation.md"
+        "$PROJECT_ROOT/context/vision/simplicity.md"
+    )
+    
+    for file in "${key_files[@]}"; do
+        if [[ -f "$file" ]]; then
+            log "✅ Found: $file"
+        else
+            log "❌ MISSING: $file"
+            ((VALIDATION_ERRORS++))
+        fi
+    done
+}
+
+# Validate @context/ references in CLAUDE.md
+validate_claude_references() {
+    log "Validating @context/ references in CLAUDE.md..."
+    
+    if [[ ! -f "$CLAUDE_MD" ]]; then
+        log "❌ CLAUDE.md not found"
+        ((VALIDATION_ERRORS++))
+        return 1
+    fi
+    
+    # Extract @context/ references
+    local references=()
+    while IFS= read -r ref; do
+        # Remove @context/ prefix and any trailing characters
+        local clean_ref="${ref#@context/}"
+        clean_ref="${clean_ref%% *}"
+        clean_ref="${clean_ref%%\]*}"
+        references+=("context/$clean_ref")
+    done < <(grep -o '@context/[^[:space:]]*' "$CLAUDE_MD" || true)
+    
+    log "Found ${#references[@]} @context/ references in CLAUDE.md"
+    
+    for ref in "${references[@]}"; do
+        local full_path="$PROJECT_ROOT/$ref"
+        if [[ -f "$full_path" ]]; then
+            log "✅ Valid reference: $ref"
+        else
+            log "❌ BROKEN reference: $ref (file not found)"
+            ((VALIDATION_ERRORS++))
+        fi
+    done
+}
+
+# Validate semantic triggers structure
+validate_semantic_triggers() {
+    log "Validating semantic triggers structure..."
+    
+    # Check if semantic triggers directory exists
+    local semantic_triggers_dir="$PROJECT_ROOT/context/architecture/claude_code/semantic-triggers"
+    if [[ -d "$semantic_triggers_dir" ]]; then
+        log "✅ Semantic triggers directory exists: $semantic_triggers_dir"
+        
+        # Check for README.md
+        if [[ -f "$semantic_triggers_dir/README.md" ]]; then
+            log "✅ Semantic triggers README.md exists"
+        else
+            log "⚠️  WARNING: Semantic triggers README.md missing"
+            ((VALIDATION_WARNINGS++))
+        fi
+    else
+        log "⚠️  WARNING: Semantic triggers directory missing: $semantic_triggers_dir"
+        log "    Referenced in CLAUDE.md but directory doesn't exist"
+        ((VALIDATION_WARNINGS++))
+    fi
+}
+
+# Validate core protocol steps coherence
+validate_protocol_coherence() {
+    log "Validating protocol coherence between CLAUDE.md and core.md..."
+    
+    # Check if CLAUDE.md mentions the correct number of steps
+    if grep -q "29 pasos sistemáticos" "$CLAUDE_MD"; then
+        log "✅ CLAUDE.md references correct protocol steps"
+    else
+        log "⚠️  WARNING: CLAUDE.md may have outdated step count reference"
+        ((VALIDATION_WARNINGS++))
+    fi
+    
+    # Check if coherence validation step exists in core.md
+    if grep -q "VALIDACIÓN DE COHERENCIA CONTEXTUAL" "$CORE_PROTOCOL"; then
+        log "✅ Coherence validation step found in core protocol"
+    else
+        log "❌ ERROR: Coherence validation step missing from core protocol"
+        ((VALIDATION_ERRORS++))
+    fi
+}
+
+# Validate authority chain integrity
+validate_authority_chain() {
+    log "Validating authority chain integrity..."
+    
+    # Check key authority files exist and have content
+    local authority_files=(
+        "context/vision/vision_foundation.md"
+        "context/architecture/core/truth-source.md"
+        "context/architecture/core/authority.md"
+        "context/architecture/core/methodology.md"
+    )
+    
+    for file in "${authority_files[@]}"; do
+        local full_path="$PROJECT_ROOT/$file"
+        if [[ -f "$full_path" ]] && [[ -s "$full_path" ]]; then
+            log "✅ Authority file valid: $file"
+        elif [[ -f "$full_path" ]]; then
+            log "⚠️  WARNING: Authority file empty: $file"
+            ((VALIDATION_WARNINGS++))
+        else
+            log "❌ ERROR: Authority file missing: $file"
+            ((VALIDATION_ERRORS++))
+        fi
+    done
+}
+
+# Check for recent protocol changes
+detect_protocol_changes() {
+    log "Detecting recent protocol changes..."
+    
+    # Check git for recent changes to protocol files
+    local protocol_files=(
+        ".claude/commands/core.md"
+        "CLAUDE.md"
+        "context/architecture/core/methodology.md"
+        "context/architecture/orchestration.md"
+    )
+    
+    local changes_detected=false
+    for file in "${protocol_files[@]}"; do
+        if [[ -f "$PROJECT_ROOT/$file" ]]; then
+            # Check if file was modified in last commit (simple check)
+            if git diff --name-only HEAD~1 2>/dev/null | grep -q "^$file$"; then
+                log "📝 Protocol change detected: $file (recently modified)"
+                changes_detected=true
+            fi
+        fi
+    done
+    
+    if [[ "$changes_detected" == "true" ]]; then
+        log "⚠️  Recent protocol changes detected - extra validation recommended"
+        ((VALIDATION_WARNINGS++))
+    else
+        log "✅ No recent protocol changes detected"
+    fi
+}
+
+# Generate validation report
+generate_report() {
+    log "========================================"
+    log "CONTEXT COHERENCE VALIDATION REPORT"
+    log "========================================"
+    log "Validation Errors: $VALIDATION_ERRORS"
+    log "Validation Warnings: $VALIDATION_WARNINGS"
+    log ""
+    
+    if [[ $VALIDATION_ERRORS -eq 0 ]] && [[ $VALIDATION_WARNINGS -eq 0 ]]; then
+        log "✅ VALIDATION PASSED: All context coherence checks successful"
+        return 0
+    elif [[ $VALIDATION_ERRORS -eq 0 ]]; then
+        log "⚠️  VALIDATION PASSED WITH WARNINGS: $VALIDATION_WARNINGS warnings found"
+        return 0
+    else
+        log "❌ VALIDATION FAILED: $VALIDATION_ERRORS errors, $VALIDATION_WARNINGS warnings"
+        return 1
+    fi
+}
+
+# Main execution
+main() {
+    local operation="${1:-validate}"
+    
+    case "$operation" in
+        "validate")
+            log "Starting context coherence validation..."
+            
+            validate_key_files
+            validate_claude_references
+            validate_semantic_triggers
+            validate_protocol_coherence
+            validate_authority_chain
+            detect_protocol_changes
+            
+            generate_report
+            ;;
+        "check-references")
+            log "Checking @context/ references only..."
+            validate_claude_references
+            generate_report
+            ;;
+        "check-protocol")
+            log "Checking protocol coherence only..."
+            validate_protocol_coherence
+            generate_report
+            ;;
+        *)
+            echo "Usage: $0 [validate|check-references|check-protocol]"
+            echo ""
+            echo "validate: Complete context coherence validation (default)"
+            echo "check-references: Check @context/ references only"
+            echo "check-protocol: Check protocol coherence only"
+            echo ""
+            echo "This script implements /core protocol step 28.5:"
+            echo "- Detects protocol/methodology changes"
+            echo "- Validates conditional links in CLAUDE.md"
+            echo "- Verifies semantic triggers coherence"
+            echo "- Confirms @context/ references validity"
+            exit 1
+            ;;
+    esac
+}
+
+main "$@"
+
+log "Context coherence validation completed. Log: $LOG_FILE"

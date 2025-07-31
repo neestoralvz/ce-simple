@@ -1,0 +1,18 @@
+# Structure Analysis: handoffs/H-FALLBACK-COMMAND.md (143 lines)
+## Main Sections (11 found):
+## OBJETIVO ESPECÍFICO
+## ESTADO ACTUAL
+## TAREAS ESPECÍFICAS
+## ENTREGABLES ESPERADOS
+## CRITERIOS DE ÉXITO
+## SIGUIENTES HANDOFFS
+## Subsections (5 found):
+### 1. Script Detection Logic
+### 2. Stub Script Creation Strategy
+### 3. Fallback Command Architecture
+### 4. Graceful Degradation Protocol
+### 5. Implementation Specifications
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 12

@@ -1,6 +1,0 @@
-Extraction session started: Wed Jul 30 15:37:25 CST 2025
-Context directory: /Users/nalve/ce-simple/context
-Extraction directory: /Users/nalve/ce-simple/scripts/extraction_session_20250730_153725
-Extraction mode: single
-Simulation mode: ENABLED
-File analysis completed: PHASE_5_ORCHESTRATION_PROTOCOLS_SYSTEMATIZATION (     118 lines)
