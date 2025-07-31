@@ -28,6 +28,14 @@ VISION.md → supreme user authority → @context/architecture/core/truth-source
 - Research-first protocol OBLIGATORIO: WebSearch + MCP context7 simultaneous
 - SOLID principles application + modular architecture
 
+### Claude Code Integration Authority (VALIDATED)
+**Protection System Standards**: Claude Code Hooks implementation validated per ADR-027
+- JSON-based declarative configuration OBLIGATORIO for hook systems
+- Modular bash script architecture FUNDAMENTAL for maintainability
+- Context-aware enforcement levels ESENCIAL for user experience
+- Performance requirements: <200ms hook execution SIEMPRE
+- Auto-remediation with user notification DEBE preserve user control
+
 ### Visual Communication Authority
 **Visual Standards**: → architecture/standards/visual-standards.md
 - Guardian enforcement formatting + partner constructor templates

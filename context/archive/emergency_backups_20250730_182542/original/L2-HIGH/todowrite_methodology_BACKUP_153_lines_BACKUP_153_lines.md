@@ -1,0 +1,154 @@
+# TodoWrite Methodology - Sistema Auto-Actualización + Concurrencia Automática
+
+**29/07/2025 09:22 CDMX | Actualizado: 29/07/2025 09:22 CDMX** | Metodología TodoWrite con auto-mantenimiento, dependencias automáticas y análisis concurrencia
+
+## AUTORIDAD SUPREMA
+@context/architecture/core/truth-source.md → sobrescribe → todo lo demás
+
+## Authority Framework Integration
+**OBLIGATORIO**: TodoWrite methodology DEBE preserve @context/architecture/core/truth-source.md authority
+**Think x4**: SIEMPRE apply systematic analysis for task prioritization
+**Parallel tools**: Concurrent task execution maximizes throughput
+**Continuous execution**: Task completion flows without artificial pauses
+
+## Principios Fundamentales
+
+### Auto-Actualización Obligatoria
+**DEBE:** Cada task completion → auto-generar tareas actualización archivos relacionados
+**NUNCA:** Olvidar dependencias downstream de modificaciones
+**SIEMPRE:** Identificar automáticamente archivos que requieren sincronización
+
+### Detección Dependencias Automática
+**Algoritmo:** Modificar archivo X → escanear referencias → auto-agregar tasks para Y, Z dependientes
+**OBLIGATORIO:** TodoWrite DEBE auto-detectar cuando cambio requiere propagación
+**FUNDAMENTAL:** Sistema auto-mantenimiento vs manual tracking
+
+### Análisis Concurrencia Automático
+**ESENCIAL:** Sistema evalúa constantemente qué tareas pueden ejecutarse simultáneamente
+**DEBE:** Antes de ejecutar tarea individual → analizar si otras tareas pueden hacerse en paralelo
+**OBLIGATORIO:** Maximizar throughput identificando subset concurrent-safe automáticamente
+
+## Metodología Core Paralela
+
+### Phase 1: Task Creation + Dependency Scan + Concurrency Analysis
+User request → Initial tasks → Auto-scan dependencies → Auto-add propagation tasks → Identify parallel opportunities
+**DEBE incluir:** Referencias, imports, documentación relacionada
+**Auto-detectar:** Links, includes, shared patterns + tareas independientes para batch execution
+
+### Phase 2: Dynamic Task Evolution + Parallel Optimization
+**Durante ejecución:** Cada completión → re-scan dependencies → add new tasks → re-analyze concurrency opportunities
+**ESENCIAL:** Lista viva que crece orgánicamente con discoveries + optimización paralela continua
+**Anti-pattern:** Static task lists + ejecución secuencial cuando paralelización posible
+
+### Phase 3: Cross-File Synchronization + Batch Operations
+**Trigger:** Modificar config → auto-add "actualizar documentation referencing config"
+**Pattern:** Edit API → auto-add "sync client code using API"
+**OBLIGATORIO:** Zero-manual dependency tracking + agrupar tareas compatibles en un solo mensaje
+
+## Algoritmo Paralelización
+
+### Detección Dependencias Cruzadas
+**Análisis automático:**
+1. **Tareas independientes:** No comparten archivos, no dependencias secuenciales
+2. **Tareas secuenciales:** Output de una es input de otra
+3. **Tareas conflictivas:** Modifican mismo archivo simultáneamente
+4. **Tareas compatibles:** Diferentes archivos, sin dependencias
+
+### Optimización Batch Automática
+**ANTES de ejecutar task individual:**
+1. Analizar lista completa →
+2. Identificar tasks sin dependencias cruzadas →
+3. Agrupar en batch concurrent-safe →
+4. Ejecutar múltiples tareas simultaneously
+
+### Algoritmo Identificación Concurrent-Safe
+**Criteria automático:**
+- **File isolation:** Tasks que modifican archivos diferentes
+- **Read-only operations:** Tasks de lectura/análisis pueden paralelizarse siempre
+- **Independent operations:** Sin shared state ni dependencies
+- **Tool compatibility:** Herramientas diferentes = paralelización segura
+
+## Maximización Throughput
+
+### Patterns Paralelos Típicos
+**DEBE batch automáticamente:**
+- Múltiples file reads → Single multi-file Read batch
+- Grep operations independientes → Batch grep calls
+- Documentation updates diferentes archivos → Parallel Edit operations
+- Analysis tasks sin dependencies → Concurrent analysis batch
+
+### Anti-Patterns Secuencial
+**NUNCA ejecutar secuencialmente cuando posible paralelización:**
+- Leer múltiples archivos uno por uno
+- Hacer grep searches independientes secuencialmente  
+- Actualizar documentation files sin dependencies paso a paso
+- Análisis codebase que puede batching
+
+### Throughput Optimization Protocol
+**Pre-execution analysis OBLIGATORIO:**
+1. Scan full task list para opportunities paralelas
+2. Group concurrent-safe tasks automáticamente
+3. Ejecutar batch operations cuando posible
+4. Solo fallback a sequential execution cuando dependencies require
+
+## Patterns Anti-Olvido + Concurrencia
+
+### Archivos Típicamente Olvidados (Con Paralelización)
+**DEBE auto-agregar cuando relevante + identificar concurrency:**
+- README.md updates after feature changes → Parallel con otros docs
+- Documentation updates after API changes → Batch con related docs
+- Test updates after implementation changes → Independent from docs
+- Config updates after dependency changes → May block other tasks
+- CLAUDE.md updates after system changes → Usually independent
+
+### Auto-Detection Triggers + Concurrency Classification
+**Modificar:** `/Users/nalve/ce-simple/.claude/commands/` → auto-add task actualizar CLAUDE.md (Independent)
+**Modificar:** `context/` → auto-add task revisar cross-references (May have dependencies)
+**Modificar:** `user-vision/` → auto-add task validar system alignment (Usually blocking)
+
+## Implementation Protocol Optimizado
+
+### Pre-Task Analysis + Parallel Planning
+**ANTES de first task:** Full codebase dependency scan + concurrency analysis
+**Auto-generate:** Complete propagation task list + parallel execution plan
+**Resultado:** TodoWrite list que captura ALL dependencies + maximiza throughput
+
+### Mid-Execution Re-Analysis + Dynamic Batching
+**Cada 3-4 tasks completadas:** Re-scan para new dependencies + new parallel opportunities
+**Auto-add:** Tasks emergentes + re-optimize remaining tasks para concurrency
+**Dynamic growth:** Lista crece inteligentemente + execution optimizes continuously
+
+### Post-Completion Validation + Final Batch
+**Final step SIEMPRE:** "Validate all dependent files synchronized" (Usually parallel reads)
+**Auto-check:** Cross-references, links, documentation coherencia (Batch validation)
+**OBLIGATORIO:** Zero dangling references + maximum efficiency final cleanup
+
+## Technical Implementation Concurrent
+
+### Dependency Types Auto-Detected + Concurrency Impact
+1. **Direct references:** imports, includes, links (Usually sequential)
+2. **Conceptual dependencies:** shared patterns, related functionality (Often parallel)
+3. **Documentation dependencies:** files that describe modified components (Usually parallel)
+4. **Configuration dependencies:** settings affecting modified features (May be blocking)
+5. **Test dependencies:** tests covering modified functionality (Usually independent)
+
+### Auto-Addition Algorithm + Parallel Classification
+1. Modify file X →
+2. Scan for references to X →
+3. Auto-add "Update referencing files: [list]" + classify concurrency →
+4. Scan X content for outbound references →
+5. Auto-add "Validate referenced files still align: [list]" + batch if possible →
+6. Generate parallel execution plan for concurrent-safe tasks
+
+## Vocabulario Reforzamiento
+**DEBE:** Usar auto-addition, auto-detection, dependency-scanning, parallel-analysis, concurrent-safe, batch-optimization
+**NUNCA:** Manual dependency tracking, static task lists, sequential-only execution
+**ESENCIAL:** Self-maintaining TodoWrite methodology + maximum throughput optimization
+**OBLIGATORIO:** Zero forgotten dependencies + paralelización automática cuando posible
+
+---
+
+## Enlaces → Información Complementaria
+**Si necesitas ejemplos:** → context/examples/todowrite_patterns.md
+**Si requieres implementation:** → docs/workflows/todowrite_integration.md
+**Si necesitas context:** → context/architecture/patterns/command_orchestration_patterns.md:45-78

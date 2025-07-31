@@ -1,0 +1,12 @@
+284 /Users/nalve/ce-simple/context/architecture/patterns/claude-code-integration-patterns.md
+256 /Users/nalve/ce-simple/context/handoffs/HANDOFF_6_MEDIUM_VIOLATIONS_CLEANUP.md
+244 /Users/nalve/ce-simple/context/architecture/templates/README_maintenance_system_overview.md
+241 /Users/nalve/ce-simple/context/handoffs/PARALLEL_HANDOFFS_COORDINATION.md
+233 /Users/nalve/ce-simple/context/architecture/adr/ADR-016-hybrid-orchestration-execution-protocol.md
+232 /Users/nalve/ce-simple/context/handoffs/HANDOFF_5_ADRS_PATTERNS_SYSTEM.md
+232 /Users/nalve/ce-simple/context/handoffs/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM.md
+231 /Users/nalve/ce-simple/context/architecture/templates/research-documentation-template.md
+226 /Users/nalve/ce-simple/context/handoffs/HANDOFF_2_L1_CRITICAL_PATTERNS_STANDARDS.md
+220 /Users/nalve/ce-simple/context/handoffs/HANDOFF_3_UX_FLOWCHART_SYSTEM.md
+212 /Users/nalve/ce-simple/context/architecture/adr/ADR-019-handoffs-system-implementation.md
+200 /Users/nalve/ce-simple/context/architecture/standards/standards_evolution_framework.md
