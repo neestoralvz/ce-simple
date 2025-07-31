@@ -91,4 +91,4 @@ CONSOLIDATION_SOURCES:
 
 **PHASE 5 COMPLETION DECLARATION**: Orchestration protocols systematization SUCCESSFULLY COMPLETED. All target components implemented and operational. 
 
-**ARCHIVE STATUS**: ✅ ARCHIVED to `context/archive/handoffs/phase-5-completed/` - Complete documentation and evidence preserved.
+**ARCHIVE STATUS**: ✅ ARCHIVED to `context/handoffs/archive/phase-5-completed/` - Complete documentation and evidence preserved.

@@ -1,3 +1,8 @@
 Validation started: Thu Jul 31 07:07:21 CST 2025
 Context directory: /Users/nalve/ce-simple/context
 File size compliance: FAIL -      527 violations
+Reference integrity: FAIL -     4215 broken references
+Authority preservation: FAIL - 1 violations
+CLAUDE.md navigation: PASS
+README hubs:       61 found
+Overall validation: FAIL - system integrity compromised
