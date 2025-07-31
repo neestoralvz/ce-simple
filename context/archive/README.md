@@ -37,9 +37,9 @@
 
 ### Archive→Active Content Relationships
 **EXTRACTION PATHWAYS**:
-- Vision discoveries → context/vision/
+- Vision discoveries → @context/vision/
 - Methodological insights → @context/architecture/core/methodology.md updates
-- Pattern recognition → context/architecture/patterns/
+- Pattern recognition → @context/architecture/patterns/
 - Authority clarifications → @context/architecture/core/authority.md updates
 - Standards evolution → @context/architecture/standards/README.md updates
 
@@ -76,7 +76,7 @@
 **Connection**: Historical methodology evolution informs current protocol optimization
 **Protocol**: Archived methodological insights feed into continuous methodology improvement
 
-### → context/architecture/patterns/
+### → @context/architecture/patterns/
 **Connection**: Processed conversations provide pattern recognition for working methodologies
 **Protocol**: Archive analysis contributes to pattern validation and anti-pattern identification
 

@@ -67,11 +67,11 @@ Complete reference architecture implementation including syntax standards, bidir
 **Connection**: Reference architecture intelligence extracted per L2-MODULAR methodology
 **Protocol**: CROSS_REFERENCE_SYSTEM.md maintains reference-only hub pointing to specialized reference implementation
 
-### ←→ context/architecture/ux/component-decision-flowchart.md
+### ←→ @context/architecture/ux/component-decision-flowchart.md
 **Connection**: Integration pathways authority and reference architecture coordination
 **Protocol**: Bidirectional reference integration supporting component decision matrix functionality
 
-### ←→ context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+### ←→ @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
 **Connection**: Reference migration protocols and systematic evolution support
 **Protocol**: Reference architecture supports migration through consistent linking and authority preservation
 

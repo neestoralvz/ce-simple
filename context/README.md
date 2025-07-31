@@ -3,7 +3,7 @@
 **30/07/2025 22:30 CDMX** | Single entry point for complete context architecture
 
 ## AUTORIDAD SUPREMA
-vision/vision_foundation.md → supreme user authority → architecture/core/@context/architecture/core/truth-source.md → context/ system serves vision discovery
+@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → context/ system serves vision discovery
 
 ## PRINCIPIO FUNDAMENTAL
 **"Context como padre de todo"** - Complete knowledge system organized for conversation-first development with vision-driven evolution

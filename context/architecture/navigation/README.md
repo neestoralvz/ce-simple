@@ -15,7 +15,7 @@ Complete navigation intelligence for context system including quick start guides
 
 ### Authority Hierarchy Implementation
 ```
-VISION.md (supreme user authority) → context/vision/vision_foundation.md → 
+VISION.md (supreme user authority) → @context/vision/vision_foundation.md → 
 @context/architecture/core/truth-source.md (architecture dispatcher) → Core Components → 
 Specialized Directories → Implementation
 ```
