@@ -1,0 +1,17 @@
+3696 total
+244 context/architecture/templates/README_maintenance_system_overview.md
+231 context/architecture/templates/research-documentation-template.md
+177 context/architecture/templates/template_selection_guide.md
+153 context/architecture/templates/template_maintenance_protocol.md
+121 context/architecture/templates/integration_hub_template.md
+108 context/architecture/templates/evolution-domains/breaking-change-management.md
+107 context/architecture/templates/evolution-domains/system-evolution-management.md
+106 context/architecture/templates/evolution-domains/evolution-documentation.md
+99 context/architecture/templates/archive_component_template.md
+94 context/architecture/templates/maintenance-system/system-evolution.md
+90 context/architecture/templates/evolution-domains/component-evolution-protocol.md
+89 context/architecture/templates/evolution-domains/template-evolution-management.md
+84 context/architecture/templates/specialized_directory_template.md
+84 context/architecture/templates/README_evolution_protocol.md
+83 context/architecture/templates/readme-troubleshooting/emergency-protocols.md
+83 context/architecture/templates/README_template.md
