@@ -1,0 +1,3 @@
+Validation started: Thu Jul 31 07:28:40 CST 2025
+Context directory: /Users/nalve/ce-simple/context
+File size compliance: FAIL -      112 violations
