@@ -1,0 +1,3 @@
+
+❌ archive/methodologies_consolidated/methodologies/dependency_layers.md → context/architecture/core/truth-source.md (BROKEN)
+❌ archive/methodologies_consolidated/methodologies/dependency_layers.md → context/architecture/core/truth-source.md (BROKEN)
