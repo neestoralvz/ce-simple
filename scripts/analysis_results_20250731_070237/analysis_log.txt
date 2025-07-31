@@ -1,0 +1,6 @@
+Analysis started: Thu Jul 31 07:02:37 CST 2025
+Context directory: /Users/nalve/ce-simple/context
+L0-EMERGENCY:      272 files
+L1-CRITICAL:      896 files
+L2-HIGH:      107 files
+TOTAL:     1275 violations
