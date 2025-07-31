@@ -7,7 +7,7 @@
 ## Context
 User requested context command refinement. Analysis revealed CRÍTICAS discrepancias:
 1. Context command missing PROTOCOLO OBLIGATORIO UNIVERSAL integration
-2. CLAUDE.md references discrepancy: context/patterns.md vs actual location
+2. CLAUDE.md references discrepancy: @context/patterns.md vs actual location
 3. Missing enforcement vocabulary and continuous execution template
 4. Incomplete Think x4 systematic analysis integration
 

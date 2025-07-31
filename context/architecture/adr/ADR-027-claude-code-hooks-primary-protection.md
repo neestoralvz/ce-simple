@@ -15,7 +15,7 @@ Comprehensive research comparing three protection approaches:
 2. **Git Hooks**: Repository event-based protection (7.8/10 score)  
 3. **Claude Code Hooks**: Conversation workflow integration (8.2/10 score)
 
-**Research Authority**: WebSearch + MCP Context7 + Think x4 systematic analysis documented in `context/archive/processing_reports/protection-systems-research-analysis.md`.
+**Research Authority**: WebSearch + MCP Context7 + Think x4 systematic analysis documented in `@context/archive/processing_reports/protection-systems-research-analysis.md`.
 
 ## Decision
 
