@@ -3,7 +3,7 @@
 **31/07/2025** | Reference hub for CLAUDE.md → /core protocol implementation
 
 ## AUTORIDAD SUPREMA
-context/architecture/templates.md → claude-core-protocol-implementation-template.md implements universal replication framework per template authority
+@context/architecture/templates.md → claude-core-protocol-implementation-template.md implements universal replication framework per template authority
 
 ## TEMPLATE PURPOSE
 **Universal Implementation Guide** - Complete template for replicating CLAUDE.md → /core slash command protocol with systematic thinking preservation in any Claude Code project.

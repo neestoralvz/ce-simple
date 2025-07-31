@@ -89,7 +89,7 @@ Clean state       | Direct cleanup         | NONE      | ROUTINE
 
 ## INTEGRATION REFERENCES
 
-### ← context/architecture/claude_code/worktree-accessibility-patterns.md
+### ← @context/architecture/claude_code/worktree-accessibility-patterns.md
 **Connection**: Emergency recovery complements accessibility patterns for complete resilience
 **Protocol**: Recovery patterns provide systematic approach when accessibility patterns fail
 

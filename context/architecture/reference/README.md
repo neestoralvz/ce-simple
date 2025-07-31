@@ -63,7 +63,7 @@ Complete reference architecture implementation including syntax standards, bidir
 
 ## INTEGRATION REFERENCES
 
-### ← context/architecture/reference/README.md
+### ← @context/architecture/reference/README.md
 **Connection**: Reference architecture intelligence extracted per L2-MODULAR methodology
 **Protocol**: CROSS_REFERENCE_SYSTEM.md maintains reference-only hub pointing to specialized reference implementation
 

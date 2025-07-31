@@ -32,7 +32,7 @@
 
 ## INTEGRATION REFERENCES
 
-### ← context/archive/claude-code-hooks-implementation-notes.md
+### ← @context/archive/claude-code-hooks-implementation-notes.md
 **Connection**: Implementation insights and lessons learned from successful Claude Code hooks integration
 **Protocol**: Template authority validated through actual implementation results
 

@@ -46,11 +46,11 @@
 
 ## INTEGRATION REFERENCES
 
-### ← context/architecture/patterns.md
+### ← @context/architecture/patterns.md
 **Connection**: Claude Code integration patterns complement working pattern ecosystem
 **Protocol**: Integration patterns serve Claude Code-specific implementation requirements
 
-### ←→ context/architecture/claude_code/
+### ←→ @context/architecture/claude_code/
 **Connection**: Integration patterns support Claude Code methodology and orchestration
 **Protocol**: Patterns provide implementation foundation for Claude Code optimization
 

@@ -51,7 +51,7 @@
 
 ## INTEGRATION REFERENCES
 
-### ← context/archive/conversations_processed/
+### ← @context/archive/conversations_processed/
 **Connection**: Historical intelligence extraction for dashboard metrics
 **Protocol**: Archive data feeds completion tracking and success metrics
 

@@ -45,7 +45,7 @@ All `.claude/commands/` reference context system for authority, methodology, and
 
 ## INTEGRATION REFERENCES
 
-### ← context/README.md
+### ← @context/README.md
 **Connection**: Navigation intelligence extracted from main README per L2-MODULAR methodology
 **Protocol**: README maintains reference-only navigation hub pointing to specialized navigation intelligence
 
