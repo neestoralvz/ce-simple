@@ -2,33 +2,50 @@ INSTRUCCIÓN OPERACIONAL OBLIGATORIA UNIVERSAL
 
 ⚠️ CUMPLIMIENTO OBLIGATORIO: Toda acción debe seguir este protocolo SIN EXCEPCIÓN
 
-PROTOCOLO HÍBRIDO DE ORQUESTACIÓN INTELIGENTE (Ver ADR-016):
+🌳 WORKSPACE CONVERSACIONAL DESECHABLE:
+0. CREA GitWorktree desechable: git worktree add ./.conversation-workspaces/conv-[TIMESTAMP] [branch-actual]
+1. CAMBIA a workspace: cd ./.conversation-workspaces/conv-[TIMESTAMP]
+2. EXPORTA variable: export CONVERSATION_WORKSPACE=true
+
+📋 PROTOCOLO HÍBRIDO DE ORQUESTACIÓN INTELIGENTE:
 
 ⚠️ NIVEL ORQUESTADOR (Claude Principal) - CAPACIDADES: Task tools, coordinación, WebSearch+MCP Context7:
-1. DESPLIEGA TodoWrite task planning OBLIGATORIO como PRIMER PASO de TODA tarea antes de cualquier otra acción
-2. DESPLIEGA subagente especializado para explorar codebase completamente ANTES de cualquier acción
-3. ORQUESTA búsqueda paralela de soluciones, casos de éxito, mejores prácticas via múltiples Task tools especializados SIMULTÁNEAMENTE
-4. DELEGA análisis Think x4 de información recopilada a subagente analítico para diseñar plan paso a paso
-5. COORDINA planificación con múltiples subagentes especializados ejecutándose en PARALELO como PRIORIDAD
-6. DELEGA validación de scope (solicitud, contexto, visión usuario) a subagente validador - CONSULTA al usuario si propone cambios fuera scope
+1. DESPLIEGA TodoWrite task planning OBLIGATORIO como PRIMER PASO de TODA tarea
+2. ACTUALIZA TodoWrite CONTINUAMENTE durante ejecución (auto-actualización post cada acción)
+3. DESPLIEGA subagente especializado para explorar codebase completamente ANTES de cualquier acción
+4. ORQUESTA búsqueda paralela de soluciones via múltiples Task tools SIMULTÁNEAMENTE
+5. DELEGA análisis Think x4 de información recopilada a subagente analítico
+6. COORDINA planificación con múltiples subagentes especializados en PARALELO
 
-🔄 DECISIÓN INTELIGENTE DE NIVEL (MATRIZ ADR-016):
-6a. ORQUESTA OBLIGATORIAMENTE: tareas multi-componente, research paralelo, decisiones arquitectónicas
-6b. EVALÚA scope/complejidad ANTES de decidir nivel de delegación
-6c. DELEGA con autonomía ejecutora: subtareas específicas, análisis técnico puntual, implementación focalizda
+🔄 MATRIZ DE DECISIÓN INTELIGENTE (INTEGRADA):
+EVALÚA AUTOMÁTICAMENTE:
+- SCOPE: multi-componente/sistema-wide → ORQUESTA | componente único → EJECUTA
+- RESEARCH: WebSearch+MCP necesario → ORQUESTA | info en codebase → EJECUTA  
+- COMPLEJIDAD: decisiones arquitectónicas → ORQUESTA | técnico directo → EJECUTA
+- IMPACTO: cambios estructurales → ORQUESTA | optimizaciones puntuales → EJECUTA
+
+DECISIÓN LÓGICA:
+SI (multi-componente OR research-externo OR decisiones-arquitectónicas OR cambios-estructurales)
+  → ORQUESTACIÓN OBLIGATORIA
+SINO → EJECUCIÓN DIRECTA PERMITIDA
 
 ⚡ NIVEL EJECUTOR (Subagentes) - CAPACIDADES: Read/Edit/Bash/Grep/Glob, análisis técnico:
-6d. EJECUTA DIRECTAMENTE subtareas específicas dentro de scope delegado claramente definido
-6e. USA herramientas implementación según necesario para completar objetivos asignados
-6f. VALIDA criterios específicos establecidos antes de reportar completado
+7. EJECUTA DIRECTAMENTE subtareas específicas dentro de scope delegado
+8. USA herramientas implementación según necesario para completar objetivos
+9. VALIDA criterios específicos establecidos antes de reportar completado
 
 🔧 CONTINUACIÓN PROTOCOLO SISTEMÁTICO:
-7. COORDINA ejecución paralela de múltiples subagentes con batch operations OBLIGATORIO
-8. DESPLIEGA Task tools automáticamente para complejidad multi-componente - usa matriz decisión ADR-016
-9. ORQUESTA validación, testing y pruebas apropiadas según nivel de complejidad
-10. COORDINA iteración hasta éxito total - NUNCA abandones coordinación de tarea incompleta
-11. DELEGA actualización de CLAUDE.md y archivos relacionados según complejidad (matriz ADR-016)
-12. ORQUESTA extracción de insights conversacionales a /context via subagente OBLIGATORIO
-13. COORDINA integración con version control a través de subagentes en TODOS los workflows
-14. USA TodoWrite OBLIGATORIO para planificar TODA orquestación y tareas complejas - DESPLIEGA desde inicio de conversación - permite ejecución directa subagentes en subtareas
-15. VALIDA cumplimiento estándares profesionales en AMBOS niveles protocolo SIEMPRE
+10. COORDINA ejecución paralela con batch operations OBLIGATORIO
+11. ACTUALIZA TodoWrite automáticamente cada acción completada
+12. ORQUESTA validación, testing y pruebas según nivel de complejidad
+13. COORDINA iteración hasta éxito total - NUNCA abandones tarea incompleta
+14. DELEGA actualización de archivos según complejidad evaluada
+15. ORQUESTA extracción de insights conversacionales a /context via subagente
+16. COORDINA integración con version control en TODOS los workflows
+17. VALIDA cumplimiento estándares profesionales en AMBOS niveles SIEMPRE
+
+🏁 FINALIZACIÓN CONVERSACIONAL:
+18. VALIDA TodoWrite completamente vacío antes de finalizar
+19. INTEGRA cambios selectivamente al branch principal (solo si usuario aprueba)
+20. LIMPIA workspace: git worktree remove ./.conversation-workspaces/conv-[TIMESTAMP]
+21. PRESERVA logs conversacionales en context/ automáticamente

@@ -7,86 +7,42 @@ Define user experience architecture following core vision: "conversation natural
 
 ## COMPONENT ORGANIZATION
 
-### `/conversation-patterns/` - Conversation Design
-**Purpose**: Natural dialogue patterns and conversation flows
-**Content**: Socratic patterns, discovery flows, interaction design
+### Core UX Components
+- **`/conversation-patterns/`**: Natural dialogue patterns, socratic flows, interaction design
+- **`/interface-design/`**: System interface design, CLI patterns, semantic triggers, response formats
+- **`/user-experience/`**: End-to-end experience design, user workflows, optimization, accessibility
 
-### `/interface-design/` - Interface Architecture  
-**Purpose**: System interface design and interaction models
-**Content**: CLI patterns, semantic triggers, response formats
+### Component Decision Flowchart System
+**Visual Decision Authority**: `component-decision-flowchart.md` - Visual decision tree with Mermaid flowcharts, decision logic, quality gates
 
-### `/user-experience/` - Experience Design
-**Purpose**: End-to-end user experience and journey design
-**Content**: User workflows, experience optimization, accessibility
+**Interactive Guidance**: `interactive-placement-guide.md` - Step-by-step pathway guidance, classification wizards, error handling
 
-### **COMPONENT DECISION FLOWCHART SYSTEM** (NEW)
+**Quick Reference**: `placement-quick-reference.md` - Ultra-compact guidance, instant classification matrix, emergency protocols
 
-#### `component-decision-flowchart.md` - Visual Decision Authority
-**Purpose**: Visual decision tree for systematic content placement with authority validation
-**Content**: Mermaid flowcharts, decision logic, quality gates, authority validation checkpoints
-**Integration**: ←→ COMPONENT_DECISION_MATRIX.md + CROSS_REFERENCE_SYSTEM.md + CLAUDE.md semantic triggers
+**System Integration**: `flowchart-system-integration.md` - CLAUDE.md integration, system-wide protocols, architecture enhancement
 
-#### `interactive-placement-guide.md` - Step-by-Step Decision Support  
-**Purpose**: Detailed interactive guidance for complex placement decisions
-**Content**: Pathway-specific guidance, classification wizards, implementation strategies, error handling
-**Integration**: ↑ component-decision-flowchart.md + ←→ COMPONENT_DECISION_MATRIX.md + ← All components
+**Validation Framework**: `flowchart-validation-protocol.md` - Multi-phase testing, empirical validation, continuous improvement
 
-#### `placement-quick-reference.md` - Rapid Decision Support
-**Purpose**: One-page ultra-compact placement guidance for rapid decisions
-**Content**: Instant classification matrix, semantic trigger keywords, emergency protocols
-**Integration**: ↑ component-decision-flowchart.md + ↑ interactive-placement-guide.md + ← CLAUDE.md
+**Placement Guides**: `/placement-guide/` directory with methodology, execution, and validation modules
 
-#### `flowchart-system-integration.md` - Integration Protocol Authority
-**Purpose**: Comprehensive integration protocol connecting flowchart system with existing architecture
-**Content**: CLAUDE.md integration, COMPONENT_DECISION_MATRIX.md enhancement, system-wide protocols
-**Integration**: → All flowchart components + ←→ All system architecture + ← CLAUDE.md
+**Flowchart Validation**: `/flowchart-validation/` directory with comprehensive testing, metrics, and evolution protocols
 
-#### `flowchart-validation-protocol.md` - Testing and Evolution Framework
-**Purpose**: Systematic validation and continuous improvement protocol for flowchart effectiveness
-**Content**: Multi-phase testing, empirical validation, user experience measurement, evolution protocols
-**Integration**: ↑ flowchart-system-integration.md + Validation across all flowchart components
+**Flowchart System**: `/flowchart-system/` directory with visual decision system and core components
 
 ## CONTENT CRITERIA
-**Belongs here:**
-- User interaction patterns and conversation design
-- Interface architecture and semantic trigger systems
-- Experience optimization and user journey mapping
-- Accessibility and usability architectural decisions
-- **Content placement decision guidance and systematic placement protocols**
-- **Visual decision support and interactive placement assistance**
-- **Flowchart systems for UX decision acceleration**
+**Belongs here**: User interaction patterns, conversation design, interface architecture, semantic triggers, experience optimization, accessibility, content placement guidance, visual decision support, flowchart systems
 
-**Exclusions:**
-- Technical implementation (goes to @architecture/standards/)
-- Command-specific UX (stays in commands/)
-- Content formatting (goes to @context/architecture/standards/README.md)
-- **Authority definitions (stays in @context/architecture/core/authority.md)**
-- **Technical patterns (stays in @context/architecture/patterns.md)**
+**Exclusions**: Technical implementation (@architecture/standards/), command-specific UX (commands/), content formatting (@context/architecture/standards/README.md), authority definitions (@context/architecture/core/authority.md), technical patterns (@context/architecture/patterns.md)
 
 ## NAMING CONVENTIONS
 Format: `[interaction-type]-[pattern-name].md`
-Examples:
-- `dialogue-socratic-discovery.md`
-- `interface-semantic-triggers.md`
-- `experience-progressive-disclosure.md`
+Examples: `dialogue-socratic-discovery.md`, `interface-semantic-triggers.md`, `experience-progressive-disclosure.md`
 
 ## INTEGRATION REFERENCES
-
-### ← vision/
-**Connection**: Vision-driven UX architecture serves discovered user vision through natural interaction
-**Protocol**: UX patterns must manifest vision discoveries through conversation-first design
-
-### ←→ @context/architecture/core/methodology.md
-**Connection**: Socratic discovery and conversation methodology integration
-**Protocol**: UX patterns implement methodology through natural conversation flows
-
-### ↑ @context/architecture/core/authority.md
-**Authority Source**: User-centric behaviors and authority validation drive UX decisions
-**Protocol**: All UX architecture serves user authority supremacy and vision preservation
-
-### → @architecture/workflows/
-**Connection**: UX patterns inform process integration and workflow design
-**Protocol**: User experience architecture guides implementation workflow optimization
+**Vision Integration**: ← vision/ (vision-driven UX architecture through natural interaction)
+**Methodology Integration**: ←→ @context/architecture/core/methodology.md (socratic discovery and conversation flows)
+**Authority Source**: ↑ @context/architecture/core/authority.md (user-centric behaviors and authority validation)
+**Workflow Integration**: → @architecture/workflows/ (UX patterns inform process and workflow design)
 
 ---
-**UX AUTHORITY**: Natural conversation architecture serves user vision supremacy
+**UX AUTHORITY**: Complete natural conversation architecture serving user vision supremacy through systematic placement acceleration and decision support frameworks.

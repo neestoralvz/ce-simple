@@ -1,131 +1,69 @@
-# Standards - Complete System Standards Authority
+# System Standards Reference Hub
 
-**31/07/2025 00:00 CDMX** | Unified standards system with comprehensive enforcement
+**30/07/2025 04:30 CDMX** | Comprehensive standards consolidation under user authority
 
 ## AUTORIDAD SUPREMA
-VISION.md → supreme user authority → @context/architecture/core/truth-source.md → standards.md enforces complete standards compliance
+VISION.md → supreme user authority → @context/architecture/core/truth-source.md → STANDARDS.md enforces comprehensive compliance
 
 ## PRINCIPIO FUNDAMENTAL
-**"User standards authority preservation through comprehensive enforcement"** - All standards serve user vision while maintaining complete functionality per authority supremacy.
+**"User standards authority preservation through comprehensive enforcement architecture"** - All system standards serve user vision while maintaining complete functionality.
 
-## SUPREME AUTHORITY STANDARDS
+## CORE STANDARDS FRAMEWORK
 
-### User Authority Supremacy Framework
-**Authority Chain**: 
-```
-user-vision/ (SUPREME AUTHORITY)
-    ↓ SOBRESCRIBE ↓
-CLAUDE.md (dispatcher mínimo)
-    ↓ NAVEGA ↓
-/.claude/commands/ (ejecución)
-```
+### Documentation & Style Authority
+**Documentation Standards**: → architecture/standards/documentation-standards.md
+- LLM-optimized documentation style + header compacto obligatorio
+- Anti-codebox enforcement + reinforcement vocabulary integration
+- "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL"
 
-### Vision Preservation Standards
-**Core Authority**: "lo más importante también es conservar mi visión, lo que yo estoy diciendo"
-**User Domain**: Vision guidance, validation, strategic direction, authority decisions
-**AI Domain**: Discovery execution, analysis implementation within user vision boundaries
-**Authority Validation**: All AI decisions traceable to user authority sources
+### Behavioral Enforcement Authority
+**Enforcement Standards**: → architecture/standards/enforcement-standards.md
+- Quality gates OBLIGATORIO: creation→alignment→verification protocol
+- Anti-patterns prevention + execution flow protection
+- User voice fidelity (95%+ requirement) + authority preservation
 
-### Bias Prevention Standards
-**Clean Slate Capability**: System regeneration when vision clarity compromised
-**95%+ User Voice Fidelity**: Through exact quote maintenance and systematic preservation
-**Quote-Based Fragmentation**: User authority preserved through quote management
-**Authority Contamination Prevention**: Regular fidelity audits against original user voice
+### Technical Implementation Authority
+**Technical Standards**: → architecture/standards/technical-standards.md
+- CLI design 2025 standards + bash scripting modernization
+- Research-first protocol OBLIGATORIO: WebSearch + MCP context7 simultaneous
+- SOLID principles application + modular architecture
 
-## DOCUMENTATION AND STYLE STANDARDS
+### Claude Code Integration Authority (VALIDATED)
+**Protection System Standards**: Claude Code Hooks implementation validated per ADR-027
+- JSON-based declarative configuration OBLIGATORIO for hook systems
+- Modular bash script architecture FUNDAMENTAL for maintainability
+- Context-aware enforcement levels ESENCIAL for user experience
+- Performance requirements: <200ms hook execution SIEMPRE
+- Auto-remediation with user notification DEBE preserve user control
 
-### LLM-Optimized Documentation Standards
-**Header Compacto**: Date/location format obligatorio
-**Anti-Codebox Enforcement**: Text-based communication priority
-**Reinforcement Vocabulary**: OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, FUNDAMENTAL, ESENCIAL
-**Authority Chain Integration**: Complete traceability to supreme authority sources
+### Visual Communication Authority
+**Visual Standards**: → architecture/standards/visual-standards.md
+- Guardian enforcement formatting + partner constructor templates
+- Visual formatting para notificaciones del sistema using syntax highlighting
+- Discrete visual communication supporting natural conversation
 
-### Visual Communication Standards
-**Guardian Enforcement Formatting**: Binary compliance visual indicators
-**Partner Constructor Templates**: Socratic questioning format standards
-**Discrete Visual Communication**: Subtle symbols supporting natural conversation
-**Syntax Highlighting**: Visual formatting para notificaciones del sistema
+### Structural Integrity Authority
+**Structural Standards**: → architecture/standards/structural-standards.md
+- 80-line maximum enforcement + zero tolerance policy para archivos monolíticos
+- Reference-only protocols + content duplication detection
+- Authority drift prevention + automated recovery procedures
 
-## BEHAVIORAL ENFORCEMENT STANDARDS
-
-### Quality Gates Protocol
-**OBLIGATORIO**: Creation→alignment→verification protocol
-**Pre-execution**: Authority validation + scope verification
-**Mid-execution**: Progress monitoring + compliance checking
-**Post-execution**: Quality validation + authority preservation verification
+## INTEGRATED ENFORCEMENT ARCHITECTURE
 
 ### Guardian-Partner Role System
-**Guardian Enforcement**: Standards violations → STOP execution immediately
-- File size violations (>80 lines)
-- Authority breaches
-- Vision modifications without user validation
-- Standards non-compliance
+**Guardian Enforcement**: Standards violations → STOP execution immediately (file size, authority breaches, vision deviations)
+**Partner Constructor**: Complexity challenges → "¿Hay manera más simple?" through Socratic questioning
+**Authority Chain**: VISION.md → @context/architecture/core/truth-source.md → STANDARDS.md → specialized standards
+**Quality Gates**: Pre-execution → Mid-execution → Post-execution validation
 
-**Partner Constructor**: Complexity challenges → "¿Hay manera más simple?"
-**Authority Override**: User feedback shapes approach over AI recommendations
-
-### Anti-Patterns Prevention
-**Failed Pattern Detection**: Evidence-based elimination of ineffective patterns
-**Early Warning Systems**: Proactive identification of standards degradation
-**Recovery Protocols**: Clean slate regeneration when standards become counterproductive
-**User Voice Preservation**: 95%+ requirement with authority preservation
-
-## TECHNICAL IMPLEMENTATION STANDARDS
-
-### CLI Design 2025 Standards
-**Research-First Protocol OBLIGATORIO**: WebSearch + MCP context7 simultaneous
-**SOLID Principles Application**: Single responsibility + dependency inversion
-**Modular Architecture**: Component independence with intelligent coordination
-**Performance Requirements**: <200ms execution for critical operations
-
-### Claude Code Integration Standards (VALIDATED)
-**JSON-Based Configuration**: Declarative configuration OBLIGATORIO for hook systems
-**Modular Bash Architecture**: FUNDAMENTAL for maintainability
-**Context-Aware Enforcement**: ESENCIAL for user experience optimization
-**Auto-Remediation Protocol**: User notification DEBE preserve user control
-
-### Code Quality Standards
-**Think x4 SIEMPRE**: Systematic analysis required for all technical decisions
+### Methodology Integration Framework
+**Think x4 SIEMPRE**: Systematic analysis required for all standards decisions
+**Research-First Protocol**: WebSearch + MCP context7 simultaneous for technical validation
 **Continuous Execution**: Standards enforcement never interrupts workflow momentum
-**Authority Validation**: All technical decisions validated against user vision
-**Evidence-Based Validation**: Quantitative metrics for standards effectiveness
-
-## STRUCTURAL INTEGRITY STANDARDS
-
-### File Size Enforcement Standards
-**80-Line Maximum**: Zero tolerance policy para archivos monolíticos
-**Modular Decomposition**: Reference-only protocols for complex content
-**Content Duplication Detection**: Automatic prevention of redundant structures
-**Progressive Disclosure**: Context loading adapts to conversation complexity
-
-### Reference Architecture Standards
-**Single Source of Truth**: One authoritative location per content domain
-**Bidirectional Linking**: ←→ symbols for peer relationships, → for delegation
-**Authority Preservation**: Reference integrity throughout system evolution
-**Smart Context Loading**: Conversation-driven context disclosure optimization
-
-### System Evolution Standards
-**Organic Growth Protocol**: Standards evolve según user vision discoveries
-**Authority Chain Maintenance**: Supreme authority preserved through evolution
-**Quality Gate Integration**: Standards validation at all evolution points
-**Empirical Evidence Requirements**: Measurable improvement for standards changes
-
-## CRITICAL VIOLATIONS REMEDIATION STANDARDS
-
-### Emergency Intervention Protocol
-**Phase-Based Implementation**: 24-hour emergency → 48-hour critical → 72-hour system
-**Modular Extraction Standards**: ≤80 lines compliance through reference architecture
-**Authority Preservation**: Complete content preservation through modular references
-**User Voice Fidelity**: 95%+ preservation through systematic quote management
-
-### Systematic Remediation Framework
-**Emergency Protocol**: File size violations → immediate modular extraction
-**Authority Validation**: User vision preservation throughout remediation
-**Quality Assurance**: Complete functionality preservation during standards restoration
-**Evolution Integration**: Remediation supports organic system growth
+**Authority Validation**: All standards decisions validated against @context/architecture/core/truth-source.md
 
 ---
 
-**STANDARDS AUTHORITY DECLARATION**: This unified standards system preserves COMPLETE user authority supremacy while implementing comprehensive enforcement through systematic compliance protocols.
+**STANDARDS ARCHITECTURE DECLARATION**: Esta consolidación implementa la visión del usuario preserving "information density over structural optimization". All standards functionality unified bajo reference-architecture preservando complete authority chain.
 
-**EVOLUTION PATHWAY**: User vision → standards adaptation → systematic enforcement → organic evolution
+**EVOLUTION PATHWAY**: Standards evolve según VISION.md → conversation → standards update cycle while maintaining comprehensive enforcement capability through specialized modules.

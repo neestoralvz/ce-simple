@@ -39,6 +39,12 @@ VISION.md → @context/architecture/core/truth-source.md → methodology.md impl
 **Quality Assurance**: Quantitative metrics validation (performance, coverage, reliability) + qualitative assessment (UX, maintainability)
 **Knowledge Capital**: Comprehensive documentation multiplies implementation value through replicable patterns and organizational learning
 
+### Organic Evolution Integration Framework (ESTABLISHED)
+**Evolution Roadmap**: → @context/archive/system-evolution-roadmap.md
+**Natural Integration Protocol**: Pattern recognition → Evidence collection → User consultation → Implementation → Knowledge integration
+**Success Replication**: Apply validated methodology to Phase 2 (Git Hooks), pattern evolution, system scaling
+**Strategic Asset Management**: Each implementation multiplies capability through templates, patterns, methodology refinements
+
 ## SPECIALIZED METHODOLOGY MODULES
 
 ### L2-Operational Methodology
