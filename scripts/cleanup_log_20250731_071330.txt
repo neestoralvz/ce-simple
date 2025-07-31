@@ -1,0 +1,109 @@
+Backup Cascade Cleanup Log - Thu Jul 31 07:13:30 CST 2025
+Working Directory: /Users/nalve/ce-simple/context
+Dry Run Mode: --execute
+----------------------------------------
+Found       50 cascading backup files
+Archive files:       50
+Emergency backup dirs:       50
+Active system files:        0
+Estimated space savings: 1MB
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L0-EMERGENCY/flujos_trabajo_ORIGINAL_BACKUP_452_lines_BACKUP_452_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L0-EMERGENCY/metodologia_socratica_ORIGINAL_BACKUP_475_lines_BACKUP_475_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L0-EMERGENCY/simplicidad_belleza_BACKUP_487_lines_BACKUP_486_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/20250729_1646_task-tool-methodology-knowledge-integration_SESSION_ARCHIVE_BACKUP_215_lines_BACKUP_215_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/ADR-016-hybrid-orchestration-execution-protocol_BACKUP_233_lines_BACKUP_233_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/ADR-019-handoffs-system-implementation_BACKUP_212_lines_BACKUP_212_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/CLAUDE_ORIGINAL_BACKUP_BACKUP_216_lines_BACKUP_216_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/claude-code-integration-patterns_BACKUP_284_lines_BACKUP_284_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/critical_violations_action_plan_BACKUP_247_lines_BACKUP_247_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/enforcement_compliance_metrics_BACKUP_270_lines_BACKUP_270_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_2_L1_CRITICAL_PATTERNS_STANDARDS_BACKUP_226_lines_BACKUP_226_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_3_UX_FLOWCHART_SYSTEM_BACKUP_220_lines_BACKUP_220_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_5_ADRS_PATTERNS_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_6_MEDIUM_VIOLATIONS_CLEANUP_BACKUP_256_lines_BACKUP_256_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/hybrid-protection-strategy_BACKUP_278_lines_BACKUP_278_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/implementation_guide_BACKUP_232_lines_BACKUP_232_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/PARALLEL_HANDOFFS_COORDINATION_BACKUP_241_lines_BACKUP_241_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/protection-system-case-study_BACKUP_307_lines_BACKUP_307_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/quote_based_fragmentation_templates_BACKUP_217_lines_BACKUP_217_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/README_evolution_protocol_BACKUP_273_lines_BACKUP_273_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/README_maintenance_system_overview_BACKUP_244_lines_BACKUP_244_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/research-documentation-template_BACKUP_231_lines_BACKUP_231_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/session_20250729_command_templates_system_BACKUP_220_lines_BACKUP_220_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/standards_evolution_framework_BACKUP_200_lines_BACKUP_200_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L0-EMERGENCY/flujos_trabajo_ORIGINAL_BACKUP_452_lines_BACKUP_452_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L0-EMERGENCY/metodologia_socratica_ORIGINAL_BACKUP_475_lines_BACKUP_475_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L0-EMERGENCY/simplicidad_belleza_BACKUP_487_lines_BACKUP_486_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/20250729_1646_task-tool-methodology-knowledge-integration_SESSION_ARCHIVE_BACKUP_215_lines_BACKUP_215_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/ADR-016-hybrid-orchestration-execution-protocol_BACKUP_233_lines_BACKUP_233_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/ADR-019-handoffs-system-implementation_BACKUP_212_lines_BACKUP_212_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/CLAUDE_ORIGINAL_BACKUP_BACKUP_216_lines_BACKUP_216_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/claude-code-integration-patterns_BACKUP_284_lines_BACKUP_284_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/critical_violations_action_plan_BACKUP_247_lines_BACKUP_247_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/enforcement_compliance_metrics_BACKUP_270_lines_BACKUP_270_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_2_L1_CRITICAL_PATTERNS_STANDARDS_BACKUP_226_lines_BACKUP_226_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_3_UX_FLOWCHART_SYSTEM_BACKUP_220_lines_BACKUP_220_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_5_ADRS_PATTERNS_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_6_MEDIUM_VIOLATIONS_CLEANUP_BACKUP_256_lines_BACKUP_256_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/hybrid-protection-strategy_BACKUP_278_lines_BACKUP_278_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/implementation_guide_BACKUP_232_lines_BACKUP_232_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/PARALLEL_HANDOFFS_COORDINATION_BACKUP_241_lines_BACKUP_241_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/protection-system-case-study_BACKUP_307_lines_BACKUP_307_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/quote_based_fragmentation_templates_BACKUP_217_lines_BACKUP_217_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/README_evolution_protocol_BACKUP_273_lines_BACKUP_273_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/README_maintenance_system_overview_BACKUP_244_lines_BACKUP_244_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/research-documentation-template_BACKUP_231_lines_BACKUP_231_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/session_20250729_command_templates_system_BACKUP_220_lines_BACKUP_220_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/standards_evolution_framework_BACKUP_200_lines_BACKUP_200_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L0-EMERGENCY/flujos_trabajo_ORIGINAL_BACKUP_452_lines_BACKUP_452_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L0-EMERGENCY/metodologia_socratica_ORIGINAL_BACKUP_475_lines_BACKUP_475_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L0-EMERGENCY/simplicidad_belleza_BACKUP_487_lines_BACKUP_486_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/20250729_1646_task-tool-methodology-knowledge-integration_SESSION_ARCHIVE_BACKUP_215_lines_BACKUP_215_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/ADR-016-hybrid-orchestration-execution-protocol_BACKUP_233_lines_BACKUP_233_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/ADR-019-handoffs-system-implementation_BACKUP_212_lines_BACKUP_212_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/CLAUDE_ORIGINAL_BACKUP_BACKUP_216_lines_BACKUP_216_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/claude-code-integration-patterns_BACKUP_284_lines_BACKUP_284_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/critical_violations_action_plan_BACKUP_247_lines_BACKUP_247_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/enforcement_compliance_metrics_BACKUP_270_lines_BACKUP_270_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_2_L1_CRITICAL_PATTERNS_STANDARDS_BACKUP_226_lines_BACKUP_226_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_3_UX_FLOWCHART_SYSTEM_BACKUP_220_lines_BACKUP_220_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_5_ADRS_PATTERNS_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/HANDOFF_6_MEDIUM_VIOLATIONS_CLEANUP_BACKUP_256_lines_BACKUP_256_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/hybrid-protection-strategy_BACKUP_278_lines_BACKUP_278_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/implementation_guide_BACKUP_232_lines_BACKUP_232_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/PARALLEL_HANDOFFS_COORDINATION_BACKUP_241_lines_BACKUP_241_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/protection-system-case-study_BACKUP_307_lines_BACKUP_307_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/quote_based_fragmentation_templates_BACKUP_217_lines_BACKUP_217_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/README_evolution_protocol_BACKUP_273_lines_BACKUP_273_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/README_maintenance_system_overview_BACKUP_244_lines_BACKUP_244_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/research-documentation-template_BACKUP_231_lines_BACKUP_231_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/session_20250729_command_templates_system_BACKUP_220_lines_BACKUP_220_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/original/L1-CRITICAL/standards_evolution_framework_BACKUP_200_lines_BACKUP_200_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L0-EMERGENCY/flujos_trabajo_ORIGINAL_BACKUP_452_lines_BACKUP_452_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L0-EMERGENCY/metodologia_socratica_ORIGINAL_BACKUP_475_lines_BACKUP_475_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L0-EMERGENCY/simplicidad_belleza_BACKUP_487_lines_BACKUP_486_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/20250729_1646_task-tool-methodology-knowledge-integration_SESSION_ARCHIVE_BACKUP_215_lines_BACKUP_215_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/ADR-016-hybrid-orchestration-execution-protocol_BACKUP_233_lines_BACKUP_233_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/ADR-019-handoffs-system-implementation_BACKUP_212_lines_BACKUP_212_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/CLAUDE_ORIGINAL_BACKUP_BACKUP_216_lines_BACKUP_216_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/claude-code-integration-patterns_BACKUP_284_lines_BACKUP_284_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/critical_violations_action_plan_BACKUP_247_lines_BACKUP_247_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/enforcement_compliance_metrics_BACKUP_270_lines_BACKUP_270_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_2_L1_CRITICAL_PATTERNS_STANDARDS_BACKUP_226_lines_BACKUP_226_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_3_UX_FLOWCHART_SYSTEM_BACKUP_220_lines_BACKUP_220_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_5_ADRS_PATTERNS_SYSTEM_BACKUP_232_lines_BACKUP_232_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/HANDOFF_6_MEDIUM_VIOLATIONS_CLEANUP_BACKUP_256_lines_BACKUP_256_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/hybrid-protection-strategy_BACKUP_278_lines_BACKUP_278_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/implementation_guide_BACKUP_232_lines_BACKUP_232_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/PARALLEL_HANDOFFS_COORDINATION_BACKUP_241_lines_BACKUP_241_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/protection-system-case-study_BACKUP_307_lines_BACKUP_307_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/quote_based_fragmentation_templates_BACKUP_217_lines_BACKUP_217_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/README_evolution_protocol_BACKUP_273_lines_BACKUP_273_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/README_maintenance_system_overview_BACKUP_244_lines_BACKUP_244_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/research-documentation-template_BACKUP_231_lines_BACKUP_231_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/session_20250729_command_templates_system_BACKUP_220_lines_BACKUP_220_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_070411/working_copy/L1-CRITICAL/standards_evolution_framework_BACKUP_200_lines_BACKUP_200_lines.md

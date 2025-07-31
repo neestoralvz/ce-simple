@@ -11,6 +11,12 @@ All scripts implement **Think x4** principles with multiple validation layers:
 3. **Automatic Rollback Capability** - Emergency recovery 
 4. **Integrity Validation** - System health monitoring
 
+### **Dual-Purpose Script Functionality**
+Scripts serve both **remediation** and **validation-only** workflows:
+- **Remediation Mode**: Full backup → analyze → extract → optimize → validate
+- **Validation-Only Mode**: Backup → analyze → discover compliance → validate success
+- **Already Compliant Pattern**: Scripts confirm system health without modification (HANDOFF 3 success)
+
 ## CORE SCRIPTS
 
 ### **1. backup_secure.sh - Triple Backup System**
