@@ -1,0 +1,10 @@
+3f0d488 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+e6be1ac CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+39a8c2f CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+08a83fe CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+ed654c2 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+6897777 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+51f6de8 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+c301c93 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+4c51969 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created
+b0a42e3 CHECKPOINT: Before PHASE_0_EMERGENCY extraction - Triple backup created

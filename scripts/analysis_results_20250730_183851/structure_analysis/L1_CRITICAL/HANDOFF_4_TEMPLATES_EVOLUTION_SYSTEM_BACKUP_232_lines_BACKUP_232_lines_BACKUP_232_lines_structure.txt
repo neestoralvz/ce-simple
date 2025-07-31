@@ -1,4 +1,4 @@
-# Structure Analysis: archive/emergency_backups_20250730_183802/working_copy/L1-CRITICAL/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM_BACKUP_232_lines_BACKUP_232_lines_BACKUP_232_lines.md (232 lines)
+# Structure Analysis: archive/emergency_backups_20250730_182657/original/L1-CRITICAL/HANDOFF_4_TEMPLATES_EVOLUTION_SYSTEM_BACKUP_232_lines_BACKUP_232_lines_BACKUP_232_lines.md (232 lines)
 ## Main Sections (31 found):
 ## AUTORIDAD SUPREMA
 ## PRINCIPIO FUNDAMENTAL

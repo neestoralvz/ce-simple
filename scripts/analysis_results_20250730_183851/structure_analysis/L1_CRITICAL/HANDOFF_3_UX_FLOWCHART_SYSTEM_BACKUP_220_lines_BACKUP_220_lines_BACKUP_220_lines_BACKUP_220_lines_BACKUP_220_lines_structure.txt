@@ -1,0 +1,32 @@
+# Structure Analysis: archive/emergency_backups_20250730_182836/original/L1-CRITICAL/HANDOFF_3_UX_FLOWCHART_SYSTEM_BACKUP_220_lines_BACKUP_220_lines_BACKUP_220_lines_BACKUP_220_lines_BACKUP_220_lines.md (220 lines)
+## Main Sections (31 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## GIT WORKTREE SETUP
+## TARGET FILES (25 archivos UX system 80-117 líneas)
+## EXECUTION METHODOLOGY
+## SUCCESS CRITERIA
+## UX SPECIALIZATION FOCUS
+## OPTIMIZATION TECHNIQUES
+## POST-HANDOFF INTEGRATION
+## COORDINATION WITH OTHER HANDOFFS
+## Subsections (21 found):
+### Pre-Execution Commands
+### **UX Placement Guide Validation Files (12 archivos)**
+### **UX Placement Guide Execution Files (7 archivos)**
+### **UX Placement Guide Methodology Files (6 archivos)**
+### Phase 1: Security & UX System Analysis (Day 1)
+### Phase 2: Systematic UX Optimization (Days 1-3)
+### Phase 3: UX System Integration & Validation (Day 4)
+### Mandatory Requirements
+### Validation Protocol
+### Placement Guide System Enhancement
+### Flowchart System Optimization
+### UX Navigation Intelligence
+### Content Streamlining Methods
+### Authority Preservation Techniques
+### Merge Protocol
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 32
