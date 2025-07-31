@@ -35,11 +35,17 @@ Core workflow authority + Planning discipline + Clean slate recreation + Creativ
 ADR-driven implementation + Think x4 integration + Reference architecture migration
 **Authority**: ADR-004, ADR-005, ADR-006, ADR-007 architectural decision enforcement
 
+### **L2-MODULAR Extraction Patterns**
+→ @patterns/l2-modular-extraction-patterns.md
+Reference hub architecture + Specialized module extraction + Authority preservation + Functionality maintenance
+**Authority**: HANDOFF_6 validated success (284→38, 271→48, 196→47 lines) with evidence-based methodology
+
 ## PATTERN INTEGRATION FRAMEWORK
 
 ### Cross-Pattern Relationships
 **Revolutionary ↔ Command ↔ Enforcement**: Transformation → execution → validation cycle
 **Organic ↔ Tension ↔ Integration**: Evolution → balance → systematic implementation
+**L2-MODULAR ↔ Revolutionary ↔ Enforcement**: Size violations → structural transformation → compliance validation
 
 ### Pattern Selection Guide
 1. **Massive Changes** → Revolutionary Transformation
@@ -47,6 +53,7 @@ ADR-driven implementation + Think x4 integration + Reference architecture migrat
 3. **System Evolution** → Organic Evolution
 4. **Balance Management** → Creative Tension
 5. **ADR Implementation** → Enforcement Integration
+6. **File Size Violations** → L2-MODULAR Extraction
 
 ---
 

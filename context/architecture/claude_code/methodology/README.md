@@ -10,6 +10,7 @@ Methodology adaptations that leverage Claude Code's concurrent tools, WebSearch 
 - **Multi-Conversation Orchestration**: Git worktree-based parallel execution
 - **Research-First Optimization**: Claude Code research tool integration
 - **Continuous Execution**: CLI-optimized workflow maintenance
+- **Script-Automation Framework**: → script-automation-framework.md (systematic batch processing with safety controls)
 
 ## Integration
 Specialized implementations of core methodologies adapted for Claude Code's tool ecosystem.

@@ -45,6 +45,12 @@ VISION.md → @context/architecture/core/truth-source.md → methodology.md impl
 **Success Replication**: Apply validated methodology to Phase 2 (Git Hooks), pattern evolution, system scaling
 **Strategic Asset Management**: Each implementation multiplies capability through templates, patterns, methodology refinements
 
+### Component Lifecycle Management Framework (ADR-028)
+**Systematic Obsolescence Assessment**: 4-phase evidence-based evaluation for component continued utility vs archiving necessity
+**Archive-with-Intelligence Protocol**: Historical intelligence preservation + 95%+ authority fidelity + learning integration
+**TodoWrite-Tracked Decision Making**: Process transparency for complex architectural decisions with systematic completion tracking
+**Case Study Validation**: Handoff system archiving demonstrated zero functionality loss with complete authority preservation
+
 ## SPECIALIZED METHODOLOGY MODULES
 
 ### L2-Operational Methodology

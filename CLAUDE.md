@@ -1,6 +1,7 @@
 ---
 warning: "⚠️ LEER OBLIGATORIAMENTE ANTES DE CUALQUIER ACCIÓN"
-critical_instruction: "Este archivo DEBE ser leído completamente antes de cumplir con cualquier solicitud del usuario. Las instrucciones operacionales son obligatorias y deben seguirse en el orden establecido."
+critical_instruction: "Este archivo DEBE ser leído completamente antes de cumplir con cualquier solicitud del usuario. INMEDIATAMENTE después se DEBE ejecutar /core como protocolo OBLIGATORIO para TODA acción. Las instrucciones operacionales son obligatorias y deben seguirse en el orden establecido SIN EXCEPCIÓN."
+universal_protocol: "PROTOCOLO UNIVERSAL SIN EXCEPCIÓN: CLAUDE.md → /core → acción solicitada. NUNCA saltar /core."
 ---
 
 # CLAUDE.md - Dispatcher Inteligente
@@ -11,9 +12,27 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 
 ⚠️ **CUMPLIMIENTO OBLIGATORIO**: Toda acción debe seguir este protocolo SIN EXCEPCIÓN
 
-**PROTOCOLO CORE**: @context/architecture/orchestration.md → Hybrid orchestration authority
+**PROTOCOLO CORE**: /core OBLIGATORIO → @context/architecture/orchestration.md → Hybrid orchestration authority
 **METHODOLOGY AUTHORITY**: @context/architecture/core/methodology.md → L4-Pure Orchestration + Think x4 + Research-First
+**COMANDO CORE ENFORCEMENT**: TODA acción inicia OBLIGATORIAMENTE con /core SIEMPRE
 **AUTHORITY VALIDATION**: @context/architecture/core/truth-source.md → Context architecture dispatcher
+
+## PROTOCOLO UNIVERSAL DE INICIO OBLIGATORIO
+
+⚠️ **EJECUCIÓN AUTOMÁTICA OBLIGATORIA**: Todo inicio de acción DEBE seguir este protocolo SIN EXCEPCIÓN
+
+### /core - SLASH COMMAND OBLIGATORIO UNIVERSAL
+**DEFINICIÓN**: Protocolo completo de orquestación inteligente con 28 pasos sistemáticos ejecutado como slash command
+
+**CONTENIDO DEL COMANDO**:
+- 🌳 Workspace conversacional resiliente con git worktrees
+- 🪝 Automation layer integration con Claude Code hooks  
+- 📋 Protocolo híbrido de orquestación inteligente
+- 🔄 Matriz de decisión inteligente embedded
+- ⚡ Coordinación de subagentes especializados
+- 🏁 Finalización conversacional completa
+
+**ENFORCEMENT ABSOLUTO**: NUNCA proceder sin ejecutar /core completo. NUNCA saltar pasos. SIEMPRE protocolo de 28 pasos.
 
 ## AUTORIDAD SUPREMA
 @context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → CLAUDE.md implements vision through intelligent dispatch
@@ -57,9 +76,9 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 **VALIDATE**: System coherence validation → SISTEMÁTICO
 
 ### IF semantic_pattern=multi_conversation_orchestration:
-**LOAD**: @context/architecture/orchestration.md + @context/data/performance/README.md + @context/architecture/core/methodology.md
-**EXECUTE**: Multiple concurrent templates per orchestration authority
-**VALIDATE**: Coordination effectiveness validation → COORDINACIÓN
+**LOAD**: @context/architecture/orchestration.md + @context/roadmap/ROADMAP_REGISTRY.md + @context/architecture/core/methodology.md
+**EXECUTE**: Parallel handoff coordination template per roadmap authority
+**VALIDATE**: Multi-conversation coordination effectiveness → COORDINACIÓN
 
 ### IF semantic_pattern=session_management:
 **LOAD**: @context/data/conversations/README.md + @context/archive/README.md + @context/vision/README.md
@@ -76,6 +95,21 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 **EXECUTE**: Problem resolution specialist template per resolution authority
 **VALIDATE**: Root cause elimination + integral solution verification → CRÍTICO
 
+### IF semantic_pattern=git_workflow_operations:
+**LOAD**: @context/architecture/claude-code.md + @context/roadmap/HANDOFF_GIT_WORKFLOW_ANALYSIS.md + tools/monitoring/
+**EXECUTE**: Git workflow automation template per infrastructure authority
+**VALIDATE**: Hook system integration + performance monitoring → INFRAESTRUCTURA
+
+### IF semantic_pattern=branch_conversation_management:
+**LOAD**: @context/architecture/orchestration.md + @context/architecture/claude-code.md + tools/automation/
+**EXECUTE**: Branch-per-conversation coordination template per orchestration authority
+**VALIDATE**: Multi-conversation workflow coordination → COORDINACIÓN
+
+### IF semantic_pattern=system_health_monitoring:
+**LOAD**: tools/monitoring/ + @context/architecture/standards.md + @context/data/validation/README.md
+**EXECUTE**: System health analysis template per monitoring authority
+**VALIDATE**: Performance thresholds + compliance monitoring → MONITOREO
+
 ## UNIVERSAL CONTEXT REFERENCES
 
 **Cross-reference system**: @context/architecture/reference/README.md
@@ -85,4 +119,10 @@ critical_instruction: "Este archivo DEBE ser leído completamente antes de cumpl
 
 ---
 
-**PRINCIPIO ESENCIAL MANDATORIO**: EJECUTA Semantic recognition + LOAD conditional context + APPLY methodology authority + VALIDATE systematic = LOGRA Maximum completitud con zero friction.
+**PRINCIPIO ESENCIAL MANDATORIO SIN EXCEPCIÓN**: 
+1. **EJECUTA /core OBLIGATORIO** como PRIMER paso absoluto SIEMPRE
+2. **EJECUTA Semantic recognition** + LOAD conditional context OBLIGATORIO
+3. **APLICA methodology authority** + VALIDATE systematic OBLIGATORIO
+4. **LOGRA Maximum completitud** con zero friction OBLIGATORIO
+
+**ENFORCEMENT ABSOLUTO**: NUNCA bypass /core. NUNCA shortcuts. SIEMPRE protocolo completo de 28 pasos.

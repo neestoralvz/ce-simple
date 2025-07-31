@@ -10,6 +10,14 @@ VISION.md → supreme user authority → @context/architecture/core/truth-source
 
 ## CORE STANDARDS FRAMEWORK
 
+### LLM Enforcement Authority (FUNDAMENTAL)
+**LLM Enforcement Principle**: → @context/architecture/core/llm-enforcement-principle.md
+- ENFORCEMENT OBLIGATORIO: ALL instructions MUST use "SIN EXCEPCIÓN" compliance
+- ZERO ESCAPE HATCHES: No "opcional", "si aplicable", "según complejidad" language
+- SYSTEMATIC ALWAYS: Orquestación OBLIGATORIA for ALL complexity levels - no micro-task bypasses
+- ENFORCEMENT VERIFICATION: Built-in validation loops OBLIGATORIO for compliance confirmation
+- TEMPLATE COMPLIANCE: → architecture/templates/llm-instruction-template.md MANDATORY for all instructions
+
 ### Documentation & Style Authority
 **Documentation Standards**: → architecture/standards/documentation-standards.md
 - LLM-optimized documentation style + header compacto obligatorio

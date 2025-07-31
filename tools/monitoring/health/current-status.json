@@ -1,0 +1,144 @@
+{
+  "timestamp": "2025-07-31T09:17:00.453141",
+  "project_root": "/Users/nalve/ce-simple",
+  "system_resources": {
+    "cpu_percent": 60.3,
+    "memory_percent": 24.5,
+    "disk_percent": 42.5,
+    "disk_free_gb": 2117.83,
+    "memory_available_gb": 96.65,
+    "status": "healthy"
+  },
+  "git_hooks": {
+    "status": "healthy",
+    "working_hooks": 5,
+    "total_expected": 5,
+    "hooks": {
+      "pre-commit": {
+        "exists": true,
+        "executable": true,
+        "working": true,
+        "size_bytes": 1294
+      },
+      "post-commit": {
+        "exists": true,
+        "executable": true,
+        "working": true,
+        "size_bytes": 2141
+      },
+      "pre-push": {
+        "exists": true,
+        "executable": true,
+        "working": true,
+        "size_bytes": 2203
+      },
+      "post-merge": {
+        "exists": true,
+        "executable": true,
+        "working": true,
+        "size_bytes": 2391
+      },
+      "commit-msg": {
+        "exists": true,
+        "executable": true,
+        "working": true,
+        "size_bytes": 864
+      }
+    }
+  },
+  "git_performance": {
+    "status": "healthy",
+    "tests": {
+      "status": {
+        "execution_time_ms": 15.53,
+        "success": true,
+        "performance_ok": true
+      },
+      "log": {
+        "execution_time_ms": 7.66,
+        "success": true,
+        "performance_ok": true
+      },
+      "branch": {
+        "execution_time_ms": 5.06,
+        "success": true,
+        "performance_ok": true
+      }
+    }
+  },
+  "project_health": {
+    "status": "healthy",
+    "total_files": 7437,
+    "large_files_count": 12,
+    "large_files": [
+      {
+        "path": "context/archive/archived_backups_20250730_cleanup.tar.gz",
+        "size_mb": 30.79
+      },
+      {
+        "path": "scripts/validation_results_20250731_062744/broken_references.txt",
+        "size_mb": 1.78
+      },
+      {
+        "path": "scripts/analysis_results_20250730_183949/all_violations.txt",
+        "size_mb": 3.12
+      },
+      {
+        "path": "scripts/analysis_results_20250730_183949/L2_HIGH.txt",
+        "size_mb": 2.36
+      },
+      {
+        "path": "scripts/analysis_results_20250730_183941/all_violations.txt",
+        "size_mb": 3.09
+      },
+      {
+        "path": "scripts/analysis_results_20250730_183941/L2_HIGH.txt",
+        "size_mb": 2.33
+      },
+      {
+        "path": "scripts/analysis_results_20250730_183851/all_violations.txt",
+        "size_mb": 2.64
+      },
+      {
+        "path": "scripts/analysis_results_20250730_183851/L2_HIGH.txt",
+        "size_mb": 2.09
+      },
+      {
+        "path": "scripts/validation_results_20250731_062907/broken_references.txt",
+        "size_mb": 1.78
+      },
+      {
+        "path": ".git/objects/3e/7365d244e9701fa0b57514a132fc2976f4a0e6",
+        "size_mb": 30.69
+      }
+    ],
+    "context_directory": {
+      "status": "warning",
+      "total_files": 499,
+      "violations": 148,
+      "violation_details": [
+        {
+          "file": "context/archive/system-evolution-roadmap.md",
+          "lines": 179
+        },
+        {
+          "file": "context/archive/VISION_original_backup.md",
+          "lines": 133
+        },
+        {
+          "file": "context/archive/session_20250729_command_templates_system.md",
+          "lines": 221
+        },
+        {
+          "file": "context/archive/ARCHIVE_CLEANUP_REPORT_20250730.md",
+          "lines": 97
+        },
+        {
+          "file": "context/archive/README.md",
+          "lines": 115
+        }
+      ]
+    }
+  },
+  "overall_status": "healthy"
+}
