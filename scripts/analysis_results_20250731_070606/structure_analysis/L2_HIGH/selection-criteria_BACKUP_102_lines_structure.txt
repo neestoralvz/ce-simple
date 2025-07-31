@@ -1,0 +1,19 @@
+# Structure Analysis: archive/emergency_backups_20250731_070411/original/L2-HIGH/selection-criteria_BACKUP_102_lines.md (102 lines)
+## Main Sections (12 found):
+## AUTORIDAD SUPREMA
+## TEMPLATE DECISION MATRIX
+## TEMPLATE USAGE EXAMPLES
+## INTEGRATION REFERENCES
+## Subsections (8 found):
+### Primary Classification Questions
+### Core Component Template
+### Specialized Directory Template  
+### Archive Component Template
+### Integration Hub Template
+### → decision-matrix.md
+### → validation-protocols.md
+### ← template_selection_guide.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 13

@@ -1,0 +1,31 @@
+# Structure Analysis: archive/emergency_backups_20250731_070411/original/L2-HIGH/conversation_execution_flow_BACKUP_165_lines.md (165 lines)
+## Main Sections (26 found):
+## Flow Core
+## Fases del Flow
+## Workflow Específico
+## Transition Mechanisms
+## Auto-Evolution Mechanism
+## Flow Optimization Principles
+## Nuevos Flows Emergentes
+## Nuevos Patterns de Flow
+## Nuevas Optimizaciones de Flow
+## Subsections (17 found):
+### Phase 1: Unrestricted Socratic Discovery
+### Phase 2: Command Execution
+### User Request → System Response Pattern
+### Pipeline Concept
+### Discovery → Planning → Execution
+### Context Intelligence
+### Self-Updating System
+### Role Clarity
+### New Flow: Multi-Conversation Parallel Execution
+### New Flow: Real-Time Systemic Detection → Immediate Capture
+### New Flow: Git Worktrees Branch Management 
+### New Flow: Background Process Monitoring
+### New Flow: Inter-Conversation Communication
+### Pattern: Ultra-Orchestrator Flow
+### Pattern: Temporal Validation Flow  
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 27

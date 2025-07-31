@@ -1,0 +1,32 @@
+# Structure Analysis: archive/emergency_backups_20250731_070411/original/L1-CRITICAL/research-documentation-template_BACKUP_231_lines_BACKUP_231_lines.md (231 lines)
+## Main Sections (59 found):
+## AUTORIDAD SUPREMA
+## TEMPLATE PURPOSE
+## MANDATORY INVESTIGATION PROTOCOL
+## RESEARCH METHODOLOGY
+## [PRIMARY OPTION] - COMPREHENSIVE ANALYSIS
+## THINK X4 SYSTEMATIC ANALYSIS
+## EVIDENCE-BASED FINDINGS
+## RESEARCH VALIDATION
+## EXECUTIVE SUMMARY MATRIX
+## DETAILED COMPARISON
+## Subsections (44 found):
+### Pre-Investigation Setup
+### Required Investigation Sections
+### Investigation Protocol
+### Research Scope
+### Core Architecture
+### Technical Specifications
+### Evidence-Based Findings
+### Think 1: Basic Technical Comparison
+### Think 2: [Second Perspective - e.g., Reliability Analysis]
+### Think 3: [Third Perspective - e.g., Implementation Complexity]
+### Think 4: [Fourth Perspective - e.g., Coverage & Effectiveness]
+### Research Sources
+### Validated Data Points
+### Real-World Implementation Examples
+### Methodology Validation
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 60

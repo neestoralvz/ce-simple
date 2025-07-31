@@ -1,0 +1,30 @@
+# Structure Analysis: archive/emergency_backups_20250731_070411/original/L2-HIGH/ADR-027-claude-code-hooks-primary-protection_BACKUP_185_lines.md (185 lines)
+## Main Sections (34 found):
+## Context
+## Decision
+## Rationale
+## Implementation Results
+## Consequences
+## Compliance and Standards
+## Future Evolution
+## Decision Record Maintenance
+## Subsections (26 found):
+### Problem Statement
+### Investigation Process
+### Strategic Context
+### Architecture Decision
+### Implementation Approach
+### Integration Strategy
+### Primary Decision Factors
+### Evidence-Based Validation
+### Strategic Alignment
+### Quantitative Success Metrics
+### Qualitative Success Metrics
+### Validation Against Research
+### Positive Consequences
+### Technical Benefits
+### Strategic Benefits
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 35

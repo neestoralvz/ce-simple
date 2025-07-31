@@ -1,0 +1,30 @@
+# Structure Analysis: archive/emergency_backups_20250731_070411/original/L2-HIGH/ux-placement_BACKUP_123_lines.md (123 lines)
+## Main Sections (23 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## VISUAL DECISION SYSTEM
+## INTEGRATION PATHWAYS SYSTEM
+## INTERACTIVE PLACEMENT GUIDE SYSTEM
+## RAPID DECISION SUPPORT SYSTEM
+## PLACEMENT QUALITY FRAMEWORK
+## FLOWCHART SYSTEM INTEGRATION
+## Subsections (15 found):
+### Complete 4-Phase Placement Framework
+### Visual Decision Navigation Protocol
+### Supreme Authority Integration
+### Context Core Integration Matrix
+### Component Relationship Mapping
+### Step-by-Step Placement Wizard
+### Placement Pathway Specialization
+### Instant Placement Matrix
+### Semantic Trigger Classification
+### Emergency Placement Procedures
+### Universal Placement Requirements
+### Anti-Pattern Prevention System
+### Placement Validation Protocol
+### System Integration Framework
+### Integration Quality Assurance
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 24

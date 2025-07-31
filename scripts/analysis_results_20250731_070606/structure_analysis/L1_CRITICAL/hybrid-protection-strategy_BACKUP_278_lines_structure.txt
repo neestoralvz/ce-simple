@@ -1,0 +1,30 @@
+# Structure Analysis: archive/emergency_backups_20250730_183847/original/L1-CRITICAL/hybrid-protection-strategy_BACKUP_278_lines.md (278 lines)
+## Main Sections (49 found):
+## STRATEGIC OVERVIEW
+## THREE-LAYER ARCHITECTURE
+## IMPLEMENTATION ROADMAP
+## LAYER COORDINATION PROTOCOLS
+## PERFORMANCE OPTIMIZATION
+## MONITORING & MAINTENANCE
+## MIGRATION STRATEGY
+## SUCCESS METRICS
+## Subsections (41 found):
+### Core Philosophy
+### Architecture Principle
+### Layer 1: Claude Code Hooks (PRIMARY PROTECTION)
+### Layer 2: Enhanced Git Hooks (SECONDARY PROTECTION)
+### Layer 3: Selective fswatch (OPTIONAL MONITORING)
+### Phase 1: Foundation (Week 1)
+### Phase 2: Enhancement (Week 2)
+### Phase 3: Optimization (Week 3 - Optional)
+### Avoiding Duplication
+### Communication Between Layers
+### Conflict Resolution
+### Resource Management
+### Efficiency Strategies
+### Health Monitoring
+### Maintenance Protocols
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 50

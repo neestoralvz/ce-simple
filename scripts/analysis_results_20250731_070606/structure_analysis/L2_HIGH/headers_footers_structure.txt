@@ -1,0 +1,26 @@
+# Structure Analysis: archive/templates_system_backup_20250730/headers_footers.md (131 lines)
+## Main Sections (19 found):
+## Standard Header Templates
+## Standard Footer Templates
+## Variable Substitution Guidelines
+## Usage Patterns
+## Integration Syntax
+## Example Applications
+## Subsections (13 found):
+### Timestamped Header Template
+### Updated Timestamped Header Template
+### Module Header Template
+### Authority Chain Footer Template
+### Extraction Footer Template
+### Decision Footer Template
+### Header Variables
+### Footer Variables
+### Document Creation Pattern
+### Authority Declaration Pattern
+### Module Reference Pattern
+### Standard Document Example
+### Module Documentation Example
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 20

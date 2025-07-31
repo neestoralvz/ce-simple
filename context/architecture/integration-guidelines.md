@@ -11,135 +11,39 @@ User authority: "documentarlo por ahora para que más adelante podamos integrarl
 ## INTEGRATION DECISION FRAMEWORK
 
 ### Natural Integration Triggers
-**Evidence-Based Signals**:
-- Performance bottlenecks detected through empirical monitoring
-- Usage patterns revealing systematic optimization opportunities  
-- User workflow evolution creating natural enhancement points
-- Technology capabilities enabling meaningful improvements
-
-**User Authority Validation**:
-- Integration serves user vision y workflow preferences
-- Timing feels natural in development flow context
-- Enhancement provides measurable value without complexity creep
-- Implementation aligns with organic system evolution principles
+- **Evidence-Based Signals**: Performance bottlenecks, usage patterns, user workflow evolution, technology capabilities
+- **User Authority Validation**: Integration serves user vision, natural timing, measurable value, organic alignment
 
 ### Integration Readiness Assessment
-```
-Integration Opportunity Evaluation:
-├── Evidence Strength: Quantitative data supporting value proposition
-├── User Alignment: Vision compatibility y workflow enhancement
-├── Implementation Readiness: Methodology + Templates + Success criteria
-├── Quality Preservation: Enhancement maintains existing standards
-└── Natural Timing: Integration fits organic development flow
-```
+- **Evidence Strength**: → integration/evidence-evaluation-framework.md
+- **User Alignment**: → integration/user-alignment-assessment.md
+- **Technical Readiness**: → integration/technical-readiness-validation.md
+- **Implementation Timing**: → integration/implementation-timing-assessment.md
 
-## FRAMEWORK APPLICATION PROTOCOLS
+### Integration Opportunity Catalog
+- **Performance Enhancement**: → integration/performance-enhancement-opportunities.md
+- **Workflow Optimization**: → integration/workflow-optimization-opportunities.md
+- **Technology Integration**: → integration/technology-integration-opportunities.md
 
-### Phase 2: Git Hooks Implementation (READY)
-**Trigger Conditions**:
-- Repository-level protection need identified through usage
-- Development workflow requires universal protection coverage
-- Team coordination scenarios requiring shared protection standards
+## DOCUMENTED INTEGRATION OPPORTUNITIES
 
-**Implementation Framework**:
-1. **Research Phase**: Apply validated methodology to Git Hooks investigation
-2. **Implementation Phase**: Use protection system templates adapted for Git environment
-3. **Integration Phase**: Establish coordination protocols with Claude Code Hooks
-4. **Documentation Phase**: Extract templates y patterns following established standards
+### Archive System Evolution Opportunities
+- **Archive-to-Context Processing**: → integration/archive-context-processing.md
+- **Conversation Processing Automation**: → integration/conversation-processing-automation.md
+- **Knowledge Integration Pipeline**: → integration/knowledge-integration-pipeline.md
 
-**Success Criteria**: <200ms performance + Zero duplication + Seamless coordination + Complete documentation
+### System Scaling Opportunities
+- **Methodology Scaling Opportunities**: → integration/methodology-scaling-opportunities.md
+- **Organic Evolution Guidelines**: → integration/organic-evolution-guidelines.md
+- **System Evolution Roadmap**: → integration/system-evolution-roadmap.md
 
-### Pattern Evolution Enhancement (ORGANIC)
-**Trigger Conditions**:
-- Real-world usage revealing optimization opportunities
-- Performance monitoring identifying enhancement potential
-- User feedback indicating specific improvement areas
-
-**Enhancement Protocol**:
-1. **Pattern Analysis**: Systematic evaluation de current pattern effectiveness
-2. **Evidence Collection**: Quantitative data supporting enhancement value
-3. **User Consultation**: Present opportunity con evidence para decision
-4. **Natural Implementation**: Apply research-to-implementation methodology
-5. **Template Integration**: Update library con enhanced patterns
-
-### System Capability Scaling (STRATEGIC)
-**Trigger Conditions**:
-- Multi-project usage revealing generalization opportunities
-- Team coordination requirements emerging naturally
-- Enterprise integration needs becoming apparent
-
-**Scaling Framework**:
-1. **Opportunity Recognition**: Systematic identification de scaling potential
-2. **Research Application**: Use validated methodology para investigation
-3. **Modular Implementation**: Apply proven patterns para capability expansion
-4. **Knowledge Integration**: Extract generalizable templates y patterns
-
-## USER CONSULTATION PROTOCOLS
-
-### Evidence Presentation Framework
-**Quantitative Evidence**: Performance metrics, usage patterns, improvement potential
-**Qualitative Benefits**: User experience enhancement, workflow optimization, capability multiplication
-**Implementation Approach**: Methodology application, resource requirements, timeline estimation
-**Risk Assessment**: Complexity impact, maintenance overhead, potential disruption
-
-### Decision Support Structure
-```
-User Decision Support:
-├── Current State Analysis: Baseline performance y capability assessment
-├── Enhancement Opportunity: Specific improvement potential con evidence
-├── Implementation Plan: Methodology application y resource requirements
-├── Success Metrics: Quantitative criteria para measuring success
-└── Integration Timeline: Natural timing y milestone framework
-```
-
-### Authority Preservation Protocol
-- User retains complete decision authority sobre all integrations
-- Evidence presented without pressure para implementation
-- Natural timing respected sin artificial urgency
-- Vision alignment validated antes de any implementation
-
-## METHODOLOGY APPLICATION SCALING
-
-### Research-to-Implementation Pipeline Expansion
-**Current Validation**: Claude Code Hooks 100% research prediction accuracy
-**Scaling Application**: Apply same framework to all technical implementations
-**Quality Assurance**: Maintain weighted comparison methodology para objective decisions
-**Documentation Standard**: Preserve comprehensive documentation approach
-
-### Template Library Growth Strategy
-**Current Foundation**: Protection system templates validated through implementation  
-**Growth Protocol**: Each implementation contributes reusable templates to library
-**Quality Maintenance**: Systematic pattern extraction maintaining consistency standards
-**Knowledge Capital**: Cumulative capability enhancement through template accumulation
-
-### Evidence-Based Decision Scaling
-**Proven Framework**: Quantitative metrics driving all technical decisions
-**Application Expansion**: Use evidence-based approach para all system enhancements
-**Continuous Refinement**: Methodology improvement through empirical feedback
-**Success Replication**: Apply proven decision patterns to new domains
-
-## ORGANIC EVOLUTION SUPPORT
-
-### Natural Growth Pattern Recognition
-**Usage Analysis**: System monitors actual development workflows para pattern identification
-**Performance Tracking**: Continuous measurement enabling optimization opportunity detection  
-**Feedback Integration**: User experience insights driving organic enhancement
-**Context Adaptation**: System learns project-specific patterns enabling customization
-
-### Evolution Quality Gates
-**Evidence Requirement**: Measurable improvement opportunity before enhancement consideration
-**User Authority**: All evolution serves user vision without imposing system preferences
-**Quality Preservation**: Enhancement maintains existing standards y reliability
-**Integration Coherence**: New capabilities integrate seamlessly without disruption
-
-### Success Multiplication Framework
-**Each Implementation Compounds Value**: Templates + Patterns + Methodology refinements
-**Risk Reduction**: Proven approaches reduce uncertainty in future implementations
-**Capability Acceleration**: Knowledge capital enables faster subsequent implementations
-**Quality Consistency**: Standardized approach ensures predictable successful outcomes
+### Implementation Framework
+- **Natural Integration Protocol**: → integration/natural-integration-protocol.md
+- **User-Driven Implementation**: → integration/user-driven-implementation.md
+- **Organic Timing Validation**: → integration/organic-timing-validation.md
 
 ---
 
-**INTEGRATION GUIDELINES DECLARATION**: This framework provides systematic approach para organic integration cuando opportunities align naturally con user vision y workflow evolution, preserving complete user authority mientras enabling systematic capability enhancement.
+**INTEGRATION GUIDELINES DECLARATION**: This framework preserves evolution opportunities for organic integration cuando timing aligns with user vision and workflow evolution, maintaining systematic approach availability without premature implementation pressure.
 
-**APPLICATION PATHWAY**: Evidence detection → User consultation → Natural implementation → Knowledge integration → Capability multiplication
+**EVOLUTION PATHWAY**: Documentation → opportunity validation → natural timing → organic integration → user value enhancement

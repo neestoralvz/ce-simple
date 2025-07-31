@@ -1,0 +1,19 @@
+# Structure Analysis: archive/emergency_backups_20250731_070411/original/L2-HIGH/validation-protocols_BACKUP_83_lines.md (83 lines)
+## Main Sections (12 found):
+## AUTORIDAD SUPREMA
+## QUALITY VALIDATION CHECKLIST
+## AUTOMATION GUIDANCE
+## INTEGRATION REFERENCES
+## Subsections (8 found):
+### All Templates Must Include:
+### Component-Specific Requirements:
+### File Size and Structure:
+### Semi-Automatic README Creation Process
+### Template Maintenance Integration
+### ← selection-criteria.md
+### ← decision-matrix.md
+### ← template_selection_guide.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 13
