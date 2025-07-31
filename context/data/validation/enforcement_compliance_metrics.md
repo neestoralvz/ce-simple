@@ -46,7 +46,7 @@
 **Authority Source**: Supreme architecture authority validation for all measurement protocols
 **Protocol**: All measurement domains preserve authority chain integrity through systematic validation
 
-### ←→ context/data/validation/README.md
+### ←→ @context/data/validation/README.md
 **Connection**: Validation system integration for measurement protocol implementation
 **Protocol**: Measurement protocols serve validation system through specialized domain coordination
 

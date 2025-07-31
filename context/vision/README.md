@@ -59,7 +59,7 @@ VISION.md → supreme user authority → vision/ implements vision discovery and
 
 ## INTEGRATION REFERENCES
 
-### → context/architecture/ux/
+### → @context/architecture/ux/
 **Connection**: Vision-driven UX architecture and conversation-first design implementation
 **Protocol**: User experience patterns must manifest discovered vision through natural interaction
 

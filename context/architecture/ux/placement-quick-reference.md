@@ -22,7 +22,7 @@ context/architecture/ux/component-decision-flowchart.md → placement-quick-refe
 | **UX/Conversation** | System | context/architecture/ux/ | ← UX implementers |
 ### **Quick Decision Support**
 #### **Semantic Triggers (Keyword-Based Classification)**
-- **User Vision**: "vision", "philosophy", "user wants", "vision discovery" → context/vision/
+- **User Vision**: "vision", "philosophy", "user wants", "vision discovery" → @context/vision/
 - **Authority**: "authority", "permission", "user authority", "supremacy" → @context/architecture/core/authority.md
 - **Technical**: "pattern", "implementation", "code", "technical" → context/architecture/patterns.md
 - **Standards**: "standard", "compliance", "quality", "enforcement" → @context/architecture/standards/README.md

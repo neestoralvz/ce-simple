@@ -73,7 +73,7 @@
 | **Data/Metrics** | System | context/data/ | ← Data consumers |
 
 ### Semantic Trigger Classification
-**User Vision Keywords**: "vision", "philosophy", "user wants", "vision discovery" → context/vision/
+**User Vision Keywords**: "vision", "philosophy", "user wants", "vision discovery" → @context/vision/
 **Authority Keywords**: "authority", "permission", "user authority", "supremacy" → core/authority.md
 **Technical Keywords**: "pattern", "implementation", "code", "technical" → patterns.md
 **Standards Keywords**: "standard", "compliance", "quality", "enforcement" → standards.md

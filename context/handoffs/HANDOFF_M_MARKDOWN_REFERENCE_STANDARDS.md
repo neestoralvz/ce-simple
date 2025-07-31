@@ -27,9 +27,9 @@ VISION.md → context/architecture/core/truth-source.md → HANDOFF_M implements
 
 ## INTEGRATION REFERENCES
 
-**Authority Chain**: Vision Foundation → context/architecture/core/truth-source.md → HANDOFF_M
-**Cross-Integration**: ←→ context/architecture/reference/README.md
-**Standards Integration**: → context/architecture/standards.md
+**Authority Chain**: Vision Foundation → @context/architecture/core/truth-source.md → HANDOFF_M
+**Cross-Integration**: ←→ @context/architecture/reference/README.md
+**Standards Integration**: → @context/architecture/standards.md
 
 **Note**: References above use conditional format (no @) since they're documentary, not auto-loading
 

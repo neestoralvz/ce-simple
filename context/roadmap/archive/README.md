@@ -61,7 +61,7 @@ context/handoffs/ → archive/ implements completed handoff preservation per sys
 
 ## INTEGRATION REFERENCES
 
-### ← context/handoffs/
+### ← @context/handoffs/
 **Connection**: Active handoff operations reference completed handoffs for methodology
 **Protocol**: Archive serves as knowledge base for ongoing handoff execution
 
