@@ -29,46 +29,17 @@
 
 ## ARCHIVE NAVIGATION
 
-### By Historical Period
-- **[Time Period 1]**: → [location] ([Content description])
-- **[Time Period 2]**: → [location] ([Content description])
-- **[Time Period 3]**: → [location] ([Content description])
-
-### By Content Type
-- **[Content Type 1]**: [location] + [cross-references]
-- **[Content Type 2]**: [location] + [related archives]
-- **[Content Type 3]**: [location] + [integration points]
-
-### By Authority Source
-- **[Authority Source 1]**: [Historical content from this authority]
-- **[Authority Source 2]**: [Historical content from this authority]
-- **[Authority Source 3]**: [Historical content from this authority]
+**By Period**: [Time periods] → [locations + descriptions]
+**By Type**: [Content types] → [locations + cross-references]
+**By Authority**: [Authority sources] → [historical content from each source]
 
 ## PRESERVATION PROTOCOLS
 
-### Content Preservation Standards
-**[Preservation Type 1]**:
-- [Specific preservation requirement]
-- [Format or structure requirement]
-- [Access or reference requirement]
-- [Integrity maintenance requirement]
-
-**[Archive Integrity Type]**:
-- [Historical accuracy requirement]
-- [Context preservation requirement]
-- [Authority source maintenance]
-- [Cross-reference integrity]
-
-### Historical Value Assessment
-**[Value Category 1]**: [Description of what makes content historically valuable]
-**[Value Category 2]**: [Description of what makes content historically valuable]
-**[Value Category 3]**: [Description of what makes content historically valuable]
-
-### Archive Evolution Protocol
-1. **[Assessment Step]** → [How content is evaluated for archival]
-2. **[Preservation Step]** → [How content is processed for long-term storage]
-3. **[Integration Step]** → [How archived content connects to current system]
-4. **[Access Step]** → [How archived content remains accessible and useful]
+### Content Preservation & Value Framework
+**Preservation Standards**: [Requirements + format + access + integrity]
+**Archive Integrity**: [Historical accuracy + context + authority + cross-references]
+**Value Categories**: [Historical value descriptions 1-3]
+**Evolution Protocol**: Assessment → Preservation → Integration → Access
 
 ## HISTORICAL INTEGRATION POINTS
 
@@ -82,16 +53,8 @@
 
 ## ARCHIVE MAINTENANCE
 
-### Content Lifecycle Management
-**[Lifecycle Stage 1]**: [How content enters archive state]
-**[Lifecycle Stage 2]**: [How content is maintained in archive]
-**[Lifecycle Stage 3]**: [How content evolution is handled]
-**[Lifecycle Stage 4]**: [How content access and utility are preserved]
-
-### Authority Preservation in Archives
-**[Authority Type]**: [How original authority is preserved in archived content]
-**[Historical Context]**: [How historical context and rationale are maintained]
-**[Evolution Tracking]**: [How changes and evolution are tracked over time]
+**Lifecycle Management**: Entry → Maintenance → Evolution → Access preservation
+**Authority Preservation**: [Original authority + historical context + evolution tracking]
 
 ---
 

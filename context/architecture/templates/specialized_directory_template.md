@@ -43,23 +43,10 @@
 
 ## EVOLUTION GUIDELINES
 
-### [Content Management] Principles
-1. **[Principle 1]**: [How content is managed or organized]
-2. **[Principle 2]**: [Quality or authority requirements]
-3. **[Principle 3]**: [Integration or coordination requirements]
-4. **[Principle 4]**: [Evolution or maintenance requirements]
-
-### [Specialized Function] Categories
-**[Category 1]**: [Description of content category and purpose]
-**[Category 2]**: [Description of content category and purpose]
-**[Category 3]**: [Description of content category and purpose]
-**[Category 4]**: [Description of content category and purpose]
-
-### [Management Protocol] 
-1. **[Step 1]** → [Description of process step]
-2. **[Step 2]** → [Description of process step]
-3. **[Step 3]** → [Description of process step]
-4. **[Step 4]** → [Description of process step]
+### [Management Framework]
+**Principles**: [Content organization + Quality requirements + Integration protocols + Evolution maintenance]
+**Categories**: [Category descriptions and purposes]
+**Protocol**: [Process steps 1-4 for directory management]
 
 ### Semantic Placement Decision Tree
 **[Decision Question 1]** → [Yes/No]: [Action/Location]

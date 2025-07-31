@@ -1,35 +1,36 @@
-# ADR-021: CLAUDE.md Factorization and Conditional Loading Implementation
+# ADR-021: CLAUDE.md Factorization and Conditional Loading
 
-**30/07/2025 17:35 CDMX** | Systematic CLAUDE.md optimization through factorization and conditional context loading
-
-## Status
-ACCEPTED - Implemented per user factorization mandate
+**Date**: 30/07/2025 17:35 CDMX  
+**Status**: ACCEPTED  
+**Authority**: User factorization mandate
 
 ## Context
-User explicitly requested CLAUDE.md factorization: "trabajemos en hacer mas eficiente claude.md, factorizalo, lleva la informacion hardcodeada a context, procura no generar duplicados, haz las referencias de manera condicional indicando cuando se debe de acceder, cuando sea posible solo referenciar la carpeta"
+User requested CLAUDE.md factorization: "trabajemos en hacer mas eficiente claude.md, factorizalo, lleva la informacion hardcodeada a context, procura no generar duplicados, haz las referencias de manera condicional indicando cuando se debe de acceder, cuando sea posible solo referenciar la carpeta"
 
 ## Problem Statement
-CLAUDE.md had grown to 216 lines with extensive hardcoded content that duplicated information existing in context/ architecture, creating maintenance overhead and inefficient context loading.
+CLAUDE.md had 216 lines with extensive hardcoded content duplicating information in context/ architecture, creating maintenance overhead and inefficient context loading.
 
 ## Decision
-Implement comprehensive CLAUDE.md factorization with conditional loading system:
+**COMPREHENSIVE CLAUDE.md FACTORIZATION** with conditional loading system.
 
-### Phase 1: Extract Hardcoded Protocols
+### Implementation Phases
+
+#### Phase 1: Extract Hardcoded Protocols
 - **Created**: @context/architecture/claude_code/orchestration_protocols.md (80 lines)
-- **Extracted**: Hybrid orchestration protocol, expert delegation, methodology enforcement
+- **Extracted**: Hybrid orchestration, expert delegation, methodology enforcement
 - **Result**: ~85 lines moved to specialized module
 
-### Phase 2: Implement Conditional Context Loading
-- **Replaced**: 68 lines of hardcoded semantic triggers
+#### Phase 2: Conditional Context Loading
+- **Replaced**: 68 lines hardcoded semantic triggers
 - **Implemented**: IF semantic_pattern → LOAD specific context conditional system
 - **Result**: Dynamic context loading based on conversation patterns
 
-### Phase 3: Reference Architecture Enhancement
-- **Integrated**: with existing README_NAVIGATION_INTEGRATION.md system
+#### Phase 3: Reference Architecture Enhancement
+- **Integrated**: README_NAVIGATION_INTEGRATION.md system
 - **Enhanced**: CROSS_REFERENCE_SYSTEM.md integration
 - **Preserved**: Complete authority chain integrity
 
-### Phase 4: Validation and Optimization
+#### Phase 4: Validation and Optimization
 - **Achieved**: 216 lines → 87 lines (59.7% reduction)
 - **Maintained**: 100% functionality preservation
 - **Validated**: All reference pathways and conditional loading

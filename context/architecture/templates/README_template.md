@@ -46,33 +46,17 @@
 **Connection**: [How these components relate]
 **Protocol**: [How interaction happens between them]
 
-## CONTENT CRITERIA
+## CONTENT CRITERIA & EVOLUTION
 
-### [Inclusion Criteria Title]
-**[CRITERIA TYPE]**:
-- [Specific requirement 1]
-- [Specific requirement 2]
-- [Specific requirement 3]
-- [Specific requirement 4]
+### [Inclusion/Exclusion Criteria]
+**INCLUDE**: [Requirements 1-4] | **EXCLUDE**: [Anti-patterns 1-4]
 
-**[EXCLUSION TYPE]**:
-- [Anti-pattern 1]
-- [Anti-pattern 2]
-- [Anti-pattern 3]
-- [Anti-pattern 4]
+### [Evolution Protocol]
+1. **[Step 1-2]** → [Process descriptions]
+2. **[Step 3-4]** → [Validation & authority preservation]
 
-## EVOLUTION GUIDELINES
-
-### [Evolution Type] Protocol
-1. **[Step 1]** → [Description of process step]
-2. **[Step 2]** → [Description of process step]
-3. **[Step 3]** → [Description of process step]
-4. **[Step 4]** → [Description of process step]
-
-### [Quality/Standards] Framework
-**[Framework Name]**: [Description of quality or standards framework]
-**[Validation Type]**: [How compliance is validated]
-**[Authority Preservation]**: [How user authority is maintained]
+### [Quality Framework]
+**[Framework]**: [Standards description] | **[Validation]**: [Compliance method]
 
 ## [COMPONENT-SPECIFIC SECTION]
 [Any specialized section unique to this component type]

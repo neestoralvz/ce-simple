@@ -32,6 +32,13 @@ VISION.md → @context/architecture/core/truth-source.md → methodology.md impl
 **Replicable Template**: Protection systems, technical integrations, systematic implementations
 **Documentation Standard**: Master document + case study + methodology updates + patterns + ADR
 
+### Evidence-Based Implementation Methodology (PROVEN)
+**3-Phase Validation Framework**: Research accuracy → Implementation success → Knowledge preservation
+**Research Prediction Accuracy**: 100% research predictions confirmed in Claude Code Hooks implementation
+**Implementation Timing**: Immediate post-research execution prevents scope creep and maintains decision momentum
+**Quality Assurance**: Quantitative metrics validation (performance, coverage, reliability) + qualitative assessment (UX, maintainability)
+**Knowledge Capital**: Comprehensive documentation multiplies implementation value through replicable patterns and organizational learning
+
 ## SPECIALIZED METHODOLOGY MODULES
 
 ### L2-Operational Methodology

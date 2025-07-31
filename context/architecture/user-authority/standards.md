@@ -3,7 +3,7 @@
 **30/07/2025 17:30 CDMX** | Standards that serve user vision and authority
 
 ## AUTORIDAD SUPREMA  
-supreme-authority.md → standards.md implements quality framework serving user authority
+@context/architecture/core/authority.md → standards.md implements quality framework serving user authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"User standards authority preservation through comprehensive enforcement architecture"** - All system standards serve user vision while maintaining complete functionality.
@@ -11,30 +11,30 @@ supreme-authority.md → standards.md implements quality framework serving user 
 ## DOCUMENTATION & COMMUNICATION STANDARDS
 
 ### LLM-Optimized Documentation Style
-**Header Compacto**: Date, location, concise description obligatorio
-**Anti-Codebox**: "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL"
-**Reinforcement Vocabulary**: High-density enforcement language for maximum semantic value
-**User Voice Preservation**: 95%+ fidelity requirement through exact quote maintenance
+- **Header Compacto**: Date, location, concise description obligatorio
+- **Anti-Codebox**: "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL"  
+- **Reinforcement Vocabulary**: High-density enforcement language for maximum semantic value
+- **User Voice Preservation**: 95%+ fidelity requirement through exact quote maintenance
 
 ### Visual Communication Framework
-**Guardian Enforcement Formatting**: Standards violations → STOP execution immediately
-**Partner Constructor Templates**: Complexity challenges → "¿Hay manera más simple?"
-**Discrete Visual Communication**: "Solo utilicemos emoticones de manera discreta y algunos símbolos"
-**Natural Conversation Support**: Visual formatting supporting conversation-first development
+- **Guardian Enforcement Formatting**: Standards violations → STOP execution immediately
+- **Partner Constructor Templates**: Complexity challenges → "¿Hay manera más simple?"
+- **Discrete Visual Communication**: "Solo utilicemos emoticones de manera discreta y algunos símbolos"
+- **Natural Conversation Support**: Visual formatting supporting conversation-first development
 
 ## BEHAVIORAL ENFORCEMENT STANDARDS
 
 ### Quality Gates Protocol
-**Creation→Alignment→Verification**: OBLIGATORIO quality gate sequence
-**Pre-execution**: Standards validation before implementation
-**Mid-execution**: Continuous compliance monitoring during execution
-**Post-execution**: Complete validation and authority preservation verification
+- **Creation→Alignment→Verification**: OBLIGATORIO quality gate sequence
+- **Pre-execution**: Standards validation before implementation
+- **Mid-execution**: Continuous compliance monitoring during execution
+- **Post-execution**: Complete validation and authority preservation verification
 
 ### Anti-Patterns Prevention
-**Execution Flow Protection**: Standards enforcement never interrupts workflow momentum
-**Authority Drift Prevention**: Automated recovery procedures for authority contamination
-**User Voice Fidelity**: Anti-patterns detection for user authority preservation
-**Binary Compliance**: COMPLIANT/NON-COMPLIANT assessment eliminating ambiguity
+- **Execution Flow Protection**: Standards enforcement never interrupts workflow momentum
+- **Authority Drift Prevention**: Automated recovery procedures for authority contamination
+- **User Voice Fidelity**: Anti-patterns detection for user authority preservation
+- **Binary Compliance**: COMPLIANT/NON-COMPLIANT assessment eliminating ambiguity
 
 ## TECHNICAL IMPLEMENTATION STANDARDS
 

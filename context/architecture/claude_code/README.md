@@ -2,56 +2,39 @@
 
 **30/07/2025 11:30 CDMX** | Claude Code-specific methodologies and patterns
 
-## Component Purpose
+## AUTORIDAD SUPREMA
+↑ @context/architecture/core/truth-source.md → claude_code/ bridges user vision with Claude Code CLI capabilities
 
-Specialized integration layer for Claude Code CLI capabilities, methodologies, and operational patterns. This component bridges user vision with Claude Code's specific tools, behaviors, and execution patterns.
+## PURPOSE
+Specialized integration layer translating user vision into Claude Code-optimized workflows while preserving conversation-first development philosophy.
 
-**Core Function**: Translate user vision into Claude Code-optimized workflows while preserving conversation-first development philosophy.
+## CONTENT ORGANIZATION
 
-## Content Categorization
+### `/roles/` - Role Definitions
+Claude Code-specific behavioral patterns: Partner constructor for CLI environments, Guardian patterns
 
-### `/roles/`
-**Purpose**: Claude Code-specific role definitions and behavioral patterns
-**Content**: Role templates, behavioral specifications, execution protocols
-**Example**: Partner constructor for Claude Code environments, Guardian patterns for CLI contexts
+### `/methodology/` - Execution Methodologies  
+Tool orchestration patterns: Multi-tool parallel execution, WebSearch + MCP integration patterns
 
-### `/methodology/`
-**Purpose**: Claude Code-optimized execution methodologies
-**Content**: Tool orchestration patterns, CLI-specific workflows, execution optimization techniques
-**Example**: Multi-tool parallel execution, WebSearch + MCP integration patterns
+### `/actions/` - Atomic Action Definitions
+Specific tool invocations: Research actions, file manipulation patterns, git workflow actions
 
-### `/actions/`
-**Purpose**: Atomic Claude Code action definitions
-**Content**: Specific tool invocations, parameter patterns, execution sequences
-**Example**: Research actions, file manipulation patterns, git workflow actions
+### `/command-creation/` - Command Optimization
+Command structure patterns leveraging Claude Code's concurrent capabilities
 
-### `/command-creation/`
-**Purpose**: Methodology for creating Claude Code-optimized commands
-**Content**: Command structure patterns, tool integration guidelines, validation protocols
-**Example**: Command templates that leverage Claude Code's concurrent capabilities
+### `/orchestration/` - Multi-Conversation Coordination
+Git worktree-based parallel execution, background process management, state coordination
 
-### `/orchestration/`
-**Purpose**: Multi-conversation and parallel execution orchestration
-**Content**: Coordination patterns, state management, inter-conversation communication
-**Example**: Git worktree-based parallel execution, background process management
+### `/conversation-patterns/` - Flow Optimization
+Socratic discovery adapted for Claude Code capabilities, natural conversation preservation
 
-### `/conversation-patterns/`
-**Purpose**: Claude Code conversation flow optimization
-**Content**: Dialogue patterns, user interaction optimization, natural conversation preservation
-**Example**: Socratic discovery adapted for Claude Code capabilities
+## INTEGRATION POINTS
 
-## Integration Points
-
-### ↑ @context/architecture/core/truth-source.md
-**Authority Source**: Supreme authority context drives all Claude Code methodologies
-**Connection**: All Claude Code methodologies validate against supreme authority context
-**Protocol**: Claude Code optimizations must preserve user vision and authority hierarchy
-
-### ←→ /methodology.md
+### ←→ @context/architecture/core/methodology.md
 **Connection**: Claude Code-specific implementations of core methodology patterns
 **Protocol**: Specialized adaptations of Think x4, Research-First, Continuous Execution
 
-### ←→ /patterns.md
+### ←→ @context/architecture/patterns.md
 **Connection**: Claude Code tool usage patterns and orchestration frameworks
 **Protocol**: Tool-specific implementations of architectural and behavioral patterns
 
@@ -59,31 +42,26 @@ Specialized integration layer for Claude Code CLI capabilities, methodologies, a
 **Connection**: Implementation target for Claude Code methodologies
 **Protocol**: Methodologies inform command creation and optimization
 
-### → architecture/standards/
-**Connection**: Claude Code tool compliance and technical standards alignment
-**Protocol**: Tool usage patterns must comply with architectural standards and quality gates
-
-## Evolution Guidelines
+## EVOLUTION GUIDELINES
 
 ### Organic Growth Triggers
-- **User feedback on Claude Code performance** → methodology refinement
-- **New Claude Code capabilities** → integration pattern development
-- **Efficiency discoveries** → pattern documentation
-- **Multi-conversation usage** → orchestration pattern evolution
+- User feedback on Claude Code performance → methodology refinement
+- New Claude Code capabilities → integration pattern development
+- Efficiency discoveries → pattern documentation
+- Multi-conversation usage → orchestration pattern evolution
 
 ### Content Addition Criteria
 1. **Claude Code Specificity**: Content must leverage Claude Code unique capabilities
 2. **User Vision Alignment**: All methodologies serve conversation-first development
-3. **Practical Application**: Patterns must emerge from actual usage, not theoretical design
-4. **Authority Preservation**: User authority supremacy maintained in all Claude Code adaptations
+3. **Practical Application**: Patterns emerge from actual usage, not theoretical design
+4. **Authority Preservation**: User authority supremacy maintained in all adaptations
 
-### Semantic Placement Decision Tree
-**Is it Claude Code-specific?** → Yes: Place in claude_code/
-**Does it involve tool orchestration?** → orchestration/ or methodology/
-**Is it a reusable action pattern?** → actions/
-**Does it define behavioral roles?** → roles/
-**Is it about command creation?** → command-creation/
-**Does it optimize conversation flow?** → conversation-patterns/
+### Placement Logic
+**Tool orchestration** → orchestration/ or methodology/
+**Reusable action pattern** → actions/
+**Behavioral roles** → roles/
+**Command creation** → command-creation/
+**Conversation flow** → conversation-patterns/
 
 ---
 

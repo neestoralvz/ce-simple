@@ -1,53 +1,29 @@
 # ADR-006: Enforcement Vocabulary Density Standards
 
-**30/07/2025 23:45 CDMX** | Cognitive load optimization with systematic enforcement clarity
+**Date**: 30/07/2025 23:45 CDMX  
+**Status**: ACCEPTED  
+**Authority**: @context/architecture/core/truth-source.md → enforcement vocabulary standards
 
-## AUTORIDAD SUPREMA
-@context/vision/vision_foundation.md → supreme user authority → @context/architecture/core/truth-source.md → ADR-006 implements enforcement vocabulary standards per cognitive balance authority
+## Context
+ADR-002 implemented 32 enforcement vocabulary terms achieving compliance visibility. Analysis reveals cognitive load management needs optimization while maintaining user standards authority: "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL."
 
-## Status
-**ACCEPTED** - User standards authority with cognitive load balance optimization
+## Decision
+**ENFORCEMENT VOCABULARY DENSITY FRAMEWORK** with cognitive load optimization.
 
-## Context and Problem Statement
-ADR-002 implemented 32 enforcement vocabulary terms achieving compliance visibility, but analysis reveals cognitive load management needs systematic optimization. Research validates three cognitive load types: intrinsic (domain complexity), germane (schema building), extraneous (unnecessary processing).
+### Think x4 Analysis OBLIGATORIO
+**Perspective 1**: 32 enforcement terms provide clear compliance signals with binary enforcement eliminating ambiguity  
+**Perspective 2**: Cognitive load types - intrinsic (unavoidable), germane (beneficial schema), extraneous (minimize)  
+**Perspective 3**: Standards integration through consolidated reference architecture preserving authority chain  
+**Perspective 4**: Vocabulary evolution based on compliance effectiveness metrics and user feedback
 
-## User Authority Foundation
-Documentation standards require: "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGATORIO, FUNDAMENTAL, ESENCIAL" while maintaining cognitive efficiency per user vision of "information density preservation over structural optimization."
-
-## Decision Rationale
-
-### Think x4 Analysis OBLIGATORIO:
-
-**Perspective 1: Enforcement Effectiveness**
-- 32 enforcement terms provide clear compliance signals
-- Binary enforcement (OBLIGATORIO/NUNCA) eliminates interpretation ambiguity
-- Systematic vocabulary creates consistent mental model
-
-**Perspective 2: Cognitive Load Impact**
-- Intrinsic load: Domain complexity unavoidable (standards inherently complex)
-- Germane load: Enforcement vocabulary builds compliance schema (beneficial)
-- Extraneous load: Redundant enforcement terms create processing overhead (minimize)
-
-**Perspective 3: Standards Integration**
-- Integration with @standards/documentation_standards.md and enforcement_standards.md
-- Authority chain preservation through consolidated reference architecture
-- Quality gates validation maintains effectiveness
-
-**Perspective 4: Evolution Optimization**
-- Vocabulary adapts based on compliance effectiveness metrics
-- Organic refinement preserves core enforcement while optimizing clarity
-- User feedback drives vocabulary evolution
-
-## Architectural Decision
-
-### **Enforcement Vocabulary Density Framework**
+### Enforcement Vocabulary Framework
 
 #### **Tier 1: Critical Enforcement (Binary Mode)**
 - **OBLIGATORIO**: Non-negotiable system requirements
 - **NUNCA**: Absolute prohibitions preventing system failure
 - **CRÍTICO**: Authority chain preservation requirements
 
-#### **Tier 2: Strong Guidance (Systematic Mode)**  
+#### **Tier 2: Strong Guidance (Systematic Mode)**
 - **DEBE**: Expected behavior with measurable compliance
 - **SIEMPRE**: Consistent application requirements
 - **MANDATORIO**: Process integrity requirements
@@ -57,57 +33,31 @@ Documentation standards require: "OBLIGATORIO usar DEBE, SIEMPRE, NUNCA, OBLIGAT
 - **FUNDAMENTAL**: Architecture principle compliance
 - **SISTEMÁTICO**: Methodology consistency requirements
 
-### **Cognitive Load Optimization Protocol**
+### Cognitive Load Optimization Protocol
 
-#### **Density Limits per Context**:
-- **Single document**: Maximum 5 enforcement terms per ≤80 lines
-- **Critical sections**: 1 enforcement term per 3 lines maximum
-- **Template headers**: 2 enforcement terms maximum for cognitive clarity
+→ **Detailed Guidelines**: @context/architecture/adr/modules/cognitive-load-optimization.md
 
-#### **Vocabulary Distribution Strategy**:
-- **Front-loaded enforcement**: Critical terms in headers/openings
-- **Context-aware density**: Higher enforcement in authority sections
-- **Progressive disclosure**: Less critical terms in detailed sections
-
-## Implementation Standards
-
-### **Documentation Integration OBLIGATORIO**
-```markdown
-# [Component] - [Authority Description]
-**OBLIGATORIO**: [Critical requirement for system function]
-**DEBE**: [Expected behavior for quality compliance]
-**SISTEMÁTICO**: [Methodology consistency requirement]
-```
-
-### **Cognitive Load Measurement Protocol**
-- **Enforcement density ratio**: Enforcement terms / total words ≤ 5%
-- **Authority preservation fidelity**: User voice preservation ≥ 95%
-- **Compliance effectiveness**: Standards adherence metrics ≥ 90%
-
-### **Quality Gates Validation CRÍTICO**
-1. **Pre-implementation**: Cognitive load assessment using density metrics
-2. **Mid-implementation**: Enforcement effectiveness monitoring
-3. **Post-implementation**: User comprehension validation and compliance measurement
+**Density Limits**: Maximum 5 enforcement terms per ≤80 lines
+**Distribution Strategy**: Front-loaded critical terms, context-aware density
+**Measurement Protocol**: Enforcement density ratio ≤ 5%, Authority preservation ≥ 95%
 
 ## Consequences
 
-### Positive ESENCIAL:
-- **Optimized cognitive efficiency**: Reduced extraneous load while preserving compliance
+### Positive
+- **Optimized cognitive efficiency**: Reduced extraneous load preserving compliance
 - **Systematic enforcement clarity**: Tiered vocabulary provides graduated response
 - **Authority preservation**: 95%+ user voice fidelity maintained
 - **Standards compliance**: Clear enforcement without cognitive overwhelm
 
-### Quality Enhancement FUNDAMENTAL:
+### Quality Enhancement
 - **Measurable compliance**: Density metrics provide optimization feedback
 - **Evolutionary vocabulary**: Organic refinement based on effectiveness data
 - **Professional standards**: Research-backed cognitive load management
 
-## Integration References MANDATORIO
-- **Applied**: @context/architecture/standards/README.md comprehensive enforcement architecture
-- **Enhanced**: @standards/documentation_standards.md + enforcement_standards.md
-- **Validated**: @context/architecture/core/truth-source.md authority chain preservation + cognitive optimization
-- **Measured**: Cognitive load metrics + enforcement effectiveness tracking
+## Integration References
+← @context/architecture/standards/README.md (comprehensive enforcement architecture)
+← @context/architecture/core/truth-source.md (authority chain preservation)
+→ @context/architecture/patterns/enforcement_integration_patterns.md (implementation patterns)
 
 ---
-
-**IMPLEMENTATION EVIDENCE**: Enforcement vocabulary density optimized per cognitive load research while preserving complete standards compliance and user authority supremacy.
+**EVOLUTION**: Enforcement vocabulary density optimized per cognitive load research preserving complete standards compliance and user authority supremacy.
