@@ -672,9 +672,13 @@ def main():
     """Main execution function"""
     import sys
     
-    # Default paths
-    source_dir = "/Users/nalve/ce-simple"
-    export_dir = "/Users/nalve/ce-simple/export"
+    # Get project root dynamically
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent  # scripts/ is one level down from project root
+    
+    # Default paths (now dynamic)
+    source_dir = str(project_root)
+    export_dir = str(project_root / "export")
     
     # Allow command line override
     if len(sys.argv) > 1:

@@ -4,9 +4,13 @@
 
 set -e  # Exit on any error
 
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
 # Configuration
-CONTEXT_DIR="/Users/nalve/ce-simple/context"
-VALIDATION_DIR="/Users/nalve/ce-simple/scripts/validation_results_$(date +%Y%m%d_%H%M%S)"
+CONTEXT_DIR="$PROJECT_ROOT/context"
+VALIDATION_DIR="$PROJECT_ROOT/scripts/validation_results_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$VALIDATION_DIR/validation_log.txt"
 
 # Colors for output

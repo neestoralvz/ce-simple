@@ -7,11 +7,53 @@ set -euo pipefail
 # Silent script - no user notifications (Claude Code communicates results)
 # Configuration
 WORKSPACE_BASE_DIR="./.conversation-workspaces"
+INTERNAL_WORKTREE_DIR="./worktrees"
 LOG_FILE="$HOME/.claude-workspace.log"
 
 # Log function
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"
+}
+
+# Create internal worktree (within project directory for Claude Code access)
+create_internal_worktree() {
+    local worktree_name="${1:-worktree-$(date +%Y%m%d_%H%M%S)}"
+    local worktree_path="$INTERNAL_WORKTREE_DIR/$worktree_name"
+    
+    log "Creating internal worktree: $worktree_name"
+    
+    # Ensure internal worktree directory exists
+    if [[ ! -d "$INTERNAL_WORKTREE_DIR" ]]; then
+        mkdir -p "$INTERNAL_WORKTREE_DIR"
+        log "Created internal worktree directory: $INTERNAL_WORKTREE_DIR"
+    fi
+    
+    # Check if worktree already exists
+    if [[ -d "$worktree_path" ]]; then
+        log "Internal worktree already exists: $worktree_path"
+        echo "$worktree_path"
+        return 0
+    fi
+    
+    # Create git worktree inside project directory (Claude Code accessible)
+    if git worktree add "$worktree_path" HEAD 2>/dev/null; then
+        log "✅ Internal git worktree created: $worktree_path"
+    else
+        log "⚠️ Internal worktree creation failed"
+        return 1
+    fi
+    
+    # Set up worktree environment
+    cat > "$worktree_path/.env" << EOF
+INTERNAL_WORKTREE=true
+WORKTREE_NAME=$worktree_name
+WORKTREE_PATH=$worktree_path
+WORKTREE_CREATED=$(date -Iseconds)
+ORIGINAL_BRANCH=$(git branch --show-current 2>/dev/null || echo "unknown")
+EOF
+    
+    log "Internal worktree ready: $worktree_path"
+    echo "$worktree_path"
 }
 
 # Create conversation workspace
@@ -35,7 +77,7 @@ create_workspace() {
         return 0
     fi
     
-    # Create git worktree
+    # Create git worktree (preferring internal location for Claude Code accessibility)
     if git worktree add "$workspace_path" HEAD 2>/dev/null; then
         log "✅ Git worktree created: $workspace_path"
     else
@@ -217,6 +259,12 @@ main() {
             echo "Workspace created: $workspace_path"
             echo "To activate: source $workspace_path/.env && cd $workspace_path"
             ;;
+        "create-internal")
+            local worktree_name="${2:-}"
+            worktree_path=$(create_internal_worktree "$worktree_name" 2>/dev/null)
+            echo "Internal worktree created: $worktree_path"
+            echo "To activate: source $worktree_path/.env && cd $worktree_path"
+            ;;
         "activate")
             local workspace_path="${2:-}"
             if [[ -z "$workspace_path" ]]; then
@@ -241,9 +289,10 @@ main() {
             cleanup_orphaned
             ;;
         "help"|*)
-            echo "Usage: $0 [create|activate|cleanup|list|prune|help]"
+            echo "Usage: $0 [create|create-internal|activate|cleanup|list|prune|help]"
             echo ""
             echo "create [timestamp]: Create new conversation workspace"
+            echo "create-internal [name]: Create internal worktree (Claude Code accessible)"
             echo "activate <path>: Activate workspace environment"
             echo "cleanup <path> [force]: Remove workspace (force to ignore uncommitted changes)"
             echo "list: List all conversation workspaces"
@@ -251,9 +300,10 @@ main() {
             echo "help: Show this help"
             echo ""
             echo "Environment variables after activation:"
-            echo "  CONVERSATION_WORKSPACE=true"
-            echo "  WORKSPACE_NAME=conv-timestamp"
-            echo "  WORKSPACE_PATH=full-path-to-workspace"
+            echo "  CONVERSATION_WORKSPACE=true (for conversation workspaces)"
+            echo "  INTERNAL_WORKTREE=true (for internal worktrees)"
+            echo "  WORKSPACE_NAME=conv-timestamp or WORKTREE_NAME=worktree-name"
+            echo "  WORKSPACE_PATH or WORKTREE_PATH=full-path"
             ;;
     esac
 }

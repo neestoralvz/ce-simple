@@ -5,19 +5,14 @@
 ## AUTORIDAD SUPREMA
 @context/vision/vision_foundation.md → supreme user authority → README maintenance system serves organic evolution
 
-## COMPREHENSIVE MAINTENANCE ECOSYSTEM
+## MAINTENANCE SYSTEM ARCHITECTURE
 
-This navigation hub provides complete access to the README maintenance and evolution system through specialized modules, preserving 100% functionality while achieving architectural compliance.
-
-### **MAINTENANCE SYSTEM ARCHITECTURE**
-
-```markdown
-README Maintenance System Architecture:
-├─ **Daily Operations** → maintenance-system/daily-operations/
-│   ├─ Daily, weekly, and monthly maintenance cycles
-│   ├─ Reference integrity validation protocols
-│   ├─ Authority chain monitoring frameworks
-│   └─ Quality assurance automation systems
+### **System Components**
+- **Daily Operations** → README_system_maintenance.md (Reference integrity, authority monitoring, quality assurance)
+- **System Evolution** → README_evolution_protocol.md (Component addition, structure modification, template evolution)
+- **Problem Resolution** → README_troubleshooting_guide.md (Navigation issues, cross-reference debugging, emergency recovery)
+- **Integration Management** → README_integration_maintenance.md (CLAUDE.md triggers, decision matrix, cross-reference system)
+- **Quality Monitoring** → README_quality_monitoring.md (Metrics dashboard, user experience, health indicators)
 ├─ **System Evolution** → maintenance-system/system-evolution/
 │   ├─ Component addition and evolution protocols
 │   ├─ Template evolution management systems

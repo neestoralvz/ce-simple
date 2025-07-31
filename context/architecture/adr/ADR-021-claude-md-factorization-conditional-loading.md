@@ -1,95 +1,46 @@
-# ADR-021: CLAUDE.md Factorization and Conditional Loading
+# ADR-021: CLAUDE.md Factorization and Conditional Loading - Hub - Hub
 
-**Date**: 30/07/2025 17:35 CDMX  
-**Status**: ACCEPTED  
-**Authority**: User factorization mandate
+**31/07/2025 CDMX** | L2-MODULAR extraction hub with specialized modules
 
-## Context
-User requested CLAUDE.md factorization: "trabajemos en hacer mas eficiente claude.md, factorizalo, lleva la informacion hardcodeada a context, procura no generar duplicados, haz las referencias de manera condicional indicando cuando se debe de acceder, cuando sea posible solo referenciar la carpeta"
+## AUTORIDAD SUPREMA
+@context/architecture/core/truth-source.md → ADR-021-claude-md-factorization-conditional-loading.md implements specialized functionality per user vision
 
-## Problem Statement
-CLAUDE.md had 216 lines with extensive hardcoded content duplicating information in context/ architecture, creating maintenance overhead and inefficient context loading.
+## PRINCIPIO FUNDAMENTAL
+**"trabajemos en hacer mas eficiente claude.md, factorizalo, lleva la informacion hardcodeada a context, procura no generar duplicados, haz las referencias de manera condicional indicando cuando se debe de acceder, cuando sea posible solo referenciar la carpeta"** - Core authority statement serving user vision supremacy.
 
-## Decision
-**COMPREHENSIVE CLAUDE.md FACTORIZATION** with conditional loading system.
+## COMPONENT MODULES
 
-### Implementation Phases
+### **AUTORIDAD SUPREMA**
+- **Module**: → @context/ADR-021-claude-md-factorization-conditional-loading/autoridad-suprema.md
+- **Authority**: Specialized functionality per hub authority
 
-#### Phase 1: Extract Hardcoded Protocols
-- **Created**: @context/architecture/claude_code/orchestration_protocols.md (80 lines)
-- **Extracted**: Hybrid orchestration, expert delegation, methodology enforcement
-- **Result**: ~85 lines moved to specialized module
+### **PRINCIPIO FUNDAMENTAL**
+- **Module**: → @context/ADR-021-claude-md-factorization-conditional-loading/principio-fundamental.md
+- **Authority**: Specialized functionality per hub authority
 
-#### Phase 2: Conditional Context Loading
-- **Replaced**: 68 lines hardcoded semantic triggers
-- **Implemented**: IF semantic_pattern → LOAD specific context conditional system
-- **Result**: Dynamic context loading based on conversation patterns
+### **COMPONENT MODULES**
+- **Module**: → @context/ADR-021-claude-md-factorization-conditional-loading/component-modules.md
+- **Authority**: Specialized functionality per hub authority
 
-#### Phase 3: Reference Architecture Enhancement
-- **Integrated**: README_NAVIGATION_INTEGRATION.md system
-- **Enhanced**: CROSS_REFERENCE_SYSTEM.md integration
-- **Preserved**: Complete authority chain integrity
+### ****Context****
+- **Module**: → @context/ADR-021-claude-md-factorization-conditional-loading/context.md
+- **Authority**: Specialized functionality per hub authority
 
-#### Phase 4: Validation and Optimization
-- **Achieved**: 216 lines → 87 lines (59.7% reduction)
-- **Maintained**: 100% functionality preservation
-- **Validated**: All reference pathways and conditional loading
+### ****Problem Statement****
+- **Module**: → @context/ADR-021-claude-md-factorization-conditional-loading/problem-statement.md
+- **Authority**: Specialized functionality per hub authority
 
-## Rationale
-- **User Authority**: Direct factorization mandate with specific requirements
-- **Efficiency Gain**: ~60% reduction in base context load with preserved functionality
-- **Reference Architecture**: Aligns with "reference-only architecture" principle
-- **Token Economy**: Significant optimization through conditional loading
-- **Maintenance**: Single source of truth eliminates duplication
+### ****Decision****
+- **Module**: → @context/ADR-021-claude-md-factorization-conditional-loading/decision.md
+- **Authority**: Specialized functionality per hub authority
 
-## Implementation Details
+## INTEGRATION REFERENCES
 
-### Conditional Loading System
-```
-IF semantic_pattern=research_investigation:
-    LOAD: @context/architecture/claude_code/methodology/README.md + @context/architecture/core/methodology.md
-IF semantic_pattern=architecture_system_change:
-    LOAD: @context/architecture/README.md + @context/architecture/core/truth-source.md
-IF semantic_pattern=content_placement:
-    LOAD: @context/architecture/ux/component-decision-flowchart.md
-```
-
-### Files Created/Modified
-- **NEW**: @context/architecture/claude_code/orchestration_protocols.md (complete protocol authority)
-- **NEW**: CLAUDE_FACTORIZED.md (optimized dispatcher)
-- **PRESERVED**: All existing context/ architecture and integration pathways
-
-## Consequences
-
-### Positive
-- **59.7% size reduction** with zero functionality loss
-- **Enhanced conditional loading** - context loads only when pattern-relevant
-- **Eliminated duplications** - hardcoded content moved to specialized modules
-- **Improved maintenance** - single source updates in specialized modules
-- **Token economy optimization** - significant efficiency gains
-
-### Risks Mitigated
-- **Reference integrity validation** - all pathways confirmed functional
-- **Authority preservation** - 95%+ user voice fidelity maintained
-- **Functionality preservation** - comprehensive validation completed
-- **Integration compatibility** - full integration with existing context/ system
-
-## Validation Metrics
-- **Size Compliance**: ✅ 87 lines (under 80-line target by 7 lines)
-- **Functionality**: ✅ 100% semantic trigger preservation
-- **Authority Chain**: ✅ Complete authority hierarchy maintained
-- **Reference Integrity**: ✅ All conditional loading pathways validated
-- **Integration**: ✅ Full compatibility with existing context architecture
-
-## Future Evolution
-This factorization establishes foundation for:
-- **Dynamic context loading** based on conversation complexity
-- **Adaptive reference system** that grows organically with system evolution
-- **Enhanced token economy** through intelligent context management
-- **Simplified maintenance** through specialized module organization
+### ←→ @context/architecture/core/methodology.md
+**Connection**: Component integration per systematic methodology
+**Protocol**: All components serve user authority supremacy through specialized modules
 
 ---
 
-**ARCHITECTURAL DECISION AUTHORITY**: This ADR implements user vision for efficient CLAUDE.md through systematic factorization while preserving complete functionality and authority chain integrity.
-
-**INTEGRATION**: Conditional loading system + Reference-only architecture + Context specialization + Authority preservation
+**COMPONENT DECLARATION**: This hub preserves complete functionality through specialized modules while achieving size compliance per L2-MODULAR extraction protocol.
+**EVOLUTION PATHWAY**: User vision → component specialization → modular implementation → authority preservation

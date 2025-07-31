@@ -1,0 +1,239 @@
+#!/bin/bash
+
+# Post-Edit Coordinated Hook
+# Executes after file edits with intelligent coordination and real-time updates
+
+set -euo pipefail
+
+# Configuration
+PROJECT_ROOT="/Users/nalve/ce-simple"
+LOG_FILE="$PROJECT_ROOT/.claude/hooks/logs/post-edit.log"
+COORDINATION_HUB="$PROJECT_ROOT/scripts/automation/coordination-hub.sh"
+LOCK_MANAGER="$PROJECT_ROOT/scripts/automation/smart-lock-manager.sh"
+CROSS_REF_UPDATER="$PROJECT_ROOT/scripts/integration/cross-reference-updater.sh"
+ROADMAP_UPDATE="$PROJECT_ROOT/scripts/integration/roadmap-update.sh"
+
+# Logging functions
+log_info() { echo "[$(date '+%H:%M:%S')] 📝 $1" | tee -a "$LOG_FILE"; }
+log_success() { echo "[$(date '+%H:%M:%S')] ✅ $1" | tee -a "$LOG_FILE"; }
+log_warning() { echo "[$(date '+%H:%M:%S')] ⚠️ $1" | tee -a "$LOG_FILE"; }
+log_error() { echo "[$(date '+%H:%M:%S')] ❌ $1" | tee -a "$LOG_FILE"; }
+
+# Ensure log directory exists
+mkdir -p "$(dirname "$LOG_FILE")"
+
+log_info "Post-edit coordinated hook starting"
+
+# Get edit context
+EDITED_FILE="${CLAUDE_EDITED_FILE:-${1:-unknown}}"
+EDIT_TYPE="${CLAUDE_EDIT_TYPE:-edit}"
+LINES_CHANGED="${CLAUDE_LINES_CHANGED:-0}"
+
+log_info "File: $EDITED_FILE, Type: $EDIT_TYPE, Lines changed: $LINES_CHANGED"
+
+# Smart file change analysis
+analyze_file_changes() {
+    local edited_file="$1"
+    local changes_detected=()
+    
+    # Check if roadmap-related file
+    if [[ "$edited_file" =~ context/roadmap/.*\.md$ ]]; then
+        changes_detected+=("roadmap_change")
+        log_info "Roadmap file change detected: $edited_file"
+    fi
+    
+    # Check if work items registry
+    if [[ "$edited_file" =~ work-items-registry\.md$ ]]; then
+        changes_detected+=("work_items_change")
+        log_info "Work items registry change detected"
+    fi
+    
+    # Check if architecture file
+    if [[ "$edited_file" =~ context/architecture/.*\.md$ ]]; then
+        changes_detected+=("architecture_change")
+        log_info "Architecture file change detected: $edited_file"
+    fi
+    
+    # Check if command file
+    if [[ "$edited_file" =~ \.claude/commands/.*\.md$ ]]; then
+        changes_detected+=("command_change")
+        log_info "Command file change detected: $edited_file"
+    fi
+    
+    # Check file size for L2-modular considerations
+    if [[ -f "$edited_file" && "$edited_file" =~ \.md$ ]]; then
+        local line_count=$(wc -l < "$edited_file" 2>/dev/null || echo "0")
+        if [[ $line_count -gt 80 ]]; then
+            changes_detected+=("size_violation")
+            log_warning "File size violation detected: $edited_file ($line_count lines)"
+        fi
+    fi
+    
+    if [[ ${#changes_detected[@]} -gt 0 ]]; then
+        printf '%s\n' "${changes_detected[@]}"
+    fi
+}
+
+# Coordinate file change updates
+coordinate_file_updates() {
+    local edited_file="$1"
+    local changes=("${@:2}")
+    
+    if [[ -x "$COORDINATION_HUB" ]]; then
+        log_info "Coordinating file change updates..."
+        
+        # Queue file change event
+        "$COORDINATION_HUB" event "file_change" "$edited_file" "normal"
+        
+        # Handle specific change types
+        if [[ ${#changes[@]} -gt 0 ]]; then
+            for change_type in "${changes[@]}"; do
+            case "$change_type" in
+                "roadmap_change"|"work_items_change")
+                    log_info "Triggering roadmap sync for: $change_type"
+                    "$COORDINATION_HUB" event "roadmap_update" "file_edit:$edited_file" "high"
+                    ;;
+                "architecture_change")
+                    log_info "Architecture change detected, checking cross-references"
+                    if [[ -x "$CROSS_REF_UPDATER" ]]; then
+                        ("$CROSS_REF_UPDATER" --file "$edited_file") &
+                    fi
+                    ;;
+                "command_change")
+                    log_info "Command change detected, validating command structure"
+                    # Could trigger command validation
+                    ;;
+                "size_violation")
+                    log_warning "File size violation - consider L2-modular extraction"
+                    # Could trigger modular extraction suggestion
+                    ;;
+            esac
+            done
+        fi
+        
+        return 0
+    else
+        log_warning "Coordination hub not available"
+        return 1
+    fi
+}
+
+# Real-time roadmap update with coordination
+trigger_coordinated_roadmap_update() {
+    local trigger_reason="$1"
+    
+    if [[ -x "$ROADMAP_UPDATE" && -x "$LOCK_MANAGER" ]]; then
+        log_info "Triggering coordinated roadmap update: $trigger_reason"
+        
+        # Use coordination-aware roadmap update
+        (sleep 1 && "$ROADMAP_UPDATE" --coordinated) &
+        
+        log_success "Coordinated roadmap update queued"
+        return 0
+    else
+        log_warning "Coordinated roadmap update not available"
+        return 1
+    fi
+}
+
+# Auto-commit file changes with coordination
+auto_commit_file_changes() {
+    local edited_file="$1"
+    
+    # Check if file has uncommitted changes
+    if git diff --quiet "$edited_file" 2>/dev/null; then
+        log_info "No uncommitted changes for: $edited_file"
+        return 0
+    fi
+    
+    log_info "Auto-committing file changes with coordination: $edited_file"
+    
+    # Acquire coordination lock for git operations
+    if [[ -x "$LOCK_MANAGER" ]] && "$LOCK_MANAGER" acquire "git_commit" "normal" 30; then
+        
+        # Stage the edited file
+        git add "$edited_file" 2>/dev/null || true
+        
+        # Create smart commit message
+        local file_basename=$(basename "$edited_file")
+        local commit_msg="Update $file_basename via Claude Code
+
+📝 File: $edited_file
+🔧 Edit type: $EDIT_TYPE
+📊 Lines changed: $LINES_CHANGED
+
+🤖 Generated with Claude Code
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+        
+        if git commit -m "$commit_msg" 2>/dev/null; then
+            log_success "File changes committed with coordination: $edited_file"
+            
+            # Release lock
+            "$LOCK_MANAGER" release "git_commit"
+            
+            return 0
+        else
+            log_info "No changes to commit for: $edited_file"
+            "$LOCK_MANAGER" release "git_commit"
+            return 1
+        fi
+    else
+        log_warning "Failed to acquire git commit lock, skipping auto-commit"
+        return 1
+    fi
+}
+
+# Main execution with coordination
+main() {
+    local changes
+    changes=($(analyze_file_changes "$EDITED_FILE"))
+    
+    if [[ ${#changes[@]} -gt 0 ]]; then
+        log_info "Changes detected: ${changes[*]}"
+    else
+        log_info "No changes detected"
+    fi
+    
+    # Coordinate file updates
+    if [[ ${#changes[@]} -gt 0 ]]; then
+        coordinate_file_updates "$EDITED_FILE" "${changes[@]}"
+    else
+        coordinate_file_updates "$EDITED_FILE"
+    fi
+    if [[ $? -eq 0 ]]; then
+        log_success "File change coordination completed"
+    fi
+    
+    # Trigger specific updates based on changes
+    if [[ ${#changes[@]} -gt 0 ]]; then
+        for change_type in "${changes[@]}"; do
+        case "$change_type" in
+            "roadmap_change"|"work_items_change")
+                trigger_coordinated_roadmap_update "$change_type:$EDITED_FILE"
+                break
+                ;;
+        esac
+        done
+    fi
+    
+    # Auto-commit if enabled and appropriate
+    if [[ "${CLAUDE_AUTO_COMMIT:-false}" == "true" ]]; then
+        auto_commit_file_changes "$EDITED_FILE"
+    fi
+    
+    # Process coordination events in background
+    if [[ -x "$COORDINATION_HUB" ]]; then
+        ("$COORDINATION_HUB" process 2) &
+        log_info "Background coordination processing started"
+    fi
+    
+    log_success "Post-edit coordinated hook completed for: $EDITED_FILE"
+    return 0
+}
+
+# Graceful error handling
+trap 'log_error "Post-edit hook failed for: $EDITED_FILE"; exit 1' ERR
+
+# Execute main function
+main "$@"

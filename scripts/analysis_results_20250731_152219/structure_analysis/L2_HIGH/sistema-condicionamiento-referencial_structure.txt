@@ -1,0 +1,25 @@
+# Structure Analysis: architecture/sistema-condicionamiento-referencial.md (114 lines)
+## Main Sections (18 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL DESCUBIERTO
+## ARQUITECTURA DEL SISTEMA
+## SYSTEM MANIFESTATION EXAMPLES
+## REVOLUTIONARY CHARACTERISTICS
+## INTEGRATION PATHWAYS
+## Subsections (12 found):
+### Factorización de la Información
+### Condicionamiento Referencial
+### Machine Intelligence Mechanisms
+### Dispatcher Intelligence (CLAUDE.md)
+### Reference-Only Architecture (ADR-005)
+### Progressive Context Disclosure
+### Information Organization Revolution
+### Authority Preservation Revolution  
+### Cognitive Load Revolution
+### ← @context/architecture/core/truth-source.md
+### ←→ @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+### → @context/roadmap/ROADMAP_REGISTRY.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 19

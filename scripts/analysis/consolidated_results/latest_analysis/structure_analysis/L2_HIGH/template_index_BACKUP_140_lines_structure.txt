@@ -1,0 +1,21 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/template_index_BACKUP_140_lines.md (140 lines)
+## Main Sections (25 found):
+## Available Command Templates
+## Template Usage Guide
+## Template Evolution and Maintenance
+## System Integration Points
+## Enlaces → Información Complementaria
+## Subsections (20 found):
+### Command Category Templates
+### Universal Foundation Templates
+### Selecting Appropriate Template
+### Template Application Process
+### Template Version Control
+### Template Quality Standards
+### Template Reference Integration
+### Documentation Linking Compliance
+### Command Generation Support
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 26

@@ -1,0 +1,17 @@
+# Structure Analysis: architecture/patterns/claude-code-integration/advanced-patterns-anti-patterns.md (94 lines)
+## Main Sections (13 found):
+## AUTORIDAD SUPREMA
+## ADVANCED PATTERNS
+## VALIDATED ANTI-PATTERNS
+## Subsections (10 found):
+### PATTERN 4: HOOK EVENT LIFECYCLE MAPPING
+### PATTERN 5: INTELLIGENT AUTO-REMEDIATION
+### PATTERN 6: PERFORMANCE-OPTIMIZED INTEGRATION
+### ANTI-PATTERN 1: COMPLEX CONFIGURATION SYSTEMS
+### ANTI-PATTERN 2: MONOLITHIC SCRIPT DESIGN
+### ANTI-PATTERN 3: BLOCKING ERROR HANDLING
+### ANTI-PATTERN 4: OVER-ENGINEERING PERFORMANCE
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 14

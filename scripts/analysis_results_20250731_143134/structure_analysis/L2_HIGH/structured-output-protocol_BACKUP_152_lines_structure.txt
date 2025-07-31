@@ -1,0 +1,30 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/structured-output-protocol_BACKUP_152_lines.md (152 lines)
+## Main Sections (23 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## REFINED COMMUNICATION CATEGORIES
+## STRUCTURED OUTPUT FORMATS
+## CLAUDE CODE INTERPRETATION FRAMEWORK
+## IMPLEMENTATION STRATEGY
+## VALIDATION CHECKLIST
+## EXAMPLE TRANSFORMATIONS
+## Subsections (15 found):
+### **Category 1: Pure Technical Scripts** (Silent Processing)
+### **Category 2: Analysis & Validation Scripts** (Structured Output)
+### **Category 3: Interactive Scripts** (Special Handling)
+### **JSON Output Pattern** (Preferred)
+### **CSV Output Pattern** (Alternative)
+### **Status Code Pattern** (Simple)
+### **Data Processing & Communication**
+### **Error Handling & User Guidance**
+### **Phase 1: Identify Script Categories**
+### **Phase 2: Implement Structured Outputs**
+### **Phase 3: Claude Code Integration**
+### **Script Compliance**
+### **Communication Quality**
+### **Before (Direct Communication):**
+### **After (Structured Output):**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 24

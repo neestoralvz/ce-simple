@@ -6,7 +6,9 @@
 set -euo pipefail
 
 # Silent script - no user notifications (Claude Code communicates results)
-PROJECT_ROOT="/Users/nalve/ce-simple"
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 ROADMAP_FILE="$PROJECT_ROOT/context/roadmap/ROADMAP_REGISTRY.md"
 
 # Colors

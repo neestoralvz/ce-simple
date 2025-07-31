@@ -1,0 +1,24 @@
+# Structure Analysis: architecture/templates/claude-core-protocol/core-command-template.md (88 lines)
+## Main Sections (17 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## CORE COMMAND STRUCTURE
+## 📋 PROTOCOLO HÍBRIDO DE ORQUESTACIÓN INTELIGENTE
+## 🔄 MATRIZ DE DECISIÓN INTELIGENTE
+## 🔧 CONTINUACIÓN PROTOCOLO SISTEMÁTICO
+## 🏁 FINALIZACIÓN SISTEMÁTICA
+## COMMAND ARCHITECTURE ANALYSIS
+## INTEGRATION REFERENCES
+## Subsections (8 found):
+### **File Location**: `.claude/commands/core.md`
+### **Command Template Implementation**
+### **Orchestration Level (Steps 1-6)**
+### **Execution Level (Steps 7-9)**
+### **Systematic Continuation (Steps 10-13)**
+### **Systematic Finalization (Steps 14-16)**
+### ← claude-core-protocol-implementation-template.md
+### ←→ claude-core-protocol/implementation-framework.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 18

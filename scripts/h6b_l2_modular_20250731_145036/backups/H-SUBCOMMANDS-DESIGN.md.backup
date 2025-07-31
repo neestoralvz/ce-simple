@@ -1,0 +1,44 @@
+# HANDOFF: Diseño de 6 Subcomandos Especializados Autocontenidos - Hub
+
+**31/07/2025 CDMX** | L2-MODULAR extraction hub with specialized modules
+
+## AUTORIDAD SUPREMA
+@context/architecture/core/truth-source.md → H-SUBCOMMANDS-DESIGN.md implements specialized functionality per user vision
+
+## PRINCIPIO FUNDAMENTAL
+## COMPONENT MODULES
+
+### **OBJETIVO ESPECÍFICO**
+- **Module**: → @context/H-SUBCOMMANDS-DESIGN/objetivo-especfico.md
+- **Authority**: Specialized functionality per hub authority
+
+### **ESTADO ACTUAL**
+- **Module**: → @context/H-SUBCOMMANDS-DESIGN/estado-actual.md
+- **Authority**: Specialized functionality per hub authority
+
+### **TAREAS ESPECÍFICAS**
+- **Module**: → @context/H-SUBCOMMANDS-DESIGN/tareas-especficas.md
+- **Authority**: Specialized functionality per hub authority
+
+### **1. Arquitectura de Subcomandos Propuesta**
+- **Module**: → @context/H-SUBCOMMANDS-DESIGN/1-arquitectura-de-subcomandos-propuesta.md
+- **Authority**: Specialized functionality per hub authority
+
+### **2. Context Embedding Strategy**
+- **Module**: → @context/H-SUBCOMMANDS-DESIGN/2-context-embedding-strategy.md
+- **Authority**: Specialized functionality per hub authority
+
+### **3. Script Integration Design**
+- **Module**: → @context/H-SUBCOMMANDS-DESIGN/3-script-integration-design.md
+- **Authority**: Specialized functionality per hub authority
+
+## INTEGRATION REFERENCES
+
+### ←→ @context/architecture/core/methodology.md
+**Connection**: Component integration per systematic methodology
+**Protocol**: All components serve user authority supremacy through specialized modules
+
+---
+
+**COMPONENT DECLARATION**: This hub preserves complete functionality through specialized modules while achieving size compliance per L2-MODULAR extraction protocol.
+**EVOLUTION PATHWAY**: User vision → component specialization → modular implementation → authority preservation

@@ -1,0 +1,37 @@
+{
+  "active_locks": {
+    "test_operation_98508": {
+      "operation": "test_operation",
+      "priority": "normal",
+      "pid": 98508,
+      "acquired_at": "2025-07-31T20:57:54.fZ",
+      "lock_id": "test_operation_98508"
+    },
+    "roadmap_update_99579": {
+      "operation": "roadmap_update",
+      "priority": "normal",
+      "pid": 99579,
+      "acquired_at": "2025-07-31T20:58:40.fZ",
+      "lock_id": "roadmap_update_99579"
+    },
+    "roadmap_update_38846": {
+      "operation": "roadmap_update",
+      "priority": "normal",
+      "pid": 38846,
+      "acquired_at": "2025-07-31T21:19:56.fZ",
+      "lock_id": "roadmap_update_38846"
+    }
+  },
+  "lock_history": [],
+  "deadlock_prevention": {
+    "max_wait_time": 300,
+    "stale_lock_timeout": 600,
+    "priority_override": true
+  },
+  "statistics": {
+    "locks_acquired": 3,
+    "locks_released": 0,
+    "deadlocks_prevented": 0,
+    "stale_locks_cleaned": 0
+  }
+}

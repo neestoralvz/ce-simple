@@ -1,0 +1,167 @@
+#!/bin/bash
+
+# Post-Conversation Coordinated Hook
+# Executes after Claude conversations with intelligent coordination
+
+set -euo pipefail
+
+# Configuration
+PROJECT_ROOT="/Users/nalve/ce-simple"
+LOG_FILE="$PROJECT_ROOT/.claude/hooks/logs/post-conversation.log"
+COORDINATION_HUB="$PROJECT_ROOT/scripts/automation/coordination-hub.sh"
+LOCK_MANAGER="$PROJECT_ROOT/scripts/automation/smart-lock-manager.sh"
+ROADMAP_UPDATE="$PROJECT_ROOT/scripts/integration/roadmap-update.sh"
+
+# Logging functions
+log_info() { echo "[$(date '+%H:%M:%S')] 🎯 $1" | tee -a "$LOG_FILE"; }
+log_success() { echo "[$(date '+%H:%M:%S')] ✅ $1" | tee -a "$LOG_FILE"; }
+log_warning() { echo "[$(date '+%H:%M:%S')] ⚠️ $1" | tee -a "$LOG_FILE"; }
+log_error() { echo "[$(date '+%H:%M:%S')] ❌ $1" | tee -a "$LOG_FILE"; }
+
+# Ensure log directory exists
+mkdir -p "$(dirname "$LOG_FILE")"
+
+log_info "Post-conversation hook starting (coordinated mode)"
+
+# Get conversation context
+CONVERSATION_ID="${CLAUDE_CONVERSATION_ID:-$(date +%s)}"
+CONVERSATION_SUMMARY="${CLAUDE_CONVERSATION_SUMMARY:-'Conversation completed'}"
+FILES_MODIFIED="${CLAUDE_FILES_MODIFIED:-0}"
+
+log_info "Conversation ID: $CONVERSATION_ID, Files modified: $FILES_MODIFIED"
+
+# Coordinate with automation system
+coordinate_post_conversation() {
+    if [[ -x "$COORDINATION_HUB" ]]; then
+        log_info "Coordinating post-conversation activities..."
+        
+        # Queue conversation completion event
+        "$COORDINATION_HUB" event "claude_conversation" "$CONVERSATION_ID" "normal"
+        
+        # If files were modified, trigger coordinated updates
+        if [[ "$FILES_MODIFIED" -gt 0 ]]; then
+            log_info "Files were modified, triggering coordinated roadmap update..."
+            
+            # Wait briefly to avoid conflicts with git hooks
+            sleep 3
+            
+            # Trigger coordinated roadmap update
+            if [[ -x "$ROADMAP_UPDATE" ]]; then
+                "$ROADMAP_UPDATE" --coordinated &
+                log_success "Coordinated roadmap update triggered"
+            fi
+        fi
+        
+        return 0
+    else
+        log_warning "Coordination hub not available, running in standalone mode"
+        return 1
+    fi
+}
+
+# Enhanced progress detection
+detect_progress_indicators() {
+    local indicators_found=0
+    
+    # Check for handoff completion indicators
+    if git log --oneline --since="10 minutes ago" | grep -qiE "(HANDOFF.*COMPLETED|✅.*COMPLETED|SUCCESS|FINISHED)"; then
+        log_info "Handoff completion detected in recent commits"
+        ((indicators_found++))
+    fi
+    
+    # Check for work item status changes
+    if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -q "work-items-registry.md"; then
+        log_info "Work items registry modified"
+        ((indicators_found++)) 
+    fi
+    
+    # Check for roadmap modifications
+    if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -q "ROADMAP_REGISTRY.md"; then
+        log_info "Roadmap registry modified"
+        ((indicators_found++))
+    fi
+    
+    echo "$indicators_found"
+}
+
+# Auto-commit conversation results with coordination
+auto_commit_with_coordination() {
+    local commit_needed=false
+    
+    # Check if there are uncommitted changes
+    if ! git diff --quiet || ! git diff --staged --quiet; then
+        commit_needed=true
+    fi
+    
+    if [[ "$commit_needed" == "true" ]]; then
+        log_info "Auto-committing conversation results with coordination..."
+        
+        # Acquire coordination lock for git operations
+        if [[ -x "$LOCK_MANAGER" ]] && "$LOCK_MANAGER" acquire "git_commit" "normal" 30; then
+            
+            # Stage relevant changes
+            git add -A context/ .claude/ scripts/ CLAUDE.md 2>/dev/null || true
+            
+            # Create coordinated commit
+            local commit_msg="Claude conversation results: $CONVERSATION_SUMMARY
+
+🤖 Generated with Claude Code
+Files modified: $FILES_MODIFIED
+Conversation ID: $CONVERSATION_ID
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+            
+            if git commit -m "$commit_msg" 2>/dev/null; then
+                log_success "Conversation results committed with coordination"
+                
+                # Release lock
+                "$LOCK_MANAGER" release "git_commit"
+                
+                return 0
+            else
+                log_warning "No changes to commit"
+                "$LOCK_MANAGER" release "git_commit"
+                return 1
+            fi
+        else
+            log_warning "Failed to acquire git commit lock, skipping auto-commit"
+            return 1
+        fi
+    else
+        log_info "No uncommitted changes detected"
+        return 0
+    fi
+}
+
+# Main execution with coordination
+main() {
+    local progress_indicators
+    progress_indicators=$(detect_progress_indicators)
+    
+    log_info "Progress indicators detected: $progress_indicators"
+    
+    # Coordinate with automation system
+    if coordinate_post_conversation; then
+        log_success "Post-conversation coordination completed"
+    fi
+    
+    # Auto-commit if needed
+    if auto_commit_with_coordination; then
+        log_success "Auto-commit with coordination completed"
+    fi
+    
+    # Process coordination events in background
+    if [[ -x "$COORDINATION_HUB" ]]; then
+        ("$COORDINATION_HUB" process 3) &
+        log_info "Background coordination processing started"
+    fi
+    
+    log_success "Post-conversation coordinated hook completed"
+    return 0
+}
+
+# Graceful error handling
+trap 'log_error "Post-conversation hook failed"; exit 1' ERR
+
+# Execute main function
+main "$@"

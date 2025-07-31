@@ -4,9 +4,13 @@
 
 set -e  # Exit on any error
 
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
 # Configuration
-BACKUP_DIR="/Users/nalve/ce-simple/context/archive/emergency_backups_$(date +%Y%m%d_%H%M%S)"
-WORKING_DIR="/Users/nalve/ce-simple/context"
+BACKUP_DIR="$PROJECT_ROOT/context/archive/emergency_backups_$(date +%Y%m%d_%H%M%S)"
+WORKING_DIR="$PROJECT_ROOT/context"
 LOG_FILE="$BACKUP_DIR/backup_log.txt"
 
 # Colors for output

@@ -1,0 +1,17 @@
+# Structure Analysis: roadmap/backups/dashboard_20250731_145840/work-items-registry.md (98 lines)
+## Main Sections (10 found):
+## AUTORIDAD SUPREMA
+## 🚀 COMPLETE WORK ITEMS TRACKING WITH SCP CLASSIFICATION
+## WORK ITEMS ANALYSIS
+## Subsections (7 found):
+### Status Distribution
+### SCP Profile Distribution
+### Most Common Profiles
+### Resource Planning by SCP
+### Parallel Execution Opportunities
+### Critical Path Analysis
+### Time Estimation Summary
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 11

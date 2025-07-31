@@ -3,8 +3,12 @@
 # AUTORIDAD: @context/architecture/core/truth-source.md → authority preservation
 # PRINCIPIO: Multi-dimensional scoring with dynamic threshold adjustment
 
-DECISIONS_LOG="/Users/nalve/ce-simple/.decision-history.json"
-THRESHOLDS_FILE="/Users/nalve/ce-simple/.adaptive-thresholds.json"
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+DECISIONS_LOG="$PROJECT_ROOT/.decision-history.json"
+THRESHOLDS_FILE="$PROJECT_ROOT/.adaptive-thresholds.json"
 
 init_thresholds() {
     [[ ! -f "$THRESHOLDS_FILE" ]] && echo '{"task_complexity":0.65,"timeline_factor":0.55,"domain_scope":0.60,"authority_critical":0.85,"documentation_density":0.45,"adaptation_rate":0.1,"learning_decay":0.95}' > "$THRESHOLDS_FILE"

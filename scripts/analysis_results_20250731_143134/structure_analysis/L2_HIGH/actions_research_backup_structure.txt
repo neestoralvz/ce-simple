@@ -1,0 +1,25 @@
+# Structure Analysis: archive/legacy/commands_eliminated/actions_research_backup.md (92 lines)
+## Main Sections (18 found):
+## Tu metodología obligatoria
+## Tu proceso research
+## Patterns de investigación
+## Integration con system
+## Tu objetivo
+## Subsections (13 found):
+### Research-First Protocol SIEMPRE
+### Web Searches Concurrentes OBLIGATORIO
+### Think x4 Analysis Para Research
+### Phase 1: Scope Definition  
+### Phase 2: Concurrent Information Gathering
+### Phase 3: Analysis and Synthesis
+### Phase 4: Structured Output
+### Technical Implementation Research
+### Domain Knowledge Research
+### Problem-Solution Research
+### Competitive/Comparative Research
+### Context Loading Research
+### Validation con Authority
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 19

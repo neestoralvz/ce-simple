@@ -48,7 +48,7 @@
 ### Cross-Integration
 **Daily Operations**: ←→ @context/architecture/orchestration.md (conversation orchestration)
 **Standards Compliance**: ←→ @context/architecture/standards.md (operational procedure standards)
-**Infrastructure Support**: ←→ @context/roadmap/HANDOFF_GIT_WORKFLOW_ANALYSIS.md (implementation validation)
+**Infrastructure Support**: ←→ @context/roadmap/HG-GIT-WF.md (implementation validation)
 
 ---
 

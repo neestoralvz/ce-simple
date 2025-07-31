@@ -1,0 +1,19 @@
+# Structure Analysis: architecture/ejemplos/system-architecture-examples.md (82 lines)
+## Main Sections (12 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## EJEMPLO 4: ZERO DUPLICATION ENFORCEMENT
+## EJEMPLO 6: L2-MODULAR EXTRACTION IN ACTION
+## INTEGRATION REFERENCES
+## Subsections (7 found):
+### Scenario: Creación de nuevo contenido que podría duplicar existente
+### Mechanism in Action
+### Scenario: Archivo excede 80 líneas y requiere factorización
+### Mechanism in Action
+### ← ejemplos-sistema-condicionamiento.md
+### ←→ @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+### ←→ @context/architecture/core/methodology.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 13

@@ -1,107 +1,111 @@
 #!/bin/bash
-
-# Enhanced Conversation Analyzer Module
-# Semantic pattern recognition with authority impact assessment
-# Authority: @context/architecture/claude_code/semantic-triggers/README.md integration
+# Conversation Analyzer Module - L2-MODULAR Extraction
+# Intelligent conversation analysis with optimized patterns
+# Authority: @context/architecture/core/methodology.md → L2-MODULAR compliance
 
 set -euo pipefail
 
-# Semantic Pattern Recognition - Enhanced beyond keyword matching
-analyze_conversation_semantic() {
-    local conversation="$1"
-    local context_weight=1
-    local semantic_patterns=()
-    local intent_signals=()
-    local authority_markers=()
-    
-    # Multi-dimensional semantic analysis
-    local research_patterns="(analysis|research|investigation|discovery|understanding|exploration)"
-    local implementation_patterns="(implement|develop|create|build|execute|deploy|code|fix)"
-    local architecture_patterns="(architecture|system|framework|structure|design|pattern|migration)"
-    local authority_patterns="(user.*vision|user.*authority|quote|requirement|must|should)"
-    
-    # Enhanced context-aware scoring with semantic weighting
-    local research_score=$(echo "$conversation" | grep -iE "$research_patterns" | wc -l)
-    local implementation_score=$(echo "$conversation" | grep -iE "$implementation_patterns" | wc -l)
-    local architecture_score=$(echo "$conversation" | grep -iE "$architecture_patterns" | wc -l)
-    local authority_score=$(echo "$conversation" | grep -iE "$authority_patterns" | wc -l)
-    
-    # Context preservation through thread continuity detection
-    local thread_markers=$(echo "$conversation" | grep -c -E "(continuation|follow.*up|building.*on|expanding|enhancement)" || true)
-    [[ $thread_markers -gt 0 ]] && context_weight=1.5
-    
-    # Domain complexity assessment with semantic triggers integration
-    local complexity_indicators=$(echo "$conversation" | grep -c -E "(parallel|coordination|integration|systematic|methodology)" || true)
-    local timeline_complexity=$(echo "$conversation" | grep -c -E "(phase|sequential|dependencies|prerequisite)" || true)
-    
-    # Enhanced decision matrix with semantic pattern weighting
-    local total_complexity=$((research_score + implementation_score + architecture_score))
-    local weighted_complexity=$(echo "$total_complexity * $context_weight" | bc -l 2>/dev/null || echo "$total_complexity")
-    
-    # Multi-factor classification decision
-    local decision="issue"
-    if (( $(echo "$weighted_complexity > 7" | bc -l 2>/dev/null || echo "0") )); then
-        [[ $architecture_score -gt $implementation_score ]] && decision="phase" || decision="handoff"
+# Authority Chain Validation
+validate_authority_chain() {
+    local content="$1"
+    # Check for authority patterns in conversation
+    if echo "$content" | grep -qi "@context\|CLAUDE\.md\|vision\|authority"; then
+        return 0  # Authority chain detected
     fi
-    
-    # Authority impact assessment
-    local authority_impact="system"
-    [[ $authority_score -gt 2 ]] && authority_impact="user"
-    
-    # Emergency detection with enhanced patterns
-    echo "$conversation" | grep -qiE "(critical|urgent|emergency|blocking|failure|broken)" && decision="emergency"
-    
-    echo "$decision:$research_score:$implementation_score:$architecture_score:$authority_impact:${context_weight}"
+    return 1  # No authority chain
 }
 
-# User Intent Classification - Research/Implementation/Architecture
-classify_user_intent() {
-    local conversation="$1"
-    local research_weight=$(echo "$conversation" | grep -icE "(analyze|understand|research|investigate|discover|explore)")
-    local implementation_weight=$(echo "$conversation" | grep -icE "(implement|build|create|develop|fix|deploy)")
-    local architecture_weight=$(echo "$conversation" | grep -icE "(architecture|design|structure|framework|system)")
+# Optimized regex patterns for improved accuracy  
+declare -A PATTERNS=(
+    ["tasks"]="(implementar|crear|desarrollar|build|create|implement|fix|update|add|remove|modify|refactor|design|analyze|optimize)"
+    ["domains"]="(frontend|backend|database|api|ui|ux|system|architecture|security|infrastructure|analytics|monitoring)"
+    ["timeline"]="(days|weeks|months|phase|stages|sequential|parallel|sprint|iteration)"
+    ["quick"]="(quick|simple|small|minor|fast|immediate|urgent)"
+    ["dependencies"]="(depends|requires|after|before|blocked|prerequisite|conditional|linked)"
+    ["methodology"]="(framework|methodology|systematic|architecture|migration|transformation|pattern|strategy)"
+    ["critical"]="(critical|urgent|emergency|blocking|error|failure|broken|crash)"
+    ["authority"]="(user|authority|vision|supremacy|@context|CLAUDE\.md)"
+)
+
+# Enhanced complexity analysis with optimized patterns
+analyze_complexity() {
+    local conversation_context="$1"
+    local task_count=0 domain_count=0 timeline_days=0
+    local has_dependencies=false needs_methodology=false has_authority=false
     
-    # Determine primary intent based on weighted analysis
-    if [[ $architecture_weight -gt $implementation_weight ]] && [[ $architecture_weight -gt $research_weight ]]; then
-        echo "architecture:$architecture_weight:$implementation_weight:$research_weight"
-    elif [[ $implementation_weight -gt $research_weight ]]; then
-        echo "implementation:$implementation_weight:$architecture_weight:$research_weight"
+    # Enhanced pattern matching with case-insensitive grep
+    task_count=$(echo "$conversation_context" | grep -iEo "${PATTERNS[tasks]}" | wc -l || echo 0)
+    domain_count=$(echo "$conversation_context" | grep -iEo "${PATTERNS[domains]}" | wc -l || echo 0)
+    
+    # Timeline detection with improved logic
+    if echo "$conversation_context" | grep -iEq "${PATTERNS[timeline]}"; then
+        timeline_days=3
+    elif echo "$conversation_context" | grep -iEq "${PATTERNS[quick]}"; then
+        timeline_days=1
     else
-        echo "research:$research_weight:$implementation_weight:$architecture_weight"
-    fi
-}
-
-# Authority Impact Assessment - User vs System Authority
-assess_authority_impact() {
-    local conversation="$1"
-    local user_authority_signals=$(echo "$conversation" | grep -icE "(user.*vision|user.*authority|quote.*user|requirement|mandate)")
-    local system_authority_signals=$(echo "$conversation" | grep -icE "(system.*standard|technical.*requirement|compliance|framework)")
-    local user_voice_density=$(echo "$conversation" | grep -co '"[^"]*"' || echo "0")
-    
-    # Enhanced authority classification with user voice fidelity
-    local authority_classification="system"
-    local authority_strength="medium"
-    
-    if [[ $user_authority_signals -gt 2 ]] || [[ $user_voice_density -gt 1 ]]; then
-        authority_classification="user"
-        [[ $user_voice_density -gt 3 ]] && authority_strength="high"
+        timeline_days=2
     fi
     
-    echo "$authority_classification:$authority_strength:$user_authority_signals:$user_voice_density"
+    # Feature flags detection
+    echo "$conversation_context" | grep -iEq "${PATTERNS[dependencies]}" && has_dependencies=true
+    echo "$conversation_context" | grep -iEq "${PATTERNS[methodology]}" && needs_methodology=true
+    validate_authority_chain "$conversation_context" && has_authority=true
+    
+    # Enhanced decision logic with authority consideration
+    local decision="issue"
+    if [[ $task_count -gt 5 ]] || [[ $domain_count -gt 2 ]] || [[ $timeline_days -gt 2 ]] || [[ "$needs_methodology" == "true" ]]; then
+        if echo "$conversation_context" | grep -iEq "(system|architecture|migration|transformation|framework)"; then
+            decision="phase"
+        else
+            decision="handoff"
+        fi
+    fi
+    
+    # Critical priority override
+    echo "$conversation_context" | grep -iEq "${PATTERNS[critical]}" && decision="emergency"
+    
+    # Authority-aware output format
+    echo "$decision:$task_count:$domain_count:$timeline_days:$has_dependencies:$needs_methodology:$has_authority"
 }
 
-# Semantic Triggers Framework Integration
-extract_semantic_patterns() {
+# Enhanced user quote extraction with improved patterns
+extract_user_quotes() {
     local conversation="$1"
-    # Integration with @context/architecture/claude_code/semantic-triggers/README.md patterns
-    local semantic_matches=()
-    
-    # Match against 15 semantic patterns from framework
-    echo "$conversation" | grep -qiE "(research|investigation|analysis)" && semantic_matches+=("research_investigation")
-    echo "$conversation" | grep -qiE "(documentation|template|creation)" && semantic_matches+=("documentation_creation")
-    echo "$conversation" | grep -qiE "(architecture|system.*change)" && semantic_matches+=("architecture_system_change")
-    echo "$conversation" | grep -qiE "(development|implementation)" && semantic_matches+=("development_implementation")
-    echo "$conversation" | grep -qiE "(workflow|command.*creation)" && semantic_matches+=("workflow_command_creation")
-    
-    printf '%s\n' "${semantic_matches[@]}"
+    # Multi-pattern quote extraction with fallback
+    {
+        echo "$conversation" | grep -oE '"[^"]{10,100}"' | head -2
+        echo "$conversation" | grep -oE "'[^']{10,100}'" | head -1  
+        echo "$conversation" | grep -oE "> [^>]{10,80}" | head -1
+    } | sed 's/[">'\'']//g' | head -3 | tr '\n' ' ' | sed 's/^ *//' | cut -c1-150
 }
+
+# Context analysis with authority validation
+analyze_conversation_context() {
+    local conversation="${1:-$(cat)}"
+    local context_type="general"
+    local complexity_score=1
+    local domain_count=1
+    local timeline_estimate=1
+    
+    # Enhanced context classification
+    if echo "$conversation" | grep -iEq "${PATTERNS[methodology]}"; then
+        context_type="methodology"
+        complexity_score=$((complexity_score + 3))
+    elif echo "$conversation" | grep -iEq "${PATTERNS[authority]}"; then
+        context_type="authority"
+        complexity_score=$((complexity_score + 2))
+    fi
+    
+    # Calculate metrics from patterns
+    local tasks=$(echo "$conversation" | grep -iEo "${PATTERNS[tasks]}" | wc -l)
+    local domains=$(echo "$conversation" | grep -iEo "${PATTERNS[domains]}" | wc -l)
+    
+    complexity_score=$((complexity_score + tasks + domains))
+    domain_count=$((domains > 0 ? domains : 1))
+    timeline_estimate=$((tasks > 3 ? 3 : tasks > 0 ? 2 : 1))
+    
+    echo "$context_type:$complexity_score:$domain_count:$timeline_estimate"
+}
+
+# Export functions for external usage
+export -f analyze_complexity extract_user_quotes analyze_conversation_context validate_authority_chain

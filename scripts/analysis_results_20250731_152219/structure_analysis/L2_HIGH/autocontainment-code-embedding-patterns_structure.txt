@@ -1,0 +1,26 @@
+# Structure Analysis: architecture/patterns/autocontainment-code-embedding-patterns.md (100 lines)
+## Main Sections (19 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## FUNCTIONALITY-PRESERVING EMBEDDING PROTOCOL
+## SUCCESSFUL EMBEDDING EXAMPLES
+## EMBEDDING SUCCESS FACTORS
+## ANTI-PATTERNS TO AVOID
+## INTEGRATION REFERENCES
+## Subsections (12 found):
+### **Pattern: Script Logic Structure Preservation**
+### **Pattern: Environment Context Translation**
+### **Pattern: Dependency Chain Internalization**
+### **conversation-workspace.sh → /core-workspace**
+### **context-extract.sh → /core-finalize**  
+### **quality-gate.sh → /core-validate**
+### **Size Threshold Analysis**
+### **Complexity Management**
+### **Quality Preservation Protocol**
+### **❌ Logic Fragmentation**
+### **❌ Context Loss**
+### **❌ Dependency Assumptions**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 20

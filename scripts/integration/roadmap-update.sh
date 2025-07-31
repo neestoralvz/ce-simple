@@ -9,15 +9,30 @@ set -euo pipefail
 
 # Configuration
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="/Users/nalve/ce-simple"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 ROADMAP_FILE="$PROJECT_ROOT/context/roadmap/ROADMAP_REGISTRY.md"
+DASHBOARD_DIR="$PROJECT_ROOT/context/roadmap/dashboard"
+WORK_ITEMS_FILE="$DASHBOARD_DIR/work-items-registry.md"
+CRITICAL_ISSUES_FILE="$DASHBOARD_DIR/critical-issues-registry.md"
+NEXT_ACTIONS_FILE="$DASHBOARD_DIR/next-actions-registry.md"
 TEMP_DIR=$(mktemp -d)
 trap 'rm -rf "$TEMP_DIR"' EXIT
 
 # Enhanced configuration
-SCRIPT_VERSION="2.0"
+SCRIPT_VERSION="2.1"
 GITHUB_RATE_LIMIT_DELAY=1
 MAX_RETRIES=3
+
+# Coordination system integration
+COORDINATION_HUB="$PROJECT_ROOT/scripts/automation/coordination-hub.sh"
+LOCK_MANAGER="$PROJECT_ROOT/scripts/automation/smart-lock-manager.sh"
+COORDINATED_MODE=false
+
+# Check for coordinated mode
+if [[ "${1:-}" == "--coordinated" ]]; then
+    COORDINATED_MODE=true
+    shift
+fi
 
 # Colors for output
 RED='\033[0;31m'
@@ -168,6 +183,26 @@ backup_roadmap() {
     log_info "Backup created: $(basename "$backup_file")"
 }
 
+# Backup dashboard files before modifications
+backup_dashboard_files() {
+    local timestamp=$(date +%Y%m%d_%H%M%S)
+    local backup_dir="$PROJECT_ROOT/context/roadmap/backups/dashboard_$timestamp"
+    mkdir -p "$backup_dir"
+    
+    if [[ -f "$WORK_ITEMS_FILE" ]]; then
+        cp "$WORK_ITEMS_FILE" "$backup_dir/"
+        log_info "Work items backup created"
+    fi
+    if [[ -f "$CRITICAL_ISSUES_FILE" ]]; then
+        cp "$CRITICAL_ISSUES_FILE" "$backup_dir/"
+        log_info "Critical issues backup created"
+    fi
+    if [[ -f "$NEXT_ACTIONS_FILE" ]]; then
+        cp "$NEXT_ACTIONS_FILE" "$backup_dir/"
+        log_info "Next actions backup created"
+    fi
+}
+
 # Update work item progress in roadmap
 update_work_item_progress() {
     local roadmap_file="$1"
@@ -272,6 +307,107 @@ update_dependency_states() {
     [[ ${#changes[@]} -gt 0 ]] && printf '%s\n' "${changes[@]}"
 }
 
+# Update work items dashboard file
+update_work_items_dashboard() {
+    local temp_file="$TEMP_DIR/work_items_temp.md"
+    local changes=()
+    
+    if [[ ! -f "$WORK_ITEMS_FILE" ]]; then
+        log_warning "Work items file not found: $WORK_ITEMS_FILE"
+        return
+    fi
+    
+    # Get current violation metrics for P0B progress
+    local violation_data=$(get_current_violations_silent)
+    local total_violations=$(echo "$violation_data" | cut -d' ' -f1)
+    local p0b_progress=$(calculate_p0b_progress "$total_violations")
+    
+    # Update P0B-CLEANUP progress in work items dashboard
+    while IFS= read -r line; do
+        if [[ $line =~ \|\s*\*\*🔄P0B-CLEANUP\*\*.*\|\s*🔄\s*([0-9]+)%\s*IN\s*PROGRESS ]]; then
+            local old_progress="${BASH_REMATCH[1]}"
+            if [[ "$old_progress" != "$p0b_progress" ]]; then
+                line=$(echo "$line" | sed "s/🔄 ${old_progress}% IN PROGRESS/🔄 ${p0b_progress}% IN PROGRESS/")
+                changes+=("Work Items Dashboard: P0B-CLEANUP progress updated: ${old_progress}% → ${p0b_progress}%")
+            fi
+        fi
+        echo "$line" >> "$temp_file"
+    done < "$WORK_ITEMS_FILE"
+    
+    mv "$temp_file" "$WORK_ITEMS_FILE"
+    [[ ${#changes[@]} -gt 0 ]] && printf '%s\n' "${changes[@]}"
+}
+
+# Update critical issues dashboard file
+update_critical_issues_dashboard() {
+    local temp_file="$TEMP_DIR/critical_issues_temp.md"
+    local github_data="$1"
+    local changes=()
+    
+    if [[ ! -f "$CRITICAL_ISSUES_FILE" ]]; then
+        log_warning "Critical issues file not found: $CRITICAL_ISSUES_FILE"
+        return
+    fi
+    
+    if [[ ! -f "$github_data" ]] || [[ "$(cat "$github_data")" == "[]" ]]; then
+        log_warning "No GitHub data available for critical issues dashboard"
+        cp "$CRITICAL_ISSUES_FILE" "$temp_file"
+    else
+        # Update GitHub issues status in critical issues dashboard
+        while IFS= read -r line; do
+            if [[ $line =~ \|\s*\*\*#([0-9]+)\*\*.*\|\s*(🟡\s*OPEN|✅\s*CLOSED) ]]; then
+                local issue_number="${BASH_REMATCH[1]}"
+                local current_status="${BASH_REMATCH[2]}"
+                local github_state=$(jq -r ".[] | select(.number==$issue_number) | .state" "$github_data" 2>/dev/null || echo "null")
+                
+                if [[ "$github_state" == "CLOSED" && "$current_status" =~ "OPEN" ]]; then
+                    line=$(echo "$line" | sed 's/🟡 OPEN/✅ CLOSED/')
+                    changes+=("Critical Issues Dashboard: Issue #$issue_number closed")
+                elif [[ "$github_state" == "OPEN" && "$current_status" =~ "CLOSED" ]]; then
+                    line=$(echo "$line" | sed 's/✅ CLOSED/🟡 OPEN/')
+                    changes+=("Critical Issues Dashboard: Issue #$issue_number reopened")
+                fi
+            fi
+            echo "$line" >> "$temp_file"
+        done < "$CRITICAL_ISSUES_FILE"
+    fi
+    
+    mv "$temp_file" "$CRITICAL_ISSUES_FILE"
+    [[ ${#changes[@]} -gt 0 ]] && printf '%s\n' "${changes[@]}"
+}
+
+# Update next actions dashboard file
+update_next_actions_dashboard() {
+    local temp_file="$TEMP_DIR/next_actions_temp.md"
+    local changes=()
+    
+    if [[ ! -f "$NEXT_ACTIONS_FILE" ]]; then
+        log_warning "Next actions file not found: $NEXT_ACTIONS_FILE"
+        return
+    fi
+    
+    # Get current violation metrics
+    local violation_data=$(get_current_violations_silent)
+    local total_violations=$(echo "$violation_data" | cut -d' ' -f1)
+    local p0b_progress=$(calculate_p0b_progress "$total_violations")
+    
+    # Update P0B progress information in next actions
+    while IFS= read -r line; do
+        # Update P0B progress percentage references
+        if [[ $line =~ "Status.*([0-9]+)%.*completion.*path" ]]; then
+            local old_progress="${BASH_REMATCH[1]}"
+            if [[ "$old_progress" != "$p0b_progress" ]]; then
+                line=$(echo "$line" | sed "s/${old_progress}%/${p0b_progress}%/")
+                changes+=("Next Actions Dashboard: P0B progress updated: ${old_progress}% → ${p0b_progress}%")
+            fi
+        fi
+        echo "$line" >> "$temp_file"
+    done < "$NEXT_ACTIONS_FILE"
+    
+    mv "$temp_file" "$NEXT_ACTIONS_FILE"
+    [[ ${#changes[@]} -gt 0 ]] && printf '%s\n' "${changes[@]}"
+}
+
 # Generate comprehensive change report
 generate_change_report() {
     local all_changes=("$@")
@@ -321,8 +457,14 @@ EOF
     
     cat >> "$report_file" << EOF
 
+## 📋 Dashboard Files Status
+- **Main Dashboard**: ROADMAP_REGISTRY.md updated
+- **Work Items**: context/roadmap/dashboard/work-items-registry.md synchronized
+- **Critical Issues**: context/roadmap/dashboard/critical-issues-registry.md synchronized  
+- **Next Actions**: context/roadmap/dashboard/next-actions-registry.md synchronized
+
 ---
-**Dashboard Status**: Updated and synchronized
+**Dashboard Status**: Main + Modular dashboards updated and synchronized
 **Next Update**: Run \`roadmap-update\` anytime for fresh status
 EOF
     
@@ -336,9 +478,48 @@ EOF
     cp "$report_file" "$PROJECT_ROOT/context/roadmap/last_update_report.md"
 }
 
+# Coordination functions
+acquire_coordination_lock() {
+    if [[ "$COORDINATED_MODE" == "true" && -x "$LOCK_MANAGER" ]]; then
+        log_info "Acquiring coordination lock..."
+        if "$LOCK_MANAGER" acquire "roadmap_update" "normal" 60; then
+            log_success "Coordination lock acquired"
+            return 0
+        else
+            log_error "Failed to acquire coordination lock"
+            return 1
+        fi
+    fi
+    return 0
+}
+
+release_coordination_lock() {
+    if [[ "$COORDINATED_MODE" == "true" && -x "$LOCK_MANAGER" ]]; then
+        log_info "Releasing coordination lock..."
+        "$LOCK_MANAGER" release "roadmap_update"
+    fi
+}
+
+# Enhanced cleanup with coordination
+cleanup_with_coordination() {
+    release_coordination_lock
+    rm -rf "$TEMP_DIR"
+}
+
 # Main update function
 main() {
-    log_info "Starting roadmap update..."
+    log_info "Starting roadmap update... (coordinated: $COORDINATED_MODE)"
+    
+    # Setup coordination-aware cleanup
+    if [[ "$COORDINATED_MODE" == "true" ]]; then
+        trap cleanup_with_coordination EXIT
+    fi
+    
+    # Acquire coordination lock if in coordinated mode
+    if ! acquire_coordination_lock; then
+        log_error "Cannot proceed without coordination lock"
+        exit 1
+    fi
     
     # Verify roadmap file exists
     if [[ ! -f "$ROADMAP_FILE" ]]; then
@@ -348,6 +529,7 @@ main() {
     
     # Create backup
     backup_roadmap
+    backup_dashboard_files
     
     # Collect all changes
     local all_changes=()
@@ -369,6 +551,17 @@ main() {
     local dependency_changes_output=$(update_dependency_states "$ROADMAP_FILE" 2>/dev/null || true)
     [[ -n "$dependency_changes_output" ]] && all_changes+=("$dependency_changes_output")
     
+    # Update modular dashboard files
+    log_info "Updating modular dashboard files..."
+    local work_items_changes_output=$(update_work_items_dashboard 2>/dev/null || true)
+    [[ -n "$work_items_changes_output" ]] && all_changes+=("$work_items_changes_output")
+    
+    local critical_issues_changes_output=$(update_critical_issues_dashboard "$github_data" 2>/dev/null || true)
+    [[ -n "$critical_issues_changes_output" ]] && all_changes+=("$critical_issues_changes_output")
+    
+    local next_actions_changes_output=$(update_next_actions_dashboard 2>/dev/null || true)
+    [[ -n "$next_actions_changes_output" ]] && all_changes+=("$next_actions_changes_output")
+    
     # Generate and display report
     generate_change_report "${all_changes[@]}"
 }
@@ -383,14 +576,18 @@ USAGE:
     $0 --help          Show this help message
 
 DESCRIPTION:
-    Automatically synchronizes ROADMAP_REGISTRY.md with:
+    Automatically synchronizes ROADMAP_REGISTRY.md and modular dashboard with:
     - GitHub issue states (open/closed)
     - File violation metrics from analyze_violations.sh
     - Work item progress calculations
     - Dependency state updates
+    - Modular dashboard files synchronization
 
 OUTPUT:
     - Updated ROADMAP_REGISTRY.md
+    - Updated context/roadmap/dashboard/work-items-registry.md
+    - Updated context/roadmap/dashboard/critical-issues-registry.md
+    - Updated context/roadmap/dashboard/next-actions-registry.md
     - Backup in context/roadmap/backups/
     - Update report in context/roadmap/last_update_report.md
 

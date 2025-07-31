@@ -1,0 +1,29 @@
+# Structure Analysis: architecture/standards/migration-guide-reference-format.md (131 lines)
+## Main Sections (22 found):
+## AUTORIDAD SUPREMA
+## MIGRATION OBJECTIVE
+## MIGRATION ANALYSIS
+## SYSTEMATIC MIGRATION PROTOCOL
+## MIGRATION EXAMPLES
+## RISK MITIGATION
+## VALIDATION CHECKLIST
+## INTEGRATION REFERENCES
+## Subsections (14 found):
+### **Files Requiring @ Preservation (Auto-Import)**
+### **Files Requiring @ Removal (Convert to References)**
+### **Phase 1: Audit & Classification**
+### **Phase 2: Reference Conversion**
+### **Phase 3: Markdown Enhancement**
+### **Phase 4: Validation & Testing**
+### **Authority Chain Conversion**
+### **Cross-Reference Conversion**
+### **Auto-Import Preservation**
+### **Functional Preservation**
+### **Rollback Capability**
+### **@ Usage Validation**
+### **Reference Validation**
+### **System Integration Validation**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 23

@@ -5,7 +5,9 @@
 set -euo pipefail
 
 # Configuration
-PROJECT_ROOT="/Users/nalve/ce-simple"
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 CONTEXT_DIR="$PROJECT_ROOT/context"
 OUTPUT_DIR="$PROJECT_ROOT/scripts/cross_reference_update_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$OUTPUT_DIR/cross_reference_log.txt"

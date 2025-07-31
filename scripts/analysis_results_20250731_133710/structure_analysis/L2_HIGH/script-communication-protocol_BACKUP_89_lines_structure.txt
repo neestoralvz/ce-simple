@@ -1,0 +1,24 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/script-communication-protocol_BACKUP_89_lines.md (89 lines)
+## Main Sections (17 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## COMMUNICATION PROTOCOL STANDARDS
+## CORRECT PATTERNS
+## IMPLEMENTATION STANDARDS
+## VALIDATION CHECKLIST
+## SCRIPT CATEGORIES
+## Subsections (10 found):
+### **SILENT SCRIPTS MANDATORY**
+### **CLAUDE CODE COMMUNICATION AUTHORITY**
+### **❌ INCORRECT (Script communicates directly):**
+### **✅ CORRECT (Script provides data, Claude communicates):**
+### **Script Design Requirements**
+### **Claude Code Integration**
+### **Script Compliance Validation**
+### **Communication Quality Validation**
+### **Silent Processing Scripts** (✅ Compliant)
+### **Interactive Scripts** (Requires Special Handling)
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 18

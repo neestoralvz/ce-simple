@@ -1,0 +1,33 @@
+[2025-07-31 15:08:54] ==========================================
+[2025-07-31 15:08:54] ROADMAP CLEANUP AUTOMATION - ACTIVE ITEMS FOCUS
+[2025-07-31 15:08:54] Authority: User request - depurar completados automatically
+[2025-07-31 15:08:54] ==========================================
+[2025-07-31 15:08:54] 🚀 Starting roadmap cleanup automation...
+[2025-07-31 15:08:54] 📦 Creating safety backup...
+[2025-07-31 15:08:54] ✅ Backed up work-items-registry.md
+[2025-07-31 15:08:54] ✅ Backed up critical-issues-registry.md
+[2025-07-31 15:08:54] ✅ Backed up next-actions-registry.md
+[2025-07-31 15:08:54] ✅ Backed up ROADMAP_REGISTRY.md
+[2025-07-31 15:08:54] 📦 Safety backup completed: /Users/nalve/ce-simple/scripts/roadmap_cleanup_20250731_150854/backups
+[2025-07-31 15:08:54] 🔍 Analyzing work items for completed entries...
+[2025-07-31 15:08:54] 📊 Found 24 completed items
+[2025-07-31 15:08:54] 📝 Completed items logged to: /Users/nalve/ce-simple/scripts/roadmap_cleanup_20250731_150854/completed_items_extracted.md
+[2025-07-31 15:08:54] 📁 Completed items archived to: /Users/nalve/ce-simple/context/roadmap/archive/by-completion-date/20250731_150854/
+[2025-07-31 15:08:54] 📦 Archived [2025-07-31 15:08:54] 🔍 Analyzing work items for completed entries...
+[2025-07-31 15:08:54] 📊 Found 24 completed items
+[2025-07-31 15:08:54] 📝 Completed items logged to: /Users/nalve/ce-simple/scripts/roadmap_cleanup_20250731_150854/completed_items_extracted.md
+[2025-07-31 15:08:54] 📁 Completed items archived to: /Users/nalve/ce-simple/context/roadmap/archive/by-completion-date/20250731_150854/
+24 completed items
+[2025-07-31 15:08:54] 🔄 Generating active-only work items registry...
+[2025-07-31 15:08:54] 📊 Active registry generated: 13 active items
+[2025-07-31 15:08:54] 📝 New registry created: /Users/nalve/ce-simple/scripts/roadmap_cleanup_20250731_150854/work-items-registry-active.md
+[2025-07-31 15:08:54] ✅ Active-only registry deployed to dashboard
+[2025-07-31 15:08:54] 🚨 Regenerating critical issues registry (active only)...
+[2025-07-31 15:08:54] ✅ Critical issues registry regenerated (active focus)
+[2025-07-31 15:08:54] 🎯 Regenerating next actions registry (prioritized active)...
+[2025-07-31 15:08:54] ✅ Next actions registry regenerated (prioritized focus)
+[2025-07-31 15:08:54] 📋 Updating main ROADMAP_REGISTRY with cleanup summary...
+[2025-07-31 15:08:54] 🔍 Analyzing work items for completed entries...
+[2025-07-31 15:08:54] 📊 Found 0 completed items
+[2025-07-31 15:08:54] 📝 Completed items logged to: /Users/nalve/ce-simple/scripts/roadmap_cleanup_20250731_150854/completed_items_extracted.md
+[2025-07-31 15:08:54] 📁 Completed items archived to: /Users/nalve/ce-simple/context/roadmap/archive/by-completion-date/20250731_150854/

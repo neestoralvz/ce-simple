@@ -1,0 +1,29 @@
+# Structure Analysis: architecture/mapeo-factorizacion-arquitectura.md (119 lines)
+## Main Sections (22 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## DOMAIN FACTORIZATION MAPPING
+## REFERENCE PATTERN ANALYSIS
+## FACTORIZATION EFFECTIVENESS METRICS
+## FACTORIZATION EVOLUTION PATTERNS
+## INTEGRATION PATHWAYS
+## Subsections (15 found):
+### Vision/Philosophy Domain Factorization
+### Authority/Decision Domain Factorization  
+### Technical Implementation Domain Factorization
+### Standards/Enforcement Domain Factorization
+### UX/Conversation Domain Factorization
+### Authority Chain Reference Patterns
+### Cross-Domain Reference Patterns
+### Conditional Loading Patterns
+### Information Density Optimization
+### System Coherence Measurements
+### Organic Growth Through Factorization
+### Quality Preservation Mechanisms
+### ← @context/architecture/sistema-condicionamiento-referencial.md
+### ←→ @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
+### → @context/roadmap/ROADMAP_REGISTRY.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 23

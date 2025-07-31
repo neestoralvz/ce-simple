@@ -1,0 +1,25 @@
+# Structure Analysis: roadmap/handoff-creation-template-scp.md (228 lines)
+## Main Sections (28 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## HANDOFF CREATION WORKFLOW
+## AUTORIDAD SUPREMA
+## SCP CLASSIFICATION ANALYSIS
+## [Continue with standard handoff content based on SCP strategy...]
+## SCP TEMPLATE LIBRARY
+## INTEGRATION REFERENCES
+## Subsections (20 found):
+### **PHASE 1: SCP PRE-ANALYSIS**
+### **PHASE 2: SCP COMBINATION ANALYSIS**
+### **PHASE 3: STRATEGY SELECTION**
+### **PHASE 4: HANDOFF DESIGN**
+### **Scope: S_-[CLASSIFICATION]**
+### **Coordination: C_-[CLASSIFICATION]** 
+### **Processing: P_-[CLASSIFICATION]**
+### **Combined Profile: [S_C_P_]**
+### **PHASE 5: VALIDATION & OPTIMIZATION**
+### **Quick Templates by Common Profiles**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 29

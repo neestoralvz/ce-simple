@@ -1,0 +1,90 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/auto-git-commit.sh",
+            "args": ["${CLAUDE_EDITED_FILE}", "${CLAUDE_TOOL_NAME}"],
+            "description": "Automatic git commit after file modifications",
+            "timeout": 30000,
+            "fail_on_error": false,
+            "retry_count": 2,
+            "error_handling": "continue",
+            "fallback": {
+              "command": "echo",
+              "args": ["Git commit hook failed - manual commit available via /actions:git"]
+            }
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/auto-roadmap-update.sh",
+            "args": ["${CLAUDE_CONVERSATION_ID}", "${CLAUDE_FILES_MODIFIED}"],
+            "description": "Automatic roadmap synchronization after conversation completion",
+            "timeout": 60000,
+            "fail_on_error": false,
+            "retry_count": 1,
+            "error_handling": "continue",
+            "fallback": {
+              "command": "echo",
+              "args": ["Roadmap update hook failed - manual update available via /m-roadmap"]
+            }
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/auto-validation.sh",
+            "args": ["${CLAUDE_TOOL_NAME}", "${CLAUDE_TARGET_FILE}", "${CLAUDE_OPERATION_TYPE}"],
+            "description": "Pre-operation validation and safety checks",
+            "timeout": 15000,
+            "fail_on_error": false,
+            "retry_count": 1,
+            "error_handling": "continue",
+            "fallback": {
+              "command": "echo",
+              "args": ["Validation hook failed - operation will proceed without pre-validation"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "log_level": "info",
+    "log_file": ".claude/hooks/logs/hooks-integration.log",
+    "max_execution_time": 60000,
+    "fail_on_error": false,
+    "enable_notifications": true,
+    "enable_debug": false,
+    "retry_count": 1,
+    "graceful_degradation": true,
+    "continue_on_hook_failure": true,
+    "manual_fallbacks": {
+      "git_commit": "/actions:git - Manual git operations",
+      "roadmap_update": "/m-roadmap - Manual roadmap synchronization",
+      "validation": "Operations proceed without pre-validation"
+    }
+  },
+  "monitoring": {
+    "enable_metrics": true,
+    "performance_tracking": true,
+    "success_rate_monitoring": true,
+    "error_logging": true,
+    "metrics_file": ".claude/hooks/logs/hook-metrics.json"
+  }
+}

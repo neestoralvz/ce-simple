@@ -1,0 +1,17 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/H-AUTOCONTAINMENT-VALIDATION_BACKUP_147_lines.md (147 lines)
+## Main Sections (10 found):
+## OBJETIVO ESPECÍFICO
+## ESTADO ACTUAL
+## TAREAS ESPECÍFICAS
+## ENTREGABLES ESPERADOS
+## CRITERIOS DE ÉXITO
+## SIGUIENTES HANDOFFS
+## Subsections (4 found):
+### 1. Autocontainment Validation Checklist
+### 2. Command-by-Command Validation
+### 3. Validation Testing Framework
+### 4. Compliance Remediation
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 11

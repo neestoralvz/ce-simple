@@ -5,8 +5,11 @@
 set -e  # Exit on any error
 
 # Configuration
-CONTEXT_DIR="/Users/nalve/ce-simple/context"
-OUTPUT_DIR="/Users/nalve/ce-simple/scripts/real_violations_$(date +%Y%m%d_%H%M%S)"
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+CONTEXT_DIR="$PROJECT_ROOT/context"
+OUTPUT_DIR="$PROJECT_ROOT/scripts/real_violations_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$OUTPUT_DIR/real_violations_log.txt"
 
 # Colors for output
@@ -94,11 +97,11 @@ echo -e "         ./scripts/extract_assisted.sh -s \"\$rel_path\""
 echo -e "     done"
 
 # Create validation script
-cat > "$OUTPUT_DIR/validate_progress.sh" << 'EOF'
+cat > "$OUTPUT_DIR/validate_progress.sh" << EOF
 #!/bin/bash
 # Quick validation of extraction progress
 
-CONTEXT_DIR="/Users/nalve/ce-simple/context"
+CONTEXT_DIR="$CONTEXT_DIR"
 echo "🔍 Current violation status (excluding backups):"
 find "$CONTEXT_DIR" -name "*.md" \
     -not -path "*/archive/*" \

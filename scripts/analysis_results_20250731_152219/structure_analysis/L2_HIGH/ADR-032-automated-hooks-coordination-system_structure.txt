@@ -1,0 +1,25 @@
+# Structure Analysis: architecture/adr/ADR-032-automated-hooks-coordination-system.md (160 lines)
+## Main Sections (26 found):
+## Context
+## Decision
+## Implementation Evidence
+## Consequences
+## Technical Integration
+## Success Metrics
+## References
+## Subsections (19 found):
+### Coordination Architecture Framework:
+### Integration Protocols:
+### **Successful Real-time Updates Demonstrated**:
+### **Coordination System Performance**:
+### **Hook Activation Timeline**:
+### Positive:
+### Negative:
+### Risk Mitigation:
+### **Evolution from ADR-027**:
+### **Coordination with Existing Systems**:
+### **File Architecture**:
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 27

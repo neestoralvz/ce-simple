@@ -1,0 +1,9 @@
+Backup Cascade Cleanup Log - Thu Jul 31 14:18:16 CST 2025
+Working Directory: /Users/nalve/ce-simple/context
+Dry Run Mode: false
+----------------------------------------
+Found        0 cascading backup files
+Archive files:        0
+Emergency backup dirs:        0
+Active system files:        0
+Estimated space savings: 0MB

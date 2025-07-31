@@ -1,17 +1,29 @@
 #!/bin/bash
-
-# batch_reference_updater.sh - Systematic Cross-Reference Updates
-# Authority: @context/architecture/adr/ADR-005-reference-architecture-migration-protocol.md
-# Purpose: Batch update cross-references after L2-MODULAR extraction or file reorganization
+# batch-reference-updater.sh - Enhanced automated cross-reference maintenance
+# 31/07/2025 CDMX | H6D-SCRIPTS automation framework - Priority Script #4
 
 set -euo pipefail
 
-# Silent script - no user notifications (Claude Code communicates results)
 # Configuration
+# Get script directory and project root
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-LOG_FILE="$PROJECT_ROOT/scripts/logs/batch_reference_updates_$(date +%Y%m%d_%H%M%S).log"
-BACKUP_DIR="$PROJECT_ROOT/scripts/backups/reference_updates_$(date +%Y%m%d_%H%M%S)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+CONTEXT_DIR="$PROJECT_ROOT/context"
+OUTPUT_DIR="$PROJECT_ROOT/scripts/batch_reference_$(date +%Y%m%d_%H%M%S)"
+LOG_FILE="$OUTPUT_DIR/reference_update_log.txt"
+BACKUP_DIR="$OUTPUT_DIR/backups"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo -e "${GREEN}🔗 BATCH REFERENCE UPDATER: Enhanced Cross-Reference Maintenance${NC}"
+echo "Purpose: Automated cross-reference maintenance for L2-MODULAR extractions and reorganizations"
 
 # Create necessary directories
 mkdir -p "$(dirname "$LOG_FILE")"

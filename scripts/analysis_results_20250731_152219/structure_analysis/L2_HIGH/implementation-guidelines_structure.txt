@@ -1,0 +1,29 @@
+# Structure Analysis: architecture/templates/claude-core-protocol/implementation-guidelines.md (120 lines)
+## Main Sections (24 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## IMPLEMENTATION CHECKLIST
+## CUSTOMIZATION GUIDELINES
+## SUCCESS METRICS
+## TROUBLESHOOTING GUIDE
+## INTEGRATION REFERENCES
+## Subsections (17 found):
+### **Pre-Implementation Validation**
+### **Implementation Steps**
+### **Post-Implementation Testing**
+### **Project-Specific Adaptations**
+### **Enforcement Calibration**
+### **Integration Patterns**
+### **Behavioral Indicators**
+### **Performance Indicators**
+### **Validation Metrics**
+### **Claude Not Executing /core**
+### **Shortcuts Still Happening**
+### **TodoWrite Not First Step**
+### **Inconsistent Behavior**
+### **Performance Issues**
+### ← claude-core-protocol-implementation-template.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 25

@@ -1,0 +1,22 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/claude-code-hooks-technical-architecture_BACKUP_145_lines.md (145 lines)
+## Main Sections (15 found):
+## AUTORIDAD SUPREMA
+## SISTEMA DE CONFIGURACIÓN COMPLETA
+## SCRIPTS DE PROTECCIÓN MODULAR
+## EVENTOS HOOK Y TIMING DETALLADO
+## TEMPLATE CONFIGURACIÓN HOOK
+## ARQUITECTURA SISTEMA PROTECCIÓN
+## Subsections (9 found):
+### Archivo Principal de Configuración
+### 1. root-protection.sh - Auto-reubicación Inteligente
+### 2. size-validation.sh - Enforcement Límite 80 Líneas
+### 3. standards-check.sh - Monitoreo Compliance Estándares
+### 4. authority-validation.sh - Validación Cadena Autoridad
+### Hook Configuration Template Genérico
+### Bash Script Protection Template
+### Protection System Architecture Pattern
+### Características Técnicas Clave
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 16

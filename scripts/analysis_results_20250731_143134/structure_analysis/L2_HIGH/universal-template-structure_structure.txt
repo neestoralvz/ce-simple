@@ -1,0 +1,22 @@
+# Structure Analysis: architecture/templates/universal-template-structure.md (81 lines)
+## Main Sections (18 found):
+## AUTORIDAD SUPREMA
+## UNIVERSAL TEMPLATE FRAMEWORK
+## AUTORIDAD SUPREMA
+## DO
+## DON'T
+## Context
+## Next Action
+## NEXT ACTION LOGIC PATTERNS
+## BEHAVIORAL CONSISTENCY STANDARDS
+## Subsections (9 found):
+### Basic Component Structure
+### Application Domains
+### Automatic Progression Criteria
+### Recommended Progression Criteria  
+### Language Patterns
+### Integration Standards
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 19

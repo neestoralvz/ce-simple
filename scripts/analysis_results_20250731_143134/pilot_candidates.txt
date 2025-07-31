@@ -1,0 +1,5 @@
+120 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/working_copy/L2-HIGH/llm-enforcement-principle_BACKUP_120_lines.md
+120 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/original/L2-HIGH/llm-enforcement-principle_BACKUP_120_lines.md
+120 /Users/nalve/ce-simple/context/architecture/templates/claude-core-protocol/implementation-guidelines.md
+120 /Users/nalve/ce-simple/context/architecture/core/llm-enforcement-principle.md
+119 /Users/nalve/ce-simple/context/roadmap/handoffs/h6b2-condicionamiento/README.md

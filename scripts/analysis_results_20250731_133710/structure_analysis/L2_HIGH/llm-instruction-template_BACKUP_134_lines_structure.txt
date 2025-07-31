@@ -1,0 +1,22 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/llm-instruction-template_BACKUP_134_lines.md (134 lines)
+## Main Sections (15 found):
+## AUTORIDAD SUPREMA
+## TEMPLATE UNIVERSAL PARA INSTRUCCIONES LLM
+## ENFORCEMENT REQUIREMENTS CHECKLIST
+## SPECIALIZED INSTRUCTION TYPES
+## VALIDATION TESTING FRAMEWORK
+## Subsections (10 found):
+### **HEADER ENFORCEMENT OBLIGATORIO**
+### **CORE PROTOCOL STRUCTURE**
+### **CONTINUATION PROTOCOL**
+### **PRE-PUBLICATION VALIDATION**
+### **LANGUAGE STANDARDS ENFORCEMENT**
+### **ORCHESTRATION INSTRUCTION TEMPLATE**
+### **EXECUTION INSTRUCTION TEMPLATE**
+### **ANALYSIS INSTRUCTION TEMPLATE**
+### **INSTRUCTION EFFECTIVENESS TEST**
+### **DEGRADATION PREVENTION TEST**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 16

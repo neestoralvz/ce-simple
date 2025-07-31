@@ -4,9 +4,13 @@
 
 set -e  # Exit on any error
 
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
 # Configuration
-CONTEXT_DIR="/Users/nalve/ce-simple/context"
-OUTPUT_DIR="/Users/nalve/ce-simple/scripts/analysis_results_$(date +%Y%m%d_%H%M%S)"
+CONTEXT_DIR="$PROJECT_ROOT/context"
+OUTPUT_DIR="$PROJECT_ROOT/scripts/analysis_results_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$OUTPUT_DIR/analysis_log.txt"
 
 # Colors for output

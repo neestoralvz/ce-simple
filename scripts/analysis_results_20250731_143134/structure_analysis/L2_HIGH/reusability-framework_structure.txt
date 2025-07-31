@@ -1,0 +1,30 @@
+# Structure Analysis: architecture/claude_code/automation-patterns/tri-layer-execution/reusability-framework.md (197 lines)
+## Main Sections (23 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## GENERIC TRI-LAYER TEMPLATE
+## ADAPTATION GUIDELINES
+## CUSTOMIZATION FRAMEWORK
+## COORDINATION BENEFITS
+## REPLICATION GUIDELINES
+## INTEGRATION REFERENCES
+## Subsections (15 found):
+### **Universal Tri-Layer Function**
+### **Template Function Implementations**
+### **Command Interface Adaptation**
+### **Script Orchestration Adaptation**
+### **API Integration Adaptation**
+### **Error Handling Adaptation**
+### **Domain-Specific Customization**
+### **Configuration-Driven Adaptation**
+### **Atomic Execution Reliability**
+### **Layered Abstraction with Transparency**
+### **Comprehensive State Management**
+### **Implementation Checklist**
+### **Quality Validation**
+### ← tri-layer-execution-coordination.md
+### ←→ tri-layer-execution/implementation-pattern.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 24

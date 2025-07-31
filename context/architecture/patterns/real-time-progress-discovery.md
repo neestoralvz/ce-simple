@@ -94,6 +94,13 @@ sync_github_issues() {
 - **Issue Synchronization**: Automated GitHub issues status tracking
 - **Violation Monitoring**: Continuous file size compliance tracking
 
+## CROSS-REFERENCE INTEGRATION
+
+### **Complementary Patterns**
+- **Progress Completion**: ←→ @context/architecture/patterns/progressive-threshold-completion-patterns.md (discovery audit vs completion execution)
+- **Processing Status**: ←→ @context/architecture/patterns/real-time-processing-status-integration.md (audit discovery vs execution status)
+- **Authority Preservation**: → @context/architecture/claude_code/automation-patterns/conservative-authority-processing.md
+
 ## INTEGRATION WITH EXISTING METHODOLOGY
 
 ### **Research-First Protocol Application**

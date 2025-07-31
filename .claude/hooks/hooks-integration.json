@@ -1,0 +1,87 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/auto-git-commit.sh",
+            "args": ["${CLAUDE_EDITED_FILE}", "${CLAUDE_TOOL_NAME}"],
+            "description": "Automatic git commit after file modifications",
+            "timeout": 30000,
+            "fail_on_error": false
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/auto-roadmap-update.sh",
+            "args": ["${CLAUDE_CONVERSATION_ID}", "${CLAUDE_FILES_MODIFIED}"],
+            "description": "Automatic roadmap synchronization after conversation completion",
+            "timeout": 60000,
+            "fail_on_error": false
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/hooks/auto-validation.sh",
+            "args": ["${CLAUDE_TOOL_NAME}", "${CLAUDE_TARGET_FILE}", "${CLAUDE_OPERATION_TYPE}"],
+            "description": "Pre-operation validation and safety checks",
+            "timeout": 15000,
+            "fail_on_error": false
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "log_level": "info",
+    "log_file": ".claude/hooks/logs/hooks-integration.log",
+    "max_execution_time": 60000,
+    "fail_on_error": false,
+    "enable_notifications": true,
+    "enable_debug": false,
+    "retry_count": 1,
+    "coordination_mode": true
+  },
+  "integration": {
+    "name": "H-HOOK-INTEGRATION Phase 1",
+    "version": "1.0.0",
+    "implementation_date": "2025-07-31",
+    "strategy": "Leverage existing coordination system with Claude Code hooks wrapper",
+    "fallback_mode": "graceful_degradation",
+    "manual_alternatives": {
+      "git_commit": "/actions:git command available as backup",
+      "roadmap_update": "/m-roadmap command available as backup",
+      "validation": "Manual validation commands available"
+    }
+  },
+  "success_criteria": {
+    "auto_git_commits": "Git commits happen automatically after Edit/MultiEdit/Write",
+    "auto_roadmap_updates": "Dashboard updates automatically after conversation completion",
+    "zero_manual_intervention": "Core automation requires no manual commands",
+    "graceful_degradation": "System continues working if hooks fail",
+    "fallback_mechanisms": "Manual alternatives documented and available"
+  },
+  "coordination": {
+    "coordination_hub": "./scripts/automation/coordination-hub.sh",
+    "lock_manager": "./scripts/automation/smart-lock-manager.sh", 
+    "existing_hooks": [
+      ".claude/hooks/post-edit-coordinated.hook",
+      ".claude/hooks/post-conversation-coordinated.hook"
+    ],
+    "integration_strategy": "wrapper_delegation"
+  }
+}

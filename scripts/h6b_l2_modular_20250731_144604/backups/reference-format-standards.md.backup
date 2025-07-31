@@ -1,0 +1,96 @@
+# Reference Format Standards - @ vs Reference Authority
+
+**31/07/2025 02:00 CDMX** | Complete format standards for @ vs reference distinction
+
+## AUTORIDAD SUPREMA
+context/architecture/core/truth-source.md → reference-format-standards.md implements format authority per semantic distinction
+
+## PRINCIPIO FUNDAMENTAL
+**"@ para auto-import, referencias para condicional"** - Strict semantic separation between automatic context loading and conditional/documentary references.
+
+## FORMAT AUTHORITY STANDARDS
+
+### **@ FORMAT (Auto-Import EXCLUSIVE)**
+**Usage Rule**: ONLY when content automatically loads into conversation context
+**Semantic Trigger Example**: `LOAD: @context/architecture/claude-code.md + COMMON_CORE`
+**CLAUDE.md Core Example**: `@context/vision/vision_foundation.md` (always loaded)
+**Context Dispatcher Example**: `@context/architecture/core/truth-source.md` (auto-loads)
+
+**ENFORCEMENT**: @ prefix FORBIDDEN for documentary/conditional references
+
+### **REFERENCE FORMAT (Conditional/Documentary)**
+**Usage Rule**: For links that do NOT auto-load context
+
+#### **Simple Reference Format**
+```
+← context/architecture/core/authority.md
+←→ context/architecture/patterns.md  
+→ context/architecture/templates.md
+```
+
+#### **Markdown Reference Format**
+```
+← [Authority Framework](context/architecture/core/authority.md)
+←→ [Architecture Patterns](context/architecture/patterns.md)
+→ [Template System](context/architecture/templates.md)
+```
+
+#### **Reference-Style Format** 
+```
+← [Authority Framework][authority-ref]
+←→ [Architecture Patterns][patterns-ref]
+→ [Template System][templates-ref]
+
+[authority-ref]: context/architecture/core/authority.md
+[patterns-ref]: context/architecture/patterns.md
+[templates-ref]: context/architecture/templates.md
+```
+
+## DIRECTIONAL SEMANTICS PRESERVATION
+
+### **Authority Chain References**
+**Format**: `← context/path/file.md` (NO @ unless auto-loading)
+**Semantic**: Indicates authority source without automatic loading
+**Markdown**: `← [Authority Name](context/path/file.md)`
+
+### **Cross-References**
+**Format**: `←→ context/path/file.md` (NO @ unless auto-loading)
+**Semantic**: Indicates bidirectional relationship without automatic loading
+**Markdown**: `←→ [Component Name](context/path/file.md)`
+
+### **Forward References**
+**Format**: `→ context/path/file.md` (NO @ unless auto-loading)
+**Semantic**: Indicates forward delegation without automatic loading  
+**Markdown**: `→ [Target Name](context/path/file.md)`
+
+## VALIDATION CRITERIA
+
+### **Auto-Import Validation (@ Required)**
+- Semantic triggers with LOAD statements
+- CLAUDE.md core context (always loaded)
+- Context dispatcher auto-loading
+- Any context that loads automatically into conversation
+
+### **Reference Validation (@ Forbidden)**
+- Authority chain references (documentary)
+- Cross-reference relationships (navigational)
+- Forward delegation references (conditional)
+- All documentary/informational links
+
+### **Format Compliance**
+- **@ Usage**: Only for actual auto-loading functionality
+- **Reference Usage**: All conditional/documentary links without @
+- **Directional Indicators**: ←, ←→, → preserved in all formats
+- **Markdown Compatibility**: All reference formats support markdown enhancement
+
+## INTEGRATION REFERENCES
+
+**Standards Authority**: ← context/architecture/standards/README.md
+**Reference Architecture**: ←→ context/architecture/reference/README.md
+**Handoff Integration**: → context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md
+
+---
+
+**STANDARDS DECLARATION**: Complete @ vs reference format authority preserving semantic distinction while enabling markdown enhancement for conditional references only.
+
+**ENFORCEMENT PROTOCOL**: @ restricted to auto-import, references for all conditional/documentary usage per user semantic authority.

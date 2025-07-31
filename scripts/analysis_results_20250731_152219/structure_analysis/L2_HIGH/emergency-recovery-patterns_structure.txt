@@ -1,0 +1,24 @@
+# Structure Analysis: architecture/patterns/emergency-recovery-patterns.md (103 lines)
+## Main Sections (17 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## INACCESSIBLE RESOURCE RECOVERY PATTERN
+## GIT WORKTREE RECOVERY PATTERN
+## ORPHANED RESOURCE CLEANUP PATTERN
+## FALLBACK ARCHITECTURE PATTERN
+## INTEGRATION REFERENCES
+## Subsections (10 found):
+### **Pattern Context**
+### **Recovery Protocol Framework**
+### **Emergency Recovery Implementation**
+### **Recovery Decision Matrix**
+### **Systematic Cleanup Protocol**
+### **Implementation Framework**
+### **Multi-Level Fallback Strategy**
+### **Resilience Integration**
+### ← context/architecture/claude_code/worktree-accessibility-patterns.md
+### ←→ scripts/infrastructure/conversation-workspace.sh
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 18

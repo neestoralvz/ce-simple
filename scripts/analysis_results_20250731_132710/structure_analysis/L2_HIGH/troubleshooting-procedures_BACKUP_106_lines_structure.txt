@@ -1,0 +1,14 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/troubleshooting-procedures_BACKUP_106_lines.md (106 lines)
+## Main Sections (7 found):
+## AUTORIDAD SUPREMA
+## TROUBLESHOOTING PROCEDURES
+## RECOVERY PROTOCOLS
+## INTEGRATION REFERENCES
+## Subsections (3 found):
+### Git Hook Failure Recovery
+### Performance Issue Diagnosis
+### Hub Authority
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 8

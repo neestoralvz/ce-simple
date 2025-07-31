@@ -1,34 +1,32 @@
-# Patterns - Sistema-Managed Intelligence Hub
+# Patterns - L2-MODULAR Reference Hub
 
-**30/07/2025 11:30 CDMX** | Working patterns authority hub with specialized modules
+**31/07/2025 15:30 CDMX** | Patterns reference hub with specialized modules (L2-MODULAR extraction)
 
 ## AUTORIDAD SUPREMA
-context/principles.md → supreme user authority → patterns/ implements proven methodologies
+@context/architecture/core/truth-source.md → patterns/ implements proven methodologies per user vision
 
-## DIRECTORY PURPOSE
-**Sistema-Managed Intelligence Repository** - Patterns are auto-populated based on empirical success, not theoretical design. Each pattern must demonstrate measurable improvement in conversation-to-outcome efficiency.
+## PRINCIPIO FUNDAMENTAL
+**"Sistema-Managed Intelligence Repository"** - Patterns auto-populated based on empirical success, demonstrating measurable conversation-to-outcome efficiency improvement.
 
-## PATTERN SYSTEM COMPONENTS
+## PATTERN SYSTEM ARCHITECTURE
 
-### **Pattern Validation & Detection**
-- **Overengineering Detection**: → @context/architecture/patterns/system/overengineering-detection-protocols.md
-- **Evidence-Based Structure**: → @context/architecture/patterns/system/evidence-based-structure-determination.md
-- **Pattern Lifecycle Management**: → @context/architecture/patterns/system/pattern-lifecycle-management.md
+### **Core Pattern Categories**
+- **Migration & Risk Patterns**: → migration-risk/ (risk-stratified, transformation workflows)
+- **API & Integration Patterns**: → api-integration/ (GitHub CLI batch, external API operations)
+- **System Architecture Patterns**: → system-architecture/ (distribution, orchestration, degradation)
+- **Command & Automation Patterns**: → command-automation/ (integration automation, module composition)
+- **Quality & Validation Patterns**: → quality-validation/ (assurance frameworks, evidence-based validation)
 
-### **Pattern Categories & Classification**
-- **Working Pattern Categories**: → @context/architecture/patterns/system/working-pattern-categories.md
-- **Failed Pattern Archive**: → @context/architecture/patterns/system/failed-pattern-archive.md
-- **Pattern Recognition Framework**: → @context/architecture/patterns/system/pattern-recognition-framework.md
+### **Specialized Pattern Modules**
+- **L2-Modular Extraction**: → l2-modular-extraction/ (complete extraction methodology)
+- **Claude Code Integration**: → claude-code-integration/ (advanced patterns, hooks protection)
+- **Pure Orchestrator**: → pure-orchestrator/ (coordination protocols, orchestration core)
+- **Enforcement Integration**: → enforcement-integration/ (protocols, validation frameworks)
 
-### **Auto-Population & Evolution**
-- **Auto-Population Guidelines**: → @context/architecture/patterns/system/auto-population-guidelines.md
-- **Organic Growth Protocol**: → @context/architecture/patterns/system/organic-growth-protocol.md
-- **Pattern Evolution Dynamics**: → @context/architecture/patterns/system/pattern-evolution-dynamics.md
-
-### **Authority & Integration Framework**
-- **User Authority Supremacy**: → @context/architecture/patterns/system/user-authority-supremacy.md
-- **Methodology Integration**: → @context/architecture/patterns/system/methodology-integration.md
-- **System Integration Points**: → @context/architecture/patterns/system/system-integration-points.md
+### **Pattern Intelligence System**
+- **Working Patterns Registry**: → working-patterns-registry.md
+- **Failed Patterns Archive**: → failed-patterns-archive.md  
+- **Pattern Evolution Framework**: → pattern-evolution-framework.md
 
 ## CORE AUTHORITY PRINCIPLES
 
@@ -36,27 +34,22 @@ context/principles.md → supreme user authority → patterns/ implements proven
 
 > "sobre la cantidad de comandos creo que es algo que el mismo sistema y lo que hagamos nos ira pidiendo"
 
-## INTEGRATION REFERENCES
+## PATTERN NAVIGATION SYSTEM
 
-### → data/validation/
-**Connection**: Pattern effectiveness measurement and empirical validation
-**Protocol**: Pattern success metrics drive validation data and quality assurance
+### **High-Priority Extractions** (Files >80 lines requiring modularization)
+- **Risk-Stratified Migration**: → migration-risk/risk-stratified-migration-patterns.md (198→hub+modules)
+- **GitHub CLI Batch Processing**: → api-integration/github-cli-batch-processing-patterns.md (189→hub+modules)  
+- **Roadmap Synchronization**: → api-integration/roadmap-synchronization-patterns.md (186→hub+modules)
+- **System Distribution**: → system-architecture/system-distribution-patterns.md (171→hub+modules)
+- **Claude Code Hooks Protection**: → claude-code-integration/claude-code-hooks-protection-patterns.md (144→hub+modules)
 
-### ←→ ../data/
-**Connection**: Performance data drives pattern validation and development through empirical evidence
-**Protocol**: Evidence-based pattern development through systematic data integration
-
-### ←→ methodology.md
-**Connection**: Think x4 systematic analysis and pattern validation framework
-**Protocol**: All patterns validated through systematic methodology and user authority
-
-### → CLAUDE.md
-**Connection**: Pattern recognition triggers and automatic application integration
-**Protocol**: Successful patterns generate semantic triggers for dispatcher optimization
+### **Integration Authority**
+- **Data Validation**: ←→ ../data/validation/ (pattern effectiveness measurement)
+- **Methodology Integration**: ←→ ../core/methodology.md (Think x4 validation framework)
+- **CLAUDE.md Integration**: → CLAUDE.md (semantic triggers and pattern recognition)
 
 ---
 
-**PATTERN DIRECTORY DECLARATION**: This directory auto-evolves based on empirical success through specialized modules while preserving complete functionality and user authority supremacy.
+**L2-MODULAR DECLARATION**: Patterns hub implements reference-only architecture preserving 100% functionality through specialized modules while achieving ≤80 lines compliance per systematic extraction methodology.
 
-**INTEGRATION**: CLAUDE.md semantic triggers → pattern recognition → automatic application
-**AUTHORITY**: User vision supremacy → pattern validation → organic growth only when demonstrated necessity
+**EVOLUTION PATHWAY**: User vision → empirical success → pattern extraction → organic growth cycle

@@ -1,0 +1,20 @@
+# Structure Analysis: roadmap/scp-classification-framework.md (125 lines)
+## Main Sections (26 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## SCP CLASSIFICATION SYSTEM
+## MATRIZ DE COMBINACIONES SCP
+## APLICACIÓN PRÁCTICA
+## INTEGRATION REFERENCES
+## Subsections (20 found):
+### **S - SCOPE (Alcance del Impacto)**
+### **C - COORDINATION (Nivel de Coordinación)**
+### **P - PROCESSING (Complejidad de Procesamiento)**
+### **Perfiles de Complejidad Típicos**
+### **En Creación de Handoffs**
+### **En Ejecución de Handoffs**
+### **En Tracking de Progreso**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 27

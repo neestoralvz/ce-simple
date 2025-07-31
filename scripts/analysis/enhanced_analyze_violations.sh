@@ -5,7 +5,9 @@
 set -e  # Exit on any error
 
 # Configuration
-PROJECT_ROOT="/Users/nalve/ce-simple"
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 CONTEXT_DIR="$PROJECT_ROOT/context"
 OUTPUT_DIR="$PROJECT_ROOT/scripts/h6a_quick_wins_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$OUTPUT_DIR/processing_log.txt"

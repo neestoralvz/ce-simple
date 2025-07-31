@@ -1,0 +1,20 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/bash-debugging-patterns_BACKUP_127_lines.md (127 lines)
+## Main Sections (13 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## DEBUGGING PATTERN ARCHITECTURE
+## SYSTEMATIC DEBUGGING METHODOLOGY
+## INTEGRATION REFERENCES
+## Subsections (8 found):
+### **Pattern 1: ANSI Color Code Command Substitution Separation**
+### **Pattern 2: Printf Array ANSI Edge Case Resolution**
+### **Pattern 3: Test Script Dependency Resolution**
+### **Error Identification Protocol**
+### **Resolution Validation**
+### ← automation-patterns/README.md
+### ←→ scripts/roadmap-update.sh
+### → methodology/script-automation-framework.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 14

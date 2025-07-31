@@ -1,0 +1,13 @@
+Backup Cascade Cleanup Log - Thu Jul 31 13:47:24 CST 2025
+Working Directory: /Users/nalve/ce-simple/context
+Dry Run Mode: false
+----------------------------------------
+Found        2 cascading backup files
+Archive files:        2
+Emergency backup dirs:        2
+Active system files:        0
+Estimated space savings: 0MB
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/original/L1-CRITICAL/ROADMAP_REGISTRY_BACKUP_BEFORE_SIMPLIFICATION_20250731_125657_BACKUP_286_lines.md
+Deleting: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/working_copy/L1-CRITICAL/ROADMAP_REGISTRY_BACKUP_BEFORE_SIMPLIFICATION_20250731_125657_BACKUP_286_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/original/L1-CRITICAL/ROADMAP_REGISTRY_BACKUP_BEFORE_SIMPLIFICATION_20250731_125657_BACKUP_286_lines.md
+File not found: /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/working_copy/L1-CRITICAL/ROADMAP_REGISTRY_BACKUP_BEFORE_SIMPLIFICATION_20250731_125657_BACKUP_286_lines.md

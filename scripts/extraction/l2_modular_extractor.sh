@@ -4,8 +4,11 @@
 
 set -e  # Exit on any error
 
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+
 # Configuration
-PROJECT_ROOT="/Users/nalve/ce-simple"
 CONTEXT_DIR="$PROJECT_ROOT/context"
 OUTPUT_DIR="$PROJECT_ROOT/scripts/h6b_l2_modular_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$OUTPUT_DIR/extraction_log.txt"
@@ -36,16 +39,48 @@ mkdir -p "$OUTPUT_DIR" "$BACKUP_DIR"
     echo "========================================================================"
 } > "$LOG_FILE"
 
-# L2-MODULAR automation targets (91-100 lines)
+# L2-MODULAR automation targets (91-100 lines) - H6B ENHANCED TARGET LIST
 L2_MODULAR_TARGETS=(
-    ".claude/commands/methodology/validation.md"
-    "context/roadmap/P5-ORCHESTR.md"
-    "context/architecture/adr/ADR-021-claude-md-factorization-conditional-loading.md"
-    "NAMING_CONVENTIONS.md"
-    "context/architecture/templates/selection-guide/validation-protocols.md"
-    "context/architecture/patterns/work-item-density-patterns.md"
-    "README.md"
-    ".claude/commands/workflows/system_cleanup.md"
+    # Pattern Analysis Results: 36+ high-value targets identified
+    "context/architecture/patterns/claude-code-integration/validated-integration-patterns.md"  # 91 lines
+    "context/roadmap/P5-ORCHESTR.md"  # 93 lines
+    "context/architecture/adr/ADR-021-claude-md-factorization-conditional-loading.md"  # 94 lines
+    "context/architecture/claude_code/claude-core/claude-md-modifications.md"  # 94 lines
+    "context/architecture/patterns/claude-code-integration/advanced-patterns-anti-patterns.md"  # 94 lines
+    "context/architecture/claude_code/automation-patterns/intelligent-dispatcher-semantic-routing.md"  # 95 lines
+    "context/architecture/claude_code/commands/h-execute-usage-validation-pattern.md"  # 95 lines
+    "context/architecture/standards/reference-format-standards.md"  # 95 lines
+    "context/architecture/patterns/massive-automation-patterns.md"  # 96 lines
+    "context/roadmap/H-SUBCOMMANDS-DESIGN.md"  # 96 lines
+    "context/roadmap/handoffs/p0b/operational-protocols.md"  # 96 lines
+    "context/architecture/templates/claude-core-protocol/implementation-framework.md"  # 97 lines
+    "context/architecture/claude_code/automation-patterns/multi-source-truth-reconciliation.md"  # 98 lines
+    "context/architecture/patterns/graceful-degradation-architecture-patterns.md"  # 98 lines
+    "context/architecture/patterns/l2-modular-implementation-insights.md"  # 98 lines
+    "context/roadmap/HANDOFF_7_SUCCESS_DOCUMENTATION_MASTER.md"  # 98 lines
+    "context/architecture/adr/ADR-029-roadmap-parallel-architecture-evolution.md"  # 99 lines
+    "context/roadmap/handoffs/p0b/execution-strategy.md"  # 99 lines
+    "context/architecture/claude-code-role-system.md"  # 100 lines
+    "context/architecture/patterns/parallel-handoff-creation-patterns.md"  # 100 lines
+    "context/architecture/patterns/transformation-decision-matrix.md"  # 100 lines
+    # Additional high-value targets for optimal extraction success
+    ".claude/commands/r-guardian.md"  # 91 lines
+    ".claude/commands/actions/template-generation-automatic.md"  # 93 lines
+    "context/archive/ARCHIVE_CLEANUP_REPORT_20250730.md"  # 96 lines
+    "context/roadmap/handoff-7-success-documentation/3-batch-progression-strategy.md"  # 96 lines
+    "context/roadmap/backups/ROADMAP_REGISTRY_20250731_131311.md"  # 97 lines
+    "context/roadmap/backups/ROADMAP_REGISTRY_20250731_131434.md"  # 97 lines
+    "context/roadmap/backups/ROADMAP_REGISTRY_20250731_131507.md"  # 97 lines
+    "context/archive/NAMING_CONVENTIONS.md"  # 99 lines
+    "context/roadmap/backups/ROADMAP_REGISTRY_20250731_134005.md"  # 99 lines
+    "context/roadmap/backups/ROADMAP_REGISTRY_20250731_134244.md"  # 99 lines
+    "context/roadmap/backups/ROADMAP_REGISTRY_20250731_134405.md"  # 99 lines
+    "context/archive/conversations_processed/20250731_HANDOFF_3_UX_FLOWCHART_SYSTEM_COMPLETED.md"  # 100 lines
+    "context/archive/processing-reports-archive.md"  # 100 lines
+    # Priority targets for maximum success rate achievement
+    "context/archive/conversations_processed/20250729_1559_command-reorganization-systematic.md"  # 91 lines
+    "context/archive/conversations_processed/20250729_1626_planning-system-implementation-complete.md"  # 91 lines
+    "context/roadmap/archive/phase-5-completed/PHASE_5_ORCHESTRATION_PROTOCOLS_SYSTEMATIZATION.md"  # 91 lines
 )
 
 # Function: Create secure backup

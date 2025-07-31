@@ -225,40 +225,8 @@ Type: Issue (complexity analysis indicated standalone implementation)
 EOF
 }
 
-# Update dashboard with new handoff
-update_dashboard() {
-    local handoff_id="$1"
-    local status="$2"
-    local domain="$3"
-    local priority="$4"
-    local density="Med"
-    local tasks="~5"
-    
-    # Create new table row
-    local priority_icon="🟡"
-    case "$priority" in
-        "critical"|"high") priority_icon="🔴" ;;
-        "low") priority_icon="⚪" ;;
-        "emergency") priority_icon="🚨" ;;
-    esac
-    
-    local table_row="| **${priority_icon}${handoff_id}** | ${priority_icon} ${status} | ${domain} | 0% | ${density} | ${tasks} | ✅ Good |"
-    
-    # Find insertion point in roadmap registry
-    local temp_file="$TEMP_DIR/roadmap_update.md"
-    cp "$ROADMAP_REGISTRY" "$temp_file"
-    
-    # Insert new row (simplified approach - add before blocked items)
-    sed -i "/⏸️P1-UX-FIX/i\\$table_row" "$temp_file"
-    
-    # Update statistics
-    sed -i 's/- \*\*Ready\*\*: [0-9]* items/- **Ready**: 4 items/' "$temp_file"
-    
-    # Copy back
-    cp "$temp_file" "$ROADMAP_REGISTRY"
-    
-    log_success "Dashboard updated with $handoff_id"
-}
+# Source dashboard integrator module
+source "$SCRIPT_DIR/../modules/dashboard-integrator.sh"
 
 # Create GitHub issue
 create_github_issue() {

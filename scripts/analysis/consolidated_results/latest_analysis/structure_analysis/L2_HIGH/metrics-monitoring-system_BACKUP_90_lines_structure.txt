@@ -1,0 +1,17 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/metrics-monitoring-system_BACKUP_90_lines.md (90 lines)
+## Main Sections (10 found):
+## AUTORIDAD SUPREMA
+## FASE 4: MÉTRICAS EN TIEMPO REAL 📊
+## FASE 5: HERRAMIENTAS DE MONITOREO 🛠️
+## INTEGRATION REFERENCES
+## Subsections (6 found):
+### Dashboard Metrics Framework
+### Update Patterns
+### Dashboard Tool (`tools/monitoring/dashboard.py`)
+### Health Monitor (`tools/monitoring/system-health.py`)
+### Automation Scripts
+### Hub Authority
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 11

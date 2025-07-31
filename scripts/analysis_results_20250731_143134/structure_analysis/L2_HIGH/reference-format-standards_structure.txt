@@ -1,0 +1,21 @@
+# Structure Analysis: architecture/standards/reference-format-standards.md (95 lines)
+## Main Sections (17 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## FORMAT AUTHORITY STANDARDS
+## DIRECTIONAL SEMANTICS PRESERVATION
+## VALIDATION CRITERIA
+## INTEGRATION REFERENCES
+## Subsections (11 found):
+### **@ FORMAT (Auto-Import EXCLUSIVE)**
+### **REFERENCE FORMAT (Conditional/Documentary)**
+### **Authority Chain References**
+### **Cross-References**
+### **Forward References**
+### **Auto-Import Validation (@ Required)**
+### **Reference Validation (@ Forbidden)**
+### **Format Compliance**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 18

@@ -1,0 +1,30 @@
+# Structure Analysis: architecture/mecanismos-condicionamiento-referencial.md (151 lines)
+## Main Sections (25 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## SEMANTIC PATTERN RECOGNITION MECHANISMS
+## AUTHORITY PRESERVATION MECHANISMS
+## INFORMATION FACTORIZATION MECHANISMS
+## INTELLIGENCE AMPLIFICATION MECHANISMS
+## TECHNICAL INTEGRATION MECHANISMS
+## INTEGRATION PATHWAYS
+## Subsections (17 found):
+### Pattern Detection Engine
+### Context Loading Intelligence
+### Reference Resolution System
+### Authority Chain Validation Engine
+### Authority Contamination Prevention
+### Conversation Preservation Protocol
+### Single Source of Truth Engine
+### Modular Decomposition System
+### Zero Duplication Validation
+### Context-Aware Loading System
+### Token Economy Optimization
+### System Evolution Intelligence
+### Cross-Component Synthesis Framework
+### Quality Gate Enforcement
+### ← @context/architecture/sistema-condicionamiento-referencial.md
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 26

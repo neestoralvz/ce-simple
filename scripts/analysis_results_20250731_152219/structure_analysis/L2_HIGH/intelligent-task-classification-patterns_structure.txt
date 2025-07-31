@@ -1,0 +1,27 @@
+# Structure Analysis: architecture/claude_code/automation-patterns/intelligent-task-classification-patterns.md (152 lines)
+## Main Sections (20 found):
+## AUTORIDAD SUPREMA
+## PRINCIPIO FUNDAMENTAL
+## SEMANTIC CLASSIFICATION FRAMEWORK
+## SCOPE EXPANSION DETECTION PATTERNS
+## EXTERNAL INTEGRATION PATTERNS
+## Issue Description
+## Task Classification
+## CLASSIFICATION ACCURACY FACTORS
+## IMPLEMENTATION SUCCESS METRICS
+## INTEGRATION REFERENCES
+## Subsections (10 found):
+### **Pattern: Keyword-Based Classification Matrix**
+### **Pattern: Effort-Priority Mapping**
+### **Pattern: Dynamic Priority Assignment**
+### **Pattern: Threshold-Based Expansion Detection**
+### **Pattern: Progressive Issue Documentation**
+### **Pattern: Template Generation for External Systems**
+### **Pattern: Dual Documentation Strategy**
+### **High Accuracy Indicators**
+### **Fallback Classification Logic**
+### **Validation Results from H-AUTOCONTAINMENT-REMEDIATION**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 21

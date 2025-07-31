@@ -5,7 +5,9 @@
 set -euo pipefail
 
 # Configuration
-PROJECT_ROOT="/Users/nalve/ce-simple"
+# Get script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 SCRIPTS_DIR="$PROJECT_ROOT/scripts"
 BACKUP_DIR="$PROJECT_ROOT/scripts/communication_fix_backup_$(date +%Y%m%d_%H%M%S)"
 LOG_FILE="$BACKUP_DIR/transformation_log.txt"

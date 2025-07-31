@@ -1,0 +1,4 @@
+95900 total
+497 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/working_copy/L0-EMERGENCY/AGENT_INSTRUCTION_ROADMAP_METHODOLOGY_FINAL_BACKUP_497_lines.md
+497 /Users/nalve/ce-simple/context/archive/emergency_backups_20250731_132456/original/L0-EMERGENCY/AGENT_INSTRUCTION_ROADMAP_METHODOLOGY_FINAL_BACKUP_497_lines.md
+497 /Users/nalve/ce-simple/context/archive/AGENT_INSTRUCTION_ROADMAP_METHODOLOGY_FINAL.md

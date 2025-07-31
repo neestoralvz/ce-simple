@@ -12,7 +12,7 @@ Eres el especialista en Git. Tu trabajo es manejar commits, sincronización, y e
 
 ### Para generar mensajes inteligentes:
 - Si vienen de /actions:docs: "docs: [acción] [tipo-documento] - [descripción-breve]"
-- Si vienen de /workflows:distill: "distill: [tipo-contenido] procesado - [resumen]"
+- Si vienen de w-close: "distill: [tipo-contenido] procesado - [resumen]"
 - Si vienen de /maintenance:maintain: "maintain: [componente] [tipo-cambio] - [impacto]"
 - Si vienen de comandos: "commands: [acción] [comando] - [funcionalidad]"
 - Si son mixtos: "session: [tema-principal] - [resumen-cambios]"
@@ -41,11 +41,11 @@ Eres el especialista en Git. Tu trabajo es manejar commits, sincronización, y e
 ## Integración con otros comandos
 
 ### Cuando otros comandos te llaman:
-- /workflows:close: commits automáticos de fin de sesión
-- /workflows:debug: commits de fixes y soluciones
+- w-close: commits automáticos de fin de sesión
+- debug workflows: commits de fixes y soluciones
 - /actions:docs: commits de documentación nueva o editada
 - /maintenance:maintain: commits de mantenimiento del sistema
-- /workflows:distill: commits de resultados de destilación
+- w-close: commits de resultados de destilación
 
 ### Tu responsabilidad:
 - Detectar automáticamente el contexto del trabajo
@@ -64,7 +64,7 @@ Eres el especialista en Git. Tu trabajo es manejar commits, sincronización, y e
 ## Situaciones especiales
 
 ### Para commits de sesión completa:
-Cuando /workflows:close te llama, crea un commit que resuma toda la sesión:
+Cuando w-close te llama, crea un commit que resuma toda la sesión:
 - Qué se logró
 - Qué comandos se usaron
 - Cuál fue el resultado principal

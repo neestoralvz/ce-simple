@@ -1,0 +1,24 @@
+# Structure Analysis: archive/emergency_backups_20250731_132456/original/L2-HIGH/ADR-030-unified-file-naming-convention-system_BACKUP_108_lines.md (108 lines)
+## Main Sections (17 found):
+## Context
+## Decision
+## Consequences
+## Technical Implementation
+## Compliance Monitoring
+## Success Metrics
+## References
+## Subsections (10 found):
+### Unified Naming System Framework:
+### File-Type Convention Standards:
+### Migration Phase Architecture:
+### Positive:
+### Negative:
+### Risk Mitigation:
+### Validation Tool Architecture:
+### Integration with Existing Systems:
+### Quantitative Targets:
+### Qualitative Outcomes:
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 18
