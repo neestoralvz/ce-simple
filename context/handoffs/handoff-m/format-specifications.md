@@ -3,7 +3,7 @@
 **31/07/2025 14:45 CDMX** | Complete format specifications for @ auto-import vs conditional references
 
 ## AUTORIDAD SUPREMA
-context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md → format-specifications.md implements format standards per handoff authority
+@context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md → format-specifications.md implements format standards per handoff authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"Clear format specifications ensure consistent @ vs reference usage"** - Precise syntax standards enabling systematic implementation and validation.

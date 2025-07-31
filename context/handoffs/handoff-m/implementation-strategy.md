@@ -3,7 +3,7 @@
 **31/07/2025 14:45 CDMX** | Systematic 3-phase implementation strategy for @ vs reference distinction
 
 ## AUTORIDAD SUPREMA
-context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md → implementation-strategy.md implements strategy per handoff authority
+@context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md → implementation-strategy.md implements strategy per handoff authority
 
 ## PRINCIPIO FUNDAMENTAL
 **"3-phase systematic correction preserves functionality while establishing proper semantics"** - Strategic implementation ensuring no functionality loss during semantic correction.

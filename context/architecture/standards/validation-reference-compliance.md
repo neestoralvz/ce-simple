@@ -3,7 +3,7 @@
 **31/07/2025 02:00 CDMX** | Complete validation framework for @ vs reference compliance
 
 ## AUTORIDAD SUPREMA
-context/architecture/standards/reference-format-standards.md → validation-reference-compliance.md implements validation authority per format standards
+@context/architecture/standards/reference-format-standards.md → validation-reference-compliance.md implements validation authority per format standards
 
 ## VALIDATION FRAMEWORK OBJECTIVE
 **Systematic compliance verification**: Ensure @ restricted to auto-import and references used for conditional/documentary links per user semantic authority
@@ -102,9 +102,9 @@ grep -r "→ @context/" context/
 
 ## INTEGRATION REFERENCES
 
-**Format Standards**: ← context/architecture/standards/reference-format-standards.md
-**Migration Guide**: ← context/architecture/standards/migration-guide-reference-format.md
-**Handoff Authority**: → context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md
+**Format Standards**: ← @context/architecture/standards/reference-format-standards.md
+**Migration Guide**: ← @context/architecture/standards/migration-guide-reference-format.md
+**Handoff Authority**: → @context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md
 
 ---
 

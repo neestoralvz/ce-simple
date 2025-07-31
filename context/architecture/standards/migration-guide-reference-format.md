@@ -3,7 +3,7 @@
 **31/07/2025 02:00 CDMX** | Systematic migration guide for @ vs reference semantic correction
 
 ## AUTORIDAD SUPREMA
-context/architecture/standards/reference-format-standards.md → migration-guide implements systematic correction per format authority
+@context/architecture/standards/reference-format-standards.md → migration-guide implements systematic correction per format authority
 
 ## MIGRATION OBJECTIVE
 **Correct semantic misuse**: Remove @ from conditional/documentary references while preserving @ for auto-import functionality
@@ -121,9 +121,9 @@ LOAD: @context/architecture/claude-code.md  # Semantic trigger
 
 ## INTEGRATION REFERENCES
 
-**Format Standards**: ← context/architecture/standards/reference-format-standards.md
-**Migration Authority**: → context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md
-**Validation Protocol**: → context/architecture/standards/validation-reference-compliance.md
+**Format Standards**: ← @context/architecture/standards/reference-format-standards.md
+**Migration Authority**: → @context/handoffs/HANDOFF_M_MARKDOWN_REFERENCE_STANDARDS.md
+**Validation Protocol**: → @context/architecture/standards/validation-reference-compliance.md
 
 ---
 
