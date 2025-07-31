@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ce-simple.protection</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/nalve/ce-simple/.fswatch/protection-daemon.sh</string>
+    </array>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/nalve/ce-simple</string>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+        <key>Crashed</key>
+        <true/>
+    </dict>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/nalve/ce-simple/.fswatch/logs/daemon-error.log</string>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/nalve/ce-simple/.fswatch/logs/daemon-output.log</string>
+    
+    <key>ThrottleInterval</key>
+    <integer>1</integer>
+    
+    <key>ProcessType</key>
+    <string>Background</string>
+    
+    <key>LowPriorityIO</key>
+    <true/>
+    
+    <key>Nice</key>
+    <integer>1</integer>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>

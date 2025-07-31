@@ -1,0 +1,52 @@
+{
+  "hooks": {
+    "file-write": {
+      "command": "bash",
+      "args": [".claude/hooks/root-protection.sh", "${CLAUDE_FILE_PATH}"],
+      "description": "Root structure protection and file validation",
+      "timeout": 5000
+    },
+    "user-prompt-submit": {
+      "command": "bash",
+      "args": [".claude/hooks/standards-check.sh", "${CLAUDE_PROJECT_ROOT}"],
+      "description": "Pre-conversation standards validation",
+      "timeout": 3000
+    },
+    "tool-call-complete": {
+      "command": "bash", 
+      "args": [".claude/hooks/size-validation.sh", "${CLAUDE_FILE_PATH}"],
+      "description": "Post-action file size and compliance validation",
+      "timeout": 4000
+    },
+    "session-start": {
+      "command": "bash",
+      "args": [".claude/hooks/authority-validation.sh", "${CLAUDE_PROJECT_ROOT}"],
+      "description": "Initialize protection context and validate project authority",
+      "timeout": 2000
+    }
+  },
+  "config": {
+    "log_level": "info",
+    "log_file": ".claude/hooks/protection.log",
+    "max_execution_time": 10000,
+    "fail_on_error": false,
+    "enable_notifications": true
+  },
+  "project": {
+    "name": "ce-simple",
+    "root_path": "/Users/nalve/ce-simple",
+    "protected_directories": [
+      "/Users/nalve/ce-simple",
+      "/Users/nalve/ce-simple/context",
+      "/Users/nalve/ce-simple/scripts"
+    ],
+    "allowed_root_files": [
+      "CLAUDE.md",
+      "README.md",
+      ".gitignore",
+      ".gitattributes"
+    ],
+    "max_file_lines": 80,
+    "enforcement_level": "warn"
+  }
+}
