@@ -1,4 +1,4 @@
-# Structure Analysis: archive/emergency_backups_20250730_182627/working_copy/L2-HIGH/authority-chain-verification_BACKUP_92_lines.md (92 lines)
+# Structure Analysis: archive/emergency_backups_20250730_153510/original/L2-HIGH/authority-chain-verification_BACKUP_92_lines.md (92 lines)
 ## Main Sections (6 found):
 ## AUTORIDAD SUPREMA
 ## AUTHORITY CHAIN VERIFICATION FRAMEWORK

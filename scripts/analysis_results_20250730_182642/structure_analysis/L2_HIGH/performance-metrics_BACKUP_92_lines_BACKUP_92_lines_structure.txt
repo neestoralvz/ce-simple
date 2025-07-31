@@ -1,4 +1,4 @@
-# Structure Analysis: archive/emergency_backups_20250730_182627/working_copy/L2-HIGH/performance-metrics_BACKUP_92_lines_BACKUP_92_lines.md (92 lines)
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/performance-metrics_BACKUP_92_lines_BACKUP_92_lines.md (92 lines)
 ## Main Sections (7 found):
 ## AUTORIDAD SUPREMA
 ## PERFORMANCE MONITORING FRAMEWORK

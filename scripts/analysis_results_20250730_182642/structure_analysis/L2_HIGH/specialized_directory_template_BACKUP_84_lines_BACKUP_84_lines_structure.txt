@@ -1,0 +1,25 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/specialized_directory_template_BACKUP_84_lines_BACKUP_84_lines.md (84 lines)
+## Main Sections (18 found):
+## AUTORIDAD SUPREMA
+## DIRECTORY PURPOSE
+## CONTENT CATEGORIZATION
+## INTEGRATION POINTS
+## EVOLUTION GUIDELINES
+## [SPECIALIZED STANDARDS/PROTOCOLS]
+## Subsections (12 found):
+### `/[subdirectory1]/`
+### `/[subdirectory2]/`
+### `/[subdirectory3]/`
+### → [Related Component 1]
+### → [Related Component 2]
+### → [Related Component 3]
+### [Content Management] Principles
+### [Specialized Function] Categories
+### [Management Protocol] 
+### Semantic Placement Decision Tree
+### [Standards Type]
+### [Quality/Integrity Framework]
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 19

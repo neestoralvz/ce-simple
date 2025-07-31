@@ -1,0 +1,18 @@
+# Structure Analysis: archive/emergency_backups_20250730_153510/original/L2-HIGH/task_tool_syntax_BACKUP_81_lines.md (81 lines)
+## Main Sections (11 found):
+## Required Parameters Protocol
+## Parameter Specifications
+## Context Loading Protocol
+## Error Prevention Protocol
+## Post-Delegation Validation
+## Subsections (6 found):
+### Mandatory Context References
+### Context Path Specifications
+### Common Syntax Errors
+### Correct Task Tool Examples
+### Validation Checklist
+### Automatic Second Task Tool
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 12
