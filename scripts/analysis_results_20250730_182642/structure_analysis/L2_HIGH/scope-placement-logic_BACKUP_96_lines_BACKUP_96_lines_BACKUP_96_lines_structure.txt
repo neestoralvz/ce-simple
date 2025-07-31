@@ -1,0 +1,13 @@
+# Structure Analysis: archive/emergency_backups_20250730_182627/original/L2-HIGH/scope-placement-logic_BACKUP_96_lines_BACKUP_96_lines_BACKUP_96_lines.md (96 lines)
+## Main Sections (6 found):
+## AUTORIDAD SUPREMA
+## SCOPE-BASED PLACEMENT LOGIC FRAMEWORK
+## INTEGRATION REFERENCES
+## Subsections (3 found):
+### **Scope-Driven Placement Decisions**
+### **Scope-Integration Decision Framework**
+### **Scope Placement Decision Validation**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 7

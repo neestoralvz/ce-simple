@@ -1,0 +1,13 @@
+# Structure Analysis: archive/emergency_backups_20250730_182542/original/L2-HIGH/scope-classification-protocols_BACKUP_95_lines_BACKUP_95_lines.md (95 lines)
+## Main Sections (6 found):
+## AUTORIDAD SUPREMA
+## SCOPE CLASSIFICATION FRAMEWORK
+## INTEGRATION REFERENCES
+## Subsections (3 found):
+### **Scope Categories Protocol**
+### **Scope Identification Indicators**
+### **Scope Classification Decision Matrix**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 7

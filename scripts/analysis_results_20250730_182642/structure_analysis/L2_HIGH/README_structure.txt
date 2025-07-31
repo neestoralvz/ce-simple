@@ -1,29 +1,27 @@
-# Structure Analysis: archive/README.md (114 lines)
-## Main Sections (22 found):
-## AUTORIDAD SUPREMA
-## ARCHIVE PURPOSE
-## ARCHIVE ORGANIZATION
-## CONVERSATION PROCESSING PROTOCOL
-## NAVIGATION GUIDANCE
-## INTEGRATION REFERENCES
-## ARCHIVE QUALITY STANDARDS
+# Structure Analysis: data/README.md (97 lines)
+## Main Sections (20 found):
+## Component Purpose
+## Content Categorization
+## Integration Points
+## Evolution Guidelines
+## Data Integrity Standards
 ## Subsections (15 found):
-### `/conversations_processed/`
-### `/legacy/`
-### `/handoff_historical_reference.md`
-### Processing Requirements
-### Archive→Active Content Relationships
-### Processed Conversation Navigation
-### Legacy Component Navigation
-### Historical Intelligence Mining
-### → @context/architecture/core/truth-source.md
-### → @context/architecture/core/methodology.md
-### → context/architecture/patterns/
-### → @context/architecture/core/authority.md
-### Information Density Requirements
-### Processing Validation
-### Knowledge Continuity
+### `/conversations/`
+### `/performance/`
+### `/usage/`
+### `/validation/`
+### ↑ @context/architecture/core/truth-source.md
+### ←→ /simplicity.md
+### ←→ /methodology.md
+### ←→ CLAUDE.md
+### → research/
+### Data Collection Principles
+### Measurement Categories
+### Data-Driven Evolution Protocol
+### Semantic Placement Decision Tree
+### Measurement Accuracy
+### Evidence-Based Decision Making
 ## Suggested Division Strategy:
 - Create hub with navigation (≤80 lines)
 - Extract each main section as separate module
-- Estimated modules needed: 23
+- Estimated modules needed: 21

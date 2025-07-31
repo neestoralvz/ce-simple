@@ -1,0 +1,13 @@
+# Structure Analysis: archive/emergency_backups_20250730_182627/working_copy/L2-HIGH/content-analysis-decision-matrix_BACKUP_92_lines_BACKUP_92_lines.md (92 lines)
+## Main Sections (6 found):
+## AUTORIDAD SUPREMA
+## DECISION SYNTHESIS FRAMEWORK
+## INTEGRATION REFERENCES
+## Subsections (3 found):
+### **Analysis Output Framework**
+### **Decision Confidence Assessment**
+### **Decision Validation Protocol**
+## Suggested Division Strategy:
+- Create hub with navigation (≤80 lines)
+- Extract each main section as separate module
+- Estimated modules needed: 7
