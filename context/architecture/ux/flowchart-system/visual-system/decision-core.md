@@ -7,100 +7,40 @@
 
 ## PHASE 1: Content Classification
 
-```
-Content Type Decision Tree:
-User Vision Content? → context/vision/
-  ├── Philosophy/Discovery → vision_foundation.md
-  ├── Vision Evolution → vision/ directory
-  └── Vision Crystallization → vision-specific components
-
-Authority Content? → @context/architecture/core/authority.md
-  ├── User Authority → authority supremacy principles
-  ├── Domain Boundaries → user-AI separation
-  └── Authority Chain → hierarchy validation
-
-Technical Content? → context/patterns.md or context/architecture/
-  ├── Implementation Patterns → patterns/ directory
-  ├── Architecture Decisions → architecture/adr/
-  └── UX/Conversation → architecture/ux/
-
-Standards Content? → @context/architecture/standards/README.md
-  ├── Documentation Standards → standards/documentation-standards.md
-  ├── Enforcement Standards → standards/enforcement-standards.md
-  └── Technical Standards → standards/technical-standards.md
-
-Template Content? → context/architecture/templates/
-  ├── README Templates → templates/README_template.md
-  ├── Component Templates → templates/core_component_template.md
-  └── Specialized Templates → templates/specialized_directory_template.md
-
-Data Content? → context/data/
-  ├── Performance Data → data/performance/
-  ├── Validation Data → data/validation/
-  └── Conversation Data → data/conversations/
-
-UX Content? → context/architecture/ux/
-  ├── Conversation Patterns → ux/conversation-patterns/
-  ├── Interface Design → ux/interface-design/
-  └── User Experience → ux/user-experience/
-```
+### Content Type Decision Tree
+- **User Vision**: context/vision/ → Philosophy/Discovery, Vision Evolution, Crystallization
+- **Authority**: @context/architecture/core/authority.md → User supremacy, Domain boundaries, Chain hierarchy
+- **Technical**: context/patterns.md or context/architecture/ → Implementation patterns, Architecture decisions, UX/Conversation
+- **Standards**: @context/architecture/standards/README.md → Documentation, Enforcement, Technical standards
+- **Templates**: context/architecture/templates/ → README, Component, Specialized templates
+- **Data**: context/data/ → Performance, Validation, Conversation data
+- **UX**: context/architecture/ux/ → Conversation patterns, Interface design, User experience
 
 ## PHASE 2: Authority Validation
 
-```
-Authority Source Decision Tree:
-User Authority Content?
-  ├── Load @context/vision/vision_foundation.md MANDATORY
-  ├── Validate against user vision quotes
-  ├── Check for vision conflicts → STOP if conflict detected
-  └── Continue to placement logic if aligned
-
-System Authority Content?
-  ├── Load @context/architecture/core/truth-source.md for validation
-  ├── Verify authority chain clarity
-  ├── Check hierarchy integrity → ERROR if unclear
-  └── Continue with validated authority
-
-Shared Authority Content?
-  ├── Load both user and system authority sources
-  ├── Design reference architecture for shared access
-  ├── Validate bidirectional authority preservation
-  └── Continue with reference-based placement
-```
+### Authority Source Decision Tree
+- **User Authority**: Load @context/vision/vision_foundation.md MANDATORY → Validate against user quotes → Check conflicts (STOP if detected)
+- **System Authority**: Load @context/architecture/core/truth-source.md → Verify chain clarity → Check hierarchy integrity (ERROR if unclear)
+- **Shared Authority**: Load both sources → Design reference architecture → Validate bidirectional preservation
 
 ## PHASE 3: Placement Logic
 
-```
-Content Scope Decision Tree:
-Single Component Scope?
-  ├── Existing Component? → Edit existing file
-  ├── New Component < 80 lines? → Create new file  
-  ├── New Component > 80 lines? → Split into modules + references
-  └── Validate size compliance and authority preservation
+### Content Scope Decision Tree
+- **Single Component**: Existing component (edit) → New <80 lines (create) → New >80 lines (split+references)
+- **Cross-Component**: Shared authority (reference architecture) → Primary authority (primary+secondary references) → Integration required (bidirectional system)
+- **System-Wide**: Place at context/ root → Create comprehensive references → Update truth-source.md and core components
 
-Cross-Component Scope?
-  ├── Shared Authority? → Reference architecture approach
-  ├── Primary Authority? → Primary component + secondary references
-  ├── Integration Required? → Bidirectional reference system
-  └── Validate cross-component consistency
+## PHASE 4: Final Validation
 
-System-Wide Scope?
-  ├── Place at context/ root level for system authority
-  ├── Create comprehensive bidirectional references
-  ├── Update @context/architecture/core/truth-source.md and core components
-  └── Validate system-wide integration and authority chain
-```
+### Quality Gates Protocol
+- **Authority Chain**: Complete traceability to supreme authority sources
+- **Size Compliance**: ≤80 lines enforcement with modular breakdown if needed
+- **Cross-References**: Bidirectional linking accuracy and completeness
+- **Integration**: Pathway effectiveness and system coherence
 
 ## INTEGRATION REFERENCES
-
-### → visual-frameworks.md
-**Connection**: Final validation and quality gates for decision core process
-**Protocol**: Decision core validated through comprehensive visual frameworks
-
-### ← visual-decision-system.md
-**Authority Source**: Visual decision system authority for 4-phase decision process
-**Protocol**: Decision core implements visual decision system authority
+**Visual Frameworks**: → visual-frameworks.md (final validation and quality gates)
+**Visual Decision System**: ← visual-decision-system.md (visual decision authority)
 
 ---
-
-**DECISION CORE DECLARATION**: 4-phase visual decision process eliminating placement confusion through systematic content classification, authority validation, and placement logic with complete authority preservation.
+**DECISION CORE DECLARATION**: Complete 4-phase visual decision process through systematic content classification, authority validation, placement logic, and final validation with authority preservation.
